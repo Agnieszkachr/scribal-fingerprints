@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results — Scribal Fingerprints</title>
+  <meta name="description" content="Interactive charts and statistical results from the Scribal Fingerprints analysis of the Gospel of John.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <h1>Results</h1>
+    <p>
+      Interactive visualisations of the statistical findings. All values are derived
+      programmatically from the pipeline output files.
+    </p>
+
+    <!-- Statistical Summary Table -->
+    <section>
+      <h2 class="section-title">Statistical Summary</h2>
+      <p class="section-subtitle">All configurations tested, with 95% bootstrap confidence intervals where available</p>
+      <div class="card" style="overflow-x:auto;" id="stats-table"></div>
+    </section>
+
+    <!-- Ablation Comparison -->
+    <section>
+      <h2 class="section-title">Ablation Comparison</h2>
+      <p class="section-subtitle">
+        Four conditions demonstrating signal robustness. Percentage drops from Baseline B annotated.
+      </p>
+      <div class="chart-container">
+        <div id="chart-ablation" style="height:400px;"></div>
+      </div>
+      <div class="callout">
+        Content masking (replacing content words with a generic token) produces the largest
+        signal reduction (Cohen's d drops ~73%, ARI drops ~91%), confirming that the change
+        profile is carried primarily by contextual semantic content, not surface-level
+        morphological patterns alone.
+      </div>
+    </section>
+
+    <!-- Variant Type Distribution -->
+    <section>
+      <h2 class="section-title">Variant Type Distribution</h2>
+      <p class="section-subtitle">Breakdown of variant categories per manuscript (Baseline B)</p>
+      <div class="chart-container">
+        <div id="chart-types" style="height:420px;"></div>
+      </div>
+    </section>
+
+    <!-- Cumulative Signal -->
+    <section>
+      <h2 class="section-title">Cumulative Signal Strength</h2>
+      <p class="section-subtitle">ARI as a function of cumulative chapter count — the "law of large numbers" test</p>
+      <div class="chart-container">
+        <div id="chart-cumulative" style="height:420px;"></div>
+      </div>
+      <p>
+        The signal stabilises around 13 chapters, after which the ARI plateaus. This
+        suggests a minimum viable corpus of approximately half the Gospel is sufficient
+        to detect the scribal fingerprint reliably.
+      </p>
+    </section>
+
+    <!-- Chapter Stability Heatmap -->
+    <section>
+      <h2 class="section-title">Chapter Stability</h2>
+      <p class="section-subtitle">Per-chapter cosine distance from each manuscript's global centroid (Baseline B)</p>
+      <div class="chart-container">
+        <div id="chart-stability" style="height:350px;"></div>
+      </div>
+      <p>
+        Lower values (lighter cells) indicate chapters where the manuscript's local profile
+        closely matches its overall fingerprint. Higher values (darker cells) may reflect
+        chapters with unusual content or scribal behaviour.
+      </p>
+    </section>
+
+    <!-- Static Figures -->
+    <section>
+      <h2 class="section-title">Embedding Space Visualisations</h2>
+      <p class="section-subtitle">PCA projections and hierarchical clustering of manuscript change vectors</p>
+      <div class="fig-gallery">
+        <div class="fig-item">
+          <img src="img/fig1_pca_full_B.png" alt="PCA scatter plot of scribal change vectors (Baseline B)" loading="lazy">
+          <div class="fig-caption">
+            <strong>Figure 1.</strong> PCA of scribal change vectors against Baseline B.
+            Each point represents a single variant's contextual embedding, coloured by manuscript.
+            Overlapping clouds with detectable centroid shifts.
+          </div>
+        </div>
+        <div class="fig-item">
+          <img src="img/fig2_dendrogram_full_B.png" alt="Hierarchical clustering dendrogram (Baseline B)" loading="lazy">
+          <div class="fig-caption">
+            <strong>Figure 2.</strong> Hierarchical clustering of manuscript profiles against Baseline B.
+            A–D cluster together; P66–ℵ form a separate branch.
+          </div>
+        </div>
+      </div>
+
+      <div class="fig-gallery">
+        <div class="fig-item">
+          <img src="img/fig1_pca_full_A.png" alt="PCA scatter (Baseline A)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 1b.</strong> PCA against Baseline A.</div>
+        </div>
+        <div class="fig-item">
+          <img src="img/fig2_dendrogram_full_A.png" alt="Dendrogram (Baseline A)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 2b.</strong> Dendrogram against Baseline A.</div>
+        </div>
+      </div>
+
+      <div class="fig-gallery">
+        <div class="fig-item">
+          <img src="img/fig1_pca_full_ablation_matched.png" alt="PCA scatter (Verse-matched)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 1c.</strong> PCA, verse-matched subsample.</div>
+        </div>
+        <div class="fig-item">
+          <img src="img/fig2_dendrogram_full_ablation_matched.png" alt="Dendrogram (Verse-matched)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 2c.</strong> Dendrogram, verse-matched subsample.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Figures -->
+    <section>
+      <h2 class="section-title">Additional Figures</h2>
+      <div class="fig-gallery">
+        <div class="fig-item">
+          <img src="img/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 4.</strong> Variant type proportions, Baseline B.</div>
+        </div>
+        <div class="fig-item">
+          <img src="img/fig4_types_full_A.png" alt="Variant type distribution (Baseline A)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 4b.</strong> Variant type proportions, Baseline A.</div>
+        </div>
+      </div>
+      <div class="fig-gallery">
+        <div class="fig-item">
+          <img src="img/fig6_cumulative_A.png" alt="Cumulative signal (Baseline A)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 6.</strong> Cumulative signal, Baseline A.</div>
+        </div>
+        <div class="fig-item">
+          <img src="img/fig7_stability_heatmap_A.png" alt="Stability heatmap (Baseline A)" loading="lazy">
+          <div class="fig-caption"><strong>Figure 7.</strong> Chapter stability heatmap, Baseline A.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Agnieszka B. Ziemińska</span>
+      <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="data/stats_summary.js"></script>
+  <script src="data/type_counts.js"></script>
+  <script src="data/cumulative_ari.js"></script>
+  <script src="data/chapter_stability.js"></script>
+  <script src="js/charts.js"></script>
+  <script>
+    renderStatsTable('stats-table');
+    renderAblationChart('chart-ablation');
+    renderTypeChart('chart-types');
+    renderCumulativeChart('chart-cumulative');
+    renderStabilityHeatmap('chart-stability');
+  </script>
+</body>
+</html>
+

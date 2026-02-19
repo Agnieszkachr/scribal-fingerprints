@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology — Scribal Fingerprints</title>
+  <meta name="description" content="Pipeline overview, variant typology, and manuscript coverage for the Scribal Fingerprints study.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Pipeline -->
+    <section>
+      <h1>Methodology</h1>
+      <p>
+        The pipeline transforms raw TEI XML transcriptions into statistically testable
+        manuscript change profiles through five sequential stages.
+      </p>
+
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-box">
+            <span class="step-num">Step 1</span>
+            <span class="step-title">Data Acquisition</span>
+            <span class="step-desc">TEI XML from ITSEE</span>
+          </div>
+        </div>
+        <span class="pipeline-arrow">&#x2192;</span>
+        <div class="pipeline-step">
+          <div class="step-box">
+            <span class="step-num">Step 2</span>
+            <span class="step-title">Variant Extraction</span>
+            <span class="step-desc">CollateX word alignment</span>
+          </div>
+        </div>
+        <span class="pipeline-arrow">&#x2192;</span>
+        <div class="pipeline-step">
+          <div class="step-box">
+            <span class="step-num">Step 3</span>
+            <span class="step-title">Classification</span>
+            <span class="step-desc">5 typological categories</span>
+          </div>
+        </div>
+        <span class="pipeline-arrow">&#x2192;</span>
+        <div class="pipeline-step">
+          <div class="step-box">
+            <span class="step-num">Step 4</span>
+            <span class="step-title">Embedding</span>
+            <span class="step-desc">BERT contextual vectors</span>
+          </div>
+        </div>
+        <span class="pipeline-arrow">&#x2192;</span>
+        <div class="pipeline-step">
+          <div class="step-box">
+            <span class="step-num">Step 5</span>
+            <span class="step-title">Statistical Testing</span>
+            <span class="step-desc">Permutation &amp; bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Variant Typology -->
+    <section>
+      <h2 class="section-title">Variant Typology</h2>
+      <p>
+        Each extracted variant is classified into one of five discrete categories based on
+        the relationship between the baseline reading and the manuscript reading:
+      </p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Description</th><th>Example</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Morphological Substitution</strong></td>
+              <td>Same lemma, different inflectional form</td>
+              <td><span class="greek-text">λέγει → λέγουσιν</span></td>
+            </tr>
+            <tr>
+              <td><strong>Lexical Substitution</strong></td>
+              <td>Different lemma replacing the original word</td>
+              <td><span class="greek-text">κύριος → θεός</span></td>
+            </tr>
+            <tr>
+              <td><strong>Addition</strong></td>
+              <td>Word present in manuscript but absent from baseline</td>
+              <td><span class="greek-text">[OMIT] → δέ</span></td>
+            </tr>
+            <tr>
+              <td><strong>Omission</strong></td>
+              <td>Word present in baseline but absent from manuscript</td>
+              <td><span class="greek-text">αὐτοῦ → [OMIT]</span></td>
+            </tr>
+            <tr>
+              <td><strong>Word Order Shift</strong></td>
+              <td>Same words in different sequence</td>
+              <td>Detected at alignment level (count: 0 in current pipeline)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        Morphological substitutions dominate across all manuscripts (67–83% of all variants),
+        consistent with the expectation that most scribal changes involve minor inflectional
+        adjustments rather than substantive lexical replacements.
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <section>
+      <h2 class="section-title">Pipeline Scripts</h2>
+      <p>
+        The analysis is implemented in six Python scripts, each handling a distinct stage
+        of the pipeline:
+      </p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Script</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>download_itsee_data.py</code></td>
+              <td>Fetches TEI XML transcriptions from ITSEE, normalises orthography, extracts and classifies variants</td>
+            </tr>
+            <tr>
+              <td><code>run_statistical_tests.py</code></td>
+              <td>BERT embedding, permutation tests (ARI, Cohen's d), bootstrap confidence intervals, Cramér's V</td>
+            </tr>
+            <tr>
+              <td><code>create_visualizations.py</code></td>
+              <td>PCA scatter, dendrogram, variant type distribution, cumulative signal, stability heatmap</td>
+            </tr>
+            <tr>
+              <td><code>create_verse_matched_dataset.py</code></td>
+              <td>Identifies shared verse set across all manuscripts for controlled comparison</td>
+            </tr>
+            <tr>
+              <td><code>recalc_odd_even.py</code></td>
+              <td>Split-half reproducibility test (Spearman ρ on manuscript distance matrices)</td>
+            </tr>
+            <tr>
+              <td><code>run_ablation_study.py</code></td>
+              <td>Function-word filtering and content-masking ablation experiments</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section>
+      <h2 class="section-title">Manuscript Coverage</h2>
+      <p>
+        Not all manuscripts preserve all 21 chapters of John. The table below shows the
+        percentage of extant verses per chapter for each witness (against Baseline B).
+        White cells indicate complete coverage; coloured cells indicate lacunae.
+      </p>
+      <div class="card" style="overflow-x:auto;">
+        <table class="coverage-table" id="coverage-table">
+          <thead>
+            <tr id="coverage-header"><th>MS</th></tr>
+          </thead>
+          <tbody id="coverage-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Agnieszka B. Ziemińska</span>
+      <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="data/coverage.js"></script>
+  <script>
+    (function() {
+      const data = window.DATA_COVERAGE;
+      if (!data) { console.error('Coverage data not loaded'); return; }
+
+      const chapters = [...new Set(data.map(d => d.chapter))].sort((a,b) => a-b);
+      const manuscripts = [...new Set(data.map(d => d.manuscript))];
+
+      const headerRow = document.getElementById('coverage-header');
+      chapters.forEach(ch => {
+        const th = document.createElement('th');
+        th.textContent = ch;
+        headerRow.appendChild(th);
+      });
+
+      const tbody = document.getElementById('coverage-body');
+      manuscripts.forEach(ms => {
+        const tr = document.createElement('tr');
+        const tdMs = document.createElement('td');
+        tdMs.innerHTML = `<strong>${ms}</strong>`;
+        tr.appendChild(tdMs);
+
+        chapters.forEach(ch => {
+          const td = document.createElement('td');
+          const entry = data.find(d => d.manuscript === ms && d.chapter === ch);
+          if (!entry) {
+            td.textContent = '\u2014';
+            td.className = 'coverage-none';
+          } else {
+            const pct = entry.coverage_pct;
+            td.textContent = pct.toFixed(0) + '%';
+            if (pct >= 100) td.className = 'coverage-full';
+            else if (pct > 0) td.className = 'coverage-partial';
+            else td.className = 'coverage-none';
+          }
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    })();
+  </script>
+</body>
+</html>

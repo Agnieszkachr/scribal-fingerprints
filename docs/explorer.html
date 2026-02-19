@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variant Explorer — Scribal Fingerprints</title>
+  <meta name="description" content="Browse individual textual variants from the Gospel of John manuscript analysis.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+  <style>
+    /* DataTables light theme overrides */
+    table.dataTable thead th { background: var(--bg-alt); border-bottom: 2px solid var(--border); }
+    table.dataTable tbody td { border-bottom: 1px solid var(--border-light); }
+    .dt-paging-button { border-radius: var(--radius) !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Variant Explorer</h1>
+    <p>
+      Browse individual textual variants extracted from the manuscripts. Use the filters
+      and search box to explore specific manuscripts, variant types, or Greek readings.
+    </p>
+
+    <div class="sample-note">
+      Showing a stratified sample of <strong><span id="sample-count">—</span></strong> variants.
+      The full dataset is available in the
+      <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub repository</a>.
+    </div>
+
+    <div class="filter-bar">
+      <div>
+        <label for="filter-ms">Manuscript:</label>
+        <select id="filter-ms">
+          <option value="">All manuscripts</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-type">Variant type:</label>
+        <select id="filter-type">
+          <option value="">All types</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card" style="overflow-x:auto;" id="explorer-container">
+      <table id="variants-table" class="display" style="width:100%"></table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Agnieszka B. Ziemińska</span>
+      <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </footer>
+
+  <!-- jQuery (required by DataTables) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="data/variants_sample.js"></script>
+  <script src="js/explorer.js"></script>
+</body>
+</html>
