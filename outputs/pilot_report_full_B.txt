@@ -1,0 +1,13 @@
+Summary for John 1-21 Analysis (B) - N=12460 variants
+MW-U p: 0.00e+00
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.1186 [95% CI: 0.0827 - 0.1499]
+Cohen's d Null Permutation: Mean=-0.0001, SD=0.0033 (p=0.000e+00)
+ARI (Block Permutation Test): 0.0487 (p=0.000e+00)
+ARI Null Permutation: Mean=-0.0001, SD=0.0007
+Chi2 (Broad) p: 2.35e-35
+Cramér's V (Broad) Block Bootstrap CI: 0.0863 [95% CI: 0.0730 - 0.1008]
+Cramér's V (Broad) Null Permutation: Mean=0.0170, SD=0.0048 (p=0.000e+00)
+Chi2 (SubTypes) p: 8.67e-20
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0945 [95% CI: 0.0695 - 0.1222]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0167, SD=0.0074 (p=0.000e+00)
+Odd/Even Rank Correlation: Spearman rho = 0.8286 (p=0.0416)

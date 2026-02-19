@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scribal Fingerprints — Manuscript Change Profiles</title>
+  <meta name="description" content="Interactive research website presenting a computational analysis of textual variation across major Greek witnesses to the Gospel of John.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container" style="position:relative;">
+        <h1>The Typological Structure of Textual Variation</h1>
+        <p class="author">Agnieszka B. Ziemińska</p>
+        <p class="summary">
+          A computational analysis of aggregate change profiles across five major Greek witnesses
+          to the Gospel of John — <span class="greek-text">P66</span>, Codex Sinaiticus
+          (<span class="greek-text">&#x2135;</span>), Codex Alexandrinus (A), Codex Vaticanus (B),
+          and Codex Bezae (D) — demonstrating that each manuscript carries a statistically
+          distinct, reproducible scribal fingerprint.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Findings -->
+    <section class="container">
+      <h2 class="section-title">Key Findings</h2>
+      <p class="section-subtitle">Primary analysis: full Gospel of John, Baseline B (Codex Vaticanus)</p>
+
+      <div class="stat-grid" id="stat-cards">
+        <div class="stat-card">
+          <span class="stat-value" id="stat-n">12,460</span>
+          <span class="stat-label">Token-level variants</span>
+          <span class="stat-sublabel">Across 21 chapters</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-d">—</span>
+          <span class="stat-label">Cohen's <em>d</em></span>
+          <span class="stat-sublabel">Effect size (embedding space)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-ari">—</span>
+          <span class="stat-label">Adjusted Rand Index</span>
+          <span class="stat-sublabel">Clustering agreement</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-v">—</span>
+          <span class="stat-label">Cramér's <em>V</em></span>
+          <span class="stat-sublabel">Variant sub-type association</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-rho">—</span>
+          <span class="stat-label">Odd–Even ρ</span>
+          <span class="stat-sublabel">Split-half reproducibility</span>
+        </div>
+      </div>
+
+      <div class="callout">
+        All reported values are derived programmatically from the pipeline output files.
+        The signal persists across three independent baselines (B, A, and verse-matched)
+        and survives content ablation, confirming that scribal change profiles are not
+        artifacts of a single reference text.
+      </div>
+    </section>
+
+    <!-- Navigation cards -->
+    <section class="container">
+      <h2 class="section-title">Explore the Research</h2>
+      <div class="stat-grid">
+        <a href="methodology.html" class="stat-card" style="text-decoration:none;">
+          <span class="stat-value" style="font-size:1.25rem;">&#9881;</span>
+          <span class="stat-label">Methodology</span>
+          <span class="stat-sublabel">Pipeline, typology, and coverage</span>
+        </a>
+        <a href="results.html" class="stat-card" style="text-decoration:none;">
+          <span class="stat-value" style="font-size:1.25rem;">&#9783;</span>
+          <span class="stat-label">Results</span>
+          <span class="stat-sublabel">Interactive charts and statistics</span>
+        </a>
+        <a href="explorer.html" class="stat-card" style="text-decoration:none;">
+          <span class="stat-value" style="font-size:1.25rem;">&#128269;</span>
+          <span class="stat-label">Variant Explorer</span>
+          <span class="stat-sublabel">Browse individual variants</span>
+        </a>
+        <a href="about.html" class="stat-card" style="text-decoration:none;">
+          <span class="stat-value" style="font-size:1.25rem;">&#9432;</span>
+          <span class="stat-label">About</span>
+          <span class="stat-sublabel">Project context and citation</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Agnieszka B. Ziemińska</span>
+      <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="data/stats_summary.js"></script>
+  <script>
+    // Load stats from inline JS data
+    (function() {
+      const data = window.DATA_STATS;
+      if (!data) { console.error('Stats data not loaded'); return; }
+      const b = data.configs['Baseline B'];
+      if (!b) return;
+
+      const fmt = (v, dec) => typeof v === 'number' ? v.toFixed(dec) : '—';
+
+      document.getElementById('stat-d').textContent = fmt(b["Cohen's d"], 4);
+      document.getElementById('stat-ari').textContent = fmt(b['ARI'], 4);
+      document.getElementById('stat-v').textContent = fmt(b["Cramer's V Sub"], 4);
+      document.getElementById('stat-rho').textContent = fmt(b['Odd_Even_Split_Rho'], 4);
+    })();
+  </script>
+</body>
+</html>

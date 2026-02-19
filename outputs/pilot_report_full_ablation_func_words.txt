@@ -1,0 +1,9 @@
+Summary for John 1-21 Analysis (ablation_func_words) - N=1008 variants
+MW-U p: 7.66e-76
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0905 [95% CI: 0.0661 - 0.1267]
+ARI (Block Permutation Test): 0.0170 (p=0.000e+00)
+Chi2 (Broad) p: 8.26e-02
+Cramér's V (Broad) Block Bootstrap CI: 0.0880 [95% CI: 0.0605 - 0.1200]
+Chi2 (SubTypes) p: 3.07e-02
+Cramér's V (SubTypes) Block Bootstrap CI: 0.2200 [95% CI: 0.0969 - 0.3764]
+Odd/Even Rank Correlation: Spearman rho = 0.4286 (p=0.3965)

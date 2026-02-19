@@ -1,0 +1,9 @@
+Summary for John 1-21 Analysis (A) - N=10481 variants
+MW-U p: 0.00e+00
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.1271 [95% CI: 0.0938 - 0.1548]
+ARI (Block Permutation Test): 0.0464 (p=0.000e+00)
+Chi2 (Broad) p: 6.77e-41
+Cramér's V (Broad) Block Bootstrap CI: 0.0998 [95% CI: 0.0877 - 0.1119]
+Chi2 (SubTypes) p: 2.89e-16
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0948 [95% CI: 0.0746 - 0.1158]
+Odd/Even Rank Correlation: Spearman rho = 1.0000 (p=0.0000)

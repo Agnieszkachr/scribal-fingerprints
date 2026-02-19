@@ -1,0 +1,21 @@
+# Virtual environments
+.venv/
+
+# Python caches and bytecode
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Large binary artefacts (regenerate via pipeline)
+*.pkl
+*.npz
+
+# IDE / agent configs
+.gemini/
+.vscode/
+.idea/
+
+# Internal drafts (not for publication)
+dh_journal_prompt.md
