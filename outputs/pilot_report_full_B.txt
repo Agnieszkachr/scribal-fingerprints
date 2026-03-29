@@ -10,4 +10,5 @@ Cramér's V (Broad) Null Permutation: Mean=0.0170, SD=0.0048 (p=0.000e+00)
 Chi2 (SubTypes) p: 8.67e-20
 Cramér's V (SubTypes) Block Bootstrap CI: 0.0945 [95% CI: 0.0695 - 0.1222]
 Cramér's V (SubTypes) Null Permutation: Mean=0.0167, SD=0.0074 (p=0.000e+00)
-Odd/Even Rank Correlation: Spearman rho = 0.8286 (p=0.0416)
+Odd/Even Rank Correlation (full attested): Spearman rho = 0.8286 (p=0.0416)
+Odd/Even Rank Correlation (attested-loci filter, N_verses=536): Spearman rho = 0.9429 (p=0.0048)

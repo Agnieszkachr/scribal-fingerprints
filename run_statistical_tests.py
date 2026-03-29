@@ -259,45 +259,83 @@ def block_permutation_test_cramers_v(df, columns, n_permutations=200):
     p_val = np.sum(np.array(perm_vs) >= true_v) / n_permutations if perm_vs else 1.0
     return true_v, p_val, perm_vs
 
-def odd_even_split_replicability(df):
+def odd_even_split_replicability(df, common_verses_path=None):
+    """Compute split-half (odd/even chapter) Spearman rank correlation of
+    inter-manuscript centroid distances.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Full variant dataframe with 'change_vector', 'manuscript', 'chapter',
+        and 'verse' columns.
+    common_verses_path : str or None
+        Path to a plain-text file listing one verse ID per line (format
+        "J ch:v"). When supplied, the dataframe is restricted to these
+        *attested loci* before the split is applied, removing any coverage
+        artefacts caused by lacunae in individual manuscripts.
+        When None, the full dataframe is used (legacy behaviour).
+
+    Returns
+    -------
+    rho : float
+    p_val : float
+    n_verses_filtered : int   – attested-loci count (0 if no filter applied)
+    """
+    if common_verses_path and os.path.exists(common_verses_path):
+        with open(common_verses_path, encoding='utf-8') as fh:
+            common_verses = set(line.strip() for line in fh if line.strip())
+        df = df[df['verse'].isin(common_verses)]
+        n_filtered = len(common_verses)
+        logger.info(f"Split-half restricted to {len(df)} variants over "
+                    f"{n_filtered} attested loci.")
+    else:
+        n_filtered = 0
+
     manuscripts = df['manuscript'].unique()
     odd_df = df[df['chapter'] % 2 != 0]
     even_df = df[df['chapter'] % 2 == 0]
-    
+
     if len(odd_df) == 0 or len(even_df) == 0:
-        return 0.0, 1.0
-        
+        return 0.0, 1.0, n_filtered
+
     odd_centroids = {}
     even_centroids = {}
-    
+
     for ms in manuscripts:
         odd_ms = odd_df[odd_df['manuscript'] == ms]
         even_ms = even_df[even_df['manuscript'] == ms]
-        
-        if len(odd_ms) == 0 or len(even_ms) == 0: continue
-            
-        odd_centroids[ms] = np.mean(np.array(odd_ms['change_vector'].tolist()), axis=0)
-        even_centroids[ms] = np.mean(np.array(even_ms['change_vector'].tolist()), axis=0)
-        
-    common_ms = list(set(odd_centroids.keys()).intersection(set(even_centroids.keys())))
-    if len(common_ms) < 3: return 0.0, 1.0
-    
+
+        if len(odd_ms) == 0 or len(even_ms) == 0:
+            continue
+
+        odd_centroids[ms] = np.mean(
+            np.array(odd_ms['change_vector'].tolist()), axis=0)
+        even_centroids[ms] = np.mean(
+            np.array(even_ms['change_vector'].tolist()), axis=0)
+
+    common_ms = list(
+        set(odd_centroids.keys()).intersection(set(even_centroids.keys())))
+    if len(common_ms) < 3:
+        return 0.0, 1.0, n_filtered
+
     odd_dist = []
     even_dist = []
-    
+
     for i in range(len(common_ms)):
-        for j in range(i+1, len(common_ms)):
+        for j in range(i + 1, len(common_ms)):
             ms1, ms2 = common_ms[i], common_ms[j]
             d_o = cosine(odd_centroids[ms1], odd_centroids[ms2])
             d_e = cosine(even_centroids[ms1], even_centroids[ms2])
             if not np.isnan(d_o) and not np.isnan(d_e):
                 odd_dist.append(d_o)
                 even_dist.append(d_e)
-            
-    if len(odd_dist) < 3: return 0.0, 1.0
+
+    if len(odd_dist) < 3:
+        return 0.0, 1.0, n_filtered
     rho, p_val = stats.spearmanr(odd_dist, even_dist)
-    if np.isnan(rho): return 0.0, 1.0
-    return rho, p_val
+    if np.isnan(rho):
+        return 0.0, 1.0, n_filtered
+    return rho, p_val, n_filtered
 
 def run_tests(base_ms='B', ablation_type=None):
     set_reproducible_seeds(42)
@@ -351,7 +389,13 @@ def run_tests(base_ms='B', ablation_type=None):
     v_broad_true, v_broad_pval, v_broad_perm = block_permutation_test_cramers_v(df, ['sub_total', 'addition', 'omission'], n_permutations=200)
     v_sub_true, v_sub_pval, v_sub_perm = block_permutation_test_cramers_v(df, ['substitution_morphological', 'substitution_lexical', 'substitution_word_order'], n_permutations=200)
 
-    split_rho, split_p = odd_even_split_replicability(df)
+    # Unfiltered split-half (legacy — full attested text per MS)
+    split_rho, split_p, _ = odd_even_split_replicability(df)
+
+    # Filtered split-half restricted to common extant loci across all MSS
+    common_verses_path = "data/common_extant_verses.txt"
+    split_rho_filt, split_p_filt, n_common = odd_even_split_replicability(
+        df, common_verses_path=common_verses_path)
 
     stability_data = []
     for ms in manuscripts:
@@ -403,19 +447,31 @@ def run_tests(base_ms='B', ablation_type=None):
     report.append(f"Chi2 (SubTypes) p: {p_val_sub:.2e}")
     report.append(f"Cramér's V (SubTypes) Block Bootstrap CI: {v_sub:.4f} [95% CI: {v_sub_low:.4f} - {v_sub_high:.4f}]")
     report.append(f"Cramér's V (SubTypes) Null Permutation: Mean={np.mean(v_sub_perm):.4f}, SD={np.std(v_sub_perm):.4f} (p={v_sub_pval:.3e})")
-    report.append(f"Odd/Even Rank Correlation: Spearman rho = {split_rho:.4f} (p={split_p:.4f})")
+    report.append(f"Odd/Even Rank Correlation (full attested): Spearman rho = {split_rho:.4f} (p={split_p:.4f})")
+    report.append(f"Odd/Even Rank Correlation (attested-loci filter, N_verses={n_common}): "
+                  f"Spearman rho = {split_rho_filt:.4f} (p={split_p_filt:.4f})")
     
     with open(f"outputs/pilot_report_full_{suffix}.txt", "w") as f:
         f.write("\n".join(report))
     
     pd.DataFrame({
-        'Metric': ['ARI', 'Cohen\'s d', 'Cramer\'s V Broad', 'Cramer\'s V Sub', 'Odd_Even_Split_Rho'], 
-        'Value': [ari_val, d_mean, v_broad, v_sub, split_rho],
-        'CI_Low': [None, d_low, v_broad_low, v_sub_low, None],
-        'CI_High': [None, d_high, v_broad_high, v_sub_high, None],
-        'Null_Mean': [np.mean(ari_perm), np.mean(d_perm), np.mean(v_broad_perm), np.mean(v_sub_perm), None],
-        'Null_SD': [np.std(ari_perm), np.std(d_perm), np.std(v_broad_perm), np.std(v_sub_perm), None],
-        'Perm_P': [ari_pval, d_pval, v_broad_pval, v_sub_pval, None]
+        'Metric': [
+            'ARI', "Cohen's d", "Cramer's V Broad", "Cramer's V Sub",
+            'Odd_Even_Split_Rho_Full', 'Odd_Even_Split_Rho_AttestLoci'
+        ],
+        'Value': [ari_val, d_mean, v_broad, v_sub, split_rho, split_rho_filt],
+        'CI_Low': [None, d_low, v_broad_low, v_sub_low, None, None],
+        'CI_High': [None, d_high, v_broad_high, v_sub_high, None, None],
+        'Null_Mean': [
+            np.mean(ari_perm), np.mean(d_perm),
+            np.mean(v_broad_perm), np.mean(v_sub_perm), None, None
+        ],
+        'Null_SD': [
+            np.std(ari_perm), np.std(d_perm),
+            np.std(v_broad_perm), np.std(v_sub_perm), None, None
+        ],
+        'Perm_P': [ari_pval, d_pval, v_broad_pval, v_sub_pval,
+                   split_p, split_p_filt]
     }).to_csv(f"outputs/pilot_results_full_{suffix}.csv", index=False)
     
     logger.info("\n" + "\n".join(report))
