@@ -3,7 +3,7 @@
 [Interactive Website](https://agnieszkachr.github.io/scribal-fingerprints/) · [GitHub Repository](https://github.com/Agnieszkachr/scribal-fingerprints)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19153695.svg)](https://doi.org/10.5281/zenodo.19153695)
 
-This repository contains the codebase, extraction pipelines, and analytical scripts supporting the approach to analyzing New Testament variants.
+This repository contains the codebase, extraction pipelines, and analytical scripts supporting the approach to analysing New Testament variants.
 The project investigates whether ancient New Testament manuscripts possess statistically detectable stylistic signatures (manuscript profiles) using a combination of classical stylometric typology and contextual Deep Learning embeddings (`Ancient-Greek-BERT`). 
 
 ## Important Methodological Note
@@ -82,9 +82,10 @@ Per-chapter cosine distance from each manuscript's global centroid. Lower values
 ├── profile_scribes.py                  # Generates BERT embeddings & change vectors from variant CSVs
 ├── create_visualizations.py            # Generates all figures (PCA, dendrograms, heatmaps, LLN curves)
 ├── create_verse_matched_dataset.py     # Generates the verse-matched ablation subset
-├── recalc_odd_even.py                  # Odd/Even split replicability (Mantel/Spearman ρ)
+├── recalc_odd_even.py                  # Legacy utility: patches existing output files with split-half rho (superseded by run_statistical_tests.py)
 ├── run_ablation_study.py               # Function-word-only and content-masked ablation
-├── data/                               # Extracted variant CSVs and raw XML
+├── data/                               # Extracted variant CSVs, raw XML, and auxiliary data files
+│   └── common_extant_verses.txt        # 536 verses attested in all five manuscripts (used by attested-loci split-half filter)
 └── outputs/                            # Generated figures, reports, embeddings
 ```
 
