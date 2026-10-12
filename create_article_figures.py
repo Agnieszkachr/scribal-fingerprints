@@ -20,8 +20,8 @@ CONDITIONS = [
     ("Full context", "{base}"),
     ("Function words only", "ablation_func_words"),
     ("Content masked", "ablation_masked"),
-    ("Random masked (control)", "ablation_random_masked"),
 ]
+RANDOM_DRAWS = ["ablation_random_masked"] + [f"ablation_random_masked_s{i}" for i in range(1, 5)]
 
 
 def _metric(path, name):
@@ -37,21 +37,33 @@ def feature_isolation(base_ms):
         n = int(open(f"outputs/pilot_report_full_{suffix.format(base=base_ms)}.txt",
                      encoding="utf-8").readline().split("N=")[1].split()[0])
         rows.append(dict(label=f"{label}\n(N = {n:,})", d=m["Value"], lo=m["CI_Low"], hi=m["CI_High"],
-                         null=m["Null_Mean"], p=m["Perm_P"]))
+                         null=m["Null_Mean"], p=m["Perm_P"], ptext=f"p = {m['Perm_P']:.2f}"))
+    draws = [_metric(f"outputs/pilot_results_full_{s}.csv", "Cohen's d") for s in RANDOM_DRAWS]
+    n = int(open(f"outputs/pilot_report_full_{RANDOM_DRAWS[0]}.txt", encoding="utf-8").readline().split("N=")[1].split()[0])
+    sig = sum(dr["Perm_P"] <= 0.05 for dr in draws)
+    rows.append(dict(label=f"Random masked (control)\n(N = {n:,}, mean of {len(draws)} draws)",
+                     d=sum(dr["Value"] for dr in draws) / len(draws),
+                     lo=sum(dr["CI_Low"] for dr in draws) / len(draws),
+                     hi=sum(dr["CI_High"] for dr in draws) / len(draws),
+                     null=sum(dr["Null_Mean"] for dr in draws) / len(draws), p=None,
+                     ptext=f"p <= 0.05 in {sig}/{len(draws)} draws",
+                     draws=[dr["Value"] for dr in draws]))
     t = pd.DataFrame(rows)[::-1]
-    fig, ax = plt.subplots(figsize=(7.5, 3.8))
+    fig, ax = plt.subplots(figsize=(8.2, 3.9))
     y = range(len(t))
     ax.hlines(y, t["lo"], t["hi"], color="#444", lw=1.6)
     ax.plot(t["d"], y, "o", color="#111", ms=6, zorder=3, label="Cohen's d (all N)")
     ax.plot(t["null"], y, "|", color="#999", ms=14, mew=1.6, zorder=2, label="permutation null mean")
     ax.axvline(0, color="#bbb", lw=0.8)
     for yi, (_, r) in zip(y, t.iterrows()):
-        ax.text(max(t["hi"]) + 0.003, yi, f"d = {r['d']:.3f}   p = {r['p']:.2f}", va="center", fontsize=9)
+        ax.text(max(t["hi"]) + 0.003, yi, f"d = {r['d']:.3f}   {r['ptext']}", va="center", fontsize=9)
+        if isinstance(r.get("draws"), list):
+            ax.plot(r["draws"], [yi] * len(r["draws"]), "o", color="#999", ms=3.5, zorder=2)
     ax.set_yticks(list(y))
     ax.set_yticklabels(t["label"])
     ax.set_xlabel("Cohen's d, inter- vs intra-manuscript cosine distance (95 % block-bootstrap CI)")
     ax.set_xlim(left=min(-0.01, t["lo"].min() - 0.005), right=max(t["hi"]) + 0.03)
-    ax.legend(loc="upper right", fontsize=9, frameon=False, bbox_to_anchor=(1.0, 0.72))
+    ax.legend(loc="lower right", fontsize=9, frameon=False, bbox_to_anchor=(1.0, 0.12))
     ax.spines[["top", "right"]].set_visible(False)
     ax.set_title(f"Feature isolation (baseline {base_ms})", fontsize=11)
     fig.tight_layout()

@@ -1,0 +1,29 @@
+Summary for John 1-21 Analysis (ablation_random_masked_s1) - N=4365 variants
+MW-U p: 5.52e-02
+Cohen's d (Inter-Intra), all N=4365: 0.0022
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0031 [95% CI: -0.0036 - 0.0115]
+Cohen's d Null Permutation: Mean=0.0002, SD=0.0008 (p=9.901e-03)
+Cohen's d (verse-level aggregation, N_units=2234): 0.0034
+ARI (Block Permutation Test): -0.0012 (p=9.055e-01)
+ARI Null Permutation: Mean=0.0000, SD=0.0009
+Chi2 (Broad) p: 1.54e-09
+Cramér's V (Broad) Block Bootstrap CI: 0.0802 [95% CI: 0.0648 - 0.0979]
+Cramér's V (Broad) Null Permutation: Mean=0.0253, SD=0.0072 (p=4.975e-03)
+Chi2 (SubTypes) p: 9.89e-06
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0879 [95% CI: 0.0670 - 0.1117]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0352, SD=0.0098 (p=4.975e-03)
+Odd/Even Rank Correlation (full attested): Spearman rho = 0.4286 (p=0.3965)
+Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = -0.6000 (p=0.2080)
+Split-half centroids: same-witness odd/even distance = 0.9075, cross-witness = 0.9793, 1/4 witnesses nearest to their own other half
+Split-half permutation (labels within chapters): gap = 0.0718, null -0.0012 +/- 0.0520, p = 0.0818; nearest-self p = 0.6447
+Cohen's d within substitution_morphological (n=1000): 0.0030
+Cohen's d within substitution_lexical (n=562): -0.0004
+Cohen's d within substitution_word_order (n=338): 0.0114
+Cohen's d within addition (n=1000): 0.0023
+Cohen's d within omission (n=924): 0.0008
+Cohen's d pair A-D: 0.0002
+Cohen's d pair A-P66: 0.0075
+Cohen's d pair A-aleph: 0.0088
+Cohen's d pair D-P66: -0.0026
+Cohen's d pair D-aleph: 0.0014
+Cohen's d pair P66-aleph: 0.0014
