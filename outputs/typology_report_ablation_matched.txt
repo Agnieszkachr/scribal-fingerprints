@@ -1,7 +1,7 @@
-Variant-type tests (ablation_matched) - N=2994 variants
-Chi2 (Broad) p: 2.89e-09
-Cramér's V (Broad) Block Bootstrap CI: 0.0972 [95% CI: 0.0760 - 0.1229]
-Cramér's V (Broad) Null Permutation: Mean=0.0302, SD=0.0095 (p=4.975e-03)
-Chi2 (SubTypes) p: 2.63e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0929 [95% CI: 0.0627 - 0.1647]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0424, SD=0.0124 (p=1.493e-02)
+Variant-type tests (ablation_matched) - N=2909 variants
+Chi2 (Broad) p: 4.50e-06
+Cramér's V (Broad) Block Bootstrap CI: 0.0836 [95% CI: 0.0634 - 0.1104]
+Cramér's V (Broad) Null Permutation: Mean=0.0313, SD=0.0093 (p=4.975e-03)
+Chi2 (SubTypes) p: 1.30e-03
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0893 [95% CI: 0.0624 - 0.1115]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0405, SD=0.0117 (p=4.975e-03)

@@ -2,247 +2,247 @@ window.DATA_STABILITY = {
   "A": [
     {
       "chapter": 1,
-      "distance": 0.664394
+      "distance": 0.656713
     },
     {
       "chapter": 2,
-      "distance": 0.827373
+      "distance": 0.827795
     },
     {
       "chapter": 3,
-      "distance": 0.722611
+      "distance": 0.712564
     },
     {
       "chapter": 4,
-      "distance": 0.790549
+      "distance": 0.774153
     },
     {
       "chapter": 5,
-      "distance": 0.720667
+      "distance": 0.786166
     },
     {
       "chapter": 6,
-      "distance": 0.643121
+      "distance": 0.658349
     },
     {
       "chapter": 8,
-      "distance": 0.843721
+      "distance": 0.841829
     },
     {
       "chapter": 9,
-      "distance": 0.626619
+      "distance": 0.61956
     },
     {
       "chapter": 10,
-      "distance": 0.508083
+      "distance": 0.531988
     },
     {
       "chapter": 11,
-      "distance": 0.776746
+      "distance": 0.776953
     },
     {
       "chapter": 12,
-      "distance": 0.617266
+      "distance": 0.612554
     },
     {
       "chapter": 13,
-      "distance": 0.658547
+      "distance": 0.65723
     },
     {
       "chapter": 14,
-      "distance": 0.797606
+      "distance": 0.795708
     },
     {
       "chapter": 15,
-      "distance": 0.837284
+      "distance": 0.839744
     },
     {
       "chapter": 16,
-      "distance": 0.635639
+      "distance": 0.630243
     },
     {
       "chapter": 17,
-      "distance": 0.671184
+      "distance": 0.672824
     },
     {
       "chapter": 18,
-      "distance": 0.592245
+      "distance": 0.595039
     },
     {
       "chapter": 19,
-      "distance": 0.676238
+      "distance": 0.678966
     },
     {
       "chapter": 20,
-      "distance": 0.585391
+      "distance": 0.606784
     },
     {
       "chapter": 21,
-      "distance": 0.709677
+      "distance": 0.707992
     }
   ],
   "D": [
     {
       "chapter": 1,
-      "distance": 0.861671
+      "distance": 0.876841
     },
     {
       "chapter": 3,
-      "distance": 0.781674
+      "distance": 0.771256
     },
     {
       "chapter": 4,
-      "distance": 0.900509
+      "distance": 0.897604
     },
     {
       "chapter": 5,
-      "distance": 0.722217
+      "distance": 0.729274
     },
     {
       "chapter": 6,
-      "distance": 0.598937
+      "distance": 0.593623
     },
     {
       "chapter": 7,
-      "distance": 0.616057
+      "distance": 0.62171
     },
     {
       "chapter": 8,
-      "distance": 0.548346
+      "distance": 0.546426
     },
     {
       "chapter": 9,
-      "distance": 0.723105
+      "distance": 0.718862
     },
     {
       "chapter": 10,
-      "distance": 0.613557
+      "distance": 0.614115
     },
     {
       "chapter": 11,
-      "distance": 0.606923
+      "distance": 0.60343
     },
     {
       "chapter": 12,
-      "distance": 0.67016
+      "distance": 0.668124
     },
     {
       "chapter": 13,
-      "distance": 0.573901
+      "distance": 0.570382
     },
     {
       "chapter": 14,
-      "distance": 0.605292
+      "distance": 0.593768
     },
     {
       "chapter": 15,
-      "distance": 0.5446
+      "distance": 0.545019
     },
     {
       "chapter": 16,
-      "distance": 0.604173
+      "distance": 0.604309
     },
     {
       "chapter": 17,
-      "distance": 0.761946
+      "distance": 0.767326
     },
     {
       "chapter": 18,
-      "distance": 0.649087
+      "distance": 0.642679
     },
     {
       "chapter": 20,
-      "distance": 0.981918
+      "distance": 1.004765
     },
     {
       "chapter": 21,
-      "distance": 0.75531
+      "distance": 0.75867
     }
   ],
   "P66": [
     {
       "chapter": 1,
-      "distance": 1.009224
+      "distance": 0.95651
     },
     {
       "chapter": 2,
-      "distance": 0.701059
+      "distance": 0.712642
     },
     {
       "chapter": 3,
-      "distance": 0.768083
+      "distance": 0.773637
     },
     {
       "chapter": 4,
-      "distance": 0.878955
+      "distance": 0.834655
     },
     {
       "chapter": 5,
-      "distance": 0.657568
+      "distance": 0.563351
     },
     {
       "chapter": 6,
-      "distance": 0.677465
+      "distance": 0.557399
     },
     {
       "chapter": 7,
-      "distance": 0.517731
+      "distance": 0.472273
     },
     {
       "chapter": 8,
-      "distance": 0.577346
+      "distance": 0.522039
     },
     {
       "chapter": 9,
-      "distance": 0.664199
+      "distance": 0.547802
     },
     {
       "chapter": 10,
-      "distance": 0.711995
+      "distance": 0.61217
     },
     {
       "chapter": 11,
-      "distance": 0.737972
+      "distance": 0.723598
     },
     {
       "chapter": 12,
-      "distance": 0.594383
+      "distance": 0.551733
     },
     {
       "chapter": 13,
-      "distance": 0.478529
+      "distance": 0.42461
     },
     {
       "chapter": 14,
-      "distance": 0.425964
+      "distance": 0.408367
     },
     {
       "chapter": 15,
-      "distance": 0.383154
+      "distance": 0.457932
     },
     {
       "chapter": 16,
-      "distance": 0.279996
+      "distance": 0.730044
     },
     {
       "chapter": 17,
-      "distance": 0.495826
+      "distance": 0.694873
     },
     {
       "chapter": 18,
-      "distance": 0.655337
+      "distance": 0.745319
     },
     {
       "chapter": 19,
-      "distance": 0.599205
+      "distance": 0.661896
     },
     {
       "chapter": 20,
-      "distance": 0.427669
+      "distance": 0.920828
     },
     {
       "chapter": 21,
-      "distance": 0.706986
+      "distance": 0.829229
     }
   ],
   "aleph": [

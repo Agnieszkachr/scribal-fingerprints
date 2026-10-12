@@ -1,29 +1,29 @@
-Summary for John 1-21 Analysis (ablation_masked) - N=4460 variants
-MW-U p: 5.13e-02
-Cohen's d (Inter-Intra), all N=4460: 0.0085
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0089 [95% CI: -0.0047 - 0.0318]
-Cohen's d Null Permutation: Mean=0.0003, SD=0.0008 (p=9.901e-03)
-Cohen's d (verse-level aggregation, N_units=2270): 0.0085
-ARI (Block Permutation Test): -0.0027 (p=9.801e-01)
-ARI Null Permutation: Mean=-0.0004, SD=0.0013
-Chi2 (Broad) p: 8.04e-13
-Cramér's V (Broad) Block Bootstrap CI: 0.0909 [95% CI: 0.0751 - 0.1087]
-Cramér's V (Broad) Null Permutation: Mean=0.0250, SD=0.0065 (p=4.975e-03)
-Chi2 (SubTypes) p: 4.82e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0747 [95% CI: 0.0500 - 0.1176]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0348, SD=0.0095 (p=9.950e-03)
+Summary for John 1-21 Analysis (ablation_masked) - N=4365 variants
+MW-U p: 5.93e-04
+Cohen's d (Inter-Intra), all N=4365: 0.0058
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0059 [95% CI: -0.0031 - 0.0198]
+Cohen's d Null Permutation: Mean=0.0004, SD=0.0008 (p=9.901e-03)
+Cohen's d (verse-level aggregation, N_units=2234): 0.0059
+ARI (Block Permutation Test): -0.0014 (p=8.955e-01)
+ARI Null Permutation: Mean=0.0003, SD=0.0016
+Chi2 (Broad) p: 1.54e-09
+Cramér's V (Broad) Block Bootstrap CI: 0.0802 [95% CI: 0.0648 - 0.0979]
+Cramér's V (Broad) Null Permutation: Mean=0.0253, SD=0.0072 (p=4.975e-03)
+Chi2 (SubTypes) p: 9.89e-06
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0879 [95% CI: 0.0670 - 0.1117]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0352, SD=0.0098 (p=4.975e-03)
 Odd/Even Rank Correlation (full attested): Spearman rho = 0.7714 (p=0.0724)
-Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.8857 (p=0.0188)
-Split-half centroids: same-witness odd/even distance = 0.6332, cross-witness = 0.9674, 3/4 witnesses nearest to their own other half
-Split-half permutation (labels within chapters): gap = 0.3342, null 0.0022 +/- 0.0467, p = 0.0020; nearest-self p = 0.0399
+Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.8286 (p=0.0416)
+Split-half centroids: same-witness odd/even distance = 0.6757, cross-witness = 0.9118, 3/4 witnesses nearest to their own other half
+Split-half permutation (labels within chapters): gap = 0.2361, null -0.0015 +/- 0.0487, p = 0.0020; nearest-self p = 0.0419
 Cohen's d within substitution_morphological (n=1000): 0.0162
-Cohen's d within substitution_lexical (n=656): 0.0610
+Cohen's d within substitution_lexical (n=562): -0.0097
 Cohen's d within substitution_word_order (n=338): 0.0008
-Cohen's d within addition (n=1000): -0.0095
+Cohen's d within addition (n=1000): -0.0098
 Cohen's d within omission (n=924): -0.0076
-Cohen's d pair A-D: 0.0050
-Cohen's d pair A-P66: 0.0195
-Cohen's d pair A-aleph: 0.0106
-Cohen's d pair D-P66: 0.0063
-Cohen's d pair D-aleph: 0.0061
-Cohen's d pair P66-aleph: 0.0061
+Cohen's d pair A-D: 0.0117
+Cohen's d pair A-P66: 0.0122
+Cohen's d pair A-aleph: 0.0119
+Cohen's d pair D-P66: 0.0037
+Cohen's d pair D-aleph: 0.0047
+Cohen's d pair P66-aleph: 0.0049
