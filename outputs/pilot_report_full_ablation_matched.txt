@@ -2,19 +2,20 @@ Summary for John 1-21 Analysis (ablation_matched) - N=2994 variants
 MW-U p: 1.63e-16
 Cohen's d (Inter-Intra), all N=2994: 0.0185
 Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0192 [95% CI: 0.0057 - 0.0383]
-Cohen's d Null Permutation: observed (sample of 1000)=0.0187, Mean=-0.0004, SD=0.0031 (p=9.901e-03)
+Cohen's d Null Permutation: Mean=-0.0000, SD=0.0010 (p=9.901e-03)
 Cohen's d (verse-level aggregation, N_units=1530): 0.0179
-ARI (Block Permutation Test): 0.0036 (p=1.493e-02)
-ARI Null Permutation: Mean=0.0002, SD=0.0014
+ARI (Block Permutation Test): 0.0036 (p=3.980e-02)
+ARI Null Permutation: Mean=0.0004, SD=0.0015
 Chi2 (Broad) p: 2.89e-09
-Cramér's V (Broad) Block Bootstrap CI: 0.0981 [95% CI: 0.0757 - 0.1245]
-Cramér's V (Broad) Null Permutation: Mean=0.0317, SD=0.0093 (p=4.975e-03)
+Cramér's V (Broad) Block Bootstrap CI: 0.0972 [95% CI: 0.0760 - 0.1229]
+Cramér's V (Broad) Null Permutation: Mean=0.0302, SD=0.0095 (p=4.975e-03)
 Chi2 (SubTypes) p: 2.63e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0895 [95% CI: 0.0625 - 0.1433]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0394, SD=0.0121 (p=4.975e-03)
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0929 [95% CI: 0.0627 - 0.1647]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0424, SD=0.0124 (p=1.493e-02)
 Odd/Even Rank Correlation (full attested): Spearman rho = 0.3714 (p=0.4685)
 Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.3714 (p=0.4685)
 Split-half centroids: same-witness odd/even distance = 0.6058, cross-witness = 0.8799, 3/4 witnesses nearest to their own other half
+Split-half permutation (labels within chapters): gap = 0.2740, null 0.0010 +/- 0.0270, p = 0.0020; nearest-self p = 0.0459
 Cohen's d within substitution_morphological (n=1000): 0.0146
 Cohen's d within substitution_lexical (n=462): 0.0968
 Cohen's d within substitution_word_order (n=201): 0.0063

@@ -243,11 +243,25 @@ def block_bootstrap_cohens_d(df, n_bootstraps=100, max_n=1000):
     return np.mean(d_values), np.percentile(d_values, 2.5), np.percentile(d_values, 97.5), d_values
 
 
-def block_permutation_test_cohens_d(df, n_permutations=100, max_n=1000):
-    subset = df.sample(n=min(len(df), max_n), replace=False, random_state=42)
+def block_permutation_test_cohens_d(df, n_permutations=100, max_n=4500):
+    """Block permutation null for Cohen's d on the same observations as the
+    point estimate (all N, or the same seeded sample of ``max_n`` when the
+    corpus is larger). The distance matrix is computed once; only the labels
+    are permuted within chapters."""
+    subset = df.sample(n=max_n, replace=False, random_state=42) if len(df) > max_n else df
     vecs = np.array(subset['change_vector'].tolist())
-    true_d = inter_intra_d(vecs, subset['manuscript'].to_numpy())
-    perm_ds = [inter_intra_d(vecs, shuffle_labels_within_chapters(subset)) for _ in range(n_permutations)]
+    labels = subset['manuscript'].to_numpy()
+    dists = pdist(vecs, metric='cosine')
+    iu = np.triu_indices(len(labels), k=1)
+    valid = ~np.isnan(dists)
+    dists, i0, i1 = dists[valid], iu[0][valid], iu[1][valid]
+
+    def d_for(lbl):
+        same = lbl[i0] == lbl[i1]
+        return calc_cohens_d(dists[~same], dists[same])
+
+    true_d = d_for(labels)
+    perm_ds = [d_for(shuffle_labels_within_chapters(subset)) for _ in range(n_permutations)]
     return true_d, perm_p(perm_ds, true_d), perm_ds
 
 
@@ -340,7 +354,7 @@ def odd_even_split_replicability(df, common_verses_path=None):
     return (0.0, 1.0, n_filtered) if np.isnan(rho) else (float(rho), float(p_val), n_filtered)
 
 
-def split_half_centroid_matrix(df, suffix, common_verses_path=None):
+def split_half_centroid_matrix(df, suffix, common_verses_path=None, n_permutations=500):
     """Cosine-distance matrix between all odd-half and even-half centroids
     (2m x 2m) and a same-witness vs cross-witness summary.  Also writes the
     six paired odd/even inter-manuscript distances."""
@@ -362,8 +376,28 @@ def split_half_centroid_matrix(df, suffix, common_verses_path=None):
                            'even_distance': cosine(even[a], even[b])}
                           for a, b in combinations(mss, 2)])
     pairs.to_csv(f"outputs/split_half_pairs_{suffix}.csv", index=False, float_format='%.6f')
+    # Block permutation null for the geometry: witness labels shuffled within
+    # chapters, half-centroids recomputed, gap (cross - same) and nearest-self
+    # count recorded.
+    vecs_all = np.array(df['change_vector'].tolist())
+    odd_mask = (df['chapter'].to_numpy() % 2) != 0
+    labels_all = df['manuscript'].to_numpy()
+
+    def geometry(lbl):
+        o = np.array([vecs_all[(lbl == ms) & odd_mask].mean(axis=0) for ms in mss])
+        e = np.array([vecs_all[(lbl == ms) & ~odd_mask].mean(axis=0) for ms in mss])
+        c = cdist(o, e, metric='cosine')
+        return (c[~np.eye(len(mss), dtype=bool)].mean() - np.diag(c).mean(),
+                int(np.sum(np.argmin(c, axis=1) == np.arange(len(mss)))))
+
+    gap = float(other.mean() - same.mean())
+    null = [geometry(shuffle_labels_within_chapters(df)) for _ in range(n_permutations)]
+    null_gap = np.array([g for g, _ in null])
+    null_near = np.array([k for _, k in null])
     return dict(same_mean=float(same.mean()), cross_mean=float(other.mean()),
-                nearest_self=nearest, n=len(mss))
+                nearest_self=nearest, n=len(mss), gap=gap,
+                gap_null_mean=float(null_gap.mean()), gap_null_sd=float(null_gap.std()),
+                gap_p=perm_p(null_gap, gap), nearest_p=perm_p(null_near, nearest))
 
 
 def chapter_stability(df, profiles, ch_profiles, suffix):
@@ -447,8 +481,7 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
               f"MW-U p: {p_value_mw:.2e}",
               f"Cohen's d (Inter-Intra), all N={n_point}: {d_point:.4f}",
               f"Cohen's d (Inter-Intra) Block Bootstrap CI: {d_mean:.4f} [95% CI: {d_low:.4f} - {d_high:.4f}]",
-              f"Cohen's d Null Permutation: observed (sample of {min(len(df), 1000)})={d_true:.4f}, "
-              f"Mean={np.mean(d_perm):.4f}, SD={np.std(d_perm):.4f} (p={d_pval:.3e})",
+              f"Cohen's d Null Permutation: Mean={np.mean(d_perm):.4f}, SD={np.std(d_perm):.4f} (p={d_pval:.3e})",
               f"Cohen's d (verse-level aggregation, N_units={n_verse_units}): {d_verse:.4f}",
               f"ARI (Block Permutation Test): {ari_val:.4f} (p={ari_pval:.3e})",
               f"ARI Null Permutation: Mean={np.mean(ari_perm):.4f}, SD={np.std(ari_perm):.4f}"]
@@ -460,6 +493,9 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
         report.append(f"Split-half centroids: same-witness odd/even distance = {half_geom['same_mean']:.4f}, "
                       f"cross-witness = {half_geom['cross_mean']:.4f}, "
                       f"{half_geom['nearest_self']}/{half_geom['n']} witnesses nearest to their own other half")
+        report.append(f"Split-half permutation (labels within chapters): gap = {half_geom['gap']:.4f}, "
+                      f"null {half_geom['gap_null_mean']:.4f} +/- {half_geom['gap_null_sd']:.4f}, "
+                      f"p = {half_geom['gap_p']:.4f}; nearest-self p = {half_geom['nearest_p']:.4f}")
     for vtype, (d_val, n) in d_by_type.items():
         report.append(f"Cohen's d within {vtype} (n={n}): {d_val:.4f}")
     for pair, d_val in d_pairs.items():
@@ -471,7 +507,6 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
     metrics = [('ARI', ari_val, None, None, np.mean(ari_perm), np.std(ari_perm), ari_pval),
                ("Cohen's d", d_point, d_low, d_high, np.mean(d_perm), np.std(d_perm), d_pval),
                ("Cohen's d Bootstrap Mean", d_mean, d_low, d_high, None, None, None),
-               ("Cohen's d Permutation Sample", d_true, None, None, np.mean(d_perm), np.std(d_perm), d_pval),
                ("Cohen's d Verse", d_verse, None, None, None, None, None),
                ("Cramer's V Broad", typology['Broad']['v'], typology['Broad']['v_low'], typology['Broad']['v_high'],
                 np.mean(typology['Broad']['v_perm']), np.std(typology['Broad']['v_perm']), typology['Broad']['v_pval']),
@@ -479,6 +514,11 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
                 np.mean(typology['SubTypes']['v_perm']), np.std(typology['SubTypes']['v_perm']), typology['SubTypes']['v_pval']),
                ('Odd_Even_Split_Rho_Full', split_rho, None, None, None, None, split_p),
                ('Odd_Even_Split_Rho_AttestLoci', split_rho_filt, None, None, None, None, split_p_filt)]
+    if half_geom:
+        metrics += [("Split_Half_Gap", half_geom['gap'], None, None, half_geom['gap_null_mean'],
+                     half_geom['gap_null_sd'], half_geom['gap_p']),
+                    ("Split_Half_Nearest_Self", half_geom['nearest_self'], None, None, None, None,
+                     half_geom['nearest_p'])]
     metrics += [(f"Cohen's d {vtype}", d_val, None, None, None, None, None) for vtype, (d_val, _) in d_by_type.items()]
     metrics += [(f"Cohen's d {pair}", d_val, None, None, None, None, None) for pair, d_val in d_pairs.items()]
     pd.DataFrame(metrics, columns=['Metric', 'Value', 'CI_Low', 'CI_High', 'Null_Mean', 'Null_SD', 'Perm_P']

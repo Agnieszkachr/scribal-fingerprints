@@ -1,7 +1,7 @@
 Variant-type tests (ablation_func_words) - N=1779 variants
 Chi2 (Broad) p: 9.73e-07
-Cramér's V (Broad) Block Bootstrap CI: 0.1092 [95% CI: 0.0837 - 0.1335]
-Cramér's V (Broad) Null Permutation: Mean=0.0410, SD=0.0113 (p=4.975e-03)
+Cramér's V (Broad) Block Bootstrap CI: 0.1096 [95% CI: 0.0859 - 0.1397]
+Cramér's V (Broad) Null Permutation: Mean=0.0399, SD=0.0121 (p=4.975e-03)
 Chi2 (SubTypes) p: 4.75e-01
-Cramér's V (SubTypes) Block Bootstrap CI: 0.1044 [95% CI: 0.0566 - 0.1552]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0838, SD=0.0224 (p=5.423e-01)
+Cramér's V (SubTypes) Block Bootstrap CI: 0.1040 [95% CI: 0.0544 - 0.1560]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0858, SD=0.0270 (p=5.721e-01)

@@ -1,7 +1,7 @@
 Variant-type tests (A) - N=4199 variants
 Chi2 (Broad) p: 4.85e-08
-Cramér's V (Broad) Block Bootstrap CI: 0.0764 [95% CI: 0.0591 - 0.0958]
-Cramér's V (Broad) Null Permutation: Mean=0.0266, SD=0.0074 (p=4.975e-03)
+Cramér's V (Broad) Block Bootstrap CI: 0.0765 [95% CI: 0.0592 - 0.1000]
+Cramér's V (Broad) Null Permutation: Mean=0.0276, SD=0.0077 (p=4.975e-03)
 Chi2 (SubTypes) p: 6.46e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0722 [95% CI: 0.0473 - 0.1207]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0365, SD=0.0102 (p=9.950e-03)
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0735 [95% CI: 0.0454 - 0.1142]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0360, SD=0.0115 (p=1.493e-02)
