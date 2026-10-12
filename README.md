@@ -90,7 +90,7 @@ this repository's data. The embedding-based output files in `outputs/`
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
-│   ├── variants_ablation_{matched,func_words,masked,random_masked}.csv
+│   ├── variants_ablation_{matched,func_words,masked,random_masked[_s1..s4]}.csv
 │   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
 ├── outputs/                            # Type counts, coverage report, statistical reports, figures
 └── docs/                               # Static companion website (GitHub Pages)
@@ -169,8 +169,11 @@ Three derived datasets probe what the embedding separation rests on:
   positions remain visible to the model;
 - **random masked (control)** – every variant, with the same *number* of words per field
   replaced by `CONTENT` as under content masking, but at positions drawn at random
-  (seeded per variant) irrespective of word class. The difference between the two masked
-  conditions isolates the effect of *which* words are hidden from the effect of how many.
+  (seeded by verse, witness and block) irrespective of word class. Because the control is
+  a random draw, five draws are written (`random_masked` with seed 42 and
+  `random_masked_s1`–`s4`) and its effect is reported as the mean over draws. The difference
+  between the masked conditions isolates the effect of *which* words are hidden from the
+  effect of how many.
 
 ### Statistical framework (`run_statistical_tests.py`)
 
@@ -214,6 +217,7 @@ python profile_scribes.py --ablation matched
 python profile_scribes.py --ablation func_words
 python profile_scribes.py --ablation masked
 python profile_scribes.py --ablation random_masked
+python profile_scribes.py --ablation random_masked_s1    # … s2, s3, s4
 python profile_scribes.py --baseline aleph
 
 # 5. Statistics (add --typology-only to run the variant-type tests without embeddings)

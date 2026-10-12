@@ -45,6 +45,10 @@ def mask_text(text):
     return ' '.join(w if is_function_word(w) else 'CONTENT' for w in str(text).split())
 
 
+RANDOM_MASK_DRAWS = [("random_masked", 42), ("random_masked_s1", 1), ("random_masked_s2", 2),
+                     ("random_masked_s3", 3), ("random_masked_s4", 4)]
+
+
 def mask_random(text, n_mask, rng):
     if pd.isna(text) or text in ('[ADD]', '[OMIT]'):
         return text
@@ -99,11 +103,14 @@ def main(base_ms='B'):
     print(f"Content-masked dataset: {len(masked_df)} variants "
           f"({(masked_df['base_context_10w'] == masked_df['ms_context_10w']).sum()} with identical masked contexts)")
 
-    random_df = apply_random_masking(df)
-    random_df.to_csv("data/variants_ablation_random_masked.csv", index=False)
-    write_type_counts(random_df, 'ablation_random_masked')
-    print(f"Random-masked control dataset: {len(random_df)} variants "
-          f"({(random_df['base_context_10w'] == random_df['ms_context_10w']).sum()} with identical masked contexts)")
+    # The control is a random draw; five draws (seed 42 and seeds 1-4) are
+    # written so that its effect can be reported as a mean over draws.
+    for name, seed in RANDOM_MASK_DRAWS:
+        random_df = apply_random_masking(df, seed=seed)
+        random_df.to_csv(f"data/variants_ablation_{name}.csv", index=False)
+        write_type_counts(random_df, f'ablation_{name}')
+        print(f"Random-masked control ({name}, seed {seed}): {len(random_df)} variants "
+              f"({(random_df['base_context_10w'] == random_df['ms_context_10w']).sum()} with identical masked contexts)")
 
 
 if __name__ == "__main__":
