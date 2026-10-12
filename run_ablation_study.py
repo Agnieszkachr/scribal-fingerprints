@@ -1,97 +1,102 @@
-import pandas as pd
-import numpy as np
+"""Create the two content-ablation datasets from the baseline-B variants.
+
+* ``func_words``   – only variants in which every word of both readings is a
+                     function word (contexts are left intact).
+* ``masked``       – all variants, with every content word in the readings
+                     and in the context windows replaced by the token
+                     ``CONTENT``, so that only function words and word
+                     positions remain visible to the embedding model.
+"""
 import os
-import re
+
+import pandas as pd
+
+from download_itsee_data import write_type_counts
+
+# Heuristic list of Greek function words (articles, pronouns, particles,
+# conjunctions, prepositions, negations) in the unaccented orthography of the
+# transcriptions.
+FUNCTION_WORDS = {
+    # conjunctions and particles
+    'και', 'δε', 'γαρ', 'μεν', 'ουν', 'τε', 'αλλα', 'αλλ', 'ει', 'εαν', 'ινα', 'οπως', 'ως',
+    'οτι', 'διο', 'διοτι', 'δη', 'ειτε', 'επει', 'επειδη', 'η', 'μην', 'οτε', 'ουτε',
+    'πλην', 'που', 'πως', 'αρα', 'γε', 'ετι', 'αν', 'οταν', 'καθως', 'ωσπερ', 'ουτως',
+    'νυν', 'ηδη', 'παλιν', 'τοτε', 'ιδου', 'ιδε', 'ναι', 'αμην',
+    # prepositions
+    'εν', 'εις', 'εκ', 'εξ', 'προς', 'απο', 'απ', 'αφ', 'επι', 'επ', 'εφ', 'περι', 'κατα',
+    'κατ', 'καθ', 'μετα', 'μετ', 'μεθ', 'δια', 'δι', 'υπο', 'υπ', 'υφ', 'υπερ', 'παρα',
+    'παρ', 'συν', 'αντι', 'προ', 'αμα', 'ανευ', 'εως', 'ενεκα', 'οπισθεν', 'χωρις',
+    'εμπροσθεν', 'ενωπιον', 'αχρι', 'μεχρι',
+    # article
+    'ο', 'το', 'οι', 'αι', 'τα', 'του', 'της', 'των', 'τω', 'τη', 'τοις', 'ταις',
+    'τον', 'την', 'τους', 'τας',
+    # personal, demonstrative, relative and indefinite pronouns
+    'αυτος', 'αυτου', 'αυτω', 'αυτον', 'αυτοι', 'αυτων', 'αυτοις', 'αυτους', 'αυτη',
+    'αυτης', 'αυτην', 'αυται', 'αυταις', 'αυτας', 'αυτο',
+    'εγω', 'εμου', 'μου', 'εμοι', 'μοι', 'εμε', 'με', 'ημεις', 'ημων', 'ημιν', 'ημας',
+    'συ', 'σου', 'σοι', 'σε', 'υμεις', 'υμων', 'υμιν', 'υμας',
+    'τις', 'τι', 'τινος', 'τινι', 'τινα', 'τινες', 'τινων', 'τισι', 'τινας',
+    'ος', 'ης', 'ω', 'ον', 'ην', 'α', 'ων', 'οις', 'αις', 'ους', 'ας',
+    'ουτος', 'τουτο', 'τουτου', 'τουτω', 'τουτον', 'ουτοι', 'ταυτα', 'τουτων',
+    'τουτοις', 'τουτους', 'ταυτης', 'ταυτη', 'ταυτην', 'ταυταις', 'ταυτας',
+    'εκεινος', 'εκεινη', 'εκεινο', 'εκεινου', 'εκεινω', 'εκεινον', 'εκεινοι',
+    'εκεινων', 'εκεινοις', 'εκεινους', 'οστις', 'ητις', 'εαυτου', 'εαυτω', 'εαυτον',
+    'εαυτους', 'εαυτων', 'εαυτοις', 'εαυτην',
+    # negations
+    'ου', 'ουκ', 'ουχ', 'ουχι', 'μη', 'ουδε', 'μηδε', 'μητε', 'ουδεν', 'μηδεν',
+    'ουδεις', 'μηδεις', 'ουπω', 'μηπω', 'ουκετι', 'μηκετι',
+}
+
 
 def is_function_word(word):
-    # Comprehensive heuristic list of Greek function words/particles/pronouns
-    func_words = {
-        # Conjunctions & Particles
-        'και', 'δε', 'γαρ', 'μεν', 'ουν', 'τε', 'αλλα', 'ει', 'εαν', 'ινα', 'οπως', 'ως', 'οτι', 'διο', 'διοτι', 
-        'δη', 'ειτε', 'επει', 'επειδη', 'η', 'μην', 'οτε', 'ουτε', 'πλην', 'που', 'πως', 'αρα', 'γε', 'ετι', 'τε',
-        
-        # Prepositions
-        'εν', 'εις', 'εκ', 'εξ', 'προς', 'απο', 'επι', 'περι', 'κατα', 'μετα', 'δια', 'υπο', 'υπερ', 'παρα', 'συν',
-        'αντι', 'προ', 'αμα', 'ανευ', 'εως', 'νεκα', 'οπισθεν', 'χωρις', 'εμπροσθεν', 'ενωπιον',
-        
-        # Article
-        'ο', 'η', 'το', 'οι', 'αι', 'τα', 'του', 'της', 'των', 'τω', 'τη', 'τοις', 'ταις', 'τον', 'την',
-        
-        # Personal/Demonstrative/Relative Pronouns
-        'αυτος', 'αυτου', 'αυτω', 'αυτον', 'αυτοι', 'αυτων', 'αυτοις', 'αυτους', 'αυτη', 'αυτης', 'αυτην', 'αυται', 'αυταις', 'αυτας',
-        'εγω', 'εμου', 'μου', 'εμοι', 'μοι', 'εμε', 'με', 'ημεις', 'ημων', 'ημιν', 'ημας',
-        'συ', 'σου', 'σοι', 'σε', 'υμεις', 'υμων', 'υμιν', 'υμας',
-        'τις', 'τι', 'τινος', 'τινι', 'τινα', 'τινες', 'τινων', 'τισι', 'τινας',
-        'ος', 'ης', 'ω', 'ον', 'ην', 'α', 'ων', 'οις', 'αις', 'ους', 'ας',
-        'ουτος', 'τουτο', 'τουτου', 'τουτω', 'τουτον', 'ουτοι', 'ταυτα', 'τουτων', 'τουτοις', 'τουτους', 
-        'αυτη', 'ταυτης', 'ταυτη', 'ταυτην', 'αυται', 'ταυταις', 'ταυτας',
-        'εκεινος', 'εκεινη', 'εκεινο', 'εκεινου', 'εκεινω', 'εκεινον', 'εκεινοι', 'εκεινων', 'εκεινοις', 'εκεινους',
-        'τις', 'τι', 'τινος', 'τινι', 'τινα', 'τινες', 'τινων', 'τισι', 'τινας', 'οστις', 'ητις', 'οτι',
-        
-        # Negations
-        'ου', 'ουκ', 'ουχ', 'μη', 'ουδε', 'μηδε', 'ουτε', 'μητε'
-    }
-    w = word.lower()
-    return w in func_words
+    return word.lower() in FUNCTION_WORDS
+
 
 def apply_function_words_filter(df):
-    filtered_indices = []
-    
+    """Keep variants whose readings consist entirely of function words."""
+    keep = []
     for idx, row in df.iterrows():
-        br = str(row['base_reading'])
-        mr = str(row['ms_reading'])
-        
-        # Keep variants where BOTH readings consist entirely of function words, 
-        # or OMIT/ADD involving only function words.
+        br, mr = str(row['base_reading']), str(row['ms_reading'])
         b_words = [] if br == '[ADD]' else br.split()
         m_words = [] if mr == '[OMIT]' else mr.split()
-        
-        all_words = b_words + m_words
-        if not all_words: 
-            continue
-            
-        is_all_func = all(is_function_word(w) for w in all_words)
-        if is_all_func:
-            filtered_indices.append(idx)
-            
-    return df.iloc[filtered_indices].copy()
+        words = b_words + m_words
+        if words and all(is_function_word(w) for w in words):
+            keep.append(idx)
+    return df.loc[keep].copy()
+
+
+def mask_text(text):
+    if pd.isna(text) or text in ('[ADD]', '[OMIT]'):
+        return text
+    return ' '.join(w if is_function_word(w) else 'CONTENT' for w in str(text).split())
+
 
 def apply_content_masking(df):
-    masked_df = df.copy()
-    
-    def mask_text(text):
-        if pd.isna(text) or text in ['[ADD]', '[OMIT]']: return text
-        words = text.split()
-        masked_words = [w if is_function_word(w) else 'CONTENT' for w in words]
-        return " ".join(masked_words)
-        
-    masked_df['base_reading'] = masked_df['base_reading'].apply(mask_text)
-    masked_df['ms_reading'] = masked_df['ms_reading'].apply(mask_text)
-    masked_df['base_context_10w'] = masked_df['base_context_10w'].apply(mask_text)
-    masked_df['ms_context_10w'] = masked_df['ms_context_10w'].apply(mask_text)
-    
-    return masked_df
+    masked = df.copy()
+    for col in ('base_reading', 'ms_reading', 'base_context_10w', 'ms_context_10w'):
+        masked[col] = masked[col].apply(mask_text)
+    return masked
 
-def main():
-    base_file = "data/variants_full_john_B.csv"
+
+def main(base_ms='B'):
+    base_file = f"data/variants_full_john_{base_ms}.csv"
     if not os.path.exists(base_file):
-        print(f"Base file {base_file} not found. Please run baseline B extraction first.")
+        print(f"{base_file} not found. Run download_itsee_data.py first.")
         return
-        
     df = pd.read_csv(base_file)
-    print(f"Loaded original full corpus: {len(df)} variants.")
-    
-    # 1. Function Words Only dataset
+    print(f"Loaded full corpus: {len(df)} variants.")
+
     func_df = apply_function_words_filter(df)
-    func_file = "data/variants_ablation_func_words.csv"
-    func_df.to_csv(func_file, index=False)
-    print(f"Created Function Words Only dataset: {len(func_df)} variants -> {func_file}")
-    
-    # 2. Content Masked dataset
+    func_df.to_csv("data/variants_ablation_func_words.csv", index=False)
+    write_type_counts(func_df, 'ablation_func_words')
+    print(f"Function-words-only dataset: {len(func_df)} variants")
+
     masked_df = apply_content_masking(df)
-    masked_file = "data/variants_ablation_masked.csv"
-    masked_df.to_csv(masked_file, index=False)
-    print(f"Created Content Masked dataset: {len(masked_df)} variants -> {masked_file}")
+    masked_df.to_csv("data/variants_ablation_masked.csv", index=False)
+    write_type_counts(masked_df, 'ablation_masked')
+    print(f"Content-masked dataset: {len(masked_df)} variants "
+          f"({(masked_df['base_context_10w'] == masked_df['ms_context_10w']).sum()} with identical masked contexts)")
+
 
 if __name__ == "__main__":
     main()

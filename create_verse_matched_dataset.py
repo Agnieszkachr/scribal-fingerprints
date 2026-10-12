@@ -1,55 +1,35 @@
-import os
-import xml.etree.ElementTree as ET
+"""Build the verse-matched subset: variants (against baseline B) restricted to
+verses in which all five manuscripts have attested text."""
+import re
+
 import pandas as pd
 
-from download_itsee_data import ITSEE_URLS, parse_verse_id
+from download_itsee_data import TARGET_MSS, load_all_transcriptions, write_type_counts
 
-def process_xml_verses(file_path):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-    ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
-    verses = set()
-    for ab in root.findall('.//tei:ab', ns):
-        n = ab.get('n', '')
-        ch, v = parse_verse_id(n)
-        if ch is not None:
-            # Check if there is actual content
-            content = "".join(ab.itertext()).strip()
-            if len(content) > 3: # Has some words
-                verses.add(f"J {ch}:{v}")
-    return verses
 
-def main():
-    target_mss = ['P66', 'aleph', 'A', 'B', 'D']
-    ms_verse_sets = {}
-    
-    for ms in target_mss:
-        filepath = f"data/xml/{ms}.xml"
-        if not os.path.exists(filepath):
-            print(f"Missing XML for {ms}!")
-            return
-        
-        verses = process_xml_verses(filepath)
-        ms_verse_sets[ms] = verses
-        print(f"Found {len(verses)} verses with text for {ms}")
-        
-    common_verses = set.intersection(*ms_verse_sets.values())
-    print(f"Extant Common Verses across all 5: {len(common_verses)}")
-    
-    with open("data/common_extant_verses.txt", "w") as f:
-        for v in sorted(list(common_verses)):
+def verse_sort_key(v):
+    ch, vs = re.match(r'J (\d+):(\d+)', v).groups()
+    return int(ch), int(vs)
+
+
+def main(base_ms='B'):
+    ms_texts, _ = load_all_transcriptions(download=False)
+    for ms in TARGET_MSS:
+        print(f"Found {len(ms_texts[ms])} verses with attested text for {ms}")
+    common_verses = set.intersection(*(set(ms_texts[ms]) for ms in TARGET_MSS))
+    print(f"Verses attested in all {len(TARGET_MSS)} manuscripts: {len(common_verses)}")
+
+    with open("data/common_extant_verses.txt", "w", encoding='utf-8') as f:
+        for v in sorted(common_verses, key=verse_sort_key):
             f.write(f"{v}\n")
-            
-    df = pd.read_csv("data/variants_full_john_B.csv")
-    initial_len = len(df)
-    
-    df_ablation = df[df['verse'].isin(common_verses)]
-    final_len = len(df_ablation)
-    
+
+    df = pd.read_csv(f"data/variants_full_john_{base_ms}.csv")
+    df_matched = df[df['verse'].isin(common_verses)]
     out_path = "data/variants_ablation_matched.csv"
-    df_ablation.to_csv(out_path, index=False)
-    print(f"Filtered {initial_len} variants down to {final_len} variants for verse-matched analysis.")
-    print(f"Saved to {out_path}!")
+    df_matched.to_csv(out_path, index=False)
+    write_type_counts(df_matched, 'ablation_matched')
+    print(f"Filtered {len(df)} variants down to {len(df_matched)} for the verse-matched analysis -> {out_path}")
+
 
 if __name__ == "__main__":
     main()
