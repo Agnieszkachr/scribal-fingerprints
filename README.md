@@ -42,32 +42,30 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
   <img src="outputs/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" width="600">
 </p>
 
-Against Codex Vaticanus (B) as the baseline, 4,250 substantive variants are extracted.
-Additions and omissions together make up 44–48 % of the variants of each witness,
-morphological substitutions 30–40 %, lexical substitutions 10–16 % and word-order shifts
+Against Codex Vaticanus (B) as the baseline, 4,460 variants are extracted.
+Additions and omissions together make up 39–48 % of the variants of each witness,
+morphological substitutions 30–37 %, lexical substitutions 12–18 % and word-order shifts
 6–9 %. The variant-type distributions differ significantly between witnesses
 (`outputs/typology_report_B.txt`):
 
-| Test (baseline B, N = 4,250) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
+| Test (baseline B, N = 4,460) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
 |---|---|---|---|
-| Substitution / addition / omission | 0.082 [0.064 – 0.104] | 0.026 ± 0.008 | 0.005 |
-| Morphological / lexical / word order | 0.094 [0.070 – 0.118] | 0.037 ± 0.012 | 0.005 |
+| Substitution / addition / omission | 0.090 [0.071 – 0.109] | 0.025 ± 0.008 | 0.005 |
+| Morphological / lexical / word order | 0.074 [0.051 – 0.112] | 0.036 ± 0.010 | 0.010 |
 
-Codex Bezae shows the largest share of lexical substitutions and P66 the largest share
-of morphological substitutions in every configuration (baseline B, baseline A and the
-verse-matched subset; see `outputs/type_counts_full_*.csv` and
+P66 shows the largest share of both lexical and morphological substitutions in every
+configuration (baseline B, baseline A, baseline ℵ and the verse-matched subset);
+Alexandrinus has the largest share of additions and Sinaiticus the largest share of
+omissions against B (see `outputs/type_counts_full_*.csv` and
 `outputs/typology_report_*.txt`).
 
 ### Embedding-based results
 
 The embedding stage (`profile_scribes.py`) requires the BERT model and is not part of
-this repository's data. The embedding-based output files currently in `outputs/`
+this repository's data. The embedding-based output files in `outputs/`
 (`pilot_report_full_*`, `pilot_results_full_*`, `chapter_stability_*`,
-`cumulative_analysis_*`, `fig1_*`, `fig2_*`, `fig6_*`, `fig7_*`) were produced by an
-**earlier extraction** of the variants (12,460 variants against B) that double-counted
-corrector readings and split words across line breaks; they do not correspond to the
-current `data/variants_*.csv` files. Re-run steps 4–6 of the pipeline below to refresh
-them. The website marks these values accordingly until they are regenerated.
+`cumulative_analysis_*`, `fig1_*`, `fig2_*`, `fig6_*`, `fig7_*`) are refreshed by steps
+4–6 of the pipeline below; the website marks values that await that run.
 
 ## Repository Structure
 
@@ -76,7 +74,14 @@ them. The website marks these values accordingly until they are regenerated.
 ├── README.md                           # This file
 ├── CITATION.cff                        # Citation metadata
 ├── requirements.txt                    # Python package dependencies
-├── download_itsee_data.py              # Fetches ITSEE TEI XML, reads the first-hand text, aligns, extracts and classifies variants
+├── download_itsee_data.py              # Fetches the ITSEE TEI XML and runs the extraction for one baseline
+├── src/
+│   ├── extract_variants.py             # TEI parsing, alignment, classification (shared with the SCRIPTA pipeline)
+│   ├── download_itsee_data.py          # ITSEE download and verse-id parsing
+│   ├── config.py, corpus_registry.py   # Paths, witnesses, versification
+│   └── utils/
+│       ├── token_normalizer.py         # Surface forms and orthographic normalisation
+│       └── nomina_sacra.py             # Expansion table for the attested nomina sacra
 ├── create_verse_matched_dataset.py     # Verse-matched subset: verses attested in all five witnesses
 ├── run_ablation_study.py               # Function-words-only and content-masked datasets
 ├── profile_scribes.py                  # Ancient-Greek-BERT embeddings, change vectors, manuscript and chapter profiles
@@ -84,7 +89,7 @@ them. The website marks these values accordingly until they are regenerated.
 ├── create_visualizations.py            # Figures (PCA, dendrogram, type distribution, cumulative ARI, stability heatmap)
 ├── recalc_odd_even.py                  # Utility: refresh only the split-half lines of existing reports
 ├── data/
-│   ├── xml/                            # Raw ITSEE transcriptions (one file per witness)
+│   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
 │   ├── variants_ablation_{matched,func_words,masked}.csv
 │   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
@@ -94,18 +99,23 @@ them. The website marks these values accordingly until they are regenerated.
 
 ## Methodological Details
 
-### Transcription processing (`download_itsee_data.py`)
+### Transcription processing (`src/extract_variants.py`)
 
 - Only the **first-hand text** is read: inside `<app>` the reading with `type="orig"` is
   used and corrector readings are ignored.
-- Words split across line, column or page breaks (`<lb break="no"/>` inside `<w>`) are
-  joined; marginal sigla (`<seg type="margin">`), punctuation and notes are dropped.
+- Only the outermost `<w>` of a nested pair is read. Words split across line, column or
+  page breaks (`<lb break="no"/>` inside `<w>`; `<w part="I">` + `<w part="F">` across
+  `<ab>`) are joined; marginal sigla (`<seg type="margin">`), punctuation, running titles
+  (`<fw>`) and notes are dropped.
 - **Nomina sacra** (`<abbr type="nomSac">`) are expanded from a table of the attested
   abbreviations (θς → θεος, πρς → πατρος, ανος → ανθρωπος, ιης → ιησους, …); the
   supralinear stroke for final nu (`¯`) is resolved to ν.
 - Tokens are lower-cased and stripped of diacritics (accents, breathings, diaeresis,
-  iota subscript). Tokens that contain editorially `<supplied>` text or a `<gap>` are
-  flagged, and variants that rest on such tokens are excluded (counts are printed).
+  iota subscript) and of every non-letter character. Tokens that contain editorially
+  `<supplied>` text or a `<gap>` are flagged `reconstructed`, tokens containing
+  `<unclear>` text are flagged `uncertain`; both count as attested by default.
+  `--exclude-supplied` / `--exclude-unclear` drop the variant blocks that rest on such
+  tokens (a robustness configuration; the counts dropped are printed).
 - Verses with no attested text (lacunae; John 5:4; 7:53–8:11 where absent) are skipped;
   the coverage report counts only verses with text.
 
@@ -176,6 +186,8 @@ pip install -r requirements.txt
 #    outputs/type_counts_full_<MS>.csv and outputs/coverage_report.csv
 python download_itsee_data.py --baseline B
 python download_itsee_data.py --baseline A
+python download_itsee_data.py --baseline aleph
+python download_itsee_data.py --baseline B --exclude-supplied   # robustness configuration
 
 # 3. Derived datasets
 python create_verse_matched_dataset.py

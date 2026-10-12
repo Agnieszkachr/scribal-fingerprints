@@ -1,30 +1,30 @@
 window.DATA_TYPES = [
   {
     "manuscript": "A",
-    "substitution_morphological": 272,
-    "substitution_lexical": 90,
-    "substitution_word_order": 71,
-    "addition": 255,
+    "substitution_morphological": 273,
+    "substitution_lexical": 96,
+    "substitution_word_order": 73,
+    "addition": 256,
     "omission": 137,
-    "total_variants": 825
+    "total_variants": 835
   },
   {
     "manuscript": "D",
-    "substitution_morphological": 409,
-    "substitution_lexical": 212,
+    "substitution_morphological": 411,
+    "substitution_lexical": 216,
     "substitution_word_order": 98,
     "addition": 360,
     "omission": 264,
-    "total_variants": 1343
+    "total_variants": 1349
   },
   {
     "manuscript": "P66",
-    "substitution_morphological": 350,
-    "substitution_lexical": 90,
-    "substitution_word_order": 51,
-    "addition": 182,
+    "substitution_morphological": 402,
+    "substitution_lexical": 189,
+    "substitution_word_order": 70,
+    "addition": 206,
     "omission": 210,
-    "total_variants": 883
+    "total_variants": 1077
   },
   {
     "manuscript": "aleph",

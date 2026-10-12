@@ -19,8 +19,8 @@ window.DATA_VARIANTS = [
     "chapter": "1",
     "verse": "J 1:12",
     "manuscript": "D",
-    "base_reading": "δε ελαβαν",
-    "ms_reading": "ελαβον",
+    "base_reading": "εδωκεν αυτοις",
+    "ms_reading": "εδων αυτω",
     "type": "substitution_morphological"
   },
   {
@@ -30,22 +30,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ουδε εκ θεληματος ανδρος",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:13",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουδε θεληματος ανδρος",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:14",
-    "manuscript": "D",
-    "base_reading": "πληρης",
-    "ms_reading": "πληρη",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "1",
@@ -59,8 +43,8 @@ window.DATA_VARIANTS = [
     "chapter": "1",
     "verse": "J 1:15",
     "manuscript": "D",
-    "base_reading": "εμπροσθεν",
-    "ms_reading": "ενπροσθεν",
+    "base_reading": "ο",
+    "ms_reading": "ον",
     "type": "substitution_morphological"
   },
   {
@@ -74,9 +58,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:15",
-    "manuscript": "P66",
-    "base_reading": "κεκραγεν",
-    "ms_reading": "κρεκραγεν",
+    "manuscript": "D",
+    "base_reading": "εμπροσθεν",
+    "ms_reading": "ενπροσθεν",
     "type": "substitution_morphological"
   },
   {
@@ -98,26 +82,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:16",
-    "manuscript": "aleph",
-    "base_reading": "και",
-    "ms_reading": "οτι",
+    "manuscript": "D",
+    "base_reading": "ελαβομεν και χαριν αντι χαριτος",
+    "ms_reading": "[OMIT]",
     "type": "substitution_lexical"
   },
   {
     "chapter": "1",
     "verse": "J 1:17",
-    "manuscript": "A",
-    "base_reading": "μωυσεως",
-    "ms_reading": "μωσεως",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "1",
     "verse": "J 1:17",
-    "manuscript": "aleph",
-    "base_reading": "χριστου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "μωσεως",
+    "ms_reading": "μωυσεως",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "1",
@@ -145,17 +129,9 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:18",
-    "manuscript": "aleph",
-    "base_reading": "ο ων",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:20",
-    "manuscript": "aleph",
-    "base_reading": "και ωμολογησεν",
+    "verse": "J 1:19",
+    "manuscript": "P66",
+    "base_reading": "προς αυτον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -169,27 +145,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:21",
-    "manuscript": "B",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:21",
+    "verse": "J 1:22",
     "manuscript": "P66",
-    "base_reading": "ουν τι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:21",
-    "manuscript": "aleph",
-    "base_reading": "συ και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "1",
@@ -202,7 +162,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:24",
-    "manuscript": "P66",
+    "manuscript": "B",
     "base_reading": "οι",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -210,15 +170,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:25",
-    "manuscript": "A",
-    "base_reading": "ειπαν",
-    "ms_reading": "ειπον",
+    "manuscript": "B",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "1",
     "verse": "J 1:25",
-    "manuscript": "B",
+    "manuscript": "P66",
     "base_reading": "ειπον",
     "ms_reading": "ειπαν",
     "type": "substitution_morphological"
@@ -233,43 +193,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:25",
-    "manuscript": "aleph",
-    "base_reading": "ουδε",
-    "ms_reading": "ουτε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:25",
-    "manuscript": "aleph",
-    "base_reading": "ουδε",
-    "ms_reading": "ουτε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
     "verse": "J 1:26",
-    "manuscript": "A",
-    "base_reading": "στηκει",
-    "ms_reading": "εστηκεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:26",
-    "manuscript": "A",
-    "base_reading": "ο",
+    "manuscript": "B",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:26",
+    "manuscript": "B",
+    "base_reading": "εστηκεν",
+    "ms_reading": "στηκει",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "1",
     "verse": "J 1:26",
     "manuscript": "P66",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "1",
@@ -299,6 +243,14 @@ window.DATA_VARIANTS = [
     "chapter": "1",
     "verse": "J 1:27",
     "manuscript": "P66",
+    "base_reading": "ος εμπροσθεν μου γεγονεν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:27",
+    "manuscript": "P66",
     "base_reading": "εγω",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -306,25 +258,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:28",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "ποταμου",
     "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:28",
-    "manuscript": "P66",
-    "base_reading": "εν βηθανια εγενετο",
-    "ms_reading": "εγενετο εν βηθανια",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "1",
     "verse": "J 1:28",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "ποταμου",
     "type": "addition"
   },
   {
@@ -347,8 +291,8 @@ window.DATA_VARIANTS = [
     "chapter": "1",
     "verse": "J 1:3",
     "manuscript": "D",
-    "base_reading": "εγενετο",
-    "ms_reading": "ενεγετο",
+    "base_reading": "ουδε εν",
+    "ms_reading": "ουδεν",
     "type": "substitution_morphological"
   },
   {
@@ -358,38 +302,22 @@ window.DATA_VARIANTS = [
     "base_reading": "ουδε εν",
     "ms_reading": "ουδεν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:31",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "τω",
-    "type": "addition"
   },
   {
     "chapter": "1",
     "verse": "J 1:32",
     "manuscript": "aleph",
-    "base_reading": "εμεινεν",
-    "ms_reading": "μενον",
+    "base_reading": "εξ",
+    "ms_reading": "καταβαινον εκ του",
     "type": "substitution_lexical"
   },
   {
     "chapter": "1",
     "verse": "J 1:33",
-    "manuscript": "P66",
-    "base_reading": "βαπτιζειν",
-    "ms_reading": "βπτιζειν",
+    "manuscript": "A",
+    "base_reading": "ουτος",
+    "ms_reading": "αυτος",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:33",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "τω",
-    "type": "addition"
   },
   {
     "chapter": "1",
@@ -409,6 +337,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
+    "verse": "J 1:34",
+    "manuscript": "aleph",
+    "base_reading": "υιος",
+    "ms_reading": "εκλεκτος",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:34",
+    "manuscript": "aleph",
+    "base_reading": "υιος",
+    "ms_reading": "εκλεκτος",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "1",
     "verse": "J 1:35",
     "manuscript": "P66",
     "base_reading": "επαυριον",
@@ -417,11 +361,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
+    "verse": "J 1:36",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο αιρων την αμαρτιαν του κοσμου",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
     "verse": "J 1:37",
     "manuscript": "aleph",
     "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:37",
+    "manuscript": "aleph",
+    "base_reading": "αυτου οι δυο μαθηται",
+    "ms_reading": "οι δυο μαθηται αυτου",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:38",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:38",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω",
+    "type": "addition"
   },
   {
     "chapter": "1",
@@ -434,17 +410,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:39",
-    "manuscript": "B",
-    "base_reading": "ιδον",
-    "ms_reading": "ειδαν",
+    "manuscript": "A",
+    "base_reading": "οψεσθε ηλθαν",
+    "ms_reading": "ιδετε ηλθον",
     "type": "substitution_morphological"
   },
   {
     "chapter": "1",
     "verse": "J 1:39",
-    "manuscript": "B",
-    "base_reading": "εκτη",
-    "ms_reading": "δεκατη",
+    "manuscript": "A",
+    "base_reading": "δεκατη",
+    "ms_reading": "εκτη",
     "type": "substitution_morphological"
   },
   {
@@ -458,16 +434,32 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:39",
-    "manuscript": "P66",
-    "base_reading": "ιδετε ηλθον",
-    "ms_reading": "οψεσθαι ηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:40",
     "manuscript": "B",
-    "base_reading": "δε",
+    "base_reading": "εκτη",
+    "ms_reading": "δεκατη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:4",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "των ανθρωπων",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:40",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:40",
+    "manuscript": "aleph",
+    "base_reading": "των",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -482,14 +474,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:41",
-    "manuscript": "A",
-    "base_reading": "ευρεσκει",
-    "ms_reading": "ευρισκει",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:41",
     "manuscript": "aleph",
     "base_reading": "ευρεσκει",
     "ms_reading": "ευρισκει",
@@ -498,18 +482,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:42",
-    "manuscript": "P66",
-    "base_reading": "ιωνα",
-    "ms_reading": "ιωαννου",
+    "manuscript": "A",
+    "base_reading": "ο",
+    "ms_reading": "ος",
     "type": "substitution_morphological"
   },
   {
     "chapter": "1",
     "verse": "J 1:42",
-    "manuscript": "P66",
-    "base_reading": "ος",
-    "ms_reading": "ο",
-    "type": "substitution_morphological"
+    "manuscript": "B",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:42",
+    "manuscript": "aleph",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "1",
@@ -545,14 +537,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:44",
-    "manuscript": "aleph",
-    "base_reading": "δε ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
     "verse": "J 1:45",
     "manuscript": "A",
     "base_reading": "[ADD]",
@@ -562,42 +546,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:45",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "του",
-    "type": "addition"
+    "manuscript": "A",
+    "base_reading": "του",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "1",
-    "verse": "J 1:45",
-    "manuscript": "P66",
-    "base_reading": "μωσης",
-    "ms_reading": "μωυσης",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:45",
-    "manuscript": "P66",
-    "base_reading": "ιωσηφ",
-    "ms_reading": "του ισηφ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:45",
+    "verse": "J 1:46",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "του",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:47",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "base_reading": "τι αγαθον",
+    "ms_reading": "αγαθον τι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "1",
@@ -609,64 +569,16 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ναθαναηλ και λεγει",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "B",
-    "base_reading": "και λεγει αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "B",
-    "base_reading": "βασιλευς",
-    "ms_reading": "βασιλευ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "P66",
-    "base_reading": "και λεγει αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "αληθως",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "αληθως",
-    "type": "addition"
-  },
-  {
-    "chapter": "1",
-    "verse": "J 1:49",
+    "verse": "J 1:48",
     "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:49",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "ει ο",
     "type": "addition"
@@ -674,10 +586,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "1",
     "verse": "J 1:49",
-    "manuscript": "aleph",
-    "base_reading": "αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο βασιλευς",
+    "type": "addition"
+  },
+  {
+    "chapter": "1",
+    "verse": "J 1:49",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αληθως",
+    "type": "addition"
   },
   {
     "chapter": "1",
@@ -691,17 +611,17 @@ window.DATA_VARIANTS = [
     "chapter": "1",
     "verse": "J 1:49",
     "manuscript": "aleph",
-    "base_reading": "λεγει αυτω",
-    "ms_reading": "ειπεν",
-    "type": "substitution_lexical"
+    "base_reading": "αυτω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "1",
-    "verse": "J 1:51",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "απ αρτι",
-    "type": "addition"
+    "verse": "J 1:50",
+    "manuscript": "P66",
+    "base_reading": "μειζω",
+    "ms_reading": "μειζονα",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "1",
@@ -721,43 +641,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "1",
-    "verse": "J 1:6",
+    "verse": "J 1:7",
     "manuscript": "D",
-    "base_reading": "ιωαννης",
-    "ms_reading": "ιωαννην",
+    "base_reading": "πιστευσωσιν",
+    "ms_reading": "πιστευσουσιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:1",
-    "manuscript": "D",
+    "manuscript": "B",
+    "base_reading": "λεγω υμιν",
+    "ms_reading": "υμιν λεγω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:1",
+    "manuscript": "P66",
     "base_reading": "υμιν λεγω",
     "ms_reading": "λεγω υμειν",
     "type": "substitution_word_order"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:1",
-    "manuscript": "D",
-    "base_reading": "αναβαινων αλλαχοθεν",
-    "ms_reading": "αλλαχοθεν αναβενων",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:1",
-    "manuscript": "aleph",
-    "base_reading": "υμιν λεγω",
-    "ms_reading": "λεγω υμιν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:10",
-    "manuscript": "A",
-    "base_reading": "ιν",
-    "ms_reading": "ι",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
@@ -770,10 +674,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:10",
+    "manuscript": "D",
+    "base_reading": "και περισσον εχωσιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:10",
     "manuscript": "P66",
     "base_reading": "κλεψη",
     "ms_reading": "κεψη",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:10",
+    "manuscript": "P66",
+    "base_reading": "κλεπτης",
+    "ms_reading": "κλεπης",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:10",
+    "manuscript": "P66",
+    "base_reading": "και περισσον εχωσιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:10",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αιωνιον",
+    "type": "addition"
   },
   {
     "chapter": "10",
@@ -794,42 +730,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:11",
-    "manuscript": "D",
-    "base_reading": "τιθησιν",
-    "ms_reading": "διδωσιν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:11",
     "manuscript": "aleph",
     "base_reading": "τιθησιν",
     "ms_reading": "διδωσιν",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:11",
-    "manuscript": "aleph",
-    "base_reading": "τιθησιν",
-    "ms_reading": "διδωσιν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:12",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "τα προβατα",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:12",
-    "manuscript": "B",
-    "base_reading": "τα προβατα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "10",
@@ -842,42 +746,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:12",
-    "manuscript": "P66",
-    "base_reading": "τα προβατα",
+    "manuscript": "D",
+    "base_reading": "αυτα",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "10",
     "verse": "J 10:12",
-    "manuscript": "aleph",
-    "base_reading": "μισθωτος δε",
-    "ms_reading": "δε μισθωτος",
-    "type": "substitution_word_order"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "10",
     "verse": "J 10:13",
-    "manuscript": "B",
-    "base_reading": "φευγει οτι μισθος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:13",
-    "manuscript": "B",
-    "base_reading": "ο δε",
-    "ms_reading": "οτι",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:13",
-    "manuscript": "D",
-    "base_reading": "εστιν",
-    "ms_reading": "εστι",
-    "type": "substitution_morphological"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο δε μισθωτος φευγει",
+    "type": "addition"
   },
   {
     "chapter": "10",
@@ -890,17 +778,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:13",
-    "manuscript": "aleph",
-    "base_reading": "ο δε",
-    "ms_reading": "οτι",
+    "manuscript": "P66",
+    "base_reading": "φευγει οτι μισθος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:14",
+    "manuscript": "B",
+    "base_reading": "γινωσκομαι υπο των εμων",
+    "ms_reading": "γεινωσκουσι με τα εμα",
     "type": "substitution_lexical"
   },
   {
     "chapter": "10",
     "verse": "J 10:14",
-    "manuscript": "A",
-    "base_reading": "γεινωσκουσι με τα εμα",
-    "ms_reading": "γινωσκομαι υπο των εμων",
+    "manuscript": "D",
+    "base_reading": "γινωσκομαι υπο των εμων",
+    "ms_reading": "γεινωσιν εμε τα εμα",
     "type": "substitution_lexical"
   },
   {
@@ -915,9 +811,9 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:14",
     "manuscript": "D",
-    "base_reading": "ο καλος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "γεινωσκουσι με",
+    "ms_reading": "γεινωσιν εμε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
@@ -938,7 +834,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:15",
-    "manuscript": "aleph",
+    "manuscript": "P66",
+    "base_reading": "τιθημι",
+    "ms_reading": "διδωμι",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:15",
+    "manuscript": "P66",
     "base_reading": "τιθημι",
     "ms_reading": "διδωμι",
     "type": "substitution_lexical"
@@ -946,55 +850,47 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:16",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:16",
-    "manuscript": "P66",
-    "base_reading": "ακουσωσιν",
-    "ms_reading": "ακουσουσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:16",
-    "manuscript": "P66",
-    "base_reading": "δει αγαγειν",
-    "ms_reading": "συναγαγειν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:16",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:16",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:17",
     "manuscript": "A",
-    "base_reading": "με ο πατηρ",
-    "ms_reading": "ο πατηρ με",
+    "base_reading": "γενησονται",
+    "ms_reading": "γενησεται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:16",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:16",
+    "manuscript": "D",
+    "base_reading": "με δει",
+    "ms_reading": "δει με",
     "type": "substitution_word_order"
   },
   {
     "chapter": "10",
+    "verse": "J 10:16",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:16",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
     "verse": "J 10:17",
-    "manuscript": "B",
+    "manuscript": "D",
     "base_reading": "ο πατηρ με",
     "ms_reading": "με ο πατηρ",
     "type": "substitution_word_order"
@@ -1002,7 +898,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:17",
-    "manuscript": "D",
+    "manuscript": "P66",
     "base_reading": "ο πατηρ με",
     "ms_reading": "με ο πατηρ",
     "type": "substitution_word_order"
@@ -1010,39 +906,23 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:18",
-    "manuscript": "B",
-    "base_reading": "την",
+    "manuscript": "D",
+    "base_reading": "μου",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "10",
     "verse": "J 10:18",
-    "manuscript": "B",
-    "base_reading": "αιρει",
-    "ms_reading": "ηρεν",
+    "manuscript": "D",
+    "base_reading": "ηρεν",
+    "ms_reading": "αιρει",
     "type": "substitution_lexical"
   },
   {
     "chapter": "10",
     "verse": "J 10:18",
-    "manuscript": "D",
-    "base_reading": "λαβειν",
-    "ms_reading": "αραι",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:18",
-    "manuscript": "D",
-    "base_reading": "αλλ εγω τιθημι αυτην απ εμαυτου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:18",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "την",
     "type": "addition"
@@ -1058,34 +938,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:19",
-    "manuscript": "A",
+    "manuscript": "B",
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:2",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "ουν",
+    "ms_reading": "αυτος εστιν ο",
     "type": "addition"
   },
   {
     "chapter": "10",
-    "verse": "J 10:20",
+    "verse": "J 10:2",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "οτι",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:20",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "οτι",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:20",
-    "manuscript": "D",
-    "base_reading": "δε",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
+    "base_reading": "εστιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
@@ -1097,11 +969,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
+    "verse": "J 10:20",
+    "manuscript": "aleph",
+    "base_reading": "ελεγον δε",
+    "ms_reading": "ελεγαν ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "10",
     "verse": "J 10:21",
     "manuscript": "D",
-    "base_reading": "ταυτα",
-    "ms_reading": "ουκ εστις",
-    "type": "substitution_lexical"
+    "base_reading": "τυφλων οφθαλμους",
+    "ms_reading": "οφθαλμους τυφλων",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "10",
@@ -1122,18 +1002,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:22",
-    "manuscript": "D",
-    "base_reading": "εγενετο τοτε",
-    "ms_reading": "εγενοντο δε",
+    "manuscript": "A",
+    "base_reading": "τοτε",
+    "ms_reading": "δε",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:22",
+    "manuscript": "B",
+    "base_reading": "εγκαινια",
+    "ms_reading": "ενκαινια",
     "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:22",
-    "manuscript": "P66",
-    "base_reading": "τοτε",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
+    "manuscript": "D",
+    "base_reading": "εγενετο",
+    "ms_reading": "εγενοντο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:22",
+    "manuscript": "D",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
@@ -1145,18 +1041,18 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
-    "verse": "J 10:22",
-    "manuscript": "aleph",
-    "base_reading": "τοτε",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
+    "verse": "J 10:23",
+    "manuscript": "D",
+    "base_reading": "περιπατει",
+    "ms_reading": "περιεπατι",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:23",
-    "manuscript": "aleph",
-    "base_reading": "σολομωντος",
-    "ms_reading": "σολομωνος",
+    "manuscript": "P66",
+    "base_reading": "περιπατει",
+    "ms_reading": "περιεπατει",
     "type": "substitution_morphological"
   },
   {
@@ -1169,59 +1065,99 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
-    "verse": "J 10:24",
-    "manuscript": "D",
-    "base_reading": "ελεγον",
-    "ms_reading": "ελεγαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:24",
-    "manuscript": "D",
-    "base_reading": "ελεγον",
-    "ms_reading": "ελεγαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:24",
+    "verse": "J 10:23",
     "manuscript": "aleph",
-    "base_reading": "ειπε",
-    "ms_reading": "ειπον",
+    "base_reading": "περιπατει",
+    "ms_reading": "περιεπατει",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:24",
+    "manuscript": "A",
+    "base_reading": "εκυκλευσαν",
+    "ms_reading": "εκυκλωσαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:24",
+    "manuscript": "B",
+    "base_reading": "εκυκλωσαν",
+    "ms_reading": "εκυκλευσαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:24",
+    "manuscript": "D",
+    "base_reading": "ελεγον",
+    "ms_reading": "ελεγαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:24",
+    "manuscript": "P66",
+    "base_reading": "εκυκλευσαν",
+    "ms_reading": "εκυκλωσαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:25",
-    "manuscript": "D",
+    "manuscript": "A",
     "base_reading": "ουκ επιστευσατε",
-    "ms_reading": "ου πιστευετε μοι",
+    "ms_reading": "ου πιστευετε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:25",
-    "manuscript": "aleph",
+    "manuscript": "B",
+    "base_reading": "ου πιστευετε",
+    "ms_reading": "ουκ επιστευσατε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:25",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "μοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:25",
+    "manuscript": "D",
+    "base_reading": "αυτοις",
+    "ms_reading": "ο",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:25",
+    "manuscript": "P66",
     "base_reading": "αυτοις",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "10",
-    "verse": "J 10:26",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "καθως ειπον υμιν",
-    "type": "addition"
+    "verse": "J 10:25",
+    "manuscript": "aleph",
+    "base_reading": "τω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
     "verse": "J 10:26",
     "manuscript": "B",
-    "base_reading": "ου γαρ",
-    "ms_reading": "οτι ουκ",
-    "type": "substitution_lexical"
+    "base_reading": "καθως ειπον υμιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
@@ -1242,7 +1178,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:26",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "ου γαρ",
     "ms_reading": "οτι ουκ",
     "type": "substitution_lexical"
@@ -1250,23 +1186,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:27",
-    "manuscript": "P66",
-    "base_reading": "ακουει",
-    "ms_reading": "ακουουσιν",
+    "manuscript": "aleph",
+    "base_reading": "ακουει καγω",
+    "ms_reading": "ακουουσιν και",
     "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:28",
     "manuscript": "D",
-    "base_reading": "ουχ",
-    "ms_reading": "ου μη",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:28",
-    "manuscript": "P66",
     "base_reading": "διδωμι αυτοις ζωην αιωνιον",
     "ms_reading": "ζωην αιωνιον διδωμι αυτοις",
     "type": "substitution_word_order"
@@ -1275,17 +1203,17 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:28",
     "manuscript": "aleph",
-    "base_reading": "απολωνται",
-    "ms_reading": "αποληται",
-    "type": "substitution_morphological"
+    "base_reading": "ουχ",
+    "ms_reading": "ου μη",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "10",
     "verse": "J 10:29",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "μου",
-    "type": "addition"
+    "base_reading": "ο",
+    "ms_reading": "ος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
@@ -1299,33 +1227,33 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:29",
     "manuscript": "D",
-    "base_reading": "ος δεδωκεν",
-    "ms_reading": "ο δεδωκως",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "μου",
+    "type": "addition"
   },
   {
     "chapter": "10",
     "verse": "J 10:29",
     "manuscript": "D",
-    "base_reading": "μειζον παντων",
-    "ms_reading": "παντων μειζων",
-    "type": "substitution_word_order"
+    "base_reading": "δεδωκεν",
+    "ms_reading": "δεδωκως",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:29",
+    "manuscript": "P66",
+    "base_reading": "ο δεδωκεν μοι",
+    "ms_reading": "ος εδωκεν μιζων",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:29",
     "manuscript": "aleph",
-    "base_reading": "μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:3",
-    "manuscript": "D",
-    "base_reading": "θυρωρος",
-    "ms_reading": "θυρουρος",
-    "type": "substitution_morphological"
+    "base_reading": "μειζον παντων",
+    "ms_reading": "παντων μειζων",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "10",
@@ -1339,17 +1267,9 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:3",
     "manuscript": "D",
-    "base_reading": "προβατα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:3",
-    "manuscript": "D",
-    "base_reading": "προβατα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "θυρωρος",
+    "ms_reading": "θυρουρος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
@@ -1358,6 +1278,14 @@ window.DATA_VARIANTS = [
     "base_reading": "προβατα",
     "ms_reading": "προβατια",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:31",
+    "manuscript": "P66",
+    "base_reading": "λιθασωσιν αυτον",
+    "ms_reading": "αυτον λιθασωσιν",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "10",
@@ -1371,25 +1299,9 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:32",
     "manuscript": "B",
-    "base_reading": "με",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:32",
-    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "με",
+    "ms_reading": "εμε",
     "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:32",
-    "manuscript": "D",
-    "base_reading": "μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "10",
@@ -1402,9 +1314,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:32",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "αυτω",
-    "ms_reading": "ουν αυτων",
+    "ms_reading": "αυτων",
     "type": "substitution_morphological"
   },
   {
@@ -1418,17 +1330,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:32",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "με",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:32",
     "manuscript": "aleph",
-    "base_reading": "με",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "αυτω",
+    "ms_reading": "αυτων",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
     "verse": "J 10:33",
     "manuscript": "D",
-    "base_reading": "απεκριθησαν",
-    "ms_reading": "απεκριθης",
+    "base_reading": "ποιεις",
+    "ms_reading": "ποις",
     "type": "substitution_morphological"
   },
   {
@@ -1444,15 +1364,47 @@ window.DATA_VARIANTS = [
     "verse": "J 10:34",
     "manuscript": "D",
     "base_reading": "[ADD]",
+    "ms_reading": "και ειπεν",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:34",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
     "ms_reading": "ο",
     "type": "addition"
   },
   {
     "chapter": "10",
     "verse": "J 10:34",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "και ειπεν",
+    "type": "addition"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:34",
+    "manuscript": "P66",
+    "base_reading": "εστι",
+    "ms_reading": "εστιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:34",
+    "manuscript": "P66",
+    "base_reading": "ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:34",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "ιησους και ειπεν",
+    "ms_reading": "οτι",
     "type": "addition"
   },
   {
@@ -1465,16 +1417,16 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
-    "verse": "J 10:36",
+    "verse": "J 10:35",
     "manuscript": "D",
-    "base_reading": "του",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "του θεου εγενετο",
+    "ms_reading": "εγενετο του θεου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "10",
     "verse": "J 10:36",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "του",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -1490,26 +1442,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:38",
-    "manuscript": "A",
-    "base_reading": "γεινωσκητε",
-    "ms_reading": "πιστευσητε",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "και γεινωσκητε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
     "verse": "J 10:38",
-    "manuscript": "A",
-    "base_reading": "πιστευητε",
-    "ms_reading": "πιστευετε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:38",
-    "manuscript": "B",
-    "base_reading": "πιστευσητε",
-    "ms_reading": "γεινωσκητε",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "πιστευετε",
+    "ms_reading": "θελετε πιστευειν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "10",
@@ -1522,22 +1466,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "10",
     "verse": "J 10:38",
-    "manuscript": "P66",
-    "base_reading": "πιστευσητε",
-    "ms_reading": "γινωσκηται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:38",
-    "manuscript": "aleph",
-    "base_reading": "πιστευσατε",
-    "ms_reading": "πιστευσεται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:38",
     "manuscript": "aleph",
     "base_reading": "πιστευετε",
     "ms_reading": "πιστευσεται",
@@ -1545,59 +1473,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
-    "verse": "J 10:38",
-    "manuscript": "aleph",
-    "base_reading": "αυτω",
-    "ms_reading": "τω πατρι",
+    "verse": "J 10:39",
+    "manuscript": "B",
+    "base_reading": "ουν",
+    "ms_reading": "παλιν",
     "type": "substitution_lexical"
   },
   {
     "chapter": "10",
     "verse": "J 10:39",
-    "manuscript": "A",
-    "base_reading": "αυτον",
+    "manuscript": "B",
+    "base_reading": "παλιν",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:39",
-    "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:39",
-    "manuscript": "P66",
-    "base_reading": "αυτον παλιν",
-    "ms_reading": "παλιν αυτον",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:4",
-    "manuscript": "D",
-    "base_reading": "εμπροσθεν",
-    "ms_reading": "ενπροσθεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:4",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:4",
-    "manuscript": "D",
-    "base_reading": "την φωνην αυτου",
-    "ms_reading": "αυτου την φωνην",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "10",
@@ -1609,27 +1497,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "10",
-    "verse": "J 10:40",
-    "manuscript": "B",
-    "base_reading": "ουν",
+    "verse": "J 10:4",
+    "manuscript": "P66",
+    "base_reading": "προβατα",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:40",
-    "manuscript": "B",
-    "base_reading": "εμινεν",
-    "ms_reading": "εμενεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:40",
-    "manuscript": "P66",
-    "base_reading": "οπου",
-    "ms_reading": "ου",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "10",
@@ -1643,57 +1515,49 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:40",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:40",
-    "manuscript": "aleph",
     "base_reading": "εις τον τοπον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "10",
-    "verse": "J 10:42",
-    "manuscript": "A",
-    "base_reading": "πολλοι επιστευσαν",
-    "ms_reading": "επιστευσαν πολλοι",
-    "type": "substitution_word_order"
+    "verse": "J 10:40",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "10",
-    "verse": "J 10:42",
+    "verse": "J 10:41",
     "manuscript": "D",
-    "base_reading": "επιστευσαν πολλοι",
-    "ms_reading": "πολλοι επιστευσαν",
-    "type": "substitution_word_order"
+    "base_reading": "οτι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "10",
+    "verse": "J 10:41",
+    "manuscript": "aleph",
+    "base_reading": "οτι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "10",
     "verse": "J 10:42",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "επιστευσαν πολλοι",
     "ms_reading": "πολλοι επιστευσαν",
     "type": "substitution_word_order"
   },
   {
     "chapter": "10",
-    "verse": "J 10:5",
-    "manuscript": "P66",
-    "base_reading": "ακολουθησουσιν",
-    "ms_reading": "ακολουθησωσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:5",
+    "verse": "J 10:6",
     "manuscript": "aleph",
-    "base_reading": "ακολουθησουσιν",
-    "ms_reading": "ακολουθησωσιν",
-    "type": "substitution_morphological"
+    "base_reading": "εκεινοι δε",
+    "ms_reading": "και",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "10",
@@ -1707,23 +1571,7 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:7",
     "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "υμιν",
-    "type": "addition"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:7",
-    "manuscript": "D",
-    "base_reading": "αυτοις παλιν",
-    "ms_reading": "παλιν αυτοις",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "10",
-    "verse": "J 10:7",
-    "manuscript": "P66",
-    "base_reading": "παλιν",
+    "base_reading": "υμιν οτι",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -1731,14 +1579,14 @@ window.DATA_VARIANTS = [
     "chapter": "10",
     "verse": "J 10:7",
     "manuscript": "P66",
-    "base_reading": "ουν παλιν",
-    "ms_reading": "αυτοις ο",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "λεγω",
+    "type": "addition"
   },
   {
     "chapter": "10",
     "verse": "J 10:7",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "λεγω",
     "ms_reading": "οτι",
     "type": "substitution_lexical"
@@ -1762,73 +1610,57 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:1",
-    "manuscript": "A",
-    "base_reading": "αυτης",
-    "ms_reading": "αυτου",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:1",
-    "manuscript": "A",
-    "base_reading": "και μαρθας",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:1",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "της",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:1",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "της",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:1",
-    "manuscript": "aleph",
+    "manuscript": "B",
     "base_reading": "αυτου",
     "ms_reading": "αυτης",
     "type": "substitution_lexical"
   },
   {
     "chapter": "11",
+    "verse": "J 11:1",
+    "manuscript": "P66",
+    "base_reading": "μαρθας",
+    "ms_reading": "μαριας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:10",
+    "manuscript": "D",
+    "base_reading": "αυτω",
+    "ms_reading": "αυτη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:11",
+    "manuscript": "B",
+    "base_reading": "ταυτα",
+    "ms_reading": "ταυταυτα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
     "verse": "J 11:11",
     "manuscript": "D",
-    "base_reading": "ταυταυτα",
-    "ms_reading": "ταυτα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:11",
-    "manuscript": "P66",
-    "base_reading": "ταυταυτα",
-    "ms_reading": "ταυτα",
+    "base_reading": "κεκοιμηται",
+    "ms_reading": "κοιμαται",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:12",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι μαθηται",
-    "type": "addition"
+    "manuscript": "A",
+    "base_reading": "οι μαθηται",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
     "verse": "J 11:12",
-    "manuscript": "P66",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
+    "manuscript": "D",
+    "base_reading": "κεκοιμηται",
+    "ms_reading": "κοιμαται",
     "type": "substitution_morphological"
   },
   {
@@ -1841,19 +1673,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:12",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι μαθηται",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:12",
-    "manuscript": "aleph",
-    "base_reading": "οι μαθηται αυτω",
-    "ms_reading": "αυτω οι μαθηται",
-    "type": "substitution_word_order"
+    "verse": "J 11:13",
+    "manuscript": "P66",
+    "base_reading": "του θανατου",
+    "ms_reading": "της κοιμησεως",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
@@ -1866,42 +1690,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:14",
-    "manuscript": "A",
-    "base_reading": "ουν",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο φιλος ημων",
+    "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:14",
+    "manuscript": "P66",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:14",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο φιλος ημων",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:14",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο φιλος ημων",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:16",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
   },
   {
     "chapter": "11",
     "verse": "J 11:17",
-    "manuscript": "A",
-    "base_reading": "ημερας",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ημερας",
+    "type": "addition"
   },
   {
     "chapter": "11",
@@ -1910,14 +1718,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ηδη εχοντα",
     "ms_reading": "ημερας",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:17",
-    "manuscript": "D",
-    "base_reading": "ηδη",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "11",
@@ -1926,38 +1726,6 @@ window.DATA_VARIANTS = [
     "base_reading": "εχοντα εν τω μνημειω",
     "ms_reading": "εν τω μνημειω εχοντα",
     "type": "substitution_word_order"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:17",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ηδη",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:17",
-    "manuscript": "P66",
-    "base_reading": "ευρεν",
-    "ms_reading": "ο ιησους ευρον",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:17",
-    "manuscript": "P66",
-    "base_reading": "ηδη εχοντα",
-    "ms_reading": "ημερας",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:17",
-    "manuscript": "aleph",
-    "base_reading": "τεσσαρας",
-    "ms_reading": "τεσσαρες ημερας",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -1971,14 +1739,6 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:18",
     "manuscript": "D",
-    "base_reading": "εγγυς",
-    "ms_reading": "ενγυς",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:18",
-    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "η",
     "type": "addition"
@@ -1987,17 +1747,9 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:18",
     "manuscript": "D",
-    "base_reading": "ως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:19",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "base_reading": "εγγυς",
+    "ms_reading": "ενγυς",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2011,14 +1763,30 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:19",
     "manuscript": "A",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "11",
     "verse": "J 11:19",
     "manuscript": "B",
+    "base_reading": "τας περι",
+    "ms_reading": "την",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:19",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:19",
+    "manuscript": "D",
     "base_reading": "μαριαν",
     "ms_reading": "μαριαμ",
     "type": "substitution_morphological"
@@ -2027,25 +1795,33 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:19",
     "manuscript": "D",
-    "base_reading": "και",
+    "base_reading": "αυτων",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
     "verse": "J 11:19",
-    "manuscript": "D",
-    "base_reading": "τας περι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:19",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "τας περι",
     "ms_reading": "την",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:19",
+    "manuscript": "P66",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαριαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:2",
+    "manuscript": "B",
+    "base_reading": "μαρια",
+    "ms_reading": "μαριαμ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2054,6 +1830,14 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "και",
     "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:2",
+    "manuscript": "D",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαρια",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2067,8 +1851,16 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:2",
     "manuscript": "P66",
-    "base_reading": "ησθενει",
-    "ms_reading": "ασθενων",
+    "base_reading": "ο",
+    "ms_reading": "και",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:2",
+    "manuscript": "P66",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαρια",
     "type": "substitution_morphological"
   },
   {
@@ -2078,14 +1870,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ην",
     "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:2",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "και",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
@@ -2107,15 +1891,7 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:21",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "κυριε",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:21",
-    "manuscript": "A",
-    "base_reading": "η",
+    "base_reading": "απεθανεν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -2138,6 +1914,30 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:21",
+    "manuscript": "D",
+    "base_reading": "ετεθνηκει",
+    "ms_reading": "απεθανεν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:21",
+    "manuscript": "P66",
+    "base_reading": "ιησουν",
+    "ms_reading": "κυριον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:21",
+    "manuscript": "P66",
+    "base_reading": "ουκ αν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:21",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "απεθανεν",
@@ -2155,25 +1955,25 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:22",
     "manuscript": "P66",
-    "base_reading": "αιτηση",
-    "ms_reading": "αιτησης",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:24",
-    "manuscript": "B",
-    "base_reading": "αναστασει",
-    "ms_reading": "αναστησει",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:24",
-    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "η",
+    "ms_reading": "αλλα",
     "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:22",
+    "manuscript": "aleph",
+    "base_reading": "αλλα",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:22",
+    "manuscript": "aleph",
+    "base_reading": "αν",
+    "ms_reading": "εαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2194,25 +1994,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:27",
-    "manuscript": "A",
-    "base_reading": "ναι κυριε",
-    "ms_reading": "ο ιησους",
+    "manuscript": "B",
+    "base_reading": "ο ιησους",
+    "ms_reading": "ναι κυριε",
     "type": "substitution_lexical"
   },
   {
     "chapter": "11",
-    "verse": "J 11:27",
-    "manuscript": "D",
-    "base_reading": "κοσμον",
-    "ms_reading": "κοσμος",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
     "verse": "J 11:28",
-    "manuscript": "B",
-    "base_reading": "ταυτα",
-    "ms_reading": "τουτο",
+    "manuscript": "D",
+    "base_reading": "λαθρα ειπασα",
+    "ms_reading": "μαριαμ σιωπη ειπουσα οτι",
     "type": "substitution_lexical"
   },
   {
@@ -2226,26 +2018,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:28",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "οτι",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:28",
-    "manuscript": "D",
-    "base_reading": "λαθρα",
-    "ms_reading": "μαριαμ σιωπη",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:28",
     "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "οτι",
     "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:28",
+    "manuscript": "aleph",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαριαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2265,22 +2049,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:28",
-    "manuscript": "aleph",
-    "base_reading": "μαριαμ",
-    "ms_reading": "μαριαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:29",
-    "manuscript": "A",
-    "base_reading": "ηρχετο",
-    "ms_reading": "ερχεται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
     "verse": "J 11:29",
     "manuscript": "A",
     "base_reading": "ηγερθη",
@@ -2291,9 +2059,9 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:29",
     "manuscript": "B",
-    "base_reading": "εγειρετε",
-    "ms_reading": "ηγερθη",
-    "type": "substitution_lexical"
+    "base_reading": "ερχεται",
+    "ms_reading": "ηρχετο",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2315,24 +2083,32 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:29",
     "manuscript": "P66",
-    "base_reading": "ηρχετο",
-    "ms_reading": "ερχεται",
-    "type": "substitution_morphological"
+    "base_reading": "ηγερθη",
+    "ms_reading": "εγειρεται",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
     "verse": "J 11:29",
-    "manuscript": "aleph",
-    "base_reading": "ερχεται",
-    "ms_reading": "ηρχετο",
+    "manuscript": "P66",
+    "base_reading": "εκεινη δε",
+    "ms_reading": "εκεινης",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
-    "verse": "J 11:29",
-    "manuscript": "aleph",
-    "base_reading": "εγειρετε",
-    "ms_reading": "ηγερθη",
+    "verse": "J 11:3",
+    "manuscript": "P66",
+    "base_reading": "λεγουσαι",
+    "ms_reading": "λεγουσα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:3",
+    "manuscript": "P66",
+    "base_reading": "αι αδελφαι",
+    "ms_reading": "μαρα",
     "type": "substitution_lexical"
   },
   {
@@ -2347,9 +2123,9 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:30",
     "manuscript": "D",
-    "base_reading": "ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ουπω δε",
+    "ms_reading": "ου γαρ ιησους",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
@@ -2361,16 +2137,16 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:31",
-    "manuscript": "D",
-    "base_reading": "μαριαν",
-    "ms_reading": "μαριαμ",
-    "type": "substitution_morphological"
+    "verse": "J 11:30",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ετι",
+    "type": "addition"
   },
   {
     "chapter": "11",
     "verse": "J 11:31",
-    "manuscript": "D",
+    "manuscript": "B",
     "base_reading": "λεγοντες",
     "ms_reading": "δοξαντες",
     "type": "substitution_morphological"
@@ -2378,50 +2154,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:31",
-    "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "ταχεως ανεστη",
+    "ms_reading": "ανεστη ταχεως",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "11",
     "verse": "J 11:31",
-    "manuscript": "P66",
-    "base_reading": "μαριαμ",
-    "ms_reading": "μαριαν",
+    "manuscript": "aleph",
+    "base_reading": "λεγοντες",
+    "ms_reading": "δοξαντες",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:32",
     "manuscript": "A",
-    "base_reading": "μαριαμ",
-    "ms_reading": "μαρια",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:32",
-    "manuscript": "D",
-    "base_reading": "μαριαμ",
-    "ms_reading": "μαρια",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:32",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:32",
-    "manuscript": "D",
-    "base_reading": "απεθανεν ο αδελφος",
-    "ms_reading": "ο αδελφος απεθανεν",
+    "base_reading": "μου απεθανεν",
+    "ms_reading": "απεθανεν μου",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:32",
+    "manuscript": "B",
+    "base_reading": "απεθανεν μου",
+    "ms_reading": "μου απεθανεν",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:32",
+    "manuscript": "D",
+    "base_reading": "αυτω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:32",
+    "manuscript": "D",
+    "base_reading": "αυτον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
@@ -2434,10 +2210,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:33",
-    "manuscript": "D",
-    "base_reading": "συνελθοντας αυτη ιουδαιους",
-    "ms_reading": "ιδειους",
-    "type": "substitution_lexical"
+    "manuscript": "B",
+    "base_reading": "εβριμησατο",
+    "ms_reading": "ενεβρειμησατο",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2450,25 +2226,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:33",
-    "manuscript": "D",
+    "manuscript": "aleph",
     "base_reading": "ενεβρειμησατο",
-    "ms_reading": "τους συνεληλυθοτας μετ αυτης εταραχθη",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:33",
-    "manuscript": "P66",
-    "base_reading": "ενεβρειμησατο",
-    "ms_reading": "εβρειμησατο",
+    "ms_reading": "εβριμησατο",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
-    "verse": "J 11:33",
-    "manuscript": "aleph",
-    "base_reading": "ενεβρειμησατο",
-    "ms_reading": "εβριμησατο",
+    "verse": "J 11:34",
+    "manuscript": "D",
+    "base_reading": "κυριε",
+    "ms_reading": "και",
     "type": "substitution_morphological"
   },
   {
@@ -2482,10 +2250,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:35",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "manuscript": "P66",
+    "base_reading": "εδακρυσεν ο",
+    "ms_reading": "εδρακυσεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:35",
+    "manuscript": "P66",
+    "base_reading": "εδακρυσεν ο",
+    "ms_reading": "εδρακυσεν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
@@ -2505,16 +2281,24 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:36",
-    "manuscript": "aleph",
-    "base_reading": "ελεγον",
-    "ms_reading": "ελεγαν",
-    "type": "substitution_morphological"
+    "verse": "J 11:37",
+    "manuscript": "D",
+    "base_reading": "αυτων ελεγον",
+    "ms_reading": "ων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
     "verse": "J 11:37",
-    "manuscript": "B",
+    "manuscript": "P66",
+    "base_reading": "ελεγον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:37",
+    "manuscript": "P66",
     "base_reading": "ηδυνατο",
     "ms_reading": "εδυνατο",
     "type": "substitution_morphological"
@@ -2522,10 +2306,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:37",
-    "manuscript": "B",
-    "base_reading": "ελεγον",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
     "ms_reading": "ειπον",
-    "type": "substitution_lexical"
+    "type": "addition"
   },
   {
     "chapter": "11",
@@ -2539,89 +2323,57 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:38",
     "manuscript": "D",
-    "base_reading": "ιησους",
-    "ms_reading": "σης",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:38",
-    "manuscript": "D",
     "base_reading": "εις",
     "ms_reading": "επι",
     "type": "substitution_lexical"
   },
   {
     "chapter": "11",
-    "verse": "J 11:39",
+    "verse": "J 11:38",
     "manuscript": "P66",
-    "base_reading": "κυριε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ενβρειμωμενος",
+    "ms_reading": "εμβριμωμενος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:39",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:39",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:40",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
-    "verse": "J 11:40",
+    "verse": "J 11:39",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:40",
-    "manuscript": "P66",
-    "base_reading": "οτι",
+    "base_reading": "μαρθα",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
-    "verse": "J 11:40",
-    "manuscript": "P66",
-    "base_reading": "οτι",
+    "verse": "J 11:4",
+    "manuscript": "D",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
-    "verse": "J 11:40",
+    "verse": "J 11:4",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "αλλ",
     "type": "addition"
   },
   {
     "chapter": "11",
-    "verse": "J 11:41",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
+    "verse": "J 11:40",
+    "manuscript": "P66",
+    "base_reading": "οτι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
@@ -2636,8 +2388,24 @@ window.DATA_VARIANTS = [
     "verse": "J 11:41",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "οτε ουν",
+    "ms_reading": "αυτου",
     "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:41",
+    "manuscript": "P66",
+    "base_reading": "ου ην",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:41",
+    "manuscript": "aleph",
+    "base_reading": "ου ην",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
@@ -2649,17 +2417,9 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:44",
-    "manuscript": "A",
-    "base_reading": "τους ποδας και τας χειρας",
-    "ms_reading": "τας χειρας και τους ποδας",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:44",
-    "manuscript": "A",
-    "base_reading": "αυτοις",
+    "verse": "J 11:42",
+    "manuscript": "D",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -2675,22 +2435,14 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:44",
     "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτον",
-    "type": "addition"
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
     "verse": "J 11:44",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:44",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "αυτοις ο",
     "type": "addition"
@@ -2698,17 +2450,33 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:44",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "αυτον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
-    "verse": "J 11:45",
+    "verse": "J 11:44",
     "manuscript": "D",
-    "base_reading": "μαριαν και θεασαμενοι",
-    "ms_reading": "μαριαμ εωρακοτες",
+    "base_reading": "[ADD]",
+    "ms_reading": "ευθυς",
+    "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:45",
+    "manuscript": "A",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαριαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:45",
+    "manuscript": "B",
+    "base_reading": "μαριαν",
+    "ms_reading": "μαριαμ",
     "type": "substitution_morphological"
   },
   {
@@ -2718,6 +2486,14 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ο ιησους",
     "type": "addition"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:45",
+    "manuscript": "D",
+    "base_reading": "εκ",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
@@ -2737,14 +2513,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:45",
-    "manuscript": "P66",
-    "base_reading": "και θεασαμενοι ο",
-    "ms_reading": "εωρακοτες α",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
     "verse": "J 11:46",
     "manuscript": "D",
     "base_reading": "απηλθον",
@@ -2754,18 +2522,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:46",
-    "manuscript": "D",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
+    "manuscript": "P66",
+    "base_reading": "απηλθον",
+    "ms_reading": "απηλθαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
-    "verse": "J 11:47",
-    "manuscript": "D",
-    "base_reading": "οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 11:46",
+    "manuscript": "aleph",
+    "base_reading": "οσα",
+    "ms_reading": "α",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:46",
+    "manuscript": "aleph",
+    "base_reading": "επον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
@@ -2778,6 +2554,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:48",
+    "manuscript": "D",
+    "base_reading": "ημων και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:48",
     "manuscript": "P66",
     "base_reading": "τον",
     "ms_reading": "το",
@@ -2785,6 +2569,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
+    "verse": "J 11:48",
+    "manuscript": "P66",
+    "base_reading": "πιστευσουσιν",
+    "ms_reading": "πιστευσωσιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:48",
+    "manuscript": "P66",
+    "base_reading": "πιστευσουσιν",
+    "ms_reading": "πιστευσωσιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
     "verse": "J 11:49",
     "manuscript": "P66",
     "base_reading": "τις",
@@ -2793,64 +2593,72 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "11",
-    "verse": "J 11:49",
+    "verse": "J 11:5",
+    "manuscript": "D",
+    "base_reading": "ηγαπα",
+    "ms_reading": "εφιλει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:5",
     "manuscript": "P66",
-    "base_reading": "τις",
+    "base_reading": "αυτης",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "11",
     "verse": "J 11:51",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "εκεινου προεφητευσεν",
     "ms_reading": "επροφητευσεν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
-    "verse": "J 11:52",
-    "manuscript": "A",
-    "base_reading": "τεκνα του θεου",
-    "ms_reading": "του θεου τεκνα",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:52",
-    "manuscript": "B",
-    "base_reading": "του θεου τεκνα",
-    "ms_reading": "τεκνα του θεου",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:52",
+    "verse": "J 11:51",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "συναγαγη",
-    "type": "addition"
+    "base_reading": "εκεινου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
-    "verse": "J 11:52",
-    "manuscript": "P66",
-    "base_reading": "διεσκορπισμενα",
-    "ms_reading": "εσκορπισμενα",
+    "verse": "J 11:53",
+    "manuscript": "A",
+    "base_reading": "εβουλευσαντο",
+    "ms_reading": "συνεβουλευσαντο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:53",
+    "manuscript": "B",
+    "base_reading": "συνεβουλευσαντο",
+    "ms_reading": "εβουλευσαντο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:53",
+    "manuscript": "D",
+    "base_reading": "συνεβουλευσαντο",
+    "ms_reading": "εβουλευσαντο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:53",
+    "manuscript": "aleph",
+    "base_reading": "συνεβουλευσαντο",
+    "ms_reading": "εβουλευσαντο",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:54",
     "manuscript": "A",
-    "base_reading": "εμεινεν",
-    "ms_reading": "διετριβεν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:54",
-    "manuscript": "A",
     "base_reading": "ο",
     "ms_reading": "ιησους",
     "type": "substitution_lexical"
@@ -2859,22 +2667,38 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:54",
     "manuscript": "B",
-    "base_reading": "διετριβεν",
-    "ms_reading": "εμεινεν",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "ο ουν",
+    "type": "addition"
   },
   {
     "chapter": "11",
     "verse": "J 11:54",
     "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "ιησους",
-    "type": "substitution_lexical"
+    "base_reading": "εκειθεν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
     "verse": "J 11:54",
-    "manuscript": "D",
+    "manuscript": "P66",
+    "base_reading": "εις",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:54",
+    "manuscript": "P66",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:54",
+    "manuscript": "aleph",
     "base_reading": "αυτου",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -2891,16 +2715,8 @@ window.DATA_VARIANTS = [
     "chapter": "11",
     "verse": "J 11:56",
     "manuscript": "D",
-    "base_reading": "εστηκοτες",
-    "ms_reading": "εστωτες",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:56",
-    "manuscript": "D",
-    "base_reading": "δοκει υμιν",
-    "ms_reading": "δοκειτε",
+    "base_reading": "εορτην",
+    "ms_reading": "ορτην",
     "type": "substitution_morphological"
   },
   {
@@ -2914,25 +2730,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:57",
-    "manuscript": "D",
-    "base_reading": "εντολας",
-    "ms_reading": "εντολην",
+    "manuscript": "B",
+    "base_reading": "εστιν",
+    "ms_reading": "εστι",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:57",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "base_reading": "εαν",
+    "ms_reading": "αν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:57",
     "manuscript": "P66",
-    "base_reading": "εντολας",
-    "ms_reading": "εντολην",
+    "base_reading": "εστι",
+    "ms_reading": "εστιν",
     "type": "substitution_morphological"
   },
   {
@@ -2942,22 +2758,6 @@ window.DATA_VARIANTS = [
     "base_reading": "εστι",
     "ms_reading": "εστιν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:57",
-    "manuscript": "aleph",
-    "base_reading": "εντολην",
-    "ms_reading": "εντολας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "11",
-    "verse": "J 11:6",
-    "manuscript": "D",
-    "base_reading": "ην",
-    "ms_reading": "ιησους επι τω",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "11",
@@ -2978,18 +2778,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:7",
+    "manuscript": "B",
+    "base_reading": "πολιν",
+    "ms_reading": "παλιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:7",
     "manuscript": "D",
-    "base_reading": "επειτα",
-    "ms_reading": "ειτα",
+    "base_reading": "πολιν",
+    "ms_reading": "παλιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "11",
     "verse": "J 11:7",
     "manuscript": "P66",
-    "base_reading": "επειτα",
-    "ms_reading": "ειτα",
-    "type": "substitution_morphological"
+    "base_reading": "τοις μαθηταις",
+    "ms_reading": "αυτοις",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:7",
+    "manuscript": "P66",
+    "base_reading": "τοις μαθηταις αυτου",
+    "ms_reading": "αυτοις",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "11",
+    "verse": "J 11:7",
+    "manuscript": "aleph",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "11",
@@ -3002,10 +2826,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "11",
     "verse": "J 11:9",
-    "manuscript": "D",
-    "base_reading": "ωραι εισιν της ημερας",
-    "ms_reading": "ωρας εχει η ημερα",
+    "manuscript": "aleph",
+    "base_reading": "τουτου",
+    "ms_reading": "του",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:1",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "12",
@@ -3014,46 +2846,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ο τεθνηκως",
     "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:1",
-    "manuscript": "B",
-    "base_reading": "ο τεθνηκως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:1",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο τεθνηκως",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:1",
-    "manuscript": "aleph",
-    "base_reading": "ο τεθνηκως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:10",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:11",
-    "manuscript": "D",
-    "base_reading": "δι αυτον υπηγον των ιουδαιων",
-    "ms_reading": "των ιουδαιων δι αυτον υπηγον",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "12",
@@ -3074,10 +2866,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:12",
-    "manuscript": "D",
-    "base_reading": "ιεροσολυμα",
-    "ms_reading": "ιερουσαλημ",
-    "type": "substitution_morphological"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ιησους",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:12",
+    "manuscript": "A",
+    "base_reading": "ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3090,9 +2890,33 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:12",
+    "manuscript": "D",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:12",
+    "manuscript": "D",
+    "base_reading": "ιεροσολυμα",
+    "ms_reading": "ιερουσαλημ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:12",
+    "manuscript": "P66",
+    "base_reading": "ερχεται",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:12",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "ερχεται ο",
+    "ms_reading": "ο",
     "type": "addition"
   },
   {
@@ -3114,10 +2938,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:13",
-    "manuscript": "B",
-    "base_reading": "εκραζον λεγοντες",
-    "ms_reading": "εκραυγασαν",
+    "manuscript": "A",
+    "base_reading": "εκραυγασαν",
+    "ms_reading": "εκραζον λεγοντες",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:13",
+    "manuscript": "A",
+    "base_reading": "υπαντησιν",
+    "ms_reading": "απαντησιν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
@@ -3138,30 +2970,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:13",
-    "manuscript": "D",
-    "base_reading": "εκραζον",
-    "ms_reading": "εκραυγαζον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:13",
-    "manuscript": "P66",
-    "base_reading": "ελαβον",
-    "ms_reading": "ελαβαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:13",
-    "manuscript": "P66",
-    "base_reading": "απαντησιν",
-    "ms_reading": "υπαντησιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:13",
     "manuscript": "P66",
     "base_reading": "βαια",
     "ms_reading": "βαλια",
@@ -3169,51 +2977,51 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:14",
-    "manuscript": "D",
-    "base_reading": "εστιν",
-    "ms_reading": "εστι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:14",
-    "manuscript": "D",
-    "base_reading": "εστιν",
-    "ms_reading": "εστι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:14",
-    "manuscript": "aleph",
-    "base_reading": "εστιν",
-    "ms_reading": "εστι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:15",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "σου",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:15",
+    "verse": "J 12:13",
     "manuscript": "P66",
-    "base_reading": "πωλον",
-    "ms_reading": "πωλου",
+    "base_reading": "εκραζον",
+    "ms_reading": "εκραυγασαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:13",
+    "manuscript": "aleph",
+    "base_reading": "εκραζον",
+    "ms_reading": "εκραυγαζον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:15",
+    "manuscript": "aleph",
+    "base_reading": "θυγατηρ",
+    "ms_reading": "θυγατερ",
     "type": "substitution_morphological"
   },
   {
     "chapter": "12",
     "verse": "J 12:16",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:16",
     "manuscript": "D",
-    "base_reading": "επ αυτω",
-    "ms_reading": "περι αυτου",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:16",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "12",
@@ -3226,8 +3034,16 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:16",
+    "manuscript": "D",
+    "base_reading": "εγνωσαν αυτου",
+    "ms_reading": "ενοησαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:16",
     "manuscript": "P66",
-    "base_reading": "δε",
+    "base_reading": "τοτε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -3235,41 +3051,57 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:16",
     "manuscript": "P66",
-    "base_reading": "αυτου οι μαθηται",
-    "ms_reading": "οι μαθηται αυτου",
+    "base_reading": "ην επ",
+    "ms_reading": "η εν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:16",
+    "manuscript": "aleph",
+    "base_reading": "οι μαθηται αυτου",
+    "ms_reading": "αυτου οι μαθηται",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:16",
+    "manuscript": "aleph",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:17",
+    "manuscript": "P66",
+    "base_reading": "οτε",
+    "ms_reading": "οτι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:18",
+    "manuscript": "A",
+    "base_reading": "υπηντησεν αυτω και",
+    "ms_reading": "και υπηντησεν αυτω",
     "type": "substitution_word_order"
   },
   {
     "chapter": "12",
     "verse": "J 12:18",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "υπηντησεν",
+    "ms_reading": "και υπηντησαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
     "verse": "J 12:18",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "πολυς",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:19",
-    "manuscript": "A",
-    "base_reading": "ειπαν",
-    "ms_reading": "ειπον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:19",
-    "manuscript": "D",
-    "base_reading": "ειπαν",
-    "ms_reading": "ειπον",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3281,35 +3113,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:19",
-    "manuscript": "aleph",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
-    "type": "substitution_morphological"
+    "verse": "J 12:2",
+    "manuscript": "D",
+    "base_reading": "η",
+    "ms_reading": "διηκονι",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "12",
     "verse": "J 12:2",
     "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:2",
-    "manuscript": "P66",
-    "base_reading": "εποιησαν ουν",
-    "ms_reading": "εποιησεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:2",
-    "manuscript": "P66",
-    "base_reading": "εποιησαν ουν",
-    "ms_reading": "εποιησεν",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "12",
@@ -3321,30 +3137,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:2",
-    "manuscript": "aleph",
-    "base_reading": "συν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:20",
-    "manuscript": "A",
-    "base_reading": "ελληνες τινες",
-    "ms_reading": "τινες ελληνες",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:20",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και ελληνες",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
     "verse": "J 12:20",
     "manuscript": "P66",
     "base_reading": "τινες ελληνες",
@@ -3353,16 +3145,32 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:20",
-    "manuscript": "aleph",
-    "base_reading": "τινες ελληνες",
-    "ms_reading": "ελληνες τινες",
-    "type": "substitution_word_order"
+    "verse": "J 12:21",
+    "manuscript": "D",
+    "base_reading": "βηθσαιδα",
+    "ms_reading": "βηδσαιδα",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
     "verse": "J 12:22",
-    "manuscript": "B",
+    "manuscript": "D",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:22",
+    "manuscript": "D",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:22",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "ο",
     "type": "addition"
@@ -3379,9 +3187,9 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:22",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3401,10 +3209,34 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
+    "verse": "J 12:23",
+    "manuscript": "P66",
+    "base_reading": "απεκρινατο",
+    "ms_reading": "αποκρινεται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:23",
+    "manuscript": "aleph",
+    "base_reading": "απεκρινατο",
+    "ms_reading": "αποκρινεται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:24",
+    "manuscript": "D",
+    "base_reading": "πεσων",
+    "ms_reading": "πεω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
     "verse": "J 12:25",
-    "manuscript": "A",
-    "base_reading": "απολλυει",
-    "ms_reading": "απολεσει",
+    "manuscript": "B",
+    "base_reading": "απολεσει",
+    "ms_reading": "απολλυει",
     "type": "substitution_morphological"
   },
   {
@@ -3417,9 +3249,33 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:25",
-    "manuscript": "aleph",
-    "base_reading": "φυλαξει αυτην",
+    "verse": "J 12:26",
+    "manuscript": "D",
+    "base_reading": "πατηρ",
+    "ms_reading": "παρ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:26",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "μοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:26",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "μοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:26",
+    "manuscript": "D",
+    "base_reading": "εγω εκει",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -3427,48 +3283,16 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:26",
     "manuscript": "D",
-    "base_reading": "διακονος",
-    "ms_reading": "διακος",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:26",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "μοι",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:26",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "μοι",
-    "type": "addition"
+    "base_reading": "εγω εκει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
     "verse": "J 12:26",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "εμοι τις διακονη",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:26",
-    "manuscript": "P66",
-    "base_reading": "ειμι εγω",
-    "ms_reading": "εγω ειμι",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:26",
-    "manuscript": "aleph",
-    "base_reading": "τιμησει",
-    "ms_reading": "σειμησει",
+    "base_reading": "εσται",
+    "ms_reading": "εστιν",
     "type": "substitution_morphological"
   },
   {
@@ -3482,25 +3306,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:28",
-    "manuscript": "A",
-    "base_reading": "πατηρ",
-    "ms_reading": "πατερ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:28",
-    "manuscript": "D",
-    "base_reading": "πατηρ",
-    "ms_reading": "πατερ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:28",
-    "manuscript": "D",
-    "base_reading": "μου",
-    "ms_reading": "σου",
+    "manuscript": "B",
+    "base_reading": "πατερ",
+    "ms_reading": "πατηρ",
     "type": "substitution_morphological"
   },
   {
@@ -3515,9 +3323,17 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:28",
     "manuscript": "D",
-    "base_reading": "ηλθεν ουν",
-    "ms_reading": "εν τη δοξη η ειχον παρα σοι προ του τον κοσμον γενεσθαι και εγενετο",
-    "type": "substitution_lexical"
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:28",
+    "manuscript": "P66",
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
@@ -3530,49 +3346,57 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:29",
-    "manuscript": "A",
+    "manuscript": "D",
+    "base_reading": "εστως και",
+    "ms_reading": "εστηκως",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:29",
+    "manuscript": "D",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:29",
+    "manuscript": "P66",
+    "base_reading": "λελαληκεν",
+    "ms_reading": "ελαλησεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:29",
+    "manuscript": "P66",
+    "base_reading": "ελεγεν",
+    "ms_reading": "ελεγον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:29",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "ουν",
     "type": "addition"
   },
   {
     "chapter": "12",
-    "verse": "J 12:29",
-    "manuscript": "B",
-    "base_reading": "εστηκως",
-    "ms_reading": "εστως",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:29",
-    "manuscript": "D",
-    "base_reading": "βροντην γεγονεναι",
-    "ms_reading": "οτι βροντη γεγονεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:29",
-    "manuscript": "D",
-    "base_reading": "βροντην γεγονεναι",
-    "ms_reading": "οτι βροντη γεγονεν",
-    "type": "substitution_morphological"
+    "verse": "J 12:3",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "του",
+    "type": "addition"
   },
   {
     "chapter": "12",
     "verse": "J 12:3",
     "manuscript": "B",
-    "base_reading": "του",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:3",
-    "manuscript": "B",
-    "base_reading": "μαρια",
-    "ms_reading": "μαριαμ",
+    "base_reading": "επληρωθη",
+    "ms_reading": "επλησθη",
     "type": "substitution_morphological"
   },
   {
@@ -3582,6 +3406,30 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "του",
     "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:3",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "πιστικης",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:3",
+    "manuscript": "D",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:3",
+    "manuscript": "P66",
+    "base_reading": "ναρδου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3595,33 +3443,25 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:3",
     "manuscript": "aleph",
-    "base_reading": "μαριαμ",
-    "ms_reading": "μαρια",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:3",
-    "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "του",
     "type": "addition"
   },
   {
     "chapter": "12",
-    "verse": "J 12:30",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 12:3",
+    "manuscript": "aleph",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαρια",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
     "verse": "J 12:30",
-    "manuscript": "P66",
-    "base_reading": "και ειπεν ιησους",
-    "ms_reading": "ιησους και ειπεν",
-    "type": "substitution_word_order"
+    "manuscript": "D",
+    "base_reading": "γεγονεν",
+    "ms_reading": "ηλθεν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "12",
@@ -3634,18 +3474,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:31",
-    "manuscript": "P66",
-    "base_reading": "εκβληθησεται",
-    "ms_reading": "βληθησεται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:31",
-    "manuscript": "P66",
-    "base_reading": "εκβληθησεται",
-    "ms_reading": "βληθησεται",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "τουτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3657,22 +3489,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:32",
-    "manuscript": "D",
-    "base_reading": "εκ",
-    "ms_reading": "απο",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:32",
-    "manuscript": "D",
-    "base_reading": "παντας",
+    "verse": "J 12:31",
+    "manuscript": "P66",
+    "base_reading": "τουτου",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "12",
+    "verse": "J 12:31",
+    "manuscript": "P66",
+    "base_reading": "εκβληθησεται",
+    "ms_reading": "βληθησεται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
     "verse": "J 12:32",
     "manuscript": "P66",
     "base_reading": "αν",
@@ -3682,7 +3514,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:32",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "παντας",
     "ms_reading": "παντα",
     "type": "substitution_morphological"
@@ -3697,10 +3529,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:32",
+    "verse": "J 12:33",
     "manuscript": "aleph",
-    "base_reading": "παντας",
-    "ms_reading": "παντα",
+    "base_reading": "τουτο",
+    "ms_reading": "τουτον",
     "type": "substitution_morphological"
   },
   {
@@ -3715,33 +3547,25 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:34",
     "manuscript": "B",
-    "base_reading": "συ λεγεις",
-    "ms_reading": "λεγεις συ",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:34",
+    "manuscript": "P66",
+    "base_reading": "λεγεις συ",
+    "ms_reading": "συ λεγεις",
     "type": "substitution_word_order"
   },
   {
     "chapter": "12",
-    "verse": "J 12:34",
+    "verse": "J 12:35",
     "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:34",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:34",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
+    "base_reading": "καταβη",
+    "ms_reading": "καταλαβη",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "12",
@@ -3754,9 +3578,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:35",
+    "manuscript": "D",
+    "base_reading": "υμας καταβη",
+    "ms_reading": "καταλαβη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:35",
     "manuscript": "P66",
-    "base_reading": "μεθ υμων",
-    "ms_reading": "εν υμιν",
+    "base_reading": "ως",
+    "ms_reading": "εως",
     "type": "substitution_morphological"
   },
   {
@@ -3771,14 +3603,6 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:35",
     "manuscript": "P66",
-    "base_reading": "ως",
-    "ms_reading": "εως",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:35",
-    "manuscript": "P66",
     "base_reading": "καταβη",
     "ms_reading": "καταλαβη",
     "type": "substitution_morphological"
@@ -3787,8 +3611,8 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:35",
     "manuscript": "aleph",
-    "base_reading": "ως",
-    "ms_reading": "εως",
+    "base_reading": "καταβη",
+    "ms_reading": "καταλαβη",
     "type": "substitution_morphological"
   },
   {
@@ -3802,22 +3626,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:36",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:36",
-    "manuscript": "D",
-    "base_reading": "απελθων",
-    "ms_reading": "απηλθεν και",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:36",
     "manuscript": "D",
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
@@ -3827,8 +3635,32 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:36",
     "manuscript": "P66",
-    "base_reading": "υιοι",
-    "ms_reading": "ιοι",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:37",
+    "manuscript": "D",
+    "base_reading": "εμπροσθεν",
+    "ms_reading": "ενπροσθεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:37",
+    "manuscript": "P66",
+    "base_reading": "τοσαυτα",
+    "ms_reading": "ταυτα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:39",
+    "manuscript": "D",
+    "base_reading": "ηδυναντο",
+    "ms_reading": "εδυναντο",
     "type": "substitution_morphological"
   },
   {
@@ -3842,10 +3674,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:4",
-    "manuscript": "D",
-    "base_reading": "παραδιδοναι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "εκ",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:4",
+    "manuscript": "A",
+    "base_reading": "δε ιουδας ο ισκαριωτης",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "12",
@@ -3858,8 +3698,16 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:4",
-    "manuscript": "P66",
-    "base_reading": "ιουδας σιμωνος ισκαριωτης",
+    "manuscript": "D",
+    "base_reading": "σιμωνος ισκαριωτης ο μελλων",
+    "ms_reading": "απο καρυωτου ος ημελλεν παραδουναι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:4",
+    "manuscript": "D",
+    "base_reading": "παραδιδοναι",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -3874,26 +3722,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:40",
-    "manuscript": "A",
-    "base_reading": "στραφωσι",
-    "ms_reading": "επιστραφωσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:40",
-    "manuscript": "D",
-    "base_reading": "νοησωσι",
-    "ms_reading": "μη νοησουσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:40",
     "manuscript": "D",
     "base_reading": "αυτων τους οφθαλμους και επωρωσεν",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:40",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "μη",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:40",
+    "manuscript": "P66",
+    "base_reading": "επιστραφωσιν",
+    "ms_reading": "στραφωσι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:40",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "μη",
+    "type": "addition"
   },
   {
     "chapter": "12",
@@ -3913,59 +3769,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:41",
-    "manuscript": "D",
-    "base_reading": "οτι",
-    "ms_reading": "οτε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:42",
-    "manuscript": "P66",
-    "base_reading": "αποσυναγωγοι",
-    "ms_reading": "αποσυναγωγω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:46",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "πας",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:46",
+    "verse": "J 12:44",
     "manuscript": "B",
-    "base_reading": "πας",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:46",
-    "manuscript": "P66",
-    "base_reading": "πας",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:46",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "πας",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:47",
-    "manuscript": "D",
-    "base_reading": "εαν",
-    "ms_reading": "αν",
+    "base_reading": "εκραζεν",
+    "ms_reading": "εκραξεν",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:44",
+    "manuscript": "D",
+    "base_reading": "ειπεν",
+    "ms_reading": "ελεγεν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:44",
+    "manuscript": "aleph",
+    "base_reading": "εκραζεν",
+    "ms_reading": "εκραξεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:45",
+    "manuscript": "D",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:45",
+    "manuscript": "D",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -3977,27 +3817,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "12",
-    "verse": "J 12:47",
+    "verse": "J 12:49",
     "manuscript": "D",
-    "base_reading": "μη",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:47",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτα",
-    "type": "addition"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:48",
-    "manuscript": "P66",
-    "base_reading": "εχει τον κρινοντα",
-    "ms_reading": "εκρινοντα",
+    "base_reading": "δεδωκεν",
+    "ms_reading": "εδωκεν",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:49",
+    "manuscript": "D",
+    "base_reading": "εγω εξ εμαυτου",
+    "ms_reading": "εξ εμαυτου εγω",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "12",
@@ -4011,16 +3843,40 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:50",
     "manuscript": "D",
+    "base_reading": "αιωνιος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:50",
+    "manuscript": "D",
     "base_reading": "εγω",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "12",
+    "verse": "J 12:50",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "εστιν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:50",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "εστιν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "12",
     "verse": "J 12:6",
-    "manuscript": "B",
-    "base_reading": "ειχεν και",
-    "ms_reading": "εχων",
+    "manuscript": "A",
+    "base_reading": "εχων",
+    "ms_reading": "ειχεν και",
     "type": "substitution_lexical"
   },
   {
@@ -4034,18 +3890,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:7",
-    "manuscript": "A",
-    "base_reading": "ινα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "μου τετηρηκεν",
+    "ms_reading": "τηρηση",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "12",
-    "verse": "J 12:8",
-    "manuscript": "P66",
-    "base_reading": "πτωχους γαρ",
-    "ms_reading": "πτω",
-    "type": "substitution_lexical"
+    "verse": "J 12:7",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ινα",
+    "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:9",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "12",
@@ -4059,25 +3923,17 @@ window.DATA_VARIANTS = [
     "chapter": "12",
     "verse": "J 12:9",
     "manuscript": "D",
-    "base_reading": "ηλθον",
-    "ms_reading": "ηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:9",
-    "manuscript": "D",
-    "base_reading": "ηλθον",
-    "ms_reading": "ηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:9",
-    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "ιησους",
+    "ms_reading": "δε",
     "type": "addition"
+  },
+  {
+    "chapter": "12",
+    "verse": "J 12:9",
+    "manuscript": "D",
+    "base_reading": "εγνω ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "12",
@@ -4090,30 +3946,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "12",
     "verse": "J 12:9",
-    "manuscript": "D",
-    "base_reading": "ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:9",
-    "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:9",
-    "manuscript": "D",
-    "base_reading": "μονον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "12",
-    "verse": "J 12:9",
     "manuscript": "P66",
     "base_reading": "εκ",
     "ms_reading": "[OMIT]",
@@ -4122,33 +3954,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:1",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "ηλθεν",
-    "ms_reading": "ηκει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:1",
-    "manuscript": "P66",
-    "base_reading": "ηλθεν",
-    "ms_reading": "ηκει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:1",
-    "manuscript": "P66",
-    "base_reading": "τουτου προς τον",
-    "ms_reading": "προν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:1",
-    "manuscript": "P66",
-    "base_reading": "τουτου προς τον",
-    "ms_reading": "προν",
+    "ms_reading": "παρην",
     "type": "substitution_lexical"
   },
   {
@@ -4162,18 +3970,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:10",
-    "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "13",
     "verse": "J 13:10",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "μη",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "χρειαν",
+    "ms_reading": "την κεφαλην νιψασθαι",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
@@ -4188,23 +3996,23 @@ window.DATA_VARIANTS = [
     "verse": "J 13:10",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "μη",
+    "ms_reading": "ο",
     "type": "addition"
   },
   {
     "chapter": "13",
     "verse": "J 13:10",
     "manuscript": "P66",
-    "base_reading": "λελουμενος",
-    "ms_reading": "λειλουμενος",
-    "type": "substitution_morphological"
+    "base_reading": "ολος",
+    "ms_reading": "πιστος",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
     "verse": "J 13:10",
-    "manuscript": "P66",
-    "base_reading": "λελουμενος",
-    "ms_reading": "λειλουμενος",
+    "manuscript": "aleph",
+    "base_reading": "ουκ",
+    "ms_reading": "ου",
     "type": "substitution_morphological"
   },
   {
@@ -4217,6 +4025,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
+    "verse": "J 13:10",
+    "manuscript": "aleph",
+    "base_reading": "η τους ποδας",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:10",
+    "manuscript": "aleph",
+    "base_reading": "ει μη τους ποδας",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
     "verse": "J 13:11",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -4226,17 +4050,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:12",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και αναπεσεν παλιν ειπεν αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:12",
-    "manuscript": "aleph",
-    "base_reading": "αναπεσεν",
-    "ms_reading": "ανεπεσεν",
+    "manuscript": "D",
+    "base_reading": "αυτου και αναπεσεν",
+    "ms_reading": "αναπεσων",
     "type": "substitution_morphological"
   },
   {
@@ -4249,19 +4065,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:14",
-    "manuscript": "D",
-    "base_reading": "ει ουν εγω ενιψα υμων τους ποδας ο κυριος και ο διδασκαλος",
-    "ms_reading": "ποσω μαλλον",
-    "type": "substitution_lexical"
+    "verse": "J 13:12",
+    "manuscript": "aleph",
+    "base_reading": "αναπεσεν",
+    "ms_reading": "ανεπεσεν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "13",
     "verse": "J 13:14",
-    "manuscript": "D",
-    "base_reading": "υμων τους ποδας",
-    "ms_reading": "τους ποδας υμων",
+    "manuscript": "aleph",
+    "base_reading": "αλληλων νιπτειν",
+    "ms_reading": "νιπτειν αλληλων",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:14",
+    "manuscript": "aleph",
+    "base_reading": "αλληλων νιπτειν",
+    "ms_reading": "νιπτειν αλληλων",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:15",
+    "manuscript": "A",
+    "base_reading": "εδωκα",
+    "ms_reading": "δεδωκα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:15",
+    "manuscript": "P66",
+    "base_reading": "γαρ εδωκα",
+    "ms_reading": "δεδωκα",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "13",
@@ -4274,7 +4114,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:16",
-    "manuscript": "D",
+    "manuscript": "A",
     "base_reading": "εστι",
     "ms_reading": "εστιν",
     "type": "substitution_morphological"
@@ -4299,9 +4139,9 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:18",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "γαρ",
-    "type": "addition"
+    "base_reading": "επηρεν",
+    "ms_reading": "επηρκεν επ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "13",
@@ -4315,9 +4155,25 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:18",
     "manuscript": "B",
+    "base_reading": "ους",
+    "ms_reading": "τινας",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:18",
+    "manuscript": "B",
     "base_reading": "επηρκεν επ",
     "ms_reading": "επηρεν",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:18",
+    "manuscript": "B",
+    "base_reading": "μετ εμου",
+    "ms_reading": "μου",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
@@ -4331,17 +4187,17 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:18",
     "manuscript": "D",
-    "base_reading": "η γραφη πληρωθη",
-    "ms_reading": "πληρωθη η γραφη",
-    "type": "substitution_word_order"
+    "base_reading": "τινας",
+    "ms_reading": "ους",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
     "verse": "J 13:18",
     "manuscript": "P66",
-    "base_reading": "γαρ",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "επηρκεν επ",
+    "ms_reading": "επηρεν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "13",
@@ -4353,19 +4209,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:18",
-    "manuscript": "aleph",
-    "base_reading": "μου",
-    "ms_reading": "μετ εμου",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
     "verse": "J 13:19",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "πιστευητε",
-    "type": "addition"
+    "manuscript": "A",
+    "base_reading": "πιστευητε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
@@ -4379,17 +4227,9 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:19",
     "manuscript": "P66",
-    "base_reading": "οτι",
-    "ms_reading": "οστι",
+    "base_reading": "ειμι",
+    "ms_reading": "μι",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:19",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "πιστευσηται",
-    "type": "addition"
   },
   {
     "chapter": "13",
@@ -4404,21 +4244,13 @@ window.DATA_VARIANTS = [
     "verse": "J 13:2",
     "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "τε",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:2",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
     "ms_reading": "ιουδα σιμωνος ισκαριωτου",
     "type": "addition"
   },
   {
     "chapter": "13",
     "verse": "J 13:2",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "γινομενου",
     "ms_reading": "γενομενου",
     "type": "substitution_morphological"
@@ -4426,24 +4258,8 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:2",
-    "manuscript": "A",
-    "base_reading": "παραδοι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:2",
-    "manuscript": "B",
-    "base_reading": "ιουδα",
-    "ms_reading": "ινα παραδοι αυτον ιουδας",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:2",
     "manuscript": "D",
-    "base_reading": "ιουδας σιμωνος ισκαριωτης",
+    "base_reading": "παραδω",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -4451,17 +4267,9 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:2",
     "manuscript": "P66",
-    "base_reading": "παραδοι",
-    "ms_reading": "παραδω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:2",
-    "manuscript": "aleph",
-    "base_reading": "γενομενου",
-    "ms_reading": "γεινομενου",
-    "type": "substitution_morphological"
+    "base_reading": "ιουδα",
+    "ms_reading": "ινα παραδω αυτον ιουδας",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
@@ -4473,11 +4281,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:20",
-    "manuscript": "A",
-    "base_reading": "αν τινα",
-    "ms_reading": "ατινα",
-    "type": "substitution_morphological"
+    "verse": "J 13:2",
+    "manuscript": "aleph",
+    "base_reading": "τε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
@@ -4491,14 +4299,6 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:20",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:20",
-    "manuscript": "D",
     "base_reading": "δε",
     "ms_reading": "λαμβανων",
     "type": "substitution_lexical"
@@ -4506,26 +4306,58 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:20",
-    "manuscript": "P66",
+    "manuscript": "D",
+    "base_reading": "λαμβανων",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:20",
+    "manuscript": "D",
+    "base_reading": "αν",
+    "ms_reading": "εαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:20",
+    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "και",
     "type": "addition"
   },
   {
     "chapter": "13",
+    "verse": "J 13:20",
+    "manuscript": "P66",
+    "base_reading": "πεμψαντα",
+    "ms_reading": "μεψαντα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
     "verse": "J 13:21",
     "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "λεγω υμιν",
+    "ms_reading": "υμιν λεγω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:21",
+    "manuscript": "aleph",
+    "base_reading": "υμιν λεγω",
+    "ms_reading": "λεγω υμιν",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
     "verse": "J 13:22",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
@@ -4538,33 +4370,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:22",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:22",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:22",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "ουν οι ιουδαιοι",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:23",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:23",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:23",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
     "type": "addition"
   },
   {
@@ -4579,23 +4403,7 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:23",
     "manuscript": "P66",
-    "base_reading": "κολπω",
-    "ms_reading": "κοπω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:23",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:23",
-    "manuscript": "aleph",
-    "base_reading": "εκ",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -4603,16 +4411,8 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:24",
     "manuscript": "A",
-    "base_reading": "εστιν",
-    "ms_reading": "αν ειη",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:24",
-    "manuscript": "B",
-    "base_reading": "πυθεσθαι",
-    "ms_reading": "και λεγει αυτω ειπε",
+    "base_reading": "και λεγει αυτω ειπε",
+    "ms_reading": "πυθεσθαι",
     "type": "substitution_lexical"
   },
   {
@@ -4627,9 +4427,17 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:24",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουτος",
-    "type": "addition"
+    "base_reading": "πετρος",
+    "ms_reading": "πετρους",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:24",
+    "manuscript": "P66",
+    "base_reading": "και λεγει",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
@@ -4641,11 +4449,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
+    "verse": "J 13:24",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω ειπε τις εστιν περι ου λεγει",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
     "verse": "J 13:25",
-    "manuscript": "A",
-    "base_reading": "ουτως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουτως",
+    "type": "addition"
   },
   {
     "chapter": "13",
@@ -4658,6 +4474,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:25",
+    "manuscript": "D",
+    "base_reading": "δε",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:25",
     "manuscript": "aleph",
     "base_reading": "ουτως",
     "ms_reading": "[OMIT]",
@@ -4666,90 +4490,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:26",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "επιδωσω",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "A",
-    "base_reading": "δωσω αυτω βαψας ουν",
-    "ms_reading": "εμψας το",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "B",
-    "base_reading": "επιδωσω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "B",
-    "base_reading": "ισκαριωτη",
-    "ms_reading": "ισκαριωτου",
+    "manuscript": "D",
+    "base_reading": "ισκαριωτου",
+    "ms_reading": "απο καρυωτου",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "λαμβανει και",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και λεγει",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και λεγει",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "το",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "D",
-    "base_reading": "δωσω αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "13",
     "verse": "J 13:26",
     "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "aleph",
-    "base_reading": "εμβαψας",
-    "ms_reading": "βαψας",
-    "type": "substitution_morphological"
+    "base_reading": "δωσω αυτω βαψας ουν",
+    "ms_reading": "ψας το",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "13",
@@ -4761,11 +4513,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:26",
-    "manuscript": "aleph",
-    "base_reading": "ουν",
-    "ms_reading": "ο",
-    "type": "substitution_lexical"
+    "verse": "J 13:27",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "κ",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:27",
+    "manuscript": "D",
+    "base_reading": "μετα το ψωμιον τοτε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
@@ -4773,38 +4533,6 @@ window.DATA_VARIANTS = [
     "manuscript": "D",
     "base_reading": "ποιησον",
     "ms_reading": "ποιης",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:27",
-    "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:27",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:28",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:28",
-    "manuscript": "D",
-    "base_reading": "εγνω",
-    "ms_reading": "εγνοι",
     "type": "substitution_morphological"
   },
   {
@@ -4818,50 +4546,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:29",
-    "manuscript": "A",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "ο",
     "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:29",
-    "manuscript": "D",
-    "base_reading": "ιησους αγορασον",
-    "ms_reading": "ιουδας αγορα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:29",
-    "manuscript": "D",
-    "base_reading": "επει",
-    "ms_reading": "οτι",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:3",
-    "manuscript": "D",
-    "base_reading": "εδωκεν",
-    "ms_reading": "δεδωκεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:3",
-    "manuscript": "P66",
-    "base_reading": "ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:30",
-    "manuscript": "B",
-    "base_reading": "ευθεως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "13",
@@ -4873,40 +4561,40 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:30",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ευθυς",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
     "verse": "J 13:31",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:31",
-    "manuscript": "P66",
-    "base_reading": "ο",
+    "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "13",
-    "verse": "J 13:31",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
+    "verse": "J 13:32",
+    "manuscript": "B",
+    "base_reading": "ει ο θεος εδοξασθη εν αυτω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
     "verse": "J 13:32",
     "manuscript": "P66",
+    "base_reading": "ει ο θεος εδοξασθη εν αυτω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:32",
+    "manuscript": "P66",
+    "base_reading": "εαυτω",
+    "ms_reading": "αυτω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:32",
+    "manuscript": "aleph",
     "base_reading": "εαυτω",
     "ms_reading": "αυτω",
     "type": "substitution_morphological"
@@ -4923,73 +4611,49 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:33",
     "manuscript": "D",
-    "base_reading": "μικρον",
-    "ms_reading": "μεκρον",
-    "type": "substitution_morphological"
+    "base_reading": "οτι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "13",
     "verse": "J 13:33",
+    "manuscript": "P66",
+    "base_reading": "εγω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:33",
+    "manuscript": "P66",
+    "base_reading": "εγω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:34",
     "manuscript": "D",
-    "base_reading": "οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:33",
-    "manuscript": "P66",
-    "base_reading": "οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:33",
-    "manuscript": "P66",
-    "base_reading": "εγω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:33",
-    "manuscript": "P66",
-    "base_reading": "εγω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:33",
-    "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "χρονον",
+    "ms_reading": "καγω",
     "type": "addition"
   },
   {
     "chapter": "13",
-    "verse": "J 13:33",
-    "manuscript": "aleph",
-    "base_reading": "οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
     "verse": "J 13:34",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "εγω",
+    "ms_reading": "καγω",
     "type": "addition"
   },
   {
     "chapter": "13",
     "verse": "J 13:34",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "εγω",
-    "type": "addition"
+    "base_reading": "αγαπατε αλληλους",
+    "ms_reading": "αλληλους αγαπαται",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
@@ -5001,11 +4665,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
+    "verse": "J 13:35",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αθηται",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:35",
+    "manuscript": "aleph",
+    "base_reading": "εν αλληλοις",
+    "ms_reading": "μετ αλληλων",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "13",
     "verse": "J 13:36",
-    "manuscript": "B",
-    "base_reading": "αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "ακολουθησεις δε υστερον",
+    "ms_reading": "υστερον δε ακολουθησεις",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
@@ -5018,58 +4698,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:36",
-    "manuscript": "D",
-    "base_reading": "απεκριθη",
-    "ms_reading": "λεγει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:36",
-    "manuscript": "D",
-    "base_reading": "δε υστερον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:36",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "αυτω ο",
+    "ms_reading": "εγω",
     "type": "addition"
   },
   {
     "chapter": "13",
     "verse": "J 13:37",
-    "manuscript": "D",
-    "base_reading": "δυνασαι μοι",
-    "ms_reading": "δυναμαι σοι νυν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:37",
-    "manuscript": "D",
-    "base_reading": "πετρος",
+    "manuscript": "A",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "13",
     "verse": "J 13:37",
-    "manuscript": "P66",
-    "base_reading": "δυνασαι μοι",
-    "ms_reading": "δυναμε σοι",
+    "manuscript": "A",
+    "base_reading": "δυναμαι σοι ακολουθειν",
+    "ms_reading": "δυνασαι μοι ακολουθησαι",
     "type": "substitution_morphological"
   },
   {
     "chapter": "13",
     "verse": "J 13:37",
-    "manuscript": "aleph",
-    "base_reading": "δυνασαι μοι",
-    "ms_reading": "δυναμαι σοι",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "13",
@@ -5081,11 +4737,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "13",
-    "verse": "J 13:38",
-    "manuscript": "A",
-    "base_reading": "αρνηση",
-    "ms_reading": "απαρνηση",
-    "type": "substitution_morphological"
+    "verse": "J 13:37",
+    "manuscript": "aleph",
+    "base_reading": "την ψυχην μου υπερ σου",
+    "ms_reading": "υπερ σου την ψυχην μου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
@@ -5098,6 +4754,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:38",
+    "manuscript": "D",
+    "base_reading": "αποκρεινεται",
+    "ms_reading": "απεκρειθη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:38",
     "manuscript": "P66",
     "base_reading": "απαρνηση",
     "ms_reading": "αρνηση",
@@ -5106,9 +4770,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:5",
-    "manuscript": "D",
-    "base_reading": "διεζωσμενος",
-    "ms_reading": "διεσζωσμενος",
+    "manuscript": "A",
+    "base_reading": "ηρξατο",
+    "ms_reading": "ηρξαντο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:5",
+    "manuscript": "B",
+    "base_reading": "ηρξαντο",
+    "ms_reading": "ηρξατο",
     "type": "substitution_morphological"
   },
   {
@@ -5123,16 +4795,48 @@ window.DATA_VARIANTS = [
     "chapter": "13",
     "verse": "J 13:5",
     "manuscript": "D",
-    "base_reading": "υδωρ",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "λεντιω",
+    "ms_reading": "δεντιω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:5",
+    "manuscript": "D",
+    "base_reading": "λεντιω",
+    "ms_reading": "δεντιω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:5",
+    "manuscript": "D",
+    "base_reading": "ηρξαντο",
+    "ms_reading": "ηρξατο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:5",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:5",
+    "manuscript": "P66",
+    "base_reading": "ηρξαντο",
+    "ms_reading": "ηρξατο",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "13",
     "verse": "J 13:6",
     "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "εκεινος",
+    "ms_reading": "και",
     "type": "addition"
   },
   {
@@ -5140,31 +4844,15 @@ window.DATA_VARIANTS = [
     "verse": "J 13:6",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "εκεινος",
+    "ms_reading": "τον πετρον",
     "type": "addition"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:6",
-    "manuscript": "D",
-    "base_reading": "πετρον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "13",
-    "verse": "J 13:6",
-    "manuscript": "aleph",
-    "base_reading": "εκεινος κυριε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "13",
     "verse": "J 13:7",
-    "manuscript": "A",
-    "base_reading": "με",
-    "ms_reading": "μετα",
+    "manuscript": "P66",
+    "base_reading": "αρτι",
+    "ms_reading": "αρ",
     "type": "substitution_morphological"
   },
   {
@@ -5178,10 +4866,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "13",
     "verse": "J 13:8",
+    "manuscript": "A",
+    "base_reading": "μου τους ποδας",
+    "ms_reading": "τους ποδας μου",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:8",
+    "manuscript": "B",
+    "base_reading": "τους ποδας μου",
+    "ms_reading": "μου τους ποδας",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:8",
     "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "κυριε",
     "type": "addition"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:8",
+    "manuscript": "D",
+    "base_reading": "νιψης μου",
+    "ms_reading": "μου νιψεις",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
@@ -5206,6 +4918,14 @@ window.DATA_VARIANTS = [
     "base_reading": "αυτω",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "13",
+    "verse": "J 13:9",
+    "manuscript": "B",
+    "base_reading": "σιμων πετρος",
+    "ms_reading": "πετρος σιμων",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "13",
@@ -5242,7 +4962,55 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:10",
+    "manuscript": "B",
+    "base_reading": "πιστευεις",
+    "ms_reading": "πιστευσεις",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
     "manuscript": "D",
+    "base_reading": "πιστευσεις",
+    "ms_reading": "πιστευεις",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
+    "manuscript": "D",
+    "base_reading": "ποιει",
+    "ms_reading": "αυτος ποιε",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "λελαληκα",
+    "type": "addition"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
+    "manuscript": "P66",
+    "base_reading": "ου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:10",
+    "manuscript": "P66",
     "base_reading": "πιστευσεις",
     "ms_reading": "πιστευεις",
     "type": "substitution_morphological"
@@ -5259,62 +5027,22 @@ window.DATA_VARIANTS = [
     "chapter": "14",
     "verse": "J 14:10",
     "manuscript": "P66",
-    "base_reading": "ου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:10",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "λαλω",
-    "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:10",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:11",
-    "manuscript": "D",
-    "base_reading": "αυτου",
-    "ms_reading": "αυτα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:11",
-    "manuscript": "D",
-    "base_reading": "εγω",
-    "ms_reading": "ο πατηρ εν εμοι καγω",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:11",
-    "manuscript": "P66",
-    "base_reading": "μοι",
+    "base_reading": "αυτος",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "14",
     "verse": "J 14:11",
-    "manuscript": "aleph",
-    "base_reading": "αυτου",
-    "ms_reading": "αυτα",
-    "type": "substitution_morphological"
+    "manuscript": "A",
+    "base_reading": "και ο πατηρ εν εμοι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "14",
     "verse": "J 14:11",
-    "manuscript": "aleph",
+    "manuscript": "B",
     "base_reading": "[ADD]",
     "ms_reading": "και ο πατηρ εν εμοι",
     "type": "addition"
@@ -5322,16 +5050,32 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:11",
-    "manuscript": "aleph",
-    "base_reading": "δια",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "B",
+    "base_reading": "αυτα",
+    "ms_reading": "αυτου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:11",
+    "manuscript": "D",
+    "base_reading": "αυτου",
+    "ms_reading": "αυτα",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
     "verse": "J 14:11",
     "manuscript": "aleph",
-    "base_reading": "μοι",
+    "base_reading": "αυτου",
+    "ms_reading": "αυτα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:11",
+    "manuscript": "aleph",
+    "base_reading": "δια",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -5345,11 +5089,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "14",
-    "verse": "J 14:14",
+    "verse": "J 14:12",
+    "manuscript": "P66",
+    "base_reading": "και",
+    "ms_reading": "κακει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:13",
     "manuscript": "A",
-    "base_reading": "με",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "αιτηται",
+    "ms_reading": "αιτησητε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:14",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "με",
+    "type": "addition"
   },
   {
     "chapter": "14",
@@ -5362,18 +5122,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:14",
-    "manuscript": "D",
-    "base_reading": "με",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "τουτο",
+    "ms_reading": "εγω",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "14",
-    "verse": "J 14:14",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "μαι",
-    "type": "addition"
+    "verse": "J 14:15",
+    "manuscript": "A",
+    "base_reading": "τηρησετε",
+    "ms_reading": "τηρησατε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
@@ -5394,6 +5154,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:15",
+    "manuscript": "P66",
+    "base_reading": "γαπατε",
+    "ms_reading": "αγαπηται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:15",
     "manuscript": "aleph",
     "base_reading": "τηρησατε",
     "ms_reading": "τηρησητε",
@@ -5409,35 +5177,59 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "14",
-    "verse": "J 14:16",
-    "manuscript": "A",
-    "base_reading": "καγω",
-    "ms_reading": "και εγω",
+    "verse": "J 14:15",
+    "manuscript": "aleph",
+    "base_reading": "γαπατε με",
+    "ms_reading": "αγαπατε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "14",
     "verse": "J 14:16",
-    "manuscript": "B",
+    "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "η",
+    "ms_reading": "μενη",
     "type": "addition"
   },
   {
     "chapter": "14",
     "verse": "J 14:16",
+    "manuscript": "B",
+    "base_reading": "μενη",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:16",
     "manuscript": "D",
-    "base_reading": "η",
-    "ms_reading": "μεθ υμων",
+    "base_reading": "μεθ υμων",
+    "ms_reading": "μενη",
     "type": "substitution_lexical"
   },
   {
     "chapter": "14",
     "verse": "J 14:16",
     "manuscript": "aleph",
-    "base_reading": "ερωτησω",
-    "ms_reading": "τηρησω",
-    "type": "substitution_morphological"
+    "base_reading": "μενη",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:16",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "η",
+    "type": "addition"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:17",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "14",
@@ -5451,41 +5243,9 @@ window.DATA_VARIANTS = [
     "chapter": "14",
     "verse": "J 14:17",
     "manuscript": "B",
-    "base_reading": "αυτο",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:17",
-    "manuscript": "B",
-    "base_reading": "εσται",
-    "ms_reading": "εστιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:17",
-    "manuscript": "D",
-    "base_reading": "αυτο",
-    "ms_reading": "αυτον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:17",
-    "manuscript": "D",
-    "base_reading": "αυτο",
-    "ms_reading": "αυτον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:17",
-    "manuscript": "D",
-    "base_reading": "αυτο",
-    "ms_reading": "αυτον",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
@@ -5499,6 +5259,14 @@ window.DATA_VARIANTS = [
     "chapter": "14",
     "verse": "J 14:17",
     "manuscript": "P66",
+    "base_reading": "εσται",
+    "ms_reading": "εστιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:17",
+    "manuscript": "P66",
     "base_reading": "αυτο",
     "ms_reading": "αυτον",
     "type": "substitution_morphological"
@@ -5507,9 +5275,9 @@ window.DATA_VARIANTS = [
     "chapter": "14",
     "verse": "J 14:17",
     "manuscript": "P66",
-    "base_reading": "εσται",
-    "ms_reading": "εστιν",
-    "type": "substitution_morphological"
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "14",
@@ -5521,19 +5289,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "14",
-    "verse": "J 14:17",
-    "manuscript": "aleph",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 14:19",
+    "manuscript": "D",
+    "base_reading": "ζησετε",
+    "ms_reading": "ζησεσθε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
     "verse": "J 14:19",
     "manuscript": "P66",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ζησετε",
+    "ms_reading": "ζησεσθε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
@@ -5546,34 +5314,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:2",
-    "manuscript": "P66",
-    "base_reading": "οτι",
+    "manuscript": "aleph",
+    "base_reading": "αν",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:2",
-    "manuscript": "P66",
-    "base_reading": "ειπον αν",
-    "ms_reading": "αν ειπον",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:2",
-    "manuscript": "P66",
-    "base_reading": "τοπον υμιν",
-    "ms_reading": "υμειν τοπον",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:2",
-    "manuscript": "P66",
-    "base_reading": "τοπον υμιν",
-    "ms_reading": "υμειν τοπον",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "14",
@@ -5594,33 +5338,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:20",
-    "manuscript": "P66",
-    "base_reading": "υμεις γνωσεσθε",
-    "ms_reading": "γνωσεσθε υμεις",
-    "type": "substitution_word_order"
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "υμεις",
+    "type": "addition"
   },
   {
     "chapter": "14",
     "verse": "J 14:21",
     "manuscript": "D",
-    "base_reading": "εμφανισω",
-    "ms_reading": "ενφωνησω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:21",
-    "manuscript": "D",
-    "base_reading": "εμφανισω",
-    "ms_reading": "ενφωνησω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:21",
-    "manuscript": "aleph",
     "base_reading": "και εγω",
     "ms_reading": "καγω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:21",
+    "manuscript": "D",
+    "base_reading": "εμφανισω",
+    "ms_reading": "ενφωνησω",
     "type": "substitution_morphological"
   },
   {
@@ -5634,42 +5370,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:22",
-    "manuscript": "B",
-    "base_reading": "εμφανιζεις",
-    "ms_reading": "εμφανιζειν",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "αυτω",
+    "ms_reading": "προς αυτον",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "14",
     "verse": "J 14:22",
-    "manuscript": "D",
-    "base_reading": "ισκαριωτης",
-    "ms_reading": "απο καρυωτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:22",
-    "manuscript": "D",
-    "base_reading": "ισκαριωτης",
-    "ms_reading": "απο καρυωτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:22",
-    "manuscript": "D",
-    "base_reading": "εμφανιζειν",
-    "ms_reading": "ημεις ενφανιζειν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:22",
-    "manuscript": "D",
-    "base_reading": "ημιν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "14",
@@ -5686,62 +5398,38 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "προς αυτον",
     "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:23",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "προς αυτον",
-    "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:23",
-    "manuscript": "D",
-    "base_reading": "παρ αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:23",
-    "manuscript": "aleph",
-    "base_reading": "ποιησομεν",
-    "ms_reading": "ποιησομεθα",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
     "verse": "J 14:24",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο εμος",
-    "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:25",
-    "manuscript": "D",
-    "base_reading": "υμιν",
-    "ms_reading": "υμεν",
+    "base_reading": "τηρει",
+    "ms_reading": "τηρησει",
     "type": "substitution_morphological"
   },
   {
     "chapter": "14",
-    "verse": "J 14:28",
+    "verse": "J 14:26",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "μου",
-    "type": "addition"
+    "base_reading": "ο πεμψει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:26",
+    "manuscript": "aleph",
+    "base_reading": "εγω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "14",
     "verse": "J 14:28",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "μου",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "ηγαπατε",
+    "ms_reading": "αγαπατε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
@@ -5762,26 +5450,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:3",
-    "manuscript": "A",
-    "base_reading": "τοπον υμιν",
-    "ms_reading": "υμιν τοπον",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:3",
-    "manuscript": "A",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:3",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "ετοιμασω",
+    "ms_reading": "ετοιμασαι τοπον",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "14",
@@ -5794,23 +5466,23 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:3",
-    "manuscript": "D",
-    "base_reading": "ητε",
-    "ms_reading": "εσθαι",
+    "manuscript": "P66",
+    "base_reading": "υμιν",
+    "ms_reading": "παλιν ερχομαι",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:30",
+    "manuscript": "P66",
+    "base_reading": "κοσμου αρχων και εν εμοι ουκ εχει ουδεν",
+    "ms_reading": "[OMIT]",
     "type": "substitution_lexical"
   },
   {
     "chapter": "14",
     "verse": "J 14:31",
     "manuscript": "B",
-    "base_reading": "ενετειλατο",
-    "ms_reading": "εντολην εδωκεν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:31",
-    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "και",
     "type": "addition"
@@ -5818,22 +5490,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:31",
-    "manuscript": "D",
-    "base_reading": "εντολην εδωκεν",
-    "ms_reading": "ενετειλατο",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:4",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "οιδατε",
-    "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:4",
     "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "και",
@@ -5849,67 +5505,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "14",
+    "verse": "J 14:4",
+    "manuscript": "aleph",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "14",
     "verse": "J 14:5",
-    "manuscript": "B",
-    "base_reading": "δυναμεθα",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:5",
+    "manuscript": "D",
+    "base_reading": "ειδεναι",
     "ms_reading": "οιδαμεν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "14",
     "verse": "J 14:5",
-    "manuscript": "D",
-    "base_reading": "δυναμεθα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:7",
-    "manuscript": "B",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "με",
+    "ms_reading": "ειδεναι",
     "type": "addition"
   },
   {
     "chapter": "14",
     "verse": "J 14:7",
-    "manuscript": "P66",
-    "base_reading": "εγνωκειτε",
-    "ms_reading": "εγνωκαται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:7",
-    "manuscript": "P66",
-    "base_reading": "αν ηδειτε",
-    "ms_reading": "γνωσεσθε και",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:7",
-    "manuscript": "aleph",
-    "base_reading": "εγνωκειτε",
-    "ms_reading": "εγνωκατε εμε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:7",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "αυτον",
     "type": "addition"
-  },
-  {
-    "chapter": "14",
-    "verse": "J 14:7",
-    "manuscript": "aleph",
-    "base_reading": "εγνωκειτε αν",
-    "ms_reading": "γνωσεσθαι",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "14",
@@ -5922,66 +5554,90 @@ window.DATA_VARIANTS = [
   {
     "chapter": "14",
     "verse": "J 14:9",
+    "manuscript": "D",
+    "base_reading": "τοσουτον χρονον",
+    "ms_reading": "τοσουτω χρονω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:9",
+    "manuscript": "D",
+    "base_reading": "λεγεις",
+    "ms_reading": "λεις",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:9",
+    "manuscript": "D",
+    "base_reading": "λεγεις",
+    "ms_reading": "λεις",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "14",
+    "verse": "J 14:9",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "οτι",
     "type": "addition"
   },
   {
-    "chapter": "15",
-    "verse": "J 15:1",
-    "manuscript": "D",
-    "base_reading": "ο",
+    "chapter": "14",
+    "verse": "J 14:9",
+    "manuscript": "aleph",
+    "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
-    "chapter": "15",
-    "verse": "J 15:1",
-    "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:10",
-    "manuscript": "B",
-    "base_reading": "του πατρος μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:10",
-    "manuscript": "B",
+    "chapter": "14",
+    "verse": "J 14:9",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "του πατρος",
+    "ms_reading": "ο",
     "type": "addition"
   },
   {
     "chapter": "15",
+    "verse": "J 15:1",
+    "manuscript": "D",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:1",
+    "manuscript": "D",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "15",
     "verse": "J 15:10",
     "manuscript": "D",
-    "base_reading": "τας εντολας",
-    "ms_reading": "μου",
+    "base_reading": "εγω",
+    "ms_reading": "καγω τας εντολας",
     "type": "substitution_lexical"
   },
   {
     "chapter": "15",
     "verse": "J 15:10",
-    "manuscript": "P66",
-    "base_reading": "εαν τας εντολας μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "εγω",
+    "ms_reading": "καγω",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "15",
     "verse": "J 15:10",
-    "manuscript": "aleph",
-    "base_reading": "εαν τας εντολας τας εμας τηρησητε μενειτε εν τη αγαπη μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "του πατρος",
+    "type": "addition"
   },
   {
     "chapter": "15",
@@ -5993,26 +5649,18 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
-    "verse": "J 15:12",
-    "manuscript": "P66",
-    "base_reading": "καθως",
-    "ms_reading": "ως",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:12",
-    "manuscript": "P66",
-    "base_reading": "καθως",
-    "ms_reading": "ως",
-    "type": "substitution_morphological"
+    "verse": "J 15:11",
+    "manuscript": "aleph",
+    "base_reading": "η",
+    "ms_reading": "μεινη",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "15",
     "verse": "J 15:13",
-    "manuscript": "P66",
-    "base_reading": "αυτου",
-    "ms_reading": "την εαυτου",
+    "manuscript": "D",
+    "base_reading": "ουδε εις",
+    "ms_reading": "ουδεις",
     "type": "substitution_morphological"
   },
   {
@@ -6026,9 +5674,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "15",
     "verse": "J 15:14",
-    "manuscript": "D",
-    "base_reading": "ποιητε ο",
-    "ms_reading": "ποιησητε α",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "α",
     "type": "substitution_lexical"
   },
   {
@@ -6041,10 +5689,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
-    "verse": "J 15:15",
-    "manuscript": "D",
-    "base_reading": "α",
-    "ms_reading": "οσα",
+    "verse": "J 15:14",
+    "manuscript": "aleph",
+    "base_reading": "οσα",
+    "ms_reading": "α",
     "type": "substitution_lexical"
   },
   {
@@ -6058,10 +5706,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "15",
     "verse": "J 15:16",
-    "manuscript": "D",
-    "base_reading": "αιτητε",
-    "ms_reading": "αιτησητε",
-    "type": "substitution_morphological"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "πολυ",
+    "type": "addition"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:16",
+    "manuscript": "B",
+    "base_reading": "πολυ",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "15",
@@ -6073,43 +5729,75 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
-    "verse": "J 15:16",
-    "manuscript": "P66",
-    "base_reading": "υμας ινα",
-    "ms_reading": "ιν",
+    "verse": "J 15:19",
+    "manuscript": "D",
+    "base_reading": "ουκ εστε",
+    "ms_reading": "ητε",
     "type": "substitution_lexical"
   },
   {
     "chapter": "15",
-    "verse": "J 15:16",
-    "manuscript": "aleph",
-    "base_reading": "ινα",
+    "verse": "J 15:19",
+    "manuscript": "D",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "15",
-    "verse": "J 15:17",
-    "manuscript": "P66",
-    "base_reading": "ινα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 15:19",
+    "manuscript": "D",
+    "base_reading": "ουκ εστε",
+    "ms_reading": "ητε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "15",
-    "verse": "J 15:18",
+    "verse": "J 15:19",
     "manuscript": "P66",
-    "base_reading": "μισει",
-    "ms_reading": "εμισεισε",
+    "base_reading": "το",
+    "ms_reading": "τον",
     "type": "substitution_morphological"
   },
   {
     "chapter": "15",
     "verse": "J 15:2",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "καρπον πλειονα",
     "ms_reading": "πλειονα καρπον",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:2",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "πλειω",
+    "type": "addition"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:20",
+    "manuscript": "D",
+    "base_reading": "του λογου ου",
+    "ms_reading": "τους λογους ους",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:20",
+    "manuscript": "aleph",
+    "base_reading": "ειπον υμιν",
+    "ms_reading": "ελαλησα υμασιν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:20",
+    "manuscript": "aleph",
+    "base_reading": "τηρησουσιν",
+    "ms_reading": "τηρησωσιν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "15",
@@ -6122,22 +5810,46 @@ window.DATA_VARIANTS = [
   {
     "chapter": "15",
     "verse": "J 15:21",
-    "manuscript": "D",
-    "base_reading": "υμιν",
-    "ms_reading": "εις υμας",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:22",
-    "manuscript": "B",
-    "base_reading": "ειχον",
-    "ms_reading": "ειχοσαν",
+    "manuscript": "P66",
+    "base_reading": "ποιησουσιν υμιν",
+    "ms_reading": "ποιουσιν εις υμας",
     "type": "substitution_morphological"
   },
   {
     "chapter": "15",
+    "verse": "J 15:21",
+    "manuscript": "aleph",
+    "base_reading": "υμιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "15",
     "verse": "J 15:22",
+    "manuscript": "D",
+    "base_reading": "ειχον",
+    "ms_reading": "ειχαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:24",
+    "manuscript": "D",
+    "base_reading": "ειχον",
+    "ms_reading": "ειχαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:24",
+    "manuscript": "D",
+    "base_reading": "και εμε",
+    "ms_reading": "με",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:24",
     "manuscript": "D",
     "base_reading": "ειχοσαν",
     "ms_reading": "ειχαν",
@@ -6145,35 +5857,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
-    "verse": "J 15:22",
-    "manuscript": "aleph",
-    "base_reading": "δε",
+    "verse": "J 15:25",
+    "manuscript": "P66",
+    "base_reading": "αυτων",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "15",
-    "verse": "J 15:24",
-    "manuscript": "B",
-    "base_reading": "ειχον",
-    "ms_reading": "ειχοσαν",
-    "type": "substitution_morphological"
+    "verse": "J 15:25",
+    "manuscript": "P66",
+    "base_reading": "αυτων",
+    "ms_reading": "γεγραμμενος",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "15",
     "verse": "J 15:25",
-    "manuscript": "aleph",
-    "base_reading": "εν τω νομω αυτων",
+    "manuscript": "P66",
+    "base_reading": "γεγραμμενος",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "15",
     "verse": "J 15:26",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "πατρος το πνευμα της αληθειας",
+    "ms_reading": "πατερα μου ηθειας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:26",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "15",
@@ -6186,14 +5906,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "15",
     "verse": "J 15:26",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "μου",
-    "type": "addition"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:26",
     "manuscript": "P66",
     "base_reading": "δε",
     "ms_reading": "[OMIT]",
@@ -6203,40 +5915,24 @@ window.DATA_VARIANTS = [
     "chapter": "15",
     "verse": "J 15:26",
     "manuscript": "aleph",
-    "base_reading": "πατρος",
-    "ms_reading": "παιτρος",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:26",
-    "manuscript": "aleph",
     "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:27",
-    "manuscript": "D",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "15",
-    "verse": "J 15:4",
-    "manuscript": "B",
-    "base_reading": "μεινη",
-    "ms_reading": "μενη",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "15",
     "verse": "J 15:4",
     "manuscript": "P66",
-    "base_reading": "μενητε",
-    "ms_reading": "μενων",
+    "base_reading": "ουδε υμεις",
+    "ms_reading": "και",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:5",
+    "manuscript": "A",
+    "base_reading": "ουδε εν",
+    "ms_reading": "ουδεν",
     "type": "substitution_morphological"
   },
   {
@@ -6249,42 +5945,66 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
+    "verse": "J 15:5",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "γαρ",
+    "type": "addition"
+  },
+  {
+    "chapter": "15",
     "verse": "J 15:6",
     "manuscript": "D",
-    "base_reading": "βαλλουσιν",
-    "ms_reading": "βαλλουσκ",
+    "base_reading": "εβληθη",
+    "ms_reading": "επληθη",
     "type": "substitution_morphological"
   },
   {
     "chapter": "15",
     "verse": "J 15:6",
     "manuscript": "D",
-    "base_reading": "αυτα",
-    "ms_reading": "αυτο",
+    "base_reading": "το",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:6",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτα",
+    "type": "addition"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:7",
+    "manuscript": "B",
+    "base_reading": "εαν θελετε",
+    "ms_reading": "αν θελητε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "15",
     "verse": "J 15:7",
-    "manuscript": "aleph",
-    "base_reading": "μεινη ο",
-    "ms_reading": "η οσα",
-    "type": "substitution_lexical"
+    "manuscript": "D",
+    "base_reading": "υμιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "15",
-    "verse": "J 15:8",
-    "manuscript": "A",
-    "base_reading": "γενησθε",
-    "ms_reading": "γενησεσθαι",
-    "type": "substitution_morphological"
+    "verse": "J 15:7",
+    "manuscript": "D",
+    "base_reading": "υμιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "15",
-    "verse": "J 15:8",
-    "manuscript": "B",
-    "base_reading": "γενησεσθαι",
-    "ms_reading": "γενησθε",
+    "verse": "J 15:7",
+    "manuscript": "P66",
+    "base_reading": "θελετε",
+    "ms_reading": "θελητα",
     "type": "substitution_morphological"
   },
   {
@@ -6305,6 +6025,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "15",
+    "verse": "J 15:8",
+    "manuscript": "P66",
+    "base_reading": "γενησθε εμοι",
+    "ms_reading": "γενθαι μου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
+    "verse": "J 15:8",
+    "manuscript": "P66",
+    "base_reading": "πολυν",
+    "ms_reading": "πλιονα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "15",
     "verse": "J 15:9",
     "manuscript": "A",
     "base_reading": "υμας ηγαπησα",
@@ -6314,57 +6050,105 @@ window.DATA_VARIANTS = [
   {
     "chapter": "15",
     "verse": "J 15:9",
-    "manuscript": "B",
-    "base_reading": "εν",
-    "ms_reading": "ε",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "ηγαπησα υμας",
+    "ms_reading": "υμας ηγαπησα",
+    "type": "substitution_word_order"
   },
   {
-    "chapter": "15",
-    "verse": "J 15:9",
+    "chapter": "16",
+    "verse": "J 16:10",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "μου",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:10",
+    "manuscript": "D",
+    "base_reading": "μου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:10",
     "manuscript": "P66",
-    "base_reading": "ε",
-    "ms_reading": "εν",
-    "type": "substitution_morphological"
+    "base_reading": "και ουκετι θεωρειται με",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:11",
+    "manuscript": "P66",
+    "base_reading": "περι δε",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:12",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτα",
+    "type": "addition"
   },
   {
     "chapter": "16",
     "verse": "J 16:13",
-    "manuscript": "B",
-    "base_reading": "εαν",
+    "manuscript": "D",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "16",
     "verse": "J 16:13",
-    "manuscript": "D",
-    "base_reading": "υμας εις την αληθειαν πασαν",
-    "ms_reading": "εν τη αληθεια παση",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "οδηγησει υμας εις την αληθειαν πασαν",
+    "ms_reading": "παση",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
     "verse": "J 16:13",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εκεινος υμας",
-    "type": "addition"
+    "manuscript": "P66",
+    "base_reading": "δε ελθη εκεινος το πνευμα της",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
     "verse": "J 16:13",
     "manuscript": "aleph",
-    "base_reading": "εαν ακουση",
-    "ms_reading": "ακουει",
+    "base_reading": "εις την αληθειαν πασαν",
+    "ms_reading": "εν τη αληθεια",
     "type": "substitution_morphological"
   },
   {
     "chapter": "16",
-    "verse": "J 16:16",
+    "verse": "J 16:15",
     "manuscript": "A",
-    "base_reading": "ουκετι",
-    "ms_reading": "ου",
+    "base_reading": "λαμβανει",
+    "ms_reading": "λημψεται",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:15",
+    "manuscript": "B",
+    "base_reading": "εστιν",
+    "ms_reading": "εστι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:15",
+    "manuscript": "D",
+    "base_reading": "λημψεται",
+    "ms_reading": "λαμβανει",
     "type": "substitution_lexical"
   },
   {
@@ -6377,6 +6161,14 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
+    "verse": "J 16:16",
+    "manuscript": "aleph",
+    "base_reading": "οτι υπαγω προς τον πατερα",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "16",
     "verse": "J 16:17",
     "manuscript": "A",
     "base_reading": "εστι",
@@ -6386,18 +6178,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:17",
-    "manuscript": "B",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:17",
     "manuscript": "D",
-    "base_reading": "ειπαν",
-    "ms_reading": "ειπον",
-    "type": "substitution_morphological"
+    "base_reading": "ου θεωρειται",
+    "ms_reading": "ουκετι οψεσθε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
@@ -6409,10 +6193,34 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
+    "verse": "J 16:17",
+    "manuscript": "P66",
+    "base_reading": "και οτι",
+    "ms_reading": "κα",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:17",
+    "manuscript": "aleph",
+    "base_reading": "ου θεωρειται με και παλιν μικρον και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "16",
     "verse": "J 16:18",
     "manuscript": "A",
     "base_reading": "[ADD]",
     "ms_reading": "τι λαλει",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:18",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "το",
     "type": "addition"
   },
   {
@@ -6427,6 +6235,22 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:18",
     "manuscript": "D",
+    "base_reading": "το λεγει",
+    "ms_reading": "τουτο",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:18",
+    "manuscript": "D",
+    "base_reading": "ελεγον ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:18",
+    "manuscript": "D",
     "base_reading": "τι λαλει",
     "ms_reading": "ο λεγει",
     "type": "substitution_lexical"
@@ -6436,6 +6260,14 @@ window.DATA_VARIANTS = [
     "verse": "J 16:18",
     "manuscript": "P66",
     "base_reading": "[ADD]",
+    "ms_reading": "εστ",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:18",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
     "ms_reading": "τι λαλει",
     "type": "addition"
   },
@@ -6443,17 +6275,9 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:18",
     "manuscript": "aleph",
-    "base_reading": "τουτο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:19",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "base_reading": "ο λεγει",
+    "ms_reading": "το",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
@@ -6466,10 +6290,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:19",
-    "manuscript": "aleph",
-    "base_reading": "ηθελον",
-    "ms_reading": "ημελλον",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "16",
@@ -6483,9 +6307,9 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:2",
     "manuscript": "B",
-    "base_reading": "υμας",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "κυριω",
+    "ms_reading": "θεω",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
@@ -6499,6 +6323,14 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:2",
     "manuscript": "P66",
+    "base_reading": "αποσυναγωγους ποιησουσιν υμας αλλ ερχεται ωρα ινα πας ο αποκτεινας δοξη λατρειαν προσφερειν",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:2",
+    "manuscript": "aleph",
     "base_reading": "κυριω",
     "ms_reading": "θεω",
     "type": "substitution_lexical"
@@ -6515,7 +6347,7 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:20",
     "manuscript": "P66",
-    "base_reading": "δε",
+    "base_reading": "αμην",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -6530,6 +6362,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:21",
+    "manuscript": "P66",
+    "base_reading": "ωρα",
+    "ms_reading": "ημερα",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:21",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "ο",
@@ -6537,19 +6377,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
-    "verse": "J 16:22",
-    "manuscript": "A",
+    "verse": "J 16:21",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "λυπην μεν",
+    "ms_reading": "ο",
     "type": "addition"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:22",
-    "manuscript": "B",
-    "base_reading": "αιρει",
-    "ms_reading": "αρει",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "16",
@@ -6562,10 +6394,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:22",
-    "manuscript": "P66",
-    "base_reading": "αρει",
-    "ms_reading": "ερι",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "λυπην μεν νυν",
+    "ms_reading": "νυν μεν λυπην",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "16",
@@ -6578,18 +6410,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:22",
-    "manuscript": "aleph",
-    "base_reading": "μεν νυν εξεται",
-    "ms_reading": "εχεται",
-    "type": "substitution_lexical"
+    "manuscript": "P66",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:22",
+    "manuscript": "P66",
+    "base_reading": "εχετε",
+    "ms_reading": "εξεται",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "16",
     "verse": "J 16:23",
     "manuscript": "A",
-    "base_reading": "τι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "οτι",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:23",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "τι",
+    "type": "addition"
   },
   {
     "chapter": "16",
@@ -6601,19 +6449,67 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
-    "verse": "J 16:25",
-    "manuscript": "aleph",
-    "base_reading": "οτε",
-    "ms_reading": "οπου",
+    "verse": "J 16:23",
+    "manuscript": "P66",
+    "base_reading": "αμην αμην λεγω υμιν αν τι αιτησητε τον πατερα δωσει υμιν εν τω",
+    "ms_reading": "[OMIT]",
     "type": "substitution_lexical"
   },
   {
     "chapter": "16",
-    "verse": "J 16:26",
+    "verse": "J 16:23",
+    "manuscript": "aleph",
+    "base_reading": "εν τω ονοματι μου δωσει υμιν",
+    "ms_reading": "δωσει υμιν εν τω ονοματι μου",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:24",
+    "manuscript": "D",
+    "base_reading": "ητησασθαι",
+    "ms_reading": "ητησατε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:24",
     "manuscript": "P66",
-    "base_reading": "περι υμων",
+    "base_reading": "εως αρτι ουκ ητησασθαι",
+    "ms_reading": "σαται",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:25",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "αλλ",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:25",
+    "manuscript": "B",
+    "base_reading": "αλλ",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:25",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:25",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
   },
   {
     "chapter": "16",
@@ -6627,24 +6523,8 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:27",
     "manuscript": "B",
-    "base_reading": "θεου",
-    "ms_reading": "του πατρος",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:27",
-    "manuscript": "D",
-    "base_reading": "θεου",
-    "ms_reading": "του πατρος",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:27",
-    "manuscript": "P66",
-    "base_reading": "του πατρος",
-    "ms_reading": "θεου",
+    "base_reading": "[ADD]",
+    "ms_reading": "οτι υμεις εμε",
     "type": "substitution_lexical"
   },
   {
@@ -6658,26 +6538,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:28",
-    "manuscript": "D",
-    "base_reading": "εληλυθα",
-    "ms_reading": "ηλθον",
+    "manuscript": "P66",
+    "base_reading": "εκ",
+    "ms_reading": "παρα",
     "type": "substitution_lexical"
   },
   {
     "chapter": "16",
     "verse": "J 16:28",
-    "manuscript": "D",
-    "base_reading": "εξηλθον παρα του πατρος",
+    "manuscript": "P66",
+    "base_reading": "προς τον πατερα",
     "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:29",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
@@ -6689,6 +6561,14 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
+    "verse": "J 16:29",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
+  },
+  {
+    "chapter": "16",
     "verse": "J 16:3",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -6697,16 +6577,16 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
-    "verse": "J 16:31",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "verse": "J 16:3",
+    "manuscript": "P66",
+    "base_reading": "τον πατερα ουδε εμε",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
     "verse": "J 16:32",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "εστι",
     "ms_reading": "εστιν",
     "type": "substitution_morphological"
@@ -6714,42 +6594,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "16",
     "verse": "J 16:32",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "η ωρα",
-    "type": "addition"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:33",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:33",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:4",
-    "manuscript": "D",
-    "base_reading": "αυτων μνημονευητε αυτων",
-    "ms_reading": "μνημονευτε",
+    "base_reading": "εστι",
+    "ms_reading": "εστιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "16",
-    "verse": "J 16:4",
-    "manuscript": "D",
-    "base_reading": "αυτων μνημονευηται αυτων",
-    "ms_reading": "μνημονευτε",
-    "type": "substitution_morphological"
+    "verse": "J 16:32",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "π",
+    "type": "addition"
   },
   {
     "chapter": "16",
@@ -6763,33 +6619,41 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:4",
     "manuscript": "D",
-    "base_reading": "υμιν εξ αρχης",
-    "ms_reading": "εξ αρχης υμειν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:4",
-    "manuscript": "D",
-    "base_reading": "υμιν εξ αρχης",
-    "ms_reading": "εξ αρχης υμειν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:4",
-    "manuscript": "aleph",
-    "base_reading": "οταν",
-    "ms_reading": "αν",
+    "base_reading": "αυτων μνημονευητε αυτων",
+    "ms_reading": "μνημονευτε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "16",
     "verse": "J 16:4",
-    "manuscript": "aleph",
-    "base_reading": "αυτων",
+    "manuscript": "P66",
+    "base_reading": "αυτων μνημονευητε αυτων",
     "ms_reading": "[OMIT]",
-    "type": "omission"
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:4",
+    "manuscript": "P66",
+    "base_reading": "αλλα",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:4",
+    "manuscript": "P66",
+    "base_reading": "αλλα",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "16",
+    "verse": "J 16:4",
+    "manuscript": "P66",
+    "base_reading": "ειπον υμιν ταυτα δε υμιν εξ",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "16",
@@ -6809,19 +6673,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "16",
-    "verse": "J 16:6",
-    "manuscript": "A",
-    "base_reading": "αλλ",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:6",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "αλλ",
-    "type": "addition"
+    "verse": "J 16:5",
+    "manuscript": "aleph",
+    "base_reading": "υπαγεις",
+    "ms_reading": "υπαγει",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "16",
@@ -6843,57 +6699,25 @@ window.DATA_VARIANTS = [
     "chapter": "16",
     "verse": "J 16:7",
     "manuscript": "A",
-    "base_reading": "ου μη ελθη",
-    "ms_reading": "ουκ ελευσεται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:7",
-    "manuscript": "D",
-    "base_reading": "ου μη ελθη",
-    "ms_reading": "ουκ ελευσεται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "16",
-    "verse": "J 16:7",
-    "manuscript": "D",
-    "base_reading": "εγω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:1",
-    "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "και",
+    "ms_reading": "εγω",
     "type": "addition"
   },
   {
-    "chapter": "17",
-    "verse": "J 17:1",
+    "chapter": "16",
+    "verse": "J 16:7",
     "manuscript": "A",
-    "base_reading": "επαρας",
-    "ms_reading": "επηρεν",
+    "base_reading": "ου μη ελθη",
+    "ms_reading": "ουκ ελευσεται",
     "type": "substitution_morphological"
   },
   {
-    "chapter": "17",
-    "verse": "J 17:1",
-    "manuscript": "B",
-    "base_reading": "σου",
+    "chapter": "16",
+    "verse": "J 16:7",
+    "manuscript": "aleph",
+    "base_reading": "εγω",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:1",
-    "manuscript": "B",
-    "base_reading": "επηρεν",
-    "ms_reading": "επαρας",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "17",
@@ -6907,41 +6731,17 @@ window.DATA_VARIANTS = [
     "chapter": "17",
     "verse": "J 17:1",
     "manuscript": "P66",
-    "base_reading": "πατερ εληλυθεν η ωρα δοξασον σου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ο ιησους και επηρεν",
+    "ms_reading": "παρας",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "17",
     "verse": "J 17:1",
     "manuscript": "aleph",
-    "base_reading": "ελαλησεν",
+    "base_reading": "ελαλησεν ο",
     "ms_reading": "λελαληκεν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:10",
-    "manuscript": "D",
-    "base_reading": "δεδοξασμαι",
-    "ms_reading": "εδοξασας με",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:10",
-    "manuscript": "D",
-    "base_reading": "δεδοξασμαι",
-    "ms_reading": "εδοξασας με",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:10",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εστιν",
-    "type": "addition"
   },
   {
     "chapter": "17",
@@ -6950,6 +6750,14 @@ window.DATA_VARIANTS = [
     "base_reading": "δεδοξασμαι",
     "ms_reading": "εδοξασμε",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:10",
+    "manuscript": "aleph",
+    "base_reading": "τα εμα παντα σα εστιν και τα σα εμα",
+    "ms_reading": "εμοι αυτους εδωκας",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "17",
@@ -6962,9 +6770,33 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:11",
+    "manuscript": "A",
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:11",
     "manuscript": "B",
+    "base_reading": "εν τω κοσμω ειμι",
+    "ms_reading": "ειμι εν τω κοσμω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:11",
+    "manuscript": "D",
+    "base_reading": "αυτοι",
+    "ms_reading": "ουτοι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:11",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "και",
+    "ms_reading": "αυτους εν τω ονοματι σου και οτε ημην μετ αυτων εγω ετηρουν",
     "type": "addition"
   },
   {
@@ -6978,10 +6810,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:11",
-    "manuscript": "P66",
-    "base_reading": "εν τω κοσμω ειμι",
-    "ms_reading": "ειμι εν τω κοσμω",
-    "type": "substitution_word_order"
+    "manuscript": "aleph",
+    "base_reading": "δεδωκας",
+    "ms_reading": "εδωκας",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "17",
@@ -6994,49 +6826,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:12",
-    "manuscript": "A",
-    "base_reading": "ω",
-    "ms_reading": "ους",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:12",
-    "manuscript": "B",
-    "base_reading": "ημην",
-    "ms_reading": "ημεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:12",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:12",
-    "manuscript": "D",
-    "base_reading": "ω",
-    "ms_reading": "ους",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:12",
     "manuscript": "P66",
-    "base_reading": "εξ",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:12",
-    "manuscript": "P66",
-    "base_reading": "σου ους δεδωκας μοι",
-    "ms_reading": "μου και",
+    "base_reading": "εν τω κοσμω εγω",
+    "ms_reading": "ω",
     "type": "substitution_lexical"
   },
   {
@@ -7049,75 +6841,83 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "17",
-    "verse": "J 17:12",
-    "manuscript": "aleph",
-    "base_reading": "εν τω κοσμω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "17",
     "verse": "J 17:13",
-    "manuscript": "D",
-    "base_reading": "εαυτοις",
-    "ms_reading": "αυτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:13",
-    "manuscript": "aleph",
-    "base_reading": "εαυτοις",
-    "ms_reading": "αυτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:14",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εν αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:14",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εν αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:14",
-    "manuscript": "D",
-    "base_reading": "καθως εγω ουκ ειμι εκ του κοσμου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:14",
     "manuscript": "P66",
+    "base_reading": "νυν δε προς",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:13",
+    "manuscript": "aleph",
+    "base_reading": "εαυτοις",
+    "ms_reading": "αυτοις",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:14",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν αυτοις",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:14",
+    "manuscript": "D",
     "base_reading": "καθως εγω ουκ ειμι εκ του κοσμου",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:15",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "κοσμου αλλ ινα τηρησης αυτους εκ του",
+    "type": "addition"
   },
   {
     "chapter": "17",
     "verse": "J 17:16",
-    "manuscript": "P66",
-    "base_reading": "εγω ουκ ειμι",
+    "manuscript": "D",
+    "base_reading": "εγω",
+    "ms_reading": "καγω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:16",
+    "manuscript": "D",
+    "base_reading": "εγω",
+    "ms_reading": "καγω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:17",
+    "manuscript": "B",
+    "base_reading": "τη",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "17",
     "verse": "J 17:17",
+    "manuscript": "D",
+    "base_reading": "η",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:18",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "τη",
-    "type": "addition"
+    "base_reading": "καγω απεστειλα αυτους εις τον κοσμον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "17",
@@ -7137,11 +6937,51 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "17",
-    "verse": "J 17:2",
+    "verse": "J 17:18",
     "manuscript": "D",
-    "base_reading": "δωση αυτοις",
-    "ms_reading": "εχη",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "τουτον",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:18",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "τουτον",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:18",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "τουτον",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:19",
+    "manuscript": "A",
+    "base_reading": "εγω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:19",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "εγω",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:19",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εγω",
+    "type": "addition"
   },
   {
     "chapter": "17",
@@ -7153,19 +6993,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "17",
-    "verse": "J 17:21",
-    "manuscript": "B",
-    "base_reading": "εν",
+    "verse": "J 17:20",
+    "manuscript": "P66",
+    "base_reading": "τουτων δε ερωτω μονον αλλα και περι",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:21",
-    "manuscript": "B",
-    "base_reading": "πατερ",
-    "ms_reading": "πατηρ",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "17",
@@ -7178,7 +7010,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:21",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "πιστευση",
     "ms_reading": "πιστευη",
     "type": "substitution_morphological"
@@ -7186,23 +7018,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:22",
-    "manuscript": "A",
-    "base_reading": "καγω",
-    "ms_reading": "και εγω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "A",
-    "base_reading": "δεδωκας",
-    "ms_reading": "εδωκας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "B",
+    "manuscript": "D",
     "base_reading": "εσμεν",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -7210,57 +7026,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "17",
     "verse": "J 17:22",
-    "manuscript": "B",
-    "base_reading": "εδωκα",
-    "ms_reading": "δεδωκα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "B",
-    "base_reading": "εδωκας",
-    "ms_reading": "δεδωκας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
     "manuscript": "D",
-    "base_reading": "δεδωκας",
-    "ms_reading": "εδωκας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "D",
-    "base_reading": "και εγω",
-    "ms_reading": "καγω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "D",
-    "base_reading": "εδωκα",
-    "ms_reading": "δεδωκα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "P66",
-    "base_reading": "εδωκα",
-    "ms_reading": "δεδωκα",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "το",
+    "type": "addition"
   },
   {
     "chapter": "17",
     "verse": "J 17:22",
     "manuscript": "aleph",
-    "base_reading": "εδωκας",
-    "ms_reading": "δεδωκας",
+    "base_reading": "και εγω",
+    "ms_reading": "καγω",
     "type": "substitution_morphological"
   },
   {
@@ -7273,19 +7049,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "17",
-    "verse": "J 17:22",
-    "manuscript": "aleph",
-    "base_reading": "εν",
+    "verse": "J 17:23",
+    "manuscript": "B",
+    "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:23",
-    "manuscript": "D",
-    "base_reading": "ηγαπησας",
-    "ms_reading": "ηγαπησα",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "17",
@@ -7299,48 +7067,16 @@ window.DATA_VARIANTS = [
     "chapter": "17",
     "verse": "J 17:23",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "το",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:23",
-    "manuscript": "D",
-    "base_reading": "εμε",
-    "ms_reading": "συ με",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:23",
-    "manuscript": "D",
     "base_reading": "εγω εν αυτοις και",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "17",
-    "verse": "J 17:23",
-    "manuscript": "P66",
-    "base_reading": "ινα",
-    "ms_reading": "και",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "17",
     "verse": "J 17:24",
-    "manuscript": "A",
-    "base_reading": "εδωκας",
-    "ms_reading": "δεδωκας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:24",
-    "manuscript": "A",
-    "base_reading": "κακεινοι",
-    "ms_reading": "και εκεινοι",
+    "manuscript": "B",
+    "base_reading": "δεδωκας",
+    "ms_reading": "εδωκας",
     "type": "substitution_morphological"
   },
   {
@@ -7355,57 +7091,89 @@ window.DATA_VARIANTS = [
     "chapter": "17",
     "verse": "J 17:24",
     "manuscript": "D",
+    "base_reading": "την εμην",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:24",
+    "manuscript": "P66",
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:24",
+    "manuscript": "P66",
+    "base_reading": "δεδωκας",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:24",
+    "manuscript": "P66",
+    "base_reading": "πατηρ ους εδωκας",
+    "ms_reading": "πατερ ο δεδωκας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:24",
+    "manuscript": "aleph",
     "base_reading": "και εκεινοι",
     "ms_reading": "κακεινοι",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
-    "verse": "J 17:25",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "σε",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:25",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "τουτος",
-    "type": "addition"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:25",
-    "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:26",
-    "manuscript": "D",
-    "base_reading": "ην",
-    "ms_reading": "η",
+    "verse": "J 17:24",
+    "manuscript": "aleph",
+    "base_reading": "πατηρ ους εδωκας",
+    "ms_reading": "πατερ ο δεδωκας",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
-    "verse": "J 17:26",
-    "manuscript": "aleph",
-    "base_reading": "με",
-    "ms_reading": "αυτους",
+    "verse": "J 17:25",
+    "manuscript": "D",
+    "base_reading": "εγνων",
+    "ms_reading": "εγνωκα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:25",
+    "manuscript": "D",
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:25",
+    "manuscript": "D",
+    "base_reading": "πατηρ",
+    "ms_reading": "πατερ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:25",
+    "manuscript": "P66",
+    "base_reading": "πατηρ",
+    "ms_reading": "[OMIT]",
     "type": "substitution_lexical"
   },
   {
     "chapter": "17",
-    "verse": "J 17:3",
-    "manuscript": "B",
-    "base_reading": "γεινωσκουσιν",
-    "ms_reading": "γεινωσκωσι",
-    "type": "substitution_morphological"
+    "verse": "J 17:25",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "σε",
+    "type": "addition"
   },
   {
     "chapter": "17",
@@ -7417,22 +7185,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "17",
-    "verse": "J 17:3",
-    "manuscript": "aleph",
-    "base_reading": "γεινωσκουσιν",
-    "ms_reading": "γινωσκωσι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
-    "verse": "J 17:4",
-    "manuscript": "D",
-    "base_reading": "δεδωκας",
-    "ms_reading": "εδωκας",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
     "verse": "J 17:4",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -7451,73 +7203,113 @@ window.DATA_VARIANTS = [
     "chapter": "17",
     "verse": "J 17:5",
     "manuscript": "D",
-    "base_reading": "ειναι παρα σοι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "παρα σοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:5",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "παρα σοι",
+    "type": "addition"
   },
   {
     "chapter": "17",
     "verse": "J 17:5",
     "manuscript": "P66",
-    "base_reading": "πατερ",
-    "ms_reading": "πατηρ",
+    "base_reading": "προ του τον κοσμον ειναι παρα σοι",
+    "ms_reading": "παρα σοι προ του τον κοσμον ειναι",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:6",
+    "manuscript": "A",
+    "base_reading": "τετηρηκαν",
+    "ms_reading": "τετηρηκασιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
-    "verse": "J 17:5",
-    "manuscript": "aleph",
-    "base_reading": "η",
-    "ms_reading": "ην",
+    "verse": "J 17:6",
+    "manuscript": "A",
+    "base_reading": "καμοι",
+    "ms_reading": "και εμοι",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
     "verse": "J 17:6",
     "manuscript": "B",
-    "base_reading": "και εμοι",
-    "ms_reading": "καμοι",
+    "base_reading": "τετηρηκασιν",
+    "ms_reading": "τετηρηκαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:6",
+    "manuscript": "P66",
+    "base_reading": "τετηρηκασιν",
+    "ms_reading": "τερηκαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:6",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "τουτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:6",
+    "manuscript": "P66",
+    "base_reading": "εδωκας",
+    "ms_reading": "δεδωκας",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
     "verse": "J 17:7",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "εδωκες",
-    "ms_reading": "εδωκας",
+    "ms_reading": "δεδωκας",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
     "verse": "J 17:7",
-    "manuscript": "B",
+    "manuscript": "P66",
     "base_reading": "εγνωκα",
     "ms_reading": "εγνωκαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
-    "verse": "J 17:7",
-    "manuscript": "B",
-    "base_reading": "εδωκας",
-    "ms_reading": "εδωκες",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "17",
     "verse": "J 17:8",
-    "manuscript": "A",
+    "manuscript": "D",
     "base_reading": "εδωκες",
     "ms_reading": "εδωκας",
     "type": "substitution_morphological"
   },
   {
     "chapter": "17",
-    "verse": "J 17:9",
-    "manuscript": "D",
-    "base_reading": "δεδωκας",
-    "ms_reading": "εδωκας",
-    "type": "substitution_morphological"
+    "verse": "J 17:8",
+    "manuscript": "P66",
+    "base_reading": "οτι τα ρηματα α εδωκας μοι δεδωκα αυτοις και αυτοι ελαβον",
+    "ms_reading": "εγνωσαν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "17",
+    "verse": "J 17:8",
+    "manuscript": "P66",
+    "base_reading": "οτι τα ρηματα α εδωκες μοι δεδωκα αυτοις και αυτοι ελαβον και",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "17",
@@ -7529,51 +7321,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:1",
-    "manuscript": "A",
-    "base_reading": "των",
-    "ms_reading": "του",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:1",
-    "manuscript": "D",
-    "base_reading": "κεδρων",
-    "ms_reading": "κεδρου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:1",
-    "manuscript": "D",
-    "base_reading": "των κεδρων",
-    "ms_reading": "του κεδρου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:1",
-    "manuscript": "aleph",
-    "base_reading": "κεδρων",
-    "ms_reading": "κεδρου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:1",
-    "manuscript": "aleph",
-    "base_reading": "τοις",
-    "ms_reading": "αυτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
     "verse": "J 18:10",
-    "manuscript": "D",
-    "base_reading": "ονομα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "ωταριον",
+    "ms_reading": "ωτιον",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
@@ -7594,42 +7346,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:10",
-    "manuscript": "aleph",
-    "base_reading": "ωτιον",
-    "ms_reading": "ωταριον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:10",
-    "manuscript": "aleph",
-    "base_reading": "του αρχιερεως δουλον",
-    "ms_reading": "δουλον του αρχιερεως",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:10",
-    "manuscript": "aleph",
-    "base_reading": "του αρχιερεως δουλον",
-    "ms_reading": "δουλον του αρχιερεως",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:11",
-    "manuscript": "D",
-    "base_reading": "δεδωκεν",
-    "ms_reading": "εδωκεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:11",
     "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "του αρχιερεως δουλον",
+    "ms_reading": "δουλον του αρχιερεως",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:10",
+    "manuscript": "aleph",
+    "base_reading": "του αρχιερεως δουλον",
+    "ms_reading": "δουλον του αρχιερεως",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "18",
@@ -7641,19 +7369,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:14",
-    "manuscript": "A",
-    "base_reading": "αποθανειν",
-    "ms_reading": "απολεσθαι",
+    "verse": "J 18:13",
+    "manuscript": "D",
+    "base_reading": "απηγαγον αυτον",
+    "ms_reading": "ηγαγον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:13",
+    "manuscript": "P66",
+    "base_reading": "απηγαγον αυτον",
+    "ms_reading": "ηγαγ",
     "type": "substitution_lexical"
   },
   {
     "chapter": "18",
-    "verse": "J 18:15",
-    "manuscript": "P66",
-    "base_reading": "ο δε μαθητης εκεινος ην γνωστος τω αρχιερει",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 18:14",
+    "manuscript": "B",
+    "base_reading": "απολεσθαι",
+    "ms_reading": "αποθανειν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "18",
@@ -7666,10 +7402,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:16",
-    "manuscript": "A",
-    "base_reading": "ο",
-    "ms_reading": "ος ην",
-    "type": "substitution_lexical"
+    "manuscript": "B",
+    "base_reading": "τω αρχιερει",
+    "ms_reading": "του αρχιερεως",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
@@ -7682,34 +7418,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:16",
+    "manuscript": "P66",
+    "base_reading": "αρχιερεως",
+    "ms_reading": "αρχιερε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:16",
     "manuscript": "aleph",
-    "base_reading": "προς τη θυρα εξω",
-    "ms_reading": "εξω προς τη θυρα",
-    "type": "substitution_word_order"
+    "base_reading": "εισηγαγεν",
+    "ms_reading": "εισηηνεγκε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
     "verse": "J 18:17",
-    "manuscript": "P66",
-    "base_reading": "ει",
+    "manuscript": "A",
+    "base_reading": "ου τω πετρω",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:17",
+    "manuscript": "B",
+    "base_reading": "τω πετρω",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "18",
-    "verse": "J 18:17",
-    "manuscript": "P66",
-    "base_reading": "ου τω πετρω",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:17",
-    "manuscript": "aleph",
-    "base_reading": "ου τω πετρω",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
+    "verse": "J 18:18",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "και ο πετρος",
+    "type": "addition"
   },
   {
     "chapter": "18",
@@ -7722,10 +7466,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:2",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "εκει μετα των μαθητων αυτου",
+    "ms_reading": "μετα των μαθητων αυτου εκει",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "18",
@@ -7737,10 +7481,74 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
+    "verse": "J 18:2",
+    "manuscript": "D",
+    "base_reading": "ο ιησους εκει",
+    "ms_reading": "εκει ο ιησους",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:2",
+    "manuscript": "D",
+    "base_reading": "εκει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:2",
+    "manuscript": "P66",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:2",
+    "manuscript": "aleph",
+    "base_reading": "μετα των μαθητων αυτου εκει",
+    "ms_reading": "εκει μετα των μαθητων αυτου",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "18",
     "verse": "J 18:20",
-    "manuscript": "A",
+    "manuscript": "P66",
+    "base_reading": "λελαληκα",
+    "ms_reading": "ελαλησα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:20",
+    "manuscript": "P66",
+    "base_reading": "λελαληκα",
+    "ms_reading": "ελαλησα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:20",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:20",
+    "manuscript": "aleph",
+    "base_reading": "ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:20",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "και",
     "type": "addition"
   },
   {
@@ -7762,10 +7570,58 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:21",
+    "manuscript": "B",
+    "base_reading": "επερωτησον",
+    "ms_reading": "ερωτησον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:21",
+    "manuscript": "P66",
+    "base_reading": "ακηκοατας",
+    "ms_reading": "ακηκοας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:21",
     "manuscript": "P66",
     "base_reading": "επερωτησον",
     "ms_reading": "ερωτησον",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:21",
+    "manuscript": "aleph",
+    "base_reading": "επερωτησον",
+    "ms_reading": "ερωτησον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:22",
+    "manuscript": "A",
+    "base_reading": "παρεστηκως των υπηρετων",
+    "ms_reading": "των υπηρετων παρεστηκως",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:23",
+    "manuscript": "B",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:23",
+    "manuscript": "P66",
+    "base_reading": "απεκριθη αυτω ιησους ει",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "18",
@@ -7777,19 +7633,59 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:26",
+    "verse": "J 18:23",
     "manuscript": "aleph",
-    "base_reading": "συγγενης",
-    "ms_reading": "συνγενης",
+    "base_reading": "ελαλησα",
+    "ms_reading": "ειπον",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:24",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:25",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:27",
+    "manuscript": "P66",
+    "base_reading": "ευθεως",
+    "ms_reading": "ευθυς",
     "type": "substitution_morphological"
   },
   {
     "chapter": "18",
     "verse": "J 18:29",
+    "manuscript": "A",
+    "base_reading": "φησιν",
+    "ms_reading": "ειπεν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:29",
     "manuscript": "B",
-    "base_reading": "κατα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ειπεν",
+    "ms_reading": "φησιν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:29",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "κατα",
+    "type": "addition"
   },
   {
     "chapter": "18",
@@ -7802,10 +7698,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:3",
-    "manuscript": "B",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "των",
+    "ms_reading": "εκ των",
     "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:30",
+    "manuscript": "B",
+    "base_reading": "κακοποιος",
+    "ms_reading": "κακον ποιων",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:30",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:30",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "παρεδωκιμεν",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:30",
+    "manuscript": "P66",
+    "base_reading": "κακοποιος",
+    "ms_reading": "κακον ποιων",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
@@ -7814,22 +7742,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ειπον",
     "ms_reading": "ειπαν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:31",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:31",
-    "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "18",
@@ -7851,9 +7763,17 @@ window.DATA_VARIANTS = [
     "chapter": "18",
     "verse": "J 18:31",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
+    "base_reading": "αυτον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:31",
+    "manuscript": "aleph",
+    "base_reading": "δε",
     "ms_reading": "ουν",
-    "type": "addition"
+    "type": "substitution_lexical"
   },
   {
     "chapter": "18",
@@ -7865,26 +7785,26 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:32",
-    "manuscript": "aleph",
-    "base_reading": "ον ειπεν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 18:33",
+    "manuscript": "B",
+    "base_reading": "αυτοις",
+    "ms_reading": "αυτω",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
     "verse": "J 18:33",
-    "manuscript": "B",
+    "manuscript": "P66",
     "base_reading": "εις το πραιτωριον παλιν",
     "ms_reading": "παλιν εις το πραιτωριον",
     "type": "substitution_word_order"
   },
   {
     "chapter": "18",
-    "verse": "J 18:33",
-    "manuscript": "aleph",
-    "base_reading": "αυτοις",
-    "ms_reading": "αυτω",
+    "verse": "J 18:34",
+    "manuscript": "A",
+    "base_reading": "σεαυτου",
+    "ms_reading": "εαυτου",
     "type": "substitution_morphological"
   },
   {
@@ -7894,6 +7814,22 @@ window.DATA_VARIANTS = [
     "base_reading": "ειπον σοι",
     "ms_reading": "σοι ειπον",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:34",
+    "manuscript": "B",
+    "base_reading": "εαυτου",
+    "ms_reading": "σεαυτου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:34",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "18",
@@ -7913,17 +7849,33 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:36",
+    "verse": "J 18:35",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "εμη",
-    "type": "addition"
+    "base_reading": "οι αρχιερεις",
+    "ms_reading": "ο αρχιερευς",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:35",
+    "manuscript": "aleph",
+    "base_reading": "μητι",
+    "ms_reading": "μη",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "18",
     "verse": "J 18:36",
-    "manuscript": "aleph",
-    "base_reading": "η εμη",
+    "manuscript": "B",
+    "base_reading": "αν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:36",
+    "manuscript": "P66",
+    "base_reading": "αν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -7940,24 +7892,40 @@ window.DATA_VARIANTS = [
     "verse": "J 18:36",
     "manuscript": "aleph",
     "base_reading": "η εμη",
-    "ms_reading": "και",
-    "type": "substitution_lexical"
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "18",
     "verse": "J 18:36",
     "manuscript": "aleph",
-    "base_reading": "αν οι εμοι ηγωνιζοντο",
-    "ms_reading": "οι εμοι ηγωνιζοντο αν",
-    "type": "substitution_word_order"
+    "base_reading": "η εμη",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "18",
-    "verse": "J 18:38",
+    "verse": "J 18:37",
     "manuscript": "A",
-    "base_reading": "ευρισκω εν αυτω αιτιαν",
-    "ms_reading": "αιτιαν ευρισκω εν αυτω",
-    "type": "substitution_word_order"
+    "base_reading": "[ADD]",
+    "ms_reading": "εγω",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:37",
+    "manuscript": "B",
+    "base_reading": "εγω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:37",
+    "manuscript": "aleph",
+    "base_reading": "εκ",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "18",
@@ -7966,14 +7934,6 @@ window.DATA_VARIANTS = [
     "base_reading": "αιτιαν ευρισκω εν αυτω",
     "ms_reading": "ευρισκω εν αυτω αιτιαν",
     "type": "substitution_word_order"
-  },
-  {
-    "chapter": "18",
-    "verse": "J 18:38",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "18",
@@ -7986,6 +7946,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "18",
     "verse": "J 18:39",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "απολυσω",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:39",
     "manuscript": "aleph",
     "base_reading": "υμιν απολυσω",
     "ms_reading": "απολυσω υμιν",
@@ -7993,19 +7961,51 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
+    "verse": "J 18:39",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ινα",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:4",
+    "manuscript": "D",
+    "base_reading": "εξελθων ειπεν",
+    "ms_reading": "εξηλθεν και λεγει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
     "verse": "J 18:40",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:40",
+    "manuscript": "P66",
+    "base_reading": "παλιν λεγοντες",
+    "ms_reading": "παντες",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:5",
     "manuscript": "B",
-    "base_reading": "παντες",
+    "base_reading": "ο ιησους",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "18",
     "verse": "J 18:5",
-    "manuscript": "D",
-    "base_reading": "ιησους",
+    "manuscript": "P66",
+    "base_reading": "λεγει αυτοις ο ιησους εγω ειμι",
     "ms_reading": "[OMIT]",
-    "type": "omission"
+    "type": "substitution_lexical"
   },
   {
     "chapter": "18",
@@ -8017,26 +8017,82 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "18",
-    "verse": "J 18:9",
-    "manuscript": "A",
-    "base_reading": "αυτων",
-    "ms_reading": "αυτου",
+    "verse": "J 18:5",
+    "manuscript": "aleph",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:6",
+    "manuscript": "B",
+    "base_reading": "επεσον",
+    "ms_reading": "επεσαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:6",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:6",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:6",
+    "manuscript": "aleph",
+    "base_reading": "απηλθον",
+    "ms_reading": "απηλθαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:7",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτους",
+    "type": "addition"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:7",
+    "manuscript": "D",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν παλιν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:7",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "18",
+    "verse": "J 18:7",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "18",
     "verse": "J 18:9",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "απωλεσα",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:1",
-    "manuscript": "aleph",
-    "base_reading": "ελαβεν",
-    "ms_reading": "λαβων",
+    "base_reading": "δεδωκας",
+    "ms_reading": "εδωκας",
     "type": "substitution_morphological"
   },
   {
@@ -8049,43 +8105,59 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:1",
-    "manuscript": "aleph",
-    "base_reading": "και",
+    "verse": "J 19:10",
+    "manuscript": "A",
+    "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "19",
-    "verse": "J 19:11",
-    "manuscript": "A",
-    "base_reading": "παραδους",
-    "ms_reading": "παραδιδους",
-    "type": "substitution_morphological"
+    "verse": "J 19:10",
+    "manuscript": "P66",
+    "base_reading": "απολυσαι σε και εξουσιαν εχω σταυρωσαι",
+    "ms_reading": "σταυρωσαι σε και εξουσιαν εχω απολυσαι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "19",
-    "verse": "J 19:11",
-    "manuscript": "A",
-    "base_reading": "αυτω",
-    "ms_reading": "ο",
-    "type": "substitution_lexical"
+    "verse": "J 19:10",
+    "manuscript": "P66",
+    "base_reading": "απολυσαι σε και εξουσιαν εχω σταυρωσε",
+    "ms_reading": "σταυρωσαι σε και εξουσιαν εχω απολυσαι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "19",
     "verse": "J 19:11",
     "manuscript": "B",
-    "base_reading": "παραδιδους",
-    "ms_reading": "παραδους",
-    "type": "substitution_morphological"
+    "base_reading": "εχεις",
+    "ms_reading": "ειχες",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "19",
-    "verse": "J 19:12",
-    "manuscript": "A",
-    "base_reading": "αν",
-    "ms_reading": "εαν",
-    "type": "substitution_morphological"
+    "verse": "J 19:11",
+    "manuscript": "P66",
+    "base_reading": "σοι δεδομενον",
+    "ms_reading": "δεδομενον σοι",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:11",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:11",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω",
+    "type": "addition"
   },
   {
     "chapter": "19",
@@ -8099,44 +8171,36 @@ window.DATA_VARIANTS = [
     "chapter": "19",
     "verse": "J 19:12",
     "manuscript": "B",
-    "base_reading": "εκρυγαζον",
-    "ms_reading": "εκραυγασαν",
+    "base_reading": "εζητει ο πειλατος",
+    "ms_reading": "ο πειλατος εζητει",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:12",
+    "manuscript": "P66",
+    "base_reading": "εαν",
+    "ms_reading": "αν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "19",
     "verse": "J 19:12",
     "manuscript": "P66",
-    "base_reading": "αυτον",
+    "base_reading": "εζητει",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "19",
-    "verse": "J 19:12",
+    "verse": "J 19:13",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "εζητει αυτον",
+    "ms_reading": "λεγομενου",
     "type": "addition"
   },
   {
     "chapter": "19",
-    "verse": "J 19:13",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:13",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
     "verse": "J 19:14",
     "manuscript": "P66",
     "base_reading": "λεγει",
@@ -8149,22 +8213,6 @@ window.DATA_VARIANTS = [
     "manuscript": "P66",
     "base_reading": "λεγει",
     "ms_reading": "λεγε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:14",
-    "manuscript": "P66",
-    "base_reading": "ην ως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:15",
-    "manuscript": "P66",
-    "base_reading": "αρον σταυρωσον",
-    "ms_reading": "σταυρον",
     "type": "substitution_morphological"
   },
   {
@@ -8178,42 +8226,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:16",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "και απηγαγον",
-    "type": "addition"
+    "manuscript": "aleph",
+    "base_reading": "αυτον αυτοις",
+    "ms_reading": "αυτοις αυτον",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "19",
     "verse": "J 19:16",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
+    "manuscript": "aleph",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
     "verse": "J 19:16",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "λαβοντες",
+    "ms_reading": "απηγαγον αυτον",
     "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:16",
-    "manuscript": "aleph",
-    "base_reading": "παρελαβον",
-    "ms_reading": "οι",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "19",
     "verse": "J 19:17",
     "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "εαυτου",
-    "type": "addition"
+    "base_reading": "γολγοθ",
+    "ms_reading": "γολγοθα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:17",
+    "manuscript": "P66",
+    "base_reading": "και βασταζων τον σταυρον εαυτου εξηλθεν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:17",
+    "manuscript": "aleph",
+    "base_reading": "εαυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
@@ -8226,18 +8282,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:2",
-    "manuscript": "aleph",
-    "base_reading": "επεθηκαν",
-    "ms_reading": "επεθηκεν",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "στεφανον εξ ακανθων",
+    "ms_reading": "εξ ακανθων στεφανον",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "19",
-    "verse": "J 19:20",
-    "manuscript": "A",
-    "base_reading": "ρωμαιστι ελληνιστι",
-    "ms_reading": "ελληνιστι ρωμαιστι",
-    "type": "substitution_word_order"
+    "verse": "J 19:21",
+    "manuscript": "aleph",
+    "base_reading": "ελεγον ουν τω πειλατω οι αρχιερεις των ιουδαιων μη γραφε ο βασιλευς των ιουδαιων",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
@@ -8250,58 +8306,58 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:23",
+    "manuscript": "P66",
+    "base_reading": "τεσσαρα",
+    "ms_reading": "τεσσερα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:24",
     "manuscript": "B",
-    "base_reading": "τεσσερα",
-    "ms_reading": "τεσσαρα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:23",
-    "manuscript": "aleph",
-    "base_reading": "τεσσερα",
-    "ms_reading": "τεσσαρα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:23",
-    "manuscript": "aleph",
-    "base_reading": "και τον χιτωνα",
+    "base_reading": "η λεγουσα",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "19",
-    "verse": "J 19:23",
-    "manuscript": "aleph",
-    "base_reading": "οτε εσταυρωσαν",
-    "ms_reading": "οι σταυρωσαντες",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "19",
     "verse": "J 19:24",
-    "manuscript": "aleph",
-    "base_reading": "τα ιματια μου",
-    "ms_reading": "μου τα ιματια",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:24",
-    "manuscript": "aleph",
-    "base_reading": "τα ιματια μου",
-    "ms_reading": "μου τα ιματια",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:25",
-    "manuscript": "aleph",
-    "base_reading": "μαρια",
-    "ms_reading": "μαριαμ",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:24",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "η λεγουσα",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:24",
+    "manuscript": "aleph",
+    "base_reading": "τα ιματια μου",
+    "ms_reading": "μου τα ιματια",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:24",
+    "manuscript": "aleph",
+    "base_reading": "τα ιματια μου",
+    "ms_reading": "μου τα ιματια",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:24",
+    "manuscript": "aleph",
+    "base_reading": "αλληλους",
+    "ms_reading": "αυτους",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "19",
@@ -8315,7 +8371,87 @@ window.DATA_VARIANTS = [
     "chapter": "19",
     "verse": "J 19:26",
     "manuscript": "aleph",
-    "base_reading": "ιησους ουν ιδων την μητερα",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:27",
+    "manuscript": "B",
+    "base_reading": "ημερας",
+    "ms_reading": "ωρας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:27",
+    "manuscript": "P66",
+    "base_reading": "ημερας",
+    "ms_reading": "ωρας",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:27",
+    "manuscript": "aleph",
+    "base_reading": "ιδου",
+    "ms_reading": "ειδε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "A",
+    "base_reading": "ειδως",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ιησους",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "P66",
+    "base_reading": "ινα τελειωθη η γραφη",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "P66",
+    "base_reading": "ειδως ο ιησους",
+    "ms_reading": "ο ιησους ειδως",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "aleph",
+    "base_reading": "τελειωθη",
+    "ms_reading": "πληρωθη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "aleph",
+    "base_reading": "ηδη παντα",
+    "ms_reading": "παντα ηδη",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:28",
+    "manuscript": "aleph",
+    "base_reading": "ειδως",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -8331,30 +8467,22 @@ window.DATA_VARIANTS = [
     "chapter": "19",
     "verse": "J 19:28",
     "manuscript": "aleph",
-    "base_reading": "ειδως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:28",
-    "manuscript": "aleph",
-    "base_reading": "ηδη παντα",
-    "ms_reading": "παντα ηδη",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:28",
-    "manuscript": "aleph",
-    "base_reading": "ηδη παντα",
-    "ms_reading": "παντα ηδη",
-    "type": "substitution_word_order"
+    "base_reading": "[ADD]",
+    "ms_reading": "ειδως ο",
+    "type": "addition"
   },
   {
     "chapter": "19",
     "verse": "J 19:29",
-    "manuscript": "B",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "οι δε πλησαντες",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:29",
+    "manuscript": "P66",
     "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -8362,17 +8490,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:29",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν μεστον του",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:29",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "ουν μεστον",
+    "ms_reading": "δε",
     "type": "addition"
   },
   {
@@ -8385,26 +8505,18 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:29",
-    "manuscript": "aleph",
-    "base_reading": "οι δε πλησαντες",
+    "verse": "J 19:3",
+    "manuscript": "A",
+    "base_reading": "και ηρχοντο προς αυτον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "19",
     "verse": "J 19:3",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και ηρχοντο προς αυτον",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:3",
-    "manuscript": "P66",
-    "base_reading": "ο βασιλευς",
-    "ms_reading": "βασιλευ",
+    "manuscript": "A",
+    "base_reading": "εδιδοσαν",
+    "ms_reading": "εδιδουν",
     "type": "substitution_morphological"
   },
   {
@@ -8414,6 +8526,22 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "και ηρχοντο προς αυτον",
     "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:3",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "και ηρχοντο προς αυτον",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:3",
+    "manuscript": "aleph",
+    "base_reading": "ο βασιλευς",
+    "ms_reading": "βασιλευ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "19",
@@ -8426,6 +8554,38 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:30",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:30",
+    "manuscript": "B",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:30",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:30",
+    "manuscript": "aleph",
+    "base_reading": "ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:30",
     "manuscript": "aleph",
     "base_reading": "ιησους",
     "ms_reading": "[OMIT]",
@@ -8434,7 +8594,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:31",
-    "manuscript": "B",
+    "manuscript": "A",
     "base_reading": "επι παρασκευη ην",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -8442,34 +8602,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:31",
+    "manuscript": "A",
+    "base_reading": "η",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:31",
     "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "η",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:31",
+    "manuscript": "P66",
+    "base_reading": "εκεινη",
+    "ms_reading": "εκεινου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:31",
+    "manuscript": "P66",
     "base_reading": "[ADD]",
     "ms_reading": "επι παρασκευη ην",
     "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:31",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:31",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "επει παρασκευη ην",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:31",
-    "manuscript": "aleph",
-    "base_reading": "επι παρασκευη ην",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "19",
@@ -8481,35 +8641,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:33",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:33",
-    "manuscript": "aleph",
-    "base_reading": "αυτον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:33",
-    "manuscript": "aleph",
-    "base_reading": "ως ειδον",
-    "ms_reading": "ευρον",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:33",
-    "manuscript": "aleph",
-    "base_reading": "ως ειδον",
-    "ms_reading": "ευρον αυτον",
-    "type": "substitution_lexical"
+    "verse": "J 19:32",
+    "manuscript": "P66",
+    "base_reading": "ηλθον",
+    "ms_reading": "ηλθαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "19",
@@ -8521,27 +8657,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:34",
-    "manuscript": "aleph",
-    "base_reading": "ευθυς εξηλθεν",
-    "ms_reading": "εξηλθεν ευθυς",
-    "type": "substitution_word_order"
+    "verse": "J 19:35",
+    "manuscript": "A",
+    "base_reading": "πιστευητε",
+    "ms_reading": "πιστευσητε",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "19",
     "verse": "J 19:35",
-    "manuscript": "aleph",
-    "base_reading": "πιστευσητε",
-    "ms_reading": "πιστευητε",
+    "manuscript": "P66",
+    "base_reading": "κακεινος",
+    "ms_reading": "και εκεινος",
     "type": "substitution_morphological"
   },
   {
     "chapter": "19",
     "verse": "J 19:38",
-    "manuscript": "A",
+    "manuscript": "B",
     "base_reading": "[ADD]",
-    "ms_reading": "του",
+    "ms_reading": "και επετρεψεν ο πειλατος ηλθεν ουν και ηρεν το σωμα αυτου",
     "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:38",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ηλθεν ουν και ηρεν το σωμα αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:38",
+    "manuscript": "P66",
+    "base_reading": "ων μαθητης ιησου κεκρυμμενος δε",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "19",
@@ -8554,10 +8706,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:39",
-    "manuscript": "aleph",
-    "base_reading": "αυτον",
-    "ms_reading": "τον ιησουν",
-    "type": "substitution_lexical"
+    "manuscript": "A",
+    "base_reading": "ως",
+    "ms_reading": "ωσει",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:39",
+    "manuscript": "B",
+    "base_reading": "μιγμα",
+    "ms_reading": "ελιγμα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "19",
+    "verse": "J 19:39",
+    "manuscript": "P66",
+    "base_reading": "ως",
+    "ms_reading": "ωσει",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "19",
@@ -8571,17 +8739,17 @@ window.DATA_VARIANTS = [
     "chapter": "19",
     "verse": "J 19:4",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουχ",
-    "type": "addition"
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
     "verse": "J 19:4",
     "manuscript": "aleph",
-    "base_reading": "εν αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "ουχ",
+    "type": "addition"
   },
   {
     "chapter": "19",
@@ -8593,26 +8761,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:4",
-    "manuscript": "aleph",
-    "base_reading": "εξω ο πειλατος",
-    "ms_reading": "ο πιλατος εξω",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "19",
     "verse": "J 19:40",
-    "manuscript": "B",
-    "base_reading": "εν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:40",
-    "manuscript": "B",
-    "base_reading": "θεου",
-    "ms_reading": "ιησου",
+    "manuscript": "A",
+    "base_reading": "ιησου",
+    "ms_reading": "θεου",
     "type": "substitution_lexical"
   },
   {
@@ -8626,17 +8778,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:40",
-    "manuscript": "P66",
-    "base_reading": "εν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "θεου",
+    "ms_reading": "ιησου",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "19",
-    "verse": "J 19:40",
-    "manuscript": "P66",
-    "base_reading": "θεου",
-    "ms_reading": "ιησου",
+    "verse": "J 19:41",
+    "manuscript": "A",
+    "base_reading": "ην τεθειμενος",
+    "ms_reading": "ετεθη",
     "type": "substitution_lexical"
   },
   {
@@ -8658,18 +8810,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:5",
-    "manuscript": "A",
-    "base_reading": "ιδου",
-    "ms_reading": "ιδε ο",
+    "manuscript": "B",
+    "base_reading": "ιδε ο",
+    "ms_reading": "ιδου",
     "type": "substitution_morphological"
   },
   {
     "chapter": "19",
     "verse": "J 19:5",
     "manuscript": "P66",
-    "base_reading": "φορων",
-    "ms_reading": "εχων",
-    "type": "substitution_lexical"
+    "base_reading": "και λεγει αυτοις ιδε ο ανθρωπος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
@@ -8681,11 +8833,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "19",
-    "verse": "J 19:5",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "verse": "J 19:6",
+    "manuscript": "B",
+    "base_reading": "αυτον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "19",
@@ -8698,39 +8850,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:6",
-    "manuscript": "P66",
-    "base_reading": "σταυρωσον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:6",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "και",
+    "ms_reading": "αυτον και",
     "type": "addition"
   },
   {
     "chapter": "19",
     "verse": "J 19:7",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ημων",
-    "type": "addition"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:7",
-    "manuscript": "A",
-    "base_reading": "υιον θεου εαυτον",
-    "ms_reading": "εαυτον υιον θεου",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:7",
-    "manuscript": "aleph",
+    "manuscript": "B",
     "base_reading": "ημων",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -8738,15 +8866,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "19",
     "verse": "J 19:7",
-    "manuscript": "aleph",
-    "base_reading": "αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "19",
-    "verse": "J 19:7",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "εαυτον υιον θεου",
     "ms_reading": "υιον θεου εαυτον",
     "type": "substitution_word_order"
@@ -8760,12 +8880,20 @@ window.DATA_VARIANTS = [
     "type": "substitution_word_order"
   },
   {
-    "chapter": "19",
-    "verse": "J 19:8",
-    "manuscript": "aleph",
-    "base_reading": "τουτον τον λογον",
-    "ms_reading": "τον λογον τουτον",
-    "type": "substitution_word_order"
+    "chapter": "2",
+    "verse": "J 2:1",
+    "manuscript": "A",
+    "base_reading": "ημερα",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "2",
+    "verse": "J 2:1",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ημερα τη",
+    "type": "addition"
   },
   {
     "chapter": "2",
@@ -8774,30 +8902,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ημερα τη",
     "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:10",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "τοτε",
-    "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:10",
-    "manuscript": "P66",
-    "base_reading": "εως",
-    "ms_reading": "ε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:10",
-    "manuscript": "aleph",
-    "base_reading": "τοτε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "2",
@@ -8818,10 +8922,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "2",
     "verse": "J 2:12",
-    "manuscript": "B",
-    "base_reading": "αυτου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "καφαρναουμ",
+    "ms_reading": "καπερναουμ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "2",
@@ -8834,16 +8938,8 @@ window.DATA_VARIANTS = [
   {
     "chapter": "2",
     "verse": "J 2:12",
-    "manuscript": "P66",
-    "base_reading": "εμεινεν",
-    "ms_reading": "εμεινον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:12",
-    "manuscript": "aleph",
-    "base_reading": "και οι μαθηται",
+    "manuscript": "B",
+    "base_reading": "αυτου",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -8851,9 +8947,9 @@ window.DATA_VARIANTS = [
     "chapter": "2",
     "verse": "J 2:13",
     "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "εις ιεροσολυμα",
-    "type": "addition"
+    "base_reading": "εις ιεροσολυμα ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "2",
@@ -8862,14 +8958,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ιησους",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:13",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
   },
   {
     "chapter": "2",
@@ -8897,19 +8985,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "2",
-    "verse": "J 2:15",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ως",
-    "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:16",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "verse": "J 2:17",
+    "manuscript": "B",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "2",
@@ -8922,6 +9002,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "2",
     "verse": "J 2:17",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "γεγραμμενον",
+    "type": "addition"
+  },
+  {
+    "chapter": "2",
+    "verse": "J 2:17",
     "manuscript": "aleph",
     "base_reading": "καταφαγεται",
     "ms_reading": "κατεφαγεται",
@@ -8929,35 +9017,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "2",
-    "verse": "J 2:17",
-    "manuscript": "aleph",
-    "base_reading": "εστιν γεγραμμενον",
-    "ms_reading": "γεγραμμενον εστιν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "2",
     "verse": "J 2:18",
     "manuscript": "B",
-    "base_reading": "διγνυεις",
-    "ms_reading": "δεικνυεις",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "2",
-    "verse": "J 2:19",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:19",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "verse": "J 2:18",
+    "manuscript": "P66",
+    "base_reading": "διγνυεις",
+    "ms_reading": "δικνυεις",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "2",
@@ -8970,7 +9042,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "2",
     "verse": "J 2:20",
-    "manuscript": "P66",
+    "manuscript": "A",
+    "base_reading": "ειπαν",
+    "ms_reading": "ειπον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "2",
+    "verse": "J 2:20",
+    "manuscript": "B",
     "base_reading": "ωκοδομηθη",
     "ms_reading": "οικοδομηθη",
     "type": "substitution_morphological"
@@ -8986,17 +9066,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "2",
     "verse": "J 2:20",
-    "manuscript": "P66",
-    "base_reading": "συ",
+    "manuscript": "aleph",
+    "base_reading": "εν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "2",
     "verse": "J 2:22",
-    "manuscript": "P66",
-    "base_reading": "ω",
-    "ms_reading": "ον",
+    "manuscript": "A",
+    "base_reading": "ον",
+    "ms_reading": "ω",
     "type": "substitution_morphological"
   },
   {
@@ -9006,14 +9086,6 @@ window.DATA_VARIANTS = [
     "base_reading": "εν",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:23",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "εν",
-    "type": "addition"
   },
   {
     "chapter": "2",
@@ -9027,31 +9099,15 @@ window.DATA_VARIANTS = [
     "chapter": "2",
     "verse": "J 2:24",
     "manuscript": "B",
-    "base_reading": "εαυτοις",
-    "ms_reading": "αυτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:24",
-    "manuscript": "P66",
-    "base_reading": "αυτον εαυτοις",
-    "ms_reading": "εαυτον αυτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:24",
-    "manuscript": "aleph",
-    "base_reading": "αυτον",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "2",
-    "verse": "J 2:24",
-    "manuscript": "aleph",
-    "base_reading": "αυτον",
+    "verse": "J 2:25",
+    "manuscript": "A",
+    "base_reading": "οτι",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -9062,22 +9118,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ουκ",
     "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:25",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουκ",
-    "type": "addition"
-  },
-  {
-    "chapter": "2",
-    "verse": "J 2:25",
-    "manuscript": "aleph",
-    "base_reading": "ου",
-    "ms_reading": "οτι",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "2",
@@ -9099,9 +9139,17 @@ window.DATA_VARIANTS = [
     "chapter": "2",
     "verse": "J 2:5",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "οτι",
-    "type": "addition"
+    "base_reading": "τι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "2",
+    "verse": "J 2:6",
+    "manuscript": "B",
+    "base_reading": "κειμεναι κατα τον καθαρισμον των ιουδαιων",
+    "ms_reading": "κατα τον καθαρισμον των ιουδαιων κειμεναι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "2",
@@ -9121,11 +9169,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "2",
-    "verse": "J 2:8",
-    "manuscript": "A",
-    "base_reading": "οι δε",
+    "verse": "J 2:7",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
     "ms_reading": "και",
-    "type": "substitution_lexical"
+    "type": "addition"
   },
   {
     "chapter": "2",
@@ -9138,23 +9186,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:1",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "απο της θυρας",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:10",
-    "manuscript": "A",
-    "base_reading": "αυτους",
-    "ms_reading": "εαυτους",
+    "manuscript": "P66",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαρια",
     "type": "substitution_morphological"
   },
   {
     "chapter": "20",
     "verse": "J 20:10",
-    "manuscript": "B",
+    "manuscript": "P66",
     "base_reading": "εαυτους",
     "ms_reading": "αυτους",
     "type": "substitution_morphological"
@@ -9169,6 +9209,14 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
+    "verse": "J 20:11",
+    "manuscript": "aleph",
+    "base_reading": "εξω κλαιουσα",
+    "ms_reading": "κλαιουσα εξω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "20",
     "verse": "J 20:12",
     "manuscript": "P66",
     "base_reading": "και",
@@ -9177,19 +9225,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:12",
-    "manuscript": "aleph",
-    "base_reading": "δυο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 20:13",
+    "manuscript": "D",
+    "base_reading": "και λεγουσιν αυτη εκεινοι γυναι τι κλαιεις",
+    "ms_reading": "τινα ζητεις",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "20",
-    "verse": "J 20:12",
-    "manuscript": "aleph",
-    "base_reading": "δυο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 20:13",
+    "manuscript": "D",
+    "base_reading": "και λεγουσιν αυτη εκεινοι γυναι τι κλαιεις και",
+    "ms_reading": "τινα ζητεις",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "20",
@@ -9201,11 +9249,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:14",
-    "manuscript": "P66",
-    "base_reading": "ιησους",
-    "ms_reading": "κυριος",
+    "verse": "J 20:15",
+    "manuscript": "D",
+    "base_reading": "εβαστασας",
+    "ms_reading": "ηρες",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:15",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:15",
+    "manuscript": "aleph",
+    "base_reading": "εβαστασας",
+    "ms_reading": "ει ο βαστασας",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "20",
@@ -9233,8 +9297,32 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:17",
-    "manuscript": "A",
+    "verse": "J 20:16",
+    "manuscript": "D",
+    "base_reading": "ραββουνι",
+    "ms_reading": "εβραιστι ραββωνει",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:16",
+    "manuscript": "P66",
+    "base_reading": "διδασκαλε",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:16",
+    "manuscript": "P66",
+    "base_reading": "εβραιστι ραββουνει ο",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:16",
+    "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "ο",
     "type": "addition"
@@ -9250,18 +9338,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:17",
-    "manuscript": "B",
-    "base_reading": "μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:17",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
+    "base_reading": "απτου μου",
+    "ms_reading": "μου απτου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "20",
@@ -9274,17 +9354,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:17",
-    "manuscript": "D",
-    "base_reading": "μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "μου ουπω γαρ αναβεβηκα προς τον πατερα",
+    "ms_reading": "ουπω γαρ αναβεβηκα προς τον πατερα μου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "20",
     "verse": "J 20:17",
-    "manuscript": "D",
-    "base_reading": "πορευου δε προς τους αδελφους μου",
-    "ms_reading": "μου πορευου ουν προς τους αδελφους",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ιδου",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:17",
+    "manuscript": "aleph",
+    "base_reading": "απτου μου",
+    "ms_reading": "μου απτου",
     "type": "substitution_word_order"
   },
   {
@@ -9294,6 +9382,30 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ο",
     "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:17",
+    "manuscript": "aleph",
+    "base_reading": "μου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:18",
+    "manuscript": "A",
+    "base_reading": "μαριαμ",
+    "ms_reading": "μαρια",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:18",
+    "manuscript": "D",
+    "base_reading": "εωρακα",
+    "ms_reading": "εωρακεν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "20",
@@ -9329,19 +9441,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:18",
+    "verse": "J 20:19",
     "manuscript": "P66",
-    "base_reading": "εωρακεν",
-    "ms_reading": "εορακα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:18",
-    "manuscript": "aleph",
-    "base_reading": "μαρια",
-    "ms_reading": "μαριαμ",
-    "type": "substitution_morphological"
+    "base_reading": "υμιν",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "20",
@@ -9350,14 +9454,6 @@ window.DATA_VARIANTS = [
     "base_reading": "αυτοις",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:2",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "τον",
-    "type": "addition"
   },
   {
     "chapter": "20",
@@ -9371,36 +9467,60 @@ window.DATA_VARIANTS = [
     "chapter": "20",
     "verse": "J 20:20",
     "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:21",
-    "manuscript": "D",
-    "base_reading": "πεμπω",
-    "ms_reading": "αποστελλω",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:21",
-    "manuscript": "D",
-    "base_reading": "πεμπω",
-    "ms_reading": "αποστελλω",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:22",
-    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "αυτοις",
+    "ms_reading": "αυτου",
     "type": "addition"
   },
   {
     "chapter": "20",
+    "verse": "J 20:20",
+    "manuscript": "P66",
+    "base_reading": "και την πλευραν αυτοις",
+    "ms_reading": "αυτου",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:20",
+    "manuscript": "P66",
+    "base_reading": "και τουτο ειπων εδειξε και",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:20",
+    "manuscript": "P66",
+    "base_reading": "ουν οι μαθηται",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:20",
+    "manuscript": "P66",
+    "base_reading": "κυριον",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:20",
+    "manuscript": "aleph",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:21",
+    "manuscript": "D",
+    "base_reading": "πεμπω",
+    "ms_reading": "αποστελλω",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
     "verse": "J 20:22",
     "manuscript": "D",
     "base_reading": "και",
@@ -9409,11 +9529,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:23",
-    "manuscript": "A",
-    "base_reading": "αν τινος",
-    "ms_reading": "εαν τινων",
-    "type": "substitution_morphological"
+    "verse": "J 20:22",
+    "manuscript": "P66",
+    "base_reading": "ενεφυσησε και",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "20",
@@ -9427,16 +9547,24 @@ window.DATA_VARIANTS = [
     "chapter": "20",
     "verse": "J 20:23",
     "manuscript": "B",
-    "base_reading": "εαν τινων",
-    "ms_reading": "αν τινος",
+    "base_reading": "αφεωνται",
+    "ms_reading": "αφειονται",
     "type": "substitution_morphological"
   },
   {
     "chapter": "20",
     "verse": "J 20:23",
     "manuscript": "D",
-    "base_reading": "αφειονται",
-    "ms_reading": "αφεωνται",
+    "base_reading": "αν τινος κρατητε",
+    "ms_reading": "εαν τινων κρατησετε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:23",
+    "manuscript": "aleph",
+    "base_reading": "κρατητε",
+    "ms_reading": "κρατηνται",
     "type": "substitution_morphological"
   },
   {
@@ -9450,94 +9578,22 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:24",
-    "manuscript": "D",
-    "base_reading": "δωδεκα ο",
-    "ms_reading": "ιβ",
-    "type": "substitution_lexical"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "20",
     "verse": "J 20:25",
     "manuscript": "A",
-    "base_reading": "μου την χειραν",
-    "ms_reading": "την χειραν μου",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:25",
-    "manuscript": "B",
-    "base_reading": "τοπον",
-    "ms_reading": "τυπον",
+    "base_reading": "τυπον",
+    "ms_reading": "τοπον",
     "type": "substitution_morphological"
   },
   {
     "chapter": "20",
     "verse": "J 20:25",
-    "manuscript": "B",
-    "base_reading": "την χειραν μου",
-    "ms_reading": "μου την χειραν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:25",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και βαλω μου τον δακτυλον εις τον τυπον των ηλων",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:25",
-    "manuscript": "D",
-    "base_reading": "εν ταις χερσιν",
-    "ms_reading": "εις τας χειρας",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:25",
-    "manuscript": "aleph",
-    "base_reading": "τον τοπον των ηλων",
-    "ms_reading": "την χειραν αυτου",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:27",
-    "manuscript": "D",
-    "base_reading": "γεινου",
-    "ms_reading": "ισθι",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:27",
-    "manuscript": "P66",
-    "base_reading": "ειτα λεγει τω θωμα φερε τον δακτυλον σου ωδε και ιδε τας χειρας μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:28",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:28",
-    "manuscript": "B",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:28",
     "manuscript": "D",
     "base_reading": "μου",
     "ms_reading": "[OMIT]",
@@ -9545,6 +9601,94 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
+    "verse": "J 20:25",
+    "manuscript": "P66",
+    "base_reading": "ελεγον ουν αυτω οι αλλοι μαθηται εορακαμεν τον κυριον ο δε ειπεν αυτοις εαν μη",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:25",
+    "manuscript": "P66",
+    "base_reading": "ελεγον ουν αυτω οι αλλοι μαθηται εωρακαμεν τον κυριον ο δε ειπεν αυτοις εαν μη",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:25",
+    "manuscript": "aleph",
+    "base_reading": "αλλοι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:26",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:26",
+    "manuscript": "P66",
+    "base_reading": "κεκλεισμενων και εστη εις το μεσον και ειπεν ειρηνη υμιν",
+    "ms_reading": "κ",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:26",
+    "manuscript": "P66",
+    "base_reading": "ερχεται ο ιησους των",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:26",
+    "manuscript": "aleph",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:27",
+    "manuscript": "P66",
+    "base_reading": "και φερε την χειρα σου και βαλε εις την πλευραν μου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:27",
+    "manuscript": "P66",
+    "base_reading": "ειτα λεγει τω θωμα φερε τον δακτυλον σου ωδε και ιδε τας χειρας μου και φερε την χειρα σου και βαλε εις την πλευραν μου",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:28",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "θεος",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:28",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "θεος",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
     "verse": "J 20:28",
     "manuscript": "D",
     "base_reading": "και",
@@ -9553,54 +9697,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:28",
-    "manuscript": "P66",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:28",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:29",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:29",
-    "manuscript": "A",
-    "base_reading": "και πιστευσαντες",
-    "ms_reading": "πεπιστευσαντες",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:29",
-    "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:29",
-    "manuscript": "B",
-    "base_reading": "πεπιστευσαντες",
-    "ms_reading": "και πιστευσαντες",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "20",
     "verse": "J 20:29",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -9610,18 +9706,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:29",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "λεγει",
+    "ms_reading": "ειπεν δε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "20",
     "verse": "J 20:29",
     "manuscript": "aleph",
-    "base_reading": "πεπιστευσαντες",
-    "ms_reading": "με και πιστευσαντες",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "20",
@@ -9633,40 +9729,24 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "20",
-    "verse": "J 20:30",
-    "manuscript": "D",
-    "base_reading": "βιβλιω",
-    "ms_reading": "βιβλω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:30",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:30",
-    "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:30",
-    "manuscript": "D",
-    "base_reading": "ο",
+    "verse": "J 20:3",
+    "manuscript": "aleph",
+    "base_reading": "και ηρχοντο εις το μνημειον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "20",
     "verse": "J 20:31",
-    "manuscript": "B",
+    "manuscript": "P66",
+    "base_reading": "πιστευσητε",
+    "ms_reading": "πιστευηται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:31",
+    "manuscript": "aleph",
     "base_reading": "πιστευσητε",
     "ms_reading": "πιστευητε",
     "type": "substitution_morphological"
@@ -9674,50 +9754,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:31",
-    "manuscript": "D",
-    "base_reading": "πιστευητε",
-    "ms_reading": "πιστευσητε",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αιωνιον",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:31",
+    "manuscript": "aleph",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:4",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:4",
+    "manuscript": "B",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:4",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:4",
+    "manuscript": "P66",
+    "base_reading": "μαθητης",
+    "ms_reading": "ματης",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:31",
-    "manuscript": "D",
-    "base_reading": "ο χριστος ο υιος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:31",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "αιωνιον",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:31",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "αιωνιον",
-    "type": "addition"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:31",
-    "manuscript": "aleph",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "20",
-    "verse": "J 20:31",
-    "manuscript": "aleph",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "20",
@@ -9731,8 +9811,16 @@ window.DATA_VARIANTS = [
     "chapter": "20",
     "verse": "J 20:4",
     "manuscript": "aleph",
-    "base_reading": "πρωτος εις το μνημειον",
-    "ms_reading": "εις το μνημιον πρωτος",
+    "base_reading": "ο",
+    "ms_reading": "προεδραμεν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:5",
+    "manuscript": "A",
+    "base_reading": "κειμενα τα οθονια",
+    "ms_reading": "τα οθονια κειμενα",
     "type": "substitution_word_order"
   },
   {
@@ -9746,18 +9834,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "20",
     "verse": "J 20:5",
-    "manuscript": "aleph",
-    "base_reading": "ου μεντοι εισηλθεν",
+    "manuscript": "P66",
+    "base_reading": "εισηλθεν",
     "ms_reading": "[OMIT]",
-    "type": "omission"
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:5",
+    "manuscript": "P66",
+    "base_reading": "τα οθονια κειμενα",
+    "ms_reading": "κειμενα τα οθονια",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:6",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "20",
+    "verse": "J 20:9",
+    "manuscript": "P66",
+    "base_reading": "δει",
+    "ms_reading": "δι",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "21",
     "verse": "J 21:1",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
+    "base_reading": "παλιν ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "21",
@@ -9769,48 +9881,32 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "21",
-    "verse": "J 21:1",
-    "manuscript": "D",
-    "base_reading": "παλιν ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:1",
-    "manuscript": "aleph",
-    "base_reading": "παλιν",
-    "ms_reading": "ο",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:11",
-    "manuscript": "B",
-    "base_reading": "μεγαλων ιχθυων",
-    "ms_reading": "ιχθυων μεγαλων",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "21",
     "verse": "J 21:11",
     "manuscript": "D",
-    "base_reading": "μεστον μεγαλων",
-    "ms_reading": "μεγων",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:11",
-    "manuscript": "D",
-    "base_reading": "μεγαλων εκατον πεντηκοντα τριων",
-    "ms_reading": "ρ ν γ",
+    "base_reading": "πετρος",
+    "ms_reading": "πρ",
     "type": "substitution_lexical"
   },
   {
     "chapter": "21",
     "verse": "J 21:12",
     "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:12",
+    "manuscript": "B",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:12",
+    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "δε",
     "type": "addition"
@@ -9825,11 +9921,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "21",
-    "verse": "J 21:14",
+    "verse": "J 21:13",
+    "manuscript": "B",
+    "base_reading": "ουν ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:13",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
+    "base_reading": "ουν ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:13",
+    "manuscript": "D",
+    "base_reading": "και διδωσιν",
+    "ms_reading": "ευχαριστησας εδωκεν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "21",
@@ -9842,33 +9954,33 @@ window.DATA_VARIANTS = [
   {
     "chapter": "21",
     "verse": "J 21:15",
-    "manuscript": "D",
-    "base_reading": "πλειον",
-    "ms_reading": "πλεον",
+    "manuscript": "A",
+    "base_reading": "ιωανου",
+    "ms_reading": "ιωνα",
     "type": "substitution_morphological"
   },
   {
     "chapter": "21",
     "verse": "J 21:15",
     "manuscript": "D",
-    "base_reading": "ιωνα",
-    "ms_reading": "ιωανου",
-    "type": "substitution_morphological"
+    "base_reading": "τω σιμωνι πετρω ο ιησους",
+    "ms_reading": "ο ιησους τω σιμωνι πετρω",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "21",
     "verse": "J 21:15",
-    "manuscript": "aleph",
-    "base_reading": "ιωνα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "τω σιμωνι πετρω ο ιησους",
+    "ms_reading": "ο ιησους τω σιμωνι πετρω",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "21",
     "verse": "J 21:16",
-    "manuscript": "B",
-    "base_reading": "ιωνα",
-    "ms_reading": "ιωανου",
+    "manuscript": "A",
+    "base_reading": "προβατια",
+    "ms_reading": "προβατα",
     "type": "substitution_morphological"
   },
   {
@@ -9881,39 +9993,55 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "21",
-    "verse": "J 21:17",
-    "manuscript": "A",
-    "base_reading": "ιωανου",
-    "ms_reading": "ιωνα",
+    "verse": "J 21:16",
+    "manuscript": "D",
+    "base_reading": "παλιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:16",
+    "manuscript": "aleph",
+    "base_reading": "ιωνα",
+    "ms_reading": "ιωαννου",
     "type": "substitution_morphological"
   },
   {
     "chapter": "21",
     "verse": "J 21:17",
     "manuscript": "B",
-    "base_reading": "συ παντα",
-    "ms_reading": "παντα συ",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:17",
-    "manuscript": "D",
-    "base_reading": "προβατια",
-    "ms_reading": "προβατα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:17",
-    "manuscript": "D",
-    "base_reading": "το τριτον",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "21",
     "verse": "J 21:17",
+    "manuscript": "B",
+    "base_reading": "ιωνα",
+    "ms_reading": "ιωανου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
+    "manuscript": "D",
+    "base_reading": "ιωνα",
+    "ms_reading": "ιωανου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
+    "manuscript": "D",
+    "base_reading": "ειπεν",
+    "ms_reading": "λεγει αυτω",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
     "manuscript": "D",
     "base_reading": "συ παντα",
     "ms_reading": "παντα συ",
@@ -9922,7 +10050,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "21",
     "verse": "J 21:17",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "ο ιησους",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -9931,8 +10059,40 @@ window.DATA_VARIANTS = [
     "chapter": "21",
     "verse": "J 21:17",
     "manuscript": "aleph",
-    "base_reading": "συ παντα",
-    "ms_reading": "παντα συ",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
+    "manuscript": "aleph",
+    "base_reading": "ιωνα",
+    "ms_reading": "ιωαννου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:17",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:18",
+    "manuscript": "A",
+    "base_reading": "ζωσει σε",
+    "ms_reading": "σε ζωσει",
     "type": "substitution_word_order"
   },
   {
@@ -9946,26 +10106,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "21",
     "verse": "J 21:18",
-    "manuscript": "aleph",
-    "base_reading": "αλλος",
-    "ms_reading": "αλλοι ζωσουσιν",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "οισει",
+    "ms_reading": "επο σε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "21",
     "verse": "J 21:18",
-    "manuscript": "aleph",
-    "base_reading": "ζωσει",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "αλλος",
+    "ms_reading": "αλλοι",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "21",
-    "verse": "J 21:19",
+    "verse": "J 21:2",
     "manuscript": "D",
-    "base_reading": "τουτο",
-    "ms_reading": "ταυτα",
-    "type": "substitution_lexical"
+    "base_reading": "αυτου",
+    "ms_reading": "αυτουτου",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "21",
@@ -9973,14 +10133,6 @@ window.DATA_VARIANTS = [
     "manuscript": "D",
     "base_reading": "ο",
     "ms_reading": "ος ην",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:2",
-    "manuscript": "aleph",
-    "base_reading": "του",
-    "ms_reading": "υιοι",
     "type": "substitution_lexical"
   },
   {
@@ -9993,35 +10145,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "21",
-    "verse": "J 21:20",
+    "verse": "J 21:21",
+    "manuscript": "A",
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:21",
     "manuscript": "aleph",
-    "base_reading": "ειπεν",
-    "ms_reading": "λεγι αυτω",
+    "base_reading": "κυριε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:21",
+    "manuscript": "aleph",
+    "base_reading": "λεγει",
+    "ms_reading": "ειπεν",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:21",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:21",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:22",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουτως",
-    "type": "addition"
   },
   {
     "chapter": "21",
@@ -10034,10 +10178,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "21",
     "verse": "J 21:23",
-    "manuscript": "aleph",
-    "base_reading": "τι προς σε",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:23",
+    "manuscript": "A",
+    "base_reading": "ουτος ο λογος",
+    "ms_reading": "ο λογος ουτος",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:23",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:23",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "και εδοξαν",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:24",
+    "manuscript": "A",
+    "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:24",
+    "manuscript": "A",
+    "base_reading": "αυτου η μαρτυρια εστιν",
+    "ms_reading": "εστιν η μαρτυρια αυτου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "21",
@@ -10059,14 +10243,6 @@ window.DATA_VARIANTS = [
     "chapter": "21",
     "verse": "J 21:24",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:24",
-    "manuscript": "D",
     "base_reading": "αυτου η μαρτυρια εστιν",
     "ms_reading": "εστιν αυτου η μαρτυρια",
     "type": "substitution_word_order"
@@ -10075,17 +10251,17 @@ window.DATA_VARIANTS = [
     "chapter": "21",
     "verse": "J 21:24",
     "manuscript": "D",
-    "base_reading": "η μαρτυρια αυτου",
-    "ms_reading": "αυτου η μαρτυρια",
-    "type": "substitution_word_order"
+    "base_reading": "ουτος",
+    "ms_reading": "οτος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "21",
     "verse": "J 21:24",
     "manuscript": "aleph",
-    "base_reading": "αυτου η μαρτυρια εστιν",
-    "ms_reading": "εστιν η μαρτυρια αυτου",
-    "type": "substitution_word_order"
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "21",
@@ -10099,15 +10275,15 @@ window.DATA_VARIANTS = [
     "chapter": "21",
     "verse": "J 21:25",
     "manuscript": "D",
-    "base_reading": "χωρησειν",
-    "ms_reading": "χωρησε",
+    "base_reading": "εστι",
+    "ms_reading": "εστιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "21",
     "verse": "J 21:3",
     "manuscript": "B",
-    "base_reading": "και",
+    "base_reading": "ευθυς",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -10117,46 +10293,6 @@ window.DATA_VARIANTS = [
     "manuscript": "D",
     "base_reading": "και εξηλθον",
     "ms_reading": "εξηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:3",
-    "manuscript": "D",
-    "base_reading": "εξηλθον",
-    "ms_reading": "εξηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:3",
-    "manuscript": "D",
-    "base_reading": "αυτοις",
-    "ms_reading": "τουτοις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:3",
-    "manuscript": "D",
-    "base_reading": "ευθυς",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:3",
-    "manuscript": "P66",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:3",
-    "manuscript": "aleph",
-    "base_reading": "επιασαν",
-    "ms_reading": "εκοπιασαν",
     "type": "substitution_morphological"
   },
   {
@@ -10179,9 +10315,41 @@ window.DATA_VARIANTS = [
     "chapter": "21",
     "verse": "J 21:3",
     "manuscript": "aleph",
-    "base_reading": "και",
+    "base_reading": "ευθυς",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:3",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:4",
+    "manuscript": "D",
+    "base_reading": "γεινομενης",
+    "ms_reading": "γενομενης",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:4",
+    "manuscript": "P66",
+    "base_reading": "ηδεισαν",
+    "ms_reading": "εγνωσαν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:4",
+    "manuscript": "aleph",
+    "base_reading": "ηδεισαν",
+    "ms_reading": "εγνωσαν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "21",
@@ -10190,30 +10358,6 @@ window.DATA_VARIANTS = [
     "base_reading": "εις",
     "ms_reading": "επι",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:5",
-    "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:5",
-    "manuscript": "aleph",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "21",
-    "verse": "J 21:6",
-    "manuscript": "B",
-    "base_reading": "ισχυσαν",
-    "ms_reading": "ισχυον",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "21",
@@ -10226,6 +10370,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "21",
     "verse": "J 21:6",
+    "manuscript": "P66",
+    "base_reading": "ουκετι αυτο ελκυσαι ισχυον απο του πληθους των ιχθυων",
+    "ms_reading": "ουδεν ελαβομεν επι δε τω σω ονοματι",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:6",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
     "ms_reading": "οι δε",
@@ -10233,8 +10385,40 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "21",
+    "verse": "J 21:6",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "οι δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:7",
+    "manuscript": "D",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:7",
+    "manuscript": "D",
+    "base_reading": "εβαλεν εαυτον",
+    "ms_reading": "ηλατο",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "21",
     "verse": "J 21:8",
     "manuscript": "B",
+    "base_reading": "πηχεων",
+    "ms_reading": "πηχων",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "21",
+    "verse": "J 21:8",
+    "manuscript": "D",
     "base_reading": "πηχεων",
     "ms_reading": "πηχων",
     "type": "substitution_morphological"
@@ -10256,6 +10440,14 @@ window.DATA_VARIANTS = [
     "type": "addition"
   },
   {
+    "chapter": "21",
+    "verse": "J 21:9",
+    "manuscript": "P66",
+    "base_reading": "οψαριον επικειμενον και αρτον",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
+  },
+  {
     "chapter": "3",
     "verse": "J 3:1",
     "manuscript": "aleph",
@@ -10265,59 +10457,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "3",
-    "verse": "J 3:11",
-    "manuscript": "P66",
-    "base_reading": "εωρακαμεν",
-    "ms_reading": "εωρακεμεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:11",
-    "manuscript": "P66",
-    "base_reading": "εωρακαμεν",
-    "ms_reading": "εωρακεμεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:13",
-    "manuscript": "P66",
-    "base_reading": "εν τω ουρανω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "3",
     "verse": "J 3:14",
     "manuscript": "A",
-    "base_reading": "μωυσης",
-    "ms_reading": "μωσης",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:14",
-    "manuscript": "B",
-    "base_reading": "δει υψωθηναι",
-    "ms_reading": "υψωθηναι δει",
+    "base_reading": "υψωθηναι δει",
+    "ms_reading": "δει υψωθηναι",
     "type": "substitution_word_order"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:14",
-    "manuscript": "P66",
-    "base_reading": "δει υψωθηναι",
-    "ms_reading": "υψωθηναι δει",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:14",
-    "manuscript": "aleph",
-    "base_reading": "μωσης",
-    "ms_reading": "μωυσης",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "3",
@@ -10329,11 +10473,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "3",
+    "verse": "J 3:14",
+    "manuscript": "aleph",
+    "base_reading": "μωσης",
+    "ms_reading": "μωυσης",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:15",
+    "manuscript": "B",
+    "base_reading": "επ αυτον μη απολητ αλλ",
+    "ms_reading": "εν αυτω",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "3",
     "verse": "J 3:16",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "απολλυηται",
+    "ms_reading": "αποληται",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "3",
@@ -10342,14 +10502,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ηγαπησεν",
     "ms_reading": "ηνγαπηησεν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:16",
-    "manuscript": "aleph",
-    "base_reading": "αυτου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "3",
@@ -10369,11 +10521,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "3",
-    "verse": "J 3:17",
-    "manuscript": "P66",
-    "base_reading": "ινα κρεινη τον κοσμον",
+    "verse": "J 3:18",
+    "manuscript": "aleph",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:19",
+    "manuscript": "P66",
+    "base_reading": "οι ανθρωποι μαλλον",
+    "ms_reading": "μαλλον οι ανθρωποι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "3",
@@ -10387,33 +10547,33 @@ window.DATA_VARIANTS = [
     "chapter": "3",
     "verse": "J 3:19",
     "manuscript": "aleph",
+    "base_reading": "μαλλον",
+    "ms_reading": "ηγαπησαν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:19",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "μαλλον",
+    "type": "addition"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:19",
+    "manuscript": "aleph",
     "base_reading": "ηγαπησαν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "3",
-    "verse": "J 3:19",
-    "manuscript": "aleph",
-    "base_reading": "μαλλον",
-    "ms_reading": "ηγαπησαν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:19",
-    "manuscript": "aleph",
-    "base_reading": "μαλλον",
-    "ms_reading": "ηγαπησαν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "3",
     "verse": "J 3:2",
     "manuscript": "P66",
-    "base_reading": "ραββει",
-    "ms_reading": "ραμβει",
-    "type": "substitution_morphological"
+    "base_reading": "η",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "3",
@@ -10426,26 +10586,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "3",
     "verse": "J 3:20",
-    "manuscript": "A",
-    "base_reading": "τα εργα αυτου",
-    "ms_reading": "αυτου τα εργα",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:20",
     "manuscript": "P66",
-    "base_reading": "αυτου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:20",
-    "manuscript": "aleph",
-    "base_reading": "και ουκ ερχεται προς το φως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "οτι πονηρα εστιν",
+    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10458,8 +10602,8 @@ window.DATA_VARIANTS = [
   {
     "chapter": "3",
     "verse": "J 3:22",
-    "manuscript": "A",
-    "base_reading": "ο",
+    "manuscript": "aleph",
+    "base_reading": "και οι μαθηται αυτου",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -10470,6 +10614,14 @@ window.DATA_VARIANTS = [
     "base_reading": "εκει",
     "ms_reading": "οι μαθηται αυτου κακει",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:23",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10490,10 +10642,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "3",
     "verse": "J 3:24",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:24",
     "manuscript": "aleph",
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:25",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "των",
+    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10530,22 +10698,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "3",
     "verse": "J 3:28",
-    "manuscript": "A",
-    "base_reading": "εγω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:28",
-    "manuscript": "D",
-    "base_reading": "εμπροσθεν",
-    "ms_reading": "ενπροσθεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:28",
     "manuscript": "aleph",
     "base_reading": "μοι",
     "ms_reading": "[OMIT]",
@@ -10553,11 +10705,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "3",
-    "verse": "J 3:3",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "verse": "J 3:29",
+    "manuscript": "D",
+    "base_reading": "νυμφιος εστιν",
+    "ms_reading": "νυμιος ετιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:29",
+    "manuscript": "D",
+    "base_reading": "εστηκως",
+    "ms_reading": "εστως",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "3",
@@ -10566,14 +10726,6 @@ window.DATA_VARIANTS = [
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:3",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "υμιν",
-    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10587,41 +10739,17 @@ window.DATA_VARIANTS = [
     "chapter": "3",
     "verse": "J 3:31",
     "manuscript": "D",
-    "base_reading": "εκ",
-    "ms_reading": "απο",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:31",
-    "manuscript": "P66",
-    "base_reading": "ανωθεν",
-    "ms_reading": "ανοθ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:31",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ων",
-    "type": "addition"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:31",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ων",
-    "type": "addition"
+    "base_reading": "επανω παντων εστιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "3",
     "verse": "J 3:31",
     "manuscript": "aleph",
-    "base_reading": "εκ",
-    "ms_reading": "επι",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10641,6 +10769,22 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "3",
+    "verse": "J 3:32",
+    "manuscript": "aleph",
+    "base_reading": "τουτο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:32",
+    "manuscript": "aleph",
+    "base_reading": "και ο",
+    "ms_reading": "ον",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "3",
     "verse": "J 3:34",
     "manuscript": "B",
     "base_reading": "ο θεος το πνευμα",
@@ -10651,55 +10795,23 @@ window.DATA_VARIANTS = [
     "chapter": "3",
     "verse": "J 3:34",
     "manuscript": "P66",
-    "base_reading": "ο θεος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "μετρου",
+    "ms_reading": "μερους",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "3",
-    "verse": "J 3:34",
+    "verse": "J 3:36",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "το πνευμα",
-    "type": "addition"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:35",
-    "manuscript": "D",
-    "base_reading": "δεδωκεν",
-    "ms_reading": "εδωκεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:36",
-    "manuscript": "D",
-    "base_reading": "ουκ",
-    "ms_reading": "ουχ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:36",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ινα",
-    "type": "addition"
+    "base_reading": "αλλ η",
+    "ms_reading": "[OMIT]",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "3",
     "verse": "J 3:36",
     "manuscript": "aleph",
-    "base_reading": "μενει επ αυτον",
-    "ms_reading": "επ αυτον μενει",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:4",
-    "manuscript": "B",
-    "base_reading": "ο",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -10707,22 +10819,6 @@ window.DATA_VARIANTS = [
     "chapter": "3",
     "verse": "J 3:4",
     "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:4",
-    "manuscript": "P66",
-    "base_reading": "ανθρωπος γενηθηναι",
-    "ms_reading": "γεννηθηναι ανθρωπος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:5",
-    "manuscript": "A",
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -10738,26 +10834,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "3",
     "verse": "J 3:5",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:5",
     "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "3",
-    "verse": "J 3:5",
-    "manuscript": "aleph",
-    "base_reading": "του θεου",
-    "ms_reading": "των ουρανων",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "αμην",
+    "type": "addition"
   },
   {
     "chapter": "3",
@@ -10766,6 +10846,14 @@ window.DATA_VARIANTS = [
     "base_reading": "εισελθειν εις",
     "ms_reading": "ειδεν",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:5",
+    "manuscript": "aleph",
+    "base_reading": "γενηθη εξ υδατος και πνευματος",
+    "ms_reading": "εξ υδατος και πνευματος γεννηθη",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "3",
@@ -10787,33 +10875,33 @@ window.DATA_VARIANTS = [
     "chapter": "3",
     "verse": "J 3:8",
     "manuscript": "P66",
+    "base_reading": "πνευμα",
+    "ms_reading": "πνευα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "3",
+    "verse": "J 3:8",
+    "manuscript": "aleph",
     "base_reading": "η",
     "ms_reading": "και",
     "type": "substitution_lexical"
   },
   {
+    "chapter": "3",
+    "verse": "J 3:8",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "υδατος και του",
+    "type": "addition"
+  },
+  {
     "chapter": "4",
     "verse": "J 4:1",
-    "manuscript": "P66",
-    "base_reading": "κυριος",
-    "ms_reading": "ιησους",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:10",
-    "manuscript": "B",
-    "base_reading": "πιειν",
-    "ms_reading": "πειν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:10",
-    "manuscript": "P66",
-    "base_reading": "πιειν",
-    "ms_reading": "πειν",
-    "type": "substitution_morphological"
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "η",
+    "type": "addition"
   },
   {
     "chapter": "4",
@@ -10826,24 +10914,24 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:11",
-    "manuscript": "B",
-    "base_reading": "η γυνη",
+    "manuscript": "D",
+    "base_reading": "ουτε",
+    "ms_reading": "ουδε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:11",
+    "manuscript": "aleph",
+    "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "4",
-    "verse": "J 4:11",
+    "verse": "J 4:12",
     "manuscript": "D",
-    "base_reading": "το",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:11",
-    "manuscript": "D",
-    "base_reading": "το",
+    "base_reading": "αυτου",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -10865,34 +10953,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
-    "verse": "J 4:14",
-    "manuscript": "D",
-    "base_reading": "ος",
-    "ms_reading": "ο",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:14",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εγω",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:14",
-    "manuscript": "D",
-    "base_reading": "μη",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:14",
-    "manuscript": "P66",
-    "base_reading": "εν αυτω πηγη",
-    "ms_reading": "πηγη εν αυτω",
+    "verse": "J 4:12",
+    "manuscript": "aleph",
+    "base_reading": "και αυτος",
+    "ms_reading": "αυτος και",
     "type": "substitution_word_order"
   },
   {
@@ -10914,6 +10978,30 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:15",
+    "manuscript": "D",
+    "base_reading": "διψω",
+    "ms_reading": "δειψησω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:15",
+    "manuscript": "P66",
+    "base_reading": "διψω",
+    "ms_reading": "διψησω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:15",
+    "manuscript": "P66",
+    "base_reading": "ερχωμαι",
+    "ms_reading": "διερχωμαι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:15",
     "manuscript": "aleph",
     "base_reading": "ερχωμαι ενθαδε",
     "ms_reading": "διερχωμαι",
@@ -10922,7 +11010,31 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:16",
+    "manuscript": "A",
+    "base_reading": "σου τον ανδρα",
+    "ms_reading": "τον ανδρα σου",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:16",
     "manuscript": "B",
+    "base_reading": "ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:16",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο ιησους",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:16",
+    "manuscript": "P66",
     "base_reading": "ιησους",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -10938,10 +11050,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:17",
-    "manuscript": "A",
-    "base_reading": "αυτω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "B",
+    "base_reading": "ειπας",
+    "ms_reading": "ειπες",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
@@ -10963,33 +11075,17 @@ window.DATA_VARIANTS = [
     "chapter": "4",
     "verse": "J 4:17",
     "manuscript": "aleph",
-    "base_reading": "ανδρα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "και ειπεν",
+    "ms_reading": "ανδρα",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
-    "verse": "J 4:2",
-    "manuscript": "P66",
-    "base_reading": "αυτος ιησους",
-    "ms_reading": "ιησους αυτος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:2",
-    "manuscript": "aleph",
-    "base_reading": "αυτος ιησους",
-    "ms_reading": "ιησους αυτος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:20",
-    "manuscript": "aleph",
-    "base_reading": "ο τοπος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 4:19",
+    "manuscript": "A",
+    "base_reading": "προφητης",
+    "ms_reading": "ποφητης",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
@@ -11002,42 +11098,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:21",
-    "manuscript": "B",
-    "base_reading": "πιστευσον μοι",
+    "manuscript": "D",
+    "base_reading": "οτι",
+    "ms_reading": "οτε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:21",
+    "manuscript": "D",
+    "base_reading": "ορει τουτω",
+    "ms_reading": "ρει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:21",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "πιστευε μοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:23",
+    "manuscript": "P66",
+    "base_reading": "προσκυνουντας αυτον",
+    "ms_reading": "προσκυνουτας αυτω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:24",
+    "manuscript": "D",
+    "base_reading": "αυτον",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:21",
-    "manuscript": "D",
-    "base_reading": "πιστευσον",
-    "ms_reading": "πιστευε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:21",
-    "manuscript": "D",
-    "base_reading": "εν",
-    "ms_reading": "ν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:21",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "πιστευω μοι",
-    "type": "addition"
   },
   {
     "chapter": "4",
     "verse": "J 4:24",
     "manuscript": "aleph",
-    "base_reading": "προσκυνειν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "και αληθεια",
+    "ms_reading": "αληθειας προσκυνιν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
@@ -11058,58 +11162,50 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:26",
+    "manuscript": "A",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:27",
+    "manuscript": "A",
+    "base_reading": "ηλθαν",
+    "ms_reading": "ηλθον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:27",
     "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "base_reading": "ηλθον",
+    "ms_reading": "ηλθαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
     "verse": "J 4:27",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:27",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:27",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:27",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:27",
-    "manuscript": "aleph",
     "base_reading": "επι",
     "ms_reading": "εν",
     "type": "substitution_lexical"
   },
   {
     "chapter": "4",
-    "verse": "J 4:28",
-    "manuscript": "D",
-    "base_reading": "αυτης η γυνη",
-    "ms_reading": "εαυτης",
-    "type": "substitution_lexical"
+    "verse": "J 4:27",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:27",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτω",
+    "type": "addition"
   },
   {
     "chapter": "4",
@@ -11129,19 +11225,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
-    "verse": "J 4:29",
-    "manuscript": "aleph",
-    "base_reading": "οσα",
-    "ms_reading": "α",
-    "type": "substitution_lexical"
+    "verse": "J 4:30",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
   },
   {
     "chapter": "4",
-    "verse": "J 4:33",
-    "manuscript": "D",
-    "base_reading": "προς αλληλους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 4:34",
+    "manuscript": "A",
+    "base_reading": "ποιησω",
+    "ms_reading": "ποιω",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
@@ -11161,11 +11257,35 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
+    "verse": "J 4:35",
+    "manuscript": "aleph",
+    "base_reading": "τετραμηνος",
+    "ms_reading": "τετραμηνον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
     "verse": "J 4:36",
-    "manuscript": "A",
+    "manuscript": "B",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:36",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "και",
+    "ms_reading": "ομου χαρη",
     "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:36",
+    "manuscript": "P66",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "4",
@@ -11185,40 +11305,16 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
-    "verse": "J 4:37",
-    "manuscript": "D",
-    "base_reading": "ο λογος εστιν",
-    "ms_reading": "εστιν ο λογος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "4",
     "verse": "J 4:38",
     "manuscript": "D",
-    "base_reading": "απεστειλα",
-    "ms_reading": "απεσταλκα",
+    "base_reading": "κεκοπιακατε",
+    "ms_reading": "εκοπιασατε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "4",
     "verse": "J 4:38",
     "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:38",
-    "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:38",
-    "manuscript": "aleph",
     "base_reading": "απεστειλα",
     "ms_reading": "απεσταλκα",
     "type": "substitution_morphological"
@@ -11226,9 +11322,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:39",
-    "manuscript": "B",
-    "base_reading": "οσα",
-    "ms_reading": "α",
+    "manuscript": "A",
+    "base_reading": "α",
+    "ms_reading": "οσα",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:39",
+    "manuscript": "D",
+    "base_reading": "α",
+    "ms_reading": "οσα",
     "type": "substitution_lexical"
   },
   {
@@ -11242,26 +11346,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:40",
-    "manuscript": "aleph",
-    "base_reading": "εκει",
-    "ms_reading": "παρ αυτοις ημερας",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:42",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "σου",
-    "type": "addition"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:42",
     "manuscript": "D",
-    "base_reading": "λαλιαν",
-    "ms_reading": "μαρτυριαν",
-    "type": "substitution_morphological"
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:40",
+    "manuscript": "aleph",
+    "base_reading": "ημερας",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:40",
+    "manuscript": "aleph",
+    "base_reading": "ημερας",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "4",
@@ -11290,14 +11394,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:42",
-    "manuscript": "D",
-    "base_reading": "λαλιαν σου",
-    "ms_reading": "σην μαρτυριαν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:42",
     "manuscript": "P66",
     "base_reading": "σου",
     "ms_reading": "[OMIT]",
@@ -11307,17 +11403,9 @@ window.DATA_VARIANTS = [
     "chapter": "4",
     "verse": "J 4:42",
     "manuscript": "P66",
-    "base_reading": "τε",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:42",
-    "manuscript": "P66",
-    "base_reading": "τε",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "σην",
+    "type": "addition"
   },
   {
     "chapter": "4",
@@ -11331,49 +11419,65 @@ window.DATA_VARIANTS = [
     "chapter": "4",
     "verse": "J 4:42",
     "manuscript": "aleph",
+    "base_reading": "λαλιαν",
+    "ms_reading": "μαρτυριαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:42",
+    "manuscript": "aleph",
+    "base_reading": "τε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:43",
+    "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "παρ αυτου",
+    "ms_reading": "και απηλθεν",
     "type": "addition"
   },
   {
     "chapter": "4",
-    "verse": "J 4:42",
-    "manuscript": "aleph",
-    "base_reading": "τε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 4:45",
+    "manuscript": "D",
+    "base_reading": "εορτην",
+    "ms_reading": "ορτην",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
-    "verse": "J 4:42",
-    "manuscript": "aleph",
-    "base_reading": "τε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:42",
-    "manuscript": "aleph",
-    "base_reading": "ελεγον",
-    "ms_reading": "οτι",
+    "verse": "J 4:45",
+    "manuscript": "D",
+    "base_reading": "οσα",
+    "ms_reading": "α",
     "type": "substitution_lexical"
   },
   {
     "chapter": "4",
     "verse": "J 4:45",
     "manuscript": "D",
-    "base_reading": "εορτην",
-    "ms_reading": "ορτην",
+    "base_reading": "ιεροσολυμοις εν",
+    "ms_reading": "ιερουσαλημ",
     "type": "substitution_morphological"
   },
   {
     "chapter": "4",
     "verse": "J 4:45",
-    "manuscript": "D",
-    "base_reading": "εορτην",
-    "ms_reading": "ορτην",
-    "type": "substitution_morphological"
+    "manuscript": "aleph",
+    "base_reading": "εωρακοτες οσα",
+    "ms_reading": "α",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:45",
+    "manuscript": "aleph",
+    "base_reading": "οτε",
+    "ms_reading": "ως",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
@@ -11402,18 +11506,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:46",
-    "manuscript": "D",
-    "base_reading": "καπερναουμ",
-    "ms_reading": "καφαρναουμ",
-    "type": "substitution_morphological"
+    "manuscript": "B",
+    "base_reading": "ο ιησους εις την",
+    "ms_reading": "εν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
     "verse": "J 4:46",
     "manuscript": "D",
-    "base_reading": "ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "βασιλικος",
+    "ms_reading": "βασιλισκος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "4",
@@ -11421,22 +11525,6 @@ window.DATA_VARIANTS = [
     "manuscript": "P66",
     "base_reading": "καπερναουμ",
     "ms_reading": "καφαρναουμ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:46",
-    "manuscript": "aleph",
-    "base_reading": "ηλθεν",
-    "ms_reading": "ηλθαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:46",
-    "manuscript": "aleph",
-    "base_reading": "εν κανα",
-    "ms_reading": "εις την καναν",
     "type": "substitution_morphological"
   },
   {
@@ -11457,51 +11545,59 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
+    "verse": "J 4:46",
+    "manuscript": "aleph",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:46",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:46",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:46",
+    "manuscript": "aleph",
+    "base_reading": "εν κανα",
+    "ms_reading": "εις την καναν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:47",
+    "manuscript": "D",
+    "base_reading": "αυτον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:47",
+    "manuscript": "P66",
+    "base_reading": "αυτον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "4",
     "verse": "J 4:47",
     "manuscript": "aleph",
     "base_reading": "απηλθεν",
     "ms_reading": "ηλθεν ουν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:47",
-    "manuscript": "aleph",
-    "base_reading": "ουτος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:5",
-    "manuscript": "A",
-    "base_reading": "τω",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:5",
-    "manuscript": "D",
-    "base_reading": "ο",
-    "ms_reading": "ου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:5",
-    "manuscript": "P66",
-    "base_reading": "ο",
-    "ms_reading": "ου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:5",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "τω",
-    "type": "addition"
   },
   {
     "chapter": "4",
@@ -11538,6 +11634,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:50",
+    "manuscript": "D",
+    "base_reading": "ον",
+    "ms_reading": "ω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:50",
     "manuscript": "P66",
     "base_reading": "και",
     "ms_reading": "[OMIT]",
@@ -11546,50 +11650,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "4",
     "verse": "J 4:51",
-    "manuscript": "B",
-    "base_reading": "απηντησαν αυτον και απηγγειλαν",
-    "ms_reading": "υπηντησαν αυτω",
+    "manuscript": "aleph",
+    "base_reading": "απηγγειλαν λεγοντες",
+    "ms_reading": "ηγγειλαν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:51",
-    "manuscript": "D",
-    "base_reading": "λεγονταις",
-    "ms_reading": "και ηγγειλαν αυτω",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:51",
-    "manuscript": "D",
-    "base_reading": "αυτου απηντησαν αυτον",
-    "ms_reading": "αυτω",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:51",
-    "manuscript": "D",
-    "base_reading": "αυτου υπηντησαν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:51",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "και απηγγιλαν",
-    "type": "addition"
   },
   {
     "chapter": "4",
     "verse": "J 4:52",
-    "manuscript": "B",
-    "base_reading": "αυτον",
-    "ms_reading": "αυτην",
-    "type": "substitution_morphological"
+    "manuscript": "A",
+    "base_reading": "εκεινην",
+    "ms_reading": "παρ αυτων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
@@ -11598,6 +11670,14 @@ window.DATA_VARIANTS = [
     "base_reading": "αυτην",
     "ms_reading": "αυτον",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:52",
+    "manuscript": "D",
+    "base_reading": "εκεινην",
+    "ms_reading": "παρ αυτων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "4",
@@ -11611,9 +11691,9 @@ window.DATA_VARIANTS = [
     "chapter": "4",
     "verse": "J 4:52",
     "manuscript": "aleph",
-    "base_reading": "αυτην",
-    "ms_reading": "αυτον",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
   },
   {
     "chapter": "4",
@@ -11625,6 +11705,30 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
+    "verse": "J 4:52",
+    "manuscript": "aleph",
+    "base_reading": "εκεινην",
+    "ms_reading": "παρ αυτων",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:52",
+    "manuscript": "aleph",
+    "base_reading": "αυτην",
+    "ms_reading": "αυτον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "4",
+    "verse": "J 4:53",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
+  },
+  {
+    "chapter": "4",
     "verse": "J 4:53",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -11633,27 +11737,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "4",
-    "verse": "J 4:54",
-    "manuscript": "A",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:54",
-    "manuscript": "D",
-    "base_reading": "τουτο",
-    "ms_reading": "του",
-    "type": "substitution_morphological"
+    "verse": "J 4:53",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
   },
   {
     "chapter": "4",
     "verse": "J 4:54",
     "manuscript": "aleph",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "σημειον εποιησεν",
+    "ms_reading": "εποιησεν σημιον",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "4",
@@ -11667,33 +11763,25 @@ window.DATA_VARIANTS = [
     "chapter": "4",
     "verse": "J 4:6",
     "manuscript": "P66",
-    "base_reading": "εκαθεζετο",
-    "ms_reading": "εκαθιζετο",
+    "base_reading": "πηγη",
+    "ms_reading": "γη",
     "type": "substitution_morphological"
   },
   {
     "chapter": "4",
-    "verse": "J 4:6",
-    "manuscript": "P66",
-    "base_reading": "εκαθεζετο",
-    "ms_reading": "εκαθιζετο",
+    "verse": "J 4:7",
+    "manuscript": "B",
+    "base_reading": "πιειν",
+    "ms_reading": "πειν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "4",
     "verse": "J 4:9",
-    "manuscript": "D",
-    "base_reading": "ουσης ου γαρ συνχρωνται ιουδαιοις σαμαρειταις",
+    "manuscript": "aleph",
+    "base_reading": "ου γαρ συνχρωνται ιουδαιοι σαμαρειταις",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "4",
-    "verse": "J 4:9",
-    "manuscript": "D",
-    "base_reading": "πως συ ιουδαιος ων",
-    "ms_reading": "συ ιουδαιος ων πως",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "4",
@@ -11704,27 +11792,19 @@ window.DATA_VARIANTS = [
     "type": "omission"
   },
   {
-    "chapter": "4",
-    "verse": "J 4:9",
-    "manuscript": "aleph",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
     "chapter": "5",
-    "verse": "J 5:1",
-    "manuscript": "aleph",
-    "base_reading": "εις",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 5:10",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "σου",
+    "type": "addition"
   },
   {
     "chapter": "5",
     "verse": "J 5:10",
-    "manuscript": "aleph",
-    "base_reading": "κραβαττον",
-    "ms_reading": "κραβακτον σου",
+    "manuscript": "P66",
+    "base_reading": "οι",
+    "ms_reading": "σοι",
     "type": "substitution_morphological"
   },
   {
@@ -11734,6 +11814,14 @@ window.DATA_VARIANTS = [
     "base_reading": "κραβαττον",
     "ms_reading": "κραβακτον σου",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:11",
+    "manuscript": "D",
+    "base_reading": "ος δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -11747,16 +11835,8 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:11",
     "manuscript": "aleph",
-    "base_reading": "κραβαττον σου",
-    "ms_reading": "κραβακτον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:11",
-    "manuscript": "aleph",
-    "base_reading": "απεκριθη",
-    "ms_reading": "απεκρινατο",
+    "base_reading": "αρον",
+    "ms_reading": "αραι",
     "type": "substitution_morphological"
   },
   {
@@ -11769,11 +11849,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "5",
+    "verse": "J 5:11",
+    "manuscript": "aleph",
+    "base_reading": "απεκριθη",
+    "ms_reading": "απεκρινατο",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
     "verse": "J 5:12",
     "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "ουν",
+    "ms_reading": "τον κραβαττον σου",
     "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:12",
+    "manuscript": "B",
+    "base_reading": "τον κραβαττον σου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -11786,7 +11882,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:12",
-    "manuscript": "D",
+    "manuscript": "aleph",
     "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -11794,18 +11890,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:12",
-    "manuscript": "P66",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "περιπατει",
+    "ms_reading": "περιπατιν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "5",
     "verse": "J 5:13",
     "manuscript": "D",
-    "base_reading": "εξενευσεν",
-    "ms_reading": "ενευσεν",
-    "type": "substitution_morphological"
+    "base_reading": "δε ιαθεις",
+    "ms_reading": "ασθενων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
@@ -11818,6 +11914,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:14",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:14",
     "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "ο",
@@ -11826,10 +11930,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:14",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "manuscript": "aleph",
+    "base_reading": "σοι τι",
+    "ms_reading": "τι σοι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "5",
@@ -11838,30 +11942,6 @@ window.DATA_VARIANTS = [
     "base_reading": "αυτον",
     "ms_reading": "ο",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:14",
-    "manuscript": "aleph",
-    "base_reading": "ειπεν",
-    "ms_reading": "λεγει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:15",
-    "manuscript": "P66",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:15",
-    "manuscript": "aleph",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "5",
@@ -11874,10 +11954,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:16",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι ιουδαιοι",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "οι ιουδαιοι και εζητουν αυτον αποκτειναι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -11889,24 +11969,24 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "5",
-    "verse": "J 5:17",
-    "manuscript": "B",
-    "base_reading": "ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:17",
-    "manuscript": "D",
-    "base_reading": "απεκρεινατο",
-    "ms_reading": "ιησους απεκρειθη",
+    "verse": "J 5:16",
+    "manuscript": "P66",
+    "base_reading": "οι ιουδαιοι και εζητουν αυτον αποκτειναι οτι",
+    "ms_reading": "το",
     "type": "substitution_lexical"
   },
   {
     "chapter": "5",
-    "verse": "J 5:17",
+    "verse": "J 5:16",
     "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "οι ιουδαιοι",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:17",
+    "manuscript": "A",
     "base_reading": "[ADD]",
     "ms_reading": "ιησους",
     "type": "addition"
@@ -11922,18 +12002,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:18",
-    "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "B",
+    "base_reading": "ιησουν",
+    "ms_reading": "θεον",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
     "verse": "J 5:18",
-    "manuscript": "D",
-    "base_reading": "εζητουν αυτον οι ιουδαιοι",
-    "ms_reading": "οι ιουδαιοι εζητουν αυτον",
-    "type": "substitution_word_order"
+    "manuscript": "aleph",
+    "base_reading": "ιησουν ισον",
+    "ms_reading": "θεον",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
@@ -11946,42 +12026,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:19",
-    "manuscript": "B",
-    "base_reading": "ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "ελεγεν",
+    "ms_reading": "ειπεν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
     "verse": "J 5:19",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "τι",
-    "type": "addition"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:19",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο ιησους",
-    "type": "addition"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:19",
-    "manuscript": "D",
-    "base_reading": "τον πατερα ποιουντα",
-    "ms_reading": "ποιουντα τον πατερα",
+    "base_reading": "ομοιως ποιει",
+    "ms_reading": "ποιει ομοιως",
     "type": "substitution_word_order"
   },
   {
     "chapter": "5",
     "verse": "J 5:19",
-    "manuscript": "P66",
-    "base_reading": "ειπεν",
-    "ms_reading": "ελεγεν",
-    "type": "substitution_lexical"
+    "manuscript": "aleph",
+    "base_reading": "ομοιως ποιει",
+    "ms_reading": "ποιει ομοιως",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:19",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτοις",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:19",
+    "manuscript": "aleph",
+    "base_reading": "εαν",
+    "ms_reading": "αν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "5",
@@ -12003,33 +12083,9 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:2",
     "manuscript": "D",
-    "base_reading": "επι",
-    "ms_reading": "εν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:2",
-    "manuscript": "D",
     "base_reading": "βηθεσδα",
     "ms_reading": "βελζεθα",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:2",
-    "manuscript": "D",
-    "base_reading": "βηθσαιδα",
-    "ms_reading": "βελζεθα",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:2",
-    "manuscript": "P66",
-    "base_reading": "επιλεγομενη",
-    "ms_reading": "εστιν λεγομενη",
-    "type": "substitution_morphological"
   },
   {
     "chapter": "5",
@@ -12042,26 +12098,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:2",
-    "manuscript": "P66",
-    "base_reading": "εν",
-    "ms_reading": "επι",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:2",
-    "manuscript": "aleph",
-    "base_reading": "εστιν",
-    "ms_reading": "εντιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:2",
     "manuscript": "aleph",
     "base_reading": "η επιλεγομενη",
     "ms_reading": "το λεγομενον",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:2",
+    "manuscript": "aleph",
+    "base_reading": "εν τη",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -12074,25 +12122,25 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:20",
-    "manuscript": "D",
-    "base_reading": "φιλει",
-    "ms_reading": "αγαπα",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:20",
     "manuscript": "aleph",
-    "base_reading": "διγνυσιν",
-    "ms_reading": "δικνυσιν",
+    "base_reading": "θαυμαζητε",
+    "ms_reading": "θαυμαζετε",
     "type": "substitution_morphological"
   },
   {
     "chapter": "5",
     "verse": "J 5:20",
     "manuscript": "aleph",
-    "base_reading": "θαυμαζητε",
-    "ms_reading": "θαυμαζετε",
+    "base_reading": "δειξει αυτω εργα",
+    "ms_reading": "εργα δειξει αυτω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:21",
+    "manuscript": "aleph",
+    "base_reading": "ωσπερ",
+    "ms_reading": "ως",
     "type": "substitution_morphological"
   },
   {
@@ -12105,38 +12153,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "5",
-    "verse": "J 5:24",
-    "manuscript": "D",
-    "base_reading": "την",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:25",
-    "manuscript": "B",
-    "base_reading": "ακουσονται",
-    "ms_reading": "ακουσουσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:25",
-    "manuscript": "P66",
-    "base_reading": "ακουσουσιν",
-    "ms_reading": "ακουσωσιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:25",
-    "manuscript": "P66",
-    "base_reading": "οι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "5",
     "verse": "J 5:25",
     "manuscript": "P66",
     "base_reading": "οι",
@@ -12147,9 +12163,17 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:25",
     "manuscript": "aleph",
-    "base_reading": "ακουσονται",
-    "ms_reading": "ακουσωσι",
-    "type": "substitution_morphological"
+    "base_reading": "οι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:25",
+    "manuscript": "aleph",
+    "base_reading": "και νυν εστιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -12162,18 +12186,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:26",
-    "manuscript": "B",
-    "base_reading": "εδωκεν και τω υιω",
-    "ms_reading": "και τω υιω εδωκεν",
+    "manuscript": "D",
+    "base_reading": "και τω υιω εδωκεν",
+    "ms_reading": "εδωκεν και τω υιω",
     "type": "substitution_word_order"
   },
   {
     "chapter": "5",
     "verse": "J 5:26",
-    "manuscript": "D",
+    "manuscript": "aleph",
     "base_reading": "ωσπερ",
     "ms_reading": "ως",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:26",
+    "manuscript": "aleph",
+    "base_reading": "εχει ζωην",
+    "ms_reading": "ζωην εχει",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "5",
@@ -12187,6 +12219,14 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:28",
     "manuscript": "P66",
+    "base_reading": "τοις μνημειοις ακουσουσιν",
+    "ms_reading": "τη ερημω ακουσωσιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:28",
+    "manuscript": "P66",
     "base_reading": "οι",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -12203,17 +12243,17 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:28",
     "manuscript": "aleph",
-    "base_reading": "ακουσονται",
+    "base_reading": "ακουσουσιν",
     "ms_reading": "ακουσωσιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "5",
     "verse": "J 5:29",
-    "manuscript": "P66",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "πραξαντες",
+    "ms_reading": "πρασσοντες",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "5",
@@ -12235,33 +12275,17 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:3",
     "manuscript": "D",
-    "base_reading": "χω",
-    "ms_reading": "χωλων ξηρων παραλυτικων",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "παραλυτικων εκδεχομενων την του υδατος κινησιν",
+    "type": "addition"
   },
   {
     "chapter": "5",
-    "verse": "J 5:30",
-    "manuscript": "D",
-    "base_reading": "ποιειν απ εμαυτου",
-    "ms_reading": "απ εμαυτου ποιειν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:30",
+    "verse": "J 5:3",
     "manuscript": "P66",
-    "base_reading": "δυναμαι",
-    "ms_reading": "δυνομαι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:30",
-    "manuscript": "aleph",
-    "base_reading": "εγω ποιειν",
-    "ms_reading": "ποιειν εγω",
-    "type": "substitution_word_order"
+    "base_reading": "χω εκδεχομενων την του υδατος",
+    "ms_reading": "χωλων ξηρων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
@@ -12274,22 +12298,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:35",
-    "manuscript": "B",
-    "base_reading": "προς ωραν αγαλλιαθηναι",
-    "ms_reading": "αγαλλιαθηναι προς ωραν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:35",
-    "manuscript": "D",
-    "base_reading": "λυχνος",
-    "ms_reading": "λυχλον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:35",
     "manuscript": "D",
     "base_reading": "προς ωραν αγαλλιαθηναι",
     "ms_reading": "αγαλλιαθηναι προς ωραν",
@@ -12298,9 +12306,17 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:36",
-    "manuscript": "P66",
+    "manuscript": "D",
     "base_reading": "απεσταλκεν",
-    "ms_reading": "απεασταλκεν",
+    "ms_reading": "απεστιλεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:36",
+    "manuscript": "P66",
+    "base_reading": "αυτα",
+    "ms_reading": "ταυτα",
     "type": "substitution_morphological"
   },
   {
@@ -12323,56 +12339,72 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:36",
     "manuscript": "aleph",
-    "base_reading": "με",
-    "ms_reading": "εμε",
+    "base_reading": "μειζων",
+    "ms_reading": "μειζω",
     "type": "substitution_morphological"
   },
   {
     "chapter": "5",
-    "verse": "J 5:36",
-    "manuscript": "aleph",
-    "base_reading": "την",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "verse": "J 5:37",
+    "manuscript": "B",
+    "base_reading": "αυτος",
+    "ms_reading": "εκεινος",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "5",
     "verse": "J 5:37",
-    "manuscript": "A",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εκεινος",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:37",
+    "manuscript": "P66",
     "base_reading": "εκεινος",
     "ms_reading": "αυτος",
     "type": "substitution_morphological"
   },
   {
     "chapter": "5",
-    "verse": "J 5:37",
-    "manuscript": "P66",
-    "base_reading": "πωποτε",
-    "ms_reading": "ποτε",
-    "type": "substitution_morphological"
+    "verse": "J 5:38",
+    "manuscript": "B",
+    "base_reading": "μενοντα εν υμιν",
+    "ms_reading": "εν υμιν μενοντα",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "5",
-    "verse": "J 5:41",
-    "manuscript": "A",
-    "base_reading": "ανθρωπων",
-    "ms_reading": "ανθρωπου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "5",
-    "verse": "J 5:41",
+    "verse": "J 5:38",
     "manuscript": "D",
+    "base_reading": "εν υμιν μενοντα",
+    "ms_reading": "μενοντα εν υμειν",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:39",
+    "manuscript": "A",
+    "base_reading": "εραυνατε",
+    "ms_reading": "ερευνατε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:41",
+    "manuscript": "aleph",
     "base_reading": "ανθρωπου",
     "ms_reading": "ανθρωπων",
     "type": "substitution_morphological"
   },
   {
     "chapter": "5",
-    "verse": "J 5:41",
-    "manuscript": "P66",
-    "base_reading": "ανθρωπου",
-    "ms_reading": "ανθρωπων",
+    "verse": "J 5:42",
+    "manuscript": "A",
+    "base_reading": "ουκ εχετε",
+    "ms_reading": "ου χεται",
     "type": "substitution_morphological"
   },
   {
@@ -12386,9 +12418,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:42",
-    "manuscript": "aleph",
+    "manuscript": "P66",
     "base_reading": "ου χεται",
-    "ms_reading": "ουκ εχετε",
+    "ms_reading": "ουχ εχετε",
     "type": "substitution_morphological"
   },
   {
@@ -12411,8 +12443,16 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:44",
     "manuscript": "A",
-    "base_reading": "πιστευσαι",
-    "ms_reading": "πιστευειν",
+    "base_reading": "[ADD]",
+    "ms_reading": "θεου",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:44",
+    "manuscript": "D",
+    "base_reading": "πιστευειν",
+    "ms_reading": "πιστευσαι",
     "type": "substitution_morphological"
   },
   {
@@ -12425,11 +12465,83 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "5",
+    "verse": "J 5:46",
+    "manuscript": "A",
+    "base_reading": "μωυσει",
+    "ms_reading": "μωσει",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:46",
+    "manuscript": "B",
+    "base_reading": "μωσει",
+    "ms_reading": "μωυσει",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:46",
+    "manuscript": "aleph",
+    "base_reading": "εγραψεν",
+    "ms_reading": "γεγραφεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
     "verse": "J 5:47",
     "manuscript": "B",
     "base_reading": "πιστευσετε",
     "ms_reading": "πιστευετε",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:47",
+    "manuscript": "D",
+    "base_reading": "πιστευσετε",
+    "ms_reading": "πιστευσητε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "A",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτου",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "D",
+    "base_reading": "τις",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "εκει",
+    "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "λη",
+    "type": "addition"
   },
   {
     "chapter": "5",
@@ -12444,8 +12556,16 @@ window.DATA_VARIANTS = [
     "verse": "J 5:5",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "εκει",
+    "ms_reading": "λη",
     "type": "addition"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:5",
+    "manuscript": "aleph",
+    "base_reading": "εκει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -12466,18 +12586,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:6",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "ηδη",
-    "ms_reading": "εχει",
-    "type": "substitution_lexical"
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
     "verse": "J 5:7",
-    "manuscript": "A",
-    "base_reading": "προς",
-    "ms_reading": "προ",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "απεκριθη",
+    "ms_reading": "λεγει",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "5",
@@ -12498,10 +12618,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "5",
     "verse": "J 5:8",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "manuscript": "P66",
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -12513,19 +12633,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "5",
-    "verse": "J 5:8",
-    "manuscript": "aleph",
-    "base_reading": "και",
+    "verse": "J 5:9",
+    "manuscript": "D",
+    "base_reading": "υγιης",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "5",
     "verse": "J 5:9",
-    "manuscript": "P66",
-    "base_reading": "περιπατει",
-    "ms_reading": "περιεπατει",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "υγιης",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "5",
+    "verse": "J 5:9",
+    "manuscript": "aleph",
+    "base_reading": "και ευθεως",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "5",
@@ -12539,30 +12667,30 @@ window.DATA_VARIANTS = [
     "chapter": "5",
     "verse": "J 5:9",
     "manuscript": "aleph",
-    "base_reading": "και ευθεως",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:1",
-    "manuscript": "P66",
-    "base_reading": "της τιβεριαδος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:10",
-    "manuscript": "A",
-    "base_reading": "ως",
-    "ms_reading": "ωσει",
+    "base_reading": "περιπατει",
+    "ms_reading": "περιεπατει",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:10",
-    "manuscript": "D",
+    "manuscript": "A",
+    "base_reading": "χορτος πολυς",
+    "ms_reading": "πολυς χορτος",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:10",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "ανθρωποι",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:10",
+    "manuscript": "B",
     "base_reading": "ωσει",
     "ms_reading": "ως",
     "type": "substitution_morphological"
@@ -12571,6 +12699,22 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:10",
     "manuscript": "D",
+    "base_reading": "δε",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:10",
+    "manuscript": "D",
+    "base_reading": "πολυς χορτος",
+    "ms_reading": "χορτος πολυς",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:10",
+    "manuscript": "P66",
     "base_reading": "οι ανθρωποι",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -12587,25 +12731,17 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:10",
     "manuscript": "P66",
-    "base_reading": "οι ανθρωποι",
+    "base_reading": "οι",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:10",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:10",
     "manuscript": "aleph",
-    "base_reading": "ωσει πεντακισχειλιοι",
-    "ms_reading": "ως τρισχιλιοι",
-    "type": "substitution_morphological"
+    "base_reading": "χορτος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -12625,6 +12761,14 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
+    "verse": "J 6:10",
+    "manuscript": "aleph",
+    "base_reading": "αναπεσειν",
+    "ms_reading": "αναπεσιν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
     "verse": "J 6:11",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -12635,24 +12779,24 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:11",
     "manuscript": "aleph",
-    "base_reading": "ουν",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:12",
-    "manuscript": "B",
-    "base_reading": "περισσευσαντα",
-    "ms_reading": "περισσευοντα",
+    "base_reading": "ευχαριστησας διεδωκεν",
+    "ms_reading": "ευχαριστησεν και εδωκεν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
-    "verse": "J 6:13",
+    "verse": "J 6:12",
     "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "δε",
+    "base_reading": "περισσευοντα",
+    "ms_reading": "περισσευσαντα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:14",
+    "manuscript": "A",
+    "base_reading": "σημεια",
+    "ms_reading": "σημειον ο ιησους",
     "type": "substitution_lexical"
   },
   {
@@ -12666,74 +12810,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:14",
-    "manuscript": "D",
-    "base_reading": "σημεια",
-    "ms_reading": "σημειον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:14",
-    "manuscript": "D",
+    "manuscript": "aleph",
     "base_reading": "ερχομενος εις τον κοσμον",
     "ms_reading": "εις τον κοσμον ερχομενος",
     "type": "substitution_word_order"
   },
   {
     "chapter": "6",
-    "verse": "J 6:14",
+    "verse": "J 6:15",
     "manuscript": "aleph",
-    "base_reading": "σημεια",
-    "ms_reading": "σημειον",
-    "type": "substitution_morphological"
+    "base_reading": "ινα ποιησωσι",
+    "ms_reading": "και αναδικνυναι",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
-    "verse": "J 6:14",
-    "manuscript": "aleph",
-    "base_reading": "ο ιησους",
+    "verse": "J 6:17",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "το",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:17",
+    "manuscript": "B",
+    "base_reading": "το",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "6",
-    "verse": "J 6:14",
-    "manuscript": "aleph",
-    "base_reading": "ερχομενος εις τον κοσμον",
-    "ms_reading": "εις τον κοσμον ερχομενος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:15",
-    "manuscript": "aleph",
-    "base_reading": "ανεχωρησε",
-    "ms_reading": "φευγει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:15",
-    "manuscript": "aleph",
-    "base_reading": "ανεχωρησεν",
-    "ms_reading": "φευγει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:15",
-    "manuscript": "aleph",
-    "base_reading": "αυτος μονος",
-    "ms_reading": "μονος αυτος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:17",
     "manuscript": "D",
-    "base_reading": "αναβαντες",
-    "ms_reading": "ενβαντες",
-    "type": "substitution_morphological"
+    "base_reading": "ηδη εγεγονει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -12747,57 +12859,9 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:17",
     "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "κατελαβεν δε αυτους η",
+    "base_reading": "σκοτια ηδη εγεγονει και ουκ",
+    "ms_reading": "ουπω",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "D",
-    "base_reading": "καπερναουμ",
-    "ms_reading": "καφαρναουμ κατελαβεν δε αυτους η σκοτια",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "D",
-    "base_reading": "προς αυτους εληλυθει ο ιησους",
-    "ms_reading": "εληλυθει ο ιησους προς αυτους",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "aleph",
-    "base_reading": "αναβαντες",
-    "ms_reading": "εμβαντες",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "εληλυθει ιησους",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "aleph",
-    "base_reading": "εληλυθει ο ιησους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:17",
-    "manuscript": "aleph",
-    "base_reading": "το",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "6",
@@ -12811,9 +12875,25 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:17",
     "manuscript": "aleph",
-    "base_reading": "και",
-    "ms_reading": "κατελαβεν δε αυτους η",
-    "type": "substitution_lexical"
+    "base_reading": "ηρχοντο",
+    "ms_reading": "ερχονται",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:17",
+    "manuscript": "aleph",
+    "base_reading": "ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:17",
+    "manuscript": "aleph",
+    "base_reading": "εληλυθει ο ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -12822,62 +12902,6 @@ window.DATA_VARIANTS = [
     "base_reading": "τε",
     "ms_reading": "δε",
     "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:19",
-    "manuscript": "A",
-    "base_reading": "ω",
-    "ms_reading": "ωσει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:19",
-    "manuscript": "D",
-    "base_reading": "εγγυς",
-    "ms_reading": "ενγυς",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:19",
-    "manuscript": "D",
-    "base_reading": "ω σταδιους",
-    "ms_reading": "σταδια ωσει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:19",
-    "manuscript": "D",
-    "base_reading": "σταδιους",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:19",
-    "manuscript": "aleph",
-    "base_reading": "ωσει σταδιους",
-    "ms_reading": "ως σταδια",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:2",
-    "manuscript": "D",
-    "base_reading": "εθεωρων",
-    "ms_reading": "εθεωρουν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:2",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
   },
   {
     "chapter": "6",
@@ -12891,7 +12915,7 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:2",
     "manuscript": "aleph",
-    "base_reading": "εθεωρων",
+    "base_reading": "εθεωρουν",
     "ms_reading": "εωρων",
     "type": "substitution_morphological"
   },
@@ -12899,9 +12923,17 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:2",
     "manuscript": "aleph",
-    "base_reading": "εθεωρουν",
-    "ms_reading": "εωρων",
-    "type": "substitution_morphological"
+    "base_reading": "και",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:2",
+    "manuscript": "aleph",
+    "base_reading": "οχλος πολυς",
+    "ms_reading": "πολυς οχλος",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "6",
@@ -12915,9 +12947,9 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:21",
     "manuscript": "D",
-    "base_reading": "εγενετο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "εγενηθη",
+    "type": "addition"
   },
   {
     "chapter": "6",
@@ -12926,14 +12958,6 @@ window.DATA_VARIANTS = [
     "base_reading": "εγενετο",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:21",
-    "manuscript": "D",
-    "base_reading": "λαβειν αυτον",
-    "ms_reading": "αυτον λαβειν",
-    "type": "substitution_word_order"
   },
   {
     "chapter": "6",
@@ -12947,46 +12971,22 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:21",
     "manuscript": "aleph",
-    "base_reading": "υπηγον",
-    "ms_reading": "υπηντησεν",
+    "base_reading": "της γης",
+    "ms_reading": "την γην",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
-    "verse": "J 6:22",
-    "manuscript": "A",
-    "base_reading": "περα",
-    "ms_reading": "περαν",
-    "type": "substitution_morphological"
+    "verse": "J 6:21",
+    "manuscript": "aleph",
+    "base_reading": "εγενετο το πλοιον",
+    "ms_reading": "το πλοιον εγενετο",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "6",
     "verse": "J 6:22",
-    "manuscript": "D",
-    "base_reading": "μονοι",
-    "ms_reading": "μονον",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:22",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εις ο ενεβησαν οι μαθηται αυτου ιησου",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:22",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "εις ο ενεβησαν οι μαθηται αυτου ιησου",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:22",
-    "manuscript": "D",
+    "manuscript": "B",
     "base_reading": "ο ιησους",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -12994,55 +12994,31 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:22",
+    "manuscript": "D",
+    "base_reading": "ειδον",
+    "ms_reading": "ειδεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:22",
     "manuscript": "aleph",
-    "base_reading": "συνεισηλθεν τοις μαθηταις αυτου",
-    "ms_reading": "συνεληλυθι αυτοις",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "κεινο εις ο ενεβησαν οι μαθηται του ιησου",
+    "type": "addition"
   },
   {
     "chapter": "6",
     "verse": "J 6:23",
     "manuscript": "A",
-    "base_reading": "κυριου",
-    "ms_reading": "θεου",
-    "type": "substitution_lexical"
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "6",
     "verse": "J 6:23",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:23",
-    "manuscript": "D",
-    "base_reading": "αλλα ηλθεν πλοια",
-    "ms_reading": "αλλων πλοιαρειων ελθοντων",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:23",
-    "manuscript": "D",
-    "base_reading": "ευχαριστησαντος του κυριου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:23",
-    "manuscript": "aleph",
-    "base_reading": "τον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:23",
-    "manuscript": "aleph",
+    "manuscript": "A",
     "base_reading": "της",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -13057,11 +13033,43 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
+    "verse": "J 6:23",
+    "manuscript": "aleph",
+    "base_reading": "αλλα ηλθεν πλοια",
+    "ms_reading": "επελθοντων ουν των πλοιων",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:23",
+    "manuscript": "aleph",
+    "base_reading": "αλλα δε ηλθεν πλοιαρια",
+    "ms_reading": "επελθοντων ουν των πλοιων",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
     "verse": "J 6:24",
     "manuscript": "A",
-    "base_reading": "καφαρναουμ",
-    "ms_reading": "καπερναουμ",
+    "base_reading": "πλοιαρια",
+    "ms_reading": "πλοια",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:24",
+    "manuscript": "aleph",
+    "base_reading": "οτε ουν ειδεν",
+    "ms_reading": "και ιδοντες οτι ουκ ην εκει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:24",
+    "manuscript": "aleph",
+    "base_reading": "ουκ εστιν εκει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13075,73 +13083,41 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:24",
     "manuscript": "aleph",
-    "base_reading": "καπερναουμ",
-    "ms_reading": "καφαρναουμ",
+    "base_reading": "αυτου ενεβησαν αυτοι",
+    "ms_reading": "ανεβησαν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
-    "verse": "J 6:24",
-    "manuscript": "aleph",
-    "base_reading": "οχλος οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:24",
-    "manuscript": "aleph",
-    "base_reading": "οχλος οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:24",
-    "manuscript": "aleph",
-    "base_reading": "ουκ εστιν εκει",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:25",
-    "manuscript": "aleph",
-    "base_reading": "γεγονας",
-    "ms_reading": "ηλθες",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:25",
-    "manuscript": "aleph",
-    "base_reading": "γεγονας",
-    "ms_reading": "ηλθες",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:26",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και τερατα",
-    "type": "addition"
+    "base_reading": "γεγονας",
+    "ms_reading": "εληλυθας",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
-    "verse": "J 6:26",
+    "verse": "J 6:25",
     "manuscript": "aleph",
-    "base_reading": "ζητειτε με",
+    "base_reading": "μη",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:26",
-    "manuscript": "aleph",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "A",
+    "base_reading": "ουκ",
+    "ms_reading": "ουχ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:26",
+    "manuscript": "B",
+    "base_reading": "ουχ",
+    "ms_reading": "ουκ",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
@@ -13161,14 +13137,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:27",
-    "manuscript": "aleph",
-    "base_reading": "την βρωσιν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:28",
     "manuscript": "A",
     "base_reading": "ουν",
@@ -13179,17 +13147,9 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:28",
     "manuscript": "aleph",
-    "base_reading": "ινα",
-    "ms_reading": "ιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:29",
-    "manuscript": "aleph",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
   },
   {
     "chapter": "6",
@@ -13202,26 +13162,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:3",
-    "manuscript": "B",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "ανηλθεν δε",
+    "ms_reading": "απηλθεν ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:3",
+    "manuscript": "D",
+    "base_reading": "ανηλθεν δε",
+    "ms_reading": "απηλθεν ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:3",
+    "manuscript": "P66",
+    "base_reading": "εκαθητο",
+    "ms_reading": "εκαθεζετο",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:3",
     "manuscript": "aleph",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ανηλθεν δε",
+    "ms_reading": "και απηλθεν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
     "verse": "J 6:30",
-    "manuscript": "aleph",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "D",
+    "base_reading": "ποιεις συ",
+    "ms_reading": "σοι ποιεις",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "6",
@@ -13233,11 +13209,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
+    "verse": "J 6:32",
+    "manuscript": "D",
+    "base_reading": "μωσης δεδωκεν",
+    "ms_reading": "μωυσης εδωκεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
     "verse": "J 6:33",
-    "manuscript": "A",
-    "base_reading": "ζωην διδους",
-    "ms_reading": "διδους ζωην",
-    "type": "substitution_word_order"
+    "manuscript": "D",
+    "base_reading": "διδους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13246,22 +13230,6 @@ window.DATA_VARIANTS = [
     "base_reading": "κυριε παντοτε",
     "ms_reading": "παντοτε κυριε",
     "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:35",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:35",
-    "manuscript": "B",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13275,9 +13243,9 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:35",
     "manuscript": "D",
-    "base_reading": "διψησει",
-    "ms_reading": "διψασει",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
   },
   {
     "chapter": "6",
@@ -13289,6 +13257,30 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
+    "verse": "J 6:35",
+    "manuscript": "D",
+    "base_reading": "εμε",
+    "ms_reading": "με",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:35",
+    "manuscript": "aleph",
+    "base_reading": "δε",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:36",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "με",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
     "verse": "J 6:36",
     "manuscript": "D",
     "base_reading": "[ADD]",
@@ -13297,11 +13289,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:36",
+    "verse": "J 6:37",
     "manuscript": "P66",
-    "base_reading": "μοι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "με",
+    "ms_reading": "εμε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:38",
+    "manuscript": "D",
+    "base_reading": "απο",
+    "ms_reading": "εκ",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
@@ -13315,14 +13315,6 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:38",
     "manuscript": "aleph",
-    "base_reading": "ποιω",
-    "ms_reading": "ποιησω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:38",
-    "manuscript": "aleph",
     "base_reading": "ουχ",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -13331,9 +13323,17 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:38",
     "manuscript": "aleph",
-    "base_reading": "οτι",
-    "ms_reading": "οπου",
-    "type": "substitution_lexical"
+    "base_reading": "ποιω",
+    "ms_reading": "ποιησω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:39",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
   },
   {
     "chapter": "6",
@@ -13354,14 +13354,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:39",
-    "manuscript": "D",
-    "base_reading": "εξ αυτου",
-    "ms_reading": "μηδεν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:39",
     "manuscript": "aleph",
     "base_reading": "τουτο δε εστιν το θελημα του πεμψαντος με",
     "ms_reading": "[OMIT]",
@@ -13369,26 +13361,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:4",
-    "manuscript": "D",
-    "base_reading": "ην δε εγγυς",
-    "ms_reading": "εγγυς δε ην",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:40",
-    "manuscript": "A",
-    "base_reading": "πατρος μου",
-    "ms_reading": "πεμψαντος με",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:40",
     "manuscript": "P66",
-    "base_reading": "πεμψαντος με",
-    "ms_reading": "πατρος μου",
+    "base_reading": "πιστευων",
+    "ms_reading": "πιστεων",
     "type": "substitution_morphological"
   },
   {
@@ -13401,43 +13377,35 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:41",
-    "manuscript": "D",
-    "base_reading": "ουν",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:42",
-    "manuscript": "B",
-    "base_reading": "ουτος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:42",
-    "manuscript": "D",
-    "base_reading": "καταβεβηκα",
-    "ms_reading": "καταβεβηκεναι",
+    "manuscript": "A",
+    "base_reading": "ουχι",
+    "ms_reading": "ουχ",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:42",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "του",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "ουν",
+    "ms_reading": "νυν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
     "verse": "J 6:42",
     "manuscript": "D",
-    "base_reading": "οτι εκ",
+    "base_reading": "ουτος οτι εκ",
     "ms_reading": "εαυτον απο",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:42",
+    "manuscript": "P66",
+    "base_reading": "και την μητερα",
+    "ms_reading": "μητεραν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
@@ -13450,10 +13418,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:42",
-    "manuscript": "P66",
-    "base_reading": "νυν",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
+    "manuscript": "aleph",
+    "base_reading": "και την μητερα",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13482,34 +13450,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:43",
-    "manuscript": "aleph",
-    "base_reading": "και ειπεν αυτοις",
-    "ms_reading": "αυτοις και ειπεν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:44",
-    "manuscript": "A",
-    "base_reading": "καγω",
-    "ms_reading": "και εγω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:44",
-    "manuscript": "B",
-    "base_reading": "και εγω",
-    "ms_reading": "καγω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:44",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "μου",
+    "ms_reading": "ο",
     "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:43",
+    "manuscript": "aleph",
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13518,14 +13470,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "πατηρ ο",
     "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:44",
-    "manuscript": "aleph",
-    "base_reading": "εν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "6",
@@ -13538,47 +13482,47 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:45",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "την αληθειαν",
-    "type": "addition"
+    "manuscript": "B",
+    "base_reading": "την αληθειαν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:45",
-    "manuscript": "B",
-    "base_reading": "με",
-    "ms_reading": "εμε",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "την αληθειαν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:45",
     "manuscript": "P66",
-    "base_reading": "εμε",
-    "ms_reading": "με",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:45",
-    "manuscript": "aleph",
-    "base_reading": "ουν",
+    "base_reading": "την αληθειαν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:46",
-    "manuscript": "D",
-    "base_reading": "πατερα",
-    "ms_reading": "θεον",
-    "type": "substitution_lexical"
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "του",
+    "type": "addition"
   },
   {
     "chapter": "6",
     "verse": "J 6:46",
-    "manuscript": "P66",
+    "manuscript": "A",
+    "base_reading": "εωρακε τις",
+    "ms_reading": "τις εωρακεν",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:46",
+    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "του",
     "type": "addition"
@@ -13594,34 +13538,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:47",
-    "manuscript": "P66",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "οτι",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:47",
+    "manuscript": "aleph",
     "base_reading": "εις εμε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "6",
+    "verse": "J 6:49",
+    "manuscript": "P66",
+    "base_reading": "εν τη ερημω το μαννα",
+    "ms_reading": "το μαννα εν τη ερημω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
     "verse": "J 6:5",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "τον",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "πολυς οχλος",
+    "ms_reading": "οχλος πολυς",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "6",
     "verse": "J 6:5",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "οχλος",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:5",
-    "manuscript": "aleph",
-    "base_reading": "τον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "οφθαλμους",
+    "ms_reading": "οφαλμους",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
@@ -13634,18 +13586,42 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:50",
-    "manuscript": "D",
-    "base_reading": "καταβαινων ινα τις εξ αυτου φαγη και",
-    "ms_reading": "και καταβαινων ινα τις εξ αυτου φαγη",
-    "type": "substitution_word_order"
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ινα τις εξ αυτου φαγη και μη αποθνησκη",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
-    "verse": "J 6:51",
+    "verse": "J 6:50",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "ουν",
+    "ms_reading": "ινα τις εξ αυτου φαγη μη αποθανη",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:50",
+    "manuscript": "D",
+    "base_reading": "αποθνησκη",
+    "ms_reading": "αποθανη",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:50",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
     "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:50",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ινα τις εξ αυτου φαγη και μη αποθανη",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
@@ -13666,6 +13642,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:52",
+    "manuscript": "P66",
+    "base_reading": "σαρκα",
+    "ms_reading": "σαρκαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:52",
     "manuscript": "aleph",
     "base_reading": "αυτου",
     "ms_reading": "[OMIT]",
@@ -13673,18 +13657,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:52",
-    "manuscript": "aleph",
-    "base_reading": "ουτος ημιν",
-    "ms_reading": "ημιν ουτος",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:53",
-    "manuscript": "D",
-    "base_reading": "φαγηται",
-    "ms_reading": "λαβητε",
+    "manuscript": "P66",
+    "base_reading": "σαρκα",
+    "ms_reading": "σαρκαν",
     "type": "substitution_morphological"
   },
   {
@@ -13699,6 +13675,14 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:53",
     "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:53",
+    "manuscript": "aleph",
     "base_reading": "αυτου το αιμα",
     "ms_reading": "το αιμα αυτου",
     "type": "substitution_word_order"
@@ -13706,18 +13690,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:54",
-    "manuscript": "D",
-    "base_reading": "μου",
-    "ms_reading": "αυτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:55",
     "manuscript": "P66",
-    "base_reading": "αληθης",
-    "ms_reading": "αληθως",
-    "type": "substitution_morphological"
+    "base_reading": "τρωγων μου την σαρκα και πεινων",
+    "ms_reading": "τρωνων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
@@ -13737,11 +13713,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:57",
-    "manuscript": "P66",
-    "base_reading": "απεστειλεν",
-    "ms_reading": "απεσταλκεν",
-    "type": "substitution_morphological"
+    "verse": "J 6:58",
+    "manuscript": "D",
+    "base_reading": "ου",
+    "ms_reading": "νο",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
@@ -13754,26 +13730,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "6",
     "verse": "J 6:58",
+    "manuscript": "P66",
+    "base_reading": "καταβας",
+    "ms_reading": "καταβαινων",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:58",
     "manuscript": "aleph",
-    "base_reading": "εξ",
-    "ms_reading": "εκ του",
-    "type": "substitution_lexical"
+    "base_reading": "ουτος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "6",
     "verse": "J 6:59",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "τη",
+    "ms_reading": "σαββατω",
     "type": "addition"
   },
   {
     "chapter": "6",
     "verse": "J 6:6",
-    "manuscript": "aleph",
-    "base_reading": "δε ελεγεν πειραζων αυτον αυτος γαρ",
-    "ms_reading": "γαρ ελεγεν πιραζων αυτον αυτος δε",
-    "type": "substitution_word_order"
+    "manuscript": "P66",
+    "base_reading": "εμελλεν",
+    "ms_reading": "ημελλεν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
@@ -13787,9 +13771,25 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:60",
     "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ακουσαντων",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:60",
+    "manuscript": "P66",
     "base_reading": "ακουσαντες εκ",
     "ms_reading": "[OMIT]",
     "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:61",
+    "manuscript": "D",
+    "base_reading": "ειδως δε",
+    "ms_reading": "ως ουν εγνω",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "6",
@@ -13801,25 +13801,17 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:61",
+    "verse": "J 6:62",
     "manuscript": "P66",
-    "base_reading": "σκανδαλιζει",
-    "ms_reading": "σκαδαλιζει",
+    "base_reading": "οπου",
+    "ms_reading": "ου",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:62",
     "manuscript": "aleph",
-    "base_reading": "τον υιον του ανθρωπου αναβαινοντα",
-    "ms_reading": "αναβενοντα τον υιον του ανθρωπου",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:63",
-    "manuscript": "D",
-    "base_reading": "και",
+    "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -13827,32 +13819,24 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:63",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:64",
-    "manuscript": "P66",
-    "base_reading": "εστιν",
-    "ms_reading": "ην",
+    "base_reading": "ρηματα",
+    "ms_reading": "ρημα",
     "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:64",
-    "manuscript": "P66",
-    "base_reading": "εξ",
-    "ms_reading": "απ",
-    "type": "substitution_lexical"
+    "manuscript": "D",
+    "base_reading": "παραδωσων",
+    "ms_reading": "παραδιδους",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "6",
     "verse": "J 6:64",
-    "manuscript": "P66",
-    "base_reading": "ου πιστευουσιν",
-    "ms_reading": "μη πιστευσουσι",
+    "manuscript": "aleph",
+    "base_reading": "εξ",
+    "ms_reading": "απ",
     "type": "substitution_lexical"
   },
   {
@@ -13873,14 +13857,6 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:65",
-    "manuscript": "P66",
-    "base_reading": "η",
-    "ms_reading": "ην",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
     "verse": "J 6:66",
     "manuscript": "aleph",
     "base_reading": "εκ",
@@ -13889,10 +13865,50 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "6",
-    "verse": "J 6:69",
+    "verse": "J 6:66",
+    "manuscript": "aleph",
+    "base_reading": "αυτου",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:68",
+    "manuscript": "D",
+    "base_reading": "απεκριθη",
+    "ms_reading": "ειπεν δε",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:7",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "αυτων",
+    "type": "addition"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:7",
+    "manuscript": "D",
+    "base_reading": "αρτοι ουκ αρκουσιν αυτοις",
+    "ms_reading": "ουκ αρκουσιν αυτοις αρτοι",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:7",
+    "manuscript": "D",
+    "base_reading": "τι",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:7",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "χριστος ο",
+    "ms_reading": "ουν",
     "type": "addition"
   },
   {
@@ -13907,25 +13923,41 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:7",
     "manuscript": "P66",
-    "base_reading": "αυτοις",
-    "ms_reading": "αυτουις",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "6",
-    "verse": "J 6:7",
-    "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "ουν",
+    "ms_reading": "ο",
     "type": "addition"
   },
   {
     "chapter": "6",
     "verse": "J 6:70",
-    "manuscript": "D",
-    "base_reading": "εξ υμων εις",
-    "ms_reading": "εις εξ υμων",
+    "manuscript": "aleph",
+    "base_reading": "δωδεκα εξελεξαμην",
+    "ms_reading": "εξελεξαμην δωδεκα",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:71",
+    "manuscript": "D",
+    "base_reading": "τον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:71",
+    "manuscript": "P66",
+    "base_reading": "εμελλεν",
+    "ms_reading": "ημελλεν αυτον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:71",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ων",
+    "type": "addition"
   },
   {
     "chapter": "6",
@@ -13939,7 +13971,7 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:71",
     "manuscript": "aleph",
-    "base_reading": "τον",
+    "base_reading": "αυτον",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -13947,7 +13979,39 @@ window.DATA_VARIANTS = [
     "chapter": "6",
     "verse": "J 6:71",
     "manuscript": "aleph",
-    "base_reading": "αυτον",
+    "base_reading": "τον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:9",
+    "manuscript": "B",
+    "base_reading": "εν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:9",
+    "manuscript": "P66",
+    "base_reading": "ταυτα τι εστιν",
+    "ms_reading": "τι εστιν ταυτα",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:9",
+    "manuscript": "P66",
+    "base_reading": "εν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "6",
+    "verse": "J 6:9",
+    "manuscript": "aleph",
+    "base_reading": "εν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -13962,66 +14026,82 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:1",
-    "manuscript": "D",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:1",
+    "manuscript": "P66",
     "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "7",
-    "verse": "J 7:10",
+    "verse": "J 7:12",
     "manuscript": "D",
-    "base_reading": "ως",
+    "base_reading": "[ADD]",
+    "ms_reading": "ην",
+    "type": "addition"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:12",
+    "manuscript": "D",
+    "base_reading": "τοις οχλοις",
+    "ms_reading": "τω οχλω",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:12",
+    "manuscript": "aleph",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "7",
     "verse": "J 7:12",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ην",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:12",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ην",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:13",
     "manuscript": "aleph",
-    "base_reading": "ελαλει περι αυτου",
-    "ms_reading": "περι αυτου ελαλει",
+    "base_reading": "περι αυτου ην πολυς",
+    "ms_reading": "πολυς ην περι αυτου",
     "type": "substitution_word_order"
   },
   {
     "chapter": "7",
-    "verse": "J 7:14",
+    "verse": "J 7:2",
     "manuscript": "D",
-    "base_reading": "μεσουσης",
-    "ms_reading": "μεσαζουσης",
+    "base_reading": "σκηνοπηγια",
+    "ms_reading": "σκενοπηγεια",
     "type": "substitution_morphological"
   },
   {
     "chapter": "7",
-    "verse": "J 7:14",
+    "verse": "J 7:21",
+    "manuscript": "D",
+    "base_reading": "παντες",
+    "ms_reading": "υμεις",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:22",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "εδωκεν υμειν",
+    "type": "addition"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:22",
     "manuscript": "P66",
-    "base_reading": "μεσουσης ανεβη",
-    "ms_reading": "μεσαζουσης αναβη",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:17",
-    "manuscript": "D",
-    "base_reading": "του",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "εν",
+    "type": "addition"
   },
   {
     "chapter": "7",
@@ -14036,15 +14116,7 @@ window.DATA_VARIANTS = [
     "verse": "J 7:22",
     "manuscript": "aleph",
     "base_reading": "[ADD]",
-    "ms_reading": "εν",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:23",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "πως",
+    "ms_reading": "οτι",
     "type": "addition"
   },
   {
@@ -14057,19 +14129,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "7",
-    "verse": "J 7:24",
-    "manuscript": "P66",
-    "base_reading": "κρεινετε",
-    "ms_reading": "κρινε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:26",
-    "manuscript": "P66",
-    "base_reading": "μηποτε",
-    "ms_reading": "μηπο",
-    "type": "substitution_morphological"
+    "verse": "J 7:23",
+    "manuscript": "aleph",
+    "base_reading": "ο ανθρωπος εν σαββατω ινα μη λυθη ο νομος",
+    "ms_reading": "ανθρωπος εν σαββατω ινα μη λυθη ο νομος ο",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "7",
@@ -14082,18 +14146,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:28",
-    "manuscript": "D",
-    "base_reading": "εν τω ιερω διδασκων ο ιησους",
-    "ms_reading": "ο ιησους διδασκων εν τω ιερω",
-    "type": "substitution_word_order"
+    "manuscript": "P66",
+    "base_reading": "αληθινος",
+    "ms_reading": "αληθης",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "7",
     "verse": "J 7:28",
-    "manuscript": "aleph",
-    "base_reading": "εν τω ιερω διδασκων ο ιησους",
-    "ms_reading": "ο ιησους εν τω ιερω διδασκων",
-    "type": "substitution_word_order"
+    "manuscript": "P66",
+    "base_reading": "ουν",
+    "ms_reading": "δε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "7",
@@ -14113,49 +14177,49 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "7",
-    "verse": "J 7:3",
-    "manuscript": "P66",
-    "base_reading": "θεωρησουσιν",
-    "ms_reading": "θεορησωσι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:30",
-    "manuscript": "P66",
-    "base_reading": "ουπω",
-    "ms_reading": "ουδεπω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:30",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
     "verse": "J 7:30",
     "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι δε",
-    "type": "addition"
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "7",
     "verse": "J 7:31",
     "manuscript": "D",
-    "base_reading": "εποιησεν",
-    "ms_reading": "ποιει",
+    "base_reading": "πλειονα",
+    "ms_reading": "πλεονα",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:31",
+    "manuscript": "P66",
+    "base_reading": "δε πολλοι επιστευσαν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:32",
+    "manuscript": "D",
+    "base_reading": "οι αρχιερεις και οι φαρεισαιοι υπηρετας",
+    "ms_reading": "υπηρετας οι αρχειερεις και οι φαρισαιοι",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:32",
+    "manuscript": "aleph",
+    "base_reading": "υπηρετας",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "7",
     "verse": "J 7:34",
     "manuscript": "D",
-    "base_reading": "με",
+    "base_reading": "εκει",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -14163,14 +14227,14 @@ window.DATA_VARIANTS = [
     "chapter": "7",
     "verse": "J 7:35",
     "manuscript": "D",
-    "base_reading": "ημεις",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ουτος μελλει",
+    "ms_reading": "μελλει ουτος",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "7",
     "verse": "J 7:35",
-    "manuscript": "D",
+    "manuscript": "P66",
     "base_reading": "ουτος μελλει",
     "ms_reading": "μελλει ουτος",
     "type": "substitution_word_order"
@@ -14186,10 +14250,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:36",
-    "manuscript": "D",
-    "base_reading": "με",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "ο λογος ουτος",
+    "ms_reading": "ουτος ο λογος",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "7",
@@ -14201,19 +14265,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "7",
-    "verse": "J 7:38",
+    "verse": "J 7:37",
     "manuscript": "D",
-    "base_reading": "ει",
-    "ms_reading": "εις",
+    "base_reading": "εκραξε",
+    "ms_reading": "εκραζεν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "7",
     "verse": "J 7:39",
-    "manuscript": "P66",
-    "base_reading": "ειπεν",
-    "ms_reading": "ελεγεν",
-    "type": "substitution_lexical"
+    "manuscript": "D",
+    "base_reading": "πιστευσαντες",
+    "ms_reading": "πιστευοντες",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "7",
@@ -14234,6 +14298,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:4",
+    "manuscript": "P66",
+    "base_reading": "τι εν κρυπτω",
+    "ms_reading": "εν κρυπτω τι",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:4",
     "manuscript": "aleph",
     "base_reading": "αυτο",
     "ms_reading": "αυτος",
@@ -14241,11 +14313,11 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "7",
-    "verse": "J 7:40",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτου",
-    "type": "addition"
+    "verse": "J 7:4",
+    "manuscript": "aleph",
+    "base_reading": "ποιει και",
+    "ms_reading": "ποιων",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "7",
@@ -14265,27 +14337,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "7",
-    "verse": "J 7:41",
-    "manuscript": "D",
-    "base_reading": "οι δε ελεγον",
-    "ms_reading": "αλλοι ελεγαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:42",
-    "manuscript": "D",
-    "base_reading": "ειπεν",
-    "ms_reading": "λεγει",
+    "verse": "J 7:40",
+    "manuscript": "aleph",
+    "base_reading": "οτι",
+    "ms_reading": "αληθως",
     "type": "substitution_lexical"
   },
   {
     "chapter": "7",
-    "verse": "J 7:42",
-    "manuscript": "aleph",
+    "verse": "J 7:41",
+    "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "οτι",
     "type": "addition"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:43",
+    "manuscript": "D",
+    "base_reading": "εν τω οχλω",
+    "ms_reading": "εις τον οχλον",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "7",
@@ -14298,26 +14370,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:46",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:46",
     "manuscript": "P66",
-    "base_reading": "ελαλησεν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "ελαλησεν ως ουτος λαλει ο ανθρωπος",
+    "type": "addition"
   },
   {
     "chapter": "7",
-    "verse": "J 7:46",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "οι δε υπηρεται",
-    "type": "addition"
+    "verse": "J 7:47",
+    "manuscript": "D",
+    "base_reading": "ουν",
+    "ms_reading": "αυτοις",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "7",
@@ -14331,14 +14395,6 @@ window.DATA_VARIANTS = [
     "chapter": "7",
     "verse": "J 7:5",
     "manuscript": "D",
-    "base_reading": "επιστευον",
-    "ms_reading": "επιστευσαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:5",
-    "manuscript": "D",
     "base_reading": "[ADD]",
     "ms_reading": "τοτε",
     "type": "addition"
@@ -14346,34 +14402,34 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:50",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "το",
-    "type": "addition"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:50",
     "manuscript": "aleph",
-    "base_reading": "ο ελθων προς αυτον προτερον",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "λεγει",
+    "ms_reading": "ειπεν δε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "7",
-    "verse": "J 7:52",
+    "verse": "J 7:51",
     "manuscript": "D",
-    "base_reading": "εκ της γαλειλαιας προφητης",
-    "ms_reading": "προφητης εκ της γαλιλαιας",
-    "type": "substitution_word_order"
+    "base_reading": "γνω",
+    "ms_reading": "επιγνωσθη",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "7",
     "verse": "J 7:52",
-    "manuscript": "aleph",
-    "base_reading": "εκ της γαλειλαιας προφητης",
-    "ms_reading": "προφητης εκ της γαλιλαιας",
-    "type": "substitution_word_order"
+    "manuscript": "P66",
+    "base_reading": "εραυνησον",
+    "ms_reading": "ερευνησον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:6",
+    "manuscript": "P66",
+    "base_reading": "παρεστιν",
+    "ms_reading": "εστιν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "7",
@@ -14381,6 +14437,14 @@ window.DATA_VARIANTS = [
     "manuscript": "aleph",
     "base_reading": "ουπω",
     "ms_reading": "ου",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "7",
+    "verse": "J 7:7",
+    "manuscript": "D",
+    "base_reading": "μεισιν",
+    "ms_reading": "μισειν",
     "type": "substitution_morphological"
   },
   {
@@ -14402,25 +14466,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "7",
     "verse": "J 7:8",
-    "manuscript": "D",
-    "base_reading": "ουπω",
-    "ms_reading": "ουκ",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:8",
     "manuscript": "P66",
     "base_reading": "αναβητε",
     "ms_reading": "αναβαται",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "7",
-    "verse": "J 7:8",
-    "manuscript": "aleph",
-    "base_reading": "ουπω",
-    "ms_reading": "ουκ",
     "type": "substitution_morphological"
   },
   {
@@ -14435,17 +14483,33 @@ window.DATA_VARIANTS = [
     "chapter": "7",
     "verse": "J 7:9",
     "manuscript": "P66",
-    "base_reading": "ταυτα",
-    "ms_reading": "ταυ",
+    "base_reading": "αυτοις",
+    "ms_reading": "αυτος",
     "type": "substitution_morphological"
   },
   {
     "chapter": "8",
     "verse": "J 8:12",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ελαλησεν",
+    "type": "addition"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:12",
     "manuscript": "P66",
-    "base_reading": "σκοτια",
-    "ms_reading": "κοτια",
+    "base_reading": "μοι",
+    "ms_reading": "εμοι",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:12",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "8",
@@ -14465,11 +14529,19 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:15",
+    "verse": "J 8:14",
     "manuscript": "P66",
-    "base_reading": "κατατα",
-    "ms_reading": "κατα",
-    "type": "substitution_morphological"
+    "base_reading": "εγω",
+    "ms_reading": "γε",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:14",
+    "manuscript": "P66",
+    "base_reading": "η μαρτυρια μου αληθης εστιν",
+    "ms_reading": "αληθης εστιν η μαρτυρια μου",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "8",
@@ -14491,17 +14563,25 @@ window.DATA_VARIANTS = [
     "chapter": "8",
     "verse": "J 8:19",
     "manuscript": "D",
-    "base_reading": "αν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "και ειπεν αυτοις",
+    "type": "addition"
   },
   {
     "chapter": "8",
-    "verse": "J 8:21",
-    "manuscript": "aleph",
-    "base_reading": "ειπεν",
-    "ms_reading": "ελεγεν",
-    "type": "substitution_lexical"
+    "verse": "J 8:20",
+    "manuscript": "P66",
+    "base_reading": "ρηματα",
+    "ms_reading": "ρητα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:23",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
   },
   {
     "chapter": "8",
@@ -14523,49 +14603,25 @@ window.DATA_VARIANTS = [
     "chapter": "8",
     "verse": "J 8:25",
     "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:25",
+    "manuscript": "P66",
     "base_reading": "ουν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "8",
-    "verse": "J 8:25",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "εν",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:25",
-    "manuscript": "aleph",
-    "base_reading": "ουν αυτω συ τις ει ειπεν",
-    "ms_reading": "αυτω συ τις ει ειπεν ουν",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:26",
-    "manuscript": "P66",
-    "base_reading": "εστι",
-    "ms_reading": "εστιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
     "verse": "J 8:28",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:28",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "οτι",
-    "ms_reading": "παλιν",
-    "type": "substitution_lexical"
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "8",
@@ -14593,26 +14649,10 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:35",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
     "verse": "J 8:36",
     "manuscript": "D",
     "base_reading": "ελευθερωση",
     "ms_reading": "ελευθερω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:37",
-    "manuscript": "D",
-    "base_reading": "εν υμιν",
-    "ms_reading": "ε μειν",
     "type": "substitution_morphological"
   },
   {
@@ -14633,27 +14673,35 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:38",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "υμων",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:38",
-    "manuscript": "aleph",
-    "base_reading": "ηκουσατε",
-    "ms_reading": "εωρακατε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "8",
     "verse": "J 8:39",
-    "manuscript": "aleph",
-    "base_reading": "λεγει",
-    "ms_reading": "απεκριθη",
+    "manuscript": "D",
+    "base_reading": "λεγει αυτοις",
+    "ms_reading": "ειπεν ουν ο",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:40",
+    "manuscript": "D",
+    "base_reading": "υμιν λελαληκα",
+    "ms_reading": "λελαληκα υμειν",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:40",
+    "manuscript": "P66",
+    "base_reading": "λελαληκα",
+    "ms_reading": "λελαληκεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:41",
+    "manuscript": "D",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν ουν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "8",
@@ -14665,34 +14713,18 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:41",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:41",
-    "manuscript": "P66",
-    "base_reading": "ουκ εγεννηθημεν",
-    "ms_reading": "ου γεγενημεθα",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
     "verse": "J 8:42",
     "manuscript": "D",
-    "base_reading": "ουδε",
-    "ms_reading": "ου",
+    "base_reading": "εληλυθα",
+    "ms_reading": "εληλυθον",
     "type": "substitution_morphological"
   },
   {
     "chapter": "8",
     "verse": "J 8:42",
     "manuscript": "P66",
-    "base_reading": "εξηλθον",
-    "ms_reading": "εξεληλυθα",
+    "base_reading": "απεστειλεν",
+    "ms_reading": "απεταλκεν",
     "type": "substitution_morphological"
   },
   {
@@ -14706,10 +14738,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "8",
     "verse": "J 8:42",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
+    "manuscript": "P66",
+    "base_reading": "εγω",
+    "ms_reading": "εκ",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:42",
+    "manuscript": "P66",
+    "base_reading": "εξηλθον",
+    "ms_reading": "εξεληλυθα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:44",
+    "manuscript": "D",
+    "base_reading": "εστηκεν",
+    "ms_reading": "εστιν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "8",
@@ -14721,35 +14769,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:44",
+    "verse": "J 8:48",
+    "manuscript": "D",
+    "base_reading": "λεγομεν ημεις",
+    "ms_reading": "ημεις λεγομεν",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:48",
     "manuscript": "P66",
-    "base_reading": "ψευδος",
-    "ms_reading": "δευδος",
+    "base_reading": "ειπαν",
+    "ms_reading": "ειπον",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:45",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "υμεις",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:45",
-    "manuscript": "D",
-    "base_reading": "λεγω",
-    "ms_reading": "λαλω",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "8",
     "verse": "J 8:49",
-    "manuscript": "P66",
-    "base_reading": "δαιμονιον",
-    "ms_reading": "δαιμονι",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "8",
@@ -14763,17 +14803,33 @@ window.DATA_VARIANTS = [
     "chapter": "8",
     "verse": "J 8:51",
     "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "λογον τον",
-    "type": "addition"
+    "base_reading": "θεωρηση",
+    "ms_reading": "ιδη",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:51",
+    "manuscript": "P66",
+    "base_reading": "λεγω",
+    "ms_reading": "λε",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:51",
+    "manuscript": "P66",
+    "base_reading": "λογον",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "8",
     "verse": "J 8:52",
     "manuscript": "D",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν ουν",
-    "type": "substitution_morphological"
+    "base_reading": "θεωρηση εις τον αιωνα",
+    "ms_reading": "γευσηται θανατου",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "8",
@@ -14782,6 +14838,30 @@ window.DATA_VARIANTS = [
     "base_reading": "τον λογον μου",
     "ms_reading": "μου τον λογον",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:52",
+    "manuscript": "P66",
+    "base_reading": "θεωρηση",
+    "ms_reading": "γευσηται θανατου",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:53",
+    "manuscript": "D",
+    "base_reading": "οστις",
+    "ms_reading": "οτι",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "8",
+    "verse": "J 8:53",
+    "manuscript": "D",
+    "base_reading": "πατρος ημων",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "8",
@@ -14802,10 +14882,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "8",
     "verse": "J 8:53",
-    "manuscript": "D",
-    "base_reading": "πατρος ημων",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "P66",
+    "base_reading": "οστις",
+    "ms_reading": "οτι",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "8",
@@ -14817,59 +14897,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "8",
-    "verse": "J 8:53",
-    "manuscript": "P66",
-    "base_reading": "οστις",
-    "ms_reading": "οτι",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
     "verse": "J 8:54",
-    "manuscript": "D",
-    "base_reading": "δοξαζω",
-    "ms_reading": "δοξασω",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:54",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:54",
-    "manuscript": "P66",
+    "manuscript": "A",
     "base_reading": "δοξασω",
     "ms_reading": "δοξαζω",
     "type": "substitution_morphological"
   },
   {
     "chapter": "8",
-    "verse": "J 8:55",
+    "verse": "J 8:54",
     "manuscript": "P66",
-    "base_reading": "ουκ εγνωκατε",
-    "ms_reading": "ου γεγνωκατε",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "ο",
+    "type": "addition"
   },
   {
     "chapter": "8",
     "verse": "J 8:55",
-    "manuscript": "P66",
-    "base_reading": "ουκ εγνωκατε",
-    "ms_reading": "ου γεγνωκατε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:55",
-    "manuscript": "P66",
-    "base_reading": "καν",
-    "ms_reading": "και εαν",
-    "type": "substitution_morphological"
+    "manuscript": "D",
+    "base_reading": "εσομαι ομοιος",
+    "ms_reading": "ομοιος εσομαι",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "8",
@@ -14882,9 +14930,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "8",
     "verse": "J 8:57",
-    "manuscript": "D",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
+    "manuscript": "aleph",
+    "base_reading": "εωρακας",
+    "ms_reading": "εωρακεν σε",
     "type": "substitution_morphological"
   },
   {
@@ -14899,31 +14947,23 @@ window.DATA_VARIANTS = [
     "chapter": "8",
     "verse": "J 8:58",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
-  },
-  {
-    "chapter": "8",
-    "verse": "J 8:58",
-    "manuscript": "D",
     "base_reading": "γενεσθαι",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "8",
-    "verse": "J 8:58",
-    "manuscript": "P66",
+    "verse": "J 8:59",
+    "manuscript": "A",
     "base_reading": "[ADD]",
-    "ms_reading": "ο",
+    "ms_reading": "διελθων δια μεσου αυτων και παρηγεν ουτως",
     "type": "addition"
   },
   {
     "chapter": "8",
     "verse": "J 8:59",
     "manuscript": "B",
-    "base_reading": "διελθων δια μεσου αυτων και παρηγεν ουτως",
+    "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -14938,42 +14978,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:10",
-    "manuscript": "B",
-    "base_reading": "ανεωχθησαν",
-    "ms_reading": "ηνεωχθησαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:10",
     "manuscript": "D",
-    "base_reading": "ελεγον",
-    "ms_reading": "ειπον",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:10",
-    "manuscript": "P66",
-    "base_reading": "οφθαλμοι",
-    "ms_reading": "οφαλμοι",
+    "base_reading": "ανεωχθησαν",
+    "ms_reading": "ουν ηνεωχθησαν",
     "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:10",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "ηνεωχθησαν",
-    "type": "addition"
   },
   {
     "chapter": "9",
     "verse": "J 9:10",
     "manuscript": "aleph",
-    "base_reading": "ελεγον",
-    "ms_reading": "ελεγαν",
-    "type": "substitution_morphological"
+    "base_reading": "[ADD]",
+    "ms_reading": "οι ιουδαιο",
+    "type": "addition"
   },
   {
     "chapter": "9",
@@ -14987,94 +15003,54 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:11",
     "manuscript": "A",
-    "base_reading": "ουν",
-    "ms_reading": "δε",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:11",
-    "manuscript": "A",
-    "base_reading": "οτι",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "9",
     "verse": "J 9:11",
-    "manuscript": "B",
-    "base_reading": "την κολυμβηθραν του",
-    "ms_reading": "τον",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:11",
-    "manuscript": "B",
-    "base_reading": "και ειπεν",
-    "ms_reading": "ο",
-    "type": "substitution_lexical"
+    "manuscript": "D",
+    "base_reading": "νιψαμενος ανεβλεψα",
+    "ms_reading": "ενιψαμην και ηλθον βλεπων",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
     "verse": "J 9:11",
     "manuscript": "D",
-    "base_reading": "την κολυμβηθραν του",
-    "ms_reading": "τον",
-    "type": "substitution_lexical"
+    "base_reading": "ο",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "9",
     "verse": "J 9:11",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "και ειπεν",
     "ms_reading": "ο",
     "type": "substitution_lexical"
   },
   {
     "chapter": "9",
+    "verse": "J 9:11",
+    "manuscript": "aleph",
+    "base_reading": "δε",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "9",
     "verse": "J 9:12",
-    "manuscript": "B",
+    "manuscript": "D",
     "base_reading": "ειπον",
-    "ms_reading": "και ειπαν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:12",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:12",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτοις",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:12",
-    "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:14",
-    "manuscript": "D",
-    "base_reading": "ανεωξεν",
-    "ms_reading": "ηνυξεν",
+    "ms_reading": "ειπαν ουν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "9",
     "verse": "J 9:14",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "οτε",
     "ms_reading": "εν η ημερα",
     "type": "substitution_lexical"
@@ -15091,33 +15067,9 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:15",
     "manuscript": "P66",
-    "base_reading": "μου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:15",
-    "manuscript": "P66",
     "base_reading": "και",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:15",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "μοι",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:15",
-    "manuscript": "P66",
-    "base_reading": "μου",
-    "ms_reading": "μοι",
-    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
@@ -15131,41 +15083,49 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:16",
     "manuscript": "A",
-    "base_reading": "ο ανθρωπος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "[ADD]",
+    "ms_reading": "ουτος ο ανθρωπος",
+    "type": "addition"
   },
   {
     "chapter": "9",
     "verse": "J 9:16",
-    "manuscript": "D",
-    "base_reading": "ουκ εστιν παρα θεου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:16",
-    "manuscript": "P66",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:16",
-    "manuscript": "P66",
+    "manuscript": "B",
     "base_reading": "[ADD]",
     "ms_reading": "ουκ εστιν",
     "type": "addition"
   },
   {
     "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "A",
-    "base_reading": "τι συ",
-    "ms_reading": "συ τι",
-    "type": "substitution_word_order"
+    "verse": "J 9:16",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "παρα θεου",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:16",
+    "manuscript": "aleph",
+    "base_reading": "ουτος ο ανθρωπος",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:16",
+    "manuscript": "aleph",
+    "base_reading": "ελεγον",
+    "ms_reading": "ελεγαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:16",
+    "manuscript": "aleph",
+    "base_reading": "[ADD]",
+    "ms_reading": "δε",
+    "type": "addition"
   },
   {
     "chapter": "9",
@@ -15187,9 +15147,17 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:17",
     "manuscript": "D",
-    "base_reading": "ηνεωξεν",
-    "ms_reading": "ηνυξεν",
+    "base_reading": "αυτου",
+    "ms_reading": "εαυτου",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:17",
+    "manuscript": "D",
+    "base_reading": "παλιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "9",
@@ -15202,65 +15170,9 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:17",
-    "manuscript": "P66",
-    "base_reading": "αυτου",
-    "ms_reading": "σεαυτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "P66",
-    "base_reading": "συ τι",
-    "ms_reading": "τι συ",
-    "type": "substitution_word_order"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
     "manuscript": "aleph",
     "base_reading": "αυτου",
     "ms_reading": "σεαυτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "aleph",
-    "base_reading": "αυτου",
-    "ms_reading": "σεαυτου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ποτε",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "aleph",
-    "base_reading": "[ADD]",
-    "ms_reading": "ουν",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:17",
-    "manuscript": "aleph",
-    "base_reading": "τι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:18",
-    "manuscript": "D",
-    "base_reading": "οτου",
-    "ms_reading": "ου",
     "type": "substitution_morphological"
   },
   {
@@ -15273,11 +15185,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "9",
-    "verse": "J 9:19",
-    "manuscript": "B",
-    "base_reading": "αρτι βλεπει",
-    "ms_reading": "βλεπει αρτι",
+    "verse": "J 9:18",
+    "manuscript": "D",
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:18",
+    "manuscript": "aleph",
+    "base_reading": "τυφλος ην",
+    "ms_reading": "ην τυφλος",
     "type": "substitution_word_order"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:19",
+    "manuscript": "D",
+    "base_reading": "ηρωτησαν",
+    "ms_reading": "επηρωτησαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
@@ -15291,32 +15219,16 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:19",
     "manuscript": "D",
-    "base_reading": "εγενηθη",
-    "ms_reading": "εγεννηθηθη",
-    "type": "substitution_morphological"
+    "base_reading": "εστιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "9",
     "verse": "J 9:19",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ει εστιν",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:19",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ει εστιν",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:19",
-    "manuscript": "D",
-    "base_reading": "αρτι βλεπει",
-    "ms_reading": "βλεπει αρτι",
+    "manuscript": "P66",
+    "base_reading": "βλεπει αρτι",
+    "ms_reading": "αρτι βλεπει",
     "type": "substitution_word_order"
   },
   {
@@ -15331,23 +15243,23 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:19",
     "manuscript": "aleph",
-    "base_reading": "λεγοντες",
-    "ms_reading": "ει",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:19",
-    "manuscript": "aleph",
     "base_reading": "αρτι βλεπει",
     "ms_reading": "βλεπι αρτι",
     "type": "substitution_word_order"
   },
   {
     "chapter": "9",
+    "verse": "J 9:19",
+    "manuscript": "aleph",
+    "base_reading": "λεγοντες",
+    "ms_reading": "ει",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "9",
     "verse": "J 9:2",
-    "manuscript": "A",
-    "base_reading": "οι",
+    "manuscript": "D",
+    "base_reading": "αυτου λεγοντες",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -15362,10 +15274,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:20",
+    "manuscript": "A",
+    "base_reading": "ουν",
+    "ms_reading": "δε αυτοις",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:20",
     "manuscript": "B",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
-    "type": "substitution_morphological"
+    "base_reading": "δε αυτοις",
+    "ms_reading": "ουν",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
@@ -15373,6 +15293,14 @@ window.DATA_VARIANTS = [
     "manuscript": "D",
     "base_reading": "ειπαν",
     "ms_reading": "ειπον",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:20",
+    "manuscript": "aleph",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
     "type": "substitution_morphological"
   },
   {
@@ -15386,42 +15314,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:21",
-    "manuscript": "D",
-    "base_reading": "ερωτησατε",
-    "ms_reading": "επερωτησατε",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:21",
-    "manuscript": "D",
-    "base_reading": "αυτον ερωτησατε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:21",
-    "manuscript": "aleph",
-    "base_reading": "ηνεωξεν",
-    "ms_reading": "ηνυξεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:21",
-    "manuscript": "aleph",
-    "base_reading": "αυτον ερωτησατε αυτος",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:22",
     "manuscript": "A",
-    "base_reading": "συνετεθειντο",
-    "ms_reading": "συνετεθεντο",
+    "base_reading": "ηλικιαν εχει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:21",
+    "manuscript": "B",
+    "base_reading": "ηνεωξεν",
+    "ms_reading": "ηνοιξεν",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:21",
+    "manuscript": "P66",
+    "base_reading": "αυτος",
+    "ms_reading": "αυτον ερωτησατε",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
@@ -15434,10 +15346,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:22",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "αυτον",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "αυτον ομολογηση",
+    "ms_reading": "ομολογηση αυτον",
+    "type": "substitution_word_order"
   },
   {
     "chapter": "9",
@@ -15450,6 +15362,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:23",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:23",
     "manuscript": "B",
     "base_reading": "ειπον",
     "ms_reading": "ειπαν",
@@ -15457,19 +15377,35 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "9",
-    "verse": "J 9:23",
-    "manuscript": "D",
-    "base_reading": "ερωτησατε",
-    "ms_reading": "ερωτατε",
+    "verse": "J 9:24",
+    "manuscript": "A",
+    "base_reading": "ειπαν",
+    "ms_reading": "ειπον",
     "type": "substitution_morphological"
   },
   {
     "chapter": "9",
-    "verse": "J 9:23",
+    "verse": "J 9:24",
+    "manuscript": "A",
+    "base_reading": "ουτος ο ανθρωπος",
+    "ms_reading": "ο ανθρωπος ουτος",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:24",
+    "manuscript": "B",
+    "base_reading": "ο ανθρωπος ουτος",
+    "ms_reading": "ουτος ο ανθρωπος",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:24",
     "manuscript": "D",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
@@ -15483,14 +15419,6 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:24",
     "manuscript": "P66",
-    "base_reading": "θεω",
-    "ms_reading": "θων",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:24",
-    "manuscript": "P66",
     "base_reading": "ειπον",
     "ms_reading": "ειπαν",
     "type": "substitution_morphological"
@@ -15498,10 +15426,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:24",
-    "manuscript": "P66",
-    "base_reading": "εκ δευτερου",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "manuscript": "aleph",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:24",
+    "manuscript": "aleph",
+    "base_reading": "ουτος",
+    "ms_reading": "ο",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
@@ -15510,6 +15446,30 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "ουτος",
     "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:25",
+    "manuscript": "P66",
+    "base_reading": "ουκ οιδα",
+    "ms_reading": "ουδα",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:25",
+    "manuscript": "aleph",
+    "base_reading": "ει",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:26",
+    "manuscript": "B",
+    "base_reading": "παλιν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "9",
@@ -15522,26 +15482,18 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:26",
-    "manuscript": "aleph",
-    "base_reading": "ειπον δε",
-    "ms_reading": "ειπαν",
-    "type": "substitution_morphological"
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "παλιν",
+    "type": "addition"
   },
   {
     "chapter": "9",
     "verse": "J 9:27",
-    "manuscript": "A",
-    "base_reading": "ουν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:27",
-    "manuscript": "D",
-    "base_reading": "θελετε ακουειν",
-    "ms_reading": "ακουσαι",
-    "type": "substitution_lexical"
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "ουν",
+    "type": "addition"
   },
   {
     "chapter": "9",
@@ -15562,10 +15514,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:28",
-    "manuscript": "B",
-    "base_reading": "[ADD]",
-    "ms_reading": "και",
-    "type": "addition"
+    "manuscript": "D",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:28",
+    "manuscript": "P66",
+    "base_reading": "ει εκεινου",
+    "ms_reading": "εκεινου ει",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:28",
+    "manuscript": "P66",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
@@ -15577,35 +15545,27 @@ window.DATA_VARIANTS = [
   },
   {
     "chapter": "9",
-    "verse": "J 9:29",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και οτι θεος αμαρτωλων ουκ ακουει",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:29",
-    "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "και οτι θεος αμαρτωλων ουκ ακουει",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:29",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:29",
+    "verse": "J 9:28",
     "manuscript": "aleph",
-    "base_reading": "μωσει ελαλησεν",
-    "ms_reading": "μωυσει λελαληκεν",
+    "base_reading": "μωσεως",
+    "ms_reading": "μωυσεως",
     "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:29",
+    "manuscript": "B",
+    "base_reading": "μωσει ελαλησεν",
+    "ms_reading": "μωυσει λελακεν",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:29",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "και οτι θεος αμαρτωλων ουκ ακουει",
+    "type": "addition"
   },
   {
     "chapter": "9",
@@ -15618,7 +15578,23 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:30",
-    "manuscript": "B",
+    "manuscript": "A",
+    "base_reading": "[ADD]",
+    "ms_reading": "γαρ",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:30",
+    "manuscript": "A",
+    "base_reading": "γαρ το",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:30",
+    "manuscript": "P66",
     "base_reading": "τουτω",
     "ms_reading": "το",
     "type": "substitution_morphological"
@@ -15626,39 +15602,15 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:30",
-    "manuscript": "D",
-    "base_reading": "εστιν",
-    "ms_reading": "τιν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:30",
-    "manuscript": "D",
-    "base_reading": "γαρ το",
-    "ms_reading": "ουν",
+    "manuscript": "P66",
+    "base_reading": "και ειπεν αυτοις εν",
+    "ms_reading": "τουτο",
     "type": "substitution_lexical"
   },
   {
     "chapter": "9",
-    "verse": "J 9:30",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "και ειπεν",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:30",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "και ειπεν",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
     "verse": "J 9:31",
-    "manuscript": "aleph",
+    "manuscript": "D",
     "base_reading": "δε",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -15666,48 +15618,88 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:31",
-    "manuscript": "aleph",
-    "base_reading": "θεοσεβης η",
+    "manuscript": "P66",
+    "base_reading": "η",
+    "ms_reading": "ην",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:32",
+    "manuscript": "B",
+    "base_reading": "οφθαλμου",
+    "ms_reading": "οφθαλμους",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:32",
+    "manuscript": "P66",
+    "base_reading": "οφθαλμου",
+    "ms_reading": "οφθαλμους",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:33",
+    "manuscript": "P66",
+    "base_reading": "[ADD]",
+    "ms_reading": "ο ανθρωπος",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:34",
+    "manuscript": "P66",
+    "base_reading": "ολος",
+    "ms_reading": "ο λογος",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:35",
+    "manuscript": "B",
+    "base_reading": "αυτω",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
   {
     "chapter": "9",
-    "verse": "J 9:32",
-    "manuscript": "A",
-    "base_reading": "οφθαλμους",
-    "ms_reading": "οφθαλμου",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:32",
-    "manuscript": "A",
-    "base_reading": "ηνεωξεν",
-    "ms_reading": "ηνοιξεν",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:34",
+    "verse": "J 9:35",
     "manuscript": "D",
     "base_reading": "[ADD]",
-    "ms_reading": "αυτω",
+    "ms_reading": "και",
     "type": "addition"
   },
   {
     "chapter": "9",
     "verse": "J 9:35",
     "manuscript": "D",
-    "base_reading": "[ADD]",
-    "ms_reading": "ο",
-    "type": "addition"
+    "base_reading": "αυτω",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:35",
+    "manuscript": "P66",
+    "base_reading": "θεου",
+    "ms_reading": "ανθρωπου",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
     "verse": "J 9:35",
     "manuscript": "aleph",
-    "base_reading": "ο",
+    "base_reading": "[ADD]",
+    "ms_reading": "και",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:36",
+    "manuscript": "A",
+    "base_reading": "εφη",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -15716,8 +15708,16 @@ window.DATA_VARIANTS = [
     "verse": "J 9:36",
     "manuscript": "P66",
     "base_reading": "[ADD]",
-    "ms_reading": "και",
+    "ms_reading": "απεκριθη εκεινος",
     "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:36",
+    "manuscript": "aleph",
+    "base_reading": "κυριε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
   },
   {
     "chapter": "9",
@@ -15726,22 +15726,6 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "απεκριθη εκινος",
     "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:37",
-    "manuscript": "A",
-    "base_reading": "[ADD]",
-    "ms_reading": "δε",
-    "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:37",
-    "manuscript": "A",
-    "base_reading": "ο",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   },
   {
     "chapter": "9",
@@ -15755,14 +15739,6 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:37",
     "manuscript": "P66",
-    "base_reading": "εκεινος",
-    "ms_reading": "αυτος",
-    "type": "substitution_morphological"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:37",
-    "manuscript": "P66",
     "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -15770,10 +15746,26 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:37",
-    "manuscript": "aleph",
-    "base_reading": "ειπεν δε",
-    "ms_reading": "εφη",
-    "type": "substitution_lexical"
+    "manuscript": "P66",
+    "base_reading": "δε",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:37",
+    "manuscript": "P66",
+    "base_reading": "εκεινος",
+    "ms_reading": "αυτος",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:38",
+    "manuscript": "D",
+    "base_reading": "αυτω",
+    "ms_reading": "αυτον",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
@@ -15794,18 +15786,10 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:39",
-    "manuscript": "D",
-    "base_reading": "ηλθον",
+    "manuscript": "P66",
+    "base_reading": "τουτον ηλθον",
     "ms_reading": "[OMIT]",
     "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:39",
-    "manuscript": "P66",
-    "base_reading": "[ADD]",
-    "ms_reading": "μη",
-    "type": "addition"
   },
   {
     "chapter": "9",
@@ -15814,6 +15798,14 @@ window.DATA_VARIANTS = [
     "base_reading": "εμε δει",
     "ms_reading": "δι ημας",
     "type": "substitution_lexical"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:4",
+    "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "δι",
+    "type": "addition"
   },
   {
     "chapter": "9",
@@ -15827,17 +15819,17 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:4",
     "manuscript": "aleph",
-    "base_reading": "με",
+    "base_reading": "εμε",
     "ms_reading": "ημας",
     "type": "substitution_lexical"
   },
   {
     "chapter": "9",
-    "verse": "J 9:40",
-    "manuscript": "D",
-    "base_reading": "ειπον",
-    "ms_reading": "ειπαν",
-    "type": "substitution_morphological"
+    "verse": "J 9:4",
+    "manuscript": "aleph",
+    "base_reading": "με",
+    "ms_reading": "ημας",
+    "type": "substitution_lexical"
   },
   {
     "chapter": "9",
@@ -15851,25 +15843,17 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:40",
     "manuscript": "D",
-    "base_reading": "ταυτα",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
     "verse": "J 9:40",
-    "manuscript": "P66",
-    "base_reading": "και",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:40",
-    "manuscript": "P66",
-    "base_reading": "οντες μετ αυτου",
-    "ms_reading": "μετ αυτου οντες",
-    "type": "substitution_word_order"
+    "manuscript": "aleph",
+    "base_reading": "ειπον",
+    "ms_reading": "ειπαν",
+    "type": "substitution_morphological"
   },
   {
     "chapter": "9",
@@ -15882,16 +15866,8 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:41",
-    "manuscript": "D",
-    "base_reading": "αυτοις",
-    "ms_reading": "ουν",
-    "type": "substitution_lexical"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:41",
-    "manuscript": "D",
-    "base_reading": "αν",
+    "manuscript": "B",
+    "base_reading": "ο",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -15899,23 +15875,47 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:41",
     "manuscript": "D",
-    "base_reading": "αν",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:41",
-    "manuscript": "P66",
-    "base_reading": "αμαρτια",
-    "ms_reading": "ααμαμτια",
+    "base_reading": "μενει",
+    "ms_reading": "μενουσιν",
     "type": "substitution_morphological"
   },
   {
     "chapter": "9",
-    "verse": "J 9:6",
+    "verse": "J 9:41",
+    "manuscript": "D",
+    "base_reading": "ιησους",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:41",
     "manuscript": "aleph",
-    "base_reading": "του τυφλου",
+    "base_reading": "ουν",
+    "ms_reading": "[OMIT]",
+    "type": "omission"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:5",
+    "manuscript": "D",
+    "base_reading": "εν τω κοσμω ω",
+    "ms_reading": "ω εν τω κοσμω",
+    "type": "substitution_word_order"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:7",
+    "manuscript": "B",
+    "base_reading": "[ADD]",
+    "ms_reading": "νιψαι",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:7",
+    "manuscript": "B",
+    "base_reading": "ουν και ενιψατο και ηλθεν",
     "ms_reading": "[OMIT]",
     "type": "omission"
   },
@@ -15923,6 +15923,22 @@ window.DATA_VARIANTS = [
     "chapter": "9",
     "verse": "J 9:7",
     "manuscript": "D",
+    "base_reading": "[ADD]",
+    "ms_reading": "νιψαι",
+    "type": "addition"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:7",
+    "manuscript": "P66",
+    "base_reading": "σιλωαμ",
+    "ms_reading": "σιωαμ",
+    "type": "substitution_morphological"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:7",
+    "manuscript": "aleph",
     "base_reading": "και νιψαι",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -15938,6 +15954,14 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:9",
+    "manuscript": "B",
+    "base_reading": "δε οτι",
+    "ms_reading": "ελεγον ουχι αλλ",
+    "type": "substitution_lexical"
+  },
+  {
+    "chapter": "9",
+    "verse": "J 9:9",
     "manuscript": "D",
     "base_reading": "αλλοι ελεγον ουχι αλλ",
     "ms_reading": "ετεροι δε οτι",
@@ -15946,14 +15970,6 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:9",
-    "manuscript": "D",
-    "base_reading": "δε",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:9",
     "manuscript": "P66",
     "base_reading": "οτι",
     "ms_reading": "[OMIT]",
@@ -15962,7 +15978,7 @@ window.DATA_VARIANTS = [
   {
     "chapter": "9",
     "verse": "J 9:9",
-    "manuscript": "P66",
+    "manuscript": "aleph",
     "base_reading": "οτι",
     "ms_reading": "[OMIT]",
     "type": "omission"
@@ -15982,13 +15998,5 @@ window.DATA_VARIANTS = [
     "base_reading": "[ADD]",
     "ms_reading": "δε",
     "type": "addition"
-  },
-  {
-    "chapter": "9",
-    "verse": "J 9:9",
-    "manuscript": "aleph",
-    "base_reading": "οτι",
-    "ms_reading": "[OMIT]",
-    "type": "omission"
   }
 ];

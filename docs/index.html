@@ -143,7 +143,7 @@
       if (stale) {
         const note = document.createElement('p');
         note.className = 'table-note';
-        note.textContent = '* Embedding-based value computed on an earlier extraction of the variant data; refreshed by re-running the embedding stage of the pipeline.';
+        note.textContent = '* Embedding-based value; refreshed by the embedding stage of the pipeline.';
         document.getElementById('stat-rho').closest('section').appendChild(note);
       }
     })();
