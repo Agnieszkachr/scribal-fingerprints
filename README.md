@@ -24,9 +24,8 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
 
 ## Known Limitations
 
-- **Text-type confound.** In the five-manuscript pilot, Codex Bezae (Western text) differs
-  most from the other witnesses in its variant-type composition, so part of any profile
-  separation reflects text-type rather than scribal behaviour.
+- **Text-type confound.** The five witnesses belong to different text-types, so part of
+  any profile separation reflects text-type rather than scribal behaviour.
 - **Lemmatisation.** Morphological and lexical substitutions are separated by a character
   similarity heuristic (threshold 0.5), not by a lemmatiser; compounds and stem changes
   that share many letters (e.g. ιουδαιαν → γαλιλαιαν) can be mis-filed as morphological.
@@ -83,7 +82,7 @@ this repository's data. The embedding-based output files in `outputs/`
 │       ├── token_normalizer.py         # Surface forms and orthographic normalisation
 │       └── nomina_sacra.py             # Expansion table for the attested nomina sacra
 ├── create_verse_matched_dataset.py     # Verse-matched subset: verses attested in all five witnesses
-├── run_ablation_study.py               # Function-words-only and content-masked datasets
+├── run_ablation_study.py               # Function-words-only, content-masked and random-masked (control) datasets
 ├── profile_scribes.py                  # Ancient-Greek-BERT embeddings, change vectors, manuscript and chapter profiles
 ├── run_statistical_tests.py            # Block bootstrap / permutation inference (Cramér's V, Cohen's d, ARI, split-half)
 ├── create_visualizations.py            # Figures (PCA, dendrogram, type distribution, cumulative ARI, stability heatmap)
@@ -91,7 +90,7 @@ this repository's data. The embedding-based output files in `outputs/`
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
-│   ├── variants_ablation_{matched,func_words,masked}.csv
+│   ├── variants_ablation_{matched,func_words,masked,random_masked}.csv
 │   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
 ├── outputs/                            # Type counts, coverage report, statistical reports, figures
 └── docs/                               # Static companion website (GitHub Pages)
@@ -158,6 +157,21 @@ the attention-masked mean of the last-layer token vectors. The **change vector**
 variant is `embedding(manuscript context) − embedding(baseline context)`. A manuscript
 profile is the mean change vector of its variants; chapter profiles likewise.
 
+### Feature isolation (`run_ablation_study.py`)
+
+Three derived datasets probe what the embedding separation rests on:
+
+- **function words only** – the variants whose two readings consist entirely of function
+  words (articles, pronouns, particles, conjunctions, prepositions, negations); the
+  context windows are untouched;
+- **content masked** – every variant, with each content word in the readings and in the
+  context windows replaced by `CONTENT`, so that only the function words and the word
+  positions remain visible to the model;
+- **random masked (control)** – every variant, with the same *number* of words per field
+  replaced by `CONTENT` as under content masking, but at positions drawn at random
+  (seeded per variant) irrespective of word class. The difference between the two masked
+  conditions isolates the effect of *which* words are hidden from the effect of how many.
+
 ### Statistical framework (`run_statistical_tests.py`)
 
 - Distances between change vectors and between profiles are **cosine** distances.
@@ -199,6 +213,8 @@ python profile_scribes.py --baseline A
 python profile_scribes.py --ablation matched
 python profile_scribes.py --ablation func_words
 python profile_scribes.py --ablation masked
+python profile_scribes.py --ablation random_masked
+python profile_scribes.py --baseline aleph
 
 # 5. Statistics (add --typology-only to run the variant-type tests without embeddings)
 python run_statistical_tests.py --baseline B

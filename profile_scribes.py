@@ -92,7 +92,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--baseline', type=str, default='B', help='Baseline MS')
     parser.add_argument('--ablation', type=str, default=None,
-                        help='Ablation dataset (matched, func_words, masked)')
+                        help='Ablation dataset (matched, func_words, masked, random_masked)')
     parser.add_argument('--batch-size', type=int, default=16)
     parser.add_argument('--device', type=str, default=None, help='cpu or cuda (default: auto)')
     args = parser.parse_args()

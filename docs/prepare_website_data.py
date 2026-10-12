@@ -46,6 +46,7 @@ DATA_FILES = {
     'ablation_matched': 'variants_ablation_matched.csv',
     'ablation_func_words': 'variants_ablation_func_words.csv',
     'ablation_masked': 'variants_ablation_masked.csv',
+    'ablation_random_masked': 'variants_ablation_random_masked.csv',
 }
 
 
@@ -129,9 +130,11 @@ def build_stats_summary():
     configs = {
         'Baseline B': 'B',
         'Baseline A': 'A',
+        'Baseline aleph': 'aleph',
         'Verse-matched': 'ablation_matched',
         'Function words only': 'ablation_func_words',
         'Content masked': 'ablation_masked',
+        'Random masked (control)': 'ablation_random_masked',
     }
     summary = {}
     for label, tag in configs.items():
@@ -151,7 +154,8 @@ def build_stats_summary():
     baseline_ari = baseline.get('ARI', 0)
 
     ablation_panel = []
-    for label in ['Baseline B', 'Verse-matched', 'Function words only', 'Content masked']:
+    for label in ['Baseline B', 'Verse-matched', 'Function words only', 'Content masked',
+                  'Random masked (control)']:
         data = summary.get(label, {})
         d = data.get("Cohen's d", 0)
         ari = data.get('ARI', 0)

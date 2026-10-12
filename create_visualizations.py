@@ -154,6 +154,6 @@ def main(suffix='B'):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--baseline', type=str, default='B', help='Baseline MS')
-    parser.add_argument('--ablation', type=str, default=None, help='Ablation suffix (matched, func_words, masked)')
+    parser.add_argument('--ablation', type=str, default=None, help='Ablation suffix (matched, func_words, masked, random_masked)')
     args = parser.parse_args()
     main(f"ablation_{args.ablation}" if args.ablation else args.baseline)

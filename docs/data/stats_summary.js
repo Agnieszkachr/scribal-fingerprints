@@ -34,6 +34,17 @@ window.DATA_STATS = {
       "N_current": 4199,
       "stale": true
     },
+    "Baseline aleph": {
+      "Cramer's V Broad": 0.0539860024348997,
+      "Cramer's V Broad_CI_Low": 0.039302653105993034,
+      "Cramer's V Broad_CI_High": 0.07455755895785346,
+      "Cramer's V Sub": 0.06423823904370562,
+      "Cramer's V Sub_CI_Low": 0.04275977708981715,
+      "Cramer's V Sub_CI_High": 0.09351588385714862,
+      "N": null,
+      "N_current": 5270,
+      "stale": false
+    },
     "Verse-matched": {
       "ARI": 0.04905749545302646,
       "Cohen's d": 0.1367265284061432,
@@ -85,6 +96,9 @@ window.DATA_STATS = {
       "N": 12460,
       "N_current": 4460,
       "stale": true
+    },
+    "Random masked (control)": {
+      "error": "data not found"
     }
   },
   "ablation_panel": [
@@ -119,6 +133,14 @@ window.DATA_STATS = {
       "d_pct_drop": 74.2,
       "ari_pct_drop": 91.4,
       "stale": true
+    },
+    {
+      "label": "Random masked (control)",
+      "cohens_d": 0.0,
+      "ari": 0.0,
+      "d_pct_drop": 100.0,
+      "ari_pct_drop": 100.0,
+      "stale": false
     }
   ]
 };

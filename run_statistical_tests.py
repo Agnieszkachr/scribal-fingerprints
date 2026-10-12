@@ -468,7 +468,7 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--baseline', type=str, default='B', help='Baseline MS')
-    parser.add_argument('--ablation', type=str, default=None, help='Ablation dataset (matched, func_words, masked)')
+    parser.add_argument('--ablation', type=str, default=None, help='Ablation dataset (matched, func_words, masked, random_masked)')
     parser.add_argument('--typology-only', action='store_true',
                         help='Run only the variant-type tests (no embeddings needed)')
     args = parser.parse_args()

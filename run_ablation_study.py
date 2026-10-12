@@ -6,8 +6,16 @@
                      and in the context windows replaced by the token
                      ``CONTENT``, so that only function words and word
                      positions remain visible to the embedding model.
+* ``random_masked`` – control for ``masked``: in every field the same
+                     number of words as the content masking removes is
+                     replaced by ``CONTENT``, but the positions are drawn
+                     at random (seeded per variant), irrespective of word
+                     class. Any difference between ``masked`` and
+                     ``random_masked`` is attributable to *which* words are
+                     hidden rather than to how many.
 """
 import os
+import random
 
 import pandas as pd
 
@@ -71,6 +79,32 @@ def mask_text(text):
     return ' '.join(w if is_function_word(w) else 'CONTENT' for w in str(text).split())
 
 
+def mask_random(text, n_mask, rng):
+    if pd.isna(text) or text in ('[ADD]', '[OMIT]'):
+        return text
+    words = str(text).split()
+    if n_mask <= 0 or not words:
+        return text
+    positions = set(rng.sample(range(len(words)), min(n_mask, len(words))))
+    return ' '.join('CONTENT' if i in positions else w for i, w in enumerate(words))
+
+
+def apply_random_masking(df, seed=42):
+    """Mask as many words per field as content masking does, at random positions."""
+    masked = df.copy()
+    for col in ('base_reading', 'ms_reading', 'base_context_10w', 'ms_context_10w'):
+        out = []
+        for idx, text in zip(df.index, df[col]):
+            if pd.isna(text) or text in ('[ADD]', '[OMIT]'):
+                out.append(text)
+                continue
+            n_mask = sum(not is_function_word(w) for w in str(text).split())
+            rng = random.Random(f"{seed}:{idx}:{col}")
+            out.append(mask_random(text, n_mask, rng))
+        masked[col] = out
+    return masked
+
+
 def apply_content_masking(df):
     masked = df.copy()
     for col in ('base_reading', 'ms_reading', 'base_context_10w', 'ms_context_10w'):
@@ -96,6 +130,12 @@ def main(base_ms='B'):
     write_type_counts(masked_df, 'ablation_masked')
     print(f"Content-masked dataset: {len(masked_df)} variants "
           f"({(masked_df['base_context_10w'] == masked_df['ms_context_10w']).sum()} with identical masked contexts)")
+
+    random_df = apply_random_masking(df)
+    random_df.to_csv("data/variants_ablation_random_masked.csv", index=False)
+    write_type_counts(random_df, 'ablation_random_masked')
+    print(f"Random-masked control dataset: {len(random_df)} variants "
+          f"({(random_df['base_context_10w'] == random_df['ms_context_10w']).sum()} with identical masked contexts)")
 
 
 if __name__ == "__main__":
