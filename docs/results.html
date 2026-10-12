@@ -51,10 +51,11 @@
         <div id="chart-ablation" style="height:400px;"></div>
       </div>
       <div class="callout">
-        Content masking (replacing content words with a generic token) produces the largest
-        signal reduction (Cohen's d drops ~73%, ARI drops ~91%), confirming that the change
-        profile is carried primarily by contextual semantic content, not surface-level
-        morphological patterns alone.
+        Content masking replaces every content word in the readings and context windows with
+        a generic token, so that only function words and word positions remain visible to the
+        embedding model; the function-words-only condition keeps only variants whose readings
+        consist entirely of function words, with the contexts left intact. The annotated
+        percentage drops are computed from the output files.
       </div>
     </section>
 
@@ -75,9 +76,9 @@
         <div id="chart-cumulative" style="height:420px;"></div>
       </div>
       <p>
-        The signal stabilises around 13 chapters, after which the ARI plateaus. This
-        suggests a minimum viable corpus of approximately half the Gospel is sufficient
-        to detect the scribal fingerprint reliably.
+        ARI of a k-means clustering (k = number of witnesses) against the manuscript labels,
+        recomputed on the variants of the first <em>n</em> chapters. The curve shows how much
+        text is needed before the clustering signal stops changing appreciably.
       </p>
     </section>
 
@@ -111,8 +112,8 @@
         <div class="fig-item">
           <img src="img/fig2_dendrogram_full_B.png" alt="Hierarchical clustering dendrogram (Baseline B)" loading="lazy">
           <div class="fig-caption">
-            <strong>Figure 2.</strong> Hierarchical clustering of manuscript profiles against Baseline B.
-            A–D cluster together; P66–ℵ form a separate branch.
+            <strong>Figure 2.</strong> Hierarchical clustering of the manuscript profiles
+            (mean change vectors) against Baseline B, cosine distance.
           </div>
         </div>
       </div>

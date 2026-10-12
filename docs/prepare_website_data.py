@@ -10,6 +10,7 @@ import csv
 import json
 import os
 import random
+import re
 import shutil
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -38,12 +39,36 @@ def write_js(dest, var_name, data):
     print(f"  -> {dest}")
 
 
-def read_pilot_results(tag):
-    """Read pilot_results_full_{tag}.csv (vertical format: Metric,Value,CI_Low,CI_High,...)."""
-    path = os.path.join(OUTPUTS_DIR, f'pilot_results_full_{tag}.csv')
+DATA_FILES = {
+    'B': 'variants_full_john_B.csv',
+    'A': 'variants_full_john_A.csv',
+    'aleph': 'variants_full_john_aleph.csv',
+    'ablation_matched': 'variants_ablation_matched.csv',
+    'ablation_func_words': 'variants_ablation_func_words.csv',
+    'ablation_masked': 'variants_ablation_masked.csv',
+}
+
+
+def count_variants(tag):
+    """Number of variants currently in the data CSV for this configuration."""
+    path = os.path.join(DATA_SRC_DIR, DATA_FILES.get(tag, ''))
     if not os.path.exists(path):
-        print(f"  [!!] {path} not found")
         return None
+    with open(path, encoding='utf-8') as f:
+        return sum(1 for _ in f) - 1
+
+
+def read_report_n(tag):
+    """N of variants the embedding report was computed on (first line of the report)."""
+    path = os.path.join(OUTPUTS_DIR, f'pilot_report_full_{tag}.txt')
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding='utf-8', errors='replace') as f:
+        m = re.search(r'N=(\d+)', f.readline())
+    return int(m.group(1)) if m else None
+
+
+def read_metric_rows(path):
     rows = read_csv(path)
     result = {}
     for r in rows:
@@ -65,6 +90,37 @@ def read_pilot_results(tag):
                 result[metric + '_CI_High'] = float(ci_high)
             except (ValueError, TypeError):
                 pass
+    return result
+
+
+def read_pilot_results(tag):
+    """Merge the embedding results (pilot_results_full_{tag}.csv) with the
+    variant-type results (typology_results_{tag}.csv).  The type-based
+    metrics are taken from the typology file when it exists, because it is
+    recomputed directly from the current variant CSV.  ``stale`` flags an
+    embedding report computed on a different number of variants than the
+    current data file contains."""
+    result = {}
+    pilot = os.path.join(OUTPUTS_DIR, f'pilot_results_full_{tag}.csv')
+    typology = os.path.join(OUTPUTS_DIR, f'typology_results_{tag}.csv')
+    if os.path.exists(pilot):
+        result.update(read_metric_rows(pilot))
+    if os.path.exists(typology):
+        result.update(read_metric_rows(typology))
+    if not result:
+        print(f"  [!!] no results for {tag}")
+        return None
+    rho = None
+    for key in ('Odd_Even_Split_Rho_AttestLoci', 'Odd_Even_Split_Rho_Full', 'Odd_Even_Split_Rho'):
+        if isinstance(result.get(key), float):
+            rho = result[key]
+            break
+    if rho is not None:
+        result['Odd_Even_Split_Rho'] = rho
+    n_report, n_current = read_report_n(tag), count_variants(tag)
+    result['N'] = n_report
+    result['N_current'] = n_current
+    result['stale'] = bool(n_report and n_current and n_report != n_current)
     return result
 
 
@@ -99,9 +155,9 @@ def build_stats_summary():
         data = summary.get(label, {})
         d = data.get("Cohen's d", 0)
         ari = data.get('ARI', 0)
-        if isinstance(d, str):
+        if not isinstance(d, (int, float)):
             d = 0
-        if isinstance(ari, str):
+        if not isinstance(ari, (int, float)):
             ari = 0
         d_drop = ((baseline_d - d) / baseline_d * 100) if baseline_d else 0
         ari_drop = ((baseline_ari - ari) / baseline_ari * 100) if baseline_ari else 0
@@ -111,6 +167,7 @@ def build_stats_summary():
             'ari': round(float(ari), 4),
             'd_pct_drop': round(float(d_drop), 1),
             'ari_pct_drop': round(float(ari_drop), 1),
+            'stale': bool(data.get('stale', False)),
         })
 
     out = {'configs': summary, 'ablation_panel': ablation_panel}
@@ -119,20 +176,29 @@ def build_stats_summary():
 
 
 def build_type_counts():
-    """Build type_counts.js from type_counts_full_B.csv."""
-    path = os.path.join(OUTPUTS_DIR, 'type_counts_full_B.csv')
-    rows = read_csv(path)
-    data = []
-    for r in rows:
-        entry = {'manuscript': r['manuscript']}
-        for k, v in r.items():
-            if k != 'manuscript':
-                try:
-                    entry[k] = int(v)
-                except ValueError:
-                    entry[k] = v
-        data.append(entry)
-    write_js(os.path.join(DATA_DEST, 'type_counts.js'), 'DATA_TYPES', data)
+    """Build type_counts.js from type_counts_full_B.csv (the array used by the
+    chart) and type_counts_all.js with every configuration."""
+    data = None
+    all_configs = {}
+    for tag in DATA_FILES:
+        path = os.path.join(OUTPUTS_DIR, f'type_counts_full_{tag}.csv')
+        if not os.path.exists(path):
+            continue
+        rows = []
+        for r in read_csv(path):
+            entry = {'manuscript': r['manuscript']}
+            for k, v in r.items():
+                if k != 'manuscript':
+                    try:
+                        entry[k] = int(v)
+                    except ValueError:
+                        entry[k] = v
+            rows.append(entry)
+        all_configs[tag] = rows
+        if tag == 'B':
+            data = rows
+    write_js(os.path.join(DATA_DEST, 'type_counts.js'), 'DATA_TYPES', data or [])
+    write_js(os.path.join(DATA_DEST, 'type_counts_all.js'), 'DATA_TYPES_ALL', all_configs)
     return data
 
 

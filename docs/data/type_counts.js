@@ -1,38 +1,38 @@
 window.DATA_TYPES = [
   {
-    "manuscript": "P66",
-    "substitution_morphological": 2542,
-    "substitution_lexical": 191,
-    "substitution_word_order": 0,
-    "addition": 313,
-    "omission": 207,
-    "total_variants": 3253
-  },
-  {
-    "manuscript": "aleph",
-    "substitution_morphological": 3015,
-    "substitution_lexical": 209,
-    "substitution_word_order": 0,
-    "addition": 345,
-    "omission": 172,
-    "total_variants": 3741
-  },
-  {
     "manuscript": "A",
-    "substitution_morphological": 2322,
-    "substitution_lexical": 154,
-    "substitution_word_order": 0,
-    "addition": 188,
-    "omission": 147,
-    "total_variants": 2811
+    "substitution_morphological": 272,
+    "substitution_lexical": 90,
+    "substitution_word_order": 71,
+    "addition": 255,
+    "omission": 137,
+    "total_variants": 825
   },
   {
     "manuscript": "D",
-    "substitution_morphological": 1764,
-    "substitution_lexical": 261,
-    "substitution_word_order": 0,
-    "addition": 370,
-    "omission": 260,
-    "total_variants": 2655
+    "substitution_morphological": 409,
+    "substitution_lexical": 212,
+    "substitution_word_order": 98,
+    "addition": 360,
+    "omission": 264,
+    "total_variants": 1343
+  },
+  {
+    "manuscript": "P66",
+    "substitution_morphological": 350,
+    "substitution_lexical": 90,
+    "substitution_word_order": 51,
+    "addition": 182,
+    "omission": 210,
+    "total_variants": 883
+  },
+  {
+    "manuscript": "aleph",
+    "substitution_morphological": 371,
+    "substitution_lexical": 155,
+    "substitution_word_order": 97,
+    "addition": 263,
+    "omission": 313,
+    "total_variants": 1199
   }
 ];

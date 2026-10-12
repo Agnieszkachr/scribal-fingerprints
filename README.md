@@ -3,194 +3,229 @@
 [Interactive Website](https://agnieszkachr.github.io/scribal-fingerprints/) · [GitHub Repository](https://github.com/Agnieszkachr/scribal-fingerprints)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19153695.svg)](https://doi.org/10.5281/zenodo.19153695)
 
-This repository contains the codebase, extraction pipelines, and analytical scripts supporting the approach to analysing New Testament variants.
-The project investigates whether ancient New Testament manuscripts possess statistically detectable stylistic signatures (manuscript profiles) using a combination of classical stylometric typology and contextual Deep Learning embeddings (`Ancient-Greek-BERT`). 
+This repository contains the codebase, extraction pipelines and analytical scripts for a
+computational analysis of textual variation in five major Greek witnesses to the Gospel
+of John (P66, Codex Sinaiticus, Codex Alexandrinus, Codex Vaticanus, Codex Bezae).
+The project asks whether the witnesses possess statistically detectable, reproducible
+**manuscript-level change profiles**, combining a classical typology of variants
+(addition, omission, word order, morphological and lexical substitution) with contextual
+embeddings of the variant loci (`Ancient-Greek-BERT`).
 
 ## Important Methodological Note
 
-This tool identifies **manuscript-level textual profiles** based on patterns 
-of variation. These profiles reflect the aggregate textual tradition of a 
-witness and may be influenced by:
+The profiles reflect the aggregate textual tradition of a witness and may be influenced by:
 
 1. Text-type affiliation (Alexandrian, Western, Byzantine)
-2. Exemplar tradition inherited by the copyist  
+2. Exemplar tradition inherited by the copyist
 3. Individual scribal habits and preferences
 
-**The current methodology cannot reliably disentangle these factors.** 
-Users should interpret "profiles" as manuscript-level characteristics, 
-not necessarily as individual scribal fingerprints.
+**The current methodology cannot disentangle these factors.** Profiles should be read as
+manuscript-level characteristics, not as fingerprints of an individual scribe.
 
 ## Known Limitations
 
-### 1. Text-Type Confound
-- Effect sizes are small (Cohen's d ≈ 0.12, ARI ≈ 0.05)
-- In the 5-manuscript pilot, Codex Bezae (Western text-type) may drive most profile separation.
-- Within-text-type variation analysis required to validate scribal vs. text-type signal.
+- **Text-type confound.** In the five-manuscript pilot, Codex Bezae (Western text) differs
+  most from the other witnesses in its variant-type composition, so part of any profile
+  separation reflects text-type rather than scribal behaviour.
+- **Lemmatisation.** Morphological and lexical substitutions are separated by a character
+  similarity heuristic (threshold 0.5), not by a lemmatiser; compounds and stem changes
+  that share many letters (e.g. ιουδαιαν → γαλιλαιαν) can be mis-filed as morphological.
+- **Embedding model.** `Ancient-Greek-BERT` was trained mostly on Classical Greek; its
+  behaviour on unaccented Koine transcriptions has not been validated independently.
+- **Dependence between observations.** Several variants can occur in one verse and their
+  context windows overlap. Inference therefore uses chapter-level blocks (bootstrap and
+  permutation), and the embedding report additionally gives a verse-level effect size.
 
-### 2. Effect Size Interpretation
-- While statistically significant (p < 0.001), effect sizes indicate weak separation.
-- Approximately 13+ chapters required for signal stabilization.
-- Clustering alignment with manuscript identity is low (ARI ≈ 0.05).
-
-### 3. Embedding Limitations
-- Profile separation collapses 70% when lexical content is masked.
-- Embeddings capture lexical tradition more than morphosyntactic structure.
-- Ancient-Greek-BERT trained primarily on Classical Greek; Koine performance not fully validated.
-
-## Key Results
-
-### Hierarchical clustering of manuscript profiles
-
-<p align="center">
-  <img src="outputs/fig2_dendrogram_full_B.png" alt="Hierarchical clustering dendrogram (Baseline B)" width="600">
-</p>
-
-Manuscript change profiles cluster by witness identity. P66 and Sinaiticus form a distinct branch from Alexandrinus, Vaticanus, and Bezae.
-
-### Variant type distribution across manuscripts
+## Key Results (variant typology, current extraction)
 
 <p align="center">
   <img src="outputs/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" width="600">
 </p>
 
-Proportional breakdown of morphological substitutions, lexical substitutions, additions, omissions, and word order shifts per manuscript. Codex Bezae shows a markedly different distribution.
+Against Codex Vaticanus (B) as the baseline, 4,250 substantive variants are extracted.
+Additions and omissions together make up 44–48 % of the variants of each witness,
+morphological substitutions 30–40 %, lexical substitutions 10–16 % and word-order shifts
+6–9 %. The variant-type distributions differ significantly between witnesses
+(`outputs/typology_report_B.txt`):
 
-### Cumulative signal stabilisation
+| Test (baseline B, N = 4,250) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
+|---|---|---|---|
+| Substitution / addition / omission | 0.082 [0.064 – 0.104] | 0.026 ± 0.008 | 0.005 |
+| Morphological / lexical / word order | 0.094 [0.070 – 0.118] | 0.037 ± 0.012 | 0.005 |
 
-<p align="center">
-  <img src="outputs/fig6_cumulative_A.png" alt="Cumulative ARI signal (Baseline A)" width="600">
-</p>
+Codex Bezae shows the largest share of lexical substitutions and P66 the largest share
+of morphological substitutions in every configuration (baseline B, baseline A and the
+verse-matched subset; see `outputs/type_counts_full_*.csv` and
+`outputs/typology_report_*.txt`).
 
-ARI as a function of cumulative chapter count. The signal stabilises around 13 chapters, indicating a minimum viable corpus of approximately half the Gospel.
+### Embedding-based results
 
-### Chapter-level stability heatmap
-
-<p align="center">
-  <img src="outputs/fig7_stability_heatmap_A.png" alt="Chapter stability heatmap (Baseline A)" width="600">
-</p>
-
-Per-chapter cosine distance from each manuscript's global centroid. Lower values (lighter cells) indicate chapters where the local profile closely matches the overall fingerprint.
+The embedding stage (`profile_scribes.py`) requires the BERT model and is not part of
+this repository's data. The embedding-based output files currently in `outputs/`
+(`pilot_report_full_*`, `pilot_results_full_*`, `chapter_stability_*`,
+`cumulative_analysis_*`, `fig1_*`, `fig2_*`, `fig6_*`, `fig7_*`) were produced by an
+**earlier extraction** of the variants (12,460 variants against B) that double-counted
+corrector readings and split words across line breaks; they do not correspond to the
+current `data/variants_*.csv` files. Re-run steps 4–6 of the pipeline below to refresh
+them. The website marks these values accordingly until they are regenerated.
 
 ## Repository Structure
 
 ```text
 ├── LICENSE                             # MIT License
 ├── README.md                           # This file
+├── CITATION.cff                        # Citation metadata
 ├── requirements.txt                    # Python package dependencies
-├── download_itsee_data.py              # Fetches raw TEI XML from ITSEE, extracts & classifies variants
-├── run_statistical_tests.py            # Bootstrapped inference (Cramér's V, Cohen's d, ARI, PCA)
-├── profile_scribes.py                  # Generates BERT embeddings & change vectors from variant CSVs
-├── create_visualizations.py            # Generates all figures (PCA, dendrograms, heatmaps, LLN curves)
-├── create_verse_matched_dataset.py     # Generates the verse-matched ablation subset
-├── recalc_odd_even.py                  # Legacy utility: patches existing output files with split-half rho (superseded by run_statistical_tests.py)
-├── run_ablation_study.py               # Function-word-only and content-masked ablation
-├── data/                               # Extracted variant CSVs, raw XML, and auxiliary data files
-│   └── common_extant_verses.txt        # 536 verses attested in all five manuscripts (used by attested-loci split-half filter)
-└── outputs/                            # Generated figures, reports, embeddings
+├── download_itsee_data.py              # Fetches ITSEE TEI XML, reads the first-hand text, aligns, extracts and classifies variants
+├── create_verse_matched_dataset.py     # Verse-matched subset: verses attested in all five witnesses
+├── run_ablation_study.py               # Function-words-only and content-masked datasets
+├── profile_scribes.py                  # Ancient-Greek-BERT embeddings, change vectors, manuscript and chapter profiles
+├── run_statistical_tests.py            # Block bootstrap / permutation inference (Cramér's V, Cohen's d, ARI, split-half)
+├── create_visualizations.py            # Figures (PCA, dendrogram, type distribution, cumulative ARI, stability heatmap)
+├── recalc_odd_even.py                  # Utility: refresh only the split-half lines of existing reports
+├── data/
+│   ├── xml/                            # Raw ITSEE transcriptions (one file per witness)
+│   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
+│   ├── variants_ablation_{matched,func_words,masked}.csv
+│   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
+├── outputs/                            # Type counts, coverage report, statistical reports, figures
+└── docs/                               # Static companion website (GitHub Pages)
 ```
 
 ## Methodological Details
 
-### Variant Classification
-Variants are classified into 5 categories using classical textual criticism typologies:
-- **Morphological substitution**: Variants where morphology isolates the difference (e.g. ειπεν vs ειπον).
-- **Lexical substitution**: Variants changing the root word or synonym (e.g. ιησους vs κυριος).
-- **Word order**: Inversions or broader syntactical rearrangements.
-- **Addition**: Surplus words against the baseline.
-- **Omission**: Missing words against the baseline.
+### Transcription processing (`download_itsee_data.py`)
 
-Ambiguous cases are currently classified based on heuristic precedence.
+- Only the **first-hand text** is read: inside `<app>` the reading with `type="orig"` is
+  used and corrector readings are ignored.
+- Words split across line, column or page breaks (`<lb break="no"/>` inside `<w>`) are
+  joined; marginal sigla (`<seg type="margin">`), punctuation and notes are dropped.
+- **Nomina sacra** (`<abbr type="nomSac">`) are expanded from a table of the attested
+  abbreviations (θς → θεος, πρς → πατρος, ανος → ανθρωπος, ιης → ιησους, …); the
+  supralinear stroke for final nu (`¯`) is resolved to ν.
+- Tokens are lower-cased and stripped of diacritics (accents, breathings, diaeresis,
+  iota subscript). Tokens that contain editorially `<supplied>` text or a `<gap>` are
+  flagged, and variants that rest on such tokens are excluded (counts are printed).
+- Verses with no attested text (lacunae; John 5:4; 7:53–8:11 where absent) are skipped;
+  the coverage report counts only verses with text.
 
-### Orthographic Filtering
-The following alternations are filtered as non-substantive prior to profiling:
-- Itacisms: ει/ι, αι/ε, η/ι, οι/υ, ω/ο
-- Movable nu: ν-ephelkystikon (ν/∅ at word ends)
-- Elision and crasis variations
-- Accentuation and rough/smooth breathing variations (if applicable)
+### Orthographic normalisation
 
-### Statistical Framework
-- Block-bootstrap at chapter level (B=200 resamples for Cramér's V; B=100 for Cohen's d).
-- Block permutation tests (N=100–200 depending on metric) for empirical p-values.
-- All CIs reported at 95% level.
-- All analyses now report null distribution statistics alongside observed values to contextualize effect sizes.
+Alignment is computed on normalised tokens so that the following alternations neither
+break the alignment nor count as variants:
+
+- itacism: ει/ι, η/ι, οι/υ/ι, αι/ε, and ω/ο (the digraph ου is protected);
+- movable nu in the endings -σι(ν) and -ε(ν) (never in εν, μεν, ην, ουδεν, μηδεν, …) and
+  movable sigma (ουτως/ουτω, αχρις/αχρι, μεχρις/μεχρι);
+- elision (αλλ’/αλλα, δι’/δια, μετ’/μετα, …);
+- consonant gemination (ιωανης/ιωαννης);
+- final sigma and letter case.
+
+The surface forms in the CSVs keep the transcribed spelling.
+
+### Alignment and classification
+
+Each manuscript verse is aligned with the baseline verse by `difflib.SequenceMatcher`
+(longest common subsequence, `autojunk=False`). Every non-equal block becomes one variant:
+
+- `insert` → **addition**; `delete` → **omission**;
+- `replace` with the same multiset of words → **word-order shift**;
+- `replace` otherwise → **substitution**, morphological if the character similarity of the
+  normalised readings exceeds 0.5 (averaged over positionally paired words when the block
+  lengths are equal, computed on the joined strings otherwise), lexical if not;
+- after alignment, an omission and an addition (or two substitutions) of the same words
+  within eight baseline tokens of each other are merged into one **word-order shift**,
+  since the LCS alignment never emits a transposition as a single block.
+
+Unequal replace blocks (e.g. two words replaced by one) are kept as single substitution
+units; `n_base_words` and `n_ms_words` record the block shape. Each variant carries a
+context window of five words on either side in the baseline and in the manuscript.
+
+### Embeddings (`profile_scribes.py`)
+
+Each context window is embedded with `pranaydeeps/Ancient-Greek-BERT`; the 768-d vector is
+the attention-masked mean of the last-layer token vectors. The **change vector** of a
+variant is `embedding(manuscript context) − embedding(baseline context)`. A manuscript
+profile is the mean change vector of its variants; chapter profiles likewise.
+
+### Statistical framework (`run_statistical_tests.py`)
+
+- Distances between change vectors and between profiles are **cosine** distances.
+- **Cohen's d** compares inter-manuscript with intra-manuscript pairwise distances on a
+  random subsample of 1,000 variants; a 95 % CI comes from a chapter-level block bootstrap
+  (B = 100) and the null from chapter-restricted label permutations (100). The report also
+  gives d within each variant class, d for every pair of witnesses, and d after averaging
+  the change vectors per verse and manuscript.
+- **ARI** compares k-means clusters (k = number of witnesses, `n_init=10`, seed 42, at most
+  3,000 variants) with the manuscript labels; null by chapter-restricted permutation (200).
+- **Cramér's V** on the variant-type contingency tables, with a chapter-level block
+  bootstrap (B = 200) and chapter-restricted permutations (200).
+- Permutation p-values are reported as (k + 1)/(B + 1).
+- **Split-half replicability**: Spearman ρ between the six inter-manuscript centroid
+  distances computed on odd and on even chapters, with and without restriction to the
+  532 verses attested in all witnesses; in addition the full odd/even centroid distance
+  matrix and the paired distances are written to `outputs/split_half_*.csv`.
+
+## Pipeline Execution
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Extract variants (downloads the ITSEE XML on first run); writes data/variants_full_john_<MS>.csv,
+#    outputs/type_counts_full_<MS>.csv and outputs/coverage_report.csv
+python download_itsee_data.py --baseline B
+python download_itsee_data.py --baseline A
+
+# 3. Derived datasets
+python create_verse_matched_dataset.py
+python run_ablation_study.py
+
+# 4. Embeddings (needs torch + transformers and the Ancient-Greek-BERT model)
+python profile_scribes.py --baseline B
+python profile_scribes.py --baseline A
+python profile_scribes.py --ablation matched
+python profile_scribes.py --ablation func_words
+python profile_scribes.py --ablation masked
+
+# 5. Statistics (add --typology-only to run the variant-type tests without embeddings)
+python run_statistical_tests.py --baseline B
+python run_statistical_tests.py --ablation matched      # etc.
+
+# 6. Figures
+python create_visualizations.py --baseline B
+python create_visualizations.py --ablation matched      # etc.
+
+# 7. Website data
+cd docs && python prepare_website_data.py
+```
 
 ## Output Interpretation
 
-### What Profiles Represent
-Manuscript profiles capture manuscript-level patterns of textual variation.
-High similarity between profiles may indicate:
-- Shared text-type affiliation (most likely in current data)
-- Common exemplar tradition
-- Similar scribal training or scriptorium practices
-- Geographic/temporal proximity
-
-Low effect sizes in current implementation suggest text-type is the dominant factor.
-
-### What Profiles Do NOT Prove
-- Individual scribe identification (confounded with text-type).
-- Intentional vs. unintentional changes (requires separate analysis).
-- Directionality of change (requires genealogical analysis, e.g., CBGM).
+Manuscript profiles capture manuscript-level patterns of textual variation. High
+similarity between profiles may indicate shared text-type affiliation, a common exemplar
+tradition, similar scribal training, or geographic/temporal proximity. The profiles do
+not prove individual scribe identification, do not distinguish intentional from
+unintentional changes, and say nothing about the direction of change (which requires a
+genealogical method such as the CBGM).
 
 ## Relationship to Existing Methods
 
-### Comparison with CBGM
-The Coherence-Based Genealogical Method (CBGM) used in the Editio Critica Maior addresses different questions:
-- CBGM: Genealogical relationships and textual flow direction
-- This tool: Aggregate change profile characterization
-Future work will formally compare profile similarity with CBGM coherence measures to assess whether profiles provide information beyond genealogy.
-
-### Comparison with Scribal Habits Literature
-Traditional scribal habits studies (Royse, Head, Hernández) focus on identified tendencies in specific manuscripts (singular vs. plural, article usage, verb forms) via manual analysis. This tool provides automated, corpus-scale analysis and quantified effect sizes with uncertainty, but cannot yet reliably attribute patterns to individual scribes vs. tradition.
-
-## Default Pipeline Execution
-
-```bash
-# 1. Install dependencies (uv recommended; pip also works)
-uv pip install -r requirements.txt
-
-# 2. Download TEI XML and extract variant CSVs for each baseline
-python download_itsee_data.py
-
-# 3. (Optional) Build verse-matched ablation subset
-python create_verse_matched_dataset.py
-
-# 4. Run statistical analysis (generates embeddings, bootstrapped CIs, reports)
-python run_statistical_tests.py
-
-# 5. Generate visualizations
-python create_visualizations.py
-
-# 6. (Optional) Odd/Even split replicability
-python recalc_odd_even.py
-
-# 7. (Optional) Content ablation study
-python run_ablation_study.py
-```
+The Coherence-Based Genealogical Method used in the Editio Critica Maior addresses
+genealogical relationships and textual flow; this tool characterises aggregate change
+profiles. Traditional scribal-habits studies (Royse, Head, Hernández) identify tendencies
+of specific manuscripts by manual analysis; this tool offers automated, corpus-scale
+counts and effect sizes with uncertainty, but cannot attribute patterns to individual
+scribes rather than to the tradition.
 
 ## Interactive Website
 
 [https://agnieszkachr.github.io/scribal-fingerprints/](https://agnieszkachr.github.io/scribal-fingerprints/)
 
-An interactive companion website presents the research results with dynamic
-visualisations and a variant explorer. The site is a standalone static
-HTML/CSS/JS application in the `docs/` directory, deployed via GitHub Pages.
-
-**Pages:**
-- **Home** — Key findings and summary statistics
-- **Methodology** — Pipeline diagram, variant typology, manuscript coverage heatmap
-- **Results** — Interactive Plotly.js charts (type distribution, cumulative ARI,
-  stability heatmap, ablation comparison) and a static figure gallery
-- **Explorer** — Searchable, filterable DataTables browser with ~2,000 stratified
-  variant samples including Ancient Greek readings
-- **About** — Project context, data sources, citation, and acknowledgements
-
-To serve locally: `cd docs && python -m http.server 8080`
-
-To regenerate the website data files from pipeline outputs:
-```bash
-cd docs
-python prepare_website_data.py
-```
+A static HTML/CSS/JS companion site in `docs/` (GitHub Pages) with interactive Plotly
+charts, a manuscript coverage table and a searchable explorer of ~2,000 sampled variants.
+Serve locally with `cd docs && python -m http.server 8080`; regenerate its data files with
+`python prepare_website_data.py` from the `docs/` directory.
 
 ## License
 

@@ -85,16 +85,6 @@ function renderCumulativeChart(containerId) {
     xaxis: { title: 'Chapters (cumulative)', dtick: 1 },
     yaxis: { title: 'ARI Value' },
     legend: { orientation: 'h', y: -0.2, x: 0.5, xanchor: 'center' },
-    shapes: [{
-      type: 'line', x0: 13, x1: 13, y0: 0, y1: 1,
-      yref: 'paper', line: { color: COLORS.muted, width: 1, dash: 'dot' },
-    }],
-    annotations: [{
-      x: 13, y: 1.05, yref: 'paper',
-      text: '~13-chapter threshold',
-      showarrow: false,
-      font: { size: 11, color: COLORS.muted },
-    }],
   };
 
   Plotly.newPlot(containerId, traces, layout, PLOTLY_CONFIG);
@@ -215,25 +205,30 @@ function renderStatsTable(containerId) {
       <th>Odd\u2013Even \u03c1</th>
     </tr></thead><tbody>`;
 
-  const nMap = {
-    'Baseline B': '12,460', 'Baseline A': '10,481',
-    'Verse-matched': '8,381', 'Function words only': '1,008',
-    'Content masked': '12,460',
-  };
+  const nFmt = v => typeof v === 'number' ? v.toLocaleString() : '\u2014';
+  let anyStale = false;
 
   for (const [label, vals] of Object.entries(configs)) {
     const d = vals["Cohen's d"];
     const dLo = vals["Cohen's d_CI_Low"];
     const dHi = vals["Cohen's d_CI_High"];
+    const stale = vals.stale === true;
+    if (stale) anyStale = true;
+    const mark = stale ? ' <sup>*</sup>' : '';
     html += `<tr>
       <td><strong>${label}</strong></td>
-      <td>${nMap[label] || '\u2014'}</td>
-      <td>${ci(d, dLo, dHi, 4)}</td>
-      <td>${fmt(vals['ARI'], 4)}</td>
+      <td>${nFmt(vals.N_current)}</td>
+      <td>${ci(d, dLo, dHi, 4)}${mark}</td>
+      <td>${fmt(vals['ARI'], 4)}${mark}</td>
       <td>${fmt(vals["Cramer's V Sub"], 4)}</td>
-      <td>${fmt(vals['Odd_Even_Split_Rho'], 4)}</td>
+      <td>${fmt(vals['Odd_Even_Split_Rho'], 4)}${mark}</td>
     </tr>`;
   }
   html += '</tbody></table>';
+  if (anyStale) {
+    html += `<p class="table-note"><sup>*</sup> Embedding-based value computed on an earlier
+      extraction of the variant data (N shown in the first column is the current count);
+      it is refreshed by re-running the embedding stage of the pipeline.</p>`;
+  }
   document.getElementById(containerId).innerHTML = html;
 }

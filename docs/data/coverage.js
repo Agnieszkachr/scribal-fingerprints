@@ -30,9 +30,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "P66",
     "chapter": 5,
-    "verses_available": 47,
+    "verses_available": 46,
     "verses_total": 47,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.87
   },
   {
     "manuscript": "P66",
@@ -44,16 +44,16 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "P66",
     "chapter": 7,
-    "verses_available": 53,
+    "verses_available": 52,
     "verses_total": 53,
-    "coverage_pct": 100.0
+    "coverage_pct": 98.11
   },
   {
     "manuscript": "P66",
     "chapter": 8,
-    "verses_available": 59,
+    "verses_available": 48,
     "verses_total": 59,
-    "coverage_pct": 100.0
+    "coverage_pct": 81.36
   },
   {
     "manuscript": "P66",
@@ -107,9 +107,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "P66",
     "chapter": 16,
-    "verses_available": 30,
+    "verses_available": 28,
     "verses_total": 33,
-    "coverage_pct": 90.91
+    "coverage_pct": 84.85
   },
   {
     "manuscript": "P66",
@@ -177,9 +177,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "aleph",
     "chapter": 5,
-    "verses_available": 47,
+    "verses_available": 46,
     "verses_total": 47,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.87
   },
   {
     "manuscript": "aleph",
@@ -191,23 +191,23 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "aleph",
     "chapter": 7,
-    "verses_available": 53,
+    "verses_available": 52,
     "verses_total": 53,
-    "coverage_pct": 100.0
+    "coverage_pct": 98.11
   },
   {
     "manuscript": "aleph",
     "chapter": 8,
-    "verses_available": 59,
+    "verses_available": 48,
     "verses_total": 59,
-    "coverage_pct": 100.0
+    "coverage_pct": 81.36
   },
   {
     "manuscript": "aleph",
     "chapter": 9,
-    "verses_available": 41,
+    "verses_available": 40,
     "verses_total": 41,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.56
   },
   {
     "manuscript": "aleph",
@@ -254,9 +254,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "aleph",
     "chapter": 16,
-    "verses_available": 33,
+    "verses_available": 32,
     "verses_total": 33,
-    "coverage_pct": 100.0
+    "coverage_pct": 96.97
   },
   {
     "manuscript": "aleph",
@@ -275,23 +275,23 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "aleph",
     "chapter": 19,
-    "verses_available": 42,
+    "verses_available": 41,
     "verses_total": 42,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.62
   },
   {
     "manuscript": "aleph",
     "chapter": 20,
-    "verses_available": 31,
+    "verses_available": 30,
     "verses_total": 31,
-    "coverage_pct": 100.0
+    "coverage_pct": 96.77
   },
   {
     "manuscript": "aleph",
     "chapter": 21,
-    "verses_available": 25,
+    "verses_available": 24,
     "verses_total": 25,
-    "coverage_pct": 100.0
+    "coverage_pct": 96.0
   },
   {
     "manuscript": "A",
@@ -345,9 +345,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "A",
     "chapter": 8,
-    "verses_available": 8,
+    "verses_available": 7,
     "verses_total": 59,
-    "coverage_pct": 13.56
+    "coverage_pct": 11.86
   },
   {
     "manuscript": "A",
@@ -471,9 +471,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "B",
     "chapter": 5,
-    "verses_available": 47,
+    "verses_available": 46,
     "verses_total": 47,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.87
   },
   {
     "manuscript": "B",
@@ -485,16 +485,16 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "B",
     "chapter": 7,
-    "verses_available": 53,
+    "verses_available": 52,
     "verses_total": 53,
-    "coverage_pct": 100.0
+    "coverage_pct": 98.11
   },
   {
     "manuscript": "B",
     "chapter": 8,
-    "verses_available": 59,
+    "verses_available": 48,
     "verses_total": 59,
-    "coverage_pct": 100.0
+    "coverage_pct": 81.36
   },
   {
     "manuscript": "B",
@@ -618,9 +618,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "D",
     "chapter": 5,
-    "verses_available": 47,
+    "verses_available": 46,
     "verses_total": 47,
-    "coverage_pct": 100.0
+    "coverage_pct": 97.87
   },
   {
     "manuscript": "D",
@@ -639,9 +639,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "D",
     "chapter": 8,
-    "verses_available": 59,
+    "verses_available": 58,
     "verses_total": 59,
-    "coverage_pct": 100.0
+    "coverage_pct": 98.31
   },
   {
     "manuscript": "D",
@@ -667,9 +667,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "D",
     "chapter": 12,
-    "verses_available": 50,
+    "verses_available": 49,
     "verses_total": 50,
-    "coverage_pct": 100.0
+    "coverage_pct": 98.0
   },
   {
     "manuscript": "D",
@@ -688,9 +688,9 @@ window.DATA_COVERAGE = [
   {
     "manuscript": "D",
     "chapter": 15,
-    "verses_available": 27,
+    "verses_available": 26,
     "verses_total": 27,
-    "coverage_pct": 100.0
+    "coverage_pct": 96.3
   },
   {
     "manuscript": "D",

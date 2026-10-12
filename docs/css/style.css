@@ -695,3 +695,9 @@ table.dataTable thead th {
     grid-template-columns: 1fr;
   }
 }
+
+.table-note {
+  font-size: 0.85rem;
+  color: var(--text-muted, #6B6B6B);
+  margin-top: 0.75rem;
+}
