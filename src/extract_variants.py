@@ -16,8 +16,10 @@ TEI handling (per <w>):
   - nomina sacra (<abbr type="nomSac">) expanded from the attested-forms table
   - supralinear stroke resolved to ν; punctuation, daggers, apostrophes and
     diacritics dropped; <note>, <pc>, <fw> and marginal <seg> skipped
-  - tokens containing <supplied> or <gap> text are flagged as reconstructed;
-    tokens containing <unclear> text are flagged as uncertain
+  - tokens containing <supplied> text are flagged as reconstructed; tokens
+    containing <unclear> text are flagged as uncertain; a <gap> becomes a gap
+    token, and variant blocks containing or adjoining one are always excluded
+    (lost text has no reading to compare)
 
 Alignment runs on normalised tokens (itacism, ω/ο, movable ν and ς, elision,
 gemination folded), so orthographic alternation never surfaces as a variant.
@@ -27,7 +29,7 @@ MAX_TRANSPOSITION_GAP baseline tokens apart.
 
 Attestation policy:
   default            reconstructed and uncertain tokens count as attested
-  --exclude-supplied variant blocks resting on a reconstructed token are dropped
+  --exclude-supplied variant blocks resting on supplied text are dropped
   --exclude-unclear  variant blocks resting on an uncertain token are dropped
 
 Corpus-specific flag columns:
@@ -329,6 +331,26 @@ def merge_transpositions(blocks, base, ms, max_gap: int = MAX_TRANSPOSITION_GAP)
     return merged
 
 
+def touches_gap(blk: Dict[str, Any], ms: List[Token]) -> bool:
+    """True if a variant block contains or adjoins a physical gap in the witness.
+
+    A ``<gap>`` is text the witness has lost; it has no reading to compare. A
+    block containing a gap token, or an omission whose insertion point in the
+    witness sits next to one, compares the baseline with missing text and is
+    not a variant under any attestation policy. Editorially supplied text is a
+    different case (it has a reading) and is governed by --exclude-supplied.
+    """
+    if any(t.surface == GAP for t in blk["base"] + blk["ms"]):
+        return True
+    j1, j2 = blk["j1"], blk["j2"]
+    neighbours = []
+    if j1 > 0:
+        neighbours.append(ms[j1 - 1])
+    if j2 < len(ms):
+        neighbours.append(ms[j2])
+    return any(t.surface == GAP for t in neighbours)
+
+
 def _text(tokens: List[Token]) -> str:
     return " ".join(t.surface for t in tokens if t.surface != GAP)
 
@@ -365,6 +387,7 @@ def extract_rows(corpus: str, ms_texts: Dict[str, Dict[str, List[Token]]],
 
     rows: List[Dict[str, Any]] = []
     dropped: Counter = Counter()
+    lacuna: Counter = Counter()
 
     for pass_base, witnesses in passes:
         for verse_id, base_tokens in ms_texts[pass_base].items():
@@ -376,7 +399,10 @@ def extract_rows(corpus: str, ms_texts: Dict[str, Dict[str, List[Token]]],
                 ms_tokens = ms_dict[verse_id]
                 for k, blk in enumerate(align_verse(base_tokens, ms_tokens)):
                     toks = blk["base"] + blk["ms"]
-                    reconstructed = any(t.reconstructed or t.surface == GAP for t in toks)
+                    if touches_gap(blk, ms_tokens):
+                        lacuna[out_siglum] += 1
+                        continue
+                    reconstructed = any(t.reconstructed for t in toks)
                     uncertain = any(t.uncertain for t in toks)
                     if (EXCLUDE_SUPPLIED and reconstructed) or (EXCLUDE_UNCLEAR and uncertain):
                         dropped[out_siglum] += 1
@@ -415,6 +441,9 @@ def extract_rows(corpus: str, ms_texts: Dict[str, Dict[str, List[Token]]],
                         row["western_non_interpolation"] = f"{chapter}:{verse_num}" in western_non_interps
                         row["bezae_high_divergence"] = (out_siglum == "D" and volume == "acts")
                     rows.append(row)
+    if lacuna:
+        logger.info("Blocks adjoining a physical gap in the witness (not variants, always excluded): %s",
+                    ", ".join(f"{m}={n}" for m, n in sorted(lacuna.items())))
     return rows, dropped
 
 
@@ -518,7 +547,7 @@ def main() -> None:
     parser.add_argument("--baseline", default=BASELINE_MANUSCRIPT,
                         help="Baseline witness siglum (default: %(default)s)")
     parser.add_argument("--exclude-supplied", action="store_true",
-                        help="Drop variant blocks resting on <supplied> text or a <gap>.")
+                        help="Drop variant blocks resting on <supplied> text.")
     parser.add_argument("--exclude-unclear", action="store_true",
                         help="Drop variant blocks resting on <unclear> text.")
     parser.add_argument("--output", type=Path, default=None,

@@ -9,7 +9,9 @@
 * ``random_masked`` – control for ``masked``: in every field the same
                      number of words as the content masking removes is
                      replaced by ``CONTENT``, but the positions are drawn
-                     at random (seeded per variant), irrespective of word
+                     at random (seeded by verse, witness and block, so a
+                     variant is masked identically whatever else is in the
+                     table), irrespective of word
                      class. Any difference between ``masked`` and
                      ``random_masked`` is attributable to *which* words are
                      hidden rather than to how many.
@@ -58,7 +60,9 @@ def apply_random_masking(df, seed=42):
     masked = df.copy()
     for col in ('base_reading', 'ms_reading', 'base_context_10w', 'ms_context_10w'):
         out = []
-        for idx, text in zip(df.index, df[col]):
+        keys = (df['verse'].astype(str) + ':' + df['manuscript'].astype(str) + ':'
+                + df['block_index'].astype(str)) if 'block_index' in df.columns else df.index.astype(str)
+        for idx, text in zip(keys, df[col]):
             if pd.isna(text) or text in ('[ADD]', '[OMIT]'):
                 out.append(text)
                 continue

@@ -42,7 +42,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 1,J 1:15,D,ο,ον,substitution_morphological,και CONTENT CONTENT ουτος ην ο CONTENT ο CONTENT μου CONTENT,αυτου και CONTENT ουτος ην ον CONTENT ο CONTENT μου CONTENT,ο,ον,1,1,1,False,False
 1,J 1:15,D,εμπροσθεν,CONTENT,substitution_morphological,CONTENT ο CONTENT μου CONTENT εμπροσθεν μου CONTENT οτι CONTENT μου,CONTENT ο CONTENT μου CONTENT CONTENT μου CONTENT οτι CONTENT μου,εμπροσθε,ενπροσθε,1,1,2,False,False
 1,J 1:16,A,οτι,και,substitution_lexical,οτι εκ του CONTENT αυτου ημεις,και εκ του CONTENT αυτου ημεις,οτι,κε,1,1,0,False,False
-1,J 1:16,D,CONTENT και CONTENT αντι CONTENT,[OMIT],substitution_lexical,του CONTENT αυτου ημεις CONTENT CONTENT και CONTENT αντι CONTENT,του CONTENT αυτου ημεις CONTENT,ελαβομε κε χαριν αντι χαριτοσ,,5,0,0,True,False
 1,J 1:17,P66,[ADD],δε,addition,δια CONTENT CONTENT η CONTENT και η CONTENT δια CONTENT,δια CONTENT CONTENT η CONTENT δε και η CONTENT δια CONTENT,,δε,0,1,0,False,False
 1,J 1:17,aleph,CONTENT,[OMIT],omission,και η CONTENT δια CONTENT CONTENT CONTENT,και η CONTENT δια CONTENT CONTENT,χριστου,,1,0,0,False,False
 1,J 1:17,A,CONTENT,CONTENT,substitution_morphological,οτι ο CONTENT δια CONTENT CONTENT η CONTENT και η,οτι ο CONTENT δια CONTENT CONTENT η CONTENT και η,μοισεοσ,μοσεοσ,1,1,0,False,False
@@ -340,7 +339,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 3,J 3:26,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT προς τον CONTENT και CONTENT αυτω CONTENT ος ην μετα,CONTENT προς τον CONTENT και CONTENT αυτω CONTENT ος ην μετα,ιπαν,ιπον,1,1,1,False,False
 3,J 3:26,A,CONTENT,CONTENT,substitution_morphological,και CONTENT προς τον CONTENT και CONTENT,και CONTENT προς τον CONTENT και CONTENT,ιλθαν,ιλθον,1,1,0,False,False
 3,J 3:26,A,CONTENT,CONTENT,substitution_morphological,CONTENT προς τον CONTENT και CONTENT αυτω CONTENT ος ην μετα,CONTENT προς τον CONTENT και CONTENT αυτω CONTENT ος ην μετα,ιπαν,ιπον,1,1,1,False,False
-3,J 3:26,D,και CONTENT προς τον CONTENT και CONTENT αυτω,[OMIT],substitution_lexical,και CONTENT προς τον CONTENT και CONTENT αυτω CONTENT ος ην μετα σου,CONTENT ος ην μετα σου,κε ιλθαν προσ τον ιοανιν κε ιπαν ετο,,8,0,0,True,False
 3,J 3:26,D,ιδε,ιδου,substitution_morphological,του CONTENT ω συ CONTENT ιδε ουτος CONTENT και CONTENT CONTENT,του CONTENT ω συ CONTENT ιδου ουτος CONTENT και CONTENT CONTENT,ιδε,ιδου,1,1,1,False,False
 3,J 3:27,P66,CONTENT,CONTENT,substitution_morphological,και CONTENT ου CONTENT CONTENT CONTENT ουδε εν αν μη η,και CONTENT ου CONTENT CONTENT CONTENT ουδε εν εαν μη ην,λαμβενιν,λαμβανιν,1,1,0,False,False
 3,J 3:27,P66,αν,εαν,substitution_morphological,CONTENT CONTENT CONTENT ουδε εν αν μη η CONTENT αυτω εκ,CONTENT CONTENT CONTENT ουδε εν εαν μη ην CONTENT αυτω εκ,αν,εαν,1,1,1,False,False
@@ -380,7 +378,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 3,J 3:34,A,[ADD],ο CONTENT το CONTENT,addition,ου γαρ εκ CONTENT CONTENT,ου γαρ εκ CONTENT CONTENT ο CONTENT το CONTENT,,ο θεοσ το πνειμα,0,4,0,False,False
 3,J 3:34,D,[ADD],ο CONTENT το CONTENT,addition,ου γαρ εκ CONTENT CONTENT,ου γαρ εκ CONTENT CONTENT ο CONTENT το CONTENT,,ο θεοσ το πνειμα,0,4,0,False,False
 3,J 3:35,D,CONTENT,CONTENT,substitution_morphological,CONTENT τον CONTENT και CONTENT CONTENT εν τη CONTENT αυτου,CONTENT τον CONTENT και CONTENT CONTENT εν τη CONTENT αυτου,δεδοκε,εδοκε,1,1,0,False,False
-3,J 3:36,P66,αλλ η,[OMIT],substitution_lexical,τω CONTENT ουκ CONTENT CONTENT αλλ η CONTENT του CONTENT CONTENT επ,τω CONTENT ουκ CONTENT CONTENT CONTENT του CONTENT CONTENT επ,αλα ι,,2,0,0,True,False
 3,J 3:36,aleph,δε,[OMIT],omission,CONTENT CONTENT CONTENT CONTENT ο δε CONTENT τω CONTENT ουκ CONTENT,CONTENT CONTENT CONTENT CONTENT ο CONTENT τω CONTENT ουκ CONTENT,δε,,1,0,0,False,False
 3,J 3:36,aleph,CONTENT επ αυτον,επ αυτον CONTENT,substitution_word_order,αλλ η CONTENT του CONTENT CONTENT επ αυτον,αλλ η CONTENT του CONTENT επ αυτον CONTENT,μενι επι ετον,επι ετον μενι,3,3,1,False,False
 3,J 3:36,D,[ADD],ινα,addition,ο CONTENT εις τον CONTENT,ινα ο CONTENT εις τον CONTENT,,ινα,0,1,0,False,False
@@ -404,7 +401,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 4,J 4:5,A,τω,[OMIT],omission,του CONTENT ο CONTENT CONTENT τω CONTENT τω CONTENT αυτου,του CONTENT ο CONTENT CONTENT CONTENT τω CONTENT αυτου,το,,1,0,0,False,False
 4,J 4:5,D,ο,ου,substitution_morphological,CONTENT CONTENT CONTENT του CONTENT ο CONTENT CONTENT τω CONTENT τω,CONTENT CONTENT CONTENT του CONTENT ου CONTENT CONTENT CONTENT τω CONTENT,ο,ου,1,1,0,False,False
 4,J 4:5,D,τω,[OMIT],omission,του CONTENT ο CONTENT CONTENT τω CONTENT τω CONTENT αυτου,του CONTENT ου CONTENT CONTENT CONTENT τω CONTENT αυτου,το,,1,0,1,False,False
-4,J 4:6,P66,δε,[OMIT],substitution_lexical,ην δε CONTENT CONTENT του CONTENT ο,ην CONTENT CONTENT του CONTENT ουν,δε,,1,0,0,True,False
 4,J 4:6,P66,ο,[OMIT],omission,δε CONTENT CONTENT του CONTENT ο ουν CONTENT CONTENT εκ της,CONTENT CONTENT του CONTENT ουν CONTENT CONTENT εκ της,ο,,1,0,1,False,False
 4,J 4:6,P66,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT εκ της CONTENT CONTENT CONTENT επι τη CONTENT CONTENT,CONTENT CONTENT εκ της CONTENT CONTENT ουτως επι τη CONTENT CONTENT,εκαθεζετο,εκαθιζετο,1,1,2,False,False
 4,J 4:6,P66,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT CONTENT επι τη CONTENT CONTENT ην ως CONTENT,CONTENT CONTENT ουτως επι τη CONTENT CONTENT ην ως CONTENT,πιγι,γι,1,1,3,False,False
@@ -677,8 +673,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 5,J 5:6,A,CONTENT,CONTENT,substitution_morphological,τουτον CONTENT ο CONTENT CONTENT και CONTENT,τουτον CONTENT ο CONTENT CONTENT και CONTENT,ιδον,ιδοσ,1,1,0,False,False
 5,J 5:7,P66,προς,προ,substitution_morphological,ω δε CONTENT εγω CONTENT προς εμου CONTENT,ω δε CONTENT εγω CONTENT προ εμου CONTENT,προσ,προ,1,1,0,False,False
 5,J 5:7,aleph,προς,προ,substitution_morphological,ω δε CONTENT εγω CONTENT προς εμου CONTENT,ω δε CONTENT εγω CONTENT προ εμου CONTENT,προσ,προ,1,1,0,False,False
-5,J 5:7,A,CONTENT,CONTENT,substitution_lexical,CONTENT αυτω ο CONTENT CONTENT CONTENT,CONTENT αυτω ο CONTENT ο,απεκριθι,λεγι,1,1,0,True,False
-5,J 5:7,A,[ADD],ο CONTENT,addition,CONTENT αυτω ο CONTENT CONTENT CONTENT ουκ,CONTENT αυτω ο CONTENT ο CONTENT CONTENT CONTENT ουκ,,ο ιισουσ,0,2,1,True,False
 5,J 5:7,A,προς,προ,substitution_morphological,ω δε CONTENT εγω CONTENT προς εμου CONTENT,ω δε CONTENT εγω CONTENT προ εμου CONTENT,προσ,προ,1,1,2,False,False
 5,J 5:7,D,CONTENT,CONTENT,substitution_lexical,CONTENT αυτω ο CONTENT CONTENT CONTENT,CONTENT αυτω ο CONTENT CONTENT CONTENT,απεκριθι,λεγι,1,1,0,False,False
 5,J 5:7,D,προς,προ,substitution_morphological,ω δε CONTENT εγω CONTENT προς εμου CONTENT,ω δε CONTENT εγω CONTENT προ εμου CONTENT,προσ,προ,1,1,1,False,False
@@ -923,7 +917,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 6,J 6:10,D,[ADD],ουν,addition,CONTENT ο CONTENT CONTENT τους CONTENT,CONTENT ουν ο CONTENT CONTENT τους CONTENT,,ουν,0,1,0,False,False
 6,J 6:10,D,οι,[OMIT],omission,εν τω CONTENT CONTENT ουν οι CONTENT τον CONTENT ως CONTENT,εν τω CONTENT CONTENT ουν CONTENT τον CONTENT ως CONTENT,ι,,1,0,1,False,False
 6,J 6:11,P66,CONTENT,CONTENT,substitution_morphological,CONTENT ο CONTENT και CONTENT CONTENT τοις CONTENT CONTENT και εκ,CONTENT ο CONTENT και CONTENT CONTENT τοις CONTENT CONTENT,διεδοκε,εδοκε,1,1,0,False,False
-6,J 6:11,P66,και εκ των CONTENT CONTENT CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT τοις CONTENT CONTENT και εκ των CONTENT CONTENT CONTENT,CONTENT CONTENT τοις CONTENT CONTENT,κε εκ τον οψαριον οσον ιθελον,,6,0,1,True,False
 6,J 6:11,aleph,ουν,δε,substitution_lexical,CONTENT ουν τους CONTENT ο CONTENT και,CONTENT δε τους CONTENT ο CONTENT και,ουν,δε,1,1,0,False,False
 6,J 6:11,aleph,CONTENT CONTENT,CONTENT και CONTENT,substitution_morphological,τους CONTENT ο CONTENT και CONTENT CONTENT τοις CONTENT CONTENT και εκ,τους CONTENT ο CONTENT και CONTENT και CONTENT τοις CONTENT CONTENT και εκ,ειχαριστισασ διεδοκε,ειχαριστισε κε εδοκε,2,3,1,False,False
 6,J 6:11,D,[ADD],CONTENT,addition,CONTENT ουν τους CONTENT ο CONTENT και CONTENT,CONTENT ουν τους CONTENT CONTENT ο CONTENT και CONTENT,,πεντε,0,1,0,False,False
@@ -1056,7 +1049,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 6,J 6:33,A,CONTENT CONTENT,CONTENT CONTENT,substitution_word_order,CONTENT εκ του CONTENT και CONTENT CONTENT τω CONTENT,CONTENT εκ του CONTENT και CONTENT CONTENT τω CONTENT,ζοιν διδουσ,διδουσ ζοιν,2,2,0,False,False
 6,J 6:33,D,CONTENT,CONTENT,substitution_morphological,εκ του CONTENT και CONTENT CONTENT τω CONTENT,εκ του CONTENT και CONTENT CONTENT τω CONTENT,διδουσ,διδοσ,1,1,0,False,False
 6,J 6:34,aleph,CONTENT CONTENT,CONTENT CONTENT,substitution_word_order,CONTENT ουν προς αυτον CONTENT CONTENT CONTENT ημιν τον CONTENT τουτον,CONTENT ουν προς αυτον CONTENT CONTENT CONTENT ημιν τον CONTENT τουτον,κιριε παντοτε,παντοτε κιριε,2,2,0,False,False
-6,J 6:35,P66,CONTENT αυτοις ο CONTENT εγω CONTENT ο CONTENT της CONTENT ο CONTENT προς εμε ου μη CONTENT και ο CONTENT,[OMIT],substitution_lexical,CONTENT αυτοις ο CONTENT εγω CONTENT ο CONTENT της CONTENT ο CONTENT προς εμε ου μη CONTENT και ο CONTENT εις εμε ου μη CONTENT,εις εμε ου μη CONTENT,ιπε ετισ ο ιισουσ εγο ιμι ο αρτοσ τισ ζοισ ο ερχομενοσ προσ εμε ου μι πινασι κε ο πιστειον,,20,0,0,True,False
 6,J 6:35,aleph,[ADD],ουν,addition,CONTENT αυτοις ο CONTENT εγω CONTENT,CONTENT ουν αυτοις ο CONTENT εγω CONTENT,,ουν,0,1,0,False,False
 6,J 6:35,A,[ADD],δε,addition,CONTENT αυτοις ο CONTENT εγω CONTENT,CONTENT δε αυτοις ο CONTENT εγω CONTENT,,δε,0,1,0,False,False
 6,J 6:35,A,εμε,με,substitution_morphological,της CONTENT ο CONTENT προς εμε ου μη CONTENT και ο,της CONTENT ο CONTENT προς με ου μη CONTENT και ο,εμε,με,1,1,1,False,False
@@ -1145,7 +1137,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 6,J 6:49,D,[ADD],τον CONTENT,addition,οι CONTENT υμων CONTENT εν τη CONTENT το CONTENT,οι CONTENT υμων CONTENT τον CONTENT εν τη CONTENT το CONTENT,,τον αρτον,0,2,0,False,False
 6,J 6:50,P66,CONTENT,CONTENT,substitution_morphological,εξ αυτου CONTENT και μη CONTENT,εξ αυτου CONTENT και μη CONTENT,αποθνισκι,αποθανι,1,1,0,False,False
 6,J 6:50,aleph,CONTENT,CONTENT,substitution_morphological,εξ αυτου CONTENT και μη CONTENT,εξ αυτου CONTENT και μη CONTENT,αποθνισκι,αποθανι,1,1,0,False,False
-6,J 6:50,A,ινα τις εξ αυτου CONTENT και μη CONTENT,[OMIT],substitution_lexical,ο εκ του CONTENT CONTENT ινα τις εξ αυτου CONTENT και μη CONTENT,ο εκ του CONTENT CONTENT,ινα τισ εξ ετου φαγι κε μι αποθνισκι,,8,0,0,True,False
 6,J 6:50,D,CONTENT ινα τις εξ αυτου CONTENT και,και CONTENT ινα τις εξ αυτου CONTENT,substitution_word_order,CONTENT ο εκ του CONTENT CONTENT ινα τις εξ αυτου CONTENT και μη CONTENT,CONTENT ο εκ του CONTENT και CONTENT ινα τις εξ αυτου CONTENT μη CONTENT,καταβενον ινα τισ εξ ετου φαγι κε,κε καταβενον ινα τισ εξ ετου φαγι,7,7,0,False,False
 6,J 6:50,D,CONTENT,CONTENT,substitution_morphological,εξ αυτου CONTENT και μη CONTENT,τις εξ αυτου CONTENT μη CONTENT,αποθνισκι,αποθανι,1,1,1,False,False
 6,J 6:51,aleph,τουτου,[OMIT],omission,CONTENT εαν τις CONTENT εκ τουτου του CONTENT CONTENT εις τον,CONTENT εαν τις CONTENT εκ του εμου CONTENT CONTENT εις,τουτου,,1,0,0,False,False
@@ -2100,7 +2091,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 10,J 10:12,P66,[ADD],δε,addition,ο CONTENT και ουκ ων CONTENT,ο δε CONTENT και ουκ ων CONTENT,,δε,0,1,0,False,False
 10,J 10:12,aleph,[ADD],δε,addition,ο CONTENT και ουκ ων CONTENT,ο δε CONTENT και ουκ ων CONTENT,,δε,0,1,0,False,False
 10,J 10:12,A,[ADD],δε,addition,ο CONTENT και ουκ ων CONTENT ου,ο CONTENT δε και ουκ ων CONTENT ου,,δε,0,1,0,False,False
-10,J 10:12,A,CONTENT και CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT CONTENT τον CONTENT CONTENT και CONTENT τα CONTENT και CONTENT και,CONTENT CONTENT CONTENT τον CONTENT τα CONTENT και CONTENT και,ερχομενον κε αφιισι,,3,0,1,True,False
 10,J 10:12,A,[ADD],τα CONTENT,addition,CONTENT CONTENT CONTENT και CONTENT,CONTENT CONTENT CONTENT και CONTENT τα CONTENT,,τα προβατα,0,2,2,False,False
 10,J 10:12,D,[ADD],δε,addition,ο CONTENT και ουκ ων CONTENT,ο δε CONTENT και ουκ ων CONTENT,,δε,0,1,0,False,False
 10,J 10:12,D,CONTENT,CONTENT,substitution_lexical,ουκ ων CONTENT ου ουκ CONTENT τα CONTENT CONTENT CONTENT τον,ουκ ων CONTENT ου ουκ CONTENT τα CONTENT CONTENT CONTENT τον,εστιν,ισι,1,1,1,False,False
@@ -2859,7 +2849,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 12,J 12:48,P66,εν,[OMIT],omission,ον CONTENT εκεινος CONTENT αυτον εν τη CONTENT CONTENT,ον CONTENT εκεινος CONTENT αυτον τη CONTENT CONTENT,εν,,1,0,1,False,False
 12,J 12:49,D,εγω εξ CONTENT,εξ CONTENT εγω,substitution_word_order,οτι εγω εξ CONTENT ουκ CONTENT αλλ ο CONTENT,οτι εξ CONTENT εγω ουκ CONTENT αλλ ο CONTENT,εγο εξ εμετου,εξ εμετου εγο,3,3,0,False,False
 12,J 12:49,D,CONTENT,CONTENT,substitution_morphological,με CONTENT αυτος μοι CONTENT CONTENT τι CONTENT και τι CONTENT,με CONTENT αυτος μοι CONTENT CONTENT τι CONTENT και τι CONTENT,δεδοκε,εδοκε,1,1,1,False,False
-12,J 12:50,A,CONTENT,[OMIT],substitution_lexical,η CONTENT αυτου CONTENT CONTENT CONTENT α ουν εγω CONTENT καθως,η CONTENT αυτου CONTENT CONTENT α ουν εγω CONTENT καθως,εστιν,,1,0,0,True,False
 12,J 12:50,D,CONTENT CONTENT CONTENT,CONTENT CONTENT CONTENT,substitution_word_order,CONTENT οτι η CONTENT αυτου CONTENT CONTENT CONTENT α ουν εγω CONTENT καθως,CONTENT οτι η CONTENT αυτου CONTENT CONTENT CONTENT α ουν CONTENT καθως CONTENT,ζοι εονιοσ εστιν,εονιοσ εστιν ζοι,3,3,0,False,False
 12,J 12:50,D,εγω,[OMIT],omission,CONTENT CONTENT CONTENT α ουν εγω CONTENT καθως CONTENT μοι ο,CONTENT CONTENT CONTENT α ουν CONTENT καθως CONTENT μοι ο,εγο,,1,0,1,False,False
 13,J 13:1,P66,CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT ο CONTENT οτι CONTENT αυτου η CONTENT ινα CONTENT,CONTENT CONTENT ο CONTENT οτι CONTENT αυτου η CONTENT ινα CONTENT,ιλθε,ικι,1,1,0,False,False
@@ -3014,7 +3003,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 13,J 13:23,D,[ADD],δε,addition,ην CONTENT εις εκ των CONTENT,ην δε CONTENT εις εκ των CONTENT,,δε,0,1,0,False,False
 13,J 13:23,D,[ADD],και,addition,τω CONTENT του CONTENT ον CONTENT CONTENT,τω CONTENT του CONTENT ον και CONTENT ο CONTENT,,κε,0,1,1,False,False
 13,J 13:23,D,[ADD],ο,addition,CONTENT του CONTENT ον CONTENT CONTENT,του CONTENT ον και CONTENT ο CONTENT,,ο,0,1,2,False,False
-13,J 13:24,P66,και CONTENT,[OMIT],substitution_lexical,CONTENT ουν τουτω CONTENT CONTENT και CONTENT αυτω CONTENT τις CONTENT περι,CONTENT ουν τουτω CONTENT CONTENT αυτω CONTENT περι ου CONTENT,κε λεγι,,2,0,0,True,False
 13,J 13:24,P66,CONTENT τις,[OMIT],omission,CONTENT CONTENT και CONTENT αυτω CONTENT τις CONTENT περι ου CONTENT,τουτω CONTENT CONTENT αυτω CONTENT περι ου CONTENT,ιπε τισ,,2,0,1,False,False
 13,J 13:24,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT ουν τουτω CONTENT CONTENT και CONTENT αυτω CONTENT,CONTENT ουν τουτω CONTENT CONTENT CONTENT τις αν CONTENT,σιμον,μον,1,1,0,False,False
 13,J 13:24,aleph,[ADD],CONTENT τις αν CONTENT περι ου CONTENT,addition,CONTENT ουν τουτω CONTENT CONTENT και CONTENT αυτω CONTENT τις,CONTENT ουν τουτω CONTENT CONTENT CONTENT τις αν CONTENT περι ου CONTENT και CONTENT αυτω CONTENT τις,,πιθεσθε τισ αν ιι περι ου ελεγε,0,7,1,False,False
@@ -3172,7 +3160,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 14,J 14:7,A,CONTENT,και,substitution_lexical,και τον CONTENT μου αν CONTENT απ CONTENT CONTENT αυτον και,τον CONTENT μου CONTENT αν και απ CONTENT CONTENT αυτον και,ιδιτε,κε,1,1,2,False,False
 14,J 14:7,A,[ADD],αυτον,addition,CONTENT CONTENT αυτον και CONTENT,CONTENT CONTENT αυτον και CONTENT αυτον,,ετον,0,1,3,False,False
 14,J 14:7,D,CONTENT με,CONTENT εμε,substitution_morphological,ει CONTENT με και τον CONTENT μου αν,ει CONTENT εμε και τον CONTENT μου CONTENT,εγνοκιτε με,εγνοκατε εμε,2,2,0,False,False
-14,J 14:7,D,αν CONTENT,CONTENT CONTENT και,substitution_lexical,με και τον CONTENT μου αν CONTENT απ CONTENT CONTENT αυτον και,εμε και τον CONTENT μου CONTENT CONTENT και απ CONTENT CONTENT αυτον και,αν ιδιτε,εγνι γνοσεσθε κε,2,3,1,True,True
 14,J 14:7,D,[ADD],αυτον,addition,CONTENT CONTENT αυτον και CONTENT,CONTENT CONTENT αυτον και CONTENT αυτον,,ετον,0,1,2,False,False
 14,J 14:8,aleph,[ADD],ο,addition,CONTENT αυτω CONTENT CONTENT CONTENT ημιν τον,CONTENT αυτω ο CONTENT CONTENT CONTENT ημιν τον,,ο,0,1,0,False,False
 14,J 14:9,P66,ο,[OMIT],omission,CONTENT αυτω ο CONTENT CONTENT CONTENT μεθ υμων,CONTENT αυτω CONTENT CONTENT CONTENT μεθ υμων,ο,,1,0,0,False,False
@@ -3280,7 +3267,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 14,J 14:24,D,CONTENT,CONTENT,substitution_morphological,με τους CONTENT μου ου CONTENT και ο CONTENT ον CONTENT,με τους CONTENT μου ου CONTENT και ο CONTENT ο CONTENT,τιρι,τιρισι,1,1,0,False,False
 14,J 14:24,D,[ADD],ο CONTENT,addition,ου CONTENT και ο CONTENT ον CONTENT ουκ CONTENT CONTENT,ου CONTENT και ο CONTENT ο CONTENT ον CONTENT ουκ CONTENT CONTENT,,ο εμοσ,0,2,1,False,False
 14,J 14:25,D,υμιν,CONTENT,substitution_morphological,ταυτα CONTENT υμιν παρ υμιν CONTENT,ταυτα CONTENT CONTENT παρ CONTENT CONTENT,ιμιν,ιμε,1,1,0,False,False
-14,J 14:26,P66,εγω,[OMIT],substitution_lexical,υμας CONTENT α CONTENT υμιν εγω,υμας CONTENT α CONTENT υμιν,εγο,,1,0,0,True,False
 14,J 14:26,aleph,[ADD],CONTENT,addition,ο δε CONTENT το CONTENT το CONTENT ο,ο δε CONTENT CONTENT το CONTENT το CONTENT ο,,πεμψι,0,1,0,False,False
 14,J 14:26,aleph,ο CONTENT,[OMIT],omission,CONTENT το CONTENT το CONTENT ο CONTENT ο CONTENT εν τω CONTENT,CONTENT το CONTENT το CONTENT ο CONTENT εν τω CONTENT,ο πεμψι,,2,0,1,False,False
 14,J 14:26,aleph,εγω,[OMIT],omission,υμας CONTENT α CONTENT υμιν εγω,υμας CONTENT α CONTENT υμιν,εγο,,1,0,2,False,False
@@ -3293,9 +3279,7 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 14,J 14:28,aleph,[ADD],μου,addition,τον CONTENT οτι ο CONTENT CONTENT μου CONTENT,τον CONTENT οτι ο CONTENT μου CONTENT μου CONTENT,,μου,0,1,1,False,False
 14,J 14:28,D,CONTENT,CONTENT,substitution_morphological,και CONTENT προς υμας ει CONTENT με CONTENT αν οτι CONTENT,και CONTENT προς υμας ει CONTENT με CONTENT αν οτι CONTENT,ιγαπατε,αγαπατε,1,1,0,False,False
 14,J 14:28,D,CONTENT,CONTENT,substitution_morphological,προς τον CONTENT οτι ο CONTENT CONTENT μου CONTENT,προς τον CONTENT οτι ο CONTENT CONTENT μου CONTENT,πατιρ,πιρ,1,1,1,False,False
-14,J 14:29,P66,και νυν,[OMIT],substitution_lexical,και νυν CONTENT υμιν CONTENT CONTENT ινα,CONTENT CONTENT CONTENT CONTENT ινα,κε νιν,,2,0,0,True,False
 14,J 14:29,D,[ADD],μοι,addition,CONTENT ινα οταν CONTENT CONTENT,CONTENT ινα οταν CONTENT CONTENT μοι,,μι,0,1,0,False,False
-14,J 14:30,P66,CONTENT CONTENT και εν εμοι ουκ CONTENT ουδεν,[OMIT],substitution_lexical,υμων CONTENT γαρ ο του CONTENT CONTENT και εν εμοι ουκ CONTENT ουδεν,υμων CONTENT γαρ ο του,κοσμου αρχον κε εν εμι ουκ εχι ουδεν,,8,0,0,True,False
 14,J 14:30,D,[ADD],CONTENT,addition,εν εμοι ουκ CONTENT ουδεν,εν εμοι ουκ CONTENT ουδεν CONTENT,,ειριν,0,1,0,False,False
 14,J 14:31,aleph,CONTENT CONTENT,CONTENT,substitution_lexical,CONTENT τον CONTENT και καθως CONTENT CONTENT μοι ο CONTENT ουτως CONTENT,CONTENT τον CONTENT και καθως CONTENT μοι ο CONTENT ουτως CONTENT,εντολιν εδοκε,ενετιλατο,2,1,0,False,False
 14,J 14:31,A,και,[OMIT],omission,CONTENT οτι CONTENT τον CONTENT και καθως CONTENT CONTENT μοι ο,CONTENT οτι CONTENT τον CONTENT καθως CONTENT μοι ο CONTENT,κε,,1,0,0,False,False
@@ -3304,7 +3288,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 14,J 14:31,D,ο CONTENT,[OMIT],omission,και καθως CONTENT CONTENT μοι ο CONTENT ουτως CONTENT CONTENT CONTENT CONTENT,CONTENT και καθως CONTENT μοι ουτως CONTENT CONTENT CONTENT CONTENT,ο πατιρ,,2,0,1,False,False
 15,J 15:1,D,CONTENT,παρ,substitution_morphological,CONTENT η CONTENT και ο CONTENT μου ο CONTENT CONTENT,CONTENT η CONTENT και ο παρ μου CONTENT CONTENT,πατιρ,παρα,1,1,0,False,False
 15,J 15:1,D,ο,[OMIT],omission,CONTENT και ο CONTENT μου ο CONTENT CONTENT,CONTENT και ο παρ μου CONTENT CONTENT,ο,,1,0,1,False,False
-15,J 15:2,P66,CONTENT CONTENT εν εμοι μη CONTENT CONTENT CONTENT αυτο και CONTENT το CONTENT CONTENT CONTENT αυτο ινα CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT εν εμοι μη CONTENT CONTENT CONTENT αυτο και CONTENT το CONTENT CONTENT CONTENT αυτο ινα CONTENT CONTENT CONTENT,CONTENT CONTENT,παν κλιμα εν εμι μι φερον καρπον ερι ετο κε παν το καρπον φερον καθερι ετο ινα καρπον,,18,0,0,True,False
 15,J 15:2,aleph,αυτο,αυτον,substitution_morphological,CONTENT το CONTENT CONTENT CONTENT αυτο ινα CONTENT CONTENT CONTENT,CONTENT το CONTENT CONTENT CONTENT αυτον ινα CONTENT CONTENT CONTENT,ετο,ετον,1,1,0,False,False
 15,J 15:2,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT αυτο ινα CONTENT CONTENT CONTENT,CONTENT CONTENT αυτον ινα CONTENT CONTENT CONTENT,πλιονα,πλιο,1,1,1,False,False
 15,J 15:2,A,CONTENT CONTENT,CONTENT CONTENT,substitution_word_order,CONTENT CONTENT CONTENT αυτο ινα CONTENT CONTENT CONTENT,CONTENT CONTENT CONTENT αυτο ινα CONTENT CONTENT CONTENT,καρπον πλιονα,πλιονα καρπον,2,2,0,False,False
@@ -3430,7 +3413,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 15,J 15:25,aleph,εν,[OMIT],omission,ινα CONTENT ο CONTENT ο εν τω CONTENT αυτων CONTENT οτι,ινα CONTENT ο CONTENT ο τω CONTENT αυτων CONTENT οτι,εν,,1,0,0,False,False
 15,J 15:25,aleph,CONTENT,CONTENT,substitution_morphological,ο CONTENT ο εν τω CONTENT αυτων CONTENT οτι CONTENT με,CONTENT ο CONTENT ο τω CONTENT αυτων CONTENT οτι CONTENT με,νομο,κοσμο,1,1,1,False,False
 15,J 15:25,A,εν τω CONTENT αυτων CONTENT,CONTENT εν τω CONTENT αυτων,substitution_word_order,ινα CONTENT ο CONTENT ο εν τω CONTENT αυτων CONTENT οτι CONTENT με CONTENT,ινα CONTENT ο CONTENT ο CONTENT εν τω CONTENT αυτων οτι CONTENT με CONTENT,εν το νομο ετον γεγραμενοσ,γεγραμενοσ εν το νομο ετον,5,5,0,False,False
-15,J 15:26,P66,ον εγω CONTENT υμιν παρα του CONTENT το CONTENT της CONTENT ο παρα του CONTENT CONTENT εκεινος CONTENT περι εμου,[OMIT],substitution_lexical,οταν CONTENT ο CONTENT ον εγω CONTENT υμιν παρα του CONTENT το CONTENT της CONTENT ο παρα του CONTENT CONTENT εκεινος CONTENT περι εμου,οταν CONTENT ο CONTENT,ον εγο πεμψο ιμιν παρα του πατροσ το πνειμα τισ αλιθιασ ο παρα του πατροσ εκπορειετε εκινοσ μαρτιρισι περι εμου,,20,0,0,True,False
 15,J 15:26,aleph,CONTENT,CONTENT,substitution_morphological,εγω CONTENT υμιν παρα του CONTENT το CONTENT της CONTENT ο,εγω CONTENT υμιν παρα του CONTENT το CONTENT της CONTENT ο,πατροσ,πετροσ,1,1,0,False,False
 15,J 15:26,A,[ADD],δε,addition,οταν CONTENT ο CONTENT ον εγω,οταν δε CONTENT ο CONTENT ον εγω,,δε,0,1,0,False,False
 15,J 15:26,D,[ADD],δε,addition,οταν CONTENT ο CONTENT ον εγω,οταν δε CONTENT ο CONTENT ον εγω,,δε,0,1,0,False,False
@@ -3439,28 +3421,19 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 15,J 15:26,D,[ADD],μου,addition,CONTENT ο παρα του CONTENT CONTENT εκεινος CONTENT περι εμου,CONTENT ο παρα του CONTENT μου CONTENT εκεινος CONTENT περι εμου,,μου,0,1,3,False,False
 15,J 15:27,D,δε,[OMIT],omission,και υμεις δε CONTENT οτι απ CONTENT μετ,και υμεις CONTENT οτι απ CONTENT μετ,δε,,1,0,0,False,False
 16,J 16:1,aleph,μη,[OMIT],omission,ταυτα CONTENT υμιν ινα μη CONTENT,ταυτα CONTENT υμιν ινα CONTENT,μι,,1,0,0,False,False
-16,J 16:2,P66,CONTENT CONTENT υμας αλλ CONTENT CONTENT ινα CONTENT ο CONTENT CONTENT CONTENT CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT υμας αλλ CONTENT CONTENT ινα CONTENT ο CONTENT CONTENT CONTENT CONTENT τω CONTENT,τω CONTENT,αποσιναγογουσ πιισουσι ιμασ αλα ερχετε ορα ινα πασ ο αποκτινασ δοξι λατριαν προσφεριν,,13,0,0,True,False
 16,J 16:2,aleph,CONTENT,γαρ CONTENT,substitution_morphological,CONTENT CONTENT υμας αλλ CONTENT CONTENT ινα,CONTENT γαρ CONTENT υμας αλλα CONTENT CONTENT ινα,πιισουσι,γαρ πιισοσι,1,2,0,False,False
 16,J 16:2,aleph,[ADD],υμας,addition,CONTENT ινα CONTENT ο CONTENT CONTENT CONTENT CONTENT τω CONTENT,CONTENT ινα CONTENT ο CONTENT υμας CONTENT CONTENT CONTENT τω CONTENT,,ιμασ,0,1,1,False,False
 16,J 16:2,A,[ADD],υμας,addition,CONTENT ινα CONTENT ο CONTENT CONTENT CONTENT CONTENT τω CONTENT,CONTENT ινα CONTENT ο CONTENT υμας CONTENT CONTENT CONTENT τω CONTENT,,ιμασ,0,1,0,False,False
 16,J 16:2,A,CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT CONTENT CONTENT τω CONTENT,υμας CONTENT CONTENT CONTENT τω CONTENT,θεο,κιριο,1,1,1,False,False
 16,J 16:2,D,[ADD],υμας,addition,CONTENT ινα CONTENT ο CONTENT CONTENT CONTENT CONTENT τω CONTENT,CONTENT ινα CONTENT ο CONTENT υμας CONTENT CONTENT CONTENT τω CONTENT,,ιμασ,0,1,0,False,False
-16,J 16:3,P66,και ταυτα CONTENT οτι ουκ,[OMIT],substitution_lexical,και ταυτα CONTENT οτι ουκ CONTENT τον CONTENT ουδε εμε,CONTENT,κε τετα πιισουσι οτι ουκ,,5,0,0,True,False
-16,J 16:3,P66,τον CONTENT ουδε εμε,[OMIT],substitution_lexical,ταυτα CONTENT οτι ουκ CONTENT τον CONTENT ουδε εμε,CONTENT,τον πατερα ουδε εμε,,4,0,1,True,False
 16,J 16:3,aleph,CONTENT,CONTENT υμιν,substitution_morphological,και ταυτα CONTENT οτι ουκ CONTENT τον CONTENT,και ταυτα CONTENT υμιν οτι ουκ CONTENT τον CONTENT,πιισουσι,πιισοσι ιμιν,1,2,0,False,False
 16,J 16:3,D,[ADD],CONTENT,addition,και ταυτα CONTENT οτι ουκ CONTENT τον CONTENT,και ταυτα CONTENT CONTENT οτι ουκ CONTENT τον CONTENT,,ιμιν,0,1,0,False,False
-16,J 16:4,P66,αλλα,[OMIT],substitution_lexical,αλλα ταυτα CONTENT υμιν ινα οταν,ταυτα CONTENT CONTENT,αλα,,1,0,0,True,False
-16,J 16:4,P66,υμιν ινα οταν CONTENT η,[OMIT],substitution_lexical,αλλα ταυτα CONTENT υμιν ινα οταν CONTENT η CONTENT αυτων CONTENT αυτων οτι,ταυτα CONTENT CONTENT οτι εγω,ιμιν ινα οταν ελθι ι,,5,0,1,True,False
-16,J 16:4,P66,αυτων CONTENT αυτων,[OMIT],substitution_lexical,ινα οταν CONTENT η CONTENT αυτων CONTENT αυτων οτι εγω CONTENT υμιν ταυτα,ταυτα CONTENT CONTENT οτι εγω CONTENT,ετον μνιμονειιτε ετον,,3,0,2,True,False
-16,J 16:4,P66,CONTENT υμιν ταυτα δε υμιν εξ,[OMIT],substitution_lexical,αυτων CONTENT αυτων οτι εγω CONTENT υμιν ταυτα δε υμιν εξ CONTENT ουκ CONTENT οτι μεθ,CONTENT οτι εγω CONTENT,ιπον ιμιν τετα δε ιμιν εξ,,6,0,3,True,False
-16,J 16:4,P66,ουκ CONTENT οτι μεθ υμων CONTENT,[OMIT],substitution_lexical,ταυτα δε υμιν εξ CONTENT ουκ CONTENT οτι μεθ υμων CONTENT,οτι εγω CONTENT,ουκ ιπον οτι μετα ιμον ιμιν,,6,0,4,True,False
 16,J 16:4,aleph,οταν,αν,substitution_morphological,αλλα ταυτα CONTENT υμιν ινα οταν CONTENT η CONTENT αυτων CONTENT,αλλα ταυτα CONTENT υμιν ινα αν CONTENT η CONTENT CONTENT αυτων,οταν,αν,1,1,0,False,False
 16,J 16:4,aleph,αυτων,[OMIT],omission,ινα οταν CONTENT η CONTENT αυτων CONTENT αυτων οτι εγω CONTENT,ινα αν CONTENT η CONTENT CONTENT αυτων οτι εγω CONTENT,ετον,,1,0,1,False,False
 16,J 16:4,aleph,υμιν,[OMIT],omission,CONTENT αυτων οτι εγω CONTENT υμιν ταυτα δε υμιν εξ CONTENT,CONTENT αυτων οτι εγω CONTENT ταυτα δε υμιν εξ CONTENT,ιμιν,,1,0,2,False,False
 16,J 16:4,D,αλλα,[OMIT],omission,αλλα ταυτα CONTENT υμιν ινα οταν,ταυτα CONTENT CONTENT ινα οταν,αλα,,1,0,0,False,False
 16,J 16:4,D,αυτων CONTENT αυτων,CONTENT,substitution_morphological,ινα οταν CONTENT η CONTENT αυτων CONTENT αυτων οτι εγω CONTENT υμιν ταυτα,ινα οταν CONTENT η CONTENT CONTENT οτι εγω CONTENT CONTENT ταυτα,ετον μνιμονειιτε ετον,μνιμονειτε,3,1,1,False,False
 16,J 16:4,D,υμιν εξ CONTENT,εξ CONTENT CONTENT,substitution_word_order,εγω CONTENT υμιν ταυτα δε υμιν εξ CONTENT ουκ CONTENT οτι μεθ υμων,εγω CONTENT CONTENT ταυτα δε εξ CONTENT CONTENT ουκ CONTENT οτι μεθ υμων,ιμιν εξ αρχισ,εξ αρχισ ιμιν,3,3,2,False,False
-16,J 16:5,P66,νυν δε CONTENT προς τον CONTENT με και ουδεις εξ,[OMIT],substitution_lexical,νυν δε CONTENT προς τον CONTENT με και ουδεις εξ υμων CONTENT με που CONTENT,υμων CONTENT με που CONTENT,νιν δε ιπαγο προσ τον πεμψαντα με κε ουδισ εξ,,10,0,0,True,False
 16,J 16:5,aleph,[ADD],εγω,addition,νυν δε CONTENT προς τον CONTENT με,νυν δε εγω CONTENT προς τον CONTENT με,,εγο,0,1,0,False,False
 16,J 16:5,aleph,CONTENT,CONTENT,substitution_morphological,εξ υμων CONTENT με που CONTENT,εξ υμων CONTENT με που CONTENT,ιπαγισ,ιπαγι,1,1,1,False,False
 16,J 16:6,P66,η CONTENT CONTENT υμων την CONTENT,[OMIT],omission,αλλ οτι ταυτα CONTENT υμιν η CONTENT CONTENT υμων την CONTENT,αλλ οτι ταυτα CONTENT υμιν,ι λιπι πεπλιροκε ιμον τιν καρδιαν,,6,0,0,False,False
@@ -3470,19 +3443,11 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:7,A,ου μη CONTENT,ουκ CONTENT,substitution_morphological,γαρ μη CONTENT ο CONTENT ου μη CONTENT προς υμας εαν δε CONTENT,εγω μη CONTENT ο CONTENT ουκ CONTENT προς υμας εαν δε CONTENT,ου μι ελθι,ουκ ελεισετε,3,2,1,False,False
 16,J 16:7,D,ου μη CONTENT,ουκ CONTENT,substitution_morphological,γαρ μη CONTENT ο CONTENT ου μη CONTENT προς υμας εαν δε CONTENT,γαρ μη CONTENT ο CONTENT ουκ CONTENT προς υμας εαν δε CONTENT,ου μι ελθι,ουκ ελεισετε,3,2,0,False,False
 16,J 16:9,aleph,ου,[OMIT],omission,περι CONTENT μεν οτι ου CONTENT εις εμε,περι CONTENT μεν οτι CONTENT εις εμε,ου,,1,0,0,False,False
-16,J 16:10,P66,περι CONTENT δε οτι προς τον CONTENT,[OMIT],substitution_lexical,περι CONTENT δε οτι προς τον CONTENT CONTENT και ουκετι CONTENT με,CONTENT,περι δικεοσινισ δε οτι προσ τον πατερα,,7,0,0,True,False
-16,J 16:10,P66,και ουκετι CONTENT με,[OMIT],substitution_lexical,οτι προς τον CONTENT CONTENT και ουκετι CONTENT με,CONTENT,κε ουκετι θεοριτε με,,4,0,1,True,False
 16,J 16:10,A,[ADD],μου,addition,δε οτι προς τον CONTENT CONTENT και ουκετι CONTENT με,δε οτι προς τον CONTENT μου CONTENT και ουκετι CONTENT με,,μου,0,1,0,False,False
-16,J 16:11,P66,περι δε,[OMIT],substitution_lexical,περι δε CONTENT οτι ο CONTENT του,CONTENT τουτου CONTENT,περι δε,,2,0,0,True,False
-16,J 16:11,P66,οτι ο CONTENT του CONTENT,[OMIT],substitution_lexical,περι δε CONTENT οτι ο CONTENT του CONTENT τουτου CONTENT,CONTENT τουτου CONTENT,οτι ο αρχον του κοσμου,,5,0,1,True,False
-16,J 16:12,P66,ετι CONTENT CONTENT υμιν,[OMIT],substitution_lexical,ετι CONTENT CONTENT υμιν CONTENT αλλ ου CONTENT CONTENT,CONTENT CONTENT,ετι πολα εχο ιμιν,,4,0,0,True,False
-16,J 16:12,P66,αλλ ου CONTENT CONTENT,[OMIT],substitution_lexical,ετι CONTENT CONTENT υμιν CONTENT αλλ ου CONTENT CONTENT CONTENT,CONTENT CONTENT,αλα ου δινασθε βασταζιν,,4,0,1,True,False
 16,J 16:12,aleph,CONTENT,[OMIT],omission,CONTENT αλλ ου CONTENT CONTENT CONTENT,CONTENT αλλ ου CONTENT CONTENT,αρτι,,1,0,0,False,False
 16,J 16:12,A,υμιν CONTENT,CONTENT υμιν,substitution_word_order,ετι CONTENT CONTENT υμιν CONTENT αλλ ου CONTENT CONTENT CONTENT,ετι CONTENT CONTENT CONTENT υμιν αλλ ου CONTENT CONTENT CONTENT,ιμιν λεγιν,λεγιν ιμιν,2,2,0,False,False
 16,J 16:12,D,υμιν CONTENT,CONTENT CONTENT,substitution_word_order,ετι CONTENT CONTENT υμιν CONTENT αλλ ου CONTENT CONTENT CONTENT,ετι CONTENT CONTENT CONTENT CONTENT αλλ ου CONTENT CONTENT CONTENT,ιμιν λεγιν,λεγιν ιμιν,2,2,0,False,False
 16,J 16:12,D,[ADD],CONTENT,addition,υμιν CONTENT αλλ ου CONTENT CONTENT CONTENT,CONTENT CONTENT αλλ ου CONTENT CONTENT CONTENT CONTENT,,ετα,0,1,1,False,False
-16,J 16:13,P66,δε CONTENT εκεινος το CONTENT της,[OMIT],substitution_lexical,οταν δε CONTENT εκεινος το CONTENT της CONTENT CONTENT υμας εις την,οταν CONTENT CONTENT ου γαρ,δε ελθι εκινοσ το πνειμα τισ,,6,0,0,True,False
-16,J 16:13,P66,CONTENT υμας εις την CONTENT CONTENT,CONTENT,substitution_lexical,εκεινος το CONTENT της CONTENT CONTENT υμας εις την CONTENT CONTENT ου γαρ CONTENT αφ εαυτου,οταν CONTENT CONTENT ου γαρ CONTENT αφ εαυτου,οδιγισι ιμασ ισ τιν αλιθιαν πασαν,πασι,6,1,1,True,False
 16,J 16:13,aleph,εις την CONTENT CONTENT,εν τη CONTENT,substitution_morphological,CONTENT της CONTENT CONTENT υμας εις την CONTENT CONTENT ου γαρ CONTENT αφ εαυτου,CONTENT της CONTENT CONTENT υμας εν τη CONTENT ου γαρ CONTENT αφ εαυτου,ισ τιν αλιθιαν πασαν,εν τι αλιθια,4,3,0,False,False
 16,J 16:13,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT αφ εαυτου αλλ CONTENT CONTENT CONTENT και τα CONTENT CONTENT,CONTENT αφ εαυτου αλλ CONTENT CONTENT CONTENT και τα CONTENT CONTENT,ακουσι,ακουι,1,1,1,False,False
 16,J 16:13,A,[ADD],εαν,addition,CONTENT αφ εαυτου αλλ CONTENT CONTENT CONTENT και τα CONTENT,CONTENT αφ εαυτου αλλ CONTENT εαν CONTENT CONTENT και τα CONTENT,,εαν,0,1,0,False,False
@@ -3507,7 +3472,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:17,D,CONTENT,CONTENT,substitution_morphological,CONTENT αυτου προς CONTENT τι CONTENT τουτο ο CONTENT ημιν CONTENT,CONTENT αυτου προς CONTENT τι CONTENT τουτο ο CONTENT CONTENT CONTENT,εστι,εστιν,1,1,1,False,False
 16,J 16:17,D,ου CONTENT,ουκετι CONTENT,substitution_lexical,ο CONTENT ημιν CONTENT και ου CONTENT με και παλιν CONTENT και,ο CONTENT CONTENT CONTENT και ουκετι CONTENT με και παλιν CONTENT και,ου θεοριτε,ουκετι οψεσθε,2,2,2,False,False
 16,J 16:17,D,[ADD],εγω,addition,και CONTENT με και οτι CONTENT προς τον CONTENT,και CONTENT με και οτι εγω CONTENT προς τον CONTENT,,εγο,0,1,3,False,False
-16,J 16:18,P66,τι CONTENT,CONTENT,substitution_lexical,CONTENT ουν τι CONTENT τουτο ο CONTENT CONTENT ουκ,CONTENT ουν CONTENT τουτο CONTENT ουκ CONTENT τι,τι εστι,εστ,2,1,0,True,False
 16,J 16:18,P66,ο CONTENT,[OMIT],omission,CONTENT ουν τι CONTENT τουτο ο CONTENT CONTENT ουκ CONTENT,CONTENT ουν CONTENT τουτο CONTENT ουκ CONTENT τι CONTENT,ο λεγι,,2,0,1,False,False
 16,J 16:18,P66,[ADD],τι CONTENT,addition,ο CONTENT CONTENT ουκ CONTENT,CONTENT τουτο CONTENT ουκ CONTENT τι CONTENT,,τι λαλι,0,2,2,False,False
 16,J 16:18,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT ουν τι CONTENT τουτο ο CONTENT CONTENT ουκ,CONTENT ουν τι CONTENT τουτο το CONTENT ουκ CONTENT,εστι,εστιν,1,1,0,False,False
@@ -3521,10 +3485,7 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:18,D,CONTENT,CONTENT,substitution_morphological,CONTENT ουν τι CONTENT τουτο ο CONTENT CONTENT ουκ,τι CONTENT τουτο το CONTENT ουκ CONTENT,εστι,εστιν,1,1,1,False,False
 16,J 16:18,D,ο CONTENT,το,substitution_lexical,CONTENT ουν τι CONTENT τουτο ο CONTENT CONTENT ουκ CONTENT,τι CONTENT τουτο το CONTENT ουκ CONTENT ο CONTENT,ο λεγι,το,2,1,2,False,False
 16,J 16:18,D,[ADD],ο CONTENT,addition,ο CONTENT CONTENT ουκ CONTENT,τουτο το CONTENT ουκ CONTENT ο CONTENT,,ο λεγι,0,2,3,False,False
-16,J 16:19,P66,CONTENT οτι,CONTENT CONTENT,substitution_lexical,CONTENT CONTENT οτι CONTENT αυτον CONTENT και CONTENT,CONTENT CONTENT CONTENT CONTENT αυτον CONTENT CONTENT αυτοις,ιισουσ οτι,ιμελον κ,2,2,0,True,True
 16,J 16:19,P66,και,[OMIT],omission,CONTENT οτι CONTENT αυτον CONTENT και CONTENT αυτοις περι τουτου CONTENT,CONTENT CONTENT CONTENT αυτον CONTENT CONTENT αυτοις περι τουτου CONTENT,κε,,1,0,1,False,False
-16,J 16:19,P66,μετ CONTENT οτι,[OMIT],substitution_lexical,CONTENT αυτοις περι τουτου CONTENT μετ CONTENT οτι CONTENT CONTENT και ου CONTENT,CONTENT αυτοις περι τουτου CONTENT CONTENT,μετα αλιλον οτι,,3,0,2,True,False
-16,J 16:19,P66,CONTENT και ου CONTENT με και παλιν CONTENT και CONTENT με,[OMIT],substitution_lexical,CONTENT μετ CONTENT οτι CONTENT CONTENT και ου CONTENT με και παλιν CONTENT και CONTENT με,περι τουτου CONTENT CONTENT,μικρον κε ου θεοριτε με κε παλιν μικρον κε οψεσθε με,,11,0,3,True,False
 16,J 16:19,aleph,[ADD],ο,addition,CONTENT CONTENT οτι CONTENT αυτον CONTENT,CONTENT ο CONTENT οτι CONTENT αυτον CONTENT,,ο,0,1,0,False,False
 16,J 16:19,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT οτι CONTENT αυτον CONTENT και CONTENT αυτοις,CONTENT ο CONTENT οτι CONTENT αυτον CONTENT και CONTENT αυτοις,ιθελον,ιμελον,1,1,1,False,False
 16,J 16:19,A,[ADD],ουν ο,addition,CONTENT CONTENT οτι CONTENT αυτον CONTENT,CONTENT ουν ο CONTENT οτι CONTENT αυτον CONTENT,,ουν ο,0,2,0,False,False
@@ -3533,7 +3494,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:19,D,[ADD],οτι,addition,CONTENT CONTENT οτι CONTENT αυτον CONTENT και,CONTENT ο CONTENT οτι οτι CONTENT αυτον CONTENT περι,,οτι,0,1,1,False,False
 16,J 16:19,D,CONTENT,CONTENT περι τουτου,substitution_lexical,CONTENT CONTENT οτι CONTENT αυτον CONTENT και CONTENT αυτοις περι τουτου,CONTENT οτι οτι CONTENT αυτον CONTENT περι τουτου και CONTENT αυτοις περι τουτου,εροταν,επεροτισε περι τουτου,1,3,2,False,False
 16,J 16:20,P66,αμην,[OMIT],omission,αμην αμην CONTENT υμιν οτι CONTENT,αμην CONTENT υμιν οτι CONTENT,αμιν,,1,0,0,False,False
-16,J 16:20,P66,και CONTENT υμεις ο δε CONTENT,[OMIT],substitution_lexical,αμην CONTENT υμιν οτι CONTENT και CONTENT υμεις ο δε CONTENT CONTENT υμεις CONTENT αλλ η,αμην CONTENT υμιν οτι CONTENT CONTENT υμεις CONTENT αλλ η,κε θρινισετε ιμισ ο δε κοσμοσ,,6,0,1,True,False
 16,J 16:20,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT υμιν οτι CONTENT και CONTENT υμεις ο δε CONTENT CONTENT,CONTENT υμιν οτι CONTENT και CONTENT CONTENT ο δε CONTENT CONTENT,θρινισετε,θρινισιτε,1,1,0,False,False
 16,J 16:20,A,[ADD],δε,addition,ο δε CONTENT CONTENT υμεις CONTENT αλλ η CONTENT υμων,ο δε CONTENT CONTENT υμεις δε CONTENT αλλ η CONTENT υμων,,δε,0,1,0,False,False
 16,J 16:21,P66,CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT οτι CONTENT η CONTENT αυτης οταν δε CONTENT το,CONTENT CONTENT οτι CONTENT η CONTENT αυτης οταν δε CONTENT το,ορα,ιμερα,1,1,0,True,True
@@ -3549,8 +3509,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:22,A,μεν CONTENT CONTENT,CONTENT,substitution_lexical,και υμεις ουν νυν μεν CONTENT CONTENT παλιν δε CONTENT υμας και,υμεις ουν CONTENT μεν νυν CONTENT παλιν δε CONTENT υμας και,μεν λιπιν εχετε,εξετε,3,1,1,False,False
 16,J 16:22,A,CONTENT,CONTENT,substitution_morphological,και την CONTENT υμων ουδεις CONTENT αφ υμων,και την CONTENT υμων ουδεις CONTENT αφ υμων,αρι,ερι,1,1,2,False,False
 16,J 16:22,D,CONTENT,CONTENT,substitution_morphological,υμεις ουν νυν μεν CONTENT CONTENT παλιν δε CONTENT υμας και,υμεις ουν νυν μεν CONTENT CONTENT παλιν δε CONTENT υμας και,εχετε,εξετε,1,1,0,False,False
-16,J 16:23,P66,αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT CONTENT υμιν εν τω,[OMIT],substitution_lexical,CONTENT εμε ουκ CONTENT ουδεν αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT CONTENT υμιν εν τω CONTENT μου,CONTENT εμε ουκ CONTENT ουδεν CONTENT,αμιν αμιν λεγο ιμιν αν τι ετισιτε τον πατερα δοσι ιμιν εν το,,13,0,0,True,False
-16,J 16:23,P66,μου,[OMIT],substitution_lexical,CONTENT υμιν εν τω CONTENT μου,ουκ CONTENT ουδεν CONTENT,μου,,1,0,1,True,False
 16,J 16:23,aleph,[ADD],οτι ο,addition,ουδεν αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT,ουδεν αμην αμην CONTENT υμιν οτι ο αν CONTENT τον CONTENT CONTENT,,οτι ο,0,2,0,False,False
 16,J 16:23,aleph,τι,[OMIT],omission,αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT CONTENT υμιν,CONTENT υμιν οτι ο αν CONTENT τον CONTENT CONTENT υμιν,τι,,1,0,1,False,False
 16,J 16:23,A,[ADD],οτι,addition,ουδεν αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT,ουδεν αμην αμην CONTENT υμιν οτι αν CONTENT τον CONTENT εν,,οτι,0,1,0,False,False
@@ -3558,7 +3516,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:23,A,CONTENT υμιν εν τω CONTENT μου,εν τω CONTENT μου CONTENT υμιν,substitution_word_order,αν τι CONTENT τον CONTENT CONTENT υμιν εν τω CONTENT μου,οτι αν CONTENT τον CONTENT εν τω CONTENT μου CONTENT υμιν,δοσι ιμιν εν το ονοματι μου,εν το ονοματι μου δοσι ιμιν,6,6,2,False,False
 16,J 16:23,D,αν,εαν,substitution_morphological,ουδεν αμην αμην CONTENT υμιν αν τι CONTENT τον CONTENT CONTENT,ουδεν αμην αμην CONTENT CONTENT εαν τι CONTENT τον CONTENT εν,αν,εαν,1,1,0,False,False
 16,J 16:23,D,CONTENT υμιν εν τω CONTENT μου,εν τω CONTENT μου CONTENT CONTENT,substitution_word_order,αν τι CONTENT τον CONTENT CONTENT υμιν εν τω CONTENT μου,εαν τι CONTENT τον CONTENT εν τω CONTENT μου CONTENT CONTENT,δοσι ιμιν εν το ονοματι μου,εν το ονοματι μου δοσι ιμιν,6,6,1,False,False
-16,J 16:24,P66,εως CONTENT ουκ CONTENT,CONTENT,substitution_lexical,εως CONTENT ουκ CONTENT ουδεν εν τω CONTENT μου,CONTENT ουδεν εν τω CONTENT μου,εοσ αρτι ουκ ιτισατε,σατε,4,1,0,True,False
 16,J 16:24,P66,CONTENT,CONTENT,substitution_morphological,ουδεν εν τω CONTENT μου CONTENT και CONTENT ινα η CONTENT,ουδεν εν τω CONTENT μου CONTENT και CONTENT ινα η CONTENT,ετιτε,ετισασθε,1,1,1,True,True
 16,J 16:24,aleph,CONTENT,CONTENT,substitution_morphological,ουδεν εν τω CONTENT μου CONTENT και CONTENT ινα η CONTENT,ουδεν εν τω CONTENT μου CONTENT και CONTENT ινα η CONTENT,ετιτε,ετισασθε,1,1,0,False,False
 16,J 16:24,A,CONTENT,CONTENT,substitution_morphological,εως CONTENT ουκ CONTENT ουδεν εν τω CONTENT μου,εως CONTENT ουκ CONTENT ουδεν εν τω CONTENT μου,ιτισατε,ιτισασθε,1,1,0,False,False
@@ -3572,16 +3529,12 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:27,P66,του CONTENT,CONTENT,substitution_lexical,και CONTENT οτι εγω παρα του CONTENT CONTENT,και CONTENT οτι εγω παρα CONTENT CONTENT,του πατροσ,θεου,2,1,0,False,False
 16,J 16:27,aleph,εμε,με,substitution_morphological,CONTENT CONTENT υμας οτι υμεις εμε CONTENT και CONTENT οτι εγω,CONTENT CONTENT υμας οτι υμεις με CONTENT και CONTENT οτι εγω,εμε,με,1,1,0,False,False
 16,J 16:27,aleph,του CONTENT,CONTENT,substitution_lexical,και CONTENT οτι εγω παρα του CONTENT CONTENT,και CONTENT οτι εγω παρα CONTENT CONTENT,του πατροσ,θεου,2,1,1,False,False
-16,J 16:27,A,οτι υμεις εμε,[OMIT],substitution_lexical,γαρ ο CONTENT CONTENT υμας οτι υμεις εμε CONTENT και CONTENT οτι εγω,γαρ ο CONTENT CONTENT υμας CONTENT και CONTENT οτι εγω,οτι ιμισ εμε,,3,0,0,True,False
 16,J 16:27,A,του CONTENT,CONTENT,substitution_lexical,και CONTENT οτι εγω παρα του CONTENT CONTENT,και CONTENT οτι εγω παρα CONTENT CONTENT,του πατροσ,θεου,2,1,1,False,False
 16,J 16:28,P66,εκ,παρα,substitution_lexical,CONTENT εκ του CONTENT και CONTENT εις,CONTENT παρα του CONTENT και CONTENT εις,εκ,παρα,1,1,0,True,False
-16,J 16:28,P66,τον CONTENT και,[OMIT],substitution_lexical,εις τον CONTENT παλιν CONTENT τον CONTENT και CONTENT προς τον CONTENT,εις τον CONTENT παλιν CONTENT CONTENT,τον κοσμον κε,,3,0,1,True,False
-16,J 16:28,P66,προς τον CONTENT,[OMIT],substitution_lexical,CONTENT τον CONTENT και CONTENT προς τον CONTENT,CONTENT παλιν CONTENT CONTENT,προσ τον πατερα,,3,0,2,True,False
 16,J 16:28,aleph,εκ,παρα,substitution_lexical,CONTENT εκ του CONTENT και CONTENT εις,CONTENT παρα του CONTENT και CONTENT εις,εκ,παρα,1,1,0,False,False
 16,J 16:28,A,εκ,παρα,substitution_lexical,CONTENT εκ του CONTENT και CONTENT εις,CONTENT παρα του CONTENT και CONTENT εις,εκ,παρα,1,1,0,False,False
 16,J 16:28,D,CONTENT εκ του CONTENT,[OMIT],omission,CONTENT εκ του CONTENT και CONTENT εις τον CONTENT,και CONTENT εις τον CONTENT,εξιλθον εκ του πατροσ,,4,0,0,False,False
 16,J 16:28,D,CONTENT,CONTENT,substitution_lexical,CONTENT εκ του CONTENT και CONTENT εις τον CONTENT παλιν CONTENT,και CONTENT εις τον CONTENT παλιν CONTENT,ελιλιθα,ιλθον,1,1,1,False,False
-16,J 16:29,P66,CONTENT οι CONTENT αυτου,[OMIT],substitution_lexical,CONTENT οι CONTENT αυτου ιδε νυν εν CONTENT CONTENT,ιδε νυν CONTENT CONTENT και,λεγουσι ι μαθιτε ετου,,4,0,0,True,False
 16,J 16:29,P66,εν,[OMIT],omission,οι CONTENT αυτου ιδε νυν εν CONTENT CONTENT και CONTENT CONTENT,ιδε νυν CONTENT CONTENT και CONTENT CONTENT,εν,,1,0,1,False,False
 16,J 16:29,aleph,αυτου,αυτω,substitution_morphological,CONTENT οι CONTENT αυτου ιδε νυν εν CONTENT CONTENT,CONTENT οι CONTENT αυτω ιδε νυν εν CONTENT CONTENT,ετου,ετο,1,1,0,False,False
 16,J 16:29,A,[ADD],αυτω,addition,CONTENT οι CONTENT αυτου ιδε νυν,CONTENT αυτω οι CONTENT αυτου ιδε νυν,,ετο,0,1,0,False,False
@@ -3603,10 +3556,8 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 16,J 16:33,P66,[ADD],δε,addition,ταυτα CONTENT υμιν ινα εν εμοι,ταυτα δε CONTENT υμιν ινα εν εμοι,,δε,0,1,0,False,False
 16,J 16:33,P66,εν τω CONTENT CONTENT CONTENT,[OMIT],omission,ινα εν εμοι CONTENT CONTENT εν τω CONTENT CONTENT CONTENT αλλα CONTENT εγω CONTENT τον,ινα εν εμοι CONTENT CONTENT αλλα CONTENT εγω CONTENT τον,εν το κοσμο θλιψιν εχετε,,5,0,1,False,False
 16,J 16:33,D,CONTENT,CONTENT,substitution_morphological,CONTENT εν τω CONTENT CONTENT CONTENT αλλα CONTENT εγω CONTENT τον,CONTENT εν τω CONTENT CONTENT CONTENT αλλα CONTENT εγω CONTENT τον,εχετε,εξετε,1,1,0,False,False
-17,J 17:1,P66,CONTENT και CONTENT,CONTENT,substitution_lexical,ταυτα CONTENT CONTENT και CONTENT τους CONTENT αυτου εις τον,ταυτα CONTENT CONTENT τους CONTENT εις τον CONTENT,ιισουσ κε επαρασ,παρασ,3,1,0,True,False
 17,J 17:1,P66,αυτου,[OMIT],omission,CONTENT και CONTENT τους CONTENT αυτου εις τον CONTENT CONTENT CONTENT,CONTENT CONTENT τους CONTENT εις τον CONTENT CONTENT τον,ετου,,1,0,1,False,False
 17,J 17:1,P66,CONTENT CONTENT η CONTENT CONTENT σου,[OMIT],omission,αυτου εις τον CONTENT CONTENT CONTENT CONTENT η CONTENT CONTENT σου τον CONTENT ινα ο CONTENT,CONTENT εις τον CONTENT CONTENT τον CONTENT ινα,πατερ ελιλιθε ι ορα δοξασον σου,,6,0,2,False,False
-17,J 17:1,P66,ο CONTENT CONTENT σε,[OMIT],substitution_lexical,CONTENT σου τον CONTENT ινα ο CONTENT CONTENT σε,CONTENT CONTENT τον CONTENT ινα,ο ιιοσ δοξασι σε,,4,0,3,True,False
 17,J 17:1,aleph,CONTENT,CONTENT,substitution_morphological,ταυτα CONTENT CONTENT και CONTENT τους CONTENT,ταυτα CONTENT CONTENT και CONTENT τους CONTENT,ελαλισε,λελαλικε,1,1,0,False,False
 17,J 17:1,A,[ADD],ο,addition,ταυτα CONTENT CONTENT και CONTENT τους CONTENT,ταυτα CONTENT ο CONTENT και CONTENT τους CONTENT,,ο,0,1,0,False,False
 17,J 17:1,A,CONTENT,CONTENT,substitution_morphological,ταυτα CONTENT CONTENT και CONTENT τους CONTENT αυτου εις τον,ταυτα CONTENT ο CONTENT και CONTENT τους CONTENT αυτου εις τον,επαρασ,επιρε,1,1,1,False,False
@@ -3643,7 +3594,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:6,A,CONTENT,CONTENT,substitution_morphological,CONTENT και τον CONTENT σου CONTENT,CONTENT και τον CONTENT σου CONTENT,τετιρικαν,τετιρικασι,1,1,1,False,False
 17,J 17:6,D,σου το CONTENT,το CONTENT σου,substitution_word_order,CONTENT σου το CONTENT τοις CONTENT ους CONTENT μοι,CONTENT το CONTENT σου τοις CONTENT ους CONTENT μοι,σου το ονομα,το ονομα σου,3,3,0,False,False
 17,J 17:6,D,CONTENT,και εμοι,substitution_morphological,εκ του CONTENT σοι CONTENT CONTENT αυτους CONTENT και τον CONTENT,εκ του CONTENT σοι CONTENT και εμοι αυτους CONTENT και τον CONTENT,καμι,κε εμι,1,2,1,False,False
-17,J 17:7,P66,CONTENT μοι παρα σου CONTENT,[OMIT],substitution_lexical,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι παρα σου CONTENT,νυν CONTENT οτι CONTENT CONTENT,εδοκεσ μι παρα σου ισι,,5,0,0,True,False
 17,J 17:7,aleph,CONTENT,CONTENT,substitution_morphological,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι,εγνοκαν,εγνον,1,1,0,False,False
 17,J 17:7,aleph,CONTENT,CONTENT,substitution_morphological,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι παρα σου CONTENT,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι παρα σου CONTENT,εδοκεσ,δεδοκασ,1,1,1,False,False
 17,J 17:7,A,CONTENT,CONTENT,substitution_morphological,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι,εγνοκαν,εγνοκα,1,1,0,False,False
@@ -3651,7 +3601,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:7,A,CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT μοι παρα σου CONTENT,CONTENT CONTENT μοι παρα σου CONTENT,ισι,εστιν,1,1,2,False,False
 17,J 17:7,D,CONTENT,CONTENT,substitution_morphological,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι παρα σου CONTENT,νυν CONTENT οτι CONTENT CONTENT CONTENT μοι παρα σου CONTENT,εδοκεσ,δεδοκασ,1,1,0,False,False
 17,J 17:7,D,CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT μοι παρα σου CONTENT,CONTENT CONTENT μοι παρα σου CONTENT,ισι,εστιν,1,1,1,False,False
-17,J 17:8,P66,οτι τα CONTENT α CONTENT μοι CONTENT αυτοις και αυτοι CONTENT και,[OMIT],substitution_lexical,οτι τα CONTENT α CONTENT μοι CONTENT αυτοις και αυτοι CONTENT και CONTENT CONTENT οτι παρα σου,CONTENT CONTENT οτι παρα σου,οτι τα ριματα α εδοκεσ μι δεδοκα ετισ κε ετι ελαβον κε,,12,0,0,True,False
 17,J 17:8,aleph,CONTENT,CONTENT,substitution_morphological,οτι τα CONTENT α CONTENT μοι CONTENT αυτοις και αυτοι,οτι τα CONTENT α CONTENT μοι CONTENT αυτοις και αυτοι,εδοκεσ,δεδοκασ,1,1,0,False,False
 17,J 17:8,aleph,και CONTENT,[OMIT],omission,CONTENT αυτοις και αυτοι CONTENT και CONTENT CONTENT οτι παρα σου CONTENT,CONTENT αυτοις και αυτοι CONTENT CONTENT οτι παρα σου CONTENT,κε εγνοσαν,,2,0,1,False,False
 17,J 17:8,aleph,CONTENT,CONTENT,substitution_morphological,οτι παρα σου CONTENT και CONTENT οτι συ με CONTENT,οτι παρα σου CONTENT και CONTENT οτι συ με CONTENT,επιστεισαν,επιστεισασ,1,1,2,False,False
@@ -3667,7 +3616,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:10,aleph,τα CONTENT CONTENT CONTENT CONTENT και τα CONTENT CONTENT,εμοι αυτους CONTENT,substitution_lexical,και τα CONTENT CONTENT CONTENT CONTENT και τα CONTENT CONTENT και CONTENT εν αυτοις,και εμοι αυτους CONTENT και CONTENT εν αυτοις,τα εμα παντα σα εστιν κε τα σα εμα,εμι ετουσ εδοκασ,9,3,0,False,False
 17,J 17:10,D,[ADD],CONTENT,addition,CONTENT και τα CONTENT CONTENT και CONTENT εν αυτοις,CONTENT και τα CONTENT CONTENT CONTENT και CONTENT με εν αυτοις,,εστιν,0,1,0,False,False
 17,J 17:10,D,CONTENT,CONTENT με,substitution_morphological,και τα CONTENT CONTENT και CONTENT εν αυτοις,τα CONTENT CONTENT CONTENT και CONTENT με εν αυτοις,δεδοξασμε,εδοξασασ με,1,2,1,False,False
-17,J 17:11,P66,αυτοι εν,[OMIT],substitution_lexical,CONTENT εν τω CONTENT και αυτοι εν τω CONTENT CONTENT CONTENT προς,CONTENT εν τω CONTENT και τω CONTENT CONTENT και εγω,ετι εν,,2,0,0,True,False
 17,J 17:11,P66,CONTENT,και εγω,substitution_morphological,αυτοι εν τω CONTENT CONTENT CONTENT προς σε CONTENT CONTENT CONTENT,και τω CONTENT CONTENT και εγω προς σε CONTENT CONTENT CONTENT,καγο,κε εγο,1,2,1,True,False
 17,J 17:11,P66,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT προς σε CONTENT CONTENT CONTENT CONTENT αυτους εν τω,και εγω προς σε CONTENT CONTENT CONTENT CONTENT αυτους εν τω,πατιρ,πατερ,1,1,2,False,False
 17,J 17:11,P66,σου,μου,substitution_morphological,CONTENT αυτους εν τω CONTENT σου ω CONTENT μοι ινα CONTENT,CONTENT αυτους εν τω CONTENT μου ω CONTENT μοι,σου,μου,1,1,3,False,False
@@ -3689,7 +3637,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:12,P66,εγω,ω,substitution_lexical,οτε CONTENT μετ αυτων εγω CONTENT αυτους εν τω CONTENT,οτε CONTENT μετ αυτων ω CONTENT αυτους εν τω CONTENT,εγο,ο,1,1,1,True,False
 17,J 17:12,P66,σου ω CONTENT μοι,μου,substitution_lexical,CONTENT αυτους εν τω CONTENT σου ω CONTENT μοι και CONTENT και ουδεις εξ,CONTENT αυτους εν τω CONTENT μου και CONTENT και ουδεις αυτων,σου ο δεδοκασ μι,μου,4,1,2,False,False
 17,J 17:12,P66,εξ,[OMIT],omission,μοι και CONTENT και ουδεις εξ αυτων CONTENT ει μη ο,μου και CONTENT και ουδεις αυτων CONTENT ει μη ο,εξ,,1,0,3,False,False
-17,J 17:12,P66,ινα η CONTENT CONTENT,[OMIT],substitution_lexical,μη ο CONTENT της CONTENT ινα η CONTENT CONTENT,μη ο CONTENT της CONTENT,ινα ι γραφι πλιροθι,,4,0,4,True,False
 17,J 17:12,aleph,CONTENT,CONTENT,substitution_morphological,οτε CONTENT μετ αυτων εγω CONTENT αυτους,οτε CONTENT μετ αυτων εγω CONTENT αυτους,ιμε,ιμιν,1,1,0,False,False
 17,J 17:12,aleph,[ADD],CONTENT,addition,CONTENT αυτους εν τω CONTENT σου ω CONTENT μοι και,CONTENT αυτους εν τω CONTENT CONTENT σου και CONTENT και CONTENT,,κ,0,1,1,False,False
 17,J 17:12,aleph,ω CONTENT μοι,[OMIT],omission,αυτους εν τω CONTENT σου ω CONTENT μοι και CONTENT και ουδεις εξ,εν τω CONTENT CONTENT σου και CONTENT και CONTENT εξ,ο δεδοκασ μι,,3,0,2,False,False
@@ -3701,7 +3648,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:12,D,CONTENT,CONTENT,substitution_morphological,οτε CONTENT μετ αυτων εγω CONTENT αυτους,οτε CONTENT μετ αυτων εγω CONTENT αυτους,ιμε,ιμιν,1,1,0,False,False
 17,J 17:12,D,ω,ους,substitution_lexical,αυτους εν τω CONTENT σου ω CONTENT μοι και CONTENT και,αυτους εν τω CONTENT σου ους CONTENT μοι CONTENT και ουδεις,ο,ουσ,1,1,1,False,False
 17,J 17:12,D,και,[OMIT],omission,CONTENT σου ω CONTENT μοι και CONTENT και ουδεις εξ αυτων,CONTENT σου ους CONTENT μοι CONTENT και ουδεις εξ αυτων,κε,,1,0,2,False,False
-17,J 17:13,P66,νυν δε προς,[OMIT],substitution_lexical,νυν δε προς σε CONTENT και ταυτα CONTENT,σε CONTENT και ταυτα CONTENT,νιν δε προσ,,3,0,0,True,False
 17,J 17:13,P66,εαυτοις,αυτοις,substitution_morphological,CONTENT την CONTENT CONTENT εν εαυτοις,CONTENT την CONTENT CONTENT εν αυτοις,εετισ,ετισ,1,1,1,False,False
 17,J 17:13,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT την CONTENT την CONTENT CONTENT εν εαυτοις,CONTENT την CONTENT την CONTENT CONTENT εν αυτοις,πεπλιρομενιν,πεπλιροκενιν,1,1,0,False,False
 17,J 17:13,aleph,εαυτοις,αυτοις,substitution_morphological,CONTENT την CONTENT CONTENT εν εαυτοις,CONTENT την CONTENT CONTENT εν αυτοις,εετισ,ετισ,1,1,1,False,False
@@ -3765,8 +3711,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:23,D,εμε,συ με,substitution_lexical,CONTENT και CONTENT αυτους καθως εμε CONTENT,CONTENT και CONTENT αυτους καθως συ με CONTENT,εμε,σι με,1,2,4,False,False
 17,J 17:24,P66,CONTENT,CONTENT,substitution_morphological,CONTENT ο CONTENT μοι CONTENT ινα,CONTENT ο CONTENT μοι CONTENT ινα,πατιρ,πατερ,1,1,0,False,False
 17,J 17:24,P66,CONTENT εγω,εγω CONTENT,substitution_word_order,CONTENT μοι CONTENT ινα CONTENT CONTENT εγω CONTENT CONTENT μετ εμου ινα,CONTENT μοι CONTENT ινα CONTENT εγω CONTENT CONTENT CONTENT μετ εμου ινα,ιμι εγο,εγο ιμι,2,2,1,True,False
-17,J 17:24,P66,CONTENT,[OMIT],substitution_lexical,την CONTENT την CONTENT ην CONTENT μοι οτι CONTENT με προ,την CONTENT την CONTENT ην μοι οτι CONTENT,εδοκασ,,1,0,2,True,False
-17,J 17:24,P66,με προ CONTENT CONTENT,[OMIT],substitution_lexical,ην CONTENT μοι οτι CONTENT με προ CONTENT CONTENT,ην μοι οτι CONTENT,με προ καταβολισ κοσμου,,4,0,3,True,False
 17,J 17:24,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT ο CONTENT μοι CONTENT ινα,CONTENT ο CONTENT μοι CONTENT ινα,πατιρ,πατερ,1,1,0,False,False
 17,J 17:24,aleph,CONTENT,CONTENT,substitution_morphological,την CONTENT την CONTENT ην CONTENT μοι οτι CONTENT με προ,την CONTENT την CONTENT ην CONTENT μοι οτι CONTENT με προ,εδοκασ,δεδοκασ,1,1,1,False,False
 17,J 17:24,A,ο CONTENT,ους CONTENT,substitution_morphological,CONTENT ο CONTENT μοι CONTENT ινα CONTENT CONTENT,CONTENT ους CONTENT μοι CONTENT ινα CONTENT CONTENT,ο δεδοκασ,ουσ εδοκασ,2,2,0,False,False
@@ -3775,7 +3719,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 17,J 17:24,D,CONTENT,CONTENT,substitution_morphological,CONTENT ο CONTENT μοι CONTENT ινα,CONTENT ο CONTENT μοι CONTENT ινα,πατιρ,πατερ,1,1,0,False,False
 17,J 17:24,D,την CONTENT,[OMIT],omission,εμου ινα CONTENT την CONTENT την CONTENT ην CONTENT μοι οτι CONTENT,εμου ινα CONTENT την CONTENT ην CONTENT μοι οτι CONTENT,τιν εμιν,,2,0,1,False,False
 17,J 17:24,D,CONTENT,CONTENT,substitution_morphological,την CONTENT την CONTENT ην CONTENT μοι οτι CONTENT με προ,ινα CONTENT την CONTENT ην CONTENT μοι οτι CONTENT με προ,εδοκασ,δεδοκασ,1,1,2,False,False
-17,J 17:25,P66,CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT και ο CONTENT σε,CONTENT και ο CONTENT σε,πατιρ,,1,0,0,True,False
 17,J 17:25,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT και ο CONTENT σε,CONTENT CONTENT και ο CONTENT σε,πατιρ,πατερ,1,1,0,False,False
 17,J 17:25,A,σε,[OMIT],omission,σε ουκ CONTENT εγω δε σε CONTENT και ουτοι CONTENT οτι,σε ουκ CONTENT εγω δε CONTENT και ουτοι CONTENT οτι,σε,,1,0,0,False,False
 17,J 17:25,D,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT και ο CONTENT σε,CONTENT CONTENT ο CONTENT CONTENT σε,πατιρ,πατερ,1,1,0,False,False
@@ -3792,7 +3735,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 18,J 18:1,A,των,του,substitution_morphological,CONTENT αυτου CONTENT του CONTENT των CONTENT CONTENT ην CONTENT εις,CONTENT αυτου CONTENT του CONTENT του CONTENT CONTENT ην CONTENT εις,τον,του,1,1,1,False,False
 18,J 18:1,D,[ADD],ο,addition,ταυτα CONTENT CONTENT CONTENT συν τοις CONTENT,ταυτα CONTENT ο CONTENT CONTENT συν τοις CONTENT,,ο,0,1,0,False,False
 18,J 18:1,D,των CONTENT,του CONTENT,substitution_morphological,CONTENT αυτου CONTENT του CONTENT των CONTENT CONTENT ην CONTENT εις ον,CONTENT αυτου CONTENT του CONTENT του CONTENT CONTENT ην CONTENT εις ον,τον κεδρον,του κεδρου,2,2,1,False,False
-18,J 18:2,P66,και CONTENT ο CONTENT αυτον,[OMIT],substitution_lexical,CONTENT δε και CONTENT ο CONTENT αυτον τον CONTENT οτι CONTENT CONTENT,CONTENT CONTENT τον CONTENT οτι CONTENT CONTENT,κε ιουδασ ο παραδιδουσ ετον,,5,0,0,True,False
 18,J 18:2,P66,[ADD],CONTENT,addition,CONTENT οτι CONTENT CONTENT CONTENT μετα των CONTENT αυτου CONTENT,CONTENT οτι CONTENT CONTENT CONTENT CONTENT μετα των CONTENT,,εκι,0,1,1,True,False
 18,J 18:2,P66,αυτου CONTENT,[OMIT],omission,CONTENT CONTENT μετα των CONTENT αυτου CONTENT,CONTENT CONTENT μετα των CONTENT,ετου εκι,,2,0,2,False,False
 18,J 18:2,aleph,μετα των CONTENT αυτου CONTENT,CONTENT μετα των CONTENT αυτου,substitution_word_order,CONTENT οτι CONTENT CONTENT CONTENT μετα των CONTENT αυτου CONTENT,CONTENT οτι CONTENT CONTENT CONTENT CONTENT μετα των CONTENT αυτου,μετα τον μαθιτον ετου εκι,εκι μετα τον μαθιτον ετου,5,5,0,False,False
@@ -3811,7 +3753,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 18,J 18:4,aleph,CONTENT και CONTENT,CONTENT CONTENT,substitution_lexical,CONTENT τα CONTENT επ αυτον CONTENT και CONTENT αυτοις τινα CONTENT,CONTENT τα CONTENT επ αυτον CONTENT CONTENT αυτοις τινα CONTENT,εξιλθε κε λεγι,εξελθον ιπε,3,2,1,False,False
 18,J 18:4,A,CONTENT και CONTENT,CONTENT CONTENT,substitution_lexical,CONTENT τα CONTENT επ αυτον CONTENT και CONTENT αυτοις τινα CONTENT,CONTENT τα CONTENT επ αυτον CONTENT CONTENT αυτοις τινα CONTENT,εξιλθε κε λεγι,εξελθον ιπε,3,2,0,False,False
 18,J 18:4,D,ουν CONTENT,δε CONTENT,substitution_lexical,CONTENT ουν CONTENT CONTENT τα CONTENT επ αυτον,CONTENT δε CONTENT CONTENT τα CONTENT επ αυτον,ουν ιδοσ,δε ιδον,2,2,0,False,False
-18,J 18:5,P66,CONTENT αυτοις εγω CONTENT CONTENT,[OMIT],substitution_lexical,CONTENT αυτω CONTENT τον CONTENT CONTENT αυτοις εγω CONTENT CONTENT CONTENT δε και CONTENT ο,CONTENT αυτω CONTENT τον CONTENT CONTENT δε και CONTENT μετ,λεγι ετισ εγο ιμι ιισουσ,,5,0,0,True,False
 18,J 18:5,P66,ο CONTENT αυτον,[OMIT],omission,CONTENT CONTENT δε και CONTENT ο CONTENT αυτον μετ αυτων,CONTENT δε και CONTENT μετ αυτων,ο παραδιδουσ ετον,,3,0,1,False,False
 18,J 18:5,aleph,εγω CONTENT CONTENT,CONTENT εγω CONTENT,substitution_word_order,CONTENT τον CONTENT CONTENT αυτοις εγω CONTENT CONTENT CONTENT δε και CONTENT ο,CONTENT τον CONTENT CONTENT αυτοις CONTENT εγω CONTENT CONTENT δε και CONTENT ο,εγο ιμι ιισουσ,ιισουσ εγο ιμι,3,3,0,False,False
 18,J 18:5,A,[ADD],ο CONTENT,addition,CONTENT τον CONTENT CONTENT αυτοις εγω CONTENT CONTENT CONTENT δε,CONTENT τον CONTENT CONTENT αυτοις ο CONTENT εγω CONTENT CONTENT δε και,,ο ιισουσ,0,2,0,False,False
@@ -3885,7 +3826,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 18,J 18:21,A,CONTENT,CONTENT,substitution_morphological,τι με CONTENT CONTENT τους CONTENT τι CONTENT αυτοις,τι με CONTENT CONTENT τους CONTENT τι CONTENT αυτοις,εροτισον,επεροτισον,1,1,0,False,False
 18,J 18:21,A,CONTENT,CONTENT,substitution_morphological,τι με CONTENT CONTENT τους CONTENT τι CONTENT αυτοις ιδε ουτοι,τι με CONTENT CONTENT τους CONTENT τι CONTENT αυτοις ιδε ουτοι,ακικοοτασ,ακικοατασ,1,1,1,False,False
 18,J 18:22,A,CONTENT των CONTENT,των CONTENT CONTENT,substitution_word_order,ταυτα δε αυτου CONTENT εις CONTENT των CONTENT CONTENT CONTENT τω CONTENT CONTENT,ταυτα δε αυτου CONTENT εις των CONTENT CONTENT CONTENT CONTENT τω CONTENT CONTENT,παρεστικοσ τον ιπιρετον,τον ιπιρετον παρεστικοσ,3,3,0,False,False
-18,J 18:23,P66,CONTENT αυτω CONTENT ει,[OMIT],substitution_lexical,CONTENT αυτω CONTENT ει CONTENT CONTENT CONTENT περι του,CONTENT CONTENT CONTENT περι του,απεκριθι ετο ιισουσ ι,,4,0,0,True,False
 18,J 18:23,aleph,CONTENT,ο δε CONTENT CONTENT,substitution_lexical,CONTENT αυτω CONTENT ει CONTENT CONTENT,ο δε CONTENT CONTENT αυτω ει CONTENT CONTENT CONTENT,απεκριθι,ο δε ιισουσ ιπε,1,4,0,False,False
 18,J 18:23,aleph,CONTENT,[OMIT],omission,CONTENT αυτω CONTENT ει CONTENT CONTENT CONTENT περι,ο δε CONTENT CONTENT αυτω ει CONTENT CONTENT CONTENT περι,ιισουσ,,1,0,1,False,False
 18,J 18:23,aleph,CONTENT,CONTENT,substitution_lexical,CONTENT αυτω CONTENT ει CONTENT CONTENT CONTENT περι του CONTENT ει,CONTENT CONTENT αυτω ει CONTENT CONTENT CONTENT περι του CONTENT ει,ελαλισα,ιπον,1,1,2,False,False
@@ -3910,7 +3850,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 18,J 18:30,A,CONTENT,CONTENT,substitution_morphological,CONTENT και CONTENT αυτω ει μη ην ουτος,CONTENT και CONTENT αυτω ει μη ην ουτος,ιπαν,ιπον,1,1,0,False,False
 18,J 18:30,A,CONTENT CONTENT,CONTENT,substitution_morphological,αυτω ει μη ην ουτος CONTENT CONTENT ουκ αν σοι CONTENT αυτον,αυτω ει μη ην ουτος CONTENT ουκ αν σοι CONTENT αυτον,κακον πιον,κακοπιοσ,2,1,1,False,False
 18,J 18:31,P66,[ADD],ουν,addition,CONTENT ουν αυτοις CONTENT CONTENT αυτον υμεις και κατα τον,CONTENT ουν αυτοις CONTENT CONTENT ουν αυτον υμεις και κατα τον,,ουν,0,1,0,False,False
-18,J 18:31,P66,υμων CONTENT αυτον CONTENT,[OMIT],substitution_lexical,υμεις και κατα τον CONTENT υμων CONTENT αυτον CONTENT αυτω οι CONTENT ημιν ουκ,υμεις και κατα τον CONTENT αυτω οι CONTENT ημιν ουκ,ιμον κρινατε ετον ιπον,,4,0,1,True,False
 18,J 18:31,aleph,[ADD],ο,addition,CONTENT ουν αυτοις CONTENT CONTENT αυτον υμεις και,CONTENT ουν αυτοις ο CONTENT CONTENT αυτον CONTENT και,,ο,0,1,0,False,False
 18,J 18:31,aleph,αυτον,[OMIT],omission,κατα τον CONTENT υμων CONTENT αυτον CONTENT αυτω οι CONTENT ημιν,κατα τον CONTENT υμων CONTENT CONTENT ουν αυτω οι CONTENT,ετον,,1,0,1,False,False
 18,J 18:31,aleph,[ADD],ουν,addition,CONTENT υμων CONTENT αυτον CONTENT αυτω οι CONTENT ημιν ουκ,τον CONTENT υμων CONTENT CONTENT ουν αυτω οι CONTENT ημιν ουκ,,ουν,0,1,2,False,False
@@ -3919,7 +3858,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 18,J 18:31,A,[ADD],δε,addition,CONTENT υμων CONTENT αυτον CONTENT αυτω οι CONTENT ημιν ουκ,CONTENT υμων CONTENT αυτον CONTENT δε αυτω οι CONTENT ημιν ουκ,,δε,0,1,1,False,False
 18,J 18:32,aleph,ον CONTENT,[OMIT],omission,ο CONTENT του CONTENT CONTENT ον CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT,ο CONTENT του CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT,ον ιπε,,2,0,0,False,False
 18,J 18:32,A,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT ον CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT,CONTENT CONTENT ον CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT,πιο,πι,1,1,0,False,False
-18,J 18:33,P66,αυτω συ ει ο CONTENT των CONTENT,[OMIT],substitution_lexical,CONTENT τον CONTENT και CONTENT αυτω συ ει ο CONTENT των CONTENT,CONTENT τον CONTENT και CONTENT,ετο σι ι ο βασιλεισ τον ιουδεον,,7,0,0,True,False
 18,J 18:33,aleph,παλιν εις το CONTENT,εις το CONTENT παλιν,substitution_word_order,CONTENT ουν παλιν εις το CONTENT ο CONTENT και CONTENT τον,CONTENT ουν εις το CONTENT παλιν ο CONTENT και CONTENT τον,παλιν ισ το πρετοριον,ισ το πρετοριον παλιν,4,4,0,False,False
 18,J 18:33,A,παλιν εις το CONTENT,εις το CONTENT παλιν,substitution_word_order,CONTENT ουν παλιν εις το CONTENT ο CONTENT και CONTENT τον,CONTENT ουν εις το CONTENT παλιν ο CONTENT και CONTENT τον,παλιν ισ το πρετοριον,ισ το πρετοριον παλιν,4,4,0,False,False
 18,J 18:33,A,αυτω,αυτοις,substitution_morphological,CONTENT τον CONTENT και CONTENT αυτω συ ει ο CONTENT των,CONTENT τον CONTENT και CONTENT αυτοις συ ει ο CONTENT των,ετο,ετισ,1,1,1,False,False
@@ -4034,7 +3972,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 19,J 19:14,P66,CONTENT,CONTENT,substitution_morphological,CONTENT ην ως CONTENT και CONTENT τοις CONTENT ιδε ο CONTENT,του CONTENT CONTENT CONTENT και CONTENT τοις CONTENT ιδε ο CONTENT,λεγι,λεγε,1,1,1,False,False
 19,J 19:15,P66,CONTENT ουν εκεινοι,οι δε CONTENT,substitution_lexical,CONTENT ουν εκεινοι CONTENT CONTENT CONTENT αυτον CONTENT,οι δε CONTENT CONTENT CONTENT αυτον CONTENT αυτοις,εκρεγασαν ουν εκινι,ι δε ελεγον,3,3,0,True,True
 19,J 19:15,P66,CONTENT CONTENT,CONTENT,substitution_morphological,CONTENT ουν εκεινοι CONTENT CONTENT CONTENT αυτον CONTENT αυτοις ο CONTENT,οι δε CONTENT CONTENT CONTENT αυτον CONTENT αυτοις ο CONTENT,αρον στεροσον,στερον,2,1,1,False,False
-19,J 19:15,P66,CONTENT CONTENT οι CONTENT ουκ CONTENT,CONTENT,substitution_lexical,ο CONTENT τον CONTENT υμων CONTENT CONTENT οι CONTENT ουκ CONTENT CONTENT ει μη CONTENT,ο CONTENT τον CONTENT υμων CONTENT CONTENT ει μη CONTENT,στεροσο απεκριθισαν ι αρχιερισ ουκ εχομε,στερο,6,1,2,True,False
 19,J 19:15,aleph,CONTENT ουν εκεινοι,οι δε CONTENT,substitution_lexical,CONTENT ουν εκεινοι CONTENT CONTENT CONTENT αυτον CONTENT,οι δε CONTENT CONTENT CONTENT CONTENT αυτον CONTENT,εκρεγασαν ουν εκινι,ι δε ελεγον,3,3,0,False,False
 19,J 19:15,A,CONTENT ουν εκεινοι,οι δε CONTENT,substitution_lexical,CONTENT ουν εκεινοι CONTENT CONTENT CONTENT αυτον CONTENT,οι δε CONTENT CONTENT CONTENT CONTENT αυτον CONTENT,εκρεγασαν ουν εκινι,ι δε εκρεγασον,3,3,0,False,False
 19,J 19:16,P66,CONTENT ουν τον CONTENT,CONTENT αυτον CONTENT,substitution_lexical,CONTENT αυτον αυτοις ινα CONTENT CONTENT ουν τον CONTENT,CONTENT αυτον αυτοις ινα CONTENT CONTENT αυτον CONTENT,παρελαβον ουν τον ιισουν,οραλ ετον απιγαγον,4,3,0,True,True
@@ -4071,7 +4008,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 19,J 19:24,A,[ADD],η CONTENT,addition,CONTENT ινα η CONTENT CONTENT CONTENT τα CONTENT μου εαυτοις,CONTENT ινα η CONTENT CONTENT η CONTENT CONTENT τα CONTENT μου εαυτοις,,ι λεγουσα,0,2,0,False,False
 19,J 19:25,aleph,CONTENT,CONTENT,substitution_morphological,η CONTENT της CONTENT αυτου CONTENT η του CONTENT και CONTENT,η CONTENT της CONTENT αυτου CONTENT η του CONTENT και CONTENT,μαρια,μαριαμ,1,1,0,False,False
 19,J 19:25,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT η του CONTENT και CONTENT η CONTENT,CONTENT η του CONTENT και CONTENT η CONTENT,μαρια,μαριαμ,1,1,1,False,False
-19,J 19:26,P66,CONTENT ιδε ο,[OMIT],substitution_lexical,ον CONTENT CONTENT τη CONTENT CONTENT ιδε ο CONTENT σου,ον CONTENT CONTENT τη CONTENT CONTENT σου,γινε ιδε ο,,3,0,0,True,False
 19,J 19:26,aleph,CONTENT ουν CONTENT την CONTENT,[OMIT],omission,CONTENT ουν CONTENT την CONTENT και τον CONTENT CONTENT ον,και τον CONTENT CONTENT ον,ιισουσ ουν ιδον τιν μιτερα,,5,0,0,False,False
 19,J 19:26,aleph,[ADD],και,addition,τον CONTENT CONTENT ον CONTENT CONTENT τη CONTENT CONTENT ιδε,τον CONTENT CONTENT ον CONTENT και CONTENT τη CONTENT CONTENT ιδου,,κε,0,1,1,False,False
 19,J 19:26,aleph,ιδε,ιδου,substitution_morphological,CONTENT CONTENT τη CONTENT CONTENT ιδε ο CONTENT σου,και CONTENT τη CONTENT CONTENT ιδου ο CONTENT σου,ιδε,ιδου,1,1,2,False,False
@@ -4117,7 +4053,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 19,J 19:35,A,και εκεινος,CONTENT,substitution_morphological,CONTENT αυτου CONTENT η CONTENT και εκεινος CONTENT οτι CONTENT CONTENT ινα,CONTENT αυτου CONTENT η CONTENT CONTENT CONTENT οτι CONTENT CONTENT ινα,κε εκινοσ,κακινοσ,2,1,0,False,False
 19,J 19:35,A,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT ινα και υμεις CONTENT,CONTENT CONTENT ινα και υμεις CONTENT,πιστειιτε,πιστεισιτε,1,1,1,False,False
 19,J 19:36,aleph,[ADD],απ,addition,CONTENT CONTENT CONTENT ου CONTENT αυτου,CONTENT CONTENT CONTENT ου CONTENT απ αυτου,,απο,0,1,0,False,False
-19,J 19:38,P66,ων CONTENT CONTENT CONTENT δε,[OMIT],substitution_lexical,τον CONTENT CONTENT απο CONTENT ων CONTENT CONTENT CONTENT δε δια τον CONTENT των CONTENT,τον CONTENT CONTENT απο CONTENT δια τον CONTENT των CONTENT,ον μαθιτισ ιισου κεκριμενοσ δε,,5,0,0,True,False
 19,J 19:38,P66,και CONTENT ο CONTENT,[OMIT],omission,CONTENT το CONTENT του CONTENT και CONTENT ο CONTENT CONTENT ουν και CONTENT το,CONTENT το CONTENT του CONTENT CONTENT ουν και CONTENT το,κε επετρεψε ο πιλατοσ,,4,0,1,False,False
 19,J 19:38,aleph,[ADD],ο,addition,ταυτα CONTENT τον CONTENT CONTENT απο CONTENT ων CONTENT CONTENT,ταυτα CONTENT τον CONTENT CONTENT ο απο CONTENT ων CONTENT του,,ο,0,1,0,False,False
 19,J 19:38,aleph,[ADD],του,addition,CONTENT απο CONTENT ων CONTENT CONTENT CONTENT δε δια τον,ο απο CONTENT ων CONTENT του CONTENT CONTENT δε δια τον,,του,0,1,1,False,False
@@ -4143,7 +4078,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 19,J 19:41,P66,ουδεις ην CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT εν ω CONTENT ουδεις ην CONTENT,CONTENT CONTENT εν ω CONTENT CONTENT,ουδισ ιν τεθιμενοσ,ουμενοσ,3,1,0,True,False
 19,J 19:41,aleph,CONTENT ουδεις,CONTENT CONTENT,substitution_word_order,CONTENT CONTENT CONTENT εν ω CONTENT ουδεις ην CONTENT,CONTENT CONTENT CONTENT εν ω CONTENT CONTENT ην CONTENT,ουδεπο ουδισ,ουδισ ουδεπο,2,2,0,False,False
 19,J 19:41,A,ην CONTENT,CONTENT,substitution_lexical,CONTENT εν ω CONTENT ουδεις ην CONTENT,CONTENT εν ω CONTENT ουδεις CONTENT,ιν τεθιμενοσ,ετεθι,2,1,0,False,False
-19,J 19:42,P66,την CONTENT των CONTENT,[OMIT],substitution_lexical,CONTENT ουν δια την CONTENT των CONTENT οτι CONTENT ην το CONTENT,CONTENT ουν δια οτι CONTENT ην το CONTENT,τιν παρασκειιν τον ιουδεον,,4,0,0,True,False
 19,J 19:42,aleph,[ADD],CONTENT,addition,οτι CONTENT ην το CONTENT CONTENT τον CONTENT,οτι CONTENT ην το CONTENT CONTENT CONTENT τον CONTENT,,οπου,0,1,0,False,False
 20,J 20:1,aleph,CONTENT,CONTENT,substitution_morphological,τη δε CONTENT των CONTENT CONTENT η CONTENT CONTENT CONTENT CONTENT,τη δε CONTENT των CONTENT CONTENT η CONTENT CONTENT CONTENT CONTENT,μαρια,μαριαμ,1,1,0,False,False
 20,J 20:1,aleph,[ADD],απο της CONTENT,addition,και CONTENT τον CONTENT CONTENT εκ του CONTENT,και CONTENT τον CONTENT CONTENT απο της CONTENT εκ του CONTENT,,απο τισ θιρασ,0,3,1,False,False
@@ -4151,14 +4085,12 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:2,aleph,[ADD],τον,addition,CONTENT ουν και CONTENT προς CONTENT CONTENT και προς τον,CONTENT ουν και CONTENT προς τον CONTENT CONTENT και προς τον,,τον,0,1,0,False,False
 20,J 20:3,aleph,και CONTENT εις το CONTENT,[OMIT],omission,CONTENT και ο CONTENT CONTENT και CONTENT εις το CONTENT,CONTENT και ο CONTENT CONTENT,κε ιρχοντο ισ το μνιμιον,,5,0,0,False,False
 20,J 20:4,P66,CONTENT,CONTENT,substitution_morphological,CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT του CONTENT και,CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT,μαθιτισ,ματισ,1,1,0,True,True
-20,J 20:4,P66,CONTENT του CONTENT και CONTENT CONTENT εις το,[OMIT],substitution_lexical,και ο CONTENT CONTENT CONTENT CONTENT του CONTENT και CONTENT CONTENT εις το CONTENT,και ο CONTENT CONTENT CONTENT CONTENT,ταχιον του πετρου κε ιλθε προτοσ ισ το,,8,0,1,True,False
 20,J 20:4,aleph,[ADD],και,addition,CONTENT δε οι CONTENT CONTENT,και CONTENT οι CONTENT CONTENT CONTENT,,κε,0,1,0,False,False
 20,J 20:4,aleph,δε οι CONTENT CONTENT και ο CONTENT CONTENT CONTENT,οι CONTENT CONTENT CONTENT δε,substitution_word_order,CONTENT δε οι CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT του CONTENT και CONTENT,και CONTENT οι CONTENT CONTENT CONTENT δε CONTENT του CONTENT και CONTENT,δε ι διο ομου κε ο αλοσ μαθιτισ προεδραμε,ι διο ομου προεδραμε δε,9,5,1,False,False
 20,J 20:4,aleph,και ο CONTENT CONTENT,[OMIT],omission,CONTENT δε οι CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT του CONTENT και,και CONTENT οι CONTENT CONTENT CONTENT δε CONTENT του CONTENT,κε ο αλοσ μαθιτισ,,4,0,2,False,False
 20,J 20:4,aleph,CONTENT εις το CONTENT,εις το CONTENT CONTENT,substitution_word_order,CONTENT του CONTENT και CONTENT CONTENT εις το CONTENT,CONTENT του CONTENT και CONTENT εις το CONTENT CONTENT,προτοσ ισ το μνιμιον,ισ το μνιμιον προτοσ,4,4,3,False,False
 20,J 20:4,A,και,[OMIT],omission,CONTENT δε οι CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT,CONTENT δε οι CONTENT CONTENT ο δε CONTENT CONTENT CONTENT,κε,,1,0,0,False,False
 20,J 20:4,A,[ADD],δε,addition,οι CONTENT CONTENT και ο CONTENT CONTENT CONTENT CONTENT του,δε οι CONTENT CONTENT ο δε CONTENT CONTENT CONTENT CONTENT του,,δε,0,1,1,False,False
-20,J 20:5,P66,CONTENT,[OMIT],substitution_lexical,CONTENT τα CONTENT ου CONTENT CONTENT,CONTENT τα CONTENT ου CONTENT,ισιλθε,,1,0,0,True,False
 20,J 20:5,aleph,CONTENT,[OMIT],omission,και CONTENT CONTENT CONTENT τα CONTENT ου CONTENT CONTENT,και CONTENT CONTENT τα CONTENT CONTENT,κιμενα,,1,0,0,False,False
 20,J 20:5,aleph,ου CONTENT CONTENT,CONTENT,substitution_lexical,CONTENT CONTENT CONTENT τα CONTENT ου CONTENT CONTENT,και CONTENT CONTENT τα CONTENT CONTENT,ου μεντι ισιλθε,κιμενα,3,1,1,False,False
 20,J 20:5,A,CONTENT τα CONTENT,τα CONTENT CONTENT,substitution_word_order,και CONTENT CONTENT CONTENT τα CONTENT ου CONTENT CONTENT,και CONTENT CONTENT τα CONTENT CONTENT ου CONTENT CONTENT,κιμενα τα οθονια,τα οθονια κιμενα,3,3,0,False,False
@@ -4166,7 +4098,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:9,P66,CONTENT,δι,substitution_morphological,γαρ CONTENT την CONTENT οτι CONTENT αυτον εκ CONTENT CONTENT,γαρ CONTENT την CONTENT οτι δι αυτον εκ CONTENT CONTENT,δι,δια,1,1,0,False,False
 20,J 20:9,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT γαρ CONTENT την CONTENT οτι CONTENT αυτον,CONTENT γαρ CONTENT την CONTENT οτι CONTENT αυτον,ιδισαν,ιδι,1,1,0,False,False
 20,J 20:10,A,αυτους,εαυτους,substitution_morphological,CONTENT ουν παλιν προς αυτους οι CONTENT,CONTENT ουν παλιν προς εαυτους οι CONTENT,ετουσ,εετουσ,1,1,0,False,False
-20,J 20:11,P66,CONTENT ως ουν CONTENT CONTENT εις το CONTENT,[OMIT],substitution_lexical,CONTENT προς τω CONTENT CONTENT CONTENT ως ουν CONTENT CONTENT εις το CONTENT,CONTENT προς τω CONTENT CONTENT,κλεουσα οσ ουν εκλεε παρεκιψε ισ το μνιμιον,,8,0,0,True,False
 20,J 20:11,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT δε CONTENT προς τω CONTENT,CONTENT δε CONTENT εν τω CONTENT,μαρια,μαριαμ,1,1,0,False,False
 20,J 20:11,aleph,προς,εν,substitution_lexical,CONTENT δε CONTENT προς τω CONTENT CONTENT CONTENT ως,CONTENT δε CONTENT εν τω CONTENT CONTENT CONTENT ως,προσ,εν,1,1,1,False,False
 20,J 20:11,aleph,CONTENT CONTENT,CONTENT CONTENT,substitution_word_order,δε CONTENT προς τω CONTENT CONTENT CONTENT ως ουν CONTENT CONTENT εις,δε CONTENT εν τω CONTENT CONTENT CONTENT ως ουν CONTENT CONTENT εις,εξο κλεουσα,κλεουσα εξο,2,2,2,False,False
@@ -4178,7 +4109,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:13,aleph,και,[OMIT],omission,και CONTENT αυτη εκεινοι CONTENT τι,CONTENT αυτη εκεινοι CONTENT τι,κε,,1,0,0,False,False
 20,J 20:13,aleph,και,[OMIT],omission,αυτη εκεινοι CONTENT τι CONTENT και CONTENT αυτοις οτι CONTENT τον,αυτη εκεινοι CONTENT τι CONTENT CONTENT αυτοις οτι CONTENT τον,κε,,1,0,1,False,False
 20,J 20:13,A,και,[OMIT],omission,αυτη εκεινοι CONTENT τι CONTENT και CONTENT αυτοις οτι CONTENT τον,αυτη εκεινοι CONTENT τι CONTENT CONTENT αυτοις οτι CONTENT τον,κε,,1,0,0,False,False
-20,J 20:13,D,και CONTENT αυτη εκεινοι CONTENT τι CONTENT και,τινα CONTENT,substitution_lexical,και CONTENT αυτη εκεινοι CONTENT τι CONTENT και CONTENT αυτοις οτι CONTENT τον,τινα CONTENT CONTENT αυτοις οτι CONTENT τον,κε λεγουσι ετι εκινι γινε τι κλεισ κε,τινα ζιτισ,8,2,0,True,False
 20,J 20:13,D,CONTENT,CONTENT,substitution_morphological,μου και ουκ CONTENT που CONTENT αυτον,μου και ουκ CONTENT που CONTENT αυτον,εθικαν,τεθικαν,1,1,1,False,False
 20,J 20:14,P66,CONTENT,CONTENT,substitution_lexical,CONTENT και ουκ CONTENT οτι CONTENT CONTENT,CONTENT και ουκ CONTENT οτι CONTENT CONTENT,ιισουσ,κιριοσ,1,1,0,False,False
 20,J 20:15,P66,εκεινη,CONTENT,substitution_morphological,CONTENT τι CONTENT τινα CONTENT εκεινη CONTENT οτι ο CONTENT CONTENT,CONTENT τι CONTENT τινα CONTENT CONTENT CONTENT οτι ο CONTENT CONTENT,εκινι,εκνι,1,1,0,True,True
@@ -4190,8 +4120,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:15,D,CONTENT,CONTENT,substitution_lexical,CONTENT αυτω CONTENT ει συ CONTENT αυτον CONTENT μοι που CONTENT,CONTENT αυτω CONTENT ει συ CONTENT αυτον CONTENT μοι που CONTENT,εβαστασασ,ιρεσ,1,1,1,False,False
 20,J 20:15,D,CONTENT,CONTENT,substitution_morphological,CONTENT αυτον CONTENT μοι που CONTENT αυτον CONTENT αυτον CONTENT,CONTENT αυτον CONTENT μοι που CONTENT αυτον CONTENT αυτον CONTENT,εθικασ,τεθικασ,1,1,2,False,False
 20,J 20:16,P66,CONTENT,CONTENT,substitution_morphological,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT αυτω CONTENT,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT αυτω,μαριαμ,μαρια,1,1,0,True,True
-20,J 20:16,P66,CONTENT CONTENT ο,[OMIT],substitution_lexical,CONTENT CONTENT εκεινη CONTENT αυτω CONTENT CONTENT ο CONTENT CONTENT,CONTENT CONTENT εκεινη CONTENT αυτω CONTENT,εβρεστι ραββουνι ο,,3,0,1,True,False
-20,J 20:16,P66,CONTENT,[OMIT],substitution_lexical,αυτω CONTENT CONTENT ο CONTENT CONTENT,CONTENT αυτω CONTENT,διδασκαλε,,1,0,2,True,False
 20,J 20:16,aleph,[ADD],ο,addition,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT,CONTENT αυτη ο CONTENT CONTENT CONTENT δε εκεινη,,ο,0,1,0,False,False
 20,J 20:16,aleph,[ADD],δε,addition,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT αυτω CONTENT CONTENT,αυτη ο CONTENT CONTENT CONTENT δε εκεινη CONTENT αυτω CONTENT CONTENT,,δε,0,1,1,False,False
 20,J 20:16,A,[ADD],ο,addition,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT,CONTENT αυτη ο CONTENT CONTENT CONTENT εκεινη CONTENT,,ο,0,1,0,False,False
@@ -4201,7 +4129,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:16,D,[ADD],δε,addition,CONTENT αυτη CONTENT CONTENT CONTENT εκεινη CONTENT αυτω CONTENT CONTENT,CONTENT αυτη CONTENT CONTENT CONTENT δε εκεινη CONTENT αυτω CONTENT CONTENT,,δε,0,1,1,False,False
 20,J 20:16,D,CONTENT,CONTENT,substitution_morphological,CONTENT εκεινη CONTENT αυτω CONTENT CONTENT ο CONTENT CONTENT,δε εκεινη CONTENT αυτω CONTENT CONTENT ο CONTENT CONTENT CONTENT,ραββουνι,ραββονι,1,1,2,False,False
 20,J 20:16,D,[ADD],CONTENT,addition,αυτω CONTENT CONTENT ο CONTENT CONTENT,αυτω CONTENT CONTENT ο CONTENT CONTENT CONTENT,,κιριε,0,1,3,False,False
-20,J 20:17,P66,CONTENT αυτη CONTENT μη,[OMIT],substitution_lexical,CONTENT αυτη CONTENT μη CONTENT μου ουπω γαρ CONTENT,CONTENT ουπω γαρ CONTENT προς,λεγι ετι ιισουσ μι,,4,0,0,True,False
 20,J 20:17,P66,μου ουπω γαρ CONTENT προς τον CONTENT,ουπω γαρ CONTENT προς τον CONTENT μου,substitution_word_order,CONTENT αυτη CONTENT μη CONTENT μου ουπω γαρ CONTENT προς τον CONTENT CONTENT δε προς τους CONTENT,CONTENT ουπω γαρ CONTENT προς τον CONTENT μου CONTENT δε προς τους CONTENT,μου ουπο γαρ αναβεβικα προσ τον πατερα,ουπο γαρ αναβεβικα προσ τον πατερα μου,7,7,1,True,True
 20,J 20:17,aleph,[ADD],ο,addition,CONTENT αυτη CONTENT μη CONTENT μου ουπω,CONTENT αυτη ο CONTENT μη μου CONTENT ουπω,,ο,0,1,0,False,False
 20,J 20:17,aleph,CONTENT μου,μου CONTENT,substitution_word_order,CONTENT αυτη CONTENT μη CONTENT μου ουπω γαρ CONTENT προς τον,CONTENT αυτη ο CONTENT μη μου CONTENT ουπω γαρ CONTENT προς τον,απτου μου,μου απτου,2,2,1,False,False
@@ -4223,15 +4150,10 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:18,D,ταυτα,α,substitution_lexical,οτι CONTENT τον CONTENT και ταυτα CONTENT αυτη,οτι CONTENT τον CONTENT και α CONTENT αυτη CONTENT αυτοις,τετα,α,1,1,4,False,False
 20,J 20:18,D,[ADD],CONTENT αυτοις,addition,CONTENT και ταυτα CONTENT αυτη,CONTENT και α CONTENT αυτη CONTENT αυτοις,,εμινισε ετισ,0,2,5,False,False
 20,J 20:19,P66,[ADD],CONTENT,addition,CONTENT CONTENT CONTENT οι CONTENT δια τον CONTENT των CONTENT,CONTENT CONTENT CONTENT οι CONTENT CONTENT δια τον CONTENT των CONTENT,,σινιγμενι,0,1,0,True,False
-20,J 20:19,P66,υμιν,[OMIT],substitution_lexical,CONTENT και CONTENT αυτοις CONTENT υμιν,CONTENT και CONTENT αυτοις CONTENT,ιμιν,,1,0,1,True,False
 20,J 20:19,aleph,τη,[OMIT],omission,ουν CONTENT τη CONTENT εκεινη τη CONTENT CONTENT και των CONTENT,ουν CONTENT τη CONTENT εκεινη CONTENT CONTENT και των CONTENT,τι,,1,0,0,False,False
 20,J 20:19,aleph,αυτοις,[OMIT],omission,εις το CONTENT και CONTENT αυτοις CONTENT υμιν,εις το CONTENT και CONTENT CONTENT υμιν,ετισ,,1,0,1,False,False
 20,J 20:19,D,[ADD],των,addition,τη CONTENT εκεινη τη CONTENT CONTENT και των CONTENT CONTENT,τη CONTENT εκεινη τη CONTENT των CONTENT και των CONTENT CONTENT,,τον,0,1,0,False,False
 20,J 20:19,D,ο,[OMIT],omission,τον CONTENT των CONTENT CONTENT ο CONTENT και CONTENT εις το,τον CONTENT των CONTENT CONTENT CONTENT και CONTENT εις το,ο,,1,0,1,False,False
-20,J 20:20,P66,και τουτο CONTENT CONTENT και,[OMIT],substitution_lexical,και τουτο CONTENT CONTENT και τας CONTENT και την CONTENT,τας CONTENT αυτου,κε τουτο ιπον εδιξε κε,,5,0,0,True,False
-20,J 20:20,P66,και την CONTENT αυτοις,αυτου,substitution_lexical,CONTENT CONTENT και τας CONTENT και την CONTENT αυτοις CONTENT ουν οι CONTENT CONTENT,τας CONTENT αυτου CONTENT CONTENT τον,κε τιν πλειραν ετισ,ετου,4,1,1,True,False
-20,J 20:20,P66,ουν οι CONTENT,[OMIT],substitution_lexical,και την CONTENT αυτοις CONTENT ουν οι CONTENT CONTENT τον CONTENT,CONTENT αυτου CONTENT CONTENT τον,ουν ι μαθιτε,,3,0,2,True,False
-20,J 20:20,P66,CONTENT,[OMIT],substitution_lexical,ουν οι CONTENT CONTENT τον CONTENT,CONTENT CONTENT τον,κιριον,,1,0,3,True,False
 20,J 20:20,aleph,και,[OMIT],omission,και τουτο CONTENT CONTENT και τας CONTENT και την CONTENT,και τουτο CONTENT CONTENT τας CONTENT και την CONTENT,κε,,1,0,0,False,False
 20,J 20:20,D,και,[OMIT],omission,και τουτο CONTENT CONTENT και τας CONTENT και την CONTENT,και τουτο CONTENT CONTENT τας CONTENT και την CONTENT,κε,,1,0,0,False,False
 20,J 20:20,D,[ADD],αυτου,addition,αυτοις CONTENT ουν οι CONTENT CONTENT τον CONTENT,αυτοις CONTENT ουν οι CONTENT αυτου CONTENT τον CONTENT,,ετου,0,1,1,False,False
@@ -4239,12 +4161,8 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:21,aleph,CONTENT,CONTENT,substitution_morphological,CONTENT με ο CONTENT CONTENT CONTENT υμας,CONTENT με ο CONTENT CONTENT CONTENT υμας,πεμπο,πεμψο,1,1,1,False,False
 20,J 20:21,D,ο CONTENT,[OMIT],omission,CONTENT ουν αυτοις ο CONTENT παλιν CONTENT υμιν καθως CONTENT,CONTENT ουν αυτοις παλιν CONTENT CONTENT καθως CONTENT,ο ιισουσ,,2,0,0,False,False
 20,J 20:21,D,CONTENT,CONTENT,substitution_lexical,CONTENT με ο CONTENT CONTENT CONTENT υμας,CONTENT με ο CONTENT CONTENT CONTENT υμας,πεμπο,αποστελο,1,1,1,False,False
-20,J 20:22,P66,και τουτο,[OMIT],substitution_lexical,και τουτο CONTENT CONTENT και CONTENT αυτοις,CONTENT CONTENT αυτοις,κε τουτο,,2,0,0,True,False
-20,J 20:22,P66,CONTENT και,[OMIT],substitution_lexical,και τουτο CONTENT CONTENT και CONTENT αυτοις CONTENT CONTENT CONTENT,CONTENT CONTENT αυτοις,ενεφισισε κε,,2,0,1,True,False
-20,J 20:22,P66,CONTENT CONTENT CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT και CONTENT αυτοις CONTENT CONTENT CONTENT,CONTENT CONTENT αυτοις,λαβετε πνειμα αγιον,,3,0,2,True,False
 20,J 20:22,D,και,[OMIT],omission,και τουτο CONTENT CONTENT και CONTENT,τουτο CONTENT CONTENT αυτοις και,κε,,1,0,0,False,False
 20,J 20:22,D,[ADD],αυτοις,addition,και τουτο CONTENT CONTENT και CONTENT αυτοις CONTENT CONTENT,τουτο CONTENT CONTENT αυτοις και CONTENT αυτοις CONTENT CONTENT,,ετισ,0,1,1,False,False
-20,J 20:23,P66,τινος CONTENT τας CONTENT CONTENT αυτοις αν τινος CONTENT CONTENT,τινων,substitution_lexical,αν τινος CONTENT τας CONTENT CONTENT αυτοις αν τινος CONTENT CONTENT,αν τινων,τινοσ αφιτε τασ αμαρτιασ αφιοντε ετισ αν τινοσ κρατιτε κεκρατιντε,τινον,10,1,0,True,True
 20,J 20:23,aleph,τινος,τινων,substitution_morphological,αν τινος CONTENT τας CONTENT CONTENT αυτοις,αν τινων CONTENT τας CONTENT CONTENT αυτοις,τινοσ,τινον,1,1,0,False,False
 20,J 20:23,aleph,CONTENT,CONTENT,substitution_morphological,αν τινος CONTENT τας CONTENT CONTENT αυτοις αν τινος CONTENT CONTENT,αν τινων CONTENT τας CONTENT CONTENT αυτοις εαν δε τινων CONTENT,αφιοντε,αφεθισετε,1,1,1,False,False
 20,J 20:23,aleph,αν τινος CONTENT,εαν δε τινων CONTENT,substitution_morphological,CONTENT τας CONTENT CONTENT αυτοις αν τινος CONTENT CONTENT,CONTENT τας CONTENT CONTENT αυτοις εαν δε τινων CONTENT CONTENT,αν τινοσ κρατιτε,εαν δε τινον κρατιντε,3,4,2,False,False
@@ -4257,9 +4175,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:24,aleph,[ADD],ουν,addition,ουκ ην μετ αυτων οτε CONTENT CONTENT,ουκ ην μετ αυτων οτε ουν CONTENT CONTENT,,ουν,0,1,0,False,False
 20,J 20:24,A,[ADD],ο,addition,ην μετ αυτων οτε CONTENT CONTENT,ην μετ αυτων οτε CONTENT ο CONTENT,,ο,0,1,0,False,False
 20,J 20:24,D,CONTENT ο,CONTENT,substitution_lexical,CONTENT δε εις εκ των CONTENT ο CONTENT CONTENT ουκ ην μετ,CONTENT δε εις εκ των CONTENT CONTENT CONTENT ουκ ην μετ,δοδεκα ο,ιβ,2,1,0,False,False
-20,J 20:25,P66,CONTENT ουν αυτω οι CONTENT CONTENT CONTENT τον CONTENT ο δε CONTENT αυτοις εαν μη,[OMIT],substitution_lexical,CONTENT ουν αυτω οι CONTENT CONTENT CONTENT τον CONTENT ο δε CONTENT αυτοις εαν μη CONTENT εν ταις CONTENT αυτου,CONTENT εν CONTENT,ελεγον ουν ετο ι αλι μαθιτε εορακαμε τον κιριον ο δε ιπε ετισ εαν μι,,15,0,0,True,False
-20,J 20:25,P66,ταις CONTENT αυτου τον CONTENT των CONTENT και,CONTENT,substitution_lexical,αυτοις εαν μη CONTENT εν ταις CONTENT αυτου τον CONTENT των CONTENT και CONTENT τον CONTENT μου εις,CONTENT εν CONTENT CONTENT τον CONTENT,τεσ χερσι ετου τον τιπον τον ιλον κε,τιπουσ,8,1,1,True,False
-20,J 20:25,P66,μου εις τον CONTENT των CONTENT και CONTENT μου την CONTENT εις την CONTENT αυτου ου μη CONTENT,[OMIT],substitution_lexical,CONTENT και CONTENT τον CONTENT μου εις τον CONTENT των CONTENT και CONTENT μου την CONTENT εις την CONTENT αυτου ου μη CONTENT,CONTENT τον CONTENT,μου ισ τον τιπον τον ιλον κε βαλο μου τιν χιραν ισ τιν πλειραν ετου ου μι πιστεισο,,18,0,2,True,False
 20,J 20:25,aleph,ουν,[OMIT],omission,CONTENT ουν αυτω οι CONTENT CONTENT CONTENT,CONTENT αυτω οι CONTENT CONTENT τον,ουν,,1,0,0,False,False
 20,J 20:25,aleph,CONTENT,[OMIT],omission,CONTENT ουν αυτω οι CONTENT CONTENT CONTENT τον CONTENT ο,CONTENT αυτω οι CONTENT CONTENT τον CONTENT ο,αλι,,1,0,1,False,False
 20,J 20:25,aleph,αυτου τον CONTENT των CONTENT και CONTENT τον CONTENT μου εις,[OMIT],omission,μη CONTENT εν ταις CONTENT αυτου τον CONTENT των CONTENT και CONTENT τον CONTENT μου εις τον CONTENT των CONTENT και,μη CONTENT εν ταις CONTENT τον CONTENT των CONTENT και,ετου τον τιπον τον ιλον κε βαλο τον δακτιλον μου ισ,,11,0,2,False,False
@@ -4272,14 +4187,9 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 20,J 20:25,D,[ADD],μου τας CONTENT εις την CONTENT αυτου και CONTENT μου,addition,CONTENT των CONTENT και CONTENT τον CONTENT μου εις τον,CONTENT των CONTENT και CONTENT μου τας CONTENT εις την CONTENT αυτου και CONTENT μου τον CONTENT εις τον CONTENT,,μου τασ χιρασ ισ τιν πλειραν ετου κε βαλο μου,0,10,2,False,False
 20,J 20:25,D,μου,[OMIT],omission,CONTENT και CONTENT τον CONTENT μου εις τον CONTENT των CONTENT,και CONTENT μου τον CONTENT εις τον CONTENT των CONTENT,μου,,1,0,3,False,False
 20,J 20:25,D,και CONTENT μου την CONTENT εις την CONTENT αυτου,[OMIT],omission,εις τον CONTENT των CONTENT και CONTENT μου την CONTENT εις την CONTENT αυτου ου μη CONTENT,εις τον CONTENT των CONTENT ου μη CONTENT,κε βαλο μου τιν χιραν ισ τιν πλειραν ετου,,9,0,4,False,False
-20,J 20:26,P66,και μεθ CONTENT CONTENT παλιν CONTENT CONTENT οι,[OMIT],substitution_lexical,και μεθ CONTENT CONTENT παλιν CONTENT CONTENT οι CONTENT αυτου και CONTENT μετ,CONTENT μετ αυτων,κε μετα ιμερασ οκτο παλιν ισαν εσο ι,,8,0,0,True,False
-20,J 20:26,P66,αυτου και CONTENT,[OMIT],substitution_lexical,παλιν CONTENT CONTENT οι CONTENT αυτου και CONTENT μετ αυτων CONTENT ο CONTENT,CONTENT μετ αυτων CONTENT,ετου κε θομασ,,3,0,1,True,False
-20,J 20:26,P66,CONTENT ο CONTENT των,[OMIT],substitution_lexical,αυτου και CONTENT μετ αυτων CONTENT ο CONTENT των CONTENT CONTENT και CONTENT εις,CONTENT μετ αυτων CONTENT CONTENT,ερχετε ο ιισουσ τον,,4,0,2,True,False
-20,J 20:26,P66,CONTENT και CONTENT εις το CONTENT και CONTENT CONTENT υμιν,CONTENT,substitution_lexical,CONTENT ο CONTENT των CONTENT CONTENT και CONTENT εις το CONTENT και CONTENT CONTENT υμιν,μετ αυτων CONTENT CONTENT,κεκλισμενον κε εστι ισ το μεσον κε ιπε ιρινι ιμιν,κ,10,1,3,True,False
 20,J 20:26,aleph,αυτου,[OMIT],omission,παλιν CONTENT CONTENT οι CONTENT αυτου και CONTENT μετ αυτων CONTENT,παλιν CONTENT CONTENT οι CONTENT και CONTENT μετ αυτων CONTENT,ετου,,1,0,0,False,False
 20,J 20:26,D,[ADD],ο,addition,CONTENT οι CONTENT αυτου και CONTENT μετ αυτων CONTENT ο,CONTENT οι CONTENT αυτου και ο CONTENT μετ αυτων CONTENT ουν,,ο,0,1,0,False,False
 20,J 20:26,D,[ADD],ουν,addition,και CONTENT μετ αυτων CONTENT ο CONTENT των CONTENT CONTENT,ο CONTENT μετ αυτων CONTENT ουν ο CONTENT των CONTENT CONTENT,,ουν,0,1,1,False,False
-20,J 20:27,P66,CONTENT CONTENT τω CONTENT CONTENT τον CONTENT σου CONTENT και ιδε τας CONTENT μου και CONTENT την CONTENT σου και CONTENT εις την CONTENT μου,[OMIT],substitution_lexical,CONTENT CONTENT τω CONTENT CONTENT τον CONTENT σου CONTENT και ιδε τας CONTENT μου και CONTENT την CONTENT σου και CONTENT εις την CONTENT μου και μη CONTENT CONTENT αλλα,και μη CONTENT CONTENT αλλα,ιτα λεγι το θομα φερε τον δακτιλον σου οδε κε ιδε τασ χιρασ μου κε φερε τιν χιρα σου κε βαλε ισ τιν πλειραν μου,,25,0,0,True,False
 20,J 20:27,D,CONTENT,CONTENT,substitution_lexical,την CONTENT μου και μη CONTENT CONTENT αλλα CONTENT,την CONTENT μου και μη CONTENT CONTENT αλλα CONTENT,γινου,ισθι,1,1,0,False,False
 20,J 20:28,aleph,[ADD],ο,addition,CONTENT CONTENT και CONTENT αυτω ο,CONTENT ο CONTENT και CONTENT αυτω ο,,ο,0,1,0,False,False
 20,J 20:28,A,[ADD],και,addition,CONTENT CONTENT και CONTENT αυτω,και CONTENT CONTENT και CONTENT αυτω,,κε,0,1,0,False,False
@@ -4316,14 +4226,12 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 21,J 21:2,D,ο,ος ην,substitution_lexical,ο CONTENT CONTENT και CONTENT ο απο CONTENT της CONTENT και,ο CONTENT CONTENT και CONTENT ος ην απο CONTENT της CONTENT και,ο,οσ ιν,1,2,0,False,False
 21,J 21:2,D,του,CONTENT,substitution_lexical,CONTENT της CONTENT και οι του CONTENT και CONTENT εκ των,CONTENT της CONTENT και οι CONTENT CONTENT και CONTENT εκ των,του,ιιι,1,1,1,False,False
 21,J 21:2,D,αυτου,CONTENT,substitution_morphological,και CONTENT εκ των CONTENT αυτου CONTENT,και CONTENT εκ των CONTENT CONTENT CONTENT,ετου,ετουτου,1,1,2,False,False
-21,J 21:3,P66,εις το CONTENT και εν εκεινη τη CONTENT CONTENT ουδεν,[OMIT],substitution_lexical,συν σοι CONTENT και CONTENT εις το CONTENT και εν εκεινη τη CONTENT CONTENT ουδεν,συν σοι CONTENT και CONTENT,ισ το πλιον κε εν εκινι τι νικτι επιασαν ουδεν,,10,0,0,True,False
 21,J 21:3,aleph,[ADD],ουν,addition,και ημεις συν σοι CONTENT και CONTENT εις το CONTENT,και ημεις συν σοι CONTENT ουν και CONTENT εις το CONTENT,,ουν,0,1,0,False,False
 21,J 21:3,aleph,CONTENT,CONTENT,substitution_morphological,και εν εκεινη τη CONTENT CONTENT ουδεν,και εν CONTENT τη CONTENT CONTENT ουδεν,επιασαν,εκοπιασαν,1,1,1,False,False
 21,J 21:3,A,[ADD],και,addition,CONTENT και ημεις συν σοι CONTENT και CONTENT εις το,CONTENT και ημεις συν σοι και CONTENT και CONTENT εις το,,κε,0,1,0,False,False
 21,J 21:3,A,[ADD],CONTENT,addition,και CONTENT εις το CONTENT και εν εκεινη τη CONTENT,και CONTENT εις το CONTENT CONTENT και εν εκεινη τη CONTENT,,ειθισ,0,1,1,False,False
 21,J 21:3,D,αυτοις,τουτοις,substitution_morphological,CONTENT αυτοις CONTENT CONTENT CONTENT CONTENT CONTENT,CONTENT τουτοις CONTENT CONTENT CONTENT CONTENT CONTENT,ετισ,τουτισ,1,1,0,False,False
 21,J 21:3,D,CONTENT,CONTENT,substitution_morphological,CONTENT και ημεις συν σοι CONTENT και CONTENT εις το CONTENT,CONTENT και ημεις συν σοι CONTENT και CONTENT εις το CONTENT,εξιλθον,εξιλθαν,1,1,1,False,False
-21,J 21:4,P66,CONTENT δε ηδη CONTENT CONTENT CONTENT εις,[OMIT],substitution_lexical,CONTENT δε ηδη CONTENT CONTENT CONTENT εις τον CONTENT ου CONTENT CONTENT,τον CONTENT ου CONTENT CONTENT,προιασ δε ιδι γινομενισ εστι ιισουσ ισ,,7,0,0,True,False
 21,J 21:4,P66,CONTENT,CONTENT,substitution_lexical,εις τον CONTENT ου CONTENT CONTENT οι CONTENT οτι CONTENT CONTENT,τον CONTENT ου CONTENT CONTENT οι CONTENT οτι CONTENT CONTENT,ιδισαν,εγνοσαν,1,1,1,True,False
 21,J 21:4,aleph,ηδη CONTENT,CONTENT,substitution_morphological,CONTENT δε ηδη CONTENT CONTENT CONTENT εις τον CONTENT,CONTENT δε CONTENT CONTENT CONTENT επι τον CONTENT,ιδι γινομενισ,γενομενισ,2,1,0,False,False
 21,J 21:4,aleph,εις,επι,substitution_lexical,δε ηδη CONTENT CONTENT CONTENT εις τον CONTENT ου CONTENT CONTENT,CONTENT δε CONTENT CONTENT CONTENT επι τον CONTENT ου CONTENT CONTENT,ισ,επι,1,1,1,False,False
@@ -4337,7 +4245,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 21,J 21:5,D,ουν,ου,substitution_morphological,CONTENT ουν αυτοις CONTENT CONTENT μη τι,CONTENT ου αυτοις ο CONTENT CONTENT μη,ουν,ου,1,1,0,False,False
 21,J 21:5,D,[ADD],ο,addition,CONTENT ουν αυτοις CONTENT CONTENT μη τι CONTENT,CONTENT ου αυτοις ο CONTENT CONTENT μη τι CONTENT,,ο,0,1,1,False,False
 21,J 21:6,P66,CONTENT ουν,οι δε CONTENT δι CONTENT CONTENT CONTENT,substitution_lexical,CONTENT το CONTENT και CONTENT CONTENT ουν και ουκετι αυτο CONTENT CONTENT,CONTENT το CONTENT και CONTENT οι δε CONTENT δι CONTENT CONTENT CONTENT και ουδεν CONTENT επι δε,εβαλον ουν,ι δε ιπον δια ολισ νικτοσ εκοπιασαμε,2,7,0,True,False
-21,J 21:6,P66,ουκετι αυτο CONTENT CONTENT απο του CONTENT των CONTENT,ουδεν CONTENT επι δε τω CONTENT CONTENT,substitution_lexical,και CONTENT CONTENT ουν και ουκετι αυτο CONTENT CONTENT απο του CONTENT των CONTENT,δι CONTENT CONTENT CONTENT και ουδεν CONTENT επι δε τω CONTENT CONTENT,ουκετι ετο ελκισε ισχιον απο του πλιθουσ τον ιχθιον,ουδεν ελαβομε επι δε το σο ονοματι,9,7,1,True,True
 21,J 21:6,aleph,ο δε CONTENT,CONTENT,substitution_lexical,ο δε CONTENT αυτοις CONTENT εις τα CONTENT,CONTENT αυτοις CONTENT εις τα CONTENT,ο δε ιπε,λεγι,3,1,0,False,False
 21,J 21:6,aleph,[ADD],οι δε,addition,CONTENT το CONTENT και CONTENT CONTENT ουν και ουκετι αυτο,CONTENT το CONTENT και CONTENT οι δε CONTENT και ουκετι αυτο CONTENT,,ι δε,0,2,1,False,False
 21,J 21:6,aleph,ουν,[OMIT],omission,το CONTENT και CONTENT CONTENT ουν και ουκετι αυτο CONTENT CONTENT,και CONTENT οι δε CONTENT και ουκετι αυτο CONTENT CONTENT,ουν,,1,0,2,False,False
@@ -4346,7 +4253,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 21,J 21:6,D,[ADD],οι δε,addition,CONTENT το CONTENT και CONTENT CONTENT ουν και ουκετι αυτο,CONTENT το CONTENT και CONTENT οι δε CONTENT και ουκετι αυτο CONTENT,,ι δε,0,2,0,False,False
 21,J 21:6,D,ουν,[OMIT],omission,το CONTENT και CONTENT CONTENT ουν και ουκετι αυτο CONTENT CONTENT,και CONTENT οι δε CONTENT και ουκετι αυτο CONTENT CONTENT,ουν,,1,0,1,False,False
 21,J 21:6,D,CONTENT,CONTENT,substitution_morphological,CONTENT ουν και ουκετι αυτο CONTENT CONTENT απο του CONTENT των,δε CONTENT και ουκετι αυτο CONTENT CONTENT απο του CONTENT των,ελκισε,ιλκισε,1,1,2,False,False
-21,J 21:7,P66,CONTENT ουν ο CONTENT εκεινος ον CONTENT ο CONTENT τω CONTENT ο,[OMIT],substitution_lexical,CONTENT ουν ο CONTENT εκεινος ον CONTENT ο CONTENT τω CONTENT ο CONTENT CONTENT CONTENT ουν CONTENT,CONTENT CONTENT τον CONTENT CONTENT,λεγι ουν ο μαθιτισ εκινοσ ον ιγαπα ο ιισουσ το πετρο ο,,12,0,0,True,False
 21,J 21:7,P66,CONTENT CONTENT ουν CONTENT CONTENT οτι ο CONTENT CONTENT,CONTENT,substitution_lexical,CONTENT τω CONTENT ο CONTENT CONTENT CONTENT ουν CONTENT CONTENT οτι ο CONTENT CONTENT τον CONTENT CONTENT ην γαρ,CONTENT CONTENT τον CONTENT CONTENT ην γαρ,εστιν σιμον ουν πετροσ ακουσασ οτι ο κιριοσ εστιν,εστι,9,1,1,False,False
 21,J 21:7,D,ο,[OMIT],omission,ο CONTENT εκεινος ον CONTENT ο CONTENT τω CONTENT ο CONTENT,ο CONTENT εκεινος ον CONTENT CONTENT τω CONTENT ο CONTENT,ο,,1,0,0,False,False
 21,J 21:7,D,[ADD],ημων,addition,τω CONTENT ο CONTENT CONTENT CONTENT ουν CONTENT CONTENT οτι,τω CONTENT ο CONTENT CONTENT ημων CONTENT ουν CONTENT CONTENT οτι,,ιμον,0,1,1,False,False
@@ -4354,7 +4260,6 @@ chapter,verse,manuscript,base_reading,ms_reading,type,base_context_10w,ms_contex
 21,J 21:8,aleph,[ADD],CONTENT,addition,οι δε CONTENT CONTENT τω CONTENT CONTENT ου γαρ CONTENT,οι δε CONTENT CONTENT τω CONTENT CONTENT CONTENT ου γαρ CONTENT,,αλο,0,1,0,False,False
 21,J 21:8,A,CONTENT,CONTENT,substitution_morphological,της CONTENT αλλα ως απο CONTENT CONTENT CONTENT το CONTENT των,της CONTENT αλλα ως απο CONTENT CONTENT CONTENT το CONTENT των,πιχον,πιχεον,1,1,0,False,False
 21,J 21:8,D,CONTENT,CONTENT,substitution_morphological,δε CONTENT CONTENT τω CONTENT CONTENT ου γαρ CONTENT CONTENT απο,δε CONTENT CONTENT τω CONTENT CONTENT ου γαρ CONTENT CONTENT απο,ιλθον,ιλθαν,1,1,0,False,False
-21,J 21:9,P66,CONTENT CONTENT και CONTENT,[OMIT],substitution_lexical,CONTENT CONTENT CONTENT CONTENT και CONTENT CONTENT και CONTENT,CONTENT CONTENT CONTENT CONTENT και,οψαριον επικιμενον κε αρτον,,4,0,0,True,False
 21,J 21:9,aleph,CONTENT,CONTENT,substitution_morphological,ως ουν CONTENT εις την CONTENT CONTENT CONTENT,ως ουν CONTENT εις την CONTENT CONTENT CONTENT,απεβισαν,ανεβισαν,1,1,0,False,False
 21,J 21:10,aleph,[ADD],ο,addition,CONTENT αυτοις CONTENT CONTENT απο των CONTENT,CONTENT αυτοις ο CONTENT CONTENT απο των CONTENT,,ο,0,1,0,False,False
 21,J 21:10,A,[ADD],ο,addition,CONTENT αυτοις CONTENT CONTENT απο των CONTENT,CONTENT αυτοις ο CONTENT CONTENT απο των CONTENT,,ο,0,1,0,False,False
