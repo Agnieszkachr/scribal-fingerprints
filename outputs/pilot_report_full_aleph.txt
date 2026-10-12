@@ -9,15 +9,15 @@ ARI Null Permutation: Mean=-0.0000, SD=0.0008
 Chi2 (Broad) p: 1.91e-03
 Cramér's V (Broad) Block Bootstrap CI: 0.0475 [95% CI: 0.0353 - 0.0626]
 Cramér's V (Broad) Null Permutation: Mean=0.0243, SD=0.0071 (p=4.975e-03)
-Chi2 (SubTypes) p: 4.45e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0650 [95% CI: 0.0484 - 0.0887]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0343, SD=0.0100 (p=1.990e-02)
+Chi2 (SubTypes) p: 3.59e-02
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0574 [95% CI: 0.0407 - 0.0820]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0349, SD=0.0097 (p=7.463e-02)
 Odd/Even Rank Correlation (full attested): Spearman rho = 0.8857 (p=0.0188)
 Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.4286 (p=0.3965)
 Split-half centroids: same-witness odd/even distance = 0.7674, cross-witness = 1.0043, 4/4 witnesses nearest to their own other half
 Split-half permutation (labels within chapters): gap = 0.2369, null 0.0011 +/- 0.0258, p = 0.0020; nearest-self p = 0.0020
-Cohen's d within substitution_morphological (n=1000): 0.0049
-Cohen's d within substitution_lexical (n=678): -0.0081
+Cohen's d within substitution_morphological (n=1000): 0.0011
+Cohen's d within substitution_lexical (n=1000): 0.0002
 Cohen's d within substitution_word_order (n=364): -0.0140
 Cohen's d within addition (n=1000): -0.0065
 Cohen's d within omission (n=1000): -0.0023

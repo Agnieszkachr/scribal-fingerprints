@@ -62,6 +62,7 @@ from src.config import (
 from src.corpus_registry import CORPUS_REGISTRY, ITSEE_FILE_TEMPLATES
 from src.download_itsee_data import parse_verse_id, parse_book_code, expected_book_codes
 from src.utils.nomina_sacra import expand as expand_nomen_sacrum
+from src.utils.lemma_lexicon import is_morphological
 from src.utils.token_normalizer import clean_surface, normalize_orthography
 
 logging.basicConfig(
@@ -74,7 +75,6 @@ TEI_NS = {"tei": "http://www.tei-c.org/ns/1.0"}
 GAP = "[GAP]"
 CONTEXT_WORDS = 5
 MAX_TRANSPOSITION_GAP = 8
-MORPH_THRESHOLD = 0.5
 
 VARIANT_TYPES = [
     "substitution_morphological", "substitution_lexical",
@@ -251,24 +251,17 @@ def process_xml(file_path: Path, corpus: str) -> Dict[str, List[Token]]:
 # Alignment and classification
 # ---------------------------------------------------------------------------
 
-def _similarity(a: str, b: str) -> float:
-    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
-
-
-def classify_substitution(base: List[Token], ms: List[Token], threshold: float = MORPH_THRESHOLD) -> str:
+def classify_substitution(base: List[Token], ms: List[Token]) -> str:
     """Morphological vs lexical substitution.
 
-    Equal-length blocks: character similarity averaged over positionally paired
-    normalised tokens. Unequal blocks: similarity of the joined normalised
-    strings. Above ``threshold`` is morphological.
+    Morphological if every positionally paired word on the two sides is a form
+    of the same lexeme (lemma lexicon, with a character-similarity fallback for
+    forms it does not contain; see ``src.utils.lemma_lexicon``); lexical
+    otherwise, including any block in which a word has no partner.
     """
-    b = [t.norm for t in base]
-    m = [t.norm for t in ms]
-    if len(b) == len(m):
-        score = sum(_similarity(x, y) for x, y in zip(b, m)) / len(b)
-    else:
-        score = _similarity(" ".join(b), " ".join(m))
-    return "substitution_morphological" if score > threshold else "substitution_lexical"
+    if is_morphological([t.surface for t in base], [t.surface for t in ms]):
+        return "substitution_morphological"
+    return "substitution_lexical"
 
 
 def align_verse(base: List[Token], ms: List[Token]) -> List[Dict[str, Any]]:

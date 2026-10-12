@@ -1,0 +1,301 @@
+ID,verse,manuscript,baseline_reading,manuscript_reading,sampling_stratum,annotation,unsure,note
+GS-0004,J 6:66,aleph,εκ,[OMIT],omission,Omission,False,
+GS-0008,J 8:33,D,δεδουλευκαμεν,[OMIT],omission,Omission,False,
+GS-0011,J 5:16,P66,οτι,το,substitution_lexical,Lexical substitution,False,Different lexemes: conjunction ὅτι vs article/relative τό
+GS-0013,J 12:34,D,λεγεις συ,συ λεγεις,substitution_word_order,Word-order shift,False,Exact same words reordered: λέγεις σύ -> σύ λέγεις
+GS-0016,J 8:42,D,ιησους ει ο θεος ο,ο ιησους ει ο θεος,substitution_word_order,Word-order shift,False,Reordering of words and article: Ἰησοῦς εἰ ὁ θεὸς ὁ -> ὁ Ἰησοῦς εἰ ὁ θεός
+GS-0020,J 14:10,aleph,πιστευσεις,πιστευεις,substitution_morphological,Morphological substitution,False,Same lexeme πιστεύω (future πιστεύσεις vs present πιστεύεις)
+GS-0021,J 11:21,A,απεθανεν,[OMIT],omission,Omission,False,
+GS-0022,J 13:10,P66,ολος,πιστος,substitution_lexical,Lexical substitution,False,Different adjectives/lexemes: ὅλος vs πιστός
+GS-0023,J 16:19,D,ερωταν,επερωτησαι περι τουτου,substitution_lexical,Lexical substitution,False,Compound ἐπερωτάω vs simplex ἐρωτάω + prepositional phrase
+GS-0024,J 18:2,P66,αυτου εκει,[OMIT],omission,Omission,False,
+GS-0025,J 7:6,aleph,παρεστιν,εστιν,substitution_morphological,Lexical substitution,False,Compound verb πάρειμι (πάρεστιν) vs simplex εἰμί (ἐστιν)
+GS-0027,J 7:45,P66,ειπον,λεγουσιν,substitution_lexical,Morphological substitution,False,Same lexeme λέγω (suppletive aorist εἶπον vs present λέγουσιν)
+GS-0035,J 19:21,A,των ιουδαιων ειμι,ειμι των ιουδαιων,substitution_word_order,Word-order shift,False,Exact same words reordered: τῶν Ἰουδαίων εἰμί -> εἰμὶ τῶν Ἰουδαίων
+GS-0036,J 14:20,P66,υμεις γνωσεσθε,γνωσεσθε υμεις,substitution_word_order,Word-order shift,False,Exact same words reordered: ὑμεῖς γνώσεσθε -> γνώσεσθε ὑμεῖς
+GS-0042,J 9:19,D,εστιν,[OMIT],omission,Omission,False,
+GS-0049,J 4:9,D,ουσης ου γαρ συνχρωνται ιουδαιοις σαμαρειταις,[OMIT],omission,Omission,False,
+GS-0050,J 4:29,A,α,οσα,substitution_lexical,Lexical substitution,False,Different pronouns/lexemes: relative ὅς (ἅ) vs correlative ὅσος (ὅσα)
+GS-0056,J 11:17,P66,εχοντα εν τω μνημειω,εν τω μνημειω εχοντα,substitution_word_order,Word-order shift,False,Exact same words reordered: ἔχοντα ἐν τῷ μνημείῳ -> ἐν τῷ μνημείῳ ἔχοντα
+GS-0060,J 1:40,A,[ADD],δε,addition,Addition,False,
+GS-0063,J 14:4,A,[ADD],οιδατε,addition,Addition,False,
+GS-0064,J 8:34,aleph,[ADD],ο,addition,Addition,False,
+GS-0073,J 6:53,D,[ADD],ο,addition,Addition,False,
+GS-0078,J 3:28,D,εγω,[OMIT],omission,Omission,False,
+GS-0084,J 13:34,aleph,ινα,[OMIT],omission,Omission,False,
+GS-0087,J 9:16,A,[ADD],ουτος ο ανθρωπος,addition,Addition,False,
+GS-0088,J 9:10,P66,ελεγον,ειπαν,substitution_lexical,Morphological substitution,False,Same lexeme λέγω (imperfect ἔλεγον vs aorist εἶπαν)
+GS-0092,J 21:17,A,και ειπεν,λεγει αυτω,substitution_lexical,Lexical substitution,False,Different wording/lexemes: καί + εἶπον vs λέγει + αὐτῷ
+GS-0110,J 10:34,A,οτι,[OMIT],omission,Omission,False,
+GS-0111,J 18:10,P66,το ωταριον,[OMIT],omission,Omission,False,
+GS-0115,J 17:11,D,και,[OMIT],omission,Omission,False,
+GS-0116,J 6:11,aleph,ουν,δε,substitution_lexical,Lexical substitution,False,Different particles/lexemes: οὖν vs δέ
+GS-0125,J 17:24,D,εδωκας,δεδωκας,substitution_morphological,Morphological substitution,False,Same lexeme δίδωμι (aorist ἔδωκας vs perfect δέδωκας)
+GS-0127,J 16:32,D,καμε,και εμε,substitution_morphological,Morphological substitution,False,Same lexemes καί + ἐγώ (crasis κἀμέ vs resolved καὶ ἐμέ)
+GS-0131,J 8:52,aleph,ειπον,ειπαν,substitution_morphological,Morphological substitution,False,Same lexeme λέγω (2nd aorist εἶπον vs 1st aorist ending εἶπαν)
+GS-0133,J 11:33,D,ενεβρειμησατο,τους συνεληλυθοτας μετ αυτης εταραχθη,substitution_lexical,Lexical substitution,False,Different verbal lexemes: ἐμβριμάομαι vs ταράσσω + participle
+GS-0138,J 16:21,D,ωρα,ημερα,substitution_lexical,Lexical substitution,False,Different nouns/lexemes: ὥρα vs ἡμέρα
+GS-0145,J 16:31,A,[ADD],ο,addition,Addition,False,
+GS-0156,J 16:23,D,αν,εαν,substitution_morphological,Morphological substitution,False,Same conditional particle: ἄν vs ἐάν
+GS-0157,J 11:19,A,[ADD],και,addition,Addition,False,
+GS-0158,J 8:51,P66,θεωρηση,ιδη,substitution_lexical,Lexical substitution,False,Different verbal lexemes: θεωρέω (θεωρήσῃ) vs ὁράω/εἶδον (ἴδῃ)
+GS-0159,J 12:7,A,τηρηση,τετηρηκεν,substitution_morphological,Morphological substitution,False,Same lexeme τηρέω (aorist subj τηρήσῃ vs perfect indic τετήρηκεν)
+GS-0162,J 4:29,D,α,οσα,substitution_lexical,Lexical substitution,False,Different pronouns/lexemes: relative ὅς (ἅ) vs correlative ὅσος (ὅσα)
+GS-0172,J 17:18,D,[ADD],τουτον,addition,Addition,False,
+GS-0173,J 12:30,P66,γεγονεν,ηλθεν,substitution_lexical,Lexical substitution,False,Different verbal lexemes: γίνομαι (γέγονεν) vs ἔρχομαι (ἦλθεν)
+GS-0177,J 2:17,aleph,εστιν γεγραμμενον,γεγραμμενον εστιν,substitution_word_order,Word-order shift,False,Exact same words reordered: ἐστιν γεγραμμένον -> γεγραμμένον ἐστίν
+GS-0184,J 13:36,D,δε υστερον,[OMIT],omission,Omission,False,
+GS-0186,J 13:37,aleph,ακολουθειν,ακολουθησαι,substitution_morphological,Morphological substitution,False,Same lexeme ἀκολουθέω (present inf ἀκολουθεῖν vs aorist inf ἀκολουθῆσαι)
+GS-0191,J 18:38,P66,εν αυτω αιτιαν,αιτιαν εν αυτω,substitution_word_order,Word-order shift,False,Exact same words reordered: ἐν αὐτῷ αἰτίαν -> αἰτίαν ἐν αὐτῷ
+GS-0196,J 10:15,D,μου τιθημι,διδωμι,substitution_lexical,Lexical substitution,False,Different verbs: τίθημι (μου τίθημι) vs δίδωμι
+GS-0199,J 8:23,aleph,και,[OMIT],omission,Omission,False,
+GS-0202,J 1:26,aleph,[ADD],τω,addition,Addition,False,
+GS-0204,J 7:27,P66,ερχηται,ελθη,substitution_lexical,Morphological substitution,False,Same lexeme ἔρχομαι (suppletive: present subj ἔρχηται vs aorist subj ἔλθῃ)
+GS-0205,J 20:4,aleph,[ADD],και,addition,Addition,False,
+GS-0208,J 19:21,aleph,των ιουδαιων ειμι,ειμι των ιουδαιων,substitution_word_order,Word-order shift,False,Exact same words reordered: τῶν Ἰουδαίων εἰμί -> εἰμὶ τῶν Ἰουδαίων
+GS-0209,J 5:16,D,εν,[OMIT],omission,Omission,False,
+GS-0214,J 2:3,aleph,εχουσι,εστιν,substitution_morphological,Lexical substitution,False,Different verbal lexemes: ἔχω (ἔχουσι) vs εἰμί (ἐστιν)
+GS-0232,J 3:8,aleph,[ADD],υδατος και του,addition,Addition,False,
+GS-0235,J 1:46,P66,ο,[OMIT],omission,Omission,False,
+GS-0238,J 19:28,A,ειδως,[OMIT],omission,Omission,False,
+GS-0241,J 9:17,aleph,[ADD],ουν,addition,Addition,False,
+GS-0242,J 10:18,P66,ηρεν,ερι,substitution_lexical,Morphological substitution,False,Same lexeme αἴρω (aorist ἦρεν vs present/future αἴρει/αἰρεῖ)
+GS-0247,J 13:26,P66,δωσω αυτω βαψας ουν,ψας το,substitution_lexical,Lexical substitution,False,Different verbal construction and lexemes
+GS-0248,J 6:14,D,αληθως,[OMIT],omission,Omission,False,
+GS-0260,J 9:26,P66,ηνοιξεν,ηνεωξεν,substitution_morphological,Morphological substitution,False,Same lexeme ἀνοίγω (single augment ἤνοιξεν vs double augment ἠνέῳξεν)
+GS-0267,J 13:26,A,δωσω αυτω βαψας ουν,εμψας το,substitution_lexical,Lexical substitution,False,Different verbal construction and lexemes
+GS-0268,J 2:17,A,[ADD],δε,addition,Addition,False,
+GS-0270,J 6:64,aleph,ιησους,σωτηρ,substitution_lexical,Lexical substitution,False,Different nouns/lexemes: Ἰησοῦς vs σωτήρ
+GS-0271,J 13:26,aleph,και δωσω αυτω,επιδωσω,substitution_morphological,Lexical substitution,False,Different verbs: δίδωμι (καὶ δώσω αὐτῷ) vs compound ἐπιδίδωμι (ἐπιδώσω)
+GS-0273,J 13:36,D,[ADD],εγω,addition,Addition,False,
+GS-0276,J 9:34,A,ειπαν,ειπον,substitution_morphological,Morphological substitution,False,Same lexeme λέγω (1st aorist ending εἶπαν vs 2nd aorist εἶπον)
+GS-0277,J 6:51,D,δε,[OMIT],omission,Omission,False,
+GS-0286,J 19:40,A,[ADD],εν,addition,Addition,False,
+GS-0291,J 7:22,aleph,[ADD],εν,addition,Addition,False,
+GS-0297,J 8:54,P66,[ADD],ο,addition,Addition,False,
+GS-0308,J 15:15,P66,παρα,προ,substitution_morphological,Lexical substitution,False,Different prepositions/lexemes: παρά vs πρό
+GS-0313,J 9:14,D,ανεωξεν,ηνυξεν,substitution_morphological,Morphological substitution,False,Same lexeme ἀνοίγω (itacistic/orthographic augment variant ἤνυξεν for ἀνέῳξεν)
+GS-0315,J 10:39,A,[ADD],ουν αυτον,addition,Addition,False,
+GS-0317,J 11:28,P66,τουτο,ταυτα,substitution_lexical,Morphological substitution,False,Same lexeme οὗτος (neut sg τοῦτο vs neut pl ταῦτα)
+GS-0326,J 14:3,D,και εαν,καν,substitution_morphological,Morphological substitution,False,Same lexemes καί + ἐάν (resolved καὶ ἐάν vs crasis κἄν)
+GS-0329,J 6:46,D,[ADD],του,addition,Addition,False,
+GS-0333,J 6:44,A,εμε,με,substitution_morphological,Morphological substitution,False,Same pronoun ἐγώ (emphatic ἐμέ vs enclitic με)
+GS-0342,J 8:19,aleph,ηδειτε,[OMIT],omission,Omission,False,
+GS-0346,J 13:32,A,[ADD],ει ο θεος εδοξασθη εν αυτω,addition,Addition,False,
+GS-0347,J 13:12,aleph,αυτου,αυτων,substitution_morphological,Morphological substitution,False,Same pronoun αὐτός (gen sg αὐτοῦ vs gen pl αὐτῶν)
+GS-0348,J 13:14,aleph,ει ουν εγω ενιψα υμων τους ποδας ο κυριος και ο διδασκαλος,[OMIT],omission,Omission,False,
+GS-0351,J 11:45,D,[ADD],ο ιησους,addition,Addition,False,
+GS-0353,J 5:42,A,ουκ εχετε,ου χεται,substitution_morphological,Morphological substitution,False,Same lexemes οὐ + ἔχω (itacistic spelling οὐ χεται for οὐκ ἔχετε)
+GS-0354,J 8:55,P66,καν,και εαν,substitution_morphological,Morphological substitution,False,Same lexemes καί + ἐάν (crasis κἄν vs resolved καὶ ἐάν)
+GS-0356,J 3:23,aleph,ο,[OMIT],omission,Omission,False,
+GS-0362,J 10:21,aleph,[ADD],δε,addition,Addition,False,
+GS-0363,J 10:25,aleph,αυτοις,ο,substitution_lexical,Lexical substitution,False,Different lexemes: pronoun αὐτοῖς vs article ὁ
+GS-0366,J 12:18,D,υπηντησεν,και υπηντησαν,substitution_morphological,Lexical substitution,False,Added conjunction καί and plural subject/verb
+GS-0370,J 7:28,P66,ουν,δε,substitution_lexical,Lexical substitution,False,Different particles/lexemes: οὖν vs δέ
+GS-0372,J 15:16,D,αιτητε,αιτησητε,substitution_morphological,Morphological substitution,False,Same lexeme αἰτέω (present subj αἰτῆτε vs aorist subj αἰτήσητε)
+GS-0375,J 12:18,P66,και,[OMIT],omission,Omission,False,
+GS-0377,J 11:48,aleph,πιστευσουσιν,πιστευουσιν,substitution_morphological,Morphological substitution,False,Same lexeme πιστεύω (future πιστεύσουσιν vs present πιστεύουσιν)
+GS-0382,J 13:20,D,δε,λαμβανων,substitution_lexical,Lexical substitution,False,Different words/lexemes: particle δέ vs participle λαμβάνων
+GS-0383,J 6:21,D,εγενετο,[OMIT],omission,Omission,False,
+GS-0387,J 12:3,D,[ADD],και,addition,Addition,False,
+GS-0388,J 21:7,P66,εστιν σιμων ουν πετρος ακουσας οτι ο κυριος εστιν,εστι,substitution_lexical,Lexical substitution,False,Extensive difference in clause structure/lexemes
+GS-0389,J 11:5,D,ηγαπα,εφιλει,substitution_lexical,Lexical substitution,False,Different verbal lexemes: ἀγαπάω (ἠγάπα) vs φιλέω (ἐφίλει)
+GS-0390,J 20:5,A,κειμενα τα οθονια,τα οθονια κειμενα,substitution_word_order,Word-order shift,False,Exact same words reordered: κείμενα τὰ ὀθόνια -> τὰ ὀθόνια κείμενα
+GS-0409,J 8:48,D,λεγομεν ημεις,ημεις λεγομεν,substitution_word_order,Word-order shift,False,Exact same words reordered: λέγομεν ἡμεῖς -> ἡμεῖς λέγομεν
+GS-0415,J 7:31,P66,[ADD],πολλοι δει επιστευσαν,addition,Addition,False,
+GS-0417,J 11:27,P66,πιστευω,πεπιστευκα,substitution_morphological,Morphological substitution,False,Same lexeme πιστεύω (present πιστεύω vs perfect πεπίστευκα)
+GS-0421,J 11:32,P66,προς,εις,substitution_lexical,Lexical substitution,False,Different prepositions/lexemes: πρός vs εἰς
+GS-0423,J 1:4,D,ην,εστιν,substitution_morphological,Morphological substitution,False,Same lexeme εἰμί (imperfect ἦν vs present ἐστίν)
+GS-0436,J 9:17,A,ηνεωξεν,ηνοιξεν,substitution_morphological,Morphological substitution,False,Same lexeme ἀνοίγω (double augment ἠνέῳξεν vs single augment ἤνοιξεν)
+GS-0437,J 12:3,aleph,[ADD],του,addition,Addition,False,
+GS-0438,J 6:64,aleph,τις εστιν,ην,substitution_lexical,Lexical substitution,False,Different clause structure: interrogative pronoun τίς + εἰμί vs ἦν
+GS-0442,J 6:26,aleph,ζητειτε με ουκ,ουχ,substitution_lexical,Lexical substitution,False,Deletion of ζητεῖτέ με and substitution of particle
+GS-0449,J 10:22,A,[ADD],και,addition,Addition,False,
+GS-0450,J 13:8,P66,ιησους αυτω,αυτω ιησους,substitution_word_order,Word-order shift,False,Exact same words reordered: Ἰησοῦς αὐτῷ -> αὐτῷ Ἰησοῦς
+GS-0454,J 10:1,A,υμιν λεγω,λεγω υμιν,substitution_word_order,Word-order shift,False,Exact same words reordered: ὑμῖν λέγω -> λέγω ὑμῖν
+GS-0455,J 6:58,D,εξ,εκ του,substitution_lexical,Lexical substitution,False,Preposition alone ἐξ vs preposition + article ἐκ τοῦ
+GS-0458,J 4:27,aleph,[ADD],αυτω,addition,Addition,False,
+GS-0461,J 21:6,aleph,ελκυσαι,ιλκυσαι,substitution_morphological,Morphological substitution,False,Same lexeme ἑλκύω (itacistic spelling ἰλκύσαι for ἑλκύσαι)
+GS-0463,J 9:27,P66,ουκ,[OMIT],omission,Omission,False,
+GS-0471,J 18:17,P66,θυρωρος,θυρουρος τω πετρω,substitution_morphological,Lexical substitution,False,Added noun phrase τῷ Πέτρῳ
+GS-0473,J 6:42,aleph,και την μητερα,[OMIT],omission,Omission,False,
+GS-0475,J 4:15,D,διερχομαι,ερχωμαι,substitution_morphological,Lexical substitution,False,Compound verb διέρχομαι vs simplex ἔρχομαι
+GS-0490,J 18:16,aleph,εισηγαγε,εισηηνεγκε,substitution_morphological,Lexical substitution,False,Compound εἰσάγω (εἰσήγαγε) vs compound εἰσφέρω (εἰσήνεγκε)
+GS-0493,J 18:9,A,αυτων,αυτου,substitution_morphological,Morphological substitution,False,Same pronoun αὐτός (gen pl αὐτῶν vs gen sg αὐτοῦ)
+GS-0494,J 18:34,aleph,συ τουτο λεγεις η αλλοι,τουτο ειπας η αλλοι σοι,substitution_word_order,Word-order shift,True,Reordered clause with suppletive aorist εἶπας for λέγεις and moved pronoun
+GS-0497,J 19:5,P66,και λεγει αυτοις ιδου ανθρωπος,[OMIT],omission,Omission,False,
+GS-0501,J 16:7,A,ου μη ελθη,ουκ ελευσεται,substitution_morphological,Morphological substitution,False,Same verb ἔρχομαι (aorist subj ἔλθῃ with οὐ μή vs future ἐλεύσεται with οὐκ)
+GS-0502,J 6:39,D,[ADD],ινα,addition,Addition,False,
+GS-0510,J 6:10,D,[ADD],ουν,addition,Addition,False,
+GS-0518,J 8:41,P66,ειπον,ειπαν ουν,substitution_morphological,Lexical substitution,False,Added particle οὖν to verb
+GS-0520,J 12:40,aleph,νοησωσι,[OMIT],omission,Omission,False,
+GS-0524,J 21:24,A,ο,[OMIT],omission,Omission,False,
+GS-0538,J 11:1,aleph,[ADD],της,addition,Addition,False,
+GS-0542,J 11:45,aleph,ουν,δε,substitution_lexical,Lexical substitution,False,Different particles/lexemes: οὖν vs δέ
+GS-0545,J 13:33,P66,εγω,[OMIT],omission,Omission,False,
+GS-0569,J 4:46,D,[ADD],δε,addition,Addition,False,
+GS-0574,J 9:27,D,θελετε ακουειν,ακουσαι,substitution_lexical,Lexical substitution,False,Verb phrase θέλετε ἀκούειν reduced to single verb ἀκοῦσαι
+GS-0582,J 9:24,P66,θεω,θων,substitution_morphological,Morphological substitution,False,Same noun θεός (scribal slip/orthography θων for θεῷ)
+GS-0584,J 9:31,aleph,ο θεος αμαρτωλων,αμαρτωλων ο θεος,substitution_word_order,Word-order shift,False,Exact same words reordered: ὁ θεὸς ἁμαρτωλῶν -> ἁμαρτωλῶν ὁ θεός
+GS-0602,J 16:18,aleph,ο λεγει,το,substitution_lexical,Lexical substitution,False,Relative pronoun + verb ὁ λέγει vs article τό
+GS-0608,J 2:20,aleph,ειπαν,ειπον,substitution_morphological,Morphological substitution,False,Same lexeme λέγω (1st aorist εἶπαν vs 2nd aorist εἶπον)
+GS-0610,J 7:34,D,εκει,[OMIT],omission,Omission,False,
+GS-0611,J 17:25,aleph,πατηρ,πατερ,substitution_morphological,Morphological substitution,False,Same noun πατήρ (nominative πατήρ as vocative vs vocative πάτερ)
+GS-0618,J 6:17,D,ηδη εγεγονει,[OMIT],omission,Omission,False,
+GS-0628,J 18:29,A,εξω,[OMIT],omission,Omission,False,
+GS-0629,J 11:54,A,ο,ιησους,substitution_lexical,Lexical substitution,False,Different lexemes: article ὁ vs proper noun Ἰησοῦς
+GS-0635,J 7:51,aleph,παρ αυτου,[OMIT],omission,Omission,False,
+GS-0637,J 12:30,P66,και ειπεν ιησους,ιησους και ειπεν,substitution_word_order,Word-order shift,False,Exact same words reordered: καὶ εἶπεν Ἰησοῦς -> Ἰησοῦς καὶ εἶπεν
+GS-0639,J 15:26,A,[ADD],δε,addition,Addition,False,
+GS-0645,J 16:20,P66,αμην,[OMIT],omission,Omission,False,
+GS-0646,J 14:3,A,τοπον υμιν,υμιν τοπον,substitution_word_order,Word-order shift,False,Exact same words reordered: τόπον ὑμῖν -> ὑμῖν τόπον
+GS-0649,J 20:17,A,[ADD],μου,addition,Addition,False,
+GS-0651,J 15:6,D,αυτα,αυτο,substitution_morphological,Morphological substitution,False,Same pronoun αὐτός (neut pl αὐτά vs neut sg αὐτό)
+GS-0653,J 5:44,aleph,ζητειτε,ζητουντες,substitution_morphological,Morphological substitution,False,Same lexeme ζητέω (finite verb ζητεῖτε vs participle ζητοῦντες)
+GS-0654,J 6:58,aleph,ουτος,[OMIT],omission,Omission,False,
+GS-0655,J 14:17,A,[ADD],δε,addition,Addition,False,
+GS-0656,J 11:39,D,γαρ,[OMIT],omission,Omission,False,
+GS-0658,J 18:16,aleph,ο,ος ην,substitution_lexical,Lexical substitution,False,Article ὁ vs relative clause ὃς ἦν
+GS-0669,J 6:71,P66,[ADD],ων,addition,Addition,False,
+GS-0670,J 14:20,aleph,υμεις γνωσεσθε,γνωσεσθαι υμις,substitution_word_order,Word-order shift,False,Exact same words reordered with itacisms: ὑμεῖς γνώσεσθε -> γνώσεσθε ὑμεῖς
+GS-0678,J 13:26,aleph,ουν,ο,substitution_lexical,Lexical substitution,False,Different lexemes: particle οὖν vs article ὁ
+GS-0687,J 9:9,A,[ADD],δε,addition,Addition,False,
+GS-0691,J 11:32,A,μαριαμ,μαρια,substitution_morphological,Morphological substitution,False,Same proper name Μαρία (indeclinable Μαριάμ vs inflected Μαρία)
+GS-0692,J 21:22,D,[ADD],ουτως,addition,Addition,False,
+GS-0694,J 18:34,aleph,λεγεις,ειπας,substitution_lexical,Morphological substitution,False,Same lexeme λέγω (suppletive: present λέγεις vs aorist εἶπας)
+GS-0695,J 12:4,D,παραδιδοναι,[OMIT],omission,Omission,False,
+GS-0700,J 7:16,D,[ADD],ο,addition,Addition,False,
+GS-0702,J 6:13,A,επερισσευσαν,επερισσευσεν,substitution_morphological,Morphological substitution,False,Same lexeme περισσεύω (plural ἐπερίσσευσαν vs singular ἐπερίσσευσεν)
+GS-0709,J 8:44,P66,ψευδος,δευδος,substitution_morphological,Morphological substitution,False,Same noun ψεῦδος (scribal error δευδος for ψεῦδος)
+GS-0710,J 20:6,A,και,[OMIT],omission,Omission,False,
+GS-0713,J 9:9,aleph,[ADD],δε,addition,Addition,False,
+GS-0714,J 8:22,D,εαυτον,αυτον,substitution_morphological,Morphological substitution,False,Same pronoun base: reflexive ἑαυτόν vs personal αὐτόν
+GS-0723,J 1:26,A,ο,[OMIT],omission,Omission,False,
+GS-0726,J 19:29,aleph,του,[OMIT],omission,Omission,False,
+GS-0728,J 7:24,aleph,κρινετε,κρινατε,substitution_morphological,Morphological substitution,False,Same lexeme κρίνω (present imperative κρίνετε vs aorist imperative κρίνατε)
+GS-0729,J 7:32,P66,περι αυτου ταυτα,ταυτα περι αυτου,substitution_word_order,Word-order shift,False,Exact same words reordered: περὶ αὐτοῦ ταῦτα -> ταῦτα περὶ αὐτοῦ
+GS-0730,J 3:31,aleph,εκ,επι,substitution_lexical,Lexical substitution,False,Different prepositions/lexemes: ἐκ vs ἐπί
+GS-0732,J 10:12,D,εστιν,εισιν,substitution_lexical,Morphological substitution,False,Same lexeme εἰμί (singular ἐστιν vs plural εἰσιν)
+GS-0733,J 16:19,P66,και,[OMIT],omission,Omission,False,
+GS-0734,J 20:23,aleph,αφειονται,αφεθησεται,substitution_morphological,Morphological substitution,False,Same lexeme ἀφίημι (perfect pass ἀφείονται vs future pass ἀφεθήσεται)
+GS-0739,J 12:6,P66,εχων,ειχεν και,substitution_lexical,Lexical substitution,False,Participle ἔχων vs finite verb + conjunction εἶχεν καί
+GS-0741,J 21:6,aleph,ο δε ειπεν,λεγει,substitution_lexical,Lexical substitution,False,Clause ὁ δὲ εἶπεν replaced by single verb λέγει
+GS-0744,J 3:4,aleph,γεννηθηναι γερων ων,γερων ων γεννηθηναι,substitution_word_order,Word-order shift,False,Exact same words reordered: γεννηθῆναι γέρων ὤν -> γέρων ὢν γεννηθῆναι
+GS-0745,J 11:39,P66,τετελευτηκοτος,τετελευκοτος,substitution_morphological,Morphological substitution,False,Same lexeme τελευτάω (orthographic variant τετελευκότος for τετελευτηκότος)
+GS-0750,J 6:45,P66,εμε,με,substitution_morphological,Morphological substitution,False,Same pronoun ἐγώ (emphatic ἐμέ vs enclitic με)
+GS-0751,J 5:9,aleph,και ευθεως,[OMIT],omission,Omission,False,
+GS-0762,J 6:24,aleph,ουκ εστιν εκει,[OMIT],omission,Omission,False,
+GS-0766,J 11:55,D,πολλοι,ουν,substitution_lexical,Lexical substitution,False,Different words: adjective πολλοί vs particle οὖν
+GS-0767,J 16:6,A,αλλ,[OMIT],omission,Omission,False,
+GS-0769,J 12:9,aleph,ο,[OMIT],omission,Omission,False,
+GS-0774,J 12:22,P66,ερχεται,και παλιν ο,substitution_lexical,Lexical substitution,False,Single verb ἔρχεται vs phrase καὶ πάλιν ὁ
+GS-0775,J 15:19,P66,[ADD],τουτου,addition,Addition,False,
+GS-0777,J 10:7,P66,ουν παλιν,αυτοις ο,substitution_lexical,Lexical substitution,False,Different words/lexemes: οὖν πάλιν vs αὐτοῖς ὁ
+GS-0779,J 13:2,D,[ADD],ιουδα σιμωνος απο καρυωτου,addition,Addition,False,
+GS-0784,J 9:22,D,ινα,ινι,substitution_morphological,Morphological substitution,False,Same conjunction ἵνα (scribal error/spelling ινι)
+GS-0785,J 7:26,P66,μηποτε,μηπο,substitution_morphological,Morphological substitution,False,Same adverb μήποτε (scribal truncation μηπο)
+GS-0788,J 7:16,P66,[ADD],ο,addition,Addition,False,
+GS-0796,J 4:39,P66,μαρτυρουσης,ματυρουσης,substitution_morphological,Morphological substitution,False,Same lexeme μαρτυρέω (scribal slip ματυρούσης for μαρτυρούσης)
+GS-0797,J 18:33,A,παλιν εις το πραιτωριον,εις το πραιτωριον παλιν,substitution_word_order,Word-order shift,False,Exact same words reordered: πάλιν εἰς τὸ πραιτώριον -> εἰς τὸ πραιτώριον πάλιν
+GS-0808,J 21:3,D,εξηλθον,εξηλθαν,substitution_morphological,Morphological substitution,False,Same lexeme ἐξέρχομαι (2nd aorist ἐξῆλθον vs 1st aorist ending ἐξῆλθαν)
+GS-0810,J 9:7,D,[ADD],ουν και ενιψατο και ηλθεν,addition,Addition,False,
+GS-0814,J 18:16,A,του αρχιερεως,τω αρχιερει,substitution_morphological,Morphological substitution,False,Same noun phrase ὁ ἀρχιερεύς (genitive τοῦ ἀρχιερέως vs dative τῷ ἀρχιερεῖ)
+GS-0818,J 8:44,P66,ουκ εστιν αληθεια,αληθια ουκ εστιν,substitution_word_order,Word-order shift,False,Exact same words reordered with itacism: οὐκ ἔστιν ἀλήθεια -> ἀλήθεια οὐκ ἔστιν
+GS-0827,J 19:42,aleph,[ADD],οπου,addition,Addition,False,
+GS-0829,J 9:24,A,ειπαν,ειπον,substitution_morphological,Morphological substitution,False,Same lexeme λέγω (1st aorist εἶπαν vs 2nd aorist εἶπον)
+GS-0832,J 5:6,aleph,ηδη,[OMIT],omission,Omission,False,
+GS-0837,J 6:19,aleph,περιπατουντα,περιπατουντ,substitution_morphological,Morphological substitution,False,Same lexeme περιπατέω (participle with elision περιπατοῦντ for περιπατοῦντα)
+GS-0839,J 3:31,D,εκ,απο,substitution_lexical,Lexical substitution,False,Different prepositions/lexemes: ἐκ vs ἀπό
+GS-0840,J 3:16,A,[ADD],αυτου,addition,Addition,False,
+GS-0842,J 5:19,D,[ADD],τι,addition,Addition,False,
+GS-0845,J 13:10,D,[ADD],ο,addition,Addition,False,
+GS-0854,J 21:10,aleph,[ADD],ο,addition,Addition,False,
+GS-0855,J 19:33,A,ηδη αυτον,αυτον ηδη,substitution_word_order,Word-order shift,False,Exact same words reordered: ἤδη αὐτόν -> αὐτὸν ἤδη
+GS-0864,J 10:34,aleph,υμων,[OMIT],omission,Omission,False,
+GS-0875,J 3:34,aleph,[ADD],το πνευμα,addition,Addition,False,
+GS-0881,J 1:35,A,[ADD],ο,addition,Addition,False,
+GS-0882,J 5:36,aleph,με,εμε,substitution_morphological,Morphological substitution,False,Same pronoun ἐγώ (enclitic με vs emphatic ἐμέ)
+GS-0884,J 8:42,P66,εξηλθον,εξεληλυθα,substitution_morphological,Morphological substitution,False,Same lexeme ἐξέρχομαι (aorist ἐξῆλθον vs perfect ἐξελήλυθα)
+GS-0896,J 10:25,P66,αυτοις,ο,substitution_lexical,Lexical substitution,False,Different lexemes: pronoun αὐτοῖς vs article ὁ
+GS-0898,J 6:38,D,απο,εκ,substitution_lexical,Lexical substitution,False,Different prepositions/lexemes: ἀπό vs ἐκ
+GS-0905,J 3:32,A,[ADD],και,addition,Addition,False,
+GS-0910,J 5:38,D,απεστειλεν,απεστακεν,substitution_morphological,Morphological substitution,False,Same lexeme ἀποστέλλω (aorist ἀπέστειλεν vs perfect ἀπέσταλκεν/ἀπέστακεν)
+GS-0924,J 12:15,aleph,θυγατηρ,θυγατερ,substitution_morphological,Morphological substitution,False,Same noun θυγάτηρ (nominative θυγάτηρ vs vocative θύγατερ)
+GS-0926,J 11:54,D,εμεινεν,διετριβεν,substitution_lexical,Lexical substitution,False,Different verbal lexemes: μένω (ἔμεινεν) vs διατρίβω (διέτριβεν)
+GS-0929,J 11:50,aleph,υμιν,[OMIT],omission,Omission,False,
+GS-0932,J 11:1,D,[ADD],της,addition,Addition,False,
+GS-0933,J 14:19,P66,δε,[OMIT],omission,Omission,False,
+GS-0940,J 10:10,P66,και περισσον εχωσιν,[OMIT],omission,Omission,False,
+GS-0942,J 10:39,D,[ADD],και,addition,Addition,False,
+GS-0943,J 6:23,D,ευχαριστησαντος του κυριου,[OMIT],omission,Omission,False,
+GS-0947,J 18:5,aleph,εγω ειμι ιησους,ιησους εγω ειμι,substitution_word_order,Word-order shift,False,Exact same words reordered: ἐγώ εἰμι Ἰησοῦς -> Ἰησοῦς ἐγώ εἰμι
+GS-0955,J 6:14,D,ερχομενος εις τον κοσμον,εις τον κοσμον ερχομενος,substitution_word_order,Word-order shift,False,Exact same words reordered: ἐρχόμενος εἰς τὸν κόσμον -> εἰς τὸν κόσμον ἐρχόμενος
+GS-0956,J 6:22,D,[ADD],εις ο ενεβησαν οι μαθηται αυτου ιησου,addition,Addition,False,
+GS-0961,J 12:5,P66,τουτο,ουτο,substitution_morphological,Morphological substitution,False,Same pronoun οὗτος (scribal slip ουτο for τοῦτο)
+GS-0962,J 11:35,P66,εδακρυσεν ο,εδρακυσεν,substitution_morphological,Lexical substitution,False,Omission of article ὁ and verb metathesis
+GS-0964,J 10:25,D,ειπον,λαλω,substitution_lexical,Lexical substitution,False,Different verbal lexemes: λέγω (εἶπον) vs λαλέω (λαλῶ)
+GS-0971,J 6:15,D,[ADD],αυτον,addition,Addition,False,
+GS-0973,J 8:52,aleph,θεωρηση,γευσηται,substitution_morphological,Lexical substitution,False,Different verbal lexemes: θεωρέω (θεωρήσῃ) vs γεύομαι (γεύσηται)
+GS-0979,J 8:53,D,πατρος ημων,[OMIT],omission,Omission,False,
+GS-0985,J 6:64,P66,παραδωσων,μελλων,substitution_lexical,Lexical substitution,False,Different verbs: παραδίδωμι (παραδώσων) vs μέλλω (μέλλων)
+GS-0988,J 8:52,D,ειπον,ειπαν ουν,substitution_morphological,Lexical substitution,False,Added particle οὖν to verb form
+GS-0991,J 9:12,D,[ADD],ουν,addition,Addition,False,
+GS-0994,J 15:24,P66,ουδεις,μηδ,substitution_lexical,Lexical substitution,False,Different pronouns/lexemes: οὐδείς vs μηδείς
+GS-0999,J 12:22,P66,και,[OMIT],omission,Omission,False,
+GS-1000,J 6:20,aleph,ο δε,και,substitution_lexical,Lexical substitution,False,Article + particle ὁ δέ vs conjunction καί
+GS-1004,J 9:28,A,και,[OMIT],omission,Omission,False,
+GS-1009,J 4:46,A,εν,ο ιησους εις την,substitution_lexical,Lexical substitution,False,Preposition ἐν vs noun phrase with preposition ὁ Ἰησοῦς εἰς τήν
+GS-1013,J 1:27,A,ουκ ειμι εγω,εγω ουκ ειμι,substitution_word_order,Word-order shift,False,Exact same words reordered: οὐκ εἰμὶ ἐγώ -> ἐγὼ οὐκ εἰμί
+GS-1014,J 6:57,P66,ζησει,ζησεται,substitution_morphological,Morphological substitution,False,Same lexeme ζάω (active future ζήσει vs middle future ζήσεται)
+GS-1020,J 6:10,P66,[ADD],ουν,addition,Addition,False,
+GS-1029,J 19:13,aleph,δε γαββαθα,γολγοθα,substitution_lexical,Lexical substitution,False,Different proper nouns/place names: Γαββαθά vs Γολγοθά
+GS-1034,J 11:21,P66,ιησουν,τον κυριον κυριε,substitution_lexical,Lexical substitution,False,Different title/lexeme: Ἰησοῦς vs κύριος
+GS-1036,J 10:14,A,γεινωσκουσι με τα εμα,γινωσκομαι υπο των εμων,substitution_lexical,Lexical substitution,False,Different voice/construction: active vs passive with prepositional phrase
+GS-1039,J 8:52,P66,θεωρηση,γευσηται θανατου,substitution_lexical,Lexical substitution,False,Different verb θεωρέω vs phrase γεύσηται θανάτου
+GS-1041,J 4:3,P66,[ADD],παλιν,addition,Addition,False,
+GS-1043,J 12:36,A,[ADD],ο,addition,Addition,False,
+GS-1046,J 8:58,D,[ADD],ουν,addition,Addition,False,
+GS-1051,J 4:51,aleph,αυτου,[OMIT],omission,Omission,False,
+GS-1052,J 6:27,aleph,εσφραγισεν,[OMIT],omission,Omission,False,
+GS-1054,J 7:32,P66,[ADD],δε,addition,Addition,False,
+GS-1063,J 20:19,P66,[ADD],συνηγμενοι,addition,Addition,False,
+GS-1065,J 10:34,P66,[ADD],ιησους και ειπεν,addition,Addition,False,
+GS-1066,J 1:27,P66,αυτου,τον,substitution_morphological,Lexical substitution,False,Different lexemes: personal pronoun αὐτοῦ vs article τόν
+GS-1067,J 3:32,aleph,τουτο,[OMIT],omission,Omission,False,
+GS-1068,J 6:14,D,α,ο,substitution_lexical,Morphological substitution,False,Same lexeme relative ὅς (neut pl ἅ vs neut sg ὅ)
+GS-1070,J 10:23,aleph,του,[OMIT],omission,Omission,False,
+GS-1074,J 13:8,aleph,αυτω,[OMIT],omission,Omission,False,
+GS-1083,J 6:17,A,εμβαντες,αναβαντες,substitution_morphological,Lexical substitution,False,Different compound verbs: ἐμβαίνω (ἐμβάντες) vs ἀναβαίνω (ἀναβάντες)
+GS-1086,J 9:21,D,ερωτησατε,επερωτησατε,substitution_morphological,Lexical substitution,False,Compound ἐπερωτάω vs simplex ἐρωτάω
+GS-1088,J 7:30,aleph,ουν,[OMIT],omission,Omission,False,
+GS-1090,J 17:19,P66,και,[OMIT],omission,Omission,False,
+GS-1091,J 10:17,A,με ο πατηρ,ο πατηρ με,substitution_word_order,Word-order shift,False,Exact same words reordered: με ὁ πατήρ -> ὁ πατήρ με
+GS-1095,J 20:25,D,μου,[OMIT],omission,Omission,False,
+GS-1096,J 4:17,aleph,και ειπεν αυτω,ανδρα,substitution_lexical,Lexical substitution,False,Clause καὶ εἶπεν αὐτῷ replaced by noun ἄνδρα
+GS-1098,J 11:43,aleph,εκραυγασεν λαζαρε,εκραυγαζεν λαζαρ,substitution_morphological,Morphological substitution,False,Same lexemes: κραυγάζω (aorist vs imperfect) + Λάζαρος (Greek voc vs Semitic voc)
+GS-1103,J 19:28,aleph,ηδη παντα,παντα ηδη,substitution_word_order,Word-order shift,False,Exact same words reordered: ἤδη πάντα -> πάντα ἤδη
+GS-1104,J 5:22,P66,ουδε,ου,substitution_morphological,Lexical substitution,False,Different particles/lexemes: οὐδέ vs οὐ
+GS-1115,J 10:32,A,εδειξα υμιν καλα,καλα εδειξα υμιν,substitution_word_order,Word-order shift,False,Exact same words reordered: ἔδειξα ὑμῖν καλά -> καλὰ ἔδειξα ὑμῖν
+GS-1117,J 6:23,A,της,[OMIT],omission,Omission,False,
+GS-1119,J 15:3,P66,[ADD],εν,addition,Addition,False,
+GS-1123,J 5:41,A,ανθρωπων,ανθρωπου,substitution_morphological,Morphological substitution,False,Same noun ἄνθρωπος (gen pl ἀνθρώπων vs gen sg ἀνθρώπου)
+GS-1125,J 7:42,aleph,[ADD],ο,addition,Addition,False,
+GS-1130,J 14:5,A,[ADD],και,addition,Addition,False,
+GS-1135,J 9:34,P66,αμαρτιαις,αμαρτια,substitution_morphological,Morphological substitution,False,Same noun ἁμαρτία (dat pl ἁμαρτίαις vs dat sg ἁμαρτίᾳ)
+GS-1138,J 17:17,P66,η,[OMIT],omission,Omission,False,
+GS-1140,J 12:35,A,καταλαβη,καταβη,substitution_morphological,Lexical substitution,False,Different verbal lexemes: καταλαμβάνω (καταλάβῃ) vs καταβαίνω (καταβῇ)
+GS-1141,J 20:30,D,ο,[OMIT],omission,Omission,False,
+GS-1152,J 5:13,D,δε ιαθεις,ασθενων,substitution_lexical,Lexical substitution,False,Different participial lexemes: ἰαθείς (ἰάομαι) vs ἀσθενῶν (ἀσθενέω)
+GS-1156,J 1:47,P66,[ADD],ο,addition,Addition,False,
+GS-1157,J 19:10,A,ουν,[OMIT],omission,Omission,False,
+GS-1159,J 19:5,P66,[ADD],ο,addition,Addition,False,
+GS-1160,J 14:7,aleph,[ADD],αυτον,addition,Addition,False,
+GS-1164,J 5:5,P66,εκει τριακοντα οκτω,[OMIT],omission,Omission,False,
+GS-1165,J 4:45,aleph,γαλειλαιοι,εωρακοτες,substitution_lexical,Lexical substitution,False,Different nouns/participles: Γαλιλαῖοι vs ἑωρακότες
+GS-1167,J 4:34,A,ποιησω,ποιω,substitution_morphological,Morphological substitution,False,Same lexeme ποιέω (aorist subj ποιήσω vs present subj ποιῶ)
+GS-1172,J 11:22,P66,αιτηση,αιτησης,substitution_morphological,Morphological substitution,False,Same lexeme αἰτέω (3 sg αἰτήσῃ vs 2 sg αἰτήσῃς)
+GS-1187,J 4:27,aleph,ηλθαν,επηλθον,substitution_morphological,Lexical substitution,False,Compound ἐπέρχομαι (ἐπῆλθον) vs simplex ἔρχομαι (ἦλθαν)
+GS-1189,J 18:34,A,σεαυτου,εαυτου,substitution_morphological,Lexical substitution,False,Different pronouns: 2nd person σεαυτοῦ vs 3rd person ἑαυτοῦ
+GS-1195,J 1:28,P66,εν βηθανια εγενετο,εγενετο εν βηθανια,substitution_word_order,Word-order shift,False,Exact same words reordered: ἐν Βηθανίᾳ ἐγένετο -> ἐγένετο ἐν Βηθανίᾳ
+GS-1197,J 8:57,P66,εωρακες,εορακας,substitution_morphological,Morphological substitution,False,"Same lexeme ὁράω (pluperfect vs perfect, augment variant ἑόρακας for ἑώρακας)"
+GS-1200,J 9:17,A,τι συ,συ τι,substitution_word_order,Word-order shift,False,Exact same words reordered: τί σύ -> σὺ τί

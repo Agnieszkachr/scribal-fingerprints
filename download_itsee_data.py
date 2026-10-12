@@ -70,8 +70,9 @@ def download_and_extract(base_ms: str = "B", exclude_supplied: bool = False,
     if df is None:
         raise SystemExit("Extraction produced no table; check data/raw/john/.")
 
+    policy = ("_drop_supplied" if exclude_supplied else "") + ("_drop_unclear" if exclude_unclear else "")
     df = df.rename(columns=COLUMNS)[COLUMN_ORDER]
-    target = VARIANTS_DIR.parent / f"variants_full_john_{base_ms}.csv"
+    target = VARIANTS_DIR.parent / f"variants_full_john_{base_ms}{policy}.csv"
     df.to_csv(target, index=False)
     print(f"Extracted {len(df)} variants against {base_ms} to {target}")
     print(df["type"].value_counts().to_string())
@@ -84,7 +85,7 @@ def download_and_extract(base_ms: str = "B", exclude_supplied: bool = False,
         suffix += "_drop_unclear"
     shutil.copy(out_dir / f"coverage_report{suffix}.csv", OUTPUTS_DIR / "coverage_report.csv")
     shutil.copy(out_dir / f"type_counts_john{suffix}.csv",
-                OUTPUTS_DIR / f"type_counts_full_{base_ms}.csv")
+                OUTPUTS_DIR / f"type_counts_full_{base_ms}{policy}.csv")
     print("Coverage report saved to outputs/coverage_report.csv")
     return df
 

@@ -26,9 +26,10 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
 
 - **Text-type confound.** The five witnesses belong to different text-types, so part of
   any profile separation reflects text-type rather than scribal behaviour.
-- **Lemmatisation.** Morphological and lexical substitutions are separated by a character
-  similarity heuristic (threshold 0.5), not by a lemmatiser; compounds and stem changes
-  that share many letters (e.g. ιουδαιαν → γαλιλαιαν) can be mis-filed as morphological.
+- **Lemmatisation.** Morphological and lexical substitutions are separated by a form-to-lemma
+  lexicon derived from the printed text (MorphGNT SBLGNT). Witness spellings it does not
+  contain fall back to character similarity, so corrupted forms, variant spellings of
+  proper names and numerals written as letters can be mis-filed.
 - **Embedding model.** `Ancient-Greek-BERT` was trained mostly on Classical Greek; its
   behaviour on unaccented Koine transcriptions has not been validated independently.
 - **Dependence between observations.** Several variants can occur in one verse and their
@@ -139,12 +140,32 @@ Each manuscript verse is aligned with the baseline verse by `difflib.SequenceMat
 
 - `insert` → **addition**; `delete` → **omission**;
 - `replace` with the same multiset of words → **word-order shift**;
-- `replace` otherwise → **substitution**, morphological if the character similarity of the
-  normalised readings exceeds 0.5 (averaged over positionally paired words when the block
-  lengths are equal, computed on the joined strings otherwise), lexical if not;
+- `replace` otherwise → **substitution**, morphological if both sides have the same number
+  of words and every positionally paired word is a form of the same lexeme, lexical
+  otherwise (see *Morphological vs lexical substitution* below);
 - after alignment, an omission and an addition (or two substitutions) of the same words
   within eight baseline tokens of each other are merged into one **word-order shift**,
   since the LCS alignment never emits a transposition as a single block.
+
+### Morphological vs lexical substitution (`src/utils/lemma_lexicon.py`)
+
+Two word forms are the same lexeme if they share a lemma in
+`src/utils/data/morphgnt_form_lemmas.tsv`, a form-to-lemma list of every word form of the
+MorphGNT SBLGNT (accents removed; 17,347 forms). Suppletive forms (ειπον/λεγω, ηλθον/ερχομαι)
+therefore count as one lexeme and compounds (επερωταω/ερωταω) as two. Crasis is resolved
+before comparison (καγω → και εγω, καν → και εαν, ουδεν → ουδε εν). A form the lexicon does
+not contain is compared with its partner by character similarity of the alignment keys
+(same lexeme above 0.5), unless the two words differ in their verbal prefix. A block is
+morphological only if every paired word is the same lexeme; a word without a partner makes
+it lexical.
+
+The rule was checked against hand annotation of two samples from John: 200 substitution
+pairs drawn evenly across the range of character similarity, and the 134 substitutions of
+the 300-variant reliability sample (`annotation/`).
+
+The lexicon is derived from MorphGNT (https://github.com/morphgnt/sblgnt), whose parsing
+and lemmatisation are licensed CC BY-SA 3.0; the derived list is distributed under the
+same licence. Rebuild it with `python -m src.utils.build_lemma_lexicon path/to/sblgnt`.
 
 Unequal replace blocks (e.g. two words replaced by one) are kept as single substitution
 units; `n_base_words` and `n_ms_words` record the block shape. Each variant carries a
