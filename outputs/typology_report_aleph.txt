@@ -1,7 +1,7 @@
 Variant-type tests (aleph) - N=5270 variants
 Chi2 (Broad) p: 1.56e-04
-Cramér's V (Broad) Block Bootstrap CI: 0.0540 [95% CI: 0.0393 - 0.0746]
-Cramér's V (Broad) Null Permutation: Mean=0.0235, SD=0.0066 (p=4.975e-03)
+Cramér's V (Broad) Block Bootstrap CI: 0.0537 [95% CI: 0.0393 - 0.0718]
+Cramér's V (Broad) Null Permutation: Mean=0.0225, SD=0.0069 (p=4.975e-03)
 Chi2 (SubTypes) p: 9.21e-03
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0642 [95% CI: 0.0428 - 0.0935]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0325, SD=0.0091 (p=1.493e-02)
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0644 [95% CI: 0.0430 - 0.0908]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0331, SD=0.0098 (p=1.493e-02)

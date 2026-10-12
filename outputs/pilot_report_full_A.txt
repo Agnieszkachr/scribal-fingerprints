@@ -1,9 +1,28 @@
-Summary for John 1-21 Analysis (A) - N=10481 variants
-MW-U p: 0.00e+00
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.1271 [95% CI: 0.0938 - 0.1548]
-ARI (Block Permutation Test): 0.0464 (p=0.000e+00)
-Chi2 (Broad) p: 6.77e-41
-Cramér's V (Broad) Block Bootstrap CI: 0.0998 [95% CI: 0.0877 - 0.1119]
-Chi2 (SubTypes) p: 2.89e-16
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0948 [95% CI: 0.0746 - 0.1158]
-Odd/Even Rank Correlation: Spearman rho = 1.0000 (p=0.0000)
+Summary for John 1-21 Analysis (A) - N=4199 variants
+MW-U p: 7.74e-08
+Cohen's d (Inter-Intra), all N=4199: 0.0098
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0094 [95% CI: 0.0001 - 0.0259]
+Cohen's d Null Permutation: observed (sample of 1000)=0.0097, Mean=0.0003, SD=0.0037 (p=1.980e-02)
+Cohen's d (verse-level aggregation, N_units=2089): 0.0075
+ARI (Block Permutation Test): -0.0006 (p=7.612e-01)
+ARI Null Permutation: Mean=-0.0000, SD=0.0007
+Chi2 (Broad) p: 4.85e-08
+Cramér's V (Broad) Block Bootstrap CI: 0.0764 [95% CI: 0.0591 - 0.0958]
+Cramér's V (Broad) Null Permutation: Mean=0.0266, SD=0.0074 (p=4.975e-03)
+Chi2 (SubTypes) p: 6.46e-03
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0722 [95% CI: 0.0473 - 0.1207]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0365, SD=0.0102 (p=9.950e-03)
+Odd/Even Rank Correlation (full attested): Spearman rho = 0.3714 (p=0.4685)
+Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = -0.1429 (p=0.7872)
+Split-half centroids: same-witness odd/even distance = 0.5801, cross-witness = 0.7231, 1/4 witnesses nearest to their own other half
+Cohen's d within substitution_morphological (n=1000): 0.0005
+Cohen's d within substitution_lexical (n=627): 0.0619
+Cohen's d within substitution_word_order (n=311): -0.0411
+Cohen's d within addition (n=795): -0.0057
+Cohen's d within omission (n=1000): -0.0024
+Cohen's d pair B-D: 0.0117
+Cohen's d pair B-P66: 0.0186
+Cohen's d pair B-aleph: 0.0012
+Cohen's d pair D-P66: 0.0202
+Cohen's d pair D-aleph: 0.0072
+Cohen's d pair P66-aleph: 0.0030

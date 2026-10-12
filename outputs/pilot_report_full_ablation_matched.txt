@@ -1,9 +1,28 @@
-Summary for John 1-21 Analysis (ablation_matched) - N=8381 variants
-MW-U p: 0.00e+00
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.1367 [95% CI: 0.1116 - 0.1754]
-ARI (Block Permutation Test): 0.0491 (p=0.000e+00)
-Chi2 (Broad) p: 2.26e-26
-Cramér's V (Broad) Block Bootstrap CI: 0.0926 [95% CI: 0.0748 - 0.1116]
-Chi2 (SubTypes) p: 1.50e-17
-Cramér's V (SubTypes) Block Bootstrap CI: 0.1087 [95% CI: 0.0896 - 0.1295]
-Odd/Even Rank Correlation: Spearman rho = 0.9429 (p=0.0048)
+Summary for John 1-21 Analysis (ablation_matched) - N=2994 variants
+MW-U p: 1.63e-16
+Cohen's d (Inter-Intra), all N=2994: 0.0185
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0192 [95% CI: 0.0057 - 0.0383]
+Cohen's d Null Permutation: observed (sample of 1000)=0.0187, Mean=-0.0004, SD=0.0031 (p=9.901e-03)
+Cohen's d (verse-level aggregation, N_units=1530): 0.0179
+ARI (Block Permutation Test): 0.0036 (p=1.493e-02)
+ARI Null Permutation: Mean=0.0002, SD=0.0014
+Chi2 (Broad) p: 2.89e-09
+Cramér's V (Broad) Block Bootstrap CI: 0.0981 [95% CI: 0.0757 - 0.1245]
+Cramér's V (Broad) Null Permutation: Mean=0.0317, SD=0.0093 (p=4.975e-03)
+Chi2 (SubTypes) p: 2.63e-03
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0895 [95% CI: 0.0625 - 0.1433]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0394, SD=0.0121 (p=4.975e-03)
+Odd/Even Rank Correlation (full attested): Spearman rho = 0.3714 (p=0.4685)
+Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.3714 (p=0.4685)
+Split-half centroids: same-witness odd/even distance = 0.6058, cross-witness = 0.8799, 3/4 witnesses nearest to their own other half
+Cohen's d within substitution_morphological (n=1000): 0.0146
+Cohen's d within substitution_lexical (n=462): 0.0968
+Cohen's d within substitution_word_order (n=201): 0.0063
+Cohen's d within addition (n=737): -0.0050
+Cohen's d within omission (n=586): -0.0040
+Cohen's d pair A-D: 0.0145
+Cohen's d pair A-P66: 0.0540
+Cohen's d pair A-aleph: 0.0142
+Cohen's d pair D-P66: 0.0153
+Cohen's d pair D-aleph: 0.0106
+Cohen's d pair P66-aleph: 0.0122

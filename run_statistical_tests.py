@@ -101,18 +101,25 @@ def calc_cramers_v(contingency_table):
     return float(np.sqrt(chi2 / (n * min_dim)))
 
 
-def inter_intra_cosine(vecs, labels):
-    """Pairwise cosine distances split into inter- and intra-manuscript sets."""
+def inter_intra_cosine(vecs, labels, ids=None):
+    """Pairwise cosine distances split into inter- and intra-manuscript sets.
+
+    ``ids`` are the identities of the observations; a pair of two copies of the
+    same observation (which a block bootstrap produces when it draws a chapter
+    twice) has distance zero by construction and is excluded."""
     dists = pdist(vecs, metric='cosine')
     labels = np.asarray(labels)
     iu = np.triu_indices(len(labels), k=1)
     same = labels[iu[0]] == labels[iu[1]]
     valid = ~np.isnan(dists)
+    if ids is not None:
+        ids = np.asarray(ids)
+        valid &= ids[iu[0]] != ids[iu[1]]
     return dists[valid & ~same], dists[valid & same]
 
 
-def inter_intra_d(vecs, labels):
-    inter, intra = inter_intra_cosine(vecs, labels)
+def inter_intra_d(vecs, labels, ids=None):
+    inter, intra = inter_intra_cosine(vecs, labels, ids)
     return calc_cohens_d(inter, intra) if len(inter) and len(intra) else 0.0
 
 
@@ -229,7 +236,8 @@ def block_bootstrap_cohens_d(df, n_bootstraps=100, max_n=1000):
         boot_df = pd.concat([df[df['chapter'] == ch] for ch in sampled])
         subset = boot_df.sample(n=min(len(boot_df), max_n), replace=False)
         d_values.append(inter_intra_d(np.array(subset['change_vector'].tolist()),
-                                      subset['manuscript'].to_numpy()))
+                                      subset['manuscript'].to_numpy(),
+                                      ids=subset.index.to_numpy()))
     if not d_values:
         return 0.0, 0.0, 0.0, []
     return np.mean(d_values), np.percentile(d_values, 2.5), np.percentile(d_values, 97.5), d_values
@@ -241,6 +249,14 @@ def block_permutation_test_cohens_d(df, n_permutations=100, max_n=1000):
     true_d = inter_intra_d(vecs, subset['manuscript'].to_numpy())
     perm_ds = [inter_intra_d(vecs, shuffle_labels_within_chapters(subset)) for _ in range(n_permutations)]
     return true_d, perm_p(perm_ds, true_d), perm_ds
+
+
+def cohens_d_point(df, max_n=4500):
+    """Cohen's d on the full set of change vectors (a random sample of ``max_n``
+    when the corpus is larger), without resampling: the point estimate the
+    bootstrap interval is centred on."""
+    sub = df.sample(n=max_n, random_state=42) if len(df) > max_n else df
+    return inter_intra_d(np.array(sub['change_vector'].tolist()), sub['manuscript'].to_numpy()), len(sub)
 
 
 def cohens_d_by_type(df, min_n=100, max_n=1000):
@@ -396,6 +412,7 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
     df, profiles, ch_profiles = load_data(base_ms, ablation_type)
     logger.info(f"Running block-inference statistics for {suffix} (N={len(df)})...")
 
+    d_point, n_point = cohens_d_point(df)
     d_mean, d_low, d_high, d_boot = block_bootstrap_cohens_d(df, n_bootstraps=100)
     d_true, d_pval, d_perm = block_permutation_test_cohens_d(df, n_permutations=100)
 
@@ -428,8 +445,10 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
 
     report = [f"Summary for John 1-21 Analysis ({suffix}) - N={len(df)} variants",
               f"MW-U p: {p_value_mw:.2e}",
+              f"Cohen's d (Inter-Intra), all N={n_point}: {d_point:.4f}",
               f"Cohen's d (Inter-Intra) Block Bootstrap CI: {d_mean:.4f} [95% CI: {d_low:.4f} - {d_high:.4f}]",
-              f"Cohen's d Null Permutation: Mean={np.mean(d_perm):.4f}, SD={np.std(d_perm):.4f} (p={d_pval:.3e})",
+              f"Cohen's d Null Permutation: observed (sample of {min(len(df), 1000)})={d_true:.4f}, "
+              f"Mean={np.mean(d_perm):.4f}, SD={np.std(d_perm):.4f} (p={d_pval:.3e})",
               f"Cohen's d (verse-level aggregation, N_units={n_verse_units}): {d_verse:.4f}",
               f"ARI (Block Permutation Test): {ari_val:.4f} (p={ari_pval:.3e})",
               f"ARI Null Permutation: Mean={np.mean(ari_perm):.4f}, SD={np.std(ari_perm):.4f}"]
@@ -450,7 +469,9 @@ def run_tests(base_ms='B', ablation_type=None, typology_only=False):
         f.write("\n".join(report) + "\n")
 
     metrics = [('ARI', ari_val, None, None, np.mean(ari_perm), np.std(ari_perm), ari_pval),
-               ("Cohen's d", d_mean, d_low, d_high, np.mean(d_perm), np.std(d_perm), d_pval),
+               ("Cohen's d", d_point, d_low, d_high, np.mean(d_perm), np.std(d_perm), d_pval),
+               ("Cohen's d Bootstrap Mean", d_mean, d_low, d_high, None, None, None),
+               ("Cohen's d Permutation Sample", d_true, None, None, np.mean(d_perm), np.std(d_perm), d_pval),
                ("Cohen's d Verse", d_verse, None, None, None, None, None),
                ("Cramer's V Broad", typology['Broad']['v'], typology['Broad']['v_low'], typology['Broad']['v_high'],
                 np.mean(typology['Broad']['v_perm']), np.std(typology['Broad']['v_perm']), typology['Broad']['v_pval']),

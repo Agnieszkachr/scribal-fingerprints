@@ -1,14 +1,28 @@
-Summary for John 1-21 Analysis (ablation_masked) - N=12460 variants
-MW-U p: 1.32e-77
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0306 [95% CI: 0.0162 - 0.0509]
-Cohen's d Null Permutation: Mean=-0.0000, SD=0.0031 (p=0.000e+00)
-ARI (Block Permutation Test): 0.0042 (p=0.000e+00)
-ARI Null Permutation: Mean=-0.0002, SD=0.0008
-Chi2 (Broad) p: 2.35e-35
-Cramér's V (Broad) Block Bootstrap CI: 0.0863 [95% CI: 0.0730 - 0.1008]
-Cramér's V (Broad) Null Permutation: Mean=0.0170, SD=0.0048 (p=0.000e+00)
-Chi2 (SubTypes) p: 8.67e-20
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0945 [95% CI: 0.0695 - 0.1222]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0167, SD=0.0074 (p=0.000e+00)
-Odd/Even Rank Correlation (full attested): Spearman rho = 1.0000 (p=0.0000)
-Odd/Even Rank Correlation (attested-loci filter, N_verses=536): Spearman rho = 0.9429 (p=0.0048)
+Summary for John 1-21 Analysis (ablation_masked) - N=4460 variants
+MW-U p: 5.13e-02
+Cohen's d (Inter-Intra), all N=4460: 0.0085
+Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0089 [95% CI: -0.0047 - 0.0318]
+Cohen's d Null Permutation: observed (sample of 1000)=0.0029, Mean=0.0009, SD=0.0038 (p=2.970e-01)
+Cohen's d (verse-level aggregation, N_units=2270): 0.0085
+ARI (Block Permutation Test): -0.0027 (p=9.552e-01)
+ARI Null Permutation: Mean=-0.0004, SD=0.0015
+Chi2 (Broad) p: 8.04e-13
+Cramér's V (Broad) Block Bootstrap CI: 0.0898 [95% CI: 0.0722 - 0.1095]
+Cramér's V (Broad) Null Permutation: Mean=0.0258, SD=0.0072 (p=4.975e-03)
+Chi2 (SubTypes) p: 4.82e-03
+Cramér's V (SubTypes) Block Bootstrap CI: 0.0758 [95% CI: 0.0542 - 0.1137]
+Cramér's V (SubTypes) Null Permutation: Mean=0.0347, SD=0.0098 (p=4.975e-03)
+Odd/Even Rank Correlation (full attested): Spearman rho = 0.7714 (p=0.0724)
+Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.8857 (p=0.0188)
+Split-half centroids: same-witness odd/even distance = 0.6332, cross-witness = 0.9674, 3/4 witnesses nearest to their own other half
+Cohen's d within substitution_morphological (n=1000): 0.0162
+Cohen's d within substitution_lexical (n=656): 0.0610
+Cohen's d within substitution_word_order (n=338): 0.0008
+Cohen's d within addition (n=1000): -0.0095
+Cohen's d within omission (n=924): -0.0076
+Cohen's d pair A-D: 0.0050
+Cohen's d pair A-P66: 0.0195
+Cohen's d pair A-aleph: 0.0106
+Cohen's d pair D-P66: 0.0063
+Cohen's d pair D-aleph: 0.0061
+Cohen's d pair P66-aleph: 0.0061
