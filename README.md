@@ -42,30 +42,32 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
   <img src="outputs/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" width="600">
 </p>
 
-Against Codex Vaticanus (B) as the baseline, 4,460 variants are extracted.
-Additions and omissions together make up 39–48 % of the variants of each witness,
-morphological substitutions 30–37 %, lexical substitutions 12–18 % and word-order shifts
-6–9 %. The variant-type distributions differ significantly between witnesses
-(`outputs/typology_report_B.txt`):
+Against Codex Vaticanus (B) as the baseline, 4,365 variants are extracted
+(P66 992, ℵ 1,199, A 829, D 1,345). Additions and omissions together make up 42–48 % of
+the variants of each witness, morphological substitutions 21–28 %, lexical substitutions
+19–25 % and word-order shifts 7–9 %. The variant-type distributions differ significantly
+between witnesses (`outputs/typology_report_B.txt`):
 
-| Test (baseline B, N = 4,460) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
+| Test (baseline B, N = 4,365) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
 |---|---|---|---|
-| Substitution / addition / omission | 0.090 [0.071 – 0.109] | 0.025 ± 0.008 | 0.005 |
-| Morphological / lexical / word order | 0.074 [0.051 – 0.112] | 0.036 ± 0.010 | 0.010 |
+| Substitution / addition / omission | 0.080 [0.065 – 0.098] | 0.025 ± 0.007 | 0.005 |
+| Morphological / lexical / word order | 0.071 [0.048 – 0.094] | 0.035 ± 0.010 | 0.010 |
 
-P66 shows the largest share of both lexical and morphological substitutions in every
-configuration (baseline B, baseline A, baseline ℵ and the verse-matched subset);
 Alexandrinus has the largest share of additions and Sinaiticus the largest share of
-omissions against B (see `outputs/type_counts_full_*.csv` and
-`outputs/typology_report_*.txt`).
+omissions against B; Bezae has the largest share of lexical substitutions under all three
+baselines, and P66 the largest share of morphological substitutions among the witnesses
+other than Vaticanus (`outputs/type_counts_full_*.csv`, `outputs/typology_report_*.txt`).
 
 ### Embedding-based results
 
-The embedding stage (`profile_scribes.py`) requires the BERT model and is not part of
-this repository's data. The embedding-based output files in `outputs/`
-(`pilot_report_full_*`, `pilot_results_full_*`, `chapter_stability_*`,
-`cumulative_analysis_*`, `fig1_*`, `fig2_*`, `fig6_*`, `fig7_*`) are refreshed by steps
-4–6 of the pipeline below; the website marks values that await that run.
+Against B, inter-manuscript distances between change vectors exceed intra-manuscript
+distances by Cohen's d = 0.014 [0.005 – 0.025] (block permutation p ≤ 0.01); the ARI of a
+four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
+0.012. Feature isolation: function words only 0.008, content masked 0.006, random masked
+0.002 (mean of five draws). See `outputs/pilot_report_full_*.txt` and the website.
+
+The embedding stage (`profile_scribes.py`) requires the BERT model; the vector files
+(`outputs/*.pkl`) are not part of the repository.
 
 ## Repository Structure
 
