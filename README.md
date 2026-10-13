@@ -50,8 +50,8 @@ between witnesses (`outputs/typology_report_B.txt`):
 
 | Test (baseline B, N = 4,365) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
 |---|---|---|---|
-| Substitution / addition / omission | 0.078 [0.066 – 0.099] | 0.025 ± 0.008 | 0.005 |
-| Morphological / lexical / word order | 0.066 [0.049 – 0.096] | 0.035 ± 0.011 | 0.010 |
+| Substitution / addition / omission | 0.077 [0.066 – 0.099] | 0.025 ± 0.008 | 0.005 |
+| Morphological / lexical / word order | 0.065 [0.049 – 0.096] | 0.035 ± 0.011 | 0.010 |
 
 Alexandrinus has the largest share of additions and Sinaiticus the largest share of
 omissions against B; Bezae has the largest share of lexical substitutions under all three
