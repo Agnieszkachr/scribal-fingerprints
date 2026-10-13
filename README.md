@@ -61,7 +61,7 @@ other than Vaticanus (`outputs/type_counts_full_*.csv`, `outputs/typology_report
 ### Embedding-based results
 
 Against B, inter-manuscript distances between change vectors exceed intra-manuscript
-distances by Cohen's d = 0.014 [0.004 – 0.027] (block permutation p < 0.001); the ARI of a
+distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001); the ARI of a
 four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
 0.012. Feature isolation: function words only 0.008, content masked 0.006, random masked
 0.002 (mean of five draws). See `outputs/pilot_report_full_*.txt` and the website.
