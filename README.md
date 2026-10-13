@@ -257,7 +257,13 @@ python create_visualizations.py --ablation matched      # etc.
 
 # 7. Website data
 cd docs && python prepare_website_data.py
+
+# 8. Robustness: the SBL edition (MorphGNT, data/morphgnt/) as anchor, typology only
+python sbl_anchor.py      # -> data/variants_full_john_SBL.csv, outputs/sbl_anchor_john.json
 ```
+
+The MorphGNT text in `data/morphgnt/` (Tauber 2017, doi:10.5281/zenodo.376200) is distributed
+under its own licence, CC BY-SA 3.0.
 
 ## Output Interpretation
 
