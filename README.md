@@ -50,8 +50,8 @@ between witnesses (`outputs/typology_report_B.txt`):
 
 | Test (baseline B, N = 4,365) | Cramér's V [95 % block-bootstrap CI] | Permutation null (mean ± SD) | p |
 |---|---|---|---|
-| Substitution / addition / omission | 0.080 [0.065 – 0.098] | 0.025 ± 0.007 | 0.005 |
-| Morphological / lexical / word order | 0.071 [0.048 – 0.094] | 0.035 ± 0.010 | 0.010 |
+| Substitution / addition / omission | 0.078 [0.066 – 0.099] | 0.025 ± 0.008 | 0.005 |
+| Morphological / lexical / word order | 0.066 [0.049 – 0.096] | 0.035 ± 0.011 | 0.010 |
 
 Alexandrinus has the largest share of additions and Sinaiticus the largest share of
 omissions against B; Bezae has the largest share of lexical substitutions under all three
@@ -61,7 +61,7 @@ other than Vaticanus (`outputs/type_counts_full_*.csv`, `outputs/typology_report
 ### Embedding-based results
 
 Against B, inter-manuscript distances between change vectors exceed intra-manuscript
-distances by Cohen's d = 0.014 [0.005 – 0.025] (block permutation p ≤ 0.01); the ARI of a
+distances by Cohen's d = 0.014 [0.004 – 0.027] (block permutation p < 0.001); the ARI of a
 four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
 0.012. Feature isolation: function words only 0.008, content masked 0.006, random masked
 0.002 (mean of five draws). See `outputs/pilot_report_full_*.txt` and the website.
@@ -89,7 +89,6 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── profile_scribes.py                  # Ancient-Greek-BERT embeddings, change vectors, manuscript and chapter profiles
 ├── run_statistical_tests.py            # Block bootstrap / permutation inference (Cramér's V, Cohen's d, ARI, split-half)
 ├── create_visualizations.py            # Figures (PCA, dendrogram, type distribution, cumulative ARI, stability heatmap)
-├── recalc_odd_even.py                  # Utility: refresh only the split-half lines of existing reports
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
@@ -198,18 +197,23 @@ Three derived datasets probe what the embedding separation rests on:
   between the masked conditions isolates the effect of *which* words are hidden from the
   effect of how many.
 
-### Statistical framework (`run_statistical_tests.py`)
+### Statistical framework (`run_statistical_tests.py`, `src/stats_core.py`)
+
+The statistics are in `src/stats_core.py`, which is shared with the multi-corpus SCRIPTA
+pipeline, so that John gives identical numbers in both. Every resampling procedure draws
+from its own random generator seeded with 42.
 
 - Distances between change vectors and between profiles are **cosine** distances.
-- **Cohen's d** compares inter-manuscript with intra-manuscript pairwise distances on a
-  random subsample of 1,000 variants; a 95 % CI comes from a chapter-level block bootstrap
-  (B = 100) and the null from chapter-restricted label permutations (100). The report also
+- **Cohen's d** compares inter-manuscript with intra-manuscript pairwise distances on all
+  change vectors (point estimate); a 95 % CI comes from a chapter-level block bootstrap
+  (B = 2,000, 1,000 vectors per replicate) and the null from chapter-restricted label
+  permutations (2,000) on the same vectors as the point estimate. The report also
   gives d within each variant class, d for every pair of witnesses, and d after averaging
   the change vectors per verse and manuscript.
 - **ARI** compares k-means clusters (k = number of witnesses, `n_init=10`, seed 42, at most
   3,000 variants) with the manuscript labels; null by chapter-restricted permutation (200).
-- **Cramér's V** on the variant-type contingency tables, with a chapter-level block
-  bootstrap (B = 200) and chapter-restricted permutations (200).
+- **Cramér's V** on the variant-type contingency tables (point estimate), with a
+  chapter-level block bootstrap (B = 2,000) and chapter-restricted permutations (200).
 - Permutation p-values are reported as (k + 1)/(B + 1).
 - **Split-half replicability**: Spearman ρ between the six inter-manuscript centroid
   distances computed on odd and on even chapters, with and without restriction to the

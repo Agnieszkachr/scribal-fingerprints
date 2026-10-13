@@ -1,21 +1,14 @@
 Summary for John 1-21 Analysis (ablation_matched) - N=2909 variants
 MW-U p: 7.34e-11
-Cohen's d (Inter-Intra), all N=2909: 0.0134
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0123 [95% CI: 0.0031 - 0.0262]
-Cohen's d Null Permutation: Mean=-0.0000, SD=0.0012 (p=9.901e-03)
+Cohen's d (inter vs intra), all N=2909: 0.0134
+Cohen's d block bootstrap (2000): mean 0.0131 [95% CI: 0.0024 - 0.0263]
+Cohen's d null (2000 permutations): mean=-0.0001, SD=0.0012 (p=4.998e-04)
 Cohen's d (verse-level aggregation, N_units=1500): 0.0111
-ARI (Block Permutation Test): 0.0007 (p=3.781e-01)
-ARI Null Permutation: Mean=0.0002, SD=0.0016
-Chi2 (Broad) p: 4.50e-06
-Cramér's V (Broad) Block Bootstrap CI: 0.0836 [95% CI: 0.0634 - 0.1104]
-Cramér's V (Broad) Null Permutation: Mean=0.0313, SD=0.0093 (p=4.975e-03)
-Chi2 (SubTypes) p: 3.02e-02
-Cramér's V (SubTypes) Block Bootstrap CI: 0.0744 [95% CI: 0.0549 - 0.0958]
-Cramér's V (SubTypes) Null Permutation: Mean=0.0414, SD=0.0120 (p=2.488e-02)
-Odd/Even Rank Correlation (full attested): Spearman rho = 0.4857 (p=0.3287)
-Odd/Even Rank Correlation (attested-loci filter, N_verses=532): Spearman rho = 0.4857 (p=0.3287)
-Split-half centroids: same-witness odd/even distance = 0.6387, cross-witness = 0.8670, 3/4 witnesses nearest to their own other half
-Split-half permutation (labels within chapters): gap = 0.2283, null 0.0018 +/- 0.0281, p = 0.0020; nearest-self p = 0.0359
+ARI: 0.0007 (p=3.134e-01); null mean=0.0001, SD=0.0015
+Odd/even Spearman rho (full attested): 0.4857 (p=0.3287)
+Odd/even Spearman rho (attested loci, 532 verses): 0.4857 (p=0.3287)
+Split-half centroids: same-witness 0.6387, cross-witness 0.8670, 3/4 nearest to their own other half
+Split-half permutation (500): gap = 0.2283, null 0.0015 +/- 0.0268, p = 0.0020; nearest-self p = 0.0399
 Cohen's d within substitution_morphological (n=726): 0.0124
 Cohen's d within substitution_lexical (n=660): -0.0014
 Cohen's d within substitution_word_order (n=201): 0.0063
@@ -27,3 +20,9 @@ Cohen's d pair A-aleph: 0.0133
 Cohen's d pair D-P66: 0.0060
 Cohen's d pair D-aleph: 0.0098
 Cohen's d pair P66-aleph: 0.0095
+Chi2 (Broad) p: 4.50e-06
+Cramér's V (Broad): 0.0775 [95% block-bootstrap CI (2000): 0.0641 - 0.1048; bootstrap mean 0.0831]
+Cramér's V (Broad) null (200 permutations): mean=0.0312, SD=0.0094 (p=4.975e-03)
+Chi2 (SubTypes) p: 3.02e-02
+Cramér's V (SubTypes): 0.0663 [95% block-bootstrap CI (2000): 0.0554 - 0.1024; bootstrap mean 0.0759]
+Cramér's V (SubTypes) null (200 permutations): mean=0.0422, SD=0.0118 (p=2.985e-02)

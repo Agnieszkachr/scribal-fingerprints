@@ -37,7 +37,8 @@ def feature_isolation(base_ms):
         n = int(open(f"outputs/pilot_report_full_{suffix.format(base=base_ms)}.txt",
                      encoding="utf-8").readline().split("N=")[1].split()[0])
         rows.append(dict(label=f"{label}\n(N = {n:,})", d=m["Value"], lo=m["CI_Low"], hi=m["CI_High"],
-                         null=m["Null_Mean"], p=m["Perm_P"], ptext=f"p = {m['Perm_P']:.2f}"))
+                         null=m["Null_Mean"], p=m["Perm_P"],
+                         ptext="p < 0.001" if m["Perm_P"] < 0.001 else f"p = {m['Perm_P']:.3f}"))
     draws = [_metric(f"outputs/pilot_results_full_{s}.csv", "Cohen's d") for s in RANDOM_DRAWS]
     n = int(open(f"outputs/pilot_report_full_{RANDOM_DRAWS[0]}.txt", encoding="utf-8").readline().split("N=")[1].split()[0])
     sig = sum(dr["Perm_P"] <= 0.05 for dr in draws)
