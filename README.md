@@ -260,6 +260,9 @@ cd docs && python prepare_website_data.py
 
 # 8. Robustness: the SBL edition (MorphGNT, data/morphgnt/) as anchor, typology only
 python sbl_anchor.py      # -> data/variants_full_john_SBL.csv, outputs/sbl_anchor_john.json
+
+# 9. Checks reported in § 5.1: Bezae's unequal replacement blocks; Sinaiticus in John 1:1-8:38
+python john_text_checks.py   # -> outputs/john_text_checks.json
 ```
 
 The MorphGNT text in `data/morphgnt/` (Tauber 2017, doi:10.5281/zenodo.376200) is distributed
