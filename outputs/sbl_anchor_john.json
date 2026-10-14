@@ -1,0 +1,158 @@
+{
+ "n": 4063,
+ "per_witness": {
+  "D": 1213,
+  "aleph": 1034,
+  "P66": 857,
+  "A": 658,
+  "B": 301
+ },
+ "association": {
+  "Cramer's V Broad": {
+   "v": 0.10548767553320675,
+   "ci_low": 0.08948235488952191,
+   "ci_high": 0.13005302735749513,
+   "null_mean": 0.031356973236258474,
+   "perm_p": 0.004975124378109453
+  },
+  "Cramer's V Sub": {
+   "v": 0.10432727185158301,
+   "ci_low": 0.07816428430507043,
+   "ci_high": 0.145079956521613,
+   "null_mean": 0.04244385648307088,
+   "perm_p": 0.004975124378109453
+  }
+ },
+ "witnesses": {
+  "A": {
+   "n": 658,
+   "v": 0.09561543136843483,
+   "p": 0.000999000999000999,
+   "shares": {
+    "substitution_morphological": 0.2674772036474164,
+    "substitution_lexical": 0.1899696048632219,
+    "substitution_word_order": 0.09878419452887538,
+    "addition": 0.2811550151975684,
+    "omission": 0.16261398176291794
+   },
+   "deviation": {
+    "substitution_morphological": 0.026067512017460437,
+    "substitution_lexical": -0.030001026561154026,
+    "substitution_word_order": 0.02066378336881665,
+    "addition": 0.07087601372913963,
+    "omission": -0.0876062825542627
+   },
+   "deviation_p": {
+    "substitution_morphological": 0.16183816183816183,
+    "substitution_lexical": 0.08291708291708291,
+    "substitution_word_order": 0.0959040959040959,
+    "addition": 0.000999000999000999,
+    "omission": 0.000999000999000999
+   }
+  },
+  "B": {
+   "n": 301,
+   "v": 0.10541931136144261,
+   "p": 0.000999000999000999,
+   "shares": {
+    "substitution_morphological": 0.3588039867109635,
+    "substitution_lexical": 0.12956810631229235,
+    "substitution_word_order": 0.06312292358803986,
+    "addition": 0.14285714285714285,
+    "omission": 0.30564784053156147
+   },
+   "deviation": {
+    "substitution_morphological": 0.12222769750309531,
+    "substitution_lexical": -0.09238829985464014,
+    "substitution_word_order": -0.019811685662358858,
+    "addition": -0.08521303258145363,
+    "omission": 0.07518532059535732
+   },
+   "deviation_p": {
+    "substitution_morphological": 0.000999000999000999,
+    "substitution_lexical": 0.000999000999000999,
+    "substitution_word_order": 0.22477522477522477,
+    "addition": 0.002997002997002997,
+    "omission": 0.006993006993006993
+   }
+  },
+  "D": {
+   "n": 1213,
+   "v": 0.09283896946910788,
+   "p": 0.000999000999000999,
+   "shares": {
+    "substitution_morphological": 0.20774938169826876,
+    "substitution_lexical": 0.23907666941467437,
+    "substitution_word_order": 0.07831821929101401,
+    "addition": 0.2654575432811212,
+    "omission": 0.20939818631492169
+   },
+   "deviation": {
+    "substitution_morphological": -0.054005004266643536,
+    "substitution_lexical": 0.03416438871291999,
+    "substitution_word_order": -0.0044887982528456355,
+    "addition": 0.06229964854427911,
+    "omission": -0.037970234737709885
+   },
+   "deviation_p": {
+    "substitution_morphological": 0.000999000999000999,
+    "substitution_lexical": 0.028971028971028972,
+    "substitution_word_order": 0.7072927072927073,
+    "addition": 0.000999000999000999,
+    "omission": 0.014985014985014986
+   }
+  },
+  "P66": {
+   "n": 857,
+   "v": 0.07064607176348019,
+   "p": 0.000999000999000999,
+   "shares": {
+    "substitution_morphological": 0.2823803967327888,
+    "substitution_lexical": 0.23803967327887982,
+    "substitution_word_order": 0.073512252042007,
+    "addition": 0.1750291715285881,
+    "omission": 0.2310385064177363
+   },
+   "deviation": {
+    "substitution_morphological": 0.04657253647078008,
+    "substitution_lexical": 0.029056516697469947,
+    "substitution_word_order": -0.010081010590556952,
+    "addition": -0.05921911293803697,
+    "omission": -0.006328929639656089
+   },
+   "deviation_p": {
+    "substitution_morphological": 0.00999000999000999,
+    "substitution_lexical": 0.08291708291708291,
+    "substitution_word_order": 0.3936063936063936,
+    "addition": 0.000999000999000999,
+    "omission": 0.7352647352647352
+   }
+  },
+  "aleph": {
+   "n": 1034,
+   "v": 0.09129614224823787,
+   "p": 0.000999000999000999,
+   "shares": {
+    "substitution_morphological": 0.2127659574468085,
+    "substitution_lexical": 0.20889748549323017,
+    "substitution_word_order": 0.086073500967118,
+    "addition": 0.19439071566731142,
+    "omission": 0.2978723404255319
+   },
+   "deviation": {
+    "substitution_morphological": -0.044084488244838876,
+    "substitution_lexical": -0.008335924873227402,
+    "substitution_word_order": 0.0061791463946518355,
+    "addition": -0.036708657062962585,
+    "omission": 0.08294992378637706
+   },
+   "deviation_p": {
+    "substitution_morphological": 0.006993006993006993,
+    "substitution_lexical": 0.5794205794205795,
+    "substitution_word_order": 0.5874125874125874,
+    "addition": 0.013986013986013986,
+    "omission": 0.000999000999000999
+   }
+  }
+ }
+}

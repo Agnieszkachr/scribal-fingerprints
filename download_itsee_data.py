@@ -1,190 +1,101 @@
-import os
-import requests
-import xml.etree.ElementTree as ET
-import difflib
-import pandas as pd
-import re
-import unicodedata
+"""Fetch the ITSEE TEI XML transcriptions of John and extract classified variants.
 
-ITSEE_URLS = {
-    'P66': 'https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/NT_GRC_P66_John.xml',
-    'aleph': 'https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/NT_GRC_01_John.xml',
-    'A': 'https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/NT_GRC_02_John.xml',
-    'B': 'https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/NT_GRC_03_John.xml',
-    'D': 'https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/NT_GRC_05_John.xml'
-}
+The parsing, alignment and classification live in ``src/extract_variants.py``
+(see its docstring for the TEI handling, the normalisation rules and the
+typology). This script downloads the transcriptions into ``data/raw/john/``,
+runs the extraction against the chosen baseline, and writes the variant table
+in the column layout the analysis scripts read::
 
-def clean_text(text):
-    if not text: return ""
-    text = re.sub(r'\s+', ' ', text)
-    return text.strip()
+    data/variants_full_john_{baseline}.csv
+    outputs/coverage_report.csv
+    outputs/type_counts_full_{baseline}.csv
 
-def strip_accents(text):
-    text = unicodedata.normalize('NFD', text)
-    return ''.join(c for c in text if unicodedata.category(c) != 'Mn')
+Usage::
 
-def normalize_orthography(word):
-    w = strip_accents(word.lower())
-    w = re.sub(r'ν$', '', w)  # Movable nu
-    w = w.replace('ει', 'ι')   # Itacism
-    w = w.replace('η', 'ι')    # Itacism
-    w = w.replace('υ', 'ι')    # Itacism
-    w = w.replace('αι', 'ε')   # Itacism
-    w = w.replace('ω', 'ο')    # Alpha-O/Omega
-    w = w.replace('ς', 'σ')    # Sigma
-    return w
-
-def is_orthographic_noise(w1, w2):
-    if w1 == "[ADD]" or w2 == "[OMIT]": return False
-    w1_norm = normalize_orthography(" ".join(w1.split()))
-    w2_norm = normalize_orthography(" ".join(w2.split()))
-    return w1_norm == w2_norm
-
-def parse_verse_id(n):
-    # Formats: John.1.1 or B04K1V1
-    if n.startswith('John.'):
-        parts = n.split('.')
-        if len(parts) >= 3:
-            return int(parts[1]), int(parts[2])
-    elif n.startswith('B04K'):
-        match = re.search(r'K(\d+)V(\d+)', n)
-        if match:
-            return int(match.group(1)), int(match.group(2))
-    return None, None
-
-def process_xml(file_path, ms_name):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-    ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
-    
-    verses = {}
-    coverage = {} # chapter -> verse count
-    
-    for ab in root.findall('.//tei:ab', ns):
-        n = ab.get('n', '')
-        ch, v = parse_verse_id(n)
-        if ch is not None:
-            verse_label = f"J {ch}:{v}"
-            words = []
-            for w in ab.findall('.//tei:w', ns):
-                text_content = "".join(w.itertext())
-                if text_content: 
-                    words.append(clean_text(text_content))
-            
-            verses[verse_label] = " ".join(words)
-            coverage[ch] = coverage.get(ch, 0) + 1
-            
-    return verses, coverage
+    python download_itsee_data.py [--baseline B] [--exclude-supplied] [--exclude-unclear]
+"""
 
 import argparse
+import shutil
 
-def download_and_extract(base_ms='B'):
-    os.makedirs('data/xml', exist_ok=True)
-    ms_texts = {}
-    coverage_data = []
-    
-    # Expected total verses per chapter for John (rough estimate for coverage report)
-    expected_verses = {
-        1:51, 2:25, 3:36, 4:54, 5:47, 6:71, 7:53, 8:59, 9:41, 10:42,
-        11:57, 12:50, 13:38, 14:31, 15:27, 16:33, 17:26, 18:40, 19:42, 20:31, 21:25
-    }
+import pandas as pd
 
-    print("Retrieving ITSEE XML files...")
-    for ms, url in ITSEE_URLS.items():
-        filepath = f"data/xml/{ms}.xml"
-        if not os.path.exists(filepath):
-            print(f"Downloading {ms}...")
-            r = requests.get(url)
-            with open(filepath, 'wb') as f:
-                 f.write(r.content)
-        
-        texts, coverage = process_xml(filepath, ms)
-        ms_texts[ms] = texts
-        
-        for ch in range(1, 22):
-            v_count = coverage.get(ch, 0)
-            total = expected_verses.get(ch, 1)
-            coverage_data.append({
-                'manuscript': ms,
-                'chapter': ch,
-                'verses_available': v_count,
-                'verses_total': total,
-                'coverage_pct': round((v_count / total) * 100, 2)
-            })
+from src import extract_variants as ev
+from src.config import OUTPUTS_DIR, RAW_DIR, VARIANTS_DIR, ensure_dirs
+from src.download_itsee_data import download_xml
 
-    # Only write coverage report if strictly needed, or skip overwriting
-    pd.DataFrame(coverage_data).to_csv('outputs/coverage_report.csv', index=False)
+CORPUS = "john"
+TARGET_MSS = ["P66", "aleph", "A", "B", "D"]
+VARIANT_TYPES = ev.VARIANT_TYPES
+
+# Column names used by the analysis scripts in this repository.
+COLUMNS = {
+    "variant_type": "type",
+    "baseline_reading": "base_reading",
+    "manuscript_reading": "ms_reading",
+}
+COLUMN_ORDER = [
+    "chapter", "verse", "manuscript", "base_reading", "ms_reading", "type",
+    "base_context_10w", "ms_context_10w", "base_norm", "ms_norm",
+    "n_base_words", "n_ms_words", "block_index", "reconstructed", "uncertain",
+]
+
+
+def load_all_transcriptions(download: bool = True):
+    """Parsed transcriptions, {siglum: {verse: [Token, ...]}}, plus the coverage table."""
+    ensure_dirs()
+    if download:
+        download_xml(CORPUS)
+    ms_texts = ev.load_corpus(CORPUS)
+    return ms_texts, ev.coverage_report(CORPUS, ms_texts)
+
+
+def write_type_counts(df: pd.DataFrame, suffix: str, out_dir=OUTPUTS_DIR) -> str:
+    """Per-manuscript counts of each variant type for a derived dataset."""
+    work = df.rename(columns={"type": "variant_type"})
+    path = OUTPUTS_DIR / f"type_counts_full_{suffix}.csv"
+    ev.type_counts(work).to_csv(path, index=False)
+    return str(path)
+
+
+def download_and_extract(base_ms: str = "B", exclude_supplied: bool = False,
+                         exclude_unclear: bool = False) -> pd.DataFrame:
+    ensure_dirs()
+    print("Loading ITSEE XML transcriptions...")
+    download_xml(CORPUS)
+
+    ev.EXCLUDE_SUPPLIED = exclude_supplied
+    ev.EXCLUDE_UNCLEAR = exclude_unclear
+    df = ev.extract_for_corpus(CORPUS, base_ms=base_ms)
+    if df is None:
+        raise SystemExit("Extraction produced no table; check data/raw/john/.")
+
+    policy = ("_drop_supplied" if exclude_supplied else "") + ("_drop_unclear" if exclude_unclear else "")
+    df = df.rename(columns=COLUMNS)[COLUMN_ORDER]
+    target = VARIANTS_DIR.parent / f"variants_full_john_{base_ms}{policy}.csv"
+    df.to_csv(target, index=False)
+    print(f"Extracted {len(df)} variants against {base_ms} to {target}")
+    print(df["type"].value_counts().to_string())
+
+    out_dir = OUTPUTS_DIR / CORPUS
+    suffix = "" if base_ms == "B" else f"_{base_ms}"
+    if exclude_supplied:
+        suffix += "_drop_supplied"
+    if exclude_unclear:
+        suffix += "_drop_unclear"
+    shutil.copy(out_dir / f"coverage_report{suffix}.csv", OUTPUTS_DIR / "coverage_report.csv")
+    shutil.copy(out_dir / f"type_counts_john{suffix}.csv",
+                OUTPUTS_DIR / f"type_counts_full_{base_ms}{policy}.csv")
     print("Coverage report saved to outputs/coverage_report.csv")
+    return df
 
-    target_mss = ['P66', 'aleph', 'A', 'B', 'D']
-    variants = []
-    
-    print(f"Extracting variants for Chapters 1-21 against {base_ms}...")
-    for verse_id, base_text in ms_texts[base_ms].items():
-        base_words = base_text.split()
-        if not base_words: continue
-        
-        # Extract chapter from "J ch:v"
-        ch_match = re.search(r'J (\d+):', verse_id)
-        chapter = int(ch_match.group(1)) if ch_match else 0
-        
-        for ms in target_mss:
-            if ms == base_ms: continue # Do not compare baseline to itself
-            if verse_id not in ms_texts[ms]: continue
-            
-            ms_text = ms_texts[ms][verse_id]
-            ms_words = ms_text.split()
-            if not ms_words: continue
-            
-            s = difflib.SequenceMatcher(None, base_words, ms_words)
-            
-            for tag, i1, i2, j1, j2 in s.get_opcodes():
-                if tag != 'equal':
-                    base_reading = " ".join(base_words[i1:i2]) if i1 != i2 else "[ADD]"
-                    ms_reading = " ".join(ms_words[j1:j2]) if j1 != j2 else "[OMIT]"
-                    
-                    if not base_reading.strip() and not ms_reading.strip(): continue
-                    if is_orthographic_noise(base_reading, ms_reading): continue
-                    
-                    # 10-word context
-                    start_i = max(0, i1 - 5)
-                    end_i = min(len(base_words), i2 + 5)
-                    base_context = " ".join(base_words[start_i:end_i])
-                    
-                    start_j = max(0, j1 - 5)
-                    end_j = min(len(ms_words), j2 + 5)
-                    ms_context = " ".join(ms_words[start_j:end_j])
-                    
-                    refined_tag = tag
-                    if base_reading == "[ADD]": refined_tag = 'addition'
-                    elif ms_reading == "[OMIT]": refined_tag = 'omission'
-                    elif tag == 'replace':
-                        bw, mw = base_reading.split(), ms_reading.split()
-                        if len(bw) == len(mw) and sorted(bw) == sorted(mw):
-                            refined_tag = 'substitution_word_order'
-                        else:
-                            sm = difflib.SequenceMatcher(None, normalize_orthography(base_reading), normalize_orthography(ms_reading))
-                            refined_tag = 'substitution_morphological' if sm.ratio() > 0.5 else 'substitution_lexical'
-                    
-                    if bool(re.search(r'[A-Za-zα-ωΑ-Ω]', base_reading)) or bool(re.search(r'[A-Za-zα-ωΑ-Ω]', ms_reading)):
-                        variants.append({
-                            'chapter': chapter,
-                            'verse': verse_id,
-                            'manuscript': ms,
-                            'base_reading': base_reading,
-                            'ms_reading': ms_reading,
-                            'type': refined_tag,
-                            'base_context_10w': base_context,
-                            'ms_context_10w': ms_context
-                        })
-                    
-    df = pd.DataFrame(variants)
-    output_target = f'data/variants_full_john_{base_ms}.csv'
-    df.to_csv(output_target, index=False)
-    print(f"Extracted {len(df)} substantive variants against {base_ms} to {output_target}!")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Extract scribal variants against a baseline MS.')
-    parser.add_argument('--baseline', type=str, default='B', help='Baseline manuscript (B, aleph, A, D)')
+    parser = argparse.ArgumentParser(description="Extract variants of John against a baseline witness.")
+    parser.add_argument("--baseline", default="B", help="Baseline witness (P66, aleph, A, B, D)")
+    parser.add_argument("--exclude-supplied", action="store_true",
+                        help="Drop variant blocks resting on <supplied> text or a <gap>.")
+    parser.add_argument("--exclude-unclear", action="store_true",
+                        help="Drop variant blocks resting on <unclear> text.")
     args = parser.parse_args()
-    download_and_extract(base_ms=args.baseline)
+    download_and_extract(args.baseline, args.exclude_supplied, args.exclude_unclear)

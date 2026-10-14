@@ -37,8 +37,8 @@
           A computational analysis of aggregate change profiles across five major Greek witnesses
           to the Gospel of John — <span class="greek-text">P66</span>, Codex Sinaiticus
           (<span class="greek-text">&#x2135;</span>), Codex Alexandrinus (A), Codex Vaticanus (B),
-          and Codex Bezae (D) — demonstrating that each manuscript carries a statistically
-          distinct, reproducible scribal fingerprint.
+          and Codex Bezae (D) — testing whether each manuscript carries a statistically
+          detectable, reproducible change profile.
         </p>
       </div>
     </section>
@@ -50,7 +50,7 @@
 
       <div class="stat-grid" id="stat-cards">
         <div class="stat-card">
-          <span class="stat-value" id="stat-n">12,460</span>
+          <span class="stat-value" id="stat-n">—</span>
           <span class="stat-label">Token-level variants</span>
           <span class="stat-sublabel">Across 21 chapters</span>
         </div>
@@ -78,9 +78,9 @@
 
       <div class="callout">
         All reported values are derived programmatically from the pipeline output files.
-        The signal persists across three independent baselines (B, A, and verse-matched)
-        and survives content ablation, confirming that scribal change profiles are not
-        artifacts of a single reference text.
+        Results are reported for three baselines (B, A and a verse-matched subset) and two
+        content-ablation conditions, so that the profiles can be checked against the choice
+        of reference text and against the lexical content of the variants.
       </div>
     </section>
 
@@ -131,11 +131,21 @@
       if (!b) return;
 
       const fmt = (v, dec) => typeof v === 'number' ? v.toFixed(dec) : '—';
+      const stale = b.stale === true ? ' *' : '';
 
-      document.getElementById('stat-d').textContent = fmt(b["Cohen's d"], 4);
-      document.getElementById('stat-ari').textContent = fmt(b['ARI'], 4);
+      if (typeof b.N_current === 'number') {
+        document.getElementById('stat-n').textContent = b.N_current.toLocaleString();
+      }
+      document.getElementById('stat-d').textContent = fmt(b["Cohen's d"], 4) + stale;
+      document.getElementById('stat-ari').textContent = fmt(b['ARI'], 4) + stale;
       document.getElementById('stat-v').textContent = fmt(b["Cramer's V Sub"], 4);
-      document.getElementById('stat-rho').textContent = fmt(b['Odd_Even_Split_Rho'], 4);
+      document.getElementById('stat-rho').textContent = fmt(b['Odd_Even_Split_Rho'], 4) + stale;
+      if (stale) {
+        const note = document.createElement('p');
+        note.className = 'table-note';
+        note.textContent = '* Embedding-based value; refreshed by the embedding stage of the pipeline.';
+        document.getElementById('stat-rho').closest('section').appendChild(note);
+      }
     })();
   </script>
 </body>

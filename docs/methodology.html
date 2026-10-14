@@ -48,7 +48,7 @@
           <div class="step-box">
             <span class="step-num">Step 2</span>
             <span class="step-title">Variant Extraction</span>
-            <span class="step-desc">CollateX word alignment</span>
+            <span class="step-desc">LCS word alignment on normalised tokens</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
@@ -93,7 +93,7 @@
           <tbody>
             <tr>
               <td><strong>Morphological Substitution</strong></td>
-              <td>Same lemma, different inflectional form</td>
+              <td>Same lemma, different form (including suppletive forms)</td>
               <td><span class="greek-text">λέγει → λέγουσιν</span></td>
             </tr>
             <tr>
@@ -113,17 +113,20 @@
             </tr>
             <tr>
               <td><strong>Word Order Shift</strong></td>
-              <td>Same words in different sequence</td>
-              <td>Detected at alignment level (count: 0 in current pipeline)</td>
+              <td>Same words in different sequence, recovered by pairing an omission with an addition (or two substitutions) of the same words within one verse</td>
+              <td><span class="greek-text">ηγαπησα υμας → υμας ηγαπησα</span></td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="callout">
-        Morphological substitutions dominate across all manuscripts (67–83% of all variants),
-        consistent with the expectation that most scribal changes involve minor inflectional
-        adjustments rather than substantive lexical replacements.
+        Against Baseline B, additions and omissions together make up 42–48% of the variants
+        of each witness, morphological substitutions 21–28%, lexical substitutions 19–25% and
+        word-order shifts 7–9%. Same lemma or different lemma is decided with a form-to-lemma
+        lexicon of the printed New Testament (MorphGNT SBLGNT); witness spellings it lacks are
+        placed by spelling similarity to the attested forms. Purely orthographic alternations (itacism, movable nu, elision,
+        consonant gemination) are removed before alignment and are not counted.
       </div>
     </section>
 
@@ -131,7 +134,7 @@
     <section>
       <h2 class="section-title">Pipeline Scripts</h2>
       <p>
-        The analysis is implemented in six Python scripts, each handling a distinct stage
+        The analysis is implemented in seven Python scripts, each handling a distinct stage
         of the pipeline:
       </p>
       <div class="card">
@@ -142,11 +145,15 @@
           <tbody>
             <tr>
               <td><code>download_itsee_data.py</code></td>
-              <td>Fetches TEI XML transcriptions from ITSEE, normalises orthography, extracts and classifies variants</td>
+              <td>Fetches TEI XML transcriptions from ITSEE, reads the first-hand text, normalises orthography, aligns, extracts and classifies variants</td>
+            </tr>
+            <tr>
+              <td><code>profile_scribes.py</code></td>
+              <td>Ancient-Greek-BERT embeddings of the context windows; change vectors and manuscript / chapter profiles</td>
             </tr>
             <tr>
               <td><code>run_statistical_tests.py</code></td>
-              <td>BERT embedding, permutation tests (ARI, Cohen's d), bootstrap confidence intervals, Cramér's V</td>
+              <td>Chapter-block permutation tests (ARI, Cohen's d, Cramér's V), block-bootstrap confidence intervals, split-half replicability, within-type and verse-level effect sizes</td>
             </tr>
             <tr>
               <td><code>create_visualizations.py</code></td>
@@ -155,10 +162,6 @@
             <tr>
               <td><code>create_verse_matched_dataset.py</code></td>
               <td>Identifies shared verse set across all manuscripts for controlled comparison</td>
-            </tr>
-            <tr>
-              <td><code>recalc_odd_even.py</code></td>
-              <td>Split-half reproducibility test (Spearman ρ on manuscript distance matrices)</td>
             </tr>
             <tr>
               <td><code>run_ablation_study.py</code></td>
@@ -175,7 +178,8 @@
       <p>
         Not all manuscripts preserve all 21 chapters of John. The table below shows the
         percentage of extant verses per chapter for each witness (against Baseline B).
-        White cells indicate complete coverage; coloured cells indicate lacunae.
+        White cells indicate complete coverage; coloured cells indicate verses without attested
+        text (lacunae, or passages absent from the witness such as John 5:4 and 7:53–8:11).
       </p>
       <div class="card" style="overflow-x:auto;">
         <table class="coverage-table" id="coverage-table">

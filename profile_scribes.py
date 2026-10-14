@@ -1,115 +1,100 @@
-import pandas as pd
-import numpy as np
-import torch
-from transformers import AutoTokenizer, AutoModel
+"""Compute contextual change vectors for every variant.
+
+For each variant the 10-word baseline context and the corresponding
+manuscript context are embedded with Ancient-Greek-BERT (mean pooling over
+the token vectors of the last hidden layer, attention-masked).  The change
+vector is the difference ``ms_embedding - base_embedding``.  Manuscript
+profiles are the mean change vector per manuscript (and per chapter).
+"""
+import argparse
 import os
 
-model_name = "pranaydeeps/Ancient-Greek-BERT"
-print(f"Loading tokenizer and model: {model_name}...")
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModel.from_pretrained(model_name)
+import numpy as np
+import pandas as pd
+import torch
+from transformers import AutoModel, AutoTokenizer
 
-def get_embedding(text):
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=128)
+from download_itsee_data import write_type_counts
+
+MODEL_NAME = "pranaydeeps/Ancient-Greek-BERT"
+
+
+def load_model(device):
+    print(f"Loading tokenizer and model: {MODEL_NAME}...")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    model = AutoModel.from_pretrained(MODEL_NAME).to(device).eval()
+    return tokenizer, model
+
+
+def embed_texts(texts, tokenizer, model, device, max_length=128):
+    """Mean-pooled last-layer embeddings (one 768-d vector per text)."""
+    texts = [str(t) if pd.notna(t) else "" for t in texts]
+    inputs = tokenizer(texts, return_tensors="pt", truncation=True,
+                       padding=True, max_length=max_length).to(device)
     with torch.no_grad():
-        outputs = model(**inputs)
-    return outputs.last_hidden_state.mean(dim=1).squeeze().numpy()
+        hidden = model(**inputs).last_hidden_state
+    mask = inputs['attention_mask'].unsqueeze(-1).float()
+    summed = (hidden * mask).sum(1)
+    counts = mask.sum(1).clamp(min=1e-9)
+    return (summed / counts).cpu().numpy()
 
-import argparse
 
-def main(base_ms='B', ablation_type=None):
+def main(base_ms='B', ablation_type=None, batch_size=16, device=None):
     if ablation_type:
         input_file = f"data/variants_ablation_{ablation_type}.csv"
         suffix = f"ablation_{ablation_type}"
     else:
         input_file = f"data/variants_full_john_{base_ms}.csv"
         suffix = base_ms
-        
     if not os.path.exists(input_file):
         print(f"{input_file} not found.")
         return
-        
+
+    device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+    tokenizer, model = load_model(device)
+
     df = pd.read_csv(input_file)
-    print(f"Loaded {len(df)} refined variants for John 1-21 (Suffix: {suffix}). Computing embeddings...")
-    
-    batch_size = 16
-    all_change_vectors = []
-    
+    print(f"Loaded {len(df)} variants (suffix: {suffix}). Computing embeddings on {device}...")
+
     base_contexts = df['base_context_10w'].tolist()
     ms_contexts = df['ms_context_10w'].tolist()
-    
+    change_vectors = []
     for i in range(0, len(df), batch_size):
-        batch_base = base_contexts[i:i+batch_size]
-        batch_ms = ms_contexts[i:i+batch_size]
-        
-        def get_batch_embeddings(texts):
-            # Convert NaN to empty string just in case
-            texts = [str(t) if pd.notna(t) else "" for t in texts]
-            inputs = tokenizer(texts, return_tensors="pt", truncation=True, padding=True, max_length=128)
-            with torch.no_grad():
-                outputs = model(**inputs)
-            attention_mask = inputs['attention_mask']
-            token_embeddings = outputs.last_hidden_state
-            input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
-            sum_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1)
-            sum_mask = torch.clamp(input_mask_expanded.sum(1), min=1e-9)
-            return (sum_embeddings / sum_mask).numpy()
+        embs_base = embed_texts(base_contexts[i:i + batch_size], tokenizer, model, device)
+        embs_ms = embed_texts(ms_contexts[i:i + batch_size], tokenizer, model, device)
+        change_vectors.extend(list(embs_ms - embs_base))
+        done = min(i + batch_size, len(df))
+        if done % (batch_size * 50) == 0 or done == len(df):
+            print(f"Processed {done}/{len(df)} variants...")
 
-        embs_base = get_batch_embeddings(batch_base)
-        embs_ms = get_batch_embeddings(batch_ms)
-        
-        batch_changes = embs_ms - embs_base
-        all_change_vectors.extend(list(batch_changes))
-        
-        if (i + batch_size) % 160 == 0 or (i + batch_size) >= len(df):
-            print(f"Processed {min(i + batch_size, len(df))}/{len(df)} variants...")
-            
-    df['change_vector'] = all_change_vectors
-    
+    df['change_vector'] = change_vectors
     os.makedirs('outputs', exist_ok=True)
     df.to_pickle(f"outputs/variants_full_with_vectors_{suffix}.pkl")
-    
-    manuscripts = df['manuscript'].unique()
-    profiles = {}
-    for ms in manuscripts:
-        ms_vectors = np.array(df[df['manuscript'] == ms]['change_vector'].tolist())
-        profiles[ms] = np.mean(ms_vectors, axis=0)
-    
+
+    manuscripts = sorted(df['manuscript'].unique())
+    profiles = {ms: np.mean(np.array(df.loc[df['manuscript'] == ms, 'change_vector'].tolist()), axis=0)
+                for ms in manuscripts}
     np.savez(f"outputs/scribal_profiles_full_{suffix}.npz", **profiles)
-    
-    chapters = df['chapter'].unique()
+
     chapter_profiles = {}
     for ms in manuscripts:
-        for ch in chapters:
+        for ch in sorted(df['chapter'].unique()):
             subset = df[(df['manuscript'] == ms) & (df['chapter'] == ch)]
-            if len(subset) > 0:
-                vecs = np.array(subset['change_vector'].tolist())
-                chapter_profiles[f"{ms}_ch{ch}"] = np.mean(vecs, axis=0)
-    
+            if len(subset):
+                chapter_profiles[f"{ms}_ch{ch}"] = np.mean(np.array(subset['change_vector'].tolist()), axis=0)
     np.savez(f"outputs/chapter_profiles_full_{suffix}.npz", **chapter_profiles)
 
-    prop_data = []
-    for ms in manuscripts:
-        ms_df = df[df['manuscript'] == ms]
-        total = len(ms_df)
-        if total == 0: continue
-        counts = ms_df['type'].value_counts()
-        prop_data.append({
-            'manuscript': ms,
-            'substitution_morphological': counts.get('substitution_morphological', 0),
-            'substitution_lexical': counts.get('substitution_lexical', 0),
-            'substitution_word_order': counts.get('substitution_word_order', 0),
-            'addition': counts.get('addition', 0),
-            'omission': counts.get('omission', 0),
-            'total_variants': total
-        })
-        
-    pd.DataFrame(prop_data).to_csv(f"outputs/type_counts_full_{suffix}.csv", index=False)
-    print(f"Saved all embeddings and profiles for {suffix} to outputs/")
+    write_type_counts(df, suffix)
+    print(f"Saved embeddings and profiles for {suffix} to outputs/")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--baseline', type=str, default='B', help='Baseline MS')
-    parser.add_argument('--ablation', type=str, default=None, help='Ablation type (func_words, masked)')
+    parser.add_argument('--ablation', type=str, default=None,
+                        help='Ablation dataset (matched, func_words, masked, random_masked, random_masked_s1..s4)')
+    parser.add_argument('--batch-size', type=int, default=16)
+    parser.add_argument('--device', type=str, default=None, help='cpu or cuda (default: auto)')
     args = parser.parse_args()
-    main(base_ms=args.baseline, ablation_type=args.ablation)
+    main(base_ms=args.baseline, ablation_type=args.ablation,
+         batch_size=args.batch_size, device=args.device)

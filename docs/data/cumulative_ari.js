@@ -2,243 +2,243 @@ window.DATA_CUMULATIVE = {
   "Baseline B": [
     {
       "chapters": 1,
-      "ari": 0.026685
+      "ari": -0.003574
     },
     {
       "chapters": 2,
-      "ari": 0.0478
+      "ari": 0.008243
     },
     {
       "chapters": 3,
-      "ari": 0.011459
+      "ari": -0.001002
     },
     {
       "chapters": 4,
-      "ari": 0.025905
+      "ari": 0.005026
     },
     {
       "chapters": 5,
-      "ari": 0.028468
+      "ari": -0.004968
     },
     {
       "chapters": 6,
-      "ari": 0.034572
+      "ari": -0.000357
     },
     {
       "chapters": 7,
-      "ari": 0.029332
+      "ari": -0.002193
     },
     {
       "chapters": 8,
-      "ari": 0.036572
+      "ari": -0.005528
     },
     {
       "chapters": 9,
-      "ari": 0.043374
+      "ari": -0.001305
     },
     {
       "chapters": 10,
-      "ari": 0.038433
+      "ari": -0.000404
     },
     {
       "chapters": 11,
-      "ari": 0.048041
+      "ari": -0.000498
     },
     {
       "chapters": 12,
-      "ari": 0.043495
+      "ari": -0.004658
     },
     {
       "chapters": 13,
-      "ari": 0.046792
+      "ari": -0.000445
     },
     {
       "chapters": 14,
-      "ari": 0.042088
+      "ari": 0.000248
     },
     {
       "chapters": 15,
-      "ari": 0.034882
+      "ari": -0.005691
     },
     {
       "chapters": 16,
-      "ari": 0.042055
+      "ari": -0.004671
     },
     {
       "chapters": 17,
-      "ari": 0.040989
+      "ari": 0.000376
     },
     {
       "chapters": 18,
-      "ari": 0.036766
+      "ari": 0.001836
     },
     {
       "chapters": 19,
-      "ari": 0.028614
+      "ari": -0.003225
     },
     {
       "chapters": 20,
-      "ari": 0.058376
+      "ari": 0.002731
     },
     {
       "chapters": 21,
-      "ari": 0.050794
+      "ari": 0.005035
     }
   ],
   "Baseline A": [
     {
       "chapters": 1,
-      "ari": 0.023146
+      "ari": 0.01367
     },
     {
       "chapters": 2,
-      "ari": 0.009759
+      "ari": 0.011102
     },
     {
       "chapters": 3,
-      "ari": 0.012857
+      "ari": 0.00329
     },
     {
       "chapters": 4,
-      "ari": 0.023231
+      "ari": -0.00162
     },
     {
       "chapters": 5,
-      "ari": 0.026207
+      "ari": -0.001528
     },
     {
       "chapters": 6,
-      "ari": 0.024554
+      "ari": -0.005791
     },
     {
       "chapters": 7,
-      "ari": 0.035385
+      "ari": -0.001834
     },
     {
       "chapters": 8,
-      "ari": 0.026988
+      "ari": -0.002269
     },
     {
       "chapters": 9,
-      "ari": 0.044319
+      "ari": -0.002679
     },
     {
       "chapters": 10,
-      "ari": 0.0376
+      "ari": -0.0022
     },
     {
       "chapters": 11,
-      "ari": 0.048148
+      "ari": -0.00129
     },
     {
       "chapters": 12,
-      "ari": 0.049677
+      "ari": -0.000621
     },
     {
       "chapters": 13,
-      "ari": 0.037776
+      "ari": -0.000635
     },
     {
       "chapters": 14,
-      "ari": 0.03651
+      "ari": 0.0019
     },
     {
       "chapters": 15,
-      "ari": 0.060935
+      "ari": -0.001696
     },
     {
       "chapters": 16,
-      "ari": 0.033097
+      "ari": 0.000191
     },
     {
       "chapters": 17,
-      "ari": 0.044293
+      "ari": 0.000843
     },
     {
       "chapters": 18,
-      "ari": 0.055514
+      "ari": -0.000936
     },
     {
       "chapters": 19,
-      "ari": 0.036116
+      "ari": -0.001052
     },
     {
       "chapters": 20,
-      "ari": 0.032112
+      "ari": -0.000204
     }
   ],
   "Verse-matched": [
     {
       "chapters": 1,
-      "ari": -0.003646
+      "ari": -0.015494
     },
     {
       "chapters": 2,
-      "ari": 0.033871
+      "ari": -0.000975
     },
     {
       "chapters": 3,
-      "ari": 0.036417
+      "ari": 0.004487
     },
     {
       "chapters": 4,
-      "ari": 0.000118
+      "ari": -0.000784
     },
     {
       "chapters": 5,
-      "ari": 0.035912
+      "ari": -0.002205
     },
     {
       "chapters": 6,
-      "ari": 0.027574
+      "ari": -0.006008
     },
     {
       "chapters": 7,
-      "ari": 0.037462
+      "ari": -0.001429
     },
     {
       "chapters": 8,
-      "ari": 0.049337
+      "ari": -0.005397
     },
     {
       "chapters": 9,
-      "ari": 0.059567
+      "ari": -0.000231
     },
     {
       "chapters": 10,
-      "ari": 0.047105
+      "ari": -0.001092
     },
     {
       "chapters": 11,
-      "ari": 0.039419
+      "ari": -0.000446
     },
     {
       "chapters": 12,
-      "ari": 0.036299
+      "ari": -0.0044
     },
     {
       "chapters": 13,
-      "ari": 0.036243
+      "ari": 0.000699
     },
     {
       "chapters": 14,
-      "ari": 0.045835
+      "ari": 0.001557
     },
     {
       "chapters": 15,
-      "ari": 0.046095
+      "ari": 0.002465
     },
     {
       "chapters": 16,
-      "ari": 0.044809
+      "ari": 1.7e-05
     },
     {
       "chapters": 17,
-      "ari": 0.056894
+      "ari": 0.001125
     },
     {
       "chapters": 18,
-      "ari": 0.048311
+      "ari": -0.00198
     }
   ]
 };

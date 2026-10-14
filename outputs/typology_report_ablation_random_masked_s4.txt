@@ -1,0 +1,7 @@
+Variant-type tests (ablation_random_masked_s4) - N=4365 variants
+Chi2 (Broad) p: 1.54e-09
+Cramér's V (Broad): 0.0775 [95% block-bootstrap CI (2000): 0.0658 - 0.0989; bootstrap mean 0.0808]
+Cramér's V (Broad) null (200 permutations): mean=0.0253, SD=0.0077 (p=4.975e-03)
+Chi2 (SubTypes) p: 2.55e-03
+Cramér's V (SubTypes): 0.0655 [95% block-bootstrap CI (2000): 0.0491 - 0.0959; bootstrap mean 0.0723]
+Cramér's V (SubTypes) null (200 permutations): mean=0.0352, SD=0.0108 (p=9.950e-03)

@@ -17,3 +17,7 @@ build/
 .vscode/
 .idea/
 
+
+# Intermediate tables written by src/extract_variants.py (the analysis reads data/variants_full_john_*.csv)
+data/variants/
+outputs/john/

@@ -64,12 +64,14 @@
           editions of each manuscript.
         </p>
         <p>
-          Variant extraction uses word-level alignment via the
-          <a href="https://collatex.net/" target="_blank" rel="noopener">CollateX</a>
-          algorithm, followed by automated classification into five typological categories.
-          Contextual embeddings are generated using
-          <a href="https://huggingface.co/bert-base-multilingual-cased" target="_blank" rel="noopener">BERT (base, multilingual, cased)</a>,
-          which provides adequate coverage of polytonic Greek orthography.
+          Only the first-hand text of each witness is used; corrections by later hands are
+          ignored. Variant extraction aligns each manuscript verse with the baseline verse
+          using a longest-common-subsequence word alignment (Python's
+          <code>difflib</code>) computed on orthographically normalised tokens, followed by
+          rule-based classification into five typological categories.
+          Contextual embeddings are generated with
+          <a href="https://huggingface.co/pranaydeeps/Ancient-Greek-BERT" target="_blank" rel="noopener">Ancient-Greek-BERT</a>,
+          a BERT model pre-trained on Ancient Greek.
         </p>
       </section>
 
@@ -87,22 +89,20 @@
         <h2 class="section-title">Citation</h2>
         <div class="card" style="font-size:0.9rem;">
           <p style="margin-bottom:0.5rem;">
-            Ziemińska, A. B. (2026). <em>The Typological Structure of Textual Variation:
-            A Computational Analysis of Major Witnesses to the Gospel of John (Software & Data).</em>
-            Zenodo. <a href="https://doi.org/10.5281/zenodo.19153695" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.19153695</a>
+            Ziemińska, A. B. (2026). <em>scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)</em> (version 2.0.0).
+            Zenodo. <a href="https://doi.org/10.5281/zenodo.23359316" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23359316</a>
           </p>
           <p style="margin-bottom:0; color:var(--text-muted); font-size:0.85rem;">
             BibTeX:
           </p>
-          <pre style="background:var(--bg-alt); padding:1rem; border-radius:var(--radius); overflow-x:auto; font-size:0.8rem; margin-top:0.5rem;"><code>@article{zieminska2026scribal_software,
+          <pre style="background:var(--bg-alt); padding:1rem; border-radius:var(--radius); overflow-x:auto; font-size:0.8rem; margin-top:0.5rem;"><code>@software{zieminska2026scribal_software,
   author    = {Ziemińska, Agnieszka B.},
-  title     = {The Typological Structure of Textual Variation:
-               A Computational Analysis of Major Witnesses
-               to the Gospel of John (Software & Data)},
+  title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.19153695},
-  url       = {https://doi.org/10.5281/zenodo.19153695}
+  version   = {2.0.0},
+  doi       = {10.5281/zenodo.23359316},
+  url       = {https://doi.org/10.5281/zenodo.23359316}
 }</code></pre>
         </div>
       </section>
@@ -112,8 +112,8 @@
         <p>
           The complete analysis pipeline is open-source and available on
           <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub</a>.
-          All results presented on this website can be reproduced by running the six
-          Python scripts in sequence as described in the
+          All results presented on this website can be reproduced by running the
+        Python scripts in sequence as described in the
           <a href="methodology.html">Methodology</a> section.
         </p>
         <p>

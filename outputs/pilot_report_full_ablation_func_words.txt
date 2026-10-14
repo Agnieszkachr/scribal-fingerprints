@@ -1,14 +1,27 @@
-Summary for John 1-21 Analysis (ablation_func_words) - N=1008 variants
-MW-U p: 7.66e-76
-Cohen's d (Inter-Intra) Block Bootstrap CI: 0.0866 [95% CI: 0.0660 - 0.1101]
-Cohen's d Null Permutation: Mean=0.0006, SD=0.0036 (p=0.000e+00)
-ARI (Block Permutation Test): 0.0170 (p=0.000e+00)
-ARI Null Permutation: Mean=-0.0006, SD=0.0016
-Chi2 (Broad) p: 8.26e-02
-Cramér's V (Broad) Block Bootstrap CI: 0.0868 [95% CI: 0.0576 - 0.1216]
-Cramér's V (Broad) Null Permutation: Mean=0.0521, SD=0.0155 (p=8.000e-02)
-Chi2 (SubTypes) p: 3.07e-02
-Cramér's V (SubTypes) Block Bootstrap CI: 0.2227 [95% CI: 0.1048 - 0.3699]
-Cramér's V (SubTypes) Null Permutation: Mean=0.1006, SD=0.0452 (p=3.000e-02)
-Odd/Even Rank Correlation (full attested): Spearman rho = 0.4286 (p=0.3965)
-Odd/Even Rank Correlation (attested-loci filter, N_verses=536): Spearman rho = 0.2000 (p=0.7040)
+Summary for John 1-21 Analysis (ablation_func_words) - N=1767 variants
+MW-U p: 4.08e-05
+Cohen's d (inter vs intra), all N=1767: 0.0084
+Cohen's d block bootstrap (2000): mean 0.0064 [95% CI: -0.0051 - 0.0178]
+Cohen's d null (2000 permutations): mean=0.0006, SD=0.0020 (p=9.995e-04)
+Cohen's d (verse-level aggregation, N_units=1281): 0.0080
+ARI: -0.0025 (p=8.507e-01); null mean=-0.0007, SD=0.0019
+Odd/even Spearman rho (full attested): 0.1429 (p=0.7872)
+Odd/even Spearman rho (attested loci, 532 verses): -0.3714 (p=0.4685)
+Split-half centroids: same-witness 0.7803, cross-witness 0.8966, 3/4 nearest to their own other half
+Split-half permutation (500): gap = 0.1163, null 0.0013 +/- 0.0317, p = 0.0020; nearest-self p = 0.0279
+Cohen's d within substitution_morphological (n=143): -0.0424
+Cohen's d within substitution_lexical (n=247): -0.0211
+Cohen's d within addition (n=748): -0.0012
+Cohen's d within omission (n=611): -0.0026
+Cohen's d pair A-D: 0.0053
+Cohen's d pair A-P66: 0.0261
+Cohen's d pair A-aleph: 0.0131
+Cohen's d pair D-P66: 0.0076
+Cohen's d pair D-aleph: 0.0046
+Cohen's d pair P66-aleph: -0.0003
+Chi2 (Broad) p: 9.04e-06
+CramÃ©r's V (Broad): 0.0971 [95% block-bootstrap CI (2000): 0.0790 - 0.1327; bootstrap mean 0.1049]
+CramÃ©r's V (Broad) null (200 permutations): mean=0.0407, SD=0.0113 (p=4.975e-03)
+Chi2 (SubTypes) p: 1.77e-01
+CramÃ©r's V (SubTypes): 0.1047 [95% block-bootstrap CI (2000): 0.0766 - 0.1766; bootstrap mean 0.1226]
+CramÃ©r's V (SubTypes) null (200 permutations): mean=0.0848, SD=0.0247 (p=2.189e-01)

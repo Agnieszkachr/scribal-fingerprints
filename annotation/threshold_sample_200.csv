@@ -1,0 +1,201 @@
+ID,verse,manuscript,baseline_reading,manuscript_reading,char_similarity,annotation,unsure,note
+TS-001,J 13:1,P66,τουτου προς τον,προν,0.4211,L,False,Different lexemes and structure (τουτου προς τον vs προν)
+TS-002,J 12:13,P66,βαια,βαλια,0.5,M,False,Same lexeme βαΐον (βαλια is an orthographic/phonetic variant of βαΐα)
+TS-003,J 9:27,D,ουν,θελετε,0.0,L,False,Different lexemes: οὖν (particle) vs θέλω (verb)
+TS-004,J 6:11,aleph,ουν,δε,0.0,L,False,Different lexemes: οὖν vs δέ (distinct particles/conjunctions)
+TS-005,J 17:24,D,εδωκας,δεδωκας,0.9231,M,False,Same lexeme δίδωμι (aorist ἔδωκας vs perfect δέδωκας)
+TS-006,J 8:19,aleph,μου,ηδειται,0.0,L,False,Different lexemes: ἐγώ (μου) vs οἶδα (ᾔδειτε)
+TS-007,J 8:36,P66,εσεσθε,εστε,0.6,M,False,Same lexeme εἰμί (future ἔσεσθε vs present ἐστέ)
+TS-008,J 19:16,aleph,παρελαβον ουν,οι δε λαβοντες,0.4615,L,False,Different lexemes: παραλαμβάνω + οὖν vs ὁ + δέ + λαμβάνω
+TS-009,J 21:17,A,και ειπεν,λεγει αυτω,0.3333,L,False,Different lexemes: καί + λέγω vs λέγω + αὐτός
+TS-010,J 6:64,P66,εσιν,εισιν τινες,0.3333,L,False,Different lexemes: εἰσίν vs εἰσίν + τινες (added lexeme τινες)
+TS-011,J 4:47,aleph,απηλθεν,ηλθεν ουν,0.5714,L,False,Different lexemes: ἀπέρχομαι vs ἔρχομαι + οὖν
+TS-012,J 6:55,aleph,αληθης εστιν βρωσις και το αιμα μου αληθης εστιν ποσις,αληθως εστι ποτον,0.3768,L,False,Different lexemes: completely different wording/lexemes
+TS-013,J 20:23,aleph,αφειονται,αφεθησεται,0.625,M,False,Same lexeme ἀφίημι (perfect ἀφέωνται/ἀφείονται vs future ἀφεθήσεται)
+TS-014,J 10:22,P66,τοτε,δε,0.3333,L,False,Different lexemes: τότε (adverb) vs δέ (particle)
+TS-015,J 5:34,D,ανθρωπου,ανθρωπων,0.875,M,False,Same lexeme ἄνθρωπος (gen sg ἀνθρώπου vs gen pl ἀνθρώπων)
+TS-016,J 19:24,P66,ειπον,ειπαν,0.75,M,False,Same lexeme λέγω (2nd aorist εἶπον vs 1st aorist ending εἶπαν)
+TS-017,J 6:38,D,απο,εκ,0.0,L,False,Different lexemes: ἀπό vs ἐκ (distinct prepositions)
+TS-018,J 15:11,aleph,η,μεινη,0.4,L,False,Different lexemes: εἰμί (ᾖ) vs μένω (μείνῃ)
+TS-019,J 5:3,D,κατεκειτο,ουν κατεκειντο,0.7619,L,False,Different lexemes: κατέκειτο vs οὖν + κατάκειμαι (added lexeme οὖν)
+TS-020,J 11:27,A,ναι κυριε,ο ιησους,0.1818,L,False,Different lexemes: ναί + κύριος vs ὁ + Ἰησοῦς
+TS-021,J 11:57,D,εστι,εστιν,0.8889,M,False,Same lexeme εἰμί (ἐστί vs movable nu ἐστίν)
+TS-022,J 7:22,D,ουκ,ουχ,0.6667,M,False,Same lexeme οὐ (phonetic variant οὐκ vs οὐχ before breathing)
+TS-023,J 7:6,aleph,ουπω,ου,0.6667,L,False,Different lexemes: οὔπω (adverb) vs οὐ (negative particle)
+TS-024,J 5:15,D,αυτον,με,0.3333,L,False,Different lexemes: αὐτός (αὐτόν) vs ἐγώ (με)
+TS-025,J 14:9,D,τοσουτον χρονον,τοσουτω χρονω,0.9212,M,False,Same lexemes: τοσοῦτος + χρόνος (acc τοσοῦτον χρόνον vs dat τοσούτῳ χρόνῳ)
+TS-026,J 5:7,A,προς,προ,0.8571,L,False,Different lexemes: πρός vs πρό (distinct prepositions)
+TS-027,J 6:24,D,ενεβησαν αυτοι εις τα,ελαβον εαυτοις,0.5333,L,False,Different lexemes: ἐμβαίνω + αὐτός + εἰς + ὁ vs λαμβάνω + ἑαυτοῦ
+TS-028,J 16:18,aleph,εστι,εστιν,0.8889,M,False,Same lexeme εἰμί (ἐστί vs movable nu ἐστίν)
+TS-029,J 6:58,D,ου,νο,0.5,M,True,Scribal error/Latinism (non) for negative particle οὐ; same intended lexeme
+TS-030,J 6:53,P66,σαρκα,σαρκαν,0.9091,M,False,Same lexeme σάρξ (acc sg σάρκα vs Hellenistic σάρκαν)
+TS-031,J 13:1,P66,ηλθεν,ηκει,0.2857,L,False,Different lexemes: ἔρχομαι (ἦλθεν) vs ἥκω (ἥκει)
+TS-032,J 7:51,D,γνω,επιγνωσθη,0.5,L,False,Different lexemes: γινώσκω (γνῷ) vs compound ἐπιγινώσκω (ἐπιγνωσθῇ
+TS-033,J 13:2,P66,γινομενου,γεναμενου,0.7778,M,False,Same lexeme γίνομαι (present ptcp γινομένου vs aorist ptcp γεναμένου)
+TS-034,J 11:28,A,τουτο,ταυτα,0.4444,M,False,Same lexeme οὗτος (neut sg τοῦτο vs neut pl ταῦτα)
+TS-035,J 11:1,P66,αυτης,αυτου,0.5,M,False,Same lexeme αὐτός (gen fem sg αὐτῆς vs gen masc sg αὐτοῦ)
+TS-036,J 1:32,aleph,εμεινεν,μενον,0.4,M,False,Same lexeme μένω (aorist indic ἔμεινεν vs present ptcp μένον)
+TS-037,J 8:55,A,καν,και εαν,0.6667,M,False,Same lexemes: κἄν (crasis) vs καὶ ἐάν (resolved)
+TS-038,J 21:3,aleph,επιασαν,εκοπιασαν,0.875,L,False,Different lexemes: πιάζω (ἐπίασαν) vs κοπιάω (ἐκοπίασαν)
+TS-039,J 19:5,P66,φορων,εχων,0.4444,L,False,Different lexemes: φορέω (φορῶν) vs ἔχω (ἔχων)
+TS-040,J 15:7,aleph,μεινη ο αν,η οσα εαν,0.5667,L,False,Different lexemes: μένω + ὅς + ἄν vs ἤ + ὅσος + ἐάν
+TS-041,J 8:38,D,εγω εωρακα,ωρακα,0.6667,L,False,Different lexemes: ἐγώ + ὁράω vs ὁράω (omission of pronoun in slot)
+TS-042,J 19:39,aleph,φερων,εχων,0.6667,L,False,Different lexemes: φέρω (φέρων) vs ἔχω (ἔχων)
+TS-043,J 13:35,P66,εμοι μαθηται,εμου,0.2857,L,False,Different lexemes: ἐμοί + μαθηταί vs ἐμοῦ (omission of μαθηταί)
+TS-044,J 11:45,P66,μαριαμ και θεασαμενοι ο,μαριαν εωρακοτες α,0.5128,L,False,Different lexemes: θεάομαι (θεασάμενοι) vs ὁράω (ἑωρακότες)
+TS-045,J 8:39,D,λεγει αυτοις,ειπεν ουν ο,0.2222,L,False,Different lexemes: λέγω + αὐτός vs λέγω + οὖν + ὁ
+TS-046,J 5:19,aleph,απεκρινατο,ελεγεν,0.1333,L,False,Different lexemes: ἀποκρίνομαι (ἀπεκρίνατο) vs λέγω (ἔλεγεν)
+TS-047,J 6:17,D,και,κατελαβεν δε αυτους η,0.1905,L,False,Different lexemes: καί vs καταλαμβάνω + δέ + αὐτός + ὁ
+TS-048,J 12:49,D,δεδωκεν,εδωκεν,0.9091,M,False,Same lexeme δίδωμι (perfect δέδωκεν vs aorist ἔδωκεν)
+TS-049,J 6:39,D,εξ αυτου,μηδεν,0.1667,L,False,Different lexemes: ἐκ + αὐτός vs μηδείς
+TS-050,J 4:23,aleph,αυτον,αυτω,0.8571,M,False,Same lexeme αὐτός (acc αὐτόν vs dat αὐτῷ)
+TS-051,J 13:1,D,ηλθεν,παρην,0.2222,L,False,Different lexemes: ἔρχομαι (ἦλθεν) vs πάρειμι (παρῆν)
+TS-052,J 11:45,aleph,ο,α,0.0,M,False,Same lexeme ὅς (neut sg ὅ vs neut pl ἅ)
+TS-053,J 10:11,D,τιθησιν,διδωσιν,0.5,L,False,Different lexemes: τίθημι (τίθησιν) vs δίδωμι (δίδωσιν)
+TS-054,J 8:14,P66,εγω,γε,0.4,L,False,Different lexemes: ἐγώ vs γέ (pronoun vs particle)
+TS-055,J 11:29,P66,εκεινη δε,εκεινης,0.7143,L,False,Different lexemes: ἐκεῖνος + δέ vs ἐκεῖνος (omission of δέ)
+TS-056,J 12:39,D,οτι παλιν,και γαρ,0.125,L,False,Different lexemes: ὅτι + πάλιν vs καί + γάρ
+TS-057,J 11:54,P66,ουν,δε,0.0,L,False,Different lexemes: οὖν vs δέ (distinct particles)
+TS-058,J 12:11,P66,και επιστευον,επιστευσαν,0.7273,L,False,Different lexemes: καί + πιστεύω vs πιστεύω (omission of καί)
+TS-059,J 19:31,aleph,εκεινη,εκεινου,0.7273,M,False,Same lexeme ἐκεῖνος (nom fem sg ἐκείνη vs gen masc/neut sg ἐκείνου)
+TS-060,J 15:16,P66,υμας ινα,ιν,0.4,L,False,Different lexemes: ὑμᾶς + ἵνα vs ἵνα (omission of ὑμᾶς)
+TS-061,J 12:13,A,εκραυγασαν,εκραζον λεγοντες,0.48,L,False,Different lexemes: κραυγάζω vs κράζω + λέγω
+TS-062,J 6:42,aleph,οτι,εγω,0.3333,L,False,Different lexemes: ὅτι (conjunction) vs ἐγώ (pronoun)
+TS-063,J 16:32,A,καμε,και εμε,0.6,M,False,Same lexemes: κἀμέ (crasis) vs καὶ ἐμέ (resolved)
+TS-064,J 7:38,aleph,ει,εις,0.6667,M,False,Same lexeme εἰς (phonetic/orthographic variant ει for preposition εις)
+TS-065,J 9:14,A,εν η ημερα,οτε,0.1538,L,False,Different lexemes: ἐν + ὅς + ἡμέρα vs ὅτε
+TS-066,J 17:4,aleph,τελειωσας,τελιωσα,0.9333,M,False,Same lexeme τελειόω (participle τελειώσας vs aorist indic τελείωσα/τελιωσα)
+TS-067,J 5:11,aleph,περιπατει,περιπατειν,0.9412,M,False,Same lexeme περιπατέω (imperative περιπάτει vs infinitive περιπατεῖν)
+TS-068,J 7:39,P66,ειπεν,ελεγεν,0.25,M,False,Same lexeme λέγω (aorist εἶπεν vs imperfect ἔλεγεν)
+TS-069,J 1:15,D,εμπροσθεν,ενπροσθεν,0.875,M,False,Same lexeme ἔμπροσθεν (orthographic variant εμπροσθεν vs ενπροσθεν)
+TS-070,J 14:22,D,εμφανιζειν,ημεις ενφανιζειν,0.6957,L,False,Different lexemes: ἐμφανίζειν vs ἡμεῖς + ἐμφανίζειν (added pronoun ἡμεῖς)
+TS-071,J 18:16,P66,ο αλλος ο,ος ην,0.4615,L,False,Different lexemes: ὁ + ἄλλος + ὁ vs ὅς + εἰμί
+TS-072,J 6:57,P66,ζησει,ζησεται,0.6,M,False,Same lexeme ζάω (active future ζήσει vs middle future ζήσεται)
+TS-073,J 12:44,D,δε εκραξεν,ουν εκραζεν,0.4167,L,False,Different lexemes: δέ + κράζω vs οὖν + κράζω (δέ vs οὖν)
+TS-074,J 12:4,A,δε ιουδας ο ισκαριωτης,ουν,0.16,L,False,Different lexemes: δέ + Ἰούδας + ὁ + Ἰσκαριώτης vs οὖν
+TS-075,J 6:21,aleph,της γης,την γην,0.6667,M,False,Same lexemes: ὁ + γῆ (gen τῆς γῆς vs acc τὴν γῆν)
+TS-076,J 4:50,aleph,ον ειπεν αυτω ο ιησους,του ιησου,0.5714,L,False,Different lexemes: ὅς + λέγω + αὐτός + ὁ + Ἰησοῦς vs ὁ + Ἰησοῦς
+TS-077,J 3:25,aleph,ουν ζητησις,δε συνζητησις,0.4118,L,False,Different lexemes: οὖν + ζήτησις vs δέ + συζήτησις (distinct particles and nouns)
+TS-078,J 4:42,aleph,ελεγον,οτι,0.2222,L,False,Different lexemes: λέγω (ἔλεγον) vs ὅτι (conjunction)
+TS-079,J 1:16,A,οτι,και,0.0,L,False,Different lexemes: ὅτι vs καί (conjunctions)
+TS-080,J 4:17,aleph,και ειπεν αυτω,ανδρα,0.0,L,False,Different lexemes: καί + λέγω + αὐτός vs ἀνήρ (ἄνδρα)
+TS-081,J 10:14,D,γεινωσκουσι με,γεινωσιν εμε,0.775,M,False,Same lexemes: γινώσκω + ἐγώ (γινώσκουσι με vs γινώσκουσιν ἐμέ)
+TS-082,J 11:11,A,ταυταυτα,ταυτα,0.8,M,False,Same lexeme οὗτος (ταυταυτα dittography in B for ταῦτα)
+TS-083,J 11:52,P66,διεσκορπισμενα,εσκορπισμενα,0.9231,L,False,Different lexemes: compound διασκορπίζω vs simplex σκορπίζω
+TS-084,J 9:10,P66,οφθαλμοι,οφαλμοι,0.9231,M,False,Same lexeme ὀφθαλμός (phonetic/orthographic variant οφαλμοι for ὀφθαλμοί)
+TS-085,J 18:17,P66,ου τω πετρω,ουν,0.2857,L,False,Different lexemes: οὐ + ὁ + Πέτρος vs οὖν
+TS-086,J 4:52,D,εκεινην,παρ αυτων,0.2667,L,False,Different lexemes: ἐκεῖνος (ἐκείνην) vs παρά + αὐτός
+TS-087,J 18:18,A,και,μετ αυτων,0.1818,L,False,Different lexemes: καί vs μετά + αὐτός
+TS-088,J 4:50,P66,ον,ω,0.6667,M,False,Same lexeme ὅς (acc masc sg ὅν vs dat masc sg ᾧ)
+TS-089,J 7:22,aleph,δια τουτο,ο,0.2,L,False,Different lexemes: διά + οὗτος vs ὁ
+TS-090,J 16:18,aleph,ο λεγει,το,0.25,L,False,Different lexemes: ὅς + λέγω vs ὁ (τό)
+TS-091,J 13:2,A,γινομενου,γενομενου,0.8889,M,False,Same lexeme γίνομαι (present ptcp γινομένου vs aorist ptcp γενομένου)
+TS-092,J 13:26,D,ουν,το,0.4,L,False,"Different lexemes: οὖν (particle) vs ὁ (τό, article)"
+TS-093,J 19:16,A,ουν,δε,0.0,L,False,Different lexemes: οὖν vs δέ (distinct particles)
+TS-094,J 6:13,D,δωδεκα κοφινους,εκ των πεν,0.4,L,False,Different lexemes: δώδεκα + κόφινος vs ἐκ + ὁ + πέντε
+TS-095,J 8:41,P66,ουκ εγεννηθημεν,ου γεγενημεθα,0.7684,M,False,Same lexemes: οὐ + γεννάω (aorist οὐκ ἐγεννήθημεν vs perfect οὐ γεγενήμεθα)
+TS-096,J 8:53,P66,οστις,οτι,0.75,L,False,Different lexemes: ὅστις (pronoun) vs ὅτι (conjunction)
+TS-097,J 18:25,A,ειπεν,λεγει,0.2857,M,False,"Same lexeme λέγω (aorist εἶπεν vs present λέγει, suppletive)"
+TS-098,J 12:25,A,απολλυει,απολεσει,0.7692,M,False,Same lexeme ἀπόλλυμι (present ἀπόλλυει vs future ἀπολέσει)
+TS-099,J 13:26,A,βαψω,εμβαψας,0.5455,L,False,Different lexemes: simplex βάπτω (βάψω) vs compound ἐμβάπτω (ἐμβάψας)
+TS-100,J 9:19,aleph,λεγοντες,ει,0.0,L,False,Different lexemes: λέγω (λέγοντες) vs εἰ (conjunction)
+TS-101,J 18:17,P66,θυρωρος,θυρουρος τω πετρω,0.5833,L,False,Different lexemes: θυρωρός vs θυρωρός + ὁ + Πέτρος (added lexemes)
+TS-102,J 13:24,D,πετρος και λεγει αυτω ειπε,πετρους πυθεσθαι,0.4865,L,False,Different lexemes: Πέτρος + καί + λέγω + αὐτός + λέγω vs Πέτρος + πυνθάνομαι
+TS-103,J 8:44,aleph,ουκ,ουχ,0.6667,M,False,Same lexeme οὐ (phonetic variant οὐκ vs οὐχ before breathing)
+TS-104,J 8:40,D,ηκουσα,ηκουσεν,0.8333,M,False,Same lexeme ἀκούω (1 sg ἤκουσα vs 3 sg ἤκουσεν
+TS-105,J 17:12,P66,σου ω δεδωκας μοι,μου,0.2105,L,False,Different lexemes: σύ + ὅς + δίδωμι + ἐγώ vs ἐγώ (μου)
+TS-106,J 6:41,D,ουν,δε,0.0,L,False,Different lexemes: οὖν vs δέ (distinct particles)
+TS-107,J 7:45,aleph,ειπον,λεγουσιν,0.1818,M,False,"Same lexeme λέγω (aorist εἶπον vs present λέγουσιν, suppletive)"
+TS-108,J 3:19,aleph,μαλλον,ηγαπησαν,0.3077,L,False,Different lexemes: μᾶλλον (adverb) vs ἀγαπάω (verb)
+TS-109,J 12:3,P66,επλησθη,επληρουντο,0.4706,L,False,Different lexemes: πίμπλημι (ἐπλήσθη) vs πληρόω (ἐπληροῦντο)
+TS-110,J 9:28,D,ειπον,ειπαν,0.75,M,False,Same lexeme λέγω (2nd aorist εἶπον vs 1st aorist ending εἶπαν)
+TS-111,J 14:21,A,καγω,και εγω,0.6,M,False,Same lexemes: κἀγώ (crasis) vs καὶ ἐγώ (resolved)
+TS-112,J 16:25,aleph,οτε,οπου,0.2857,L,False,"Different lexemes: ὅτε (""when"") vs ὅπου (""where"")"
+TS-113,J 10:15,D,μου τιθημι,διδωμι,0.375,L,False,"Different lexemes: ἐγώ + τίθημι vs δίδωμι (τίθημι vs δίδωμι, omission of μου)"
+TS-114,J 11:35,P66,εδακρυσεν ο,εδρακυσεν,0.7778,L,False,Different lexemes: δακρύω + ὁ vs δακρύω (omission of article ὁ)
+TS-115,J 4:40,aleph,εκει,παρ αυτοις ημερας,0.2105,L,False,Different lexemes: ἐκεῖ (adverb) vs παρά + αὐτός + ἡμέρα
+TS-116,J 17:5,D,πατερ,πατηρ,0.8,M,False,Same lexeme πατήρ (vocative πάτερ vs nom as vocative πατήρ)
+TS-117,J 9:25,D,ων,ημην και,0.2222,L,False,"Different lexemes: εἰμί (ὤν) vs εἰμί + καί (ἤμην καί, added καί)"
+TS-118,J 5:44,A,πιστευσαι,πιστευειν,0.75,M,False,Same lexeme πιστεύω (aorist inf πιστεῦσαι vs present inf πιστεύειν)
+TS-119,J 13:10,D,χρειαν,την κεφαλην νιψασθαι,0.25,L,False,Different lexemes: χρεία vs ὁ + κεφαλή + νίπτω
+TS-120,J 15:10,aleph,εαν,καθως καγω του πατρος μου,0.0714,L,False,Different lexemes: ἐάν vs καθώς + καί + ἐγώ + ὁ + πατήρ + ἐγώ
+TS-121,J 16:2,A,θεω,κυριω,0.25,L,False,Different lexemes: θεός (θεῷ) vs κύριος (κυρίῳ)
+TS-122,J 6:14,A,α,ο,0.0,M,False,Same lexeme ὅς (neut pl ἅ vs neut sg ὅ)
+TS-123,J 4:37,D,εστιν,ο,0.0,L,False,Different lexemes: εἰμί (ἐστίν) vs ὁ (article)
+TS-124,J 9:21,D,ερωτησατε,επερωτησατε,0.9,L,False,Different lexemes: simplex ἐρωτάω vs compound ἐπερωτάω
+TS-125,J 6:17,A,εμβαντες,αναβαντες,0.7059,L,False,Different lexemes: compound ἐμβαίνω vs compound ἀναβαίνω
+TS-126,J 6:40,P66,εγω,εν,0.4,L,False,Different lexemes: ἐγώ (pronoun) vs ἐν (preposition)
+TS-127,J 16:28,aleph,εκ,παρα,0.0,L,False,Different lexemes: ἐκ vs παρά (distinct prepositions)
+TS-128,J 17:11,P66,καγω,και εγω,0.6,M,False,Same lexemes: κἀγώ (crasis) vs καὶ ἐγώ (resolved)
+TS-129,J 5:25,A,ζησουσιν,ζησονται,0.5714,M,False,Same lexeme ζάω (active future ζήσουσιν vs middle future ζήσονται)
+TS-130,J 7:44,P66,εβαλεν,επεβαλλεν,0.8333,L,False,Different lexemes: simplex βάλλω vs compound ἐπιβάλλω
+TS-131,J 5:29,D,τα,δε,0.0,L,False,"Different lexemes: ὁ (τά, article) vs δέ (particle)"
+TS-132,J 21:11,D,μεγαλων εκατον πεντηκοντα τριων,ρ ν γ,0.1111,L,False,Different lexemes: μέγας + ἑκατόν + πεντήκοντα + τρεῖς vs numerical cipher ρ ν γ
+TS-133,J 7:39,D,δεδομενον,επ αυτοις,0.2353,L,False,Different lexemes: δίδωμι (δεδομένον) vs ἐπί + αὐτός
+TS-134,J 4:45,D,ιεροσολυμοις εν,ιερουσαλημ,0.6667,L,False,Different lexemes: Ἱεροσόλυμα + ἐν vs Ἱερουσαλήμ (distinct lexical entries and added ἐν)
+TS-135,J 4:39,A,α,οσα,0.5,L,False,Different lexemes: ὅς (ἅ) vs ὅσος (ὅσα)
+TS-136,J 10:20,D,δε,ουν,0.0,L,False,Different lexemes: δέ vs οὖν (distinct particles)
+TS-137,J 12:13,P66,ελαβον,ελαβαν,0.8333,M,False,Same lexeme λαμβάνω (2nd aorist ἔλαβον vs 1st aorist ending ἔλαβαν)
+TS-138,J 1:15,D,ο,ον,0.6667,L,False,Different lexemes: article ὁ vs relative pronoun ὅς (ὅν)
+TS-139,J 1:44,P66,βηθσαιδα,βηθσαιδαν,0.9333,M,False,Same lexeme Βηθσαϊδά (indeclinable Βηθσαϊδά vs inflected acc Βηθσαϊδάν)
+TS-140,J 6:15,aleph,ανεχωρησε,φευγει,0.2857,L,False,Different lexemes: ἀναχωρέω (ἀνεχώρησε) vs φεύγω (φεύγει)
+TS-141,J 15:10,A,μου,τας εμας,0.1818,L,False,Different lexemes: personal pronoun ἐγώ (μου) vs article + possessive adjective ἐμός (τὰς ἐμάς)
+TS-142,J 7:44,aleph,εβαλεν επ αυτον,επεβαλεν αυτω,0.72,L,False,Different lexemes: simplex βάλλω + ἐπί + αὐτός vs compound ἐπιβάλλω + αὐτός
+TS-143,J 9:14,D,εν η ημερα,οτε,0.1538,L,False,Different lexemes: ἐν + ὅς + ἡμέρα vs ὅτε
+TS-144,J 7:39,P66,ο,ου,0.6667,M,False,Same lexeme ὅς (neut acc sg ὅ vs neut gen sg οὗ)
+TS-145,J 6:38,D,ποιω,ποιησω,0.75,M,False,Same lexeme ποιέω (present subj ποιῶ vs aorist subj ποιήσω)
+TS-146,J 19:2,A,τη κεφαλη,επι την κεφαλην,0.75,L,False,Different lexemes: ὁ + κεφαλή vs ἐπί + ὁ + κεφαλή (added preposition ἐπί)
+TS-147,J 6:71,aleph,εμελλεν,και εμελλον αυτον,0.5263,L,False,"Different lexemes: μέλλω vs καί + μέλλω + αὐτός (added καί, αὐτός)"
+TS-148,J 16:15,D,εστι,εστιν,0.8889,M,False,Same lexeme εἰμί (ἐστί vs movable nu ἐστίν)
+TS-149,J 7:29,aleph,αυτου,ατω,0.5714,M,False,Same lexeme αὐτός (ατω scribal slip for αὐτοῦ/αὐτῷ)
+TS-150,J 7:44,D,εβαλεν,επεβαλεν,0.8333,L,False,Different lexemes: simplex βάλλω vs compound ἐπιβάλλω
+TS-151,J 19:11,A,παραδους,παραδιδους,0.8889,M,False,Same lexeme παραδίδωμι (aorist ptcp παραδούς vs present ptcp παραδιδούς)
+TS-152,J 5:3,A,χωλων ξηρων,χω εκδεχομενων την του υδατος,0.35,L,False,Different lexemes: χωλός + ξηρός vs χωλός + ἐκδέχομαι + ὁ + ὁ + ὕδωρ
+TS-153,J 7:45,P66,ειπον,λεγουσιν,0.1818,M,False,"Same lexeme λέγω (aorist εἶπον vs present λέγουσιν, suppletive)"
+TS-154,J 6:38,aleph,απο,εκ,0.0,L,False,Different lexemes: ἀπό vs ἐκ (distinct prepositions)
+TS-155,J 16:17,A,εστι,εστιν,0.8889,M,False,Same lexeme εἰμί (ἐστί vs movable nu ἐστίν)
+TS-156,J 13:26,D,ουν,αυτω ο,0.25,L,False,Different lexemes: οὖν vs αὐτός + ὁ
+TS-157,J 14:23,D,ελευσομεθα,ελευσομαι,0.8889,M,False,Same lexeme ἔρχομαι (future 1 pl ἐλευσόμεθα vs future 1 sg ἐλεύσομαι)
+TS-158,J 9:41,D,η αμαρτια,αι αμαρτιαι,0.4286,M,False,Same lexemes: ὁ + ἁμαρτία (sg ἡ ἁμαρτία vs pl αἱ ἁμαρτίαι)
+TS-159,J 4:17,D,εχω,εχεις,0.5714,M,False,Same lexeme ἔχω (1 sg ἔχω vs 2 sg ἔχεις)
+TS-160,J 6:71,D,ισκαριωτου,σκαριωθ,0.7059,M,False,Same lexeme Ἰσκαριώτης (Greek genitive Ἰσκαριώτου vs Semitic transliteration Σκαριώθ)
+TS-161,J 21:2,D,του,υιοι,0.0,L,False,"Different lexemes: ὁ (τοῦ, article) vs υἱός (υἱοί, noun)"
+TS-162,J 19:40,A,ιησου,θεου,0.4444,L,False,Different lexemes: Ἰησοῦς (Ἰησοῦ) vs θεός (θεοῦ)
+TS-163,J 18:30,aleph,παρεδωκαμεν,παρεδωκειμεν,0.9,M,False,Same lexeme παραδίδωμι (aorist παρεδώκαμεν vs pluperfect/orthographic παρεδώκειμεν)
+TS-164,J 13:38,D,σοι,σου οτι,0.4444,L,False,"Different lexemes: σύ (σοί) vs σύ + ὅτι (σοῦ ὅτι, added ὅτι)"
+TS-165,J 14:3,D,και εαν,καν,0.6667,M,False,Same lexemes: καὶ ἐάν (resolved) vs κἄν (crasis)
+TS-166,J 11:2,P66,ο,και,0.0,L,False,Different lexemes: article ὁ vs conjunction καί
+TS-167,J 18:23,aleph,απεκριθη,ο δε ιησους ειπεν,0.1739,L,False,Different lexemes: ἀποκρίνομαι vs ὁ + δέ + Ἰησοῦς + λέγω
+TS-168,J 5:36,aleph,με,εμε,0.8,M,False,Same lexeme ἐγώ (enclitic με vs emphatic ἐμέ)
+TS-169,J 6:46,aleph,πατερα,θεον,0.2,L,False,Different lexemes: πατήρ (πατέρα) vs θεός (θεόν)
+TS-170,J 9:17,D,λεγουσιν,ελεγον,0.6154,M,False,Same lexeme λέγω (present λέγουσιν vs imperfect ἔλεγον)
+TS-171,J 10:23,A,περιεπατει,περιπατει ο,0.8421,L,False,Different lexemes: περιπατέω vs περιπατέω + ὁ (added article ὁ)
+TS-172,J 4:52,P66,εκεινην,παρ αυτων,0.2667,L,False,Different lexemes: ἐκεῖνος (ἐκείνην) vs παρά + αὐτός
+TS-173,J 6:42,P66,νυν,ουν,0.3333,L,False,Different lexemes: νῦν (temporal adverb) vs οὖν (inferential particle)
+TS-174,J 4:42,aleph,λαλιαν σου,σην μαρτυριαν,0.2222,L,False,Different lexemes: λαλιά + σύ vs σός + μαρτυρία
+TS-175,J 6:70,D,δωδεκα,ιβ,0.0,M,False,Same lexeme δώδεκα (spelled-out word δώδεκα vs numeral cipher ιβ)
+TS-176,J 15:14,P66,ο,α,0.0,M,False,Same lexeme ὅς (neut sg ὅ vs neut pl ἅ)
+TS-177,J 21:15,D,αρνια,προβατα,0.3333,L,False,Different lexemes: ἀρνίον (ἀρνία) vs πρόβατον (πρόβατα)
+TS-178,J 19:39,aleph,αυτον,τον ιησουν,0.4286,L,False,Different lexemes: αὐτός (αὐτόν) vs ὁ + Ἰησοῦς (τὸν Ἰησοῦν)
+TS-179,J 21:1,aleph,παλιν,ο,0.0,L,False,Different lexemes: πάλιν (adverb) vs ὁ (article)
+TS-180,J 15:5,P66,ουδε εν,ουδεν,0.8333,M,False,Same lexeme οὐδείς (analytic οὐδὲ ἕν vs synthetic οὐδέν)
+TS-181,J 4:10,D,αν,ν,0.6667,M,False,Same lexeme ἄν (scribal truncation ν for particle ἄν)
+TS-182,J 13:26,P66,βαψω,βαψας,0.6667,M,False,Same lexeme βάπτω (finite βάψω vs participle βάψας)
+TS-183,J 17:10,P66,δεδοξασμαι,εδοξασμε,0.9412,M,False,Same lexeme δοξάζω (perfect pass δεδόξασμαι vs itacistic/orthographic ἐδόξασμε)
+TS-184,J 16:27,P66,του πατρος,θεου,0.2857,L,False,Different lexemes: ὁ + πατήρ vs θεός
+TS-185,J 4:38,D,κεκοπιακατε,εκοπιασατε,0.8571,M,False,Same lexeme κοπιάω (perfect κεκοπιάκατε vs aorist ἐκοπιάσατε)
+TS-186,J 8:55,P66,καν,και εαν,0.6667,M,False,Same lexemes: κἄν (crasis) vs καὶ ἐάν (resolved)
+TS-187,J 2:17,P66,γεγραμμενον,οτι,0.1538,L,False,Different lexemes: γράφω (γεγραμμένον) vs ὅτι (conjunction)
+TS-188,J 15:8,P66,γενησθε εμοι,γενθαι μου,0.5833,M,False,Same lexemes: γίνομαι + ἐγώ (γένησθε ἐμοί vs γενέσθαι μου)
+TS-189,J 9:21,aleph,αυτον ερωτησατε,αυτος,0.4444,L,False,Different lexemes: αὐτός + ἐρωτάω vs αὐτός (omission of ἐρωτάω)
+TS-190,J 6:58,P66,εξ,εκ του,0.25,L,False,"Different lexemes: ἐκ (ἐξ) vs ἐκ + ὁ (ἐκ τοῦ, added article τοῦ)"
+TS-191,J 6:13,D,ουν,δε,0.0,L,False,Different lexemes: οὖν vs δέ (distinct particles)
+TS-192,J 15:9,P66,ε,εν,0.6667,M,False,Same lexeme ἐν (orthographic variant ε for preposition εν before tau)
+TS-193,J 17:4,D,δεδωκας,εδωκας,0.9231,M,False,Same lexeme δίδωμι (perfect δέδωκας vs aorist ἔδωκας)
+TS-194,J 6:28,D,ποιωμεν,ερσωμεθα,0.4615,L,False,Different lexemes: ποιέω (ποιῶμεν) vs ἐργάζομαι (ἐργασώμεθα/ερσωμεθα)
+TS-195,J 6:5,P66,οχλος ερχεται,ερχετι,0.5556,L,False,Different lexemes: ὄχλος + ἔρχομαι vs ἔρχομαι (omission of ὄχλος)
+TS-196,J 3:25,aleph,ιουδαιου,ιουδαιων,0.8571,M,False,Same lexeme Ἰουδαῖος (gen sg Ἰουδαίου vs gen pl Ἰουδαίων)
+TS-197,J 4:11,P66,αυτω,αυτη η γυνη,0.3077,L,False,Different lexemes: αὐτός (αὐτῷ) vs αὐτός + ὁ + γυνή
+TS-198,J 15:10,aleph,τηρησητε μενειτε εν τη αγαπη μου καθως εγω του πατρος τας εντολας τετηρηκα,ετηρησα,0.15,L,False,Different lexemes: multi-clause text vs single verb ἐτήρησα
+TS-199,J 8:36,D,ελευθερωση,ελευθερω,0.8889,M,False,Same lexeme ἐλευθερόω (3 sg subj ἐλευθερώσῃ vs variant/orthographic ἐλευθερῶ)
+TS-200,J 17:3,A,γεινωσκωσι,γεινωσκουσιν,0.9474,M,False,Same lexeme γινώσκω (subjunctive γινώσκωσι vs indicative γινώσκουσιν + movable nu)
