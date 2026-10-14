@@ -1,7 +1,7 @@
 """Two checks on the John tables that bear on what the profiles measure.
 
-1. Bezae's lexical excess. A lexical substitution is either a one-for-one
-   replacement or a replacement block of unequal length (a phrase recast into a
+1. Bezae's lexical excess. A lexical substitution is either a replacement block
+   of equal length (mostly one word for one word) or one of unequal length (a phrase recast into a
    longer or shorter one; section 4.1). For each witness, the share of its
    variants in each kind is compared with that of the other witnesses pooled;
    the difference is tested against witness labels permuted within chapters.
@@ -30,7 +30,7 @@ SEED = 42
 def lexical_kinds(v):
     lex = v.type == "substitution_lexical"
     unequal = v.n_base_words != v.n_ms_words
-    return np.select([lex & unequal, lex & ~unequal], ["lexical_unequal", "lexical_one_for_one"], "other")
+    return np.select([lex & unequal, lex & ~unequal], ["lexical_unequal", "lexical_equal_length"], "other")
 
 
 def deviation_test(v, witness, kind, rng):
@@ -88,7 +88,7 @@ def main():
     lexical = {}
     for w in ["D", "aleph", "A", "P66"]:
         lexical[w] = {}
-        for k in ["lexical_unequal", "lexical_one_for_one"]:
+        for k in ["lexical_unequal", "lexical_equal_length"]:
             d, p = deviation_test(v, w, k, rng)
             share = 100 * (v[v.manuscript == w].kind == k).mean()
             lexical[w][k] = {"percent_of_variants": round(share, 1), "deviation_pp": round(d, 1), "perm_p": round(p, 4)}

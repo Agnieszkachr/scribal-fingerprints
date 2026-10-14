@@ -6,7 +6,7 @@
         "deviation_pp": 2.7,
         "perm_p": 0.0045
       },
-      "lexical_one_for_one": {
+      "lexical_equal_length": {
         "percent_of_variants": 15.1,
         "deviation_pp": 1.4,
         "perm_p": 0.3148
@@ -18,7 +18,7 @@
         "deviation_pp": 0.6,
         "perm_p": 0.5792
       },
-      "lexical_one_for_one": {
+      "lexical_equal_length": {
         "percent_of_variants": 12.3,
         "deviation_pp": -2.5,
         "perm_p": 0.0405
@@ -30,7 +30,7 @@
         "deviation_pp": -2.1,
         "perm_p": 0.0615
       },
-      "lexical_one_for_one": {
+      "lexical_equal_length": {
         "percent_of_variants": 12.3,
         "deviation_pp": -2.3,
         "perm_p": 0.1379
@@ -42,7 +42,7 @@
         "deviation_pp": -2.1,
         "perm_p": 0.03
       },
-      "lexical_one_for_one": {
+      "lexical_equal_length": {
         "percent_of_variants": 16.6,
         "deviation_pp": 3.2,
         "perm_p": 0.011
