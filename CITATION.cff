@@ -1,12 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this software or dataset, please cite it as below."
+type: software
 authors:
   - family-names: "Ziemińska"
     given-names: "Agnieszka B."
-title: "The Typological Structure of Textual Variation: A Computational Analysis of Major Witnesses to the Gospel of John"
-version: 1.0.0
-doi: 10.5281/zenodo.19153695
-date-released: 2026-03-21
+    orcid: "https://orcid.org/0000-0002-8439-6019"
+    affiliation: "Institute of Literary Research of the Polish Academy of Sciences (IBL PAN), Centre for Digital Humanities"
+title: "scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)"
+version: 2.0.0
+doi: 10.5281/zenodo.23359316
+date-released: 2026-10-14
 url: "https://github.com/Agnieszkachr/scribal-fingerprints"
 repository-code: "https://github.com/Agnieszkachr/scribal-fingerprints"
 license: MIT

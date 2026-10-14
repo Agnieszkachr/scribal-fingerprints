@@ -1,7 +1,7 @@
 # Manuscript Textual Profile Analysis Engine
 
 [Interactive Website](https://agnieszkachr.github.io/scribal-fingerprints/) · [GitHub Repository](https://github.com/Agnieszkachr/scribal-fingerprints)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19153695.svg)](https://doi.org/10.5281/zenodo.19153695)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23359316.svg)](https://doi.org/10.5281/zenodo.23359316)
 
 This repository contains the codebase, extraction pipelines and analytical scripts for a
 computational analysis of textual variation in five major Greek witnesses to the Gospel
@@ -303,17 +303,16 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you use this code or data, please cite:
 
-> Ziemińska, A. B. (2026). *The Typological Structure of Textual Variation: A Computational Analysis of Major Witnesses to the Gospel of John.* Zenodo. https://doi.org/10.5281/zenodo.19153695
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.0.0). Zenodo. https://doi.org/10.5281/zenodo.23359316
 
 ```bibtex
-@article{zieminska2026scribal_software,
+@software{zieminska2026scribal_software,
   author    = {Ziemińska, Agnieszka B.},
-  title     = {The Typological Structure of Textual Variation:
-               A Computational Analysis of Major Witnesses
-               to the Gospel of John (Software & Data)},
+  title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.19153695},
-  url       = {https://doi.org/10.5281/zenodo.19153695}
+  version   = {2.0.0},
+  doi       = {10.5281/zenodo.23359316},
+  url       = {https://doi.org/10.5281/zenodo.23359316}
 }
 ```
