@@ -57,14 +57,18 @@ Alexandrinus has the largest share of additions and Sinaiticus the largest share
 omissions against B; Bezae has the largest share of lexical substitutions under all three
 baselines, and P66 the largest share of morphological substitutions among the witnesses
 other than Vaticanus (`outputs/type_counts_full_*.csv`, `outputs/typology_report_*.txt`).
+In the odd and the even chapters separately, the same witness has the largest share of four of
+the five classes (`outputs/supplementary_checks.json`).
 
 ### Embedding-based results
 
 Against B, inter-manuscript distances between change vectors exceed intra-manuscript
 distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001); the ARI of a
 four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
-0.012. Feature isolation: function words only 0.008, content masked 0.006, random masked
-0.002 (mean of five draws). See `outputs/pilot_report_full_*.txt` and the website.
+0.012, and no within-class value is distinguishable from its permutation null under all
+three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
+masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
+has a paired-bootstrap 95 % interval of −0.006 to 0.015. See `outputs/pilot_report_full_*.txt` and the website.
 
 The embedding stage (`profile_scribes.py`) requires the BERT model; the vector files
 (`outputs/*.pkl`) are not part of the repository.
@@ -263,6 +267,11 @@ python sbl_anchor.py      # -> data/variants_full_john_SBL.csv, outputs/sbl_anch
 
 # 9. Checks reported in § 5.1: Bezae's unequal replacement blocks; Sinaiticus in John 1:1-8:38
 python john_text_checks.py   # -> outputs/john_text_checks.json
+
+# 10. Supplementary checks: within-class d with permutation p and bootstrap CI (anchors B, A, ℵ);
+#     content masking against random masking, paired bootstrap; split halves of the typology;
+#     Bezae's variants shared with Sinaiticus chapter by chapter (needs the vector files of step 4)
+python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs/fig8_aleph_D_by_chapter.png
 ```
 
 The MorphGNT text in `data/morphgnt/` (Tauber 2017, doi:10.5281/zenodo.376200) is distributed
