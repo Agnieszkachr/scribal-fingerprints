@@ -4,11 +4,11 @@ The transcriptions encode a nomen sacrum as
 
     <w><abbr type="nomSac"><hi rend="overline">theta-nu</hi></abbr></w>
 
-i.e. as markup, not as a combining overline character. Nothing in the pipeline
-expanded these, so a witness that abbreviated and a baseline that did not were
-recorded as differing -- 2,013 rows, 6.74% of the variant table, 87% of them
-landing in the morphological-substitution category. Chapter 4 states that the
-parser expands them; this module is what makes that true.
+i.e. as markup, not as a combining overline character. Left unexpanded, a
+witness that abbreviates and a baseline that writes the word out would be
+recorded as differing, and nearly all such pairs would be annotated as
+morphological substitutions. The parser therefore expands every nomen sacrum
+before alignment (article, § 3.3).
 
 The table below is built from the 124 distinct forms actually attested in
 data/raw/, not from a general list of nomina sacra. Forms are keyed in the

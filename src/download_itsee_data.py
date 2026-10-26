@@ -49,17 +49,14 @@ _NAME_TO_CODE = {
 
 
 def parse_book_code(n):
-    """Return the ITSEE book code ('B01'..'B05') an @n attribute belongs to.
+    r"""Return the ITSEE book code ('B01'..'B05') an @n attribute belongs to.
 
     parse_verse_id() returns only (chapter, verse, volume), and its compact
-    branch matches with re.search(r"K(\d+)V(\d+)", n) -- which ignores the
-    leading B-number entirely. That is safe only if every <ab> in a file
-    belongs to the book the filename claims. It does not: NT_GRC_01_Mark.xml
-    holds 686 B02 (Mark) verses AND 19 B03 (Luke) ones, so 'B03K1V4' and
-    'B02K1V4' both resolve to chapter 1 verse 4 and the later silently
-    overwrites the earlier in process_xml's verses dict. That is the source of
-    the cross-Gospel collisions in the variant CSVs -- a row labelled Mk 1:4
-    carrying Luke 1:4 on one side.
+    branch matches with re.search(r"K(\d+)V(\d+)", n), which ignores the
+    leading B-number. A file can contain verses of another book:
+    NT_GRC_01_Mark.xml holds 686 B02 (Mark) verses and 19 B03 (Luke) ones, so
+    'B03K1V4' and 'B02K1V4' would both resolve to chapter 1 verse 4. The
+    caller uses this function to keep only the verses of the corpus's own book.
 
     Handles both @n formats in use: compact ('B02K1V4') and dotted
     ('John.1.1'). Returns None if the book cannot be determined.
@@ -67,11 +64,10 @@ def parse_book_code(n):
     m = re.match(r"(B\d{2})", n or "")
     if m:
         # A compact code we do not recognise is still a *determinate* book:
-        # it simply is not one of the five this project reads. Returning None
-        # here would make process_xml's filter treat it as undetermined and
-        # keep it, which is how fifteen verses of James (B20) entered the
-        # Luke-Acts corpus from NT_GRC_02_Acts.xml. Return the code itself so
-        # the caller can reject it.
+        # it simply is not one of the five this project reads. Return the code
+        # itself so that the caller rejects it (NT_GRC_02_Acts.xml, for
+        # example, contains fifteen verses of James, B20); returning None
+        # would mark the book as undetermined, and such verses are kept.
         return m.group(1)
     head = (n or "").split(".")[0].strip().lower()
     return _NAME_TO_CODE.get(head)
