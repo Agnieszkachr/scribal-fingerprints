@@ -1,7 +1,7 @@
 # Manuscript Textual Profile Analysis Engine
 
 [Interactive Website](https://agnieszkachr.github.io/scribal-fingerprints/) · [GitHub Repository](https://github.com/Agnieszkachr/scribal-fingerprints)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23359316.svg)](https://doi.org/10.5281/zenodo.23359316)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23359315.svg)](https://doi.org/10.5281/zenodo.23359315)
 
 This repository contains the codebase, extraction pipelines and analytical scripts for a
 computational analysis of textual variation in five major Greek witnesses to the Gospel
@@ -10,6 +10,16 @@ The project asks whether the witnesses possess statistically detectable, reprodu
 **manuscript-level change profiles**, combining a classical typology of variants
 (addition, omission, word order, morphological and lexical substitution) with contextual
 embeddings of the variant loci (`Ancient-Greek-BERT`).
+
+This is the code and data of the article *The Typological Structure of Textual Variation:
+A Computational Analysis of Major Witnesses to the Gospel of John*, which reports the first
+stage of a longer project. Its result in brief: the counted typology of changes is the robust
+instrument, and contextual embeddings of short context windows add little to it.
+
+> **On the repository name.** The repository keeps its original working name,
+> `scribal-fingerprints`. A profile combines the text-type, the exemplar and the scribe, and
+> the design cannot separate them (see the note below), so the article speaks of
+> manuscript-level profiles rather than scribal fingerprints.
 
 ## Important Methodological Note
 
@@ -39,7 +49,7 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
 ## Key Results (variant typology, current extraction)
 
 <p align="center">
-  <img src="outputs/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" width="600">
+  <img src="outputs/fig4_types_full_B.png" alt="Variant-type distribution per witness (baseline B)" width="600">
 </p>
 
 Against Codex Vaticanus (B) as the baseline, 4,365 variants are extracted
@@ -82,24 +92,31 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── requirements.txt                    # Python package dependencies
 ├── download_itsee_data.py              # Fetches the ITSEE TEI XML and runs the extraction for one baseline
 ├── src/
-│   ├── extract_variants.py             # TEI parsing, alignment, classification (shared with the SCRIPTA pipeline)
+│   ├── extract_variants.py             # TEI parsing, alignment, annotation (shared with the SCRIPTA pipeline)
 │   ├── download_itsee_data.py          # ITSEE download and verse-id parsing
 │   ├── config.py, corpus_registry.py   # Paths, witnesses, versification
+│   ├── stats_core.py                   # Inference shared with the SCRIPTA pipeline
 │   └── utils/
 │       ├── token_normalizer.py         # Surface forms and orthographic normalisation
+│       ├── lemma_lexicon.py            # Same lexeme or different lexeme (MorphGNT form-to-lemma list)
 │       └── nomina_sacra.py             # Expansion table for the attested nomina sacra
 ├── create_verse_matched_dataset.py     # Verse-matched subset: verses attested in all five witnesses
 ├── run_ablation_study.py               # Function-words-only, content-masked and random-masked (control) datasets
 ├── profile_scribes.py                  # Ancient-Greek-BERT embeddings, change vectors, manuscript and chapter profiles
 ├── run_statistical_tests.py            # Block bootstrap / permutation inference (Cramér's V, Cohen's d, ARI, split-half)
-├── create_visualizations.py            # Figures (PCA, dendrogram, type distribution, cumulative ARI, stability heatmap)
+├── create_visualizations.py            # Exploratory per-configuration figures (PCA, dendrogram, type shares, cumulative ARI, heat map)
+├── create_article_figures.py           # Figures 3 and 4 of the article (feature isolation, split halves)
+├── sbl_anchor.py                       # Typology with the SBL edition as anchor
+├── john_text_checks.py                 # Bezae's replacement blocks; Sinaiticus in John 1:1-8:38
+├── supplementary_checks.py             # Within-class d with CIs, paired masking comparison, typology split halves
+├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
 │   ├── variants_ablation_{matched,func_words,masked,random_masked[_s1..s4]}.csv
 │   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
 ├── outputs/                            # Type counts, coverage report, statistical reports, figures
-└── docs/                               # Static companion website (GitHub Pages)
+└── docs/                               # Static companion website (GitHub Pages, main branch)
 ```
 
 ## Methodological Details
@@ -138,7 +155,7 @@ break the alignment nor count as variants:
 
 The surface forms in the CSVs keep the transcribed spelling.
 
-### Alignment and classification
+### Alignment and annotation
 
 Each manuscript verse is aligned with the baseline verse by `difflib.SequenceMatcher`
 (longest common subsequence, `autojunk=False`). Every non-equal block becomes one variant:
@@ -160,13 +177,26 @@ MorphGNT SBLGNT (accents removed; 17,347 forms). Suppletive forms (ειπον/λ
 therefore count as one lexeme and compounds (επερωταω/ερωταω) as two. Crasis is resolved
 before comparison (καγω → και εγω, καν → και εαν, ουδεν → ουδε εν). A form the lexicon does
 not contain is compared with its partner by character similarity of the alignment keys
-(same lexeme above 0.5), unless the two words differ in their verbal prefix. A block is
+A witness spelling that the lexicon does not contain is first looked up on its orthographic
+alignment key (so that ερχωμαι is read as ερχομαι). A form still not found is the same lexeme
+as its partner if its character similarity to some attested form of the partner's lemma is at
+least 0.8 (ηνυξεν against the forms of ανοιγω). Only if neither word can be placed are the two
+compared with each other (same lexeme above 0.5). Alternative spellings of one proper name
+that the lexicon lemmatises separately (Μαρια/Μαριαμ) count as one lexeme. A block is
 morphological only if every paired word is the same lexeme; a word without a partner makes
 it lexical.
 
-The rule was checked against hand annotation of two samples from John: 200 substitution
-pairs drawn evenly across the range of character similarity, and the 134 substitutions of
-the 300-variant reliability sample (`annotation/`).
+The rule was checked against blind hand annotation of two samples from John
+(`annotation/`, evaluated by `python annotation/evaluate_annotation.py`):
+
+- 200 substitution pairs, 25 from each of eight bands of character similarity: the lexicon
+  rule agrees in 94.0 % (κ = 0.87), character similarity alone in 78.0 % at 0.5 and at most
+  81.0 % at any threshold. The handling of crasis and witness spellings was added after the
+  errors of the plain lexicon lookup (87.5 %) on this sample and on the reliability sample had
+  been read, so these figures are in-sample.
+- 300 variants stratified by type: κ = 0.97 over the five types; complete agreement for
+  additions, omissions and word-order shifts; κ = 0.88 on the 134 substitutions
+  (morphological vs lexical), where all eight disagreements lie.
 
 The lexicon is derived from MorphGNT (https://github.com/morphgnt/sblgnt), whose parsing
 and lemmatisation are licensed CC BY-SA 3.0; the derived list is distributed under the
@@ -255,12 +285,13 @@ python profile_scribes.py --baseline aleph
 python run_statistical_tests.py --baseline B
 python run_statistical_tests.py --ablation matched      # etc.
 
-# 6. Figures
+# 6. Figures (see "Figures of the Article" below)
+python create_article_figures.py         # -> outputs/fig3_feature_isolation.png, outputs/fig5_split_half.png
 python create_visualizations.py --baseline B
 python create_visualizations.py --ablation matched      # etc.
 
-# 7. Website data
-cd docs && python prepare_website_data.py
+# 7. Agreement of the annotation rule with the hand annotation (§§ 4.1, 6.5)
+python annotation/evaluate_annotation.py
 
 # 8. Robustness: the SBL edition (MorphGNT, data/morphgnt/) as anchor, typology only
 python sbl_anchor.py      # -> data/variants_full_john_SBL.csv, outputs/sbl_anchor_john.json
@@ -272,6 +303,9 @@ python john_text_checks.py   # -> outputs/john_text_checks.json
 #     content masking against random masking, paired bootstrap; split halves of the typology;
 #     Bezae's variants shared with Sinaiticus chapter by chapter (needs the vector files of step 4)
 python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs/fig8_aleph_D_by_chapter.png
+
+# 11. Website data (reads everything above; run last)
+python docs/prepare_website_data.py
 ```
 
 The MorphGNT text in `data/morphgnt/` (Tauber 2017, doi:10.5281/zenodo.376200) is distributed
@@ -295,14 +329,30 @@ of specific manuscripts by manual analysis; this tool offers automated, corpus-s
 counts and effect sizes with uncertainty, but cannot attribute patterns to individual
 scribes rather than to the tradition.
 
+## Figures of the Article
+
+| Article | File | Script |
+|---|---|---|
+| Figure 1. Variant-type distribution per witness, baseline B | `outputs/fig4_types_full_B.png` | `create_visualizations.py` |
+| Figure 2. Bezae's variants shared with Sinaiticus, by chapter | `outputs/fig8_aleph_D_by_chapter.png` | `supplementary_checks.py` |
+| Figure 3. Cohen's d for the full corpus and the feature-isolation datasets | `outputs/fig3_feature_isolation.png` | `create_article_figures.py` |
+| Figure 4. Split-half profile distances, odd against even chapters | `outputs/fig5_split_half.png` | `create_article_figures.py` |
+
+The numbers in the file names and in the titles printed inside the per-configuration figures
+are the pipeline's own, not the article's. The two-dimensional projection
+(`outputs/fig1_pca_full_B.png`) is not reproduced in the article (§ 5.2): it shows the four
+witness centroids inside one cloud.
+
 ## Interactive Website
 
 [https://agnieszkachr.github.io/scribal-fingerprints/](https://agnieszkachr.github.io/scribal-fingerprints/)
 
-A static HTML/CSS/JS companion site in `docs/` (GitHub Pages) with interactive Plotly
-charts, a manuscript coverage table and a searchable explorer of ~2,000 sampled variants.
-Serve locally with `cd docs && python -m http.server 8080`; regenerate its data files with
-`python prepare_website_data.py` from the `docs/` directory.
+A static HTML/CSS/JS companion site in `docs/`, served by GitHub Pages from the `main`
+branch. It follows the order of the article (typology first, embeddings second) with
+interactive Plotly charts and the tables of the five findings, a methodology page, a
+manuscript coverage table and a searchable explorer of about 2,000 sampled variants against
+baselines B, A and ℵ. Serve it locally with `python -m http.server 8080 --directory docs`;
+regenerate its data files and figures with `python docs/prepare_website_data.py`.
 
 ## License
 
@@ -310,9 +360,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Citation
 
-If you use this code or data, please cite:
+If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
+versions and resolves to the latest one; the results of the article are those of version 2.1.0,
+and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.0.0). Zenodo. https://doi.org/10.5281/zenodo.23359316
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.0). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -320,8 +372,8 @@ If you use this code or data, please cite:
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.0.0},
-  doi       = {10.5281/zenodo.23359316},
-  url       = {https://doi.org/10.5281/zenodo.23359316}
+  version   = {2.1.0},
+  doi       = {10.5281/zenodo.23359315},
+  url       = {https://doi.org/10.5281/zenodo.23359315}
 }
 ```
