@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Scribal Fingerprints</title>
-  <meta name="description" content="About the Scribal Fingerprints project: methodology, data sources, and citation information.">
+  <title>About — Textual Variation in John</title>
+  <meta name="description" content="About the study of textual variation in five Greek witnesses to the Gospel of John: aims, data sources, the repository and how to cite it.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <a href="index.html" class="nav-brand">Textual Variation in John</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -33,64 +33,78 @@
       <section>
         <h2 class="section-title">Project Overview</h2>
         <p>
-          <strong>Scribal Fingerprints</strong> is a computational research project that
-          investigates whether individual manuscript witnesses to the Greek New Testament
-          carry statistically distinguishable "change profiles" — patterns of textual
-          variation that function as quantifiable fingerprints of scribal behaviour.
+          Textual critics have long described the manuscripts of the New Testament by their
+          &ldquo;character&rdquo;: the Alexandrian text as short and careful, the Western text as free
+          and expansive. These descriptions rest on selected diagnostic readings. This project asks
+          whether they correspond to measurable, stable change profiles when the whole attested text
+          of each witness is counted.
         </p>
         <p>
-          The project focuses on the <strong>Gospel of John</strong> (all 21 chapters) as
-          its primary corpus, analysing five major Greek witnesses: the papyrus
-          <span class="greek-text">P66</span> (c. 200 CE), Codex Sinaiticus
-          (<span class="greek-text">&#x2135;</span>, 4th century), Codex Alexandrinus
-          (A, 5th century), Codex Vaticanus (B, 4th century), and Codex Bezae
-          (D, 5th century).
+          It is the first stage of a longer programme on the quantitative description of change
+          profiles across the Greek New Testament. This stage builds and calibrates the method on
+          one Gospel, John, with five witnesses: the papyrus <span class="greek-text">P66</span>
+          (traditionally c. 200; a third- to fourth-century date has also been argued), Codex
+          Sinaiticus (<span class="greek-text">&#x2135;</span>, 4th century), Codex Vaticanus
+          (B, 4th century), Codex Alexandrinus (A, 5th century) and Codex Bezae (D, c. 400).
+          The comparison of the same witnesses across books is the subject of a separate study.
         </p>
         <p>
-          Rather than studying individual variant readings in isolation, this project
-          constructs aggregate profiles that characterise each manuscript's overall
-          pattern of divergence from a shared baseline. These profiles are built from
-          contextual neural embeddings (BERT) of each variant within its local textual
-          context, enabling a semantically informed representation of scribal change.
+          Every divergence of a witness from the baseline is annotated by type (addition, omission,
+          word-order shift, morphological or lexical substitution) and embedded in its context with
+          a Greek language model. The counted typology turns out to be the robust instrument; the
+          contextual embeddings add little to it. The profiles describe manuscripts, which combine
+          the text-type, the exemplar and the scribe, and are not read as the habits of individual
+          scribes.
+        </p>
+        <p>
+          The accompanying article is <em>The Typological Structure of Textual Variation: A
+          Computational Analysis of Major Witnesses to the Gospel of John</em>. The section numbers
+          given on the <a href="results.html">Results</a> page refer to it.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">A Note on the Repository Name</h2>
+        <p>
+          The repository keeps its original working name, <code>scribal-fingerprints</code>. Because
+          a profile combines the text-type, the exemplar and the scribe, and the design cannot
+          separate them, the article and this site speak of manuscript-level profiles rather than
+          scribal fingerprints (article § 6.2).
         </p>
       </section>
 
       <section>
         <h2 class="section-title">Data Sources</h2>
         <p>
-          All textual data is derived from the TEI XML transcriptions provided by the
-          <strong>International Greek New Testament Project (ITSEE)</strong> at the
-          University of Birmingham. These transcriptions represent scholarly diplomatic
-          editions of each manuscript.
-        </p>
-        <p>
-          Only the first-hand text of each witness is used; corrections by later hands are
-          ignored. Variant extraction aligns each manuscript verse with the baseline verse
-          using a longest-common-subsequence word alignment (Python's
-          <code>difflib</code>) computed on orthographically normalised tokens, followed by
-          rule-based classification into five typological categories.
-          Contextual embeddings are generated with
-          <a href="https://huggingface.co/pranaydeeps/Ancient-Greek-BERT" target="_blank" rel="noopener">Ancient-Greek-BERT</a>,
-          a BERT model pre-trained on Ancient Greek.
+          The texts are the TEI XML transcriptions of the ITSEE (Institute for Textual Scholarship
+          and Electronic Editing, University of Birmingham). Only the first hand of each witness is
+          read; corrections are ignored. The lemma lexicon is derived from MorphGNT (SBL edition,
+          Tauber 2017), and the contextual embeddings are computed with
+          <a href="https://huggingface.co/pranaydeeps/Ancient-Greek-BERT" target="_blank" rel="noopener">Ancient-Greek-BERT</a>.
         </p>
       </section>
 
       <section>
         <h2 class="section-title">Researcher</h2>
         <p>
-          <strong>Agnieszka B. Ziemińska</strong> is a researcher in Digital Humanities
-          and New Testament textual criticism, applying computational methods to
-          long-standing philological questions about scribal practice and manuscript
-          transmission.
+          <strong>Agnieszka B. Ziemińska</strong>, Centre for Digital Humanities, Institute of
+          Literary Research of the Polish Academy of Sciences (CHC IBL PAN), Warsaw. She works at the
+          intersection of computational stylometry, digital philology and New Testament textual
+          criticism.
         </p>
       </section>
 
       <section>
         <h2 class="section-title">Citation</h2>
+        <p>
+          To cite the code and data, please use the archived release on Zenodo. The DOI below
+          covers all versions and resolves to the latest one; the results of the article are those
+          of version 2.1.0, and each version has its own DOI on the Zenodo page.
+        </p>
         <div class="card" style="font-size:0.9rem;">
           <p style="margin-bottom:0.5rem;">
-            Ziemińska, A. B. (2026). <em>scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)</em> (version 2.0.0).
-            Zenodo. <a href="https://doi.org/10.5281/zenodo.23359316" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23359316</a>
+            Ziemińska, A. B. (2026). <em>scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)</em> (version 2.1.0).
+            Zenodo. <a href="https://doi.org/10.5281/zenodo.23359315" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23359315</a>
           </p>
           <p style="margin-bottom:0; color:var(--text-muted); font-size:0.85rem;">
             BibTeX:
@@ -100,9 +114,9 @@
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.0.0},
-  doi       = {10.5281/zenodo.23359316},
-  url       = {https://doi.org/10.5281/zenodo.23359316}
+  version   = {2.1.0},
+  doi       = {10.5281/zenodo.23359315},
+  url       = {https://doi.org/10.5281/zenodo.23359315}
 }</code></pre>
         </div>
       </section>
@@ -110,36 +124,34 @@
       <section>
         <h2 class="section-title">Code &amp; Reproducibility</h2>
         <p>
-          The complete analysis pipeline is open-source and available on
+          The complete pipeline is open source on
           <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub</a>.
-          All results presented on this website can be reproduced by running the
-        Python scripts in sequence as described in the
-          <a href="methodology.html">Methodology</a> section.
+          The README lists the commands in the order in which they reproduce every table and figure;
+          the <a href="methodology.html">Methodology</a> page describes what each step does.
         </p>
         <p>
-          This website is a static HTML/CSS/JS application generated from the pipeline
-          outputs. It requires no server-side processing and can be served directly
-          from the <code>docs/</code> directory via GitHub Pages.
+          This website is a static HTML/CSS/JS application. Its data files are written from the
+          pipeline outputs by <code>docs/prepare_website_data.py</code>, and it is served from the
+          <code>docs/</code> directory of the <code>main</code> branch via GitHub Pages.
         </p>
       </section>
 
       <section>
         <h2 class="section-title">Acknowledgements</h2>
         <p>
-          This project gratefully acknowledges the <strong>International Greek New Testament
-          Project (ITSEE)</strong> at the University of Birmingham for making their manuscript
-          transcriptions publicly available. The quality and accessibility of their TEI XML
-          resources made this computational analysis possible.
+          The project gratefully acknowledges the Institute for Textual Scholarship and Electronic
+          Editing (ITSEE) at the University of Birmingham for making its manuscript transcriptions
+          publicly available, and the MorphGNT project for its open morphological data.
         </p>
       </section>
 
       <section>
         <h2 class="section-title">License</h2>
         <p>
-          The source code for this project is released under the
-          <strong>MIT License</strong>. See the
+          The source code is released under the <strong>MIT License</strong>; the lemma lexicon
+          derived from MorphGNT is distributed under CC BY-SA 3.0, as its source. See the
           <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">repository</a>
-          for full license text.
+          for the full license texts.
         </p>
       </section>
 

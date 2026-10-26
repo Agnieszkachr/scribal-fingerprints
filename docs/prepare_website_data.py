@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
 Prepare website data files from pipeline outputs.
-Reads from ../outputs/ and ../data/, writes JS data files to data/ and copies PNGs to img/.
+Reads from ../outputs/ and ../data/, writes JS data files to data/ and copies the
+figures the website shows to img/ (and removes any other PNG from img/).
 Outputs JavaScript files (window.DATA_* = {...}) instead of JSON so they work
 both via file:// protocol and HTTP server (no fetch/CORS issues).
+
+    python docs/prepare_website_data.py
 """
 
 import csv
@@ -49,11 +52,22 @@ DATA_FILES = {
     'ablation_random_masked': 'variants_ablation_random_masked.csv',
 }
 
+# The random-masking control is reported as the mean over five draws.
+RANDOM_TAGS = ['ablation_random_masked'] + [f'ablation_random_masked_s{i}' for i in range(1, 5)]
+for _tag in RANDOM_TAGS[1:]:
+    DATA_FILES.setdefault(_tag, f'variants_{_tag}.csv')
+
+# Figures shown on the website (copied from ../outputs/ to img/).
+SITE_IMAGES = ['fig1_pca_full_B.png', 'fig8_aleph_D_by_chapter.png']
+
 
 def count_variants(tag):
     """Number of variants currently in the data CSV for this configuration."""
-    path = os.path.join(DATA_SRC_DIR, DATA_FILES.get(tag, ''))
-    if not os.path.exists(path):
+    fname = DATA_FILES.get(tag)
+    if not fname:
+        return None
+    path = os.path.join(DATA_SRC_DIR, fname)
+    if not os.path.isfile(path):
         return None
     with open(path, encoding='utf-8') as f:
         return sum(1 for _ in f) - 1
@@ -91,6 +105,14 @@ def read_metric_rows(path):
                 result[metric + '_CI_High'] = float(ci_high)
             except (ValueError, TypeError):
                 pass
+        # Permutation null mean and block-permutation p-value, where reported
+        for col, suffix in (('Null_Mean', '_Null_Mean'), ('Perm_P', '_P')):
+            v = r.get(col, '')
+            if v:
+                try:
+                    result[metric + suffix] = float(v)
+                except (ValueError, TypeError):
+                    pass
     return result
 
 
@@ -125,20 +147,45 @@ def read_pilot_results(tag):
     return result
 
 
+def read_random_masked():
+    """The random-masking control: the mean over the five draws for Cohen's d,
+    its interval, null mean and ARI, with every draw listed.  A mean of the
+    draws' p-values is not meaningful, so the number of draws with p <= 0.05 is
+    given instead."""
+    draws = [(tag, read_pilot_results(tag)) for tag in RANDOM_TAGS]
+    draws = [(tag, d) for tag, d in draws if d]
+    if not draws:
+        return None
+    result = dict(draws[0][1])
+    for key in ("Cohen's d", "Cohen's d_CI_Low", "Cohen's d_CI_High", "Cohen's d_Null_Mean",
+                "Cohen's d Verse", 'ARI'):
+        vals = [d[key] for _, d in draws if isinstance(d.get(key), float)]
+        if len(vals) == len(draws):
+            result[key] = sum(vals) / len(vals)
+    for key in ("Cohen's d_P", 'ARI_P', 'ARI_Null_Mean'):
+        result.pop(key, None)
+    result['draws'] = [{'tag': tag, 'd': d.get("Cohen's d"), 'p': d.get("Cohen's d_P"),
+                        'ari': d.get('ARI')} for tag, d in draws]
+    result['n_draws'] = len(draws)
+    result['n_draws_significant'] = sum(
+        1 for _, d in draws if isinstance(d.get("Cohen's d_P"), float) and d["Cohen's d_P"] <= 0.05)
+    return result
+
+
 def build_stats_summary():
     """Build stats_summary.js from all pilot_results CSVs."""
     configs = {
         'Baseline B': 'B',
         'Baseline A': 'A',
-        'Baseline aleph': 'aleph',
-        'Verse-matched': 'ablation_matched',
+        'Baseline ℵ': 'aleph',
+        'Attested in all five (532 verses)': 'ablation_matched',
         'Function words only': 'ablation_func_words',
         'Content masked': 'ablation_masked',
-        'Random masked (control)': 'ablation_random_masked',
+        'Random masked (control)': None,
     }
     summary = {}
     for label, tag in configs.items():
-        data = read_pilot_results(tag)
+        data = read_pilot_results(tag) if tag else read_random_masked()
         if data:
             summary[label] = data
             d_val = data.get("Cohen's d", 'N/A')
@@ -148,34 +195,82 @@ def build_stats_summary():
             summary[label] = {"error": "data not found"}
             print(f"  [!!] {label}: data not found")
 
-    # Build ablation comparison with percentage drops
-    baseline = summary.get('Baseline B', {})
-    baseline_d = baseline.get("Cohen's d", 0)
-    baseline_ari = baseline.get('ARI', 0)
-
-    ablation_panel = []
-    for label in ['Baseline B', 'Verse-matched', 'Function words only', 'Content masked',
-                  'Random masked (control)']:
-        data = summary.get(label, {})
-        d = data.get("Cohen's d", 0)
-        ari = data.get('ARI', 0)
-        if not isinstance(d, (int, float)):
-            d = 0
-        if not isinstance(ari, (int, float)):
-            ari = 0
-        d_drop = ((baseline_d - d) / baseline_d * 100) if baseline_d else 0
-        ari_drop = ((baseline_ari - ari) / baseline_ari * 100) if baseline_ari else 0
-        ablation_panel.append({
+    # Feature isolation (article § 5.4, Table 5): d with its block-bootstrap
+    # interval, permutation null mean and p-value for each condition.
+    feature_panel = []
+    for label, src in [('Full context', 'Baseline B'),
+                       ('Function words only', 'Function words only'),
+                       ('Content masked', 'Content masked'),
+                       ('Random masked (control)', 'Random masked (control)')]:
+        data = summary.get(src, {})
+        feature_panel.append({
             'label': label,
-            'cohens_d': round(float(d), 4),
-            'ari': round(float(ari), 4),
-            'd_pct_drop': round(float(d_drop), 1),
-            'ari_pct_drop': round(float(ari_drop), 1),
-            'stale': bool(data.get('stale', False)),
+            'n': data.get('N_current') or data.get('N'),
+            'd': data.get("Cohen's d"),
+            'ci_low': data.get("Cohen's d_CI_Low"),
+            'ci_high': data.get("Cohen's d_CI_High"),
+            'null_mean': data.get("Cohen's d_Null_Mean"),
+            'p': data.get("Cohen's d_P"),
+            'ari': data.get('ARI'),
+            'draws': [x['d'] for x in data.get('draws', [])] or None,
+            'n_draws_significant': data.get('n_draws_significant'),
         })
 
-    out = {'configs': summary, 'ablation_panel': ablation_panel}
+    out = {'configs': summary, 'feature_panel': feature_panel}
     write_js(os.path.join(DATA_DEST, 'stats_summary.js'), 'DATA_STATS', out)
+    return out
+
+
+def build_article_checks():
+    """Build article_checks.js: the analyses reported in the article that are
+    not part of the per-configuration results -- the SBL edition as anchor
+    (§ 5.5), Bezae's replacement blocks and Sinaiticus in John 1:1-8:38
+    (§ 5.1), d within each variant class (§ 5.3, Table 4), the paired
+    comparison of the masked conditions (§ 5.4), and the split halves of the
+    embeddings and of the typology (§ 5.5, Table 6)."""
+    out = {}
+    path = os.path.join(OUTPUTS_DIR, 'sbl_anchor_john.json')
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            s = json.load(f)
+        out['sbl'] = {
+            'n': s['n'],
+            'per_witness': s['per_witness'],
+            'association': s['association'],
+            'shares': {w: v['shares'] for w, v in s['witnesses'].items()},
+        }
+        print("  [OK] SBL anchor")
+    path = os.path.join(OUTPUTS_DIR, 'john_text_checks.json')
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            out['text_checks'] = json.load(f)
+        print("  [OK] Bezae's replacement blocks; Sinaiticus in 1:1-8:38")
+    path = os.path.join(OUTPUTS_DIR, 'supplementary_checks.json')
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            sup = json.load(f)
+        # Table 4 (d within each class with interval and p) and the split
+        # halves of the typology (§ 5.5), both from supplementary_checks.py
+        out['within_class'] = sup.get('within_class_d', {})
+        out['typology_split_half'] = sup.get('typology_split_half', {})
+        out['content_vs_random'] = sup.get('content_vs_random_masking', {})
+        print("  [OK] supplementary checks")
+    out['split_half'] = {}
+    for tag, label in (('B', 'B'), ('A', 'A'), ('aleph', 'ℵ')):
+        pairs = os.path.join(OUTPUTS_DIR, f'split_half_pairs_{tag}.csv')
+        cents = os.path.join(OUTPUTS_DIR, f'split_half_centroids_{tag}.csv')
+        if not (os.path.exists(pairs) and os.path.exists(cents)):
+            continue
+        rows = read_csv(cents)
+        labels = [k for k in rows[0].keys() if k]
+        out['split_half'][label] = {
+            'pairs': [{'pair': r['pair'], 'odd': float(r['odd_distance']),
+                       'even': float(r['even_distance'])} for r in read_csv(pairs)],
+            'matrix': {'labels': labels,
+                       'rows': [[float(r[c]) for c in labels] for r in rows]},
+        }
+        print(f"  [OK] split-half geometry, baseline {label}")
+    write_js(os.path.join(DATA_DEST, 'article_checks.js'), 'DATA_ARTICLE', out)
     return out
 
 
@@ -211,7 +306,7 @@ def build_cumulative_ari():
     baselines = {
         'Baseline B': 'cumulative_analysis_B.csv',
         'Baseline A': 'cumulative_analysis_A.csv',
-        'Verse-matched': 'cumulative_analysis_ablation_matched.csv',
+        'Baseline ℵ': 'cumulative_analysis_aleph.csv',
     }
     result = {}
     for label, fname in baselines.items():
@@ -264,16 +359,18 @@ def build_coverage():
 
 
 def build_variants_sample():
-    """Build variants_sample.js: ~2000 rows stratified by manuscript & type."""
+    """Build variants_sample.js: ~2000 rows stratified by baseline, manuscript & type."""
     variants_files = {
         'B': os.path.join(DATA_SRC_DIR, 'variants_full_john_B.csv'),
         'A': os.path.join(DATA_SRC_DIR, 'variants_full_john_A.csv'),
+        'ℵ': os.path.join(DATA_SRC_DIR, 'variants_full_john_aleph.csv'),
     }
     all_variants = []
     for baseline, path in variants_files.items():
         if os.path.exists(path):
             rows = read_csv(path)
             for r in rows:
+                r['baseline'] = baseline
                 all_variants.append(r)
             print(f"  [OK] {baseline}: {len(rows)} rows loaded")
 
@@ -285,7 +382,7 @@ def build_variants_sample():
     target_n = 2000
     strata = {}
     for v in all_variants:
-        key = (v.get('manuscript', ''), v.get('type', ''))
+        key = (v['baseline'], v.get('manuscript', ''), v.get('type', ''))
         if key not in strata:
             strata[key] = []
         strata[key].append(v)
@@ -303,18 +400,24 @@ def build_variants_sample():
     if len(sample) > target_n:
         sample = random.sample(sample, target_n)
 
+    def verse_number(ref):
+        m = re.search(r'(\d+):(\d+)', ref or '')
+        return int(m.group(2)) if m else 0
+
     clean = []
     for v in sample:
         clean.append({
-            'chapter': v.get('chapter', ''),
+            'baseline': v['baseline'],
+            'chapter': int(v.get('chapter') or 0),
             'verse': v.get('verse', ''),
-            'manuscript': v.get('manuscript', ''),
+            'verse_no': verse_number(v.get('verse', '')),
+            'manuscript': 'ℵ' if v.get('manuscript') == 'aleph' else v.get('manuscript', ''),
             'base_reading': v.get('base_reading', ''),
             'ms_reading': v.get('ms_reading', ''),
             'type': v.get('type', ''),
         })
 
-    clean.sort(key=lambda x: (x['chapter'], x['verse'], x['manuscript']))
+    clean.sort(key=lambda x: (x['chapter'], x['verse_no'], x['baseline'], x['manuscript']))
 
     write_js(os.path.join(DATA_DEST, 'variants_sample.js'), 'DATA_VARIANTS', clean)
     print(f"  ({len(clean)} rows)")
@@ -322,40 +425,50 @@ def build_variants_sample():
 
 
 def copy_images():
-    """Copy all PNG figures from outputs/ to img/."""
+    """Copy the figures the website shows from outputs/ to img/ and remove any
+    other PNG from img/ (all figures remain in outputs/)."""
     count = 0
-    for fname in os.listdir(OUTPUTS_DIR):
-        if fname.endswith('.png'):
-            src = os.path.join(OUTPUTS_DIR, fname)
-            dst = os.path.join(IMG_DEST, fname)
-            shutil.copy2(src, dst)
+    for fname in SITE_IMAGES:
+        src = os.path.join(OUTPUTS_DIR, fname)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(IMG_DEST, fname))
             count += 1
-    print(f"  -> Copied {count} PNG files to img/")
+        else:
+            print(f"  [!!] {fname} not found in outputs/")
+    removed = 0
+    for fname in os.listdir(IMG_DEST):
+        if fname.endswith('.png') and fname not in SITE_IMAGES:
+            os.remove(os.path.join(IMG_DEST, fname))
+            removed += 1
+    print(f"  -> Copied {count} PNG files to img/, removed {removed} not shown on the site")
 
 
 def main():
     print("=== Preparing website data ===\n")
     ensure_dirs()
 
-    print("[1/7] Building stats_summary.js...")
+    print("[1/8] Building stats_summary.js...")
     build_stats_summary()
 
-    print("\n[2/7] Building type_counts.js...")
+    print("\n[2/8] Building article_checks.js...")
+    build_article_checks()
+
+    print("\n[3/8] Building type_counts.js...")
     build_type_counts()
 
-    print("\n[3/7] Building cumulative_ari.js...")
+    print("\n[4/8] Building cumulative_ari.js...")
     build_cumulative_ari()
 
-    print("\n[4/7] Building chapter_stability.js...")
+    print("\n[5/8] Building chapter_stability.js...")
     build_chapter_stability()
 
-    print("\n[5/7] Building coverage.js...")
+    print("\n[6/8] Building coverage.js...")
     build_coverage()
 
-    print("\n[6/7] Building variants_sample.js (~2000 rows)...")
+    print("\n[7/8] Building variants_sample.js (~2000 rows)...")
     build_variants_sample()
 
-    print("\n[7/7] Copying PNG figures...")
+    print("\n[8/8] Copying PNG figures...")
     copy_images()
 
     print("\n=== Done! ===")

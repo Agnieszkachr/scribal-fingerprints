@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Methodology — Scribal Fingerprints</title>
-  <meta name="description" content="Pipeline overview, variant typology, and manuscript coverage for the Scribal Fingerprints study.">
+  <title>Methodology — Textual Variation in John</title>
+  <meta name="description" content="Transcriptions, variant annotation, contextual embedding and statistical inference of the study of textual variation in five Greek witnesses to the Gospel of John.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <a href="index.html" class="nav-brand">Textual Variation in John</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -31,32 +31,35 @@
     <section>
       <h1>Methodology</h1>
       <p>
-        The pipeline transforms raw TEI XML transcriptions into statistically testable
-        manuscript change profiles through five sequential stages.
+        The pipeline turns the TEI XML transcriptions of five manuscripts into annotated variant
+        tables, embeds each variant in its context, and tests the resulting manuscript-level profiles
+        with resampling procedures that respect the dependence between neighbouring variants. The
+        normaliser, the function-word list and the language model are its only language-specific
+        components.
       </p>
 
       <div class="pipeline">
         <div class="pipeline-step">
           <div class="step-box">
             <span class="step-num">Step 1</span>
-            <span class="step-title">Data Acquisition</span>
-            <span class="step-desc">TEI XML from ITSEE</span>
+            <span class="step-title">Transcriptions</span>
+            <span class="step-desc">ITSEE TEI XML, first hand</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
         <div class="pipeline-step">
           <div class="step-box">
             <span class="step-num">Step 2</span>
-            <span class="step-title">Variant Extraction</span>
-            <span class="step-desc">LCS word alignment on normalised tokens</span>
+            <span class="step-title">Alignment</span>
+            <span class="step-desc">LCS on normalised tokens, verse by verse</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
         <div class="pipeline-step">
           <div class="step-box">
             <span class="step-num">Step 3</span>
-            <span class="step-title">Classification</span>
-            <span class="step-desc">5 typological categories</span>
+            <span class="step-title">Annotation</span>
+            <span class="step-desc">Five variant types, deterministic rule</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
@@ -64,109 +67,226 @@
           <div class="step-box">
             <span class="step-num">Step 4</span>
             <span class="step-title">Embedding</span>
-            <span class="step-desc">BERT contextual vectors</span>
+            <span class="step-desc">Ancient-Greek-BERT change vectors</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
         <div class="pipeline-step">
           <div class="step-box">
             <span class="step-num">Step 5</span>
-            <span class="step-title">Statistical Testing</span>
-            <span class="step-desc">Permutation &amp; bootstrap</span>
+            <span class="step-title">Inference</span>
+            <span class="step-desc">Chapter-block bootstrap and permutation</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Variant Typology -->
+    <!-- Transcriptions -->
     <section>
-      <h2 class="section-title">Variant Typology</h2>
+      <h2 class="section-title">Transcriptions and Baseline</h2>
       <p>
-        Each extracted variant is classified into one of five discrete categories based on
-        the relationship between the baseline reading and the manuscript reading:
+        The five witnesses are taken from the ITSEE digital transcriptions (Institute for Textual
+        Scholarship and Electronic Editing, University of Birmingham). Each transcription is parsed
+        into a sequence of tokens per verse:
       </p>
-      <div class="card">
+      <ul class="findings-list">
+        <li>only the first hand is read; corrector readings are ignored;</li>
+        <li>a word carried across a line, column or page break is one token;</li>
+        <li><em>nomina sacra</em> are expanded from a table of the abbreviations attested in the five
+          transcriptions, and the supralinear stroke for a final &nu; is resolved;</li>
+        <li>marginal sigla, running titles, editorial notes and punctuation are not tokens; tokens are
+          lower-cased and stripped of accents, breathings, diaeresis and iota subscript;</li>
+        <li>every divergence that contains or adjoins a physical gap in the manuscript is excluded;</li>
+        <li>editorially supplied text counts as attested; the robustness configuration drops the
+          115 variants (2.6 %) that rest on it.</li>
+      </ul>
+      <p>
+        Codex Vaticanus (B) is the baseline: near-complete for John and long regarded as restrained
+        in its interventions. It is a methodologically consistent point of departure, not an
+        assertion of textual superiority. Every analysis is repeated with Codex Alexandrinus (A) and
+        Codex Sinaiticus (&#x2135;) as baselines, and the typology also with the SBL edition. A
+        critical text is not the primary anchor because it is not a witness: measured against it,
+        a profile would combine what a manuscript did with what the editors decided.
+      </p>
+    </section>
+
+    <!-- Variant Annotation -->
+    <section>
+      <h2 class="section-title">Variant Annotation</h2>
+      <p>
+        Each witness verse is aligned with the baseline verse by longest-common-subsequence matching
+        on <em>normalised</em> tokens. Normalisation folds the alternations that are orthographic
+        rather than textual (itacism, &omega;/&omicron;, movable &nu; and &sigmaf;, elision, consonant
+        gemination), so that they neither break the alignment nor surface as variants. Every
+        non-equal block of the alignment becomes one variant, annotated by a deterministic,
+        inspectable rule; no model is trained, which is why the procedure is called
+        <em>annotation</em> rather than classification.
+      </p>
+      <div class="card" style="overflow-x:auto;">
         <table>
           <thead>
-            <tr><th>Category</th><th>Description</th><th>Example</th></tr>
+            <tr><th>Type</th><th>Definition</th><th>Example</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Morphological Substitution</strong></td>
-              <td>Same lemma, different form (including suppletive forms)</td>
-              <td><span class="greek-text">λέγει → λέγουσιν</span></td>
-            </tr>
-            <tr>
-              <td><strong>Lexical Substitution</strong></td>
-              <td>Different lemma replacing the original word</td>
-              <td><span class="greek-text">κύριος → θεός</span></td>
-            </tr>
-            <tr>
               <td><strong>Addition</strong></td>
-              <td>Word present in manuscript but absent from baseline</td>
-              <td><span class="greek-text">[OMIT] → δέ</span></td>
+              <td>The baseline lacks the word(s); the witness has them</td>
+              <td><span class="greek-text">&mdash; &rarr; δέ</span></td>
             </tr>
             <tr>
               <td><strong>Omission</strong></td>
-              <td>Word present in baseline but absent from manuscript</td>
-              <td><span class="greek-text">αὐτοῦ → [OMIT]</span></td>
+              <td>The baseline has the word(s); the witness lacks them</td>
+              <td><span class="greek-text">αὐτοῦ &rarr; &mdash;</span></td>
             </tr>
             <tr>
-              <td><strong>Word Order Shift</strong></td>
-              <td>Same words in different sequence, recovered by pairing an omission with an addition (or two substitutions) of the same words within one verse</td>
-              <td><span class="greek-text">ηγαπησα υμας → υμας ηγαπησα</span></td>
+              <td><strong>Word-order shift</strong></td>
+              <td>The same words in a different order</td>
+              <td><span class="greek-text">ηγαπησα υμας &rarr; υμας ηγαπησα</span></td>
+            </tr>
+            <tr>
+              <td><strong>Morphological substitution</strong></td>
+              <td>Different words that are forms of the same lexeme (suppletive forms included)</td>
+              <td><span class="greek-text">λέγει &rarr; λέγουσιν</span></td>
+            </tr>
+            <tr>
+              <td><strong>Lexical substitution</strong></td>
+              <td>Different words that are not forms of the same lexeme</td>
+              <td><span class="greek-text">κύριος &rarr; θεός</span></td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="callout">
-        Against Baseline B, additions and omissions together make up 42–48% of the variants
-        of each witness, morphological substitutions 21–28%, lexical substitutions 19–25% and
-        word-order shifts 7–9%. Same lemma or different lemma is decided with a form-to-lemma
-        lexicon of the printed New Testament (MorphGNT SBLGNT); witness spellings it lacks are
-        placed by spelling similarity to the attested forms. Purely orthographic alternations (itacism, movable nu, elision,
-        consonant gemination) are removed before alignment and are not counted.
-      </div>
+      <h3>Transpositions and unequal blocks</h3>
+      <p>
+        Longest-common-subsequence alignment never emits a transposition as one block:
+        <span class="greek-text">A B &rarr; B A</span> arrives as an omission and an addition, and
+        <span class="greek-text">A x B &rarr; B x A</span> as two substitutions. Word-order shifts are
+        therefore recovered after alignment: an omission and an addition (or two substitutions) whose
+        words are the same multiset, at most eight baseline tokens apart within a verse, are merged
+        into one word-order variant. A replacement block is morphological only if both sides have the
+        same number of words and every positionally paired word is a form of the same lexeme; a block
+        of unequal length is one lexical substitution and is not decomposed, because the alignment
+        cannot say which word was replaced and which added.
+      </p>
+
+      <h3>Same lexeme or different lexeme</h3>
+      <p>
+        The decision uses a form-to-lemma lexicon of every word form of the printed New Testament
+        (MorphGNT on the SBL edition; 17,347 accentless forms). Suppletive forms
+        (<span class="greek-text">λέγω/εἶπον</span>) fall together and compounds
+        (<span class="greek-text">ἐρωτάω/ἐπερωτάω</span>) fall apart. Crasis is resolved first. A
+        witness form absent from the lexicon is looked up again on its normalised key; if it is still
+        not found, it counts as a form of its partner&rsquo;s lexeme when its character similarity to
+        some attested form of that lexeme is at least 0.8. Only pairs in which neither word can be
+        placed fall back on the similarity of the two words to each other (same lexeme above 0.5).
+      </p>
+
+      <h3>Checks against a human reading</h3>
+      <p>
+        <strong>Calibration.</strong> 200 substitution pairs drawn with a fixed seed, 25 from each of
+        eight bands of character similarity, were annotated blind. The lexicon rule agrees in 94.0 %
+        (&kappa; = 0.87); character similarity alone agrees in 78.0 % at a threshold of 0.5 and at most
+        81.0 % at any threshold. The handling of crasis and witness spellings was added after the
+        errors of the plain lexicon lookup (87.5 %) had been read, so these figures are in-sample.
+      </p>
+      <p>
+        <strong>Reliability.</strong> A stratified sample of 300 variants was annotated blind into the
+        five types. Agreement with the rule is &kappa; = 0.97 overall; it is complete for additions,
+        omissions and word-order shifts, and &kappa; = 0.88 on the morphological/lexical distinction,
+        where all eight disagreements lie (mostly corrupted witness spellings). The samples, the
+        annotations and the evaluation script are in <code>annotation/</code>.
+      </p>
+    </section>
+
+    <!-- Embedding -->
+    <section>
+      <h2 class="section-title">Contextual Embedding</h2>
+      <p>
+        Ancient-Greek-BERT is a transformer language model trained on classical and literary Greek.
+        It is used only as a fixed function from a short Greek phrase to a vector of 768 numbers.
+        Each variant is represented by a window of up to five words on either side of the divergence,
+        in the baseline and in the witness; each window&rsquo;s vector is the attention-masked mean of
+        the last-layer token vectors. The <strong>change vector</strong> of a variant is
+        <code>embedding(witness window) &minus; embedding(baseline window)</code>. A similarity score
+        (as in BERTScore) would say <em>how far</em> a witness departs; the difference keeps the
+        <em>direction</em> of the departure, so that the variants of one witness can be averaged into a
+        profile. All distances are cosine distances.
+      </p>
+      <h3>Feature isolation</h3>
+      <ul class="findings-list">
+        <li><strong>Function words only:</strong> the 1,767 variants whose readings consist entirely of
+          closed-class words; the contexts are untouched.</li>
+        <li><strong>Content masked:</strong> every variant, with each content word in the readings and
+          the context windows replaced by a placeholder.</li>
+        <li><strong>Random masked (control):</strong> every variant, with the same number of words per
+          field replaced at random positions, in five independent draws.</li>
+      </ul>
+    </section>
+
+    <!-- Inference -->
+    <section>
+      <h2 class="section-title">Statistical Inference</h2>
+      <p>
+        Several variants can occur in one verse and their context windows overlap, so the change
+        vectors are not independent observations. Inference uses the chapter as the resampling block:
+        block bootstrap (chapters resampled with replacement, 2,000 replicates) for confidence
+        intervals, and block permutation (witness labels shuffled within chapters; 2,000 permutations
+        for Cohen&rsquo;s d, 200 for Cramér&rsquo;s V and the ARI, 500 for the split-half geometry) for the
+        null distributions, with the +1 correction of Phipson and Smyth (2010). As a second guard, the
+        change vectors of one witness in one verse are averaged into a single vector before d is
+        recomputed.
+      </p>
+      <ul class="findings-list">
+        <li><strong>Cramér&rsquo;s V:</strong> association between witness and variant type, on three
+          broad classes and on the substitution sub-classes.</li>
+        <li><strong>Cohen&rsquo;s d:</strong> standardised difference between the mean inter-manuscript
+          and the mean intra-manuscript cosine distance, for the whole corpus, for each pair of witnesses
+          and within each variant class.</li>
+        <li><strong>Adjusted Rand Index:</strong> agreement between a k-means partition (k = 4, ten
+          initialisations, 3,000 vectors) and the true witness labels; 0 is chance, 1 perfect recovery.</li>
+        <li><strong>Split halves:</strong> profiles computed on odd and on even chapters; the full
+          8&nbsp;&times;&nbsp;8 distance matrix between half-profiles, the same-witness against the
+          cross-witness distance, the number of witnesses nearest to their own other half, and the rank
+          correlation of the six inter-witness distances, on the full text and on the 532 verses
+          attested in all five witnesses.</li>
+      </ul>
     </section>
 
     <!-- Scripts -->
     <section>
       <h2 class="section-title">Pipeline Scripts</h2>
-      <p>
-        The analysis is implemented in seven Python scripts, each handling a distinct stage
-        of the pipeline:
-      </p>
-      <div class="card">
+      <p>The commands, in order, are listed in the README of the repository.</p>
+      <div class="card" style="overflow-x:auto;">
         <table>
           <thead>
             <tr><th>Script</th><th>Purpose</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td><code>download_itsee_data.py</code></td>
-              <td>Fetches TEI XML transcriptions from ITSEE, reads the first-hand text, normalises orthography, aligns, extracts and classifies variants</td>
-            </tr>
-            <tr>
-              <td><code>profile_scribes.py</code></td>
-              <td>Ancient-Greek-BERT embeddings of the context windows; change vectors and manuscript / chapter profiles</td>
-            </tr>
-            <tr>
-              <td><code>run_statistical_tests.py</code></td>
-              <td>Chapter-block permutation tests (ARI, Cohen's d, Cramér's V), block-bootstrap confidence intervals, split-half replicability, within-type and verse-level effect sizes</td>
-            </tr>
-            <tr>
-              <td><code>create_visualizations.py</code></td>
-              <td>PCA scatter, dendrogram, variant type distribution, cumulative signal, stability heatmap</td>
-            </tr>
-            <tr>
-              <td><code>create_verse_matched_dataset.py</code></td>
-              <td>Identifies shared verse set across all manuscripts for controlled comparison</td>
-            </tr>
-            <tr>
-              <td><code>run_ablation_study.py</code></td>
-              <td>Function-word filtering and content-masking ablation experiments</td>
-            </tr>
+            <tr><td><code>download_itsee_data.py</code></td>
+              <td>Fetches the ITSEE transcriptions, reads the first-hand text, normalises, aligns and annotates the variants against a baseline</td></tr>
+            <tr><td><code>profile_scribes.py</code></td>
+              <td>Ancient-Greek-BERT embeddings of the context windows; change vectors, manuscript and chapter profiles</td></tr>
+            <tr><td><code>run_statistical_tests.py</code></td>
+              <td>Chapter-block permutation tests and bootstrap intervals (Cramér&rsquo;s V, Cohen&rsquo;s d, ARI), within-class, pairwise and verse-level effect sizes, split-half geometry</td></tr>
+            <tr><td><code>create_verse_matched_dataset.py</code></td>
+              <td>The 532 verses attested in all five witnesses</td></tr>
+            <tr><td><code>run_ablation_study.py</code></td>
+              <td>Feature isolation: function words only, content masking, random masking in five draws</td></tr>
+            <tr><td><code>sbl_anchor.py</code></td>
+              <td>The typology with the SBL edition as the anchor</td></tr>
+            <tr><td><code>john_text_checks.py</code></td>
+              <td>Bezae&rsquo;s replacement blocks; Sinaiticus in John 1:1&ndash;8:38</td></tr>
+            <tr><td><code>annotation/evaluate_annotation.py</code></td>
+              <td>Agreement of the annotation rule with the blind human annotation of both samples</td></tr>
+            <tr><td><code>create_article_figures.py</code></td>
+              <td>Figures 3 and 4 of the article: feature isolation and split-half distances (<code>fig3_feature_isolation.png</code>, <code>fig5_split_half.png</code>)</td></tr>
+            <tr><td><code>create_visualizations.py</code></td>
+              <td>Per-configuration figures: type shares (Figure 1 of the article, <code>fig4_types_full_B.png</code>), projection, dendrogram, cumulative signal, chapter heat map</td></tr>
+            <tr><td><code>supplementary_checks.py</code></td>
+              <td>d within each variant class with intervals and p-values (Table 4), paired comparison of the masked conditions, split halves of the typology, Sinaiticus and Bezae by chapter (Figure 2 of the article)</td></tr>
+            <tr><td><code>docs/prepare_website_data.py</code></td>
+              <td>Writes the data files and figures of this website from the pipeline outputs</td></tr>
           </tbody>
         </table>
       </div>
@@ -176,10 +296,11 @@
     <section>
       <h2 class="section-title">Manuscript Coverage</h2>
       <p>
-        Not all manuscripts preserve all 21 chapters of John. The table below shows the
-        percentage of extant verses per chapter for each witness (against Baseline B).
-        White cells indicate complete coverage; coloured cells indicate verses without attested
-        text (lacunae, or passages absent from the witness such as John 5:4 and 7:53–8:11).
+        Not all manuscripts preserve all 21 chapters of John. The table shows, for each witness
+        compared with Baseline B, the percentage of verses per chapter with attested first-hand text.
+        Alignment is performed only where both texts are attested, so lacunae produce no variants.
+        Coloured cells mark verses without attested text: lacunae, the portions of Bezae supplied by a
+        later hand, or passages absent from the witness such as John 5:4 and 7:53&ndash;8:11.
       </p>
       <div class="card" style="overflow-x:auto;">
         <table class="coverage-table" id="coverage-table">
@@ -221,7 +342,7 @@
       manuscripts.forEach(ms => {
         const tr = document.createElement('tr');
         const tdMs = document.createElement('td');
-        tdMs.innerHTML = `<strong>${ms}</strong>`;
+        tdMs.innerHTML = `<strong>${ms === 'aleph' ? '\u2135' : ms}</strong>`;
         tr.appendChild(tdMs);
 
         chapters.forEach(ch => {

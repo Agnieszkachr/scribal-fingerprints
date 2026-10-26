@@ -1,5 +1,5 @@
 /* ============================================================
-   SCRIBAL FINGERPRINTS — Shared JS
+   TEXTUAL VARIATION IN JOHN — Shared JS
    Navigation, utilities
    ============================================================ */
 

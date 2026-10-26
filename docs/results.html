@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results — Scribal Fingerprints</title>
-  <meta name="description" content="Interactive charts and statistical results from the Scribal Fingerprints analysis of the Gospel of John.">
+  <title>Results — Textual Variation in John</title>
+  <meta name="description" content="Results of the computational analysis of textual variation in five Greek witnesses to the Gospel of John: variant typology first, contextual embeddings second.">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
@@ -12,7 +12,7 @@
 
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <a href="index.html" class="nav-brand">Textual Variation in John</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -30,138 +30,211 @@
 
     <h1>Results</h1>
     <p>
-      Interactive visualisations of the statistical findings. All values are derived
-      programmatically from the pipeline output files.
+      The results follow the order of the article: the variant typology first, the contextual
+      embeddings second, and then the question whether the embeddings add anything to the
+      typology. Every value on this page is read from the pipeline output files by
+      <code>docs/prepare_website_data.py</code>.
     </p>
+    <nav class="toc">
+      <a href="#finding-1">1. Typology</a>
+      <a href="#finding-2">2. Embedding separation</a>
+      <a href="#finding-3">3. Within a variant class</a>
+      <a href="#finding-4">4. Feature isolation</a>
+      <a href="#finding-5">5. Stability and baselines</a>
+      <a href="#exploratory">Exploratory views</a>
+    </nav>
 
-    <!-- Statistical Summary Table -->
-    <section>
-      <h2 class="section-title">Statistical Summary</h2>
-      <p class="section-subtitle">All configurations tested, with 95% bootstrap confidence intervals where available</p>
-      <div class="card" style="overflow-x:auto;" id="stats-table"></div>
-    </section>
-
-    <!-- Ablation Comparison -->
-    <section>
-      <h2 class="section-title">Ablation Comparison</h2>
-      <p class="section-subtitle">
-        Four conditions demonstrating signal robustness. Percentage drops from Baseline B annotated.
+    <!-- Finding 1 -->
+    <section id="finding-1">
+      <h2 class="section-title">1. Witnesses differ in the kinds of changes they introduce</h2>
+      <p class="section-subtitle">Article § 5.1, Table 2 and Figures 1&ndash;2</p>
+      <p>
+        Every divergence of a witness from the baseline is annotated as an addition, omission,
+        word-order shift, morphological substitution (another form of the same lexeme) or lexical
+        substitution (a different lexeme). The distributions differ between witnesses under every
+        baseline. The effects are small, as expected for witnesses that share most of their text,
+        and clearly distinguishable from the within-chapter permutation null.
       </p>
-      <div class="chart-container">
-        <div id="chart-ablation" style="height:400px;"></div>
+      <div class="tab-bar" id="type-baseline-tabs">
+        <button class="tab-btn active" data-baseline="B">Baseline B</button>
+        <button class="tab-btn" data-baseline="A">Baseline A</button>
+        <button class="tab-btn" data-baseline="ℵ">Baseline ℵ</button>
       </div>
-      <div class="callout">
-        Content masking replaces every content word in the readings and context windows with
-        a generic token, so that only function words and word positions remain visible to the
-        embedding model; the function-words-only condition keeps only variants whose readings
-        consist entirely of function words, with the contexts left intact. The annotated
-        percentage drops are computed from the output files.
-      </div>
-    </section>
-
-    <!-- Variant Type Distribution -->
-    <section>
-      <h2 class="section-title">Variant Type Distribution</h2>
-      <p class="section-subtitle">Breakdown of variant categories per manuscript (Baseline B)</p>
       <div class="chart-container">
         <div id="chart-types" style="height:420px;"></div>
       </div>
-    </section>
+      <div class="card" style="overflow-x:auto;" id="table-types"></div>
 
-    <!-- Cumulative Signal -->
-    <section>
-      <h2 class="section-title">Cumulative Signal Strength</h2>
-      <p class="section-subtitle">ARI as a function of cumulative chapter count — the "law of large numbers" test</p>
-      <div class="chart-container">
-        <div id="chart-cumulative" style="height:420px;"></div>
+      <h3>Association between witness and variant type</h3>
+      <div class="card" style="overflow-x:auto;" id="table-typology"></div>
+
+      <div class="callout">
+        <strong>Directional observations.</strong> Against B, Alexandrinus has the largest share of
+        additions, Sinaiticus the largest share of omissions, P66 the largest share of morphological
+        substitutions and Bezae the largest share of lexical substitutions. Bezae is not, in John,
+        the witness with the most word-order shifts. Omission and addition are relative to the
+        baseline by construction; Bezae&rsquo;s lexical share and Alexandrinus&rsquo;s additions hold
+        under every baseline, including the SBL edition.
       </div>
-      <p>
-        ARI of a k-means clustering (k = number of witnesses) against the manuscript labels,
-        recomputed on the variants of the first <em>n</em> chapters. The curve shows how much
-        text is needed before the clustering signal stops changing appreciably.
-      </p>
-    </section>
 
-    <!-- Chapter Stability Heatmap -->
-    <section>
-      <h2 class="section-title">Chapter Stability</h2>
-      <p class="section-subtitle">Per-chapter cosine distance from each manuscript's global centroid (Baseline B)</p>
-      <div class="chart-container">
-        <div id="chart-stability" style="height:350px;"></div>
-      </div>
+      <h3>Bezae: recasting phrases rather than replacing words</h3>
       <p>
-        Lower values (lighter cells) indicate chapters where the manuscript's local profile
-        closely matches its overall fingerprint. Higher values (darker cells) may reflect
-        chapters with unusual content or scribal behaviour.
+        A replacement block whose two sides differ in length is annotated as one lexical
+        substitution. Such blocks account for about two-thirds of Bezae&rsquo;s lexical excess;
+        its share of equal-length replacements lies within the permutation null.
       </p>
-    </section>
+      <div class="card" style="overflow-x:auto;" id="table-bezae"></div>
 
-    <!-- Static Figures -->
-    <section>
-      <h2 class="section-title">Embedding Space Visualisations</h2>
-      <p class="section-subtitle">PCA projections and hierarchical clustering of manuscript change vectors</p>
-      <div class="fig-gallery">
+      <h3>Sinaiticus in John 1:1&ndash;8:38</h3>
+      <p>
+        Fee (1968) showed that in John 1:1&ndash;8:38 the text of Sinaiticus agrees characteristically
+        with the &ldquo;Western&rdquo; tradition. The variant tables register the change: Bezae shares
+        far more of its variants with Sinaiticus before 8:38 than after it, under every baseline.
+        A profile of &ldquo;Sinaiticus in John&rdquo; is therefore a profile of two texts.
+      </p>
+      <div class="card" style="overflow-x:auto;" id="table-sinaiticus"></div>
+      <div class="fig-gallery single">
         <div class="fig-item">
-          <img src="img/fig1_pca_full_B.png" alt="PCA scatter plot of scribal change vectors (Baseline B)" loading="lazy">
+          <img src="img/fig8_aleph_D_by_chapter.png" alt="Bar chart: share of Bezae's variants shared with Sinaiticus, by chapter of John" loading="lazy">
           <div class="fig-caption">
-            <strong>Figure 1.</strong> PCA of scribal change vectors against Baseline B.
-            Each point represents a single variant's contextual embedding, coloured by manuscript.
-            Overlapping clouds with detectable centroid shifts.
-          </div>
-        </div>
-        <div class="fig-item">
-          <img src="img/fig2_dendrogram_full_B.png" alt="Hierarchical clustering dendrogram (Baseline B)" loading="lazy">
-          <div class="fig-caption">
-            <strong>Figure 2.</strong> Hierarchical clustering of the manuscript profiles
-            (mean change vectors) against Baseline B, cosine distance.
+            Share of Bezae&rsquo;s variants (baseline B) that are also variants of Sinaiticus, chapter by
+            chapter; n is the number of Bezae&rsquo;s variants in the chapter. Chapters 2 and 19 are not
+            extant in Bezae&rsquo;s first hand. Figure 2 of the article (<code>supplementary_checks.py</code>).
           </div>
         </div>
       </div>
-
-      <div class="fig-gallery">
-        <div class="fig-item">
-          <img src="img/fig1_pca_full_A.png" alt="PCA scatter (Baseline A)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 1b.</strong> PCA against Baseline A.</div>
-        </div>
-        <div class="fig-item">
-          <img src="img/fig2_dendrogram_full_A.png" alt="Dendrogram (Baseline A)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 2b.</strong> Dendrogram against Baseline A.</div>
-        </div>
-      </div>
-
-      <div class="fig-gallery">
-        <div class="fig-item">
-          <img src="img/fig1_pca_full_ablation_matched.png" alt="PCA scatter (Verse-matched)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 1c.</strong> PCA, verse-matched subsample.</div>
-        </div>
-        <div class="fig-item">
-          <img src="img/fig2_dendrogram_full_ablation_matched.png" alt="Dendrogram (Verse-matched)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 2c.</strong> Dendrogram, verse-matched subsample.</div>
-        </div>
-      </div>
     </section>
 
-    <!-- Additional Figures -->
-    <section>
-      <h2 class="section-title">Additional Figures</h2>
+    <!-- Finding 2 -->
+    <section id="finding-2">
+      <h2 class="section-title">2. Witnesses are separated in embedding space, but only just</h2>
+      <p class="section-subtitle">Article § 5.2, Table 3</p>
+      <p>
+        Each divergence is embedded in its context with Ancient-Greek-BERT and represented by its
+        <em>change vector</em> (witness window minus baseline window). Inter-manuscript distances
+        between change vectors are larger than intra-manuscript distances, and the difference is
+        distinguishable from the permutation null. Substantively it is close to zero: the two
+        distance distributions overlap almost completely, and an unsupervised clustering recovers
+        essentially nothing of which witness produced a vector.
+      </p>
+      <div class="card" style="overflow-x:auto;" id="table-embedding"></div>
+      <h3>Cohen&rsquo;s d for each pair of witnesses (baseline B)</h3>
+      <div class="card" style="overflow-x:auto; max-width:480px;" id="table-pairs"></div>
+    </section>
+
+    <!-- Finding 3 -->
+    <section id="finding-3">
+      <h2 class="section-title">3. Within a variant class the separation all but disappears</h2>
+      <p class="section-subtitle">Article § 5.3, Table 4</p>
+      <p>
+        If one witness adds more and another omits more, the model might separate them only
+        because additions and omissions produce different change vectors. Within single classes,
+        where the type composition cannot differ, d lies close to zero. The largest value, for
+        morphological substitutions, is distinguishable from its null against B but not against A
+        or &#x2135;, and its bootstrap interval includes zero. What the model separates is, almost
+        entirely, what the typology already counts.
+      </p>
+      <div class="card" style="overflow-x:auto;" id="table-within"></div>
+    </section>
+
+    <!-- Finding 4 -->
+    <section id="finding-4">
+      <h2 class="section-title">4. No sign that the separation is lexical</h2>
+      <p class="section-subtitle">Article § 5.4, Table 5 and Figure 3</p>
+      <p>
+        <em>Function words only</em> restricts the <em>population</em> of variants to those whose
+        readings consist entirely of closed-class words and leaves the contexts intact.
+        <em>Content masked</em> keeps every variant and hides the content words in the
+        <em>input</em>. The <em>random-masking control</em> hides the same number of words at random
+        positions, in five draws. Every reduced condition has a bootstrap interval that includes
+        zero. If the vocabulary carried the separation, masking content words should cost more than
+        masking at random; if anything, it costs less. The difference between the two conditions
+        (0.004) is not itself distinguishable from zero: bootstrapped in pairs over chapters, its
+        95 % interval runs from &minus;0.006 to 0.015 (<code>supplementary_checks.py</code>). The
+        result is negative with respect to vocabulary rather than a positive finding about what
+        carries the separation. Two readings are compatible with it: the model may respond to the
+        grammatical frame of the variants, or masking the content words may leave visible the very
+        function words in which the variant types differ; the data do not decide between them.
+      </p>
+      <div class="chart-container">
+        <div id="chart-features" style="height:360px;"></div>
+      </div>
+      <div class="card" style="overflow-x:auto;" id="table-features"></div>
+    </section>
+
+    <!-- Finding 5 -->
+    <section id="finding-5">
+      <h2 class="section-title">5. Profiles show partial geometric stability</h2>
+      <p class="section-subtitle">Article § 5.5, Table 6 and Figure 4</p>
+      <p>
+        The profiles are recomputed on the odd and on the even chapters. The two halves of a
+        witness lie closer to each other than to the halves of other witnesses, and three of the four
+        witnesses are nearest to their own other half; the exception is Sinaiticus, whose odd-chapter
+        profile lies nearer to the even-chapter profile of P66. The rank order of the six
+        inter-witness distances is not reproduced. The embedding-level results are weaker under
+        the alternative baselines; the typological results hold under all of them (Finding 1).
+      </p>
+      <div class="card" style="overflow-x:auto;" id="table-splithalf-summary"></div>
       <div class="fig-gallery">
         <div class="fig-item">
-          <img src="img/fig4_types_full_B.png" alt="Variant type distribution (Baseline B)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 4.</strong> Variant type proportions, Baseline B.</div>
+          <div id="chart-splithalf" style="height:420px;"></div>
+          <div class="fig-caption">The six inter-witness profile distances on odd against even chapters
+            (attested loci, baseline B); the diagonal marks perfect agreement.</div>
         </div>
         <div class="fig-item">
-          <img src="img/fig4_types_full_A.png" alt="Variant type distribution (Baseline A)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 4b.</strong> Variant type proportions, Baseline A.</div>
+          <div class="card" style="overflow-x:auto;" id="table-splithalf-pairs"></div>
         </div>
       </div>
-      <div class="fig-gallery">
+      <h3>Full odd/even distance matrix (baseline B)</h3>
+      <div class="card" style="overflow-x:auto;" id="table-splithalf-matrix"></div>
+
+      <h3>Split halves of the typology</h3>
+      <p>
+        Against B, the association between witness and type is present in each half separately, and
+        in both halves the same witness has the largest share in four of the five classes. Under every
+        baseline the two halves of a witness differ by fewer variants than the halves of different
+        witnesses (gap p = 0.002), but not every
+        half is nearest to its own witness: the typology is stable in what distinguishes the
+        witnesses, not finely enough to match every half to its witness.
+      </p>
+      <div class="card" style="overflow-x:auto;" id="table-typology-splithalf"></div>
+    </section>
+
+    <!-- Exploratory -->
+    <section id="exploratory">
+      <h2 class="section-title">Exploratory views</h2>
+      <p class="section-subtitle">Not part of the article&rsquo;s argument; shown for transparency</p>
+
+      <h3>Clustering signal by amount of text</h3>
+      <div class="chart-container">
+        <div id="chart-cumulative" style="height:380px;"></div>
+      </div>
+      <p>
+        ARI of a k-means clustering against the witness labels, recomputed on the variants of the
+        first <em>n</em> chapters. It stays close to zero however much text is added.
+      </p>
+
+      <h3>Chapter profiles</h3>
+      <div class="chart-container">
+        <div id="chart-stability" style="height:320px;"></div>
+      </div>
+      <p>
+        Cosine distance between each chapter profile of a witness and its whole-Gospel profile
+        (baseline B). Chapter profiles rest on few variants and are noisy; the heat map is not
+        used for inference.
+      </p>
+
+      <h3>Two-dimensional projection</h3>
+      <div class="fig-gallery single">
         <div class="fig-item">
-          <img src="img/fig6_cumulative_A.png" alt="Cumulative signal (Baseline A)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 6.</strong> Cumulative signal, Baseline A.</div>
-        </div>
-        <div class="fig-item">
-          <img src="img/fig7_stability_heatmap_A.png" alt="Stability heatmap (Baseline A)" loading="lazy">
-          <div class="fig-caption"><strong>Figure 7.</strong> Chapter stability heatmap, Baseline A.</div>
+          <img src="img/fig1_pca_full_B.png" alt="PCA projection of change vectors, baseline B" loading="lazy">
+          <div class="fig-caption">
+            PCA of the change vectors (baseline B). The four witness centroids lie inside one cloud,
+            and the first two components carry only a small share of the variance, so the projection
+            does not show the separation measured above, and the article does not reproduce it
+            (§ 5.2). The number in the title of the image is the pipeline&rsquo;s own, not the
+            article&rsquo;s.
+          </div>
         </div>
       </div>
     </section>
@@ -177,17 +250,32 @@
 
   <script src="js/main.js"></script>
   <script src="data/stats_summary.js"></script>
-  <script src="data/type_counts.js"></script>
+  <script src="data/article_checks.js"></script>
+  <script src="data/type_counts_all.js"></script>
   <script src="data/cumulative_ari.js"></script>
   <script src="data/chapter_stability.js"></script>
   <script src="js/charts.js"></script>
   <script>
-    renderStatsTable('stats-table');
-    renderAblationChart('chart-ablation');
-    renderTypeChart('chart-types');
+    renderTypeShares('chart-types', 'table-types', 'B');
+    document.querySelectorAll('#type-baseline-tabs .tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#type-baseline-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderTypeShares('chart-types', 'table-types', btn.dataset.baseline);
+      });
+    });
+    renderTypologyTable('table-typology');
+    renderBezaeBlocks('table-bezae');
+    renderSinaiticusTable('table-sinaiticus');
+    renderEmbeddingTable('table-embedding');
+    renderPairTable('table-pairs');
+    renderWithinClassTable('table-within');
+    renderFeaturePlot('chart-features', 'table-features');
+    renderSplitHalfSummary('table-splithalf-summary');
+    renderSplitHalf('chart-splithalf', 'table-splithalf-pairs', 'table-splithalf-matrix', 'B');
+    renderTypologySplitHalf('table-typology-splithalf');
     renderCumulativeChart('chart-cumulative');
     renderStabilityHeatmap('chart-stability');
   </script>
 </body>
 </html>
-

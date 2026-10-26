@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Variant Explorer — Scribal Fingerprints</title>
-  <meta name="description" content="Browse individual textual variants from the Gospel of John manuscript analysis.">
+  <title>Variant Explorer — Textual Variation in John</title>
+  <meta name="description" content="Browse a stratified sample of the annotated variants of five Greek witnesses to the Gospel of John.">
   <link rel="stylesheet" href="css/style.css">
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
@@ -19,7 +19,7 @@
 
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <a href="index.html" class="nav-brand">Textual Variation in John</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -36,21 +36,30 @@
   <main class="container">
     <h1>Variant Explorer</h1>
     <p>
-      Browse individual textual variants extracted from the manuscripts. Use the filters
-      and search box to explore specific manuscripts, variant types, or Greek readings.
+      Browse individual variants as the pipeline annotated them. Each row is one divergence of a
+      witness from a baseline; readings are shown in the transcribed spelling, without accents.
+      Use the filters and the search box to select a baseline, a witness, a variant type or a
+      Greek reading.
     </p>
 
     <div class="sample-note">
-      Showing a stratified sample of <strong><span id="sample-count">—</span></strong> variants.
-      The full dataset is available in the
+      Showing a stratified sample of <strong><span id="sample-count">—</span></strong> variants
+      against baselines B, A and &#x2135;. The full tables (<code>data/variants_full_john_*.csv</code>)
+      are in the
       <a href="https://github.com/Agnieszkachr/scribal-fingerprints" target="_blank" rel="noopener">GitHub repository</a>.
     </div>
 
     <div class="filter-bar">
       <div>
-        <label for="filter-ms">Manuscript:</label>
+        <label for="filter-baseline">Baseline:</label>
+        <select id="filter-baseline">
+          <option value="">All baselines</option>
+        </select>
+      </div>
+      <div>
+        <label for="filter-ms">Witness:</label>
         <select id="filter-ms">
-          <option value="">All manuscripts</option>
+          <option value="">All witnesses</option>
         </select>
       </div>
       <div>

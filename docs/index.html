@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scribal Fingerprints — Manuscript Change Profiles</title>
-  <meta name="description" content="Interactive research website presenting a computational analysis of textual variation across major Greek witnesses to the Gospel of John.">
+  <title>Textual Variation in John — Manuscript Change Profiles</title>
+  <meta name="description" content="Code, data and results of a computational analysis of textual variation in five Greek witnesses to the Gospel of John: a validated variant typology and a calibration of contextual embeddings.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <!-- Navigation -->
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Scribal Fingerprints</a>
+      <a href="index.html" class="nav-brand">Textual Variation in John</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -34,11 +34,13 @@
         <h1>The Typological Structure of Textual Variation</h1>
         <p class="author">Agnieszka B. Ziemińska</p>
         <p class="summary">
-          A computational analysis of aggregate change profiles across five major Greek witnesses
-          to the Gospel of John — <span class="greek-text">P66</span>, Codex Sinaiticus
-          (<span class="greek-text">&#x2135;</span>), Codex Alexandrinus (A), Codex Vaticanus (B),
-          and Codex Bezae (D) — testing whether each manuscript carries a statistically
-          detectable, reproducible change profile.
+          A computational analysis of five Greek witnesses to the Gospel of John &mdash;
+          <span class="greek-text">P66</span>, Codex Sinaiticus
+          (<span class="greek-text">&#x2135;</span>), Codex Alexandrinus (A), Codex Vaticanus (B)
+          and Codex Bezae (D). Every divergence from the baseline is annotated by type and embedded
+          in its context, to ask whether the qualitative characterisations of these witnesses
+          correspond to measurable, stable manuscript-level change profiles. This is the first stage
+          of a longer project: the method is built and calibrated on one Gospel.
         </p>
       </div>
     </section>
@@ -46,41 +48,64 @@
     <!-- Key Findings -->
     <section class="container">
       <h2 class="section-title">Key Findings</h2>
-      <p class="section-subtitle">Primary analysis: full Gospel of John, Baseline B (Codex Vaticanus)</p>
+      <p class="section-subtitle">Gospel of John, baseline B (Codex Vaticanus)</p>
 
       <div class="stat-grid" id="stat-cards">
         <div class="stat-card">
-          <span class="stat-value" id="stat-n">—</span>
-          <span class="stat-label">Token-level variants</span>
-          <span class="stat-sublabel">Across 21 chapters</span>
+          <span class="stat-value" id="stat-n">&mdash;</span>
+          <span class="stat-label">Annotated variants</span>
+          <span class="stat-sublabel">Four witnesses against B</span>
         </div>
         <div class="stat-card">
-          <span class="stat-value" id="stat-d">—</span>
-          <span class="stat-label">Cohen's <em>d</em></span>
-          <span class="stat-sublabel">Effect size (embedding space)</span>
+          <span class="stat-value" id="stat-v">&mdash;</span>
+          <span class="stat-label">Cramér's <em class="nc">V</em></span>
+          <span class="stat-sublabel">Witness &times; variant type <span id="stat-v-p"></span></span>
         </div>
         <div class="stat-card">
-          <span class="stat-value" id="stat-ari">—</span>
+          <span class="stat-value">0.97</span>
+          <span class="stat-label">Cohen's <span class="nc">&kappa;</span></span>
+          <span class="stat-sublabel">Rule against blind human annotation (300 variants)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-d">&mdash;</span>
+          <span class="stat-label">Cohen's <em class="nc">d</em></span>
+          <span class="stat-sublabel">Embedding separation: detectable, negligible</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-ari">&mdash;</span>
           <span class="stat-label">Adjusted Rand Index</span>
-          <span class="stat-sublabel">Clustering agreement</span>
+          <span class="stat-sublabel">Clustering recovers almost nothing (0 = chance)</span>
         </div>
         <div class="stat-card">
-          <span class="stat-value" id="stat-v">—</span>
-          <span class="stat-label">Cramér's <em>V</em></span>
-          <span class="stat-sublabel">Variant sub-type association</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value" id="stat-rho">—</span>
-          <span class="stat-label">Odd–Even ρ</span>
-          <span class="stat-sublabel">Split-half reproducibility</span>
+          <span class="stat-value" id="stat-gap">&mdash;</span>
+          <span class="stat-label">Split-half gap</span>
+          <span class="stat-sublabel">Own half closer than other witnesses <span id="stat-gap-p"></span></span>
         </div>
       </div>
 
+      <ul class="findings-list">
+        <li>
+          <strong>The typology is the robust result.</strong> The witnesses differ measurably in the
+          kinds of change they introduce, under three witness baselines and the SBL edition, with
+          directional patterns that match the qualitative descriptions in outline and correct them in
+          detail.
+        </li>
+        <li>
+          <strong>The embeddings add little to it.</strong> The separation in embedding space is
+          marginal, carried by Alexandrinus, and all but absent within single variant classes.
+        </li>
+        <li>
+          <strong>No sign that the separation is lexical.</strong> Hiding the content words of the
+          context costs no more of the separation than hiding the same number of random words; the
+          difference between the two is not distinguishable from zero.
+        </li>
+      </ul>
+
       <div class="callout">
-        All reported values are derived programmatically from the pipeline output files.
-        Results are reported for three baselines (B, A and a verse-matched subset) and two
-        content-ablation conditions, so that the profiles can be checked against the choice
-        of reference text and against the lexical content of the variants.
+        All values are read from the pipeline output files. The analyses are repeated with Codex
+        Vaticanus, Codex Alexandrinus and Codex Sinaiticus as baselines, and the typology also with
+        the SBL edition. The profiles are read as properties of the manuscripts, which combine
+        text-type, exemplar and scribe, not as fingerprints of individual scribes.
       </div>
     </section>
 
@@ -91,12 +116,12 @@
         <a href="methodology.html" class="stat-card" style="text-decoration:none;">
           <span class="stat-value" style="font-size:1.25rem;">&#9881;</span>
           <span class="stat-label">Methodology</span>
-          <span class="stat-sublabel">Pipeline, typology, and coverage</span>
+          <span class="stat-sublabel">Transcriptions, annotation rule, embeddings, inference</span>
         </a>
         <a href="results.html" class="stat-card" style="text-decoration:none;">
           <span class="stat-value" style="font-size:1.25rem;">&#9783;</span>
           <span class="stat-label">Results</span>
-          <span class="stat-sublabel">Interactive charts and statistics</span>
+          <span class="stat-sublabel">The five findings with their tables and figures</span>
         </a>
         <a href="explorer.html" class="stat-card" style="text-decoration:none;">
           <span class="stat-value" style="font-size:1.25rem;">&#128269;</span>
@@ -123,29 +148,22 @@
   <script src="js/main.js"></script>
   <script src="data/stats_summary.js"></script>
   <script>
-    // Load stats from inline JS data
     (function() {
       const data = window.DATA_STATS;
       if (!data) { console.error('Stats data not loaded'); return; }
       const b = data.configs['Baseline B'];
       if (!b) return;
-
       const fmt = (v, dec) => typeof v === 'number' ? v.toFixed(dec) : '—';
-      const stale = b.stale === true ? ' *' : '';
-
+      const pTxt = p => typeof p === 'number' ? `(p ${p < 0.001 ? '< 0.001' : '= ' + p.toFixed(3)})` : '';
       if (typeof b.N_current === 'number') {
-        document.getElementById('stat-n').textContent = b.N_current.toLocaleString();
+        document.getElementById('stat-n').textContent = b.N_current.toLocaleString('en-GB');
       }
-      document.getElementById('stat-d').textContent = fmt(b["Cohen's d"], 4) + stale;
-      document.getElementById('stat-ari').textContent = fmt(b['ARI'], 4) + stale;
-      document.getElementById('stat-v').textContent = fmt(b["Cramer's V Sub"], 4);
-      document.getElementById('stat-rho').textContent = fmt(b['Odd_Even_Split_Rho'], 4) + stale;
-      if (stale) {
-        const note = document.createElement('p');
-        note.className = 'table-note';
-        note.textContent = '* Embedding-based value; refreshed by the embedding stage of the pipeline.';
-        document.getElementById('stat-rho').closest('section').appendChild(note);
-      }
+      document.getElementById('stat-v').textContent = fmt(b["Cramer's V Broad"], 3);
+      document.getElementById('stat-v-p').textContent = pTxt(b["Cramer's V Broad_P"]);
+      document.getElementById('stat-d').textContent = fmt(b["Cohen's d"], 3);
+      document.getElementById('stat-ari').textContent = fmt(b['ARI'], 3);
+      document.getElementById('stat-gap').textContent = fmt(b['Split_Half_Gap'], 2);
+      document.getElementById('stat-gap-p').textContent = pTxt(b['Split_Half_Gap_P']);
     })();
   </script>
 </body>
