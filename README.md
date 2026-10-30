@@ -84,7 +84,9 @@ of the type mixture. The ARI of a four-cluster partition is 0.002. Within single
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
-has a paired-bootstrap 95 % interval of −0.006 to 0.015. See `outputs/pilot_report_full_*.txt` and the website.
+has a paired-bootstrap 95 % interval of −0.006 to 0.015. The content-masked d also exceeds the
+null that keeps each witness's mixture of types (0.002 ± 0.001, p = 0.003;
+`outputs/type_stratified_permutation.json`). See `outputs/pilot_report_full_*.txt` and the website.
 
 The embedding stage (`profile_scribes.py`) requires the BERT model; the vector files
 (`outputs/*.pkl`) are not part of the repository.

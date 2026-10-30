@@ -239,7 +239,17 @@
         null distributions, with the +1 correction of Phipson and Smyth (2010). As a second guard, the
         change vectors of one witness in one verse are averaged into a single vector before d is
         recomputed, and this verse-level d is tested against its own null, in which whole
-        witness&ndash;verse units are shuffled within chapters.
+        witness&ndash;verse units are shuffled within chapters. A third null shuffles the labels
+        within chapter &times; variant type, so that each witness keeps its mixture of types; it
+        tests whether the corpus-wide d is a by-product of that mixture.
+      </p>
+      <p>
+        No correction for multiple comparisons is applied, because no single p-value is used to
+        declare a finding: the effect sizes and their intervals carry the results, and a p-value says
+        only whether an effect is distinguishable from a null that assumes variants to be exchangeable
+        between witnesses within a chapter. A result is counted only when it is replicated under all
+        three baselines and, where the split applies, in both halves of the Gospel; values that reach
+        p &lt; 0.05 in one configuration only are reported but not interpreted.
       </p>
       <ul class="findings-list">
         <li><strong>Cramér&rsquo;s V:</strong> association between witness and variant type, on three
