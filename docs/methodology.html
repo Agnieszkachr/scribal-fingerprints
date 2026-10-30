@@ -51,7 +51,7 @@
           <div class="step-box">
             <span class="step-num">Step 2</span>
             <span class="step-title">Alignment</span>
-            <span class="step-desc">LCS on normalised tokens, verse by verse</span>
+            <span class="step-desc">Ratcliff&ndash;Obershelp matching on normalised tokens, verse by verse</span>
           </div>
         </div>
         <span class="pipeline-arrow">&#x2192;</span>
@@ -114,8 +114,10 @@
     <section>
       <h2 class="section-title">Variant Annotation</h2>
       <p>
-        Each witness verse is aligned with the baseline verse by longest-common-subsequence matching
-        on <em>normalised</em> tokens. Normalisation folds the alternations that are orthographic
+        Each witness verse is aligned with the baseline verse by Ratcliff&ndash;Obershelp matching
+        (<code>difflib.SequenceMatcher</code>, which finds the longest contiguous block of shared tokens
+        and repeats the search on either side of it; a heuristic, not an exact longest-common-subsequence
+        alignment) on <em>normalised</em> tokens. Normalisation folds the alternations that are orthographic
         rather than textual (itacism, &omega;/&omicron;, movable &nu; and &sigmaf;, elision, consonant
         gemination), so that they neither break the alignment nor surface as variants. Every
         non-equal block of the alignment becomes one variant, annotated by a deterministic,
@@ -159,7 +161,7 @@
 
       <h3>Transpositions and unequal blocks</h3>
       <p>
-        Longest-common-subsequence alignment never emits a transposition as one block:
+        The alignment never emits a transposition as one block:
         <span class="greek-text">A B &rarr; B A</span> arrives as an omission and an addition, and
         <span class="greek-text">A x B &rarr; B x A</span> as two substitutions. Word-order shifts are
         therefore recovered after alignment: an omission and an addition (or two substitutions) whose
@@ -289,6 +291,8 @@
               <td>d within each variant class with intervals and p-values (Table 4), paired comparison of the masked conditions, split halves of the typology, Sinaiticus and Bezae by chapter (Figure 2 of the article)</td></tr>
             <tr><td><code>verse_level_check.py</code></td>
               <td>Cohen&rsquo;s d on verse aggregates, tested by permuting whole witness&ndash;verse units within chapters (anchors B, A and &#x2135;)</td></tr>
+            <tr><td><code>type_stratified_check.py</code></td>
+              <td>Cohen&rsquo;s d against a null that shuffles the witness labels within chapter &times; variant type, so that each witness keeps its mixture of types</td></tr>
             <tr><td><code>docs/prepare_website_data.py</code></td>
               <td>Writes the data files and figures of this website from the pipeline outputs</td></tr>
           </tbody>

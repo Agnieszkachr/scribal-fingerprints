@@ -1,0 +1,46 @@
+{
+ "B": {
+  "n": 4365,
+  "d": 0.0142,
+  "chapter_null_mean": 0.0007,
+  "chapter_null_sd": 0.0009,
+  "chapter_p": 0.0005,
+  "type_stratified_null_mean": 0.0013,
+  "type_stratified_null_sd": 0.0009,
+  "type_stratified_p": 0.0005,
+  "n_perm": 2000
+ },
+ "A": {
+  "n": 4086,
+  "d": 0.0073,
+  "chapter_null_mean": 0.0004,
+  "chapter_null_sd": 0.0009,
+  "chapter_p": 0.0005,
+  "type_stratified_null_mean": 0.0005,
+  "type_stratified_null_sd": 0.0009,
+  "type_stratified_p": 0.0005,
+  "n_perm": 2000
+ },
+ "aleph": {
+  "n": 4500,
+  "d": 0.0091,
+  "chapter_null_mean": 0.0007,
+  "chapter_null_sd": 0.0008,
+  "chapter_p": 0.0005,
+  "type_stratified_null_mean": 0.0009,
+  "type_stratified_null_sd": 0.0008,
+  "type_stratified_p": 0.0005,
+  "n_perm": 2000
+ },
+ "ablation_masked": {
+  "n": 4365,
+  "d": 0.0058,
+  "chapter_null_mean": 0.0004,
+  "chapter_null_sd": 0.0009,
+  "chapter_p": 0.0005,
+  "type_stratified_null_mean": 0.0015,
+  "type_stratified_null_sd": 0.0012,
+  "type_stratified_p": 0.002999,
+  "n_perm": 2000
+ }
+}

@@ -77,7 +77,10 @@ Against B, inter-manuscript distances between change vectors exceed intra-manusc
 distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001). Averaged to the
 verse (2,234 witness-verse units), d = 0.016, and permuting whole units within chapters gives
 p < 0.001 (anchor A: d = 0.005, p = 0.003; anchor ℵ: d = 0.010, p < 0.001;
-`outputs/verse_level_permutation.json`). The ARI of a four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
+`outputs/verse_level_permutation.json`). With the witness labels shuffled within chapter x variant
+type, so that each witness keeps its mixture of types, the null is 0.001 ± 0.001 and p < 0.001 under
+all three anchors (`outputs/type_stratified_permutation.json`): the separation is not a by-product
+of the type mixture. The ARI of a four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
@@ -113,6 +116,7 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── john_text_checks.py                 # Bezae's replacement blocks; Sinaiticus in John 1:1-8:38
 ├── supplementary_checks.py             # Within-class d with CIs, paired masking comparison, typology split halves
 ├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units
+├── type_stratified_check.py            # Cohen's d against a null that keeps each witness's mixture of variant types
 ├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
@@ -162,7 +166,9 @@ The surface forms in the CSVs keep the transcribed spelling.
 ### Alignment and annotation
 
 Each manuscript verse is aligned with the baseline verse by `difflib.SequenceMatcher`
-(longest common subsequence, `autojunk=False`). Every non-equal block becomes one variant:
+(`autojunk=False`), an implementation of Ratcliff–Obershelp matching: it finds the longest
+contiguous block of shared tokens and repeats the search on either side of it. This is a
+heuristic, not an exact longest-common-subsequence alignment. Every non-equal block becomes one variant:
 
 - `insert` → **addition**; `delete` → **omission**;
 - `replace` with the same multiset of words → **word-order shift**;
@@ -171,7 +177,7 @@ Each manuscript verse is aligned with the baseline verse by `difflib.SequenceMat
   otherwise (see *Morphological vs lexical substitution* below);
 - after alignment, an omission and an addition (or two substitutions) of the same words
   within eight baseline tokens of each other are merged into one **word-order shift**,
-  since the LCS alignment never emits a transposition as a single block.
+  since the alignment never emits a transposition as a single block.
 
 ### Morphological vs lexical substitution (`src/utils/lemma_lexicon.py`)
 
@@ -312,7 +318,11 @@ python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs
 #     (anchors B, A, ℵ; needs the vector files of step 4)
 python verse_level_check.py      # -> outputs/verse_level_permutation.json
 
-# 12. Website data (reads everything above; run last)
+# 12. Cohen's d against a null that shuffles witness labels within chapter x variant type
+#     (anchors B, A, ℵ and the content-masked dataset; needs the vector files of step 4)
+python type_stratified_check.py  # -> outputs/type_stratified_permutation.json
+
+# 13. Website data (reads everything above; run last)
 python docs/prepare_website_data.py
 ```
 
@@ -369,10 +379,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.1,
+versions and resolves to the latest one; the results of the article are those of version 2.1.2,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.1). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.2). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -380,7 +390,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.1},
+  version   = {2.1.2},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }
