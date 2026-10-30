@@ -1,0 +1,29 @@
+{
+ "B": {
+  "n_variants": 4365,
+  "n_units": 2234,
+  "d": 0.016,
+  "null_mean": 0.0006,
+  "null_sd": 0.0016,
+  "p": 0.0005,
+  "n_perm": 2000
+ },
+ "A": {
+  "n_variants": 4086,
+  "n_units": 2053,
+  "d": 0.0048,
+  "null_mean": 0.0001,
+  "null_sd": 0.0016,
+  "p": 0.0035,
+  "n_perm": 2000
+ },
+ "aleph": {
+  "n_variants": 5176,
+  "n_units": 2419,
+  "d": 0.0096,
+  "null_mean": 0.0005,
+  "null_sd": 0.0014,
+  "p": 0.0005,
+  "n_perm": 2000
+ }
+}

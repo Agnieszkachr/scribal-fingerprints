@@ -44,7 +44,8 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
   behaviour on unaccented Koine transcriptions has not been validated independently.
 - **Dependence between observations.** Several variants can occur in one verse and their
   context windows overlap. Inference therefore uses chapter-level blocks (bootstrap and
-  permutation), and the embedding report additionally gives a verse-level effect size.
+  permutation), and the verse-level effect size is tested against its own null, in which
+  whole witness-verse units are permuted within chapters (`verse_level_check.py`).
 
 ## Key Results (variant typology, current extraction)
 
@@ -73,8 +74,10 @@ the five classes (`outputs/supplementary_checks.json`).
 ### Embedding-based results
 
 Against B, inter-manuscript distances between change vectors exceed intra-manuscript
-distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001); the ARI of a
-four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
+distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001). Averaged to the
+verse (2,234 witness-verse units), d = 0.016, and permuting whole units within chapters gives
+p < 0.001 (anchor A: d = 0.005, p = 0.004; anchor ℵ: d = 0.010, p < 0.001;
+`outputs/verse_level_permutation.json`). The ARI of a four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
@@ -109,6 +112,7 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── sbl_anchor.py                       # Typology with the SBL edition as anchor
 ├── john_text_checks.py                 # Bezae's replacement blocks; Sinaiticus in John 1:1-8:38
 ├── supplementary_checks.py             # Within-class d with CIs, paired masking comparison, typology split halves
+├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units
 ├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
 │   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
@@ -304,7 +308,11 @@ python john_text_checks.py   # -> outputs/john_text_checks.json
 #     Bezae's variants shared with Sinaiticus chapter by chapter (needs the vector files of step 4)
 python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs/fig8_aleph_D_by_chapter.png
 
-# 11. Website data (reads everything above; run last)
+# 11. Cohen's d on verse aggregates, permuting whole witness-verse units within chapters
+#     (anchors B, A, ℵ; needs the vector files of step 4)
+python verse_level_check.py      # -> outputs/verse_level_permutation.json
+
+# 12. Website data (reads everything above; run last)
 python docs/prepare_website_data.py
 ```
 
@@ -361,10 +369,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.0,
+versions and resolves to the latest one; the results of the article are those of version 2.1.1,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.0). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.1). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -372,7 +380,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.0},
+  version   = {2.1.1},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }

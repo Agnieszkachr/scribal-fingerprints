@@ -7,9 +7,9 @@ authors:
     orcid: "https://orcid.org/0000-0002-8439-6019"
     affiliation: "Institute of Literary Research of the Polish Academy of Sciences (IBL PAN), Centre for Digital Humanities"
 title: "scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)"
-version: 2.1.0
+version: 2.1.1
 doi: 10.5281/zenodo.23359315
-date-released: 2026-10-26
+date-released: 2026-10-30
 url: "https://github.com/Agnieszkachr/scribal-fingerprints"
 repository-code: "https://github.com/Agnieszkachr/scribal-fingerprints"
 license: MIT
