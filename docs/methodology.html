@@ -231,11 +231,13 @@
         Several variants can occur in one verse and their context windows overlap, so the change
         vectors are not independent observations. Inference uses the chapter as the resampling block:
         block bootstrap (chapters resampled with replacement, 2,000 replicates) for confidence
-        intervals, and block permutation (witness labels shuffled within chapters; 2,000 permutations
+        intervals, and block permutation (the witness labels of individual variants shuffled within
+        chapters; 2,000 permutations
         for Cohen&rsquo;s d, 200 for Cramér&rsquo;s V and the ARI, 500 for the split-half geometry) for the
         null distributions, with the +1 correction of Phipson and Smyth (2010). As a second guard, the
         change vectors of one witness in one verse are averaged into a single vector before d is
-        recomputed.
+        recomputed, and this verse-level d is tested against its own null, in which whole
+        witness&ndash;verse units are shuffled within chapters.
       </p>
       <ul class="findings-list">
         <li><strong>Cramér&rsquo;s V:</strong> association between witness and variant type, on three
@@ -285,6 +287,8 @@
               <td>Per-configuration figures: type shares (Figure 1 of the article, <code>fig4_types_full_B.png</code>), projection, dendrogram, cumulative signal, chapter heat map</td></tr>
             <tr><td><code>supplementary_checks.py</code></td>
               <td>d within each variant class with intervals and p-values (Table 4), paired comparison of the masked conditions, split halves of the typology, Sinaiticus and Bezae by chapter (Figure 2 of the article)</td></tr>
+            <tr><td><code>verse_level_check.py</code></td>
+              <td>Cohen&rsquo;s d on verse aggregates, tested by permuting whole witness&ndash;verse units within chapters (anchors B, A and &#x2135;)</td></tr>
             <tr><td><code>docs/prepare_website_data.py</code></td>
               <td>Writes the data files and figures of this website from the pipeline outputs</td></tr>
           </tbody>
