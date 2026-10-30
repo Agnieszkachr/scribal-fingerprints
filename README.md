@@ -76,7 +76,7 @@ the five classes (`outputs/supplementary_checks.json`).
 Against B, inter-manuscript distances between change vectors exceed intra-manuscript
 distances by Cohen's d = 0.014 [0.004 – 0.026] (block permutation p < 0.001). Averaged to the
 verse (2,234 witness-verse units), d = 0.016, and permuting whole units within chapters gives
-p < 0.001 (anchor A: d = 0.005, p = 0.004; anchor ℵ: d = 0.010, p < 0.001;
+p < 0.001 (anchor A: d = 0.005, p = 0.003; anchor ℵ: d = 0.010, p < 0.001;
 `outputs/verse_level_permutation.json`). The ARI of a four-cluster partition is 0.002. Within single variant classes d lies between −0.005 and
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random

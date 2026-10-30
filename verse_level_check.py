@@ -44,7 +44,7 @@ def main():
             "d": round(float(d), 4),
             "null_mean": round(float(np.mean(perm)), 4),
             "null_sd": round(float(np.std(perm)), 4),
-            "p": round(float(p), 4),
+            "p": round(float(p), 6),
             "n_perm": len(perm),
         }
         print(anchor, out[anchor])
