@@ -121,7 +121,7 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── type_stratified_check.py            # Cohen's d against a null that keeps each witness's mixture of variant types
 ├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
-│   ├── raw/john/                       # Raw ITSEE transcriptions (one file per witness)
+│   ├── raw/john/                       # IGNTP transcriptions via ITSEE (CC BY 4.0), one file per witness
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
 │   ├── variants_ablation_{matched,func_words,masked,random_masked[_s1..s4]}.csv
 │   └── common_extant_verses.txt        # 532 verses with attested text in all five witnesses
@@ -204,7 +204,7 @@ The rule was checked against blind hand annotation of two samples from John
 - 200 substitution pairs, 25 from each of eight bands of character similarity: the lexicon
   rule agrees in 94.0 % (κ = 0.87), character similarity alone in 78.0 % at 0.5 and at most
   81.0 % at any threshold. The handling of crasis and witness spellings was added after the
-  errors of the plain lexicon lookup (87.5 %) on this sample and on the reliability sample had
+  errors of the plain lexicon lookup (87.5 %) on this sample and on the sample of 300 variants had
   been read, so these figures are in-sample.
 - 300 variants stratified by type: κ = 0.97 over the five types; complete agreement for
   additions, omissions and word-order shifts; κ = 0.88 on the 134 substitutions
@@ -330,6 +330,13 @@ python docs/prepare_website_data.py
 
 The MorphGNT text in `data/morphgnt/` (Tauber 2017, doi:10.5281/zenodo.376200) is distributed
 under its own licence, CC BY-SA 3.0.
+
+The transcriptions in `data/raw/john/` (P66, 01, 02, 03 and 05; version 2.1, 2013) were created by
+the International Greek New Testament Project (IGNTP) and are published by the Institute for
+Textual Scholarship and Electronic Editing (ITSEE), University of Birmingham
+(https://itseeweb.cal.bham.ac.uk/iohannes/transcriptions/greek/), under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0). They are included as downloaded; the pipeline
+reads the first hand only and normalises the tokens as described above.
 
 ## Output Interpretation
 
