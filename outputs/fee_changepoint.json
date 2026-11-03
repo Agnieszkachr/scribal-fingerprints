@@ -1,0 +1,19 @@
+{
+ "witness": "aleph",
+ "baseline": "B",
+ "verses": 861,
+ "variants": 1199,
+ "words_of_B": 15288,
+ "best_split_after": "8:28",
+ "interval_2_loglik": [
+  "8:16",
+  "8:43"
+ ],
+ "rate_per_100_words_before": 9.62,
+ "rate_per_100_words_after": 6.68,
+ "loglik_ratio": 19.82,
+ "chapter_shuffle_null_mean": 8.93,
+ "perm_p": 0.0165,
+ "n_perm": 2000,
+ "min_verses_per_side": 20
+}

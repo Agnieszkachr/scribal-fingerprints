@@ -119,6 +119,7 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── supplementary_checks.py             # Within-class d with CIs, paired masking comparison, typology split halves
 ├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units
 ├── type_stratified_check.py            # Cohen's d against a null that keeps each witness's mixture of variant types
+├── fee_changepoint.py                  # Sinaiticus in John: the change in its text located without Fee's boundary
 ├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
 │   ├── raw/john/                       # IGNTP transcriptions via ITSEE (CC BY 4.0), one file per witness
@@ -324,7 +325,11 @@ python verse_level_check.py      # -> outputs/verse_level_permutation.json
 #     (anchors B, A, ℵ and the content-masked dataset; needs the vector files of step 4)
 python type_stratified_check.py  # -> outputs/type_stratified_permutation.json
 
-# 13. Website data (reads everything above; run last)
+# 13. Sinaiticus in John: the point at which its rate of divergence from B changes,
+#     located without being given Fee's boundary (§ 5.1)
+python fee_changepoint.py        # -> outputs/fee_changepoint.json
+
+# 14. Website data (reads everything above; run last)
 python docs/prepare_website_data.py
 ```
 
@@ -388,10 +393,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.2,
+versions and resolves to the latest one; the results of the article are those of version 2.1.3,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.2). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.3). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -399,7 +404,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.2},
+  version   = {2.1.3},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }
