@@ -85,7 +85,7 @@ def main():
         "rate_per_100_words_after": round(100 * k[cut + 1:].sum() / e[cut + 1:].sum(), 2),
         "loglik_ratio": round(s_max, 2),
         "chapter_shuffle_null_mean": round(float(np.mean(null)), 2),
-        "perm_p": round(p, 4), "n_perm": N_PERM, "min_verses_per_side": MIN_SIDE,
+        "perm_p": round(p, 6), "n_perm": N_PERM, "min_verses_per_side": MIN_SIDE,
     }
     (ROOT / "outputs" / "fee_changepoint.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
     print(json.dumps(res, indent=1))

@@ -84,7 +84,9 @@ of the type mixture. The ARI of a four-cluster partition is 0.002. Within single
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
-has a paired-bootstrap 95 % interval of −0.006 to 0.015. The content-masked d also exceeds the
+has a paired-bootstrap 95 % interval of −0.006 to 0.015. Under content masking 697 of the 4,365
+variants have identical windows for anchor and witness; on the other 3,668 the content-masked d is
+again 0.006 (full context on the same variants: 0.015). The content-masked d also exceeds the
 null that keeps each witness's mixture of types (0.002 ± 0.001, p = 0.003;
 `outputs/type_stratified_permutation.json`). With the model's own mask token in place of `CONTENT`,
 content masked gives 0.008 and random masked 0.005; their difference, 0.003, has a paired-bootstrap
@@ -319,7 +321,8 @@ python john_text_checks.py   # -> outputs/john_text_checks.json
 
 # 10. Supplementary checks: within-class d with permutation p and bootstrap CI (anchors B, A, ℵ);
 #     content masking against random masking, paired bootstrap; split halves of the typology;
-#     Bezae's variants shared with Sinaiticus chapter by chapter (needs the vector files of step 4)
+#     Bezae's variants shared with Sinaiticus chapter by chapter; variants whose two masked windows
+#     are identical (needs the vector files of step 4)
 python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs/fig8_aleph_D_by_chapter.png
 
 # 11. Cohen's d on verse aggregates, permuting whole witness-verse units within chapters
@@ -402,10 +405,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.4,
+versions and resolves to the latest one; the results of the article are those of version 2.1.5,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.4). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.5). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -413,7 +416,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.4},
+  version   = {2.1.5},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }

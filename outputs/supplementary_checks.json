@@ -1508,5 +1508,27 @@
     "perm_p": 0.8526
    }
   }
+ },
+ "identical_masked_windows": {
+  "n": 4365,
+  "identical_content_masked": 697,
+  "share_identical": 0.1597,
+  "identical_by_type": {
+   "substitution_morphological": 512,
+   "substitution_lexical": 155,
+   "substitution_word_order": 29,
+   "addition": 1
+  },
+  "identical_random_draws": {
+   "random_masked": 12,
+   "random_masked_s1": 13,
+   "random_masked_s2": 5,
+   "random_masked_s3": 13,
+   "random_masked_s4": 11
+  },
+  "n_distinct": 3668,
+  "d_content_masked_distinct": 0.0061,
+  "d_full_context_distinct": 0.015,
+  "d_full_context_identical": 0.0063
  }
 }

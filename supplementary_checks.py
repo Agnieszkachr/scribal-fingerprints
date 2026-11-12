@@ -21,6 +21,12 @@
 4. Sinaiticus and Bezae chapter by chapter: for each chapter, the share of
    Bezae's variants that are also variants of Sinaiticus (same verse, same
    anchor reading, same witness reading), anchor B; plus a figure.
+5. Identical masked windows. Where a variant replaces one content word by
+   another, content masking leaves the same window for the anchor and for the
+   witness, and the change vector vanishes. Reported: the number of such
+   variants in the content-masked dataset (by variant type) and in each random
+   draw; d under content masking and with the full context on the variants
+   whose masked windows differ; d with the full context on the others.
     python supplementary_checks.py   ->  outputs/supplementary_checks.json,
                                          outputs/fig8_aleph_D_by_chapter.png
 """
@@ -147,6 +153,31 @@ def masked_vs_random():
                 boot_ci_high=round(float(np.percentile(diffs, 97.5)), 4),
                 boot_share_le_0=round(float(np.mean(diffs <= 0)), 4), n_boot=N_BOOT,
                 sample_per_replicate=sc.D_BOOT_MAX_N)
+
+
+# 5 ─ variants whose two masked windows are identical ───────────────
+
+def identical_windows():
+    def identical(name):
+        v = pd.read_csv(ROOT / "data" / f"variants_ablation_{name}.csv")
+        return (v["base_context_10w"].fillna("") == v["ms_context_10w"].fillna("")).to_numpy()
+
+    same = identical("masked")
+    table = load("variants_ablation_masked.csv")
+    masked, full = pkl("ablation_masked"), pkl("B")
+    for df in (masked, full):   # the vector files hold the rows of the table, in its order
+        assert len(df) == len(table) and (df["verse"].to_numpy() == table["verse"].to_numpy()).all() \
+            and (df["manuscript"].to_numpy() == table["manuscript"].to_numpy()).all()
+    labels = table["manuscript"].to_numpy()
+    vm, vf = sc.vectors(masked), sc.vectors(full)
+    return dict(n=int(len(same)), identical_content_masked=int(same.sum()),
+                share_identical=round(float(same.mean()), 4),
+                identical_by_type={t: int(n) for t, n in table.loc[same, "type"].value_counts().items()},
+                identical_random_draws={name: int(identical(name).sum()) for name in RANDOM_DRAWS},
+                n_distinct=int((~same).sum()),
+                d_content_masked_distinct=round(fast_inter_intra_d(vm[~same], labels[~same]), 4),
+                d_full_context_distinct=round(fast_inter_intra_d(vf[~same], labels[~same]), 4),
+                d_full_context_identical=round(fast_inter_intra_d(vf[same], labels[same]), 4))
 
 
 # 3 ─ split halves of the typology ──────────────────────────────────
@@ -296,7 +327,7 @@ def plot_by_chapter(rows, path):
     plt.close(fig)
 
 
-def main(parts=("within", "masking", "typology", "chapters")):
+def main(parts=("within", "masking", "typology", "chapters", "windows")):
     path = OUT / "supplementary_checks.json"
     res = {}
     if "within" in parts:
@@ -314,6 +345,8 @@ def main(parts=("within", "masking", "typology", "chapters")):
         rows = aleph_d_by_chapter()
         res["aleph_shared_by_chapter_anchor_B"] = rows
         plot_by_chapter(rows, OUT / "fig8_aleph_D_by_chapter.png")
+    if "windows" in parts:
+        res["identical_masked_windows"] = identical_windows()
     merged = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     merged.update(res)   # parts computed in separate runs are kept
     path.write_text(json.dumps(merged, indent=1, ensure_ascii=False), encoding="utf-8")
@@ -322,4 +355,4 @@ def main(parts=("within", "masking", "typology", "chapters")):
 
 if __name__ == "__main__":
     import sys
-    main(tuple(sys.argv[1:]) or ("within", "masking", "typology", "chapters"))
+    main(tuple(sys.argv[1:]) or ("within", "masking", "typology", "chapters", "windows"))

@@ -91,7 +91,7 @@ def main():
         for k in ["lexical_unequal", "lexical_equal_length"]:
             d, p = deviation_test(v, w, k, rng)
             share = 100 * (v[v.manuscript == w].kind == k).mean()
-            lexical[w][k] = {"percent_of_variants": round(share, 1), "deviation_pp": round(d, 1), "perm_p": round(p, 4)}
+            lexical[w][k] = {"percent_of_variants": round(share, 1), "deviation_pp": round(d, 1), "perm_p": round(p, 6)}
     fee = {anchor: shared_with_aleph(load(f"variants_full_john_{anchor}.csv")) for anchor in ["B", "A", "SBL"]}
     res = {"lexical_kinds_anchor_B": lexical, "shared_with_aleph_by_stretch": fee}
     (ROOT / "outputs" / "john_text_checks.json").write_text(json.dumps(res, indent=2, ensure_ascii=False), encoding="utf-8")

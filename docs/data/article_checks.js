@@ -68,48 +68,48 @@ window.DATA_ARTICLE = {
         "lexical_unequal": {
           "percent_of_variants": 10.0,
           "deviation_pp": 2.7,
-          "perm_p": 0.0045
+          "perm_p": 0.004498
         },
         "lexical_equal_length": {
           "percent_of_variants": 15.1,
           "deviation_pp": 1.4,
-          "perm_p": 0.3148
+          "perm_p": 0.314843
         }
       },
       "aleph": {
         "lexical_unequal": {
           "percent_of_variants": 8.6,
           "deviation_pp": 0.6,
-          "perm_p": 0.5792
+          "perm_p": 0.57921
         },
         "lexical_equal_length": {
           "percent_of_variants": 12.3,
           "deviation_pp": -2.5,
-          "perm_p": 0.0405
+          "perm_p": 0.04048
         }
       },
       "A": {
         "lexical_unequal": {
           "percent_of_variants": 6.5,
           "deviation_pp": -2.1,
-          "perm_p": 0.0615
+          "perm_p": 0.061469
         },
         "lexical_equal_length": {
           "percent_of_variants": 12.3,
           "deviation_pp": -2.3,
-          "perm_p": 0.1379
+          "perm_p": 0.137931
         }
       },
       "P66": {
         "lexical_unequal": {
           "percent_of_variants": 6.6,
           "deviation_pp": -2.1,
-          "perm_p": 0.03
+          "perm_p": 0.029985
         },
         "lexical_equal_length": {
           "percent_of_variants": 16.6,
           "deviation_pp": 3.2,
-          "perm_p": 0.011
+          "perm_p": 0.010995
         }
       }
     },

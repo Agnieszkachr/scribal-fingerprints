@@ -10,7 +10,9 @@ observed d is compared with that null. Anchors B, A and aleph, and the
 content-masked dataset of the feature-isolation study (anchor B).
 
 Needs the vector files written by profile_scribes.py
-(outputs/variants_full_with_vectors_<configuration>.pkl).
+(outputs/variants_full_with_vectors_<configuration>.pkl). The variant types
+are read from the variant tables in data/, row for row, so that the test uses
+the types of the typology whatever the vector file carries.
 
     python type_stratified_check.py   ->  outputs/type_stratified_permutation.json
 """
@@ -28,11 +30,30 @@ OUT = ROOT / "outputs"
 CONFIGS = ["B", "A", "aleph", "ablation_masked"]
 
 
+def variant_table(config):
+    name = (f"variants_{config}.csv" if config.startswith("ablation_")
+            else f"variants_full_john_{config}.csv")
+    return pd.read_csv(ROOT / "data" / name)
+
+
+def with_table_types(df, config):
+    """The vector file with the variant types of the variant table (same rows, same order)."""
+    table = variant_table(config)
+    same = len(table) == len(df) and all(
+        (table[c].astype(str).to_numpy() == df[c].astype(str).to_numpy()).all()
+        for c in ("verse", "manuscript", "base_reading", "ms_reading"))
+    if not same:
+        raise ValueError(f"{config}: the vector file and the variant table do not hold the same rows")
+    out = df.copy()
+    out[sc.type_column(out)] = table[sc.type_column(table)].to_numpy()
+    return out
+
+
 def main():
     configs = sys.argv[1:] or CONFIGS
     out = {}
     for anchor in configs:
-        df = pd.read_pickle(OUT / f"variants_full_with_vectors_{anchor}.pkl")
+        df = with_table_types(pd.read_pickle(OUT / f"variants_full_with_vectors_{anchor}.pkl"), anchor)
         tcol = sc.type_column(df)
         # block_permutation_cohens_d shuffles labels within the values of the
         # "chapter" column; giving it chapter x type as the block keeps the

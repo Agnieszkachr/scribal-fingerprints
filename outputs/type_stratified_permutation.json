@@ -5,7 +5,7 @@
   "chapter_null_mean": 0.0007,
   "chapter_null_sd": 0.0009,
   "chapter_p": 0.0005,
-  "type_stratified_null_mean": 0.0013,
+  "type_stratified_null_mean": 0.0014,
   "type_stratified_null_sd": 0.0009,
   "type_stratified_p": 0.0005,
   "n_perm": 2000
@@ -27,7 +27,7 @@
   "chapter_null_mean": 0.0007,
   "chapter_null_sd": 0.0008,
   "chapter_p": 0.0005,
-  "type_stratified_null_mean": 0.0009,
+  "type_stratified_null_mean": 0.0007,
   "type_stratified_null_sd": 0.0008,
   "type_stratified_p": 0.0005,
   "n_perm": 2000
@@ -38,9 +38,9 @@
   "chapter_null_mean": 0.0004,
   "chapter_null_sd": 0.0009,
   "chapter_p": 0.0005,
-  "type_stratified_null_mean": 0.0015,
-  "type_stratified_null_sd": 0.0012,
-  "type_stratified_p": 0.002999,
+  "type_stratified_null_mean": 0.0016,
+  "type_stratified_null_sd": 0.0011,
+  "type_stratified_p": 0.003498,
   "n_perm": 2000
  }
 }
