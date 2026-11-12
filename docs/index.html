@@ -26,18 +26,15 @@
     </div>
   </nav>
 
-  <main>
-    <!-- Hero Section -->
+  <main class="home">
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container" style="position:relative;">
+      <div class="container">
         <h1>The Typological Structure of Textual Variation</h1>
         <p class="author">Agnieszka B. Ziemińska</p>
         <p class="summary">
-          A computational analysis of five Greek witnesses to the Gospel of John &mdash;
-          <span class="greek-text">P66</span>, Codex Sinaiticus
-          (<span class="greek-text">&#x2135;</span>), Codex Alexandrinus (A), Codex Vaticanus (B)
-          and Codex Bezae (D). Every divergence from the baseline is annotated by type and embedded
+          A computational analysis of five Greek witnesses to the Gospel of John:
+          P66, Codex Sinaiticus (&#x2135;), Codex Alexandrinus (A), Codex Vaticanus (B) and
+          Codex Bezae (D). Every divergence from the baseline is annotated by type and embedded
           in its context, to ask whether the qualitative characterisations of these witnesses
           correspond to measurable, stable manuscript-level change profiles. This is the first stage
           of a longer project: the method is built and calibrated on one Gospel.
@@ -45,44 +42,76 @@
       </div>
     </section>
 
-    <!-- Key Findings -->
+    <!-- One verse as the pipeline reads it -->
+    <div class="container">
+      <figure class="collation">
+        <div class="collation-scroll">
+          <table>
+            <tbody>
+            <tr class="base"><th scope="row">B</th><td>ανηλθεν</td><td>δε</td><td>εις</td><td>το</td><td>ορος</td><td></td><td>ιησους</td><td>και</td><td>εκει</td><td>εκαθητο</td><td>μετα</td><td>των</td><td>μαθητων</td><td>αυτου</td><td class="record">Codex Vaticanus, the baseline</td></tr>
+            <tr><th scope="row">P66</th><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td></td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="var">εκαθεζετο</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="record">one lexical substitution</td></tr>
+            <tr><th scope="row">&#x2135;</th><td class="var">και</td><td class="var">απηλθεν</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td></td><td class="same">&middot;</td><td class="same">&middot;</td><td class="var" colspan="2">εκαθεζετο</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="record">two lexical substitutions; the second recasts two words as one</td></tr>
+            <tr><th scope="row">A</th><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="var">ο</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="record">one addition</td></tr>
+            <tr><th scope="row">D</th><td class="var">απηλθεν</td><td class="var">ουν</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td></td><td class="same">&middot;</td><td class="same">&middot;</td><td class="var">εκαθητο</td><td class="var">εκει</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="same">&middot;</td><td class="record">one lexical substitution and one word-order shift</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figcaption class="collation-caption">
+          John 6:3 as the pipeline reads it: first hand, without accents. Codex Vaticanus stands on
+          the first line; each witness below shows only where it departs from it, and the last
+          column gives what the annotation rule records. Sinaiticus and Bezae share
+          <span class="greek-text">απηλθεν</span> against <span class="greek-text">ανηλθεν</span>:
+          the verse lies in John 1:1&ndash;8:38, where Sinaiticus sides with the
+          &ldquo;Western&rdquo; text (Fee 1968).
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Key findings -->
     <section class="container">
-      <h2 class="section-title">Key Findings</h2>
+      <h2 class="section-title">Key findings</h2>
       <p class="section-subtitle">Gospel of John, baseline B (Codex Vaticanus)</p>
 
-      <div class="stat-grid" id="stat-cards">
-        <div class="stat-card">
-          <span class="stat-value" id="stat-n">&mdash;</span>
-          <span class="stat-label">Annotated variants</span>
-          <span class="stat-sublabel">Four witnesses against B</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value" id="stat-v">&mdash;</span>
-          <span class="stat-label">Cramér's <em class="nc">V</em></span>
-          <span class="stat-sublabel">Witness &times; variant type <span id="stat-v-p"></span></span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value">0.88</span>
-          <span class="stat-label">Cohen's <span class="nc">&kappa;</span></span>
-          <span class="stat-sublabel">Rule against a blind human reading on the morphological/lexical distinction</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value" id="stat-d">&mdash;</span>
-          <span class="stat-label">Cohen's <em class="nc">d</em></span>
-          <span class="stat-sublabel">Embedding separation: detectable, negligible</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value" id="stat-ari">&mdash;</span>
-          <span class="stat-label">Adjusted Rand Index</span>
-          <span class="stat-sublabel">Clustering recovers almost nothing (0 = chance)</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-value" id="stat-gap">&mdash;</span>
-          <span class="stat-label">Split-half gap</span>
-          <span class="stat-sublabel">Own half closer than other witnesses <span id="stat-gap-p"></span></span>
-        </div>
-      </div>
+      <table class="figures" id="stat-cards">
+        <thead>
+          <tr><th>Measure</th><th>Value</th><th>What it says</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Annotated variants</td>
+            <td><span id="stat-n">&mdash;</span></td>
+            <td>Divergences of the four witnesses from B</td>
+          </tr>
+          <tr>
+            <td>Cram&eacute;r&rsquo;s <em class="nc">V</em></td>
+            <td><span id="stat-v">&mdash;</span> <span class="p-note" id="stat-v-p"></span></td>
+            <td>Witness &times; variant type: a small association, distinguishable from its null</td>
+          </tr>
+          <tr>
+            <td>Cohen&rsquo;s <span class="nc">&kappa;</span></td>
+            <td>0.88</td>
+            <td>The rule against a blind human reading, on the morphological/lexical distinction</td>
+          </tr>
+          <tr>
+            <td>Cohen&rsquo;s <em class="nc">d</em></td>
+            <td><span id="stat-d">&mdash;</span></td>
+            <td>Embedding separation: detectable, negligible</td>
+          </tr>
+          <tr>
+            <td>Adjusted Rand Index</td>
+            <td><span id="stat-ari">&mdash;</span></td>
+            <td>Clustering recovers almost nothing of the witnesses (0 = chance)</td>
+          </tr>
+          <tr>
+            <td>Split-half gap</td>
+            <td><span id="stat-gap">&mdash;</span> <span class="p-note" id="stat-gap-p"></span></td>
+            <td>A witness&rsquo;s own other half is closer than the halves of other witnesses</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
+    <section class="container">
       <ul class="findings-list">
         <li>
           <strong>The typology is the robust result.</strong> The witnesses differ measurably in the
@@ -92,8 +121,9 @@
         </li>
         <li>
           <strong>The embeddings add little to it.</strong> The separation in embedding space is
-          real but very weak, concentrated in Alexandrinus and all but absent within single variant
-          classes; it is not a by-product of the witnesses&rsquo; different mixtures of variant types.
+          detectable but very weak, concentrated in Alexandrinus and all but absent within single
+          variant classes; it is not a by-product of the witnesses&rsquo; different mixtures of
+          variant types.
         </li>
         <li>
           <strong>No sign that the separation is lexical.</strong> Hiding the content words of the
@@ -110,31 +140,14 @@
       </div>
     </section>
 
-    <!-- Navigation cards -->
     <section class="container">
-      <h2 class="section-title">Explore the Research</h2>
-      <div class="stat-grid">
-        <a href="methodology.html" class="stat-card" style="text-decoration:none;">
-          <span class="stat-value" style="font-size:1.25rem;">&#9881;</span>
-          <span class="stat-label">Methodology</span>
-          <span class="stat-sublabel">Transcriptions, annotation rule, embeddings, inference</span>
-        </a>
-        <a href="results.html" class="stat-card" style="text-decoration:none;">
-          <span class="stat-value" style="font-size:1.25rem;">&#9783;</span>
-          <span class="stat-label">Results</span>
-          <span class="stat-sublabel">The five findings with their tables and figures</span>
-        </a>
-        <a href="explorer.html" class="stat-card" style="text-decoration:none;">
-          <span class="stat-value" style="font-size:1.25rem;">&#128269;</span>
-          <span class="stat-label">Variant Explorer</span>
-          <span class="stat-sublabel">Browse individual variants</span>
-        </a>
-        <a href="about.html" class="stat-card" style="text-decoration:none;">
-          <span class="stat-value" style="font-size:1.25rem;">&#9432;</span>
-          <span class="stat-label">About</span>
-          <span class="stat-sublabel">Project context and citation</span>
-        </a>
-      </div>
+      <h2 class="section-title">On this site</h2>
+      <ul class="site-links">
+        <li><a href="methodology.html">Methodology</a><span>Transcriptions, annotation rule, embeddings, inference</span></li>
+        <li><a href="results.html">Results</a><span>The five findings with their tables and figures</span></li>
+        <li><a href="explorer.html">Variant explorer</a><span>Browse individual variants</span></li>
+        <li><a href="about.html">About</a><span>Project context and citation</span></li>
+      </ul>
     </section>
   </main>
 

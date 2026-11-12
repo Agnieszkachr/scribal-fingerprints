@@ -89,7 +89,8 @@
       <p>
         Fee (1968) showed that in John 1:1&ndash;8:38 the text of Sinaiticus agrees characteristically
         with the &ldquo;Western&rdquo; tradition. The variant tables register the change: Bezae shares
-        far more of its variants with Sinaiticus before 8:38 than after it, under every baseline.
+        far more of its variants with Sinaiticus before 8:38 than after it, with B, with A and with
+        the SBL edition as the baseline.
         The boundary can also be found without being given: a search for the single point at which
         Sinaiticus&rsquo;s rate of divergence from B changes most places it after 8:28, with an
         approximate 95&nbsp;% interval from 8:16 to 8:43 that contains Fee&rsquo;s 8:38 (9.6 against
@@ -121,7 +122,10 @@
         distinguishable from the permutation null, also when the vectors are averaged to the verse and
         whole witness&ndash;verse units are permuted (d = 0.016, p &lt; 0.001). Substantively it is close to zero: the two
         distance distributions overlap almost completely, and an unsupervised clustering recovers
-        essentially nothing of which witness produced a vector.
+        essentially nothing of which witness produced a vector. The choice of layer does not hide a
+        stronger signal: across the model&rsquo;s thirteen layers d against B lies between 0.014 and
+        0.023 and is lowest at the last layer, the one used here, and the input embeddings alone give
+        0.016 (<code>layer_and_mask_checks.py</code>).
       </p>
       <div class="card" style="overflow-x:auto;" id="table-embedding"></div>
       <h3>Cohen&rsquo;s d for each pair of witnesses (baseline B)</h3>
@@ -140,7 +144,7 @@
         or &#x2135;, and its bootstrap interval includes zero. This does not make the corpus-wide d a
         by-product of the type mixture: with the witness labels shuffled within chapter &times; type, so
         that each witness keeps its mixture of types, d falls to 0.001 against 0.014 observed
-        (p &lt; 0.001). The separation is real but very weak, runs across the classes and is
+        (p &lt; 0.001). The separation is detectable but very weak, runs across the classes and is
         concentrated in Alexandrinus.
       </p>
       <div class="card" style="overflow-x:auto;" id="table-within"></div>
@@ -167,6 +171,14 @@
         part of the masked separation: with each witness&rsquo;s mixture of types kept fixed, the
         content-masked d (0.006) still exceeds its null (0.002 &plusmn; 0.001, p = 0.003;
         <code>type_stratified_check.py</code>). The data do not decide between the two readings.
+      </p>
+      <p>
+        Two checks leave this reading unchanged. With the model&rsquo;s own mask token in place of
+        the placeholder, content masking leaves d = 0.008 and random masking 0.005; their difference,
+        0.003, has a 95 % interval from &minus;0.007 to 0.014 (<code>layer_and_mask_checks.py</code>).
+        And where a variant replaces one content word by another, content masking leaves the same
+        window for baseline and witness: this happens to 697 of the 4,365 variants, and without them
+        the content-masked d is again 0.006 (<code>supplementary_checks.py</code>).
       </p>
       <div class="chart-container">
         <div id="chart-features" style="height:360px;"></div>
@@ -203,11 +215,13 @@
       <h3>Split halves of the typology</h3>
       <p>
         Against B, the association between witness and type is present in each half separately, and
-        in both halves the same witness has the largest share in four of the five classes. Under every
-        baseline the two halves of a witness differ by fewer variants than the halves of different
-        witnesses (gap p = 0.002), but not every
-        half is nearest to its own witness: the typology is stable in what distinguishes the
-        witnesses, not finely enough to match every half to its witness.
+        on the full attested text the same witness has the largest share in four of the five classes
+        in both halves. On the 532 verses attested in all five witnesses it does so in two classes,
+        additions and omissions, and the association in the odd half falls just short of the
+        conventional threshold. Under every baseline the two halves of a witness differ by fewer
+        variants than the halves of different witnesses (gap p = 0.002), but not every half is
+        nearest to its own witness: the typology is stable in separating a witness from the others,
+        less so in the finer comparisons.
       </p>
       <div class="card" style="overflow-x:auto;" id="table-typology-splithalf"></div>
     </section>

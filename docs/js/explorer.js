@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!data) {
       console.error('Variant data not loaded');
       document.getElementById('explorer-container').innerHTML =
-        '<p style="color:#CB4335;">Variant data could not be loaded.</p>';
+        '<p><strong>Variant data could not be loaded.</strong></p>';
       return;
     }
 
@@ -74,6 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (err) {
     console.error('Explorer init error:', err);
     document.getElementById('explorer-container').innerHTML =
-      '<p style="color:#CB4335;">Failed to load variant data. Please check the data files.</p>';
+      '<p><strong>The variant data could not be loaded.</strong> Check that the files in <code>docs/data/</code> are present.</p>';
   }
 });

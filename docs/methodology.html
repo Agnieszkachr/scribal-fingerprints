@@ -118,9 +118,14 @@
         Each witness verse is aligned with the baseline verse by Ratcliff&ndash;Obershelp matching
         (<code>difflib.SequenceMatcher</code>, which finds the longest contiguous block of shared tokens
         and repeats the search on either side of it; a heuristic, not an exact longest-common-subsequence
-        alignment) on <em>normalised</em> tokens. Normalisation folds the alternations that are orthographic
-        rather than textual (itacism, &omega;/&omicron;, movable &nu; and &sigmaf;, elision, consonant
-        gemination), so that they neither break the alignment nor surface as variants. Every
+        alignment) on <em>normalised</em> tokens. Normalisation folds the alternations that are usually
+        orthographic (itacism, &omega;/&omicron;, movable &nu; and &sigmaf;, elision, consonant
+        gemination), so that they neither break the alignment nor surface as variants. The filter is
+        deliberately coarse: where one of these alternations coincides with a grammatical distinction
+        (<span class="greek-text">ἡμεῖς/ὑμεῖς</span>, indicative and subjunctive,
+        <span class="greek-text">-ον/-ων</span>), the two forms receive the same key and the
+        difference is not counted, so that a small class of genuine readings is set aside together
+        with the orthographic ones. Every
         non-equal block of the alignment becomes one variant, annotated by a deterministic,
         inspectable rule; no model is trained, which is why the procedure is called
         <em>annotation</em> rather than classification.
@@ -221,7 +226,8 @@
         <li><strong>Function words only:</strong> the 1,767 variants whose readings consist entirely of
           closed-class words; the contexts are untouched.</li>
         <li><strong>Content masked:</strong> every variant, with each content word in the readings and
-          the context windows replaced by a placeholder.</li>
+          the context windows replaced by a placeholder; the analysis is repeated with the
+          model&rsquo;s own mask token in its place.</li>
         <li><strong>Random masked (control):</strong> every variant, with the same number of words per
           field replaced at random positions, in five independent draws.</li>
       </ul>

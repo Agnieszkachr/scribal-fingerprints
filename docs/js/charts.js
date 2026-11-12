@@ -5,22 +5,31 @@
    ============================================================ */
 
 const COLORS = {
-  accent:    '#2A7F8E',
-  blue:      '#2C5F7C',
-  gold:      '#C4963C',
-  bg:        '#FAFAF8',
-  text:      '#2D2D2D',
-  muted:     '#6B6B6B',
-  border:    '#E0DED8',
-  bgCard:    '#FFFFFF',
+  tomato:    '#F0431A',   // the one accent of the site, and the first series
+  blue:      '#2B6CB0',
+  teal:      '#1FA088',
+  violet:    '#8E5FD8',
+  amber:     '#D4A017',
+  text:      '#22262B',
+  muted:     '#4A5059',
+  neutral:   '#8A9099',
+  grid:      '#DADDE1',
+  border:    '#BFC4CA',
+  surface:   '#F6F7F8',
+};
+
+const AXIS = {
+  gridcolor: COLORS.grid, linecolor: COLORS.border, zerolinecolor: COLORS.border,
+  tickcolor: COLORS.border, title: { font: { size: 13, color: COLORS.muted } },
 };
 
 const PLOTLY_LAYOUT = {
-  paper_bgcolor: COLORS.bgCard,
-  plot_bgcolor: COLORS.bgCard,
-  font: { family: 'Inter, sans-serif', color: COLORS.text, size: 13 },
+  paper_bgcolor: COLORS.surface,
+  plot_bgcolor: COLORS.surface,
+  font: { family: "'Sofia Sans', 'Segoe UI', Arial, sans-serif", color: COLORS.text, size: 14 },
   margin: { t: 30, r: 30, b: 60, l: 60 },
-  hoverlabel: { bgcolor: '#fff', bordercolor: COLORS.border, font: { size: 12 } },
+  hoverlabel: { bgcolor: '#fff', bordercolor: COLORS.border, font: { size: 13, color: COLORS.text } },
+  template: { layout: { xaxis: AXIS, yaxis: AXIS } },
 };
 
 const PLOTLY_CONFIG = { responsive: true, displayModeBar: false };
@@ -28,11 +37,11 @@ const PLOTLY_CONFIG = { responsive: true, displayModeBar: false };
 /* Witness order of the article (Table 2), then the baseline witnesses */
 const WITNESS_ORDER = ['P66', 'aleph', 'A', 'D', 'B'];
 const TYPES = [
-  { key: 'substitution_morphological', label: 'Morphological subst.', color: '#2C5F7C' },
-  { key: 'substitution_lexical',       label: 'Lexical subst.',       color: '#C4963C' },
-  { key: 'substitution_word_order',    label: 'Word order',           color: '#2A7F8E' },
-  { key: 'addition',                   label: 'Addition',             color: '#CB4335' },
-  { key: 'omission',                   label: 'Omission',             color: '#7D3C98' },
+  { key: 'substitution_morphological', label: 'Morphological subst.', color: COLORS.tomato },
+  { key: 'substitution_lexical',       label: 'Lexical subst.',       color: COLORS.blue },
+  { key: 'substitution_word_order',    label: 'Word order',           color: COLORS.teal },
+  { key: 'addition',                   label: 'Addition',             color: COLORS.violet },
+  { key: 'omission',                   label: 'Omission',             color: COLORS.amber },
 ];
 const BASELINE_TAGS = { 'B': 'B', 'A': 'A', 'ℵ': 'aleph' };
 
@@ -84,7 +93,7 @@ function renderTypeShares(chartId, tableId, baselineLabel) {
   const x = rows.map(r => `${msLabel(r.ms)}<br>n = ${r.n.toLocaleString('en-GB')}`);
   const traces = TYPES.map(t => ({
     x, y: rows.map(r => r.shares[t.key]),
-    name: t.label, type: 'bar', marker: { color: t.color },
+    name: t.label, type: 'bar', marker: { color: t.color, line: { color: COLORS.surface, width: 2 } },
     hovertemplate: `%{x}<br>${t.label}: %{y:.1f}%<extra></extra>`,
   }));
   Plotly.newPlot(chartId, traces, {
@@ -257,16 +266,16 @@ function renderFeaturePlot(chartId, tableId) {
   const traces = [
     {
       x: rows.map(r => r.d), y, type: 'scatter', mode: 'markers', name: 'Cohen’s d (all N)',
-      marker: { color: '#111', size: 9 },
+      marker: { color: COLORS.tomato, size: 10, line: { color: COLORS.surface, width: 2 } },
       error_x: {
-        type: 'data', symmetric: false, color: '#444', thickness: 1.6, width: 0,
+        type: 'data', symmetric: false, color: COLORS.text, thickness: 1.6, width: 0,
         array: rows.map(r => r.ci_high - r.d), arrayminus: rows.map(r => r.d - r.ci_low),
       },
       hovertemplate: '%{y}<br>d = %{x:.3f}<extra></extra>',
     },
     {
       x: rows.map(r => r.null_mean), y, type: 'scatter', mode: 'markers', name: 'permutation null mean',
-      marker: { color: '#999', symbol: 'line-ns-open', size: 16, line: { width: 2 } },
+      marker: { color: COLORS.neutral, symbol: 'line-ns-open', size: 16, line: { width: 2 } },
       hovertemplate: '%{y}<br>null mean = %{x:.4f}<extra></extra>',
     },
   ];
@@ -275,14 +284,14 @@ function renderFeaturePlot(chartId, tableId) {
     traces.push({
       x: draws.flatMap(r => r.draws), y: draws.flatMap(r => r.draws.map(() => r.label)),
       type: 'scatter', mode: 'markers', name: 'single random draws',
-      marker: { color: '#999', size: 6 },
+      marker: { color: COLORS.neutral, size: 8, line: { color: COLORS.surface, width: 1 } },
       hovertemplate: 'draw: d = %{x:.4f}<extra></extra>',
     });
   }
   Plotly.newPlot(chartId, traces, {
     ...PLOTLY_LAYOUT,
     margin: { t: 20, r: 30, b: 70, l: 170 },
-    xaxis: { title: 'Cohen’s d (95 % block-bootstrap CI)', zeroline: true, zerolinecolor: '#bbb' },
+    xaxis: { title: 'Cohen’s d (95 % block-bootstrap CI)', zeroline: true },
     yaxis: { automargin: true },
     legend: { orientation: 'h', y: -0.3, x: 0.5, xanchor: 'center', font: { size: 12 } },
   }, PLOTLY_CONFIG);
@@ -327,11 +336,11 @@ function renderSplitHalf(chartId, pairsId, matrixId, baselineLabel = 'B') {
   const all = p.flatMap(r => [r.odd, r.even]);
   const lo = Math.min(...all) - 0.05, hi = Math.max(...all) + 0.05;
   Plotly.newPlot(chartId, [
-    { x: [lo, hi], y: [lo, hi], mode: 'lines', line: { color: '#bbb', width: 1 }, hoverinfo: 'skip', showlegend: false },
+    { x: [lo, hi], y: [lo, hi], mode: 'lines', line: { color: COLORS.border, width: 1 }, hoverinfo: 'skip', showlegend: false },
     {
       x: p.map(r => r.odd), y: p.map(r => r.even), text: p.map(r => pairLabel(r.pair)),
       mode: 'markers+text', textposition: 'top right', type: 'scatter', showlegend: false,
-      marker: { color: '#111', size: 9 },
+      marker: { color: COLORS.tomato, size: 10, line: { color: COLORS.surface, width: 2 } },
       hovertemplate: '%{text}<br>odd %{x:.3f}, even %{y:.3f}<extra></extra>',
     },
   ], {
@@ -363,20 +372,20 @@ function renderCumulativeChart(containerId) {
   const data = window.DATA_CUMULATIVE;
   if (!data) { console.error('Cumulative data not loaded'); return; }
   const lineStyles = {
-    'Baseline B': { color: '#2C5F7C', dash: 'solid', width: 2.5 },
-    'Baseline A': { color: '#C4963C', dash: 'dash',  width: 2 },
-    'Baseline ℵ': { color: '#2A7F8E', dash: 'dot', width: 2 },
+    'Baseline B': { color: COLORS.tomato, dash: 'solid', width: 2 },
+    'Baseline A': { color: COLORS.blue,   dash: 'dash',  width: 2 },
+    'Baseline ℵ': { color: COLORS.teal,   dash: 'dot',   width: 2 },
   };
   const traces = Object.entries(data).map(([label, points]) => ({
     x: points.map(p => p.chapters), y: points.map(p => p.ari),
     name: label, type: 'scatter', mode: 'lines+markers',
-    line: lineStyles[label] || { color: '#999', width: 1.5 }, marker: { size: 5 },
+    line: lineStyles[label] || { color: COLORS.neutral, width: 2 }, marker: { size: 8 },
     hovertemplate: `${label}<br>Chapters: %{x}<br>ARI: %{y:.4f}<extra></extra>`,
   }));
   Plotly.newPlot(containerId, traces, {
     ...PLOTLY_LAYOUT,
     xaxis: { title: 'Chapters (cumulative)', dtick: 1 },
-    yaxis: { title: 'ARI', zeroline: true, zerolinecolor: '#bbb' },
+    yaxis: { title: 'ARI', zeroline: true },
     legend: { orientation: 'h', y: -0.2, x: 0.5, xanchor: 'center' },
   }, PLOTLY_CONFIG);
 }
@@ -392,7 +401,8 @@ function renderStabilityHeatmap(containerId) {
   }));
   Plotly.newPlot(containerId, [{
     z, x: allChapters.map(String), y: manuscripts.map(msLabel), type: 'heatmap',
-    colorscale: [[0, '#FFF8E1'], [0.3, '#FFE082'], [0.5, '#FFA726'], [0.7, '#E65100'], [1, '#B71C1C']],
+    colorscale: [[0, '#EEF0F2'], [0.25, '#C9CDD3'], [0.5, '#989EA7'], [0.75, '#5C636D'], [1, '#262A30']],
+    xgap: 2, ygap: 2,
     hovertemplate: '%{y} ch.%{x}: %{z:.3f}<extra></extra>',
     colorbar: { title: 'Cosine distance', titleside: 'right', thickness: 15, len: 0.8 },
   }], {
