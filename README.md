@@ -86,7 +86,11 @@ three anchors. Feature isolation: function words only 0.008, content masked 0.00
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
 has a paired-bootstrap 95 % interval of −0.006 to 0.015. The content-masked d also exceeds the
 null that keeps each witness's mixture of types (0.002 ± 0.001, p = 0.003;
-`outputs/type_stratified_permutation.json`). See `outputs/pilot_report_full_*.txt` and the website.
+`outputs/type_stratified_permutation.json`). With the model's own mask token in place of `CONTENT`,
+content masked gives 0.008 and random masked 0.005; their difference, 0.003, has a paired-bootstrap
+95 % interval of −0.007 to 0.014. Across the thirteen layers of the model d lies between 0.014 and
+0.023 under anchor B (highest at layer 7) and is lowest at the last layer under all three anchors
+(`outputs/layer_and_mask_checks.json`). See `outputs/pilot_report_full_*.txt` and the website.
 
 The embedding stage (`profile_scribes.py`) requires the BERT model; the vector files
 (`outputs/*.pkl`) are not part of the repository.
@@ -120,6 +124,7 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units
 ├── type_stratified_check.py            # Cohen's d against a null that keeps each witness's mixture of variant types
 ├── fee_changepoint.py                  # Sinaiticus in John: the change in its text located without Fee's boundary
+├── layer_and_mask_checks.py            # Cohen's d at every layer of the model; masking with the model's mask token
 ├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
 ├── data/
 │   ├── raw/john/                       # IGNTP transcriptions via ITSEE (CC BY 4.0), one file per witness
@@ -329,7 +334,11 @@ python type_stratified_check.py  # -> outputs/type_stratified_permutation.json
 #     located without being given Fee's boundary (§ 5.1)
 python fee_changepoint.py        # -> outputs/fee_changepoint.json
 
-# 14. Website data (reads everything above; run last)
+# 14. Cohen's d at each of the model's thirteen layers (anchors B, A, ℵ) and the masked conditions
+#     with the model's own mask token in place of CONTENT (§§ 5.2, 5.4; needs the BERT model)
+python layer_and_mask_checks.py  # -> outputs/layer_and_mask_checks.json
+
+# 15. Website data (reads everything above; run last)
 python docs/prepare_website_data.py
 ```
 
@@ -393,10 +402,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.3,
+versions and resolves to the latest one; the results of the article are those of version 2.1.4,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.3). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.4). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -404,7 +413,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.3},
+  version   = {2.1.4},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }
