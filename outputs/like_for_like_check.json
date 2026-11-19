@@ -1,0 +1,176 @@
+{
+ "B": {
+  "all_variants": {
+   "n": 4365,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.004148,
+    "null_mean": 0.0001,
+    "null_sd": 0.0004,
+    "p": 0.004975
+   },
+   "ari_kmeans": {
+    "value": 0.001385,
+    "null_mean": -0.0002,
+    "null_sd": 0.0008,
+    "p": 0.049751
+   },
+   "v_types": {
+    "value": 0.074492,
+    "null_mean": 0.0303,
+    "null_sd": 0.0062,
+    "p": 0.004975
+   },
+   "v_kmeans": {
+    "value": 0.063061,
+    "null_mean": 0.0259,
+    "null_sd": 0.0066,
+    "p": 0.004975
+   }
+  },
+  "ari_sample": {
+   "n": 3000,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.00577,
+    "null_mean": 0.0001,
+    "null_sd": 0.0006,
+    "p": 0.004975
+   },
+   "ari_kmeans": {
+    "value": 0.002214,
+    "null_mean": -0.0002,
+    "null_sd": 0.0011,
+    "p": 0.014925
+   },
+   "v_types": {
+    "value": 0.089475,
+    "null_mean": 0.0366,
+    "null_sd": 0.0072,
+    "p": 0.004975
+   },
+   "v_kmeans": {
+    "value": 0.069769,
+    "null_mean": 0.031,
+    "null_sd": 0.007,
+    "p": 0.004975
+   }
+  }
+ },
+ "A": {
+  "all_variants": {
+   "n": 4086,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.003085,
+    "null_mean": 0.0,
+    "null_sd": 0.0005,
+    "p": 0.004975
+   },
+   "ari_kmeans": {
+    "value": -0.001156,
+    "null_mean": 0.0001,
+    "null_sd": 0.0008,
+    "p": 0.975124
+   },
+   "v_types": {
+    "value": 0.066533,
+    "null_mean": 0.0311,
+    "null_sd": 0.0066,
+    "p": 0.004975
+   },
+   "v_kmeans": {
+    "value": 0.030292,
+    "null_mean": 0.027,
+    "null_sd": 0.0071,
+    "p": 0.343284
+   }
+  },
+  "ari_sample": {
+   "n": 3000,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.002479,
+    "null_mean": 0.0001,
+    "null_sd": 0.0006,
+    "p": 0.004975
+   },
+   "ari_kmeans": {
+    "value": -0.001345,
+    "null_mean": -0.0002,
+    "null_sd": 0.0009,
+    "p": 0.945274
+   },
+   "v_types": {
+    "value": 0.066176,
+    "null_mean": 0.0373,
+    "null_sd": 0.0073,
+    "p": 0.004975
+   },
+   "v_kmeans": {
+    "value": 0.02466,
+    "null_mean": 0.0313,
+    "null_sd": 0.0072,
+    "p": 0.81592
+   }
+  }
+ },
+ "aleph": {
+  "all_variants": {
+   "n": 5176,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.001675,
+    "null_mean": 0.0001,
+    "null_sd": 0.0003,
+    "p": 0.004975
+   },
+   "ari_kmeans": {
+    "value": 0.002371,
+    "null_mean": -0.0001,
+    "null_sd": 0.0005,
+    "p": 0.004975
+   },
+   "v_types": {
+    "value": 0.047059,
+    "null_mean": 0.0288,
+    "null_sd": 0.0053,
+    "p": 0.004975
+   },
+   "v_kmeans": {
+    "value": 0.039416,
+    "null_mean": 0.0236,
+    "null_sd": 0.0055,
+    "p": 0.004975
+   }
+  },
+  "ari_sample": {
+   "n": 3000,
+   "n_perm": 200,
+   "ari_types": {
+    "value": 0.00132,
+    "null_mean": 0.0001,
+    "null_sd": 0.0006,
+    "p": 0.029851
+   },
+   "ari_kmeans": {
+    "value": 0.000429,
+    "null_mean": -0.0001,
+    "null_sd": 0.0008,
+    "p": 0.223881
+   },
+   "v_types": {
+    "value": 0.043565,
+    "null_mean": 0.0379,
+    "null_sd": 0.0073,
+    "p": 0.228856
+   },
+   "v_kmeans": {
+    "value": 0.037037,
+    "null_mean": 0.0309,
+    "null_sd": 0.0072,
+    "p": 0.228856
+   }
+  }
+ }
+}
