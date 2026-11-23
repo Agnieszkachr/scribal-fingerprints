@@ -80,7 +80,7 @@ def split_half(base_ms):
     ax.plot(lim, lim, color="#bbb", lw=0.8, zorder=1)
     ax.scatter(p["odd_distance"], p["even_distance"], color="#111", s=36, zorder=3)
     for _, r in p.iterrows():
-        ax.annotate(r["pair"].replace("aleph", "Sin"), (r["odd_distance"], r["even_distance"]),
+        ax.annotate(r["pair"].replace("aleph", "\u2135"), (r["odd_distance"], r["even_distance"]),
                     xytext=(5, 4), textcoords="offset points", fontsize=9)
     ax.set_xlim(lim); ax.set_ylim(lim)
     ax.set_xlabel("profile distance, odd chapters (cosine)")

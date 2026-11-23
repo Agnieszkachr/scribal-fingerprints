@@ -45,7 +45,8 @@ manuscript-level characteristics, not as fingerprints of an individual scribe.
 - **Dependence between observations.** Several variants can occur in one verse and their
   context windows overlap. Inference therefore uses chapter-level blocks (bootstrap and
   permutation), and the verse-level effect size is tested against its own null, in which
-  whole witness-verse units are permuted within chapters (`verse_level_check.py`).
+  whole witness-verse units are permuted within chapters, for the three anchors and for the
+  feature-isolation datasets (`verse_level_check.py`).
 
 ## Key Results (variant typology, current extraction)
 
@@ -84,7 +85,10 @@ of the type mixture. The ARI of a four-cluster partition is 0.002. Within single
 0.012, and no within-class value is distinguishable from its permutation null under all
 three anchors. Feature isolation: function words only 0.008, content masked 0.006, random
 masked 0.002 (mean of five draws); the difference between content and random masking, 0.004,
-has a paired-bootstrap 95 % interval of −0.006 to 0.015. Under content masking 697 of the 4,365
+has a paired-bootstrap 95 % interval of −0.006 to 0.015. On verse aggregates, with whole
+witness-verse units permuted within chapters, function words only gives 0.008 (p = 0.007), content
+masked 0.006 (p = 0.001) and the five random draws −0.001 to 0.004 (p ≤ 0.05 in two of them;
+`outputs/verse_level_permutation.json`). Under content masking 697 of the 4,365
 variants have identical windows for anchor and witness; on the other 3,668 the content-masked d is
 again 0.006 (full context on the same variants: 0.015). The content-masked d also exceeds the
 null that keeps each witness's mixture of types (0.002 ± 0.001, p = 0.003;
@@ -128,12 +132,12 @@ The embedding stage (`profile_scribes.py`) requires the BERT model; the vector f
 ├── sbl_anchor.py                       # Typology with the SBL edition as anchor
 ├── john_text_checks.py                 # Bezae's replacement blocks; Sinaiticus in John 1:1-8:38
 ├── supplementary_checks.py             # Within-class d with CIs, paired masking comparison, typology split halves
-├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units
+├── verse_level_check.py                # Cohen's d on verse aggregates with a permutation of whole witness-verse units (anchors, feature isolation)
 ├── type_stratified_check.py            # Cohen's d against a null that keeps each witness's mixture of variant types
 ├── fee_changepoint.py                  # Sinaiticus in John: the change in its text located without Fee's boundary
 ├── layer_and_mask_checks.py            # Cohen's d at every layer of the model; masking with the model's mask token
 ├── like_for_like_check.py              # ARI of the variant types and Cramér's V of the k-means partition, each against the witness
-├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, evaluation script
+├── annotation/                         # Hand-annotated calibration (200) and reliability (300) samples, hold-out sample (100) and the script that draws it, evaluation script
 ├── data/
 │   ├── raw/john/                       # IGNTP transcriptions via ITSEE (CC BY 4.0), one file per witness
 │   ├── variants_full_john_{B,A,aleph}.csv   # Variants against each baseline
@@ -212,7 +216,7 @@ that the lexicon lemmatises separately (Μαρια/Μαριαμ) count as one le
 morphological only if every paired word is the same lexeme; a word without a partner makes
 it lexical.
 
-The rule was checked against blind hand annotation of two samples from John
+The rule was checked against blind hand annotation of three samples from John
 (`annotation/`, evaluated by `python annotation/evaluate_annotation.py`):
 
 - 200 substitution pairs, 25 from each of eight bands of character similarity: the lexicon
@@ -223,6 +227,12 @@ The rule was checked against blind hand annotation of two samples from John
 - 300 variants stratified by type: κ = 0.97 over the five types; complete agreement for
   additions, omissions and word-order shifts; κ = 0.88 on the 134 substitutions
   (morphological vs lexical), where all eight disagreements lie.
+- 100 substitutions drawn at random after the rule had been fixed, from the 1,410 that neither
+  belong to the two samples above nor repeat a pair of readings found in them
+  (`annotation/draw_holdout_sample.py`): the rule agrees in 92.0 % (κ = 0.84). Six of the eight
+  disagreements are witness spellings that the rule could not place and files as lexical; in
+  two a compound and a simple verb count as one lexeme because one form is missing from the
+  lexicon.
 
 The lexicon is derived from MorphGNT (https://github.com/morphgnt/sblgnt), whose parsing
 and lemmatisation are licensed CC BY-SA 3.0; the derived list is distributed under the
@@ -319,24 +329,24 @@ python create_visualizations.py --ablation matched      # etc.
 # 7. Agreement of the annotation rule with the hand annotation (§§ 4.1, 6.5)
 python annotation/evaluate_annotation.py
 
-# 8. Robustness: the SBL edition (MorphGNT, data/morphgnt/) as anchor, typology only
+# 8. Robustness: the SBL edition (MorphGNT, data/morphgnt/) as anchor, typology only (§ 5.5)
 python sbl_anchor.py      # -> data/variants_full_john_SBL.csv, outputs/sbl_anchor_john.json
 
 # 9. Checks reported in § 5.1: Bezae's unequal replacement blocks; Sinaiticus in John 1:1-8:38
 python john_text_checks.py   # -> outputs/john_text_checks.json
 
-# 10. Supplementary checks: within-class d with permutation p and bootstrap CI (anchors B, A, ℵ);
+# 10. Supplementary checks (§§ 5.1, 5.3, 5.4, 5.5): within-class d with permutation p and bootstrap CI (anchors B, A, ℵ);
 #     content masking against random masking, paired bootstrap; split halves of the typology;
 #     Bezae's variants shared with Sinaiticus chapter by chapter; variants whose two masked windows
 #     are identical (needs the vector files of step 4)
 python supplementary_checks.py   # -> outputs/supplementary_checks.json, outputs/fig8_aleph_D_by_chapter.png
 
 # 11. Cohen's d on verse aggregates, permuting whole witness-verse units within chapters
-#     (anchors B, A, ℵ; needs the vector files of step 4)
+#     (§§ 5.2, 5.4; anchors B, A, ℵ and the feature-isolation datasets; needs the vector files of step 4)
 python verse_level_check.py      # -> outputs/verse_level_permutation.json
 
 # 12. Cohen's d against a null that shuffles witness labels within chapter x variant type
-#     (anchors B, A, ℵ and the content-masked dataset; needs the vector files of step 4)
+#     (§§ 5.3, 5.4; anchors B, A, ℵ and the content-masked dataset; needs the vector files of step 4)
 python type_stratified_check.py  # -> outputs/type_stratified_permutation.json
 
 # 13. Sinaiticus in John: the point at which its rate of divergence from B changes,
@@ -416,10 +426,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 If you use this code or data, please cite the archived release on Zenodo. The DOI below covers all
-versions and resolves to the latest one; the results of the article are those of version 2.1.6,
+versions and resolves to the latest one; the results of the article are those of version 2.2.0,
 and each version has its own DOI on the Zenodo page.
 
-> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.1.6). Zenodo. https://doi.org/10.5281/zenodo.23359315
+> Ziemińska, A. B. (2026). *scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)* (version 2.2.0). Zenodo. https://doi.org/10.5281/zenodo.23359315
 
 ```bibtex
 @software{zieminska2026scribal_software,
@@ -427,7 +437,7 @@ and each version has its own DOI on the Zenodo page.
   title     = {scribal-fingerprints: The Typological Structure of Textual Variation in the Gospel of John (code and data)},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2.1.6},
+  version   = {2.2.0},
   doi       = {10.5281/zenodo.23359315},
   url       = {https://doi.org/10.5281/zenodo.23359315}
 }

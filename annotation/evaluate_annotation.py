@@ -1,5 +1,5 @@
 """Agreement between the variant-annotation rule and the hand annotation of
-two samples from John (baseline B).
+three samples from John (baseline B).
 
 * ``threshold_sample_200.csv`` -- 200 substitution pairs drawn with a fixed
   seed, 25 from each of eight equal bands of character similarity, annotated
@@ -7,6 +7,10 @@ two samples from John (baseline B).
 * ``reliability_sample_john_300.csv`` -- 300 variants stratified by the type
   assigned at sampling (``sampling_stratum``), annotated blind into the five
   variant types.
+* ``holdout_sample_100.csv`` -- 100 substitutions drawn by
+  ``draw_holdout_sample.py`` from those that neither belong to the two samples
+  above nor share a pair of readings with them, annotated blind as M or L
+  after the rule was fixed.
 
 The rule's labels are taken from ``data/variants_full_john_B.csv``. For the
 threshold sample, the character-similarity rule (same lexeme above a
@@ -93,6 +97,29 @@ def reliability_sample():
     return s
 
 
+def holdout_sample():
+    path = Path(__file__).parent / "holdout_sample_100.csv"
+    if not path.exists():
+        return None
+    s = pd.read_csv(path)
+    s = s[s.annotation.isin(["M", "L"])].copy()
+    if s.empty:
+        print("\nHold-out sample: not annotated yet")
+        return s
+    s["rule"] = rule_labels(s).map({"substitution_morphological": "M", "substitution_lexical": "L"})
+    po, k = kappa(s.annotation, s.rule)
+    prec = {c: ((s.rule == c) & (s.annotation == c)).sum() / max((s.rule == c).sum(), 1) for c in "ML"}
+    rec = {c: ((s.rule == c) & (s.annotation == c)).sum() / max((s.annotation == c).sum(), 1) for c in "ML"}
+    print(f"\nHold-out sample: {len(s)} annotated pairs ({(s.annotation == 'M').sum()} M, {(s.annotation == 'L').sum()} L)")
+    print(f"  lexicon rule (current)         agreement {po:.3f}  kappa {k:.3f}  "
+          f"M precision {prec['M']:.3f} recall {rec['M']:.3f}  L precision {prec['L']:.3f} recall {rec['L']:.3f}")
+    wrong = s[s.annotation != s.rule]
+    for r in wrong.itertuples():
+        print(f"    {r.ID} {r.verse} {r.manuscript}: {r.baseline_reading} / {r.manuscript_reading}  annotation {r.annotation}, rule {r.rule}")
+    return s
+
+
 if __name__ == "__main__":
     threshold_sample()
     reliability_sample()
+    holdout_sample()

@@ -25,5 +25,76 @@
   "null_sd": 0.0014,
   "p": 0.0005,
   "n_perm": 2000
+ },
+ "feature_isolation": {
+  "function_words_only": {
+   "n_variants": 1767,
+   "n_units": 1281,
+   "d": 0.008,
+   "null_mean": 0.0003,
+   "null_sd": 0.0027,
+   "p": 0.006997,
+   "n_perm": 2000
+  },
+  "content_masked": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": 0.0059,
+   "null_mean": 0.0003,
+   "null_sd": 0.0016,
+   "p": 0.001,
+   "n_perm": 2000
+  },
+  "random_masked": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": -0.0008,
+   "null_mean": -0.0001,
+   "null_sd": 0.0015,
+   "p": 0.67916,
+   "n_perm": 2000
+  },
+  "random_masked_s1": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": 0.0034,
+   "null_mean": 0.0001,
+   "null_sd": 0.0014,
+   "p": 0.015992,
+   "n_perm": 2000
+  },
+  "random_masked_s2": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": 0.0035,
+   "null_mean": 0.0,
+   "null_sd": 0.0015,
+   "p": 0.02049,
+   "n_perm": 2000
+  },
+  "random_masked_s3": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": 0.0013,
+   "null_mean": 0.0001,
+   "null_sd": 0.0014,
+   "p": 0.177411,
+   "n_perm": 2000
+  },
+  "random_masked_s4": {
+   "n_variants": 4365,
+   "n_units": 2234,
+   "d": 0.0018,
+   "null_mean": 0.0001,
+   "null_sd": 0.0015,
+   "p": 0.12094,
+   "n_perm": 2000
+  },
+  "random_masked_draws": {
+   "n_draws": 5,
+   "d_min": -0.0008,
+   "d_max": 0.0035,
+   "n_p_le_0.05": 2
+  }
  }
 }

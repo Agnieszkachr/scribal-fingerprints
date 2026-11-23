@@ -205,6 +205,14 @@
         where all eight disagreements lie (mostly corrupted witness spellings). The samples, the
         annotations and the evaluation script are in <code>annotation/</code>.
       </p>
+      <p>
+        <strong>Hold-out.</strong> After the rule had been fixed, 100 further substitutions were drawn
+        at random from the 1,410 that neither belong to the two samples nor repeat a pair of readings
+        found in them, and annotated blind. The rule agrees in 92.0 % (&kappa; = 0.84). Six of the
+        eight disagreements are witness spellings that the rule could not place and files as lexical;
+        in two a compound and a simple verb count as one lexeme because one form is missing from the
+        lexicon.
+      </p>
     </section>
 
     <!-- Embedding -->
@@ -299,7 +307,7 @@
             <tr><td><code>john_text_checks.py</code></td>
               <td>Bezae&rsquo;s replacement blocks; Sinaiticus in John 1:1&ndash;8:38</td></tr>
             <tr><td><code>annotation/evaluate_annotation.py</code></td>
-              <td>Agreement of the annotation rule with the blind human annotation of both samples</td></tr>
+              <td>Agreement of the annotation rule with the blind human annotation of the three samples</td></tr>
             <tr><td><code>create_article_figures.py</code></td>
               <td>Figures 3 and 4 of the article: feature isolation and split-half distances (<code>fig3_feature_isolation.png</code>, <code>fig5_split_half.png</code>)</td></tr>
             <tr><td><code>create_visualizations.py</code></td>
@@ -307,7 +315,7 @@
             <tr><td><code>supplementary_checks.py</code></td>
               <td>d within each variant class with intervals and p-values (Table 4), paired comparison of the masked conditions, split halves of the typology, Sinaiticus and Bezae by chapter (Figure 2 of the article), variants whose two masked windows are identical</td></tr>
             <tr><td><code>verse_level_check.py</code></td>
-              <td>Cohen&rsquo;s d on verse aggregates, tested by permuting whole witness&ndash;verse units within chapters (anchors B, A and &#x2135;)</td></tr>
+              <td>Cohen&rsquo;s d on verse aggregates, tested by permuting whole witness&ndash;verse units within chapters (anchors B, A and &#x2135;, and the feature-isolation datasets)</td></tr>
             <tr><td><code>type_stratified_check.py</code></td>
               <td>Cohen&rsquo;s d against a null that shuffles the witness labels within chapter &times; variant type, so that each witness keeps its mixture of types</td></tr>
             <tr><td><code>fee_changepoint.py</code></td>
